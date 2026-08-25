@@ -47,5 +47,17 @@
     "added": 77,
     "matched": 79,
     "raw_unique_urls": 143
+  },
+  "image_enrichment": {
+    "records_checked": 475,
+    "images_before": 1,
+    "images_after": 284,
+    "images_added": 283,
+    "outcomes": {
+      "pdf": 39,
+      "page": 373,
+      "fetch-failed": 61,
+      "youtube": 2
+    }
   }
 }
