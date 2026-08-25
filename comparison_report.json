@@ -8,13 +8,13 @@
     "internal_added": 58,
     "internal_matched": 22
   },
-  "final_records": 424,
-  "with_url": 361,
+  "final_records": 461,
+  "with_url": 398,
   "without_url": 63,
   "verified": 49,
-  "partial": 312,
+  "partial": 349,
   "unverified": 63,
-  "duplicates_merged": 217,
+  "duplicates_merged": 274,
   "additional_workbooks": [
     {
       "source": "Additional comprehensive workbook A",
@@ -29,11 +29,17 @@
       "matched": 47
     }
   ],
-  "prior_master_records": 345,
+  "prior_master_records": 424,
   "duplicate_workbook_ignored": true,
   "csv_source": {
     "input_rows": 176,
     "added": 79,
     "matched": 97
+  },
+  "ultimate_workbook": {
+    "source": "Prashant Girbane MCCIA ULTIMATE Research workbook",
+    "input_rows": 94,
+    "added": 37,
+    "matched": 57
   }
 }
