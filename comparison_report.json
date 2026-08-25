@@ -8,13 +8,13 @@
     "internal_added": 58,
     "internal_matched": 22
   },
-  "final_records": 538,
+  "final_records": 2770,
   "with_url": 475,
-  "without_url": 63,
+  "without_url": 2295,
   "verified": 49,
   "partial": 426,
-  "unverified": 63,
-  "duplicates_merged": 353,
+  "unverified": 2295,
+  "duplicates_merged": 427,
   "additional_workbooks": [
     {
       "source": "Additional comprehensive workbook A",
@@ -59,5 +59,12 @@
       "fetch-failed": 61,
       "youtube": 2
     }
+  },
+  "newspaper_workbook": {
+    "source": "News Paper data Files 2018-2026 workbook",
+    "input_rows": 2317,
+    "added": 2232,
+    "matched": 74,
+    "skipped": 11
   }
 }
