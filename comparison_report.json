@@ -9,11 +9,11 @@
     "internal_matched": 22
   },
   "final_records": 2770,
-  "with_url": 475,
-  "without_url": 2295,
+  "with_url": 485,
+  "without_url": 2285,
   "verified": 49,
-  "partial": 426,
-  "unverified": 2295,
+  "partial": 436,
+  "unverified": 2285,
   "duplicates_merged": 427,
   "additional_workbooks": [
     {
@@ -49,14 +49,14 @@
     "raw_unique_urls": 143
   },
   "image_enrichment": {
-    "records_checked": 475,
-    "images_before": 1,
-    "images_after": 284,
-    "images_added": 283,
+    "records_checked": 485,
+    "images_before": 284,
+    "images_after": 310,
+    "images_added": 26,
     "outcomes": {
       "pdf": 39,
-      "page": 373,
-      "fetch-failed": 61,
+      "page": 398,
+      "fetch-failed": 46,
       "youtube": 2
     }
   },
@@ -66,5 +66,16 @@
     "added": 2232,
     "matched": 74,
     "skipped": 11
+  },
+  "source_enrichment": {
+    "eligible_linkless_print_records": 2222,
+    "attempted": 2232,
+    "searched_successfully": 189,
+    "accepted_links": 10,
+    "likely_links": 5,
+    "candidate_only_records": 178,
+    "retry_required": 2043,
+    "search_errors_or_rate_limits": 2043,
+    "direct_source_images": 310
   }
 }

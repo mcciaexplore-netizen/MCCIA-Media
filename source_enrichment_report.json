@@ -1,0 +1,9 @@
+{
+  "eligible_linkless_print_records": 2222,
+  "attempted": 2232,
+  "searched_successfully": 189,
+  "accepted_links": 10,
+  "likely_links": 5,
+  "candidate_only_records": 178,
+  "retry_required": 2043
+}
