@@ -8,11 +8,26 @@
     "internal_added": 58,
     "internal_matched": 22
   },
-  "final_records": 246,
-  "with_url": 183,
+  "final_records": 345,
+  "with_url": 282,
   "without_url": 63,
   "verified": 49,
-  "partial": 134,
+  "partial": 233,
   "unverified": 63,
-  "duplicates_merged": 29
+  "duplicates_merged": 120,
+  "additional_workbooks": [
+    {
+      "source": "Additional comprehensive workbook A",
+      "input_rows": 100,
+      "added": 56,
+      "matched": 44
+    },
+    {
+      "source": "Additional comprehensive workbook B",
+      "input_rows": 90,
+      "added": 43,
+      "matched": 47
+    }
+  ],
+  "prior_master_records": 246
 }
