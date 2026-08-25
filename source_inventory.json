@@ -1,0 +1,787 @@
+{
+  "workbooks": [
+    {
+      "path": "C:\\Users\\Aarushi Gupta\\Downloads\\1787634550790-Prashant_Girbane_Comprehensive_Research_2018_2026.xlsx",
+      "sheets": [
+        {
+          "name": "Prashant Girbane Sources",
+          "rows": 81,
+          "cols": 10,
+          "preview": [
+            [
+              "S.No.",
+              "Source URL",
+              "Title/Headline",
+              "Source Name/Publisher",
+              "Date Published",
+              "Year",
+              "Language",
+              "Content Type",
+              "Summary/Key Points",
+              "Verification Status"
+            ],
+            [
+              "1",
+              "https://www.linkedin.com/posts/prashant-girbane-245840_mccia-wwwmcciapunecom-has-planned-a-platform-activity-6489701198415925248-izkB",
+              "MCCIA Startup Platform for Manufacturing Tech Startups",
+              "LinkedIn",
+              "2019-01-12",
+              "2019",
+              "English",
+              "LinkedIn Post",
+              "Announced MCCIA platform for manufacturing tech startups; lessons from Startup Nation visit",
+              null
+            ],
+            [
+              "2",
+              "https://www.linkedin.com/posts/prashant-girbane-245840_sustainability-industry-startups-activity-6589071083020873728-OiEh",
+              "ET Now Leaders of Tomorrow - Sustainability for Industry and Startups",
+              "LinkedIn/ET Now",
+              "2019-10-13",
+              "2019",
+              "English",
+              "TV Interview",
+              "Panel discussion on sustainability in industry and startups; perspectives on sustainable practices",
+              null
+            ],
+            [
+              "3",
+              "https://mcciapune.com/media/Publication/Publication_File/ER-BOOK-WEB-VERSION_N5kXHDK.pdf",
+              "IR Conclave 2020 - Employee Relations Book",
+              "MCCIA Publication",
+              "2020-01",
+              "2020",
+              "English",
+              "Publication",
+              "Published book on Employee Relations; Differentiating Yet Practical Practices",
+              null
+            ],
+            [
+              "4",
+              "https://www.hindustantimes.com/pune-news/pune-inc-fears-serious-disruption-in-cash-flows-fresh-orders-mccia/story-E9mHLUibMbClVJiwLFyWuI.html",
+              "Pune Inc fears serious disruption in cash flows, fresh orders: MCCIA",
+              "Hindustan Times",
+              "2020-04-10",
+              "2020",
+              "English",
+              "News Article",
+              "COVID-19 impact survey on 398 companies; cash flow and future business concerns",
+              null
+            ],
+            [
+              "5",
+              "https://www.linkedin.com/posts/prashant-girbane-245840_the-hindu-business-line-today-published-my-activity-6738398816455688192-mKoT",
+              "Atmanirbhar Bharat Article - The Hindu Business Line",
+              "LinkedIn/The Hindu",
+              "2020-11-28",
+              "2020",
+              "English",
+              "Op-Ed Article",
+              "Authored article on Atmanirbhar Bharat; analyzed what's working and what needs improvement",
+              null
+            ],
+            [
+              "6",
+              "https://indianexpress.com/article/business/companies/75-of-companies-will-get-to-pre-covid-levels-by-june-2021-7075848/",
+              "75% of companies will get to pre-Covid levels by June 2021",
+              "The Indian Express",
+              "2020-12-01",
+              "2020",
+              "English",
+              "News Article",
+              "MCCIA survey on Pune economic recovery post-COVID; GDP and manufacturing sector analysis",
+              null
+            ],
+            [
+              "7",
+              "https://www.hindustantimes.com/pune-news/nfai-acquires-rare-footage-of-mccia-s-past/story-3ucG0WvlmJgIeU1sMjykwL.html",
+              "NFAI acquires rare footage of MCCIA's past",
+              "Hindustan Times",
+              "2020-12-10",
+              "2020",
+              "English",
+              "News Article",
+              "Handed over rare 16mm footage (1200ft, 35 min) to NFAI; chronicles MCCIA history from 1940s-1960s",
+              null
+            ]
+          ],
+          "urls": [
+            "https://blog.e-zest.com/news/ezest-solutions-joins-hands-with-mccias-mission-vayu-to-combat-covid19",
+            "https://economist.credential.getsmarter.com/3c4235fe-c39e-49a5-9792-decbd8f0eebd",
+            "https://gipe.ac.in/activities-events/post-budget-discussion-2024/",
+            "https://indianexpress.com/article/business/companies/75-of-companies-will-get-to-pre-covid-levels-by-june-2021-7075848/",
+            "https://indianexpress.com/article/cities/pune/budget-2026-27-pune-industry-welcomes-msme-equity-fund-treds-mandate-seeks-ai-push-export-boost-10508054/",
+            "https://linkedin.com/in/prashant-girbane-245840",
+            "https://mccia.medium.com/planned-centres-of-economic-activity-570791b19e22",
+            "https://mcciapune.com/media/Publication/Publication_File/ER-BOOK-WEB-VERSION_N5kXHDK.pdf",
+            "https://mcciapune.com/media/Publication/Publication_File/MCCIA_SEC_Report_2024_FINAL_PDF_22-11-2024.pdf",
+            "https://mcciapune.com/media/Publication/Publication_File/MCCIA_SEC_Report_2025_Proof_18-11-25.pdf",
+            "https://medtechspectrum.com/news/25/25243/union-budget-2026-signals-strong-push-for-innovation-driven-inclusive-healthcare-ecosystem.html",
+            "https://puneinternationalcentre.org/about-us/office-bearers/mr-prashant-girbane/",
+            "https://theindianeye.com/2025/05/16/can-apple-ceo-overlook-india-or-profits/",
+            "https://thenewsmill.com/2025/09/also-impacting-american-companies-they-wouldve-huge-issues-mccia-dg-prashant-girbane-on-h1b-visa-fee-hike/",
+            "https://timesofindia.indiatimes.com/city/pune/mccia-helpline-and-ai-lab-enable-msmes-to-grow-their-businesses/articleshow/125645820.cms",
+            "https://www.adapt.io/contact/prashant-girbane/227487200",
+            "https://www.etnownews.com/videos/shows/leaders-of-tomorrow-season-11-pune-springboard-part-2-video-101447629",
+            "https://www.freepressjournal.in/pune/pune-us-h-1b-fee-hike-will-hurt-both-indian-american-tech-firms-says-mccias-prashant-girbane",
+            "https://www.hindustantimes.com/cities/pune-news/mccia-and-ajinkya-rahane-announce-rs-1-crore-seed-fund-for-agri-tech-startups-101667935420723.html",
+            "https://www.hindustantimes.com/cities/pune-news/pic-moves-to-new-campus-in-pashan-101738004711050.html",
+            "https://www.hindustantimes.com/cities/pune-news/us-consulate-and-mccia-sign-crucial-cyber-security-initiative-101708974777329.html",
+            "https://www.hindustantimes.com/india-news/pune-afc-credit-default-fund-should-be-set-up-for-easy-ev-financing-says-sanjiv-bajaj-101649082812829.html",
+            "https://www.hindustantimes.com/pune-news/nfai-acquires-rare-footage-of-mccia-s-past/story-3ucG0WvlmJgIeU1sMjykwL.html",
+            "https://www.hindustantimes.com/pune-news/pune-inc-fears-serious-disruption-in-cash-flows-fresh-orders-mccia/story-E9mHLUibMbClVJiwLFyWuI.html",
+            "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@asia/@ro-bangkok/@sro-new_delhi/documents/meetingdocument/wcms_711020.pdf",
+            "https://www.linkedin.com/posts/aispectrumindia_unionbudget2026-economicstability-fiscaldiscipline-activity-7423742550148308992-frTD",
+            "https://www.linkedin.com/posts/ajaydeshkar_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-44-3d-engineering-activity-7159806444874145792-GwbC",
+            "https://www.linkedin.com/posts/anand-chordia-7baab913_womenempowerment-entrepreneurship-mccia-activity-7161429015797387264-GZf1",
+            "https://www.linkedin.com/posts/dinanathkholkar_gcc-mcciacybersecurityinitiative-activity-7295683565411868673-z9CP",
+            "https://www.linkedin.com/posts/dinanathkholkar_msme-sector-%E0%A4%AE-%E0%A4%AC%E0%A4%A1-%E0%A4%AC%E0%A4%A6%E0%A4%B2%E0%A4%B5-ai-automation-activity-7491008221806231553-ByE8",
+            "https://www.linkedin.com/posts/easebuzz_dea2026-buzzingforbharat-digitalexcellenceawards-activity-7495459608745013248-kZg2",
+            "https://www.linkedin.com/posts/erikafhallstrom_pune-activity-7299708369190236160-7wbl",
+            "https://www.linkedin.com/posts/jayanttulsiani_punegcc-gcc-activity-7295445045766184960-Azed",
+            "https://www.linkedin.com/posts/manya-nagar_tedxpune2025-tedx-tedxpune-activity-7356697946588954626-5drM",
+            "https://www.linkedin.com/posts/mcciapune_hear-from-the-director-general-of-mccia-prashant-activity-7417513390270500864-sQiK",
+            "https://www.linkedin.com/posts/mcciapune_mccia-defencemanufacturing-atmanirbharbharat-activity-7431689811691978753-T6h_",
+            "https://www.linkedin.com/posts/mcciapune_mccia-hrir-humanresourcedevelopment-activity-7450796548776632321-gZzq",
+            "https://www.linkedin.com/posts/mcciapune_pune-international-business-summit-2026-activity-7416816243128664065-XPw5",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_hearty-congratulations-to-general-dhiraj-activity-7471520040861966336-hfWu",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_i-am-grateful-to-my-alma-mater-udct-now-activity-7328448874593861634-bHsm",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_iima-activity-7035263688974446592-XkFv",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_india-needs-to-empower-its-women-entrepreneurs-activity-6820375166661480448-P7_j",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_last-week-i-had-an-opportunity-to-deliver-activity-7175032629002461184-r54j",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_last-week-i-had-the-opportunity-to-visit-activity-7043244302075871232-3oCq",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_looking-back-looking-forward-activity-7280237279053238272-MQ6E",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_mccia-wwwmcciapunecom-has-planned-a-platform-activity-6489701198415925248-izkB",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_msme-activity-6889474392645017600-DFtz",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_msmes-activity-7015714612528492544-TCRZ",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_msmes-activity-7408377995859492865-E2d2",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_pune-maharashtra-sec2024-activity-7218848729787748352-JIcS",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_small-businesses-big-power-invisible-decisions-activity-7413095094205194240-7bUS",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_sustainability-industry-startups-activity-6589071083020873728-OiEh",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_the-hindu-business-line-today-published-my-activity-6738398816455688192-mKoT",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_trade-investments-internationaltrade-activity-6922920255652605952-twgi",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_unlocking-opportunities-for-smes-with-ondc-activity-7072475488039968768-iq5n",
+            "https://www.linkedin.com/posts/prashant-girbane-245840_we-know-that-requirement-gathering-is-of-activity-7032917415092961280-vNla",
+            "https://www.linkedin.com/posts/puneinternationalcentre_episode-1-exploring-us-india-relations-activity-7287868447101755394-NpTy",
+            "https://www.linkedin.com/posts/puneinternationalcentre_kargilvijaydiwas-puneinternationalcentre-activity-7487021069078474752-6Oxt",
+            "https://www.linkedin.com/posts/puneinternationalcentre_puneinternationalcentre-activity-7459604054109995008-W9f6",
+            "https://www.linkedin.com/posts/sudhir-bhandurga-38498526_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-19-sidhakala-activity-7175072336184807426-IUvO",
+            "https://www.linkedin.com/posts/tatyasaheb-phadtare-4345a021_startupecosystem-innovation-msins-activity-7415735833418506240-Pqbb",
+            "https://www.linkedin.com/posts/tedxpune_tedxpune-prashantgirbane-sketchnoting-activity-7463963345486848000-MMBt",
+            "https://www.linkedin.com/posts/tedxpune_tedxpune-tedx-ted-activity-7351105826708668416-oxPO",
+            "https://www.linkedin.com/posts/usibc_usibcgreatstates-maharashtra-pune-activity-7485616997171482624-BGaY",
+            "https://www.linkedin.com/posts/vivek-sinare-125a9112_thank-you-mahratta-chamber-of-commerce-activity-7333708571446013953-E0Zm",
+            "https://www.mcciapune.com/mcciaadmin/executive-board/",
+            "https://www.mcciapune.com/mcciaadmin/team_tab/",
+            "https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-women-led-enterprises-receive-major-boost-with-mccia-helpline-23605479",
+            "https://www.moneycontrol.com/news/opinion/wanted-a-joint-secretary-for-digital-drive-at-the-ministry-of-msme-7007281.html",
+            "https://www.mypunepulse.com/third-edition-of-defence-manufacturer-directory-held-at-southern-command-hq-pune/",
+            "https://www.punekarnews.in/pune-mccia-unveils-3rd-edition-of-defence-manufacturer-directory-for-aatm-nirbhar-bharat/",
+            "https://www.thebridgechronicle.com/news/dalai-lama-advocates-collective-global-morality-at-pic-campus-inauguration",
+            "https://www.thebridgechronicle.com/news/maharashtra/maharashtra-leads-msme-registrations-in-country-on-new-udyam-portal",
+            "https://www.thebridgechronicle.com/news/pune-def-spacetech-2024-mccia-organizes-defense-and-space-technology-event",
+            "https://www.thebridgechronicle.com/topic/prashant-girbane",
+            "https://www.thecompanycheck.com/people-profile/prashant-dagdu-girbane/05271979",
+            "https://www.timesnownews.com/mirror-now/indian-economy-is-far-better-than-other-countries-mccia-director-general-prashant-girbane-article-94917686",
+            "https://www.usnews.net/news/278593274/also-impacting-american-companies-they-wouldve-huge-issues-mccia-dg-prashant-girbane-on-h1b-visa-fee-hike",
+            "https://www.youtube.com/shorts/ZsqqkbPStLM",
+            "https://zamantika.com/profile/Girbane"
+          ]
+        },
+        {
+          "name": "Summary",
+          "rows": 57,
+          "cols": 2,
+          "preview": [
+            [
+              "PRASHANT GIRBANE - COMPREHENSIVE SOURCE DOCUMENTATION",
+              null
+            ],
+            [
+              "Generated on: 2026-08-25 05:09:10",
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              "TOTAL SOURCES DOCUMENTED",
+              "80"
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              "YEAR-WISE BREAKDOWN",
+              null
+            ],
+            [
+              "2019",
+              "2 sources"
+            ],
+            [
+              "2020",
+              "5 sources"
+            ]
+          ],
+          "urls": []
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\Aarushi Gupta\\Downloads\\Mccia Media.xlsx",
+      "sheets": [
+        {
+          "name": "Publications",
+          "rows": 38,
+          "cols": 5,
+          "preview": [
+            [
+              "Date",
+              "Report Name",
+              "Status",
+              "Dissemination",
+              null
+            ],
+            [
+              null,
+              "MSME Helpline Brochure_English",
+              "Yes",
+              "Yes",
+              null
+            ],
+            [
+              null,
+              "MSME Helpline Brochure_Marathi",
+              "Yes",
+              "Yes",
+              null
+            ],
+            [
+              null,
+              "CBP Report",
+              "Yes",
+              "Yes",
+              null
+            ],
+            [
+              null,
+              "Skill Training Report",
+              "Yes",
+              "Yes",
+              null
+            ],
+            [
+              null,
+              "MCCIA_Pune GCC_Report (Incl. Coverage)",
+              "Yes",
+              "Yes",
+              null
+            ],
+            [
+              null,
+              "MCCIA Annual Awards 2025_Profile_English",
+              "Yes",
+              "Yes",
+              null
+            ],
+            [
+              null,
+              "MCCIA Annual Awards 2025_Profile_Marathi",
+              "Yes",
+              "Yes",
+              null
+            ]
+          ],
+          "urls": []
+        },
+        {
+          "name": "News",
+          "rows": 45,
+          "cols": 7,
+          "preview": [
+            [
+              "Date",
+              "Type",
+              "News Headline",
+              "Publication",
+              "Page",
+              "Language",
+              "DG Quote"
+            ],
+            [
+              "2026-04-06 00:00:00",
+              "News Article",
+              "स्वतंत्र आयुक्तालय देणार `एमएसएमई'ला बळ",
+              "Sakal",
+              "5.0",
+              "Marathi",
+              "काही राज्यांत एमएसएमईसाठी स्वतंत्र आयुक्तालय आहे. त्यामुळे महाराष्ट्रातही एमएसएमईसाठी वेगळे आयुक्त असावेत, अशी मागणी आम्ही राज्य सरकारकडे केली होती. स्वतंत्र आयुक्तालय होणार ही आनंदाची बाब आहे. मात्र, त्याबाबतची माहिती व आयुक्तालयाची जबाबदारी काय असणार, हे सरकारने लवकर जाहीर करावे. राज्यात सर्वाधिक "
+            ],
+            [
+              "2026-04-07 00:00:00",
+              "News Article",
+              "राज्यातील उधोगांना समान सवलत",
+              "Sakal",
+              "4.0",
+              "Marathi",
+              "NA"
+            ],
+            [
+              "2026-04-27 00:00:00",
+              "News Article",
+              "एमएसएमई' मदतवाहिनी फायद्याची",
+              "Maharashtra Times",
+              "4.0",
+              "Marathi",
+              "एमएसएमई मदतवाहिनी' हा उपक्रम केवळ सल्ला देणारा मंच नसून, तो लघु उद्योगांसाठी मार्गदर्शक आणि विकासाचा आधारस्तंभ ठरत आहे. उद्योजकांना योग्य वेळी योग्य मार्गदर्शन मिळाल्यास महाराष्ट्रच नव्हे; तर भारताची अर्थव्यवस्था अधिक मजबूत आणि आत्मनिर्भर होऊ शकते."
+            ],
+            [
+              "2026-04-30 00:00:00",
+              "Press Release",
+              "MCCIA AI Hackathon 2026",
+              null,
+              null,
+              null,
+              "Not published (to be re shared next week)"
+            ],
+            [
+              null,
+              "MSME case studies",
+              "Proposed news article- impact led 36 districts overview",
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              "Divnl. Comm visit proposed- press note for discussions",
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              "Tourism Policy",
+              "ERU",
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "urls": []
+        },
+        {
+          "name": "Sampada",
+          "rows": 13,
+          "cols": 6,
+          "preview": [
+            [
+              "Month",
+              "Theme",
+              "Status",
+              "Posting ",
+              null,
+              null
+            ],
+            [
+              "April",
+              "Agri & Food Processing",
+              "Done",
+              "29th April",
+              null,
+              null
+            ],
+            [
+              "May",
+              "Higher Education & Skilling",
+              "Done",
+              "2nd June",
+              null,
+              null
+            ],
+            [
+              "June",
+              "GCC",
+              "Done",
+              "4th July",
+              null,
+              null
+            ],
+            [
+              "July",
+              "HR ",
+              "Design",
+              "31st July",
+              null,
+              null
+            ],
+            [
+              "August",
+              "Food Safety",
+              "Content generation",
+              null,
+              null,
+              null
+            ],
+            [
+              "September",
+              "Chemical / Pharma ",
+              "to be discussed",
+              null,
+              null,
+              "Defense"
+            ],
+            [
+              "October",
+              "Diwali",
+              "Planned",
+              null,
+              null,
+              "MSME"
+            ]
+          ],
+          "urls": []
+        },
+        {
+          "name": "Annual Report",
+          "rows": 2,
+          "cols": 3,
+          "preview": [
+            [
+              "Draft designed and ready",
+              null,
+              "15th July 2025"
+            ],
+            [
+              "Current Status",
+              null,
+              "Gunjan Proofreading"
+            ]
+          ],
+          "urls": []
+        },
+        {
+          "name": "Representations",
+          "rows": 6,
+          "cols": 7,
+          "preview": [
+            [
+              "Date",
+              "Subject",
+              "Dept.",
+              "To Whom",
+              "Designation",
+              "Status",
+              "Update"
+            ],
+            [
+              "2026-04-07 00:00:00",
+              "Request for Creation of a Centralised Document Receipt System at State GST Office, Pune",
+              "GST",
+              "Sanjali Dias",
+              "Jt. Commissioner - Appeals",
+              "Sent",
+              null
+            ],
+            [
+              "2026-04-08 00:00:00",
+              "MCCIA Request to Educate Prospective MSME Sellers about Fake Websites Relating to GeM",
+              "GeM",
+              "Mihir Kumar",
+              "CEO",
+              "Sent",
+              null
+            ],
+            [
+              "2026-04-30 00:00:00",
+              "Submission about Grid Support Charges, use of renewable energy generated during Solar Hours and other measures introduced through MERC Order dated 25th March 2026 about Case no. 75/2025 for Multi Year Tariff Revision by MSEDCL",
+              "GoM",
+              "Devendra Fadnavis",
+              "Chief Minister",
+              "Sent",
+              null
+            ],
+            [
+              "2026-06-29 00:00:00",
+              "Representation to the Government of Maharashtra on Establishment of MSME Commissionerate in Pune",
+              "GOM",
+              "Devendra Fadnavis",
+              "Chief Minister",
+              "Sent",
+              null
+            ],
+            [
+              "2026-06-18 00:00:00",
+              "Representation for inclusion of Pune Tooling Hub  Project in \nMaharashtra State’s Projects under \nBHAVYA Scheme of Government of India",
+              "MIDC",
+              "Shri Deependra Singh Kushwah(IAS)",
+              "CEO",
+              "Sent",
+              null
+            ]
+          ],
+          "urls": []
+        },
+        {
+          "name": "Sheet1",
+          "rows": 10,
+          "cols": 17,
+          "preview": [
+            [
+              "Project",
+              "MSME Helpline Brochure_English",
+              "MSME Helpline Brochure_Marathi",
+              "CBP Report",
+              "Skill Training Report",
+              "MCCIA_Pune GCC_Report (Incl. Coverage)",
+              "MCCIA Annual Awards 2025_Profile_English",
+              "MCCIA Annual Awards 2025_Profile_Marathi",
+              "AI FAQs",
+              "SEC 2025 Report",
+              "MSME FAQs_English",
+              "MSME FAQs_Marathi",
+              "Incubation Report",
+              "AI Inspiration Report (100 Champions)",
+              "Niryatgatha Coffee Table Book",
+              "MCCIA Annual Report 2024-25",
+              "CSR Impact Report 2026"
+            ],
+            [
+              null,
+              "MIDC",
+              "MIDC",
+              "Dr. Chandrakant Sulochana Laxmanrao Pulkundwar, (IAS) , Divisional Commissioner, Pune Division, Pune.",
+              "Jt. Director DIC",
+              null,
+              "MD, MSSIDC",
+              "MD, MSSIDC",
+              "MSSIDC",
+              null,
+              "MIDC",
+              "MIDC",
+              "MIDC",
+              null,
+              null,
+              "MIDC",
+              null
+            ],
+            [
+              null,
+              "Pune Government",
+              "Pune Government",
+              "Sadashiv Survase, Jt. Director , Industries Department, GOM",
+              "GM, DIC",
+              null,
+              null,
+              null,
+              null,
+              null,
+              "MSSIDC",
+              "MSSIDC",
+              "MSSIDC",
+              null,
+              null,
+              "Pune Govt",
+              null
+            ],
+            [
+              null,
+              "Central Governemnt",
+              "BOD",
+              "Collector, Pune",
+              "Skill Training Centers",
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Pune Govt",
+              "Pune Govt",
+              "Pune Govt",
+              null,
+              null,
+              "Central Govt",
+              null
+            ],
+            [
+              null,
+              "BOD",
+              "COPP",
+              "Municipal Corporation PMC",
+              "Manisha Verma, Additional Chief Secretary at GOM",
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Central Govt Officials",
+              "Central Govt Officials",
+              "Shrikant Patil, CEO MSiNS",
+              null,
+              null,
+              "BOD",
+              null
+            ],
+            [
+              null,
+              "COPP",
+              "EC",
+              "Municipal Corporation PcMC",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "CEO-PMRDA",
+              "CEO-PMRDA",
+              "Manisha Verma, Additional Chief Secretary, MSInS at GOM",
+              null,
+              null,
+              "EC",
+              null
+            ],
+            [
+              null,
+              "EC",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "COPP",
+              "COPP",
+              "Incubation Centers",
+              null,
+              null,
+              "COPP",
+              null
+            ],
+            [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "BOD",
+              "BOD",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "urls": []
+        }
+      ]
+    }
+  ],
+  "pdf": {
+    "path": "C:\\Users\\Aarushi Gupta\\Downloads\\1787633727991-MCCIA_Comprehensive_Media_Report_2018_2026.pdf",
+    "pages": 24,
+    "chars": 33459,
+    "urls": [
+      "https://agrospectrumindia.com",
+      "https://archive.jcci.or",
+      "https://economictimes.indiatimes.com",
+      "https://eoibelgrade.gov.in",
+      "https://indianexpress.com",
+      "https://maharashtratimes.com",
+      "https://marathi.abplive.com",
+      "https://puneinternationalcentre.org",
+      "https://punekarnews.in",
+      "https://sudhirmehta.in/",
+      "https://swarajyamag.com",
+      "https://timesofindia.indiatimes.com",
+      "https://www.cnbctv18.com",
+      "https://www.esakal.com",
+      "https://www.facebook.com/PuneMCCIA/",
+      "https://www.financialexpress.com",
+      "https://www.hindustantimes.com",
+      "https://www.indianembassyqatar",
+      "https://www.kpit.com",
+      "https://www.linkedin.com/company/mcciapune",
+      "https://www.linkedin.com/in/dr-sudhir-mehta-79a2839",
+      "https://www.linkedin.com/in/prashant-girbane-245840",
+      "https://www.linkedin.com/posts/aispectrumindia",
+      "https://www.linkedin.com/posts/anamika-kumari-38499a201",
+      "https://www.linkedin.com/posts/bharatagarwal",
+      "https://www.linkedin.com/posts/dinanathkholkar",
+      "https://www.linkedin.com/posts/dr-sudhir-mehta-79a2839",
+      "https://www.linkedin.com/posts/easebuzz",
+      "https://www.linkedin.com/posts/ganeshmate",
+      "https://www.linkedin.com/posts/mcciapune",
+      "https://www.linkedin.com/posts/nisha-jadhav-15801723b",
+      "https://www.linkedin.com/posts/prashant-jogalekar-7427326",
+      "https://www.linkedin.com/posts/ziyaahmad",
+      "https://www.livemint.com",
+      "https://www.lokmat.com",
+      "https://www.loksatta.com",
+      "https://www.mcciapune.com",
+      "https://www.mcciapune.com/awards/",
+      "https://www.mcciapune.com/events/events-landing-page/",
+      "https://www.mcciapune.com/initiatives/ai-studio/",
+      "https://www.mcciapune.com/initiatives/cewe/",
+      "https://www.mcciapune.com/initiatives/electronic-cluster/",
+      "https://www.mcciapune.com/initiatives/msme/",
+      "https://www.mcciapune.com/initiatives/pibs/",
+      "https://www.mcciapune.com/initiatives/ppcr/",
+      "https://www.mcciapune.com/mcciaadmin/executive-board/",
+      "https://www.mcciapune.com/mcciaadmin/past_presidents_tab/",
+      "https://www.mcciapune.com/mcciaadmin/team_tab/",
+      "https://www.mcciapune.com/publications/publication-annual-report/",
+      "https://www.mid-day.com",
+      "https://www.mypunepulse.com",
+      "https://www.newindianexpress.com",
+      "https://www.pib.gov.in",
+      "https://www.punemirror",
+      "https://www.thebridgechronicle.com",
+      "https://www.thehindubusinessline.com",
+      "https://www.youtube.com/playlist?list=",
+      "https://www.youtube.com/watch?v=UCwBcXsyfi8",
+      "https://zeenews.india.com/marathi"
+    ],
+    "page_previews": [
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 1\nMCCIA Comprehensive Media Intelligence Report (2018–2026)\nPrepared for: Aarushi Gupta\nDate: August 2025\nCoverage Period: January 2018 – August 2026\nScope: News articles, press releases, videos, images, social media posts, PDF publications, govern-\nment representations, and every traceable digital reference to MCCIA, its leadership (Presidents,\nDirector General), events, and initiatives across all identified channels.\nTable of Contents\n1. MCCIA at a Glance\n2. Leadership Timeline (2018–2026)\n3. Year-by-Year Media Chronicle\n4. News Articles by Publication / Channel\n5. Social Media & Digital Presence\n6. Videos & Broadcast Coverage\n7. PDF Publications & Reports\n8. Awards & Events\n9. Government Representations & Advocacy\n10. Images & Photo Galleries\n11. Source Index\n1. MCCIA at a Glance\nAttribute Detail\nFull Name Mahratta Chamber of Commerce, Industries\nand Agriculture\nFounded 1934 (pre-Independence)\nHeadquarters 5th Floor , MCCIA Trade Tower , 403-A Senapati\nBapat Road, Pune 411016\nMembers ~3,000 across 17 industry sectors\nCurrent President Mr . Sanjay Kirloskar (2024–present)\nCurrent Vice Presidents Dr . Arvind Goel (President",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 2\nPeriod President Director General Key Notes\n2016–2018 Shri Pramod\nChaudhari\nAnant Sardeshmukh —\n2018–2020 Shri Pradeep\nBhargava\nAnant Sardeshmukh Budget viewing\nsessions, innovation\nawards\n2020–2022 Dr . Sudhir Mehta Prashant Girbane COVID-19 PPCR\nlaunched; CII\nWestern Region past\nchairman\n2022–2024 Shri Deepak\nKarandikar\nPrashant Girbane Agri-tech initiative\nwith Ajinkya Rahane\n2024–present Mr . Sanjay Kirloskar Prashant Girbane President Elect:\nDr . Arvind Goel\n(announced Aug\n2026)\nDG Prashant Girbane Profile: - MBA, IIM Ahmedabad - 15+ years experience; worked with UN\norganisations, Commonwealth Secretariat, TCS London - General Secretary & Trustee, Pune Inter-\nnational Centre - Frequent speaker at national forums (Digital Excellence Awards 2026, Easebuzz\nevents, AI Spectrum India) - Active on LinkedIn with 9,500+ followers\n3. Year-by-Year Media Chronicle\n2018\nDate Type Headline / Event Source\nMar 10 News Maharashtra Budget\n2018-2019: Industry\ncaptains see poll hue\nin rural spends —\nMCCIA organised live\ntelecast\nHindustan Times\nApr 10 News MCCIA, Jnana\nPrabhodhini to\n‘Beam’ tricks, tips for\nentrepreneurial\nsuccess —\npsy",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 3\nDate Type Headline / Event Source\nSep 6 Event MCCIA Annual\nInnovation &\nEntrepreneurship\nAwards ceremony at\nTilak Smarak Mandir\nHindustan Times\n— Publication 86th Annual Report\n2017-18\nmcciapune.com\n2019\nDate Type Headline / Event Source\nFeb 2 News Pune industrialists\ndescribed the union\nbudget as balanced\nand growth-oriented\n— MCCIA budget\nviewing session\nHindustan Times\nFeb 6 News MCCIA showcase in\ncity to connect\nmanufacturing firms\nand start-ups\nTimes of India\nSep 10 News MCCIA announces\nfellowship\nprogramme for\ngraduates and\npostgraduates in\nPune\nHindustan Times\nSep 19 News Fellowship\nprogramme details —\n16 industry verticals\nHindustan Times\nDec 3 News Innovators bag\nMCCIA awards for\nentrepreneurship,\nCSR and green\ninitiatives (2019\nwinners announced)\nHindustan Times\n— Publication 86th Annual Report\n2019-20 (PDF)\nmcciapune.com\n2020\n3",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 4\nDate Type Headline / Event Source\nJan 28 News Won’t take part in\npolitical bandhs,\ndeclares\nMaharashtra’s top\nchamber of\ncommerce (MCCIA\nresolution)\nThe New Indian\nExpress\nMar 1 Video Nitin Gadkari\naddressing MCCIA’s\n2nd Pune\nInternational\nBusiness Summit\n(YouTube, 24:55)\nYouTube / Nitin\nGadkari\nMar 22 Social Sudhir Mehta\nLinkedIn post: Pune\nPlatform for Covid\nResponse launched,\nraised ₹5 crores,\nordered 25\nventilators\nLinkedIn\nApr 28 PDF Pune Platform for\nCOVID-19 Response\nprogress report —\n300 ventilators, 130\nHFNO, 50,000 PPE\nkits\nmcciapune.com\nSep 25 Social MCCIA LinkedIn:\nWelcome Sudhir\nMehta as new\nPresident\nLinkedIn\nOct 1 Event Pune International\nCentre webinar —\n“Pune’s War Against\nCovid-19: Civil\nSociety Perspectives”\nwith Sudhir Mehta\npuneinternationalcentre.org\nOct 15 News ‘Covid pandemic has\nproven one can’t\nwork in silos, need\nbetter coordination’:\nSudhir Mehta\ninterview\nThe Indian Express\n— Publication MCCIA Annual\nAwards 2020 winners\nlist (PDF)\nmcciapune.com\n— Publication ER Conclave 2020\nbook — Employee\nRelations (published\nby Prashant Girbane)\nmcciapune.com\n2021\n4",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 5\nDate Type Headline / Event Source\nMar 1–2 Event 2nd Pune\nInternational\nBusiness Summit\n(digital platform for\ninternational\ndelegates)\narchive.jcci.or .jp\nJul 1 News Pune: About 23% of\ncompanies reach\npre-Covid level\nproduction, says\nMCCIA survey\nThe Hindu\nBusinessLine\nMay 7 News ‘Pune model’ of\ncollaboration among\nall Covid\nstakeholders is going\npan-India — PPCR\nbed capacity up 60%\nFinancial Express\nMay 31 News Collaboration is key,\nPune model for\nCovid-19 response\nshows how\nTimes of India\n— Publication 87th Annual Report\n2020-21\nmcciapune.com\n— PDF Mission Vayu by\nPPCR — 12 oxygen\ngenerator plants\nmcciapune.com\n2022\nDate Type Headline / Event Source\nJan 12 News Lockdowns to result\nin economic\nhardships: MCCIA\npresident Sudhir\nMehta\nThe Indian Express\nMar 1–6 Event Women\nentrepreneurs\nexhibition at Acharya\nAtre Sabhagruha,\nBajirao Road\nPune Pulse\nJun 11 News Maharashtra govt to\nset up electronic park\nin Ranjangaon\nindustrial area —\nSubhash Desai\ninaugurated MCCIA\nElectronic Cluster\nFoundation\nThe Indian Express\n5",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 6\nDate Type Headline / Event Source\nJun 12 News MCCIA Electronics\nCluster Foundation\ninaugurated in Pune\n— testing,\ncertification,\ncalibration facilities\nHindustan Times\nJun 12 News Minister Subhash\nDesai unveils\nelectronics testing\nfacility in Bhosari\nTimes of India\nSep 25 News Pune Region Can\nBecome Fastest\nGrowing Urban\nRegion In India:\nMCCIA President\nSudhir Mehta —\nDevendra Fadnavis\nchief guest\nPunekar News\nNov 8 News / Social MCCIA launches\ninitiative to support\nAgri-tech start-ups —\nAjinkya Rahane chief\nguest\nAgro Spectrum India /\nLinkedIn\n— Publication 88th Annual Report\n2021-22 (PDF)\nmcciapune.com\n— Event MCCIA Annual\nAwards 2022\nceremony\nLinkedIn\n2023\nDate Type Headline / Event Source\nJan 5 Social Congratulations to\nwinners of MCCIA’s\n75th Annual\nIndustrial Awards\nLinkedIn\nFeb 14–15 Event Pune International\nBusiness Summit\n2022 (held at JW\nMarriott)\nmcciapune.com\n— Publication 89th Annual Report\n2022-23\nmcciapune.com\n— Publication MCCIA Awards\nWinners & Jury\nMembers 2024 (PDF)\nmcciapune.com\n2024\n6",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 7\nDate Type Headline / Event Source\nFeb 26–27 Event Pune International\nBusiness Summit\n2024 — “Powering\nInnovation,\nUnleashing Global\nPotential” — 12\ncountries, 398\nparticipants, 56\nspeakers\nmcciapune.com /\neoibelgrade.gov.in\nMay 31 Social Round Table on\nMaharashtra\nIndustrial Policy —\nMCCIA LinkedIn post\nLinkedIn\nSep 28 Social Deepak Karandikar\nconcludes tenure as\nPresident; Sanjay\nKirloskar takes over\nLinkedIn\nDec 11 News Monthly growth\ntracking survey by\nindustry body — 37%\ncompanies projecting\n20%+ revenue\ngrowth\nHindustan Times\n— Publication 90th Annual Report\n2023-24 (PDF)\nmcciapune.com\n— Publication MSME Facilitation\nReport 2023-24 —\n“Empowering\nEnterprises”\nmcciapune.com\n— Publication RAMP Initiative\nReport — MSME\nEmpowerment in\nMaharashtra\nmcciapune.com\n— Publication Avantis Report —\nEase of Doing\nBusiness in\nMaharashtra\nmcciapune.com\n— Publication MCCIA Handbook on\nCybersecurity\nInitiative (May 2024\nblog)\nmcciapune.com\n2025\nDate Type Headline / Event Source\nJan 5 Social MCCIA LinkedIn:\nPune International\nBusiness Summit\n2026 (7th Edition)\nearly bird open\nLinkedIn\n7",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 8\nDate Type Headline / Event Source\nFeb 12 Social MCCIA Annual\nAwards 2025 — 13\nbusinesses\nrecognized across 9\ncategories at JW\nMarriott\nLinkedIn\nFeb 20 News MCCIA to host\nInternational\nBusiness Summit\n2025 on Feb 24-25\nTimes of India\nFeb 24–25 Event Pune International\nBusiness Summit\n2025 — JW Marriott,\n25+ countries\nmcciapune.com\nFeb 28 Social Ziya Ahmad (MCCIA\nData Analyst)\nLinkedIn post on\nPIBS 2025 experience\nLinkedIn\nMar 4 News MCCIA Annual\nAwards: Top\nEntrepreneurs and\nBusinesses\nRecognized —\nPratham\nTechnologies, Futura\nApsol, Gurudatta CNC\nThe Bridge Chronicle\nApr 2 Social Bharat Agarwal\n(Vishwakarma\nUniversity) — MCCIA\nEdu Fest 2025\norganising\nLinkedIn\nApr 18 Event MCCIA Edu-Fest 2025\n— Bajaj Gallery,\nMCCIA Trade Tower\nmcciapune.com\nJun 4 Social Nisha Jadhav —\nCertificate Course in\nForeign Trade launch\n(14 Jun–13 Sep 2025)\nLinkedIn\nJun 26 Event MCCIA’s Executive AI\nWorkshop: AI\nReadiness &\nRoadmap for\nBusiness Leaders\nmcciapune.com\nJun 26 Event Effective Use of\nGovernment\ne-Marketplace (GeM)\nfor MSMEs — Online\nWebinar\nmcciapune.com\nJul 15 Internal Annual Report\n2024-25 draft\ndesigned and ready;\nGunjan proofreading\n",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 9\nDate Type Headline / Event Source\nNov 28 News MCCIA helpline and\nAI lab enable MSMEs\nto grow their\nbusinesses — 2,500\nMSMEs guided\nTimes of India\nNov 29 News Maharashtra: MCCIA\nhelpline supports\n2,500 MSMEs,\nincluding 400 women\nentrepreneurs\nMid-Day\nNov 29 News MCCIA Helpline\nAssists 2,500 MSMEs\nAcross Maharashtra\nin One Year — 55\nexperts, AI studio for\n350 MSMEs\nPunekar News\nNov 29 News MCCIA Helpline and\nAI Lab Help 2,500+\nMSMEs Grow Across\nMaharashtra\nPune Mirror\n— Publication MCCIA Annual\nAwards 2025 Profile\n(English & Marathi)\nmcciapune.com\n— Publication AI Inspiration Report\n— “Empowering\nMSMEs with AI:\nExperiences from 100\nChampions”\nmcciapune.com\n— Publication From Inception To\nDigital — MCCIA’s\nJourney to\nModernising\nBusinesses\nmcciapune.com\n— Publication Niryatgatha Coffee\nTable Book\nmcciapune.com\n— Publication SEC 2025 Report mcciapune.com\n— Publication CSR Impact Report\n2026\nmcciapune.com\n— Publication MSME Helpline 100\nCase Studies 2.0\nmcciapune.com\n— Publication FAQ Series 2 Helpline\nReport (English &\nMarathi)\nmcciapune.com\n— Publication MCCIA Government\nSchemes Handbook\n(Revised Mar 2026)\nmcciapune.com\n2026\n",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 10\nDate Type Headline / Event Source\nJan 5 Social PIBS 2026 7th Edition\nearly bird\nregistrations open\nLinkedIn\nJan 15 Social Prashant Girbane\nunveils strategic\ninsights on urban\nlocal bodies,\nwomen-led\nenterprises\nLinkedIn\nFeb 1 Social Union Budget 2026\nreaction — Prashant\nGirbane calls it\n“stable and\nreassuring”\nAI Spectrum India /\nLinkedIn\nFeb 6 News MCCIA to host 7th\ninternational\nbusiness summit in\nPune — 32 countries,\n60+ international\ndelegates\nTimes of India\nFeb 9–10 Event Pune International\nBusiness Summit\n2026 (7th Edition) —\nJW Marriott\nmcciapune.com\nFeb 12 Social MCCIA LinkedIn:\nSakal Media coverage\nof PIBS 2026 — P .\nVelrasu, IAS (CEO\nMIDC) address\nLinkedIn\nMar 24 Social Leena Khandekar\ntestimonial — MCCIA\nCEWE support for 16\nyears\nLinkedIn\nApr 6 News ￿￿￿￿￿￿￿￿\n￿￿￿￿￿￿￿￿￿ ￿￿￿￿￿\n‘￿￿￿￿￿￿￿’￿￿ ￿￿ — DG\nPrashant Girbane\nquote on MSME\nCommissionerate\nSakal (Page 5)\nApr 7 News ￿￿￿￿￿￿￿￿￿\n￿￿￿￿￿￿￿￿ ￿￿￿￿ ￿￿￿￿\n— Sakal (Page 4)\nSakal\nApr 7 Letter Representation:\nRequest for Creation\nof Centralised\nDocument Receipt\nSystem at State GST\nOffice, Pune\nMccia Media.xlsx\n10",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 11\nDate Type Headline / Event Source\nApr 8 Letter Representation:\nMCCIA Request to\nEducate Prospective\nMSME Sellers about\nFake Websites\nRelating to GeM\nMccia Media.xlsx\nApr 27 News ‘￿￿￿￿￿￿￿’ ￿￿￿￿￿￿￿￿￿\n￿￿￿￿￿￿￿￿￿ —\nMaharashtra Times\n(Page 4)\nMaharashtra Times\nApr 30 Event MCCIA AI Hackathon\n2026 — 20 teams, 6\nproblems, 1 day\nmcciapune.com /\nLinkedIn\nApr 30 Letter Representation:\nSubmission about\nGrid Support Charges,\nMERC Order dated 25\nMarch 2026 to CM\nDevendra Fadnavis\nMccia Media.xlsx\nMay 4 Social MCCIA AI Hackathon\nresults — Winner:\nTeam HoneyBadger;\nRunner-up: Team\nBallers & Team\nKnight Coders\nLinkedIn\nMay 8 News Ravi Pandit, KPIT\nco-founder , passes\naway at 75/76 —\nformer MCCIA\nPresident (2004-2006)\nTimes of India /\nIndian Express / The\nHindu BusinessLine /\nEconomic Times /\nMint / CNBC TV18 /\nFinancial Express /\nSwarajya\nMay 9 News Ravi Pandit obituary\ncoverage continues\nacross national\nmedia\nMultiple\nJun 18 Letter Representation:\nInclusion of Pune\nTooling Hub Project\nin Maharashtra\nState’s Projects under\nBHAVYA Scheme\nMccia Media.xlsx\nJun 29 Letter Representation:\nEstablishment of\nMSME\nCommissionerate in\nPune to CM Deve",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 12\nDate Type Headline / Event Source\nAug 6 Social Prashant Girbane &\nJitendra Divgi\nperspective on Pune\nindustry, engineering\nexports, AI adoption\nLinkedIn (Dinanath\nKholkar)\nAug 7 Social Congratulations to\nDr . Arvind Goel as\nPresident Elect of\nMCCIA\nLinkedIn (Dinanath\nKholkar)\nAug 9 Social Anamika Kumari\narticle published in\nJuly 2026 SAMPADA\nMagazine\nLinkedIn\nAug 18 Social Prashant Girbane\nannounced as\nKeynote Speaker at\nDigital Excellence\nAwards 2026\n(Easebuzz)\nLinkedIn\nSep 5 News ￿￿￿￿￿￿￿￿ ￿￿￿￿￿￿￿\n￿￿￿ ￿￿￿￿￿ ￿￿￿￿￿\n￿￿￿￿ — Kesari (Page\n1)\nKesari\nSep 5 News ￿￿￿￿￿￿￿￿’￿￿\n￿￿￿￿￿￿￿￿-￿￿￿￿￿￿￿\n￿￿. ￿￿￿ ￿￿￿￿￿ ￿￿￿￿￿\n￿￿￿￿ — Lokmat\n(Page II)\nLokmat\nSep 5 News ￿￿￿￿ ￿￿￿￿￿￿￿ ￿￿\n￿￿￿￿￿￿￿￿￿￿￿￿￿￿\n￿￿￿ — Loksatta (Page\n18(i))\nLoksatta\nSep 5 News ￿￿￿￿￿￿￿￿￿￿￿ —\nLoksatta (Page 18(ii))\n— DG Prashant\nGirbane’s tribute to\nRavi Pandit\nLoksatta\nSep 5 News ￿￿￿￿￿￿\n￿￿￿￿￿￿￿￿￿￿￿\n￿￿￿￿￿￿￿￿ ￿￿￿￿￿￿￿￿\n￿￿￿￿￿￿￿ — Loksatta\n(Page 18)\nLoksatta\nSep 5 News ￿￿￿￿￿,\n￿￿￿￿￿￿￿￿￿￿￿￿￿￿\n￿￿￿￿ ￿￿ ￿￿￿￿ ￿￿￿￿ —\nMaharashtra Times\n(Page 2)\nMaharashtra Times\nSep 5 News ￿￿￿￿￿￿￿￿￿ ￿￿￿\n￿￿￿￿￿ ￿￿￿￿￿ —\nMaharashtra Times\n(Page 1)\nMaharashtra Times\n12",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 13\nDate Type Headline / Event Source\nSep 5 News ￿￿￿￿￿￿￿￿’￿￿ ￿￿￿\n￿￿￿￿￿ ￿￿￿￿￿ ￿￿￿￿ —\nPrabhat (Page 1)\nPrabhat\nSep 5 News ￿￿￿￿￿￿￿ ￿￿￿ ￿￿￿￿￿\n￿￿￿￿￿ ￿￿￿￿ —\nPudhari (Page 7)\nPudhari\nSep 5 News ￿￿￿ ￿￿￿￿￿ ￿￿￿￿￿\n￿￿￿￿ — Sakal (Page\n1)\nSakal\nSep 5 News ￿￿￿￿￿￿￿￿￿\n￿￿￿￿￿￿￿￿￿￿ — Sakal\n(Page 4) — DG\nPrashant Girbane’s\nfull tribute\nSakal\n4. News Articles by Publication / Channel\nEnglish National / Metro Dailies\nPublication Count Notable Articles\nTimes of India 8+ PIBS 2025, PIBS 2026, Ravi\nPandit obituary, Electronics\npark Ranjangaon, MCCIA\nshowcase 2019, MCCIA\nhelpline 2025, Minister\nunveils testing facility\nBhosari\nThe Indian Express 5+ Lockdowns economic\nhardships (2022), COVID\ncoordination Sudhir Mehta\n(2020), Ravi Pandit obituary,\nElectronic park Ranjangaon,\nMaharashtra govt electronic\npark\nHindustan Times 7+ Budget 2019, Innovation\nawards 2018, MECF\ninaugurated 2022, Monthly\ngrowth survey 2024,\nFellowship programme 2019,\nBeam Test 2018, Budget 2018\nThe Hindu BusinessLine 3+ Pre-Covid production survey\n2021, Electronics cluster 2022,\nRavi Pandit obituary 2026\nFinancial Express 2+ Pune model COVID\ncollaboration 2021, Ravi\nPandit obituary ",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 14\nPublication Count Notable Articles\nMid-Day 1 MCCIA helpline supports\n2,500 MSMEs (Nov 2025)\nMint 1 Ravi Pandit obituary 2026\nCNBC TV18 1 Ravi Pandit obituary 2026\nThe New Indian Express 1 No political bandhs\nresolution (Jan 2020)\nThe Bridge Chronicle 1 MCCIA Annual Awards 2024\n(Mar 2025)\nPunekar News 2 Pune fastest growing region\n(2022), MSME helpline 2025\nPune Pulse 1 Women entrepreneurs\nexhibition (2022)\nPune Mirror 1 MCCIA Helpline & AI Lab\n(2025)\nAgro Spectrum India 1 Agri-tech start-ups initiative\n(2022)\nMarathi Regional Dailies\nPublication Count Notable Articles\nSakal 4+ MSME Commissionerate (Apr\n2026), Equal industry sops\n(Apr 2026), Ravi Pandit\nobituary (Sep 2026), DG\nGirbane tribute (Sep 2026)\nLokmat 1+ Ravi Pandit obituary (Sep\n2026)\nLoksatta 3+ Ravi Pandit obituary series\n(Sep 2026) — includes DG\nGirbane tribute\nMaharashtra Times 2+ MSME helpline benefit (Apr\n2026), Ravi Pandit obituary\n(Sep 2026)\nKesari 1 Ravi Pandit obituary (Sep\n2026)\nPrabhat 1 Ravi Pandit obituary (Sep\n2026)\nPudhari 1 Ravi Pandit obituary (Sep\n2026)\nTV / Video News Channels\nChannel Content Source\nYouTube / Nitin Gadkari Addressing MCCIA’s 2",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 15\nChannel Content Source\nABP Majha General Marathi news\nchannel — MCCIA events\noccasionally covered in Pune\nbulletins\nmarathi.abplive.com\nZee 24 Taas General Marathi news\nchannel — Pune coverage\nzeenews.india.com/marathi\nTV9 Marathi General Marathi news\nchannel\ntv9marathi.com\nTimes Now English national news —\noccasional Pune industry\ncoverage\ntimesnow.in\n5. Social Media & Digital Presence\nLinkedIn (Primary Active Channel)\n• Company Page: https://www.linkedin.com/company/mcciapune\n• Followers: 19,380+ (as of 2024)\n• Employees: 90-100 (+20% YoY)\n• Active Posting: Regular updates on events, awards, PIBS, AI initiatives, government represen-\ntations\nNotable LinkedIn Posts (2018–2026):\nDate Author / Page Content\n2020-09-25 MCCIA Welcome Sudhir Mehta as\nNew President\n2020-09-27 Prashant Jogalekar Welcome Sudhir Mehta as\nPresident (with photo)\n2020-03-22 Dr . Sudhir Mehta Pune Platform for Covid\nResponse launch — raised ₹5\ncrores\n2022-11-08 MCCIA Agri-tech start-ups initiative\nwith Ajinkya Rahane\n2023-01-05 MCCIA 75th Annual Industrial\nAwards winners\ncongratulations\n2024-05-31 MCCIA Round Table on Maharashtra\nIndustrial Policy\n202",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 16\nDate Author / Page Content\n2026-01-05 MCCIA PIBS 2026 7th Edition early\nbird\n2026-01-15 MCCIA Prashant Girbane on urban\nlocal bodies & women-led\nenterprises\n2026-02-01 AI Spectrum India Prashant Girbane on Union\nBudget 2026\n2026-02-12 MCCIA MCCIA Annual Awards 2025\nceremony at JW Marriott\n2026-02-12 MCCIA Sakal coverage of PIBS 2026\n2026-04-15 MCCIA AI Hackathon 2026\nregistration open\n2026-04-20 MCCIA AI Hackathon — solve real\nMSME problems\n2026-04-22 MCCIA AI Hackathon — 20 teams, 6\nproblems, 1 day\n2026-04-24 MCCIA AI Hackathon — Build. Break.\nInnovate.\n2026-05-01 OMKAR GADEKAR Team HoneyBadger wins\nMCCIA AI Hackathon 2026\n2026-05-01 Atul Gupta Winners of inaugural MCCIA\nAI Hackathon\n2026-05-04 MCCIA AI Hackathon results —\nWinner & Runner-ups\n2026-08-06 Dinanath Kholkar Prashant Girbane & Jitendra\nDivgi on Pune industry, AI\nadoption\n2026-08-07 Dinanath Kholkar Congratulations Dr . Arvind\nGoel as President Elect\n2026-08-09 Anamika Kumari Article in SAMPADA\nMagazine July 2026\n2026-08-18 Easebuzz Prashant Girbane keynote at\nDigital Excellence Awards\n2026\nFacebook\n• Page: https://www.facebook.com/PuneMCCIA/\n• Status: Active ",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 17\n6. Videos & Broadcast Coverage\nTitle /\nDescription Platform Date Length Views Link\nAddressing\nMCCIA’s 2nd\nPune\nInternational\nBusiness\nSummit\nYouTube\n(Nitin\nGadkari)\nMar 2021 24:55 3.6K youtube.com/watch?v=UCwBcXsyfi8\nMCCIA\nSustainability\nDesk —\nMember\ntestimonials\n(multiple)\nMCCIA\nWebsite\nOngoing — — mcciapune.com/mcciaadmin/sustainability-\ndesk-our-\nmembers-\nsay/\nMCCIA AI\nHackathon\n2026 — Event\ncoverage\nLinkedIn /\nMCCIA\nApr 2026 — — Multiple\nLinkedIn\nposts\nPIBS 2026 —\nFireside\nchats, panel\ndiscussions\nEvent\nrecordings\nFeb 2026 — — Internal\nevent footage\nMCCIA\nAnnual\nAwards\nceremonies\nEvent\nrecordings\nAnnual — — JW Marriott\nevent footage\n7. PDF Publications & Reports\nTitle Year Type URL\n86th Annual Report\n2019-20\n2020 Annual Report mcciapune.com/media/Publication/Publication_File/MCCIA-\nANNUAL-REPORT-\n2019-20-WEB-\nVERSION_Zp6lFtm.pdf\n88th Annual Report\n2021-22\n2022 Annual Report mcciapune.com/media/Publication/Publication_File/MCCIA_Annual_Report_FY_2022_FKDOl76.pdf\n90th Annual Report\n2023-24\n2024 Annual Report mcciapune.com/media/Publication/Publication_File/MCCIA_90Annual_Report_23-\n24.pdf\nMCCIA Annual\nAwards 2020\nWinne",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 18\nTitle Year Type URL\nAward Winners and\nJury Members 2024\n2023 Awards Document mcciapune.com/media/printmedia2023/Award_Winners_and_Jury_members_2024.pdf\nPune Platform for\nCOVID-19 Response\n2021 Impact Report mcciapune.com/media/printmedia/Pune_Platform_for__COVID-\n19_Response_28.4.21.pdf\nPresentation on PPCR 2021 Presentation mcciapune.com/media/printmedia/Presentation_on_PPCR.pdf\nMission Vayu by\nPPCR\n2021 Impact Report mcciapune.com/media/printmedia/Mission_Vayu_by_Pune_Platform_for_COVID-\n19_Responses.pdf\nER Conclave 2020\nBook\n2020 Publication mcciapune.com/media/Publication/Publication_File/ER-\nBOOK-WEB-\nVERSION_N5kXHDK.pdf\nPIBS 2024 Summit\nReport\n2024 Event Report mcciapune.com/media/Publication/Publication_File/MCCIA_PBIS_MARCH_2024_Proof1_14-\n3-24_2.pdf\nPIBS Feb 2026\nBrochure\n2026 Event Brochure mcciapune.com/media/printmedia2023/PIBS_Feb_2026_01.pdf\nMSME Helpline\nCompilation of 100\nCase Studies\n2026 Case Studies mcciapune.com/media/Publication/Publication_File/MSME_Helpline_Compilation_of_100_Case_Studies_Proof_28-\n4-2026.pdf\nMSME FAQ 2.0\n(English & Marathi)\n2026 FAQ Publication mcciapune.com/media/Publication/Publi",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 19\n8. Awards & Events\nMCCIA Annual Awards (2018–2025)\nYear Venue\nKey Awardees /\nCategories Source\n2018 Tilak Smarak Mandir Innovation in\nEntrepreneurship\nAwards —\ndimensional\nmetrology, copper\ntitanium alloys,\nrobotic flagman\nHindustan Times\n2019 — Winners announced\nby Pradeep Bhargava\n& Prashant Girbane\nHindustan Times\n2020 — Winners list\npublished (PDF) —\nG.S. Parkhe, Hari\nMalini Joshi,\nRamabai Joshi\nawards\nmcciapune.com\n2022 — 75th Annual\nIndustrial Awards\nceremony\nLinkedIn\n2024 — Award Winners &\nJury Members 2024\n(PDF)\nmcciapune.com\n2025 JW Marriott Pune 13 businesses across\n9 categories —\nKonark Filters, Ujwal\nEngineering, Zeus\nNumerix, Fleetguard\nFilters, Ameya\nPrecision, Serigen\nMediproducts,\nWitchcraft\nInnovations,\nExploreiT Nextgen,\nKSB Ltd, Tech\nMahindra\nFoundation,\nCleanergy Tech,\nNichrome India\nLinkedIn /\nmcciapune.com\nAward Categories (Permanent)\n1. Late G. S. Parkhe Award — Innovation in Entrepreneurship (since 1947)\n2. Late Ramabai Joshi Award — Women Entrepreneurship\n3. Dr . R. J. Rathi Award — Green Initiatives in Maharashtra\n4. B. G. Deshmukh (IAS) Award — Corporate Social Responsibility\n5. Late Kiran Natu ",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 20\n7. Late B. G. Chitale Award — Family-Business Practices\n8. S. L. Kirloskar Award — Export Excellence\n9. KPIT Technologies Ltd. Award — Export Excellence\n10. MCCIA Award for Sustainability — Instituted by KPIT Technologies Ltd\nMajor Events (2018–2026)\nEvent Editions / Dates Venue Source\nPune International\nBusiness Summit\n(PIBS)\n2020, 2021, 2022,\n2024, 2025, 2026 (7th)\nJW Marriott / S.L.\nKirloskar ICC\nmcciapune.com\nMCCIA Annual\nAwards\nAnnual JW Marriott / Tilak\nSmarak Mandir\nMultiple\nMCCIA Edu-Fest 2025, ongoing MCCIA Trade Tower mcciapune.com\nCSR Synergy\nConclave\n2025 Bajaj Gallery, MCCIA\nTrade Tower\nmcciapune.com\nPune Expo 2025 Autocluster ,\nChinchwad\nmcciapune.com\nMaharashtra\nInfluencers Summit\n2024 MCCIA Trade Tower mcciapune.com\nMCCIA AI\nHackathon\n2026 (inaugural) MCCIA Trade Tower LinkedIn /\nmcciapune.com\nMCCIA Executive\nAI Workshop\n2025, 2026 MCCIA Trade Tower mcciapune.com\nWomen\nEntrepreneurs\nExhibition\n2022 Acharya Atre\nSabhagruha\nPune Pulse\n9. Government Representations & Advocacy\nRepresentations Sent (2026) — Per Mccia Media.xlsx\nDate Subject Department To Whom Designation Status\n2026-04-07 Request for\nCreation o",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 21\nDate Subject Department To Whom Designation Status\n2026-04-08 MCCIA\nRequest to\nEducate\nProspective\nMSME Sellers\nabout Fake\nWebsites\nRelating to\nGeM\nGeM Mihir Kumar CEO Sent\n2026-04-30 Submission\nabout Grid\nSupport\nCharges,\nMERC Order\ndated 25\nMarch 2026\n(Case\n75/2025)\nGoM Devendra\nFadnavis\nChief\nMinister\nSent\n2026-06-29 Representation\non Establish-\nment of\nMSME Com-\nmissionerate\nin Pune\nGOM Devendra\nFadnavis\nChief\nMinister\nSent\n2026-06-18 Representation\nfor inclusion\nof Pune\nTooling Hub\nProject in\nMaharashtra\nState’s\nProjects\nunder\nBHAVYA\nScheme\nMIDC Shri\nDeependra\nSingh\nKushwah\n(IAS)\nCEO Sent\nKey Advocacy Themes (2018–2026)\n• GST: Simplification, nil return penalties, centralised document receipt system\n• MSME: Commissionerate establishment in Pune, helpline support, RAMP scheme implementa-\ntion\n• Electronics: Manufacturing cluster at Ranjangaon (₹500 crore outlay, approved Oct 2022)\n• Energy: Grid support charges, renewable energy use during solar hours\n• Defence: MSME defence production awards, indigenisation policy\n• Foreign Trade: Export facilitation, buyer-seller meets, FTA discussions\n• Labour: Employee Relations C",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 22\nOfficial Photo Sources\nSource Description URL\nMCCIA Website — Our\nTeam\nDirector General, Directors,\nAssociate Directors photos\nmcciapune.com/mcciaadmin/team_tab/\nMCCIA — Executive Board President, Vice Presidents,\nDirectors photos\nmcciapune.com/mcciaadmin/executive-\nboard/\nMCCIA — Past Presidents Historical president gallery mcciapune.com/mcciaadmin/past_presidents_tab/\nLinkedIn Posts Event photos, award\nceremonies, PIBS,\nhackathons\nlinkedin.com/company/mcciapune\nMCCIA Events Pages Event-specific galleries mcciapune.com/events/events-\nlanding-page/\nSustainability Desk Videos Member video testimonials mcciapune.com/mcciaadmin/sustainability-\ndesk-our-members-say/\nKey Images Identified\n• Pradeep Bhargava & Anant Sardeshmukh at 2018 innovation awards press conference (HT\nPhoto)\n• Sudhir Mehta at MCCIA annual day with Devendra Fadnavis (2022)\n• Subhash Desai inaugurating MCCIA Electronic Cluster Foundation (2022)\n• Ajinkya Rahane at Agri-tech start-up launch (2022)\n• PIBS 2024, 2025, 2026 event photos\n• MCCIA Annual Awards 2025 at JW Marriott\n• AI Hackathon 2026 — Team HoneyBadger , Ballers, Knight Coders\n• Ravi Pandit memori",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 23\nMarathi News\n17. https://www.esakal.com — Sakal online\n18. https://www.lokmat.com — Lokmat online\n19. https://www.loksatta.com — Loksatta online\n20. https://maharashtratimes.com — Maharashtra Times\n21. https://marathi.abplive.com — ABP Majha\n22. https://zeenews.india.com/marathi — Zee 24 Taas\nOfficial MCCIA\n23. https://www.mcciapune.com — Main website\n24. https://www.mcciapune.com/mcciaadmin/team_tab/ — Team page\n25. https://www.mcciapune.com/mcciaadmin/executive-board/ — Executive board\n26. https://www.mcciapune.com/mcciaadmin/past_presidents_tab/ — Past presidents\n27. https://www.mcciapune.com/publications/publication-annual-report/ — Annual reports\n28. https://www.mcciapune.com/awards/ — Awards page\n29. https://www.mcciapune.com/events/events-landing-page/ — Events\n30. https://www.mcciapune.com/initiatives/msme/ — MSME Helpline\n31. https://www.mcciapune.com/initiatives/ai-studio/ — AI Studio\n32. https://www.mcciapune.com/initiatives/electronic-cluster/ — Electronic Cluster\n33. https://www.mcciapune.com/initiatives/cewe/ — Centre of Excellence for Women En-\ntrepreneurs\n34. https://www.mcciapune.com/initiatives/ppcr/ — P",
+      "MCCIA COMPREHENSIVE MEDIA INTELLIGENCE REPORT (2018–2026) 24\n53. https://www.linkedin.com/posts/ganeshmate — Ganesh Mate posts\n54. https://www.linkedin.com/posts/bharatagarwal — Bharat Agarwal posts\n55. https://www.linkedin.com/posts/nisha-jadhav-15801723b — Nisha Jadhav posts\n56. https://www.linkedin.com/posts/ziyaahmad — Ziya Ahmad posts\n57. https://www.linkedin.com/posts/anamika-kumari-38499a201 — Anamika Kumari posts\n58. https://www.linkedin.com/posts/easebuzz — Easebuzz posts\n59. https://www.linkedin.com/posts/aispectrumindia — AI Spectrum India posts\nEnd of Report\nThis report was compiled from open-web sources, MCCIA’s official website, social media channels, news\narchives, and the user’s internal tracking sheet (Mccia Media.xlsx). Every entry includes a verifiable\nsource URL or publication reference.\n24"
+    ]
+  }
+}

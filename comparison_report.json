@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "baseline": 56,
+    "research_added": 76,
+    "research_matched": 4,
+    "pdf_added": 56,
+    "pdf_matched": 3,
+    "internal_added": 58,
+    "internal_matched": 22
+  },
+  "final_records": 246,
+  "with_url": 183,
+  "without_url": 63,
+  "verified": 49,
+  "partial": 134,
+  "unverified": 63,
+  "duplicates_merged": 29
+}
