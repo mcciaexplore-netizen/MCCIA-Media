@@ -1,0 +1,50 @@
+{
+  "input_images": 1492,
+  "unique_originals": 1488,
+  "duplicate_copies_removed": 4,
+  "match_status": {
+    "Potential new record": 206,
+    "Auto matched: date + publisher + page": 1081,
+    "Auto matched: unique date + publisher": 68,
+    "Ambiguous: OCR review required": 132,
+    "Manual date review required": 1
+  },
+  "quality": {
+    "Low": 376,
+    "High": 658,
+    "Medium": 454
+  },
+  "originals_bytes": 2895999878,
+  "thumbnail_bytes": 185254460,
+  "ocr_review": {
+    "ocr_completed": 336,
+    "ambiguous_resolved": 34,
+    "ambiguous_unresolved": 98,
+    "matched_across_publisher_aliases": 43,
+    "new_records_created": 164,
+    "manual_review_required": 0,
+    "final_records": 2934
+  },
+  "final_archive": {
+    "unique_originals_preserved": 1488,
+    "duplicate_copies_removed": 4,
+    "auto_connected": 1149,
+    "ocr_connected": 77,
+    "new_records_created": 164,
+    "connected_evidence_total": 1390,
+    "ambiguous_after_ocr": 98,
+    "ocr_completed": 336,
+    "ocr_timed_out": 3,
+    "potential_new_items_reviewed": 207,
+    "thumbnail_bytes": 102769264,
+    "public_url_search": {
+      "ocr_headlines_eligible": 336,
+      "searched": 328,
+      "confident_public_urls_added": 0,
+      "candidate_only": 0,
+      "no_confident_result": 326,
+      "search_errors": 2,
+      "search_backend": "Bing public web search (Exa unavailable: HTTP 429 rate limit)"
+    }
+  }
+}

@@ -36,3 +36,10 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+/media-archive/originals/
+/media-archive/evidence_manifest_private.json
+/artifact-work/tesseract-portable/
+/artifact-work/tesseract-installer.exe
+/artifact-work/tesseract.nupkg
+/site-build.tar.gz
+/ocr_source_search_checkpoint.json

@@ -1,0 +1,9 @@
+{
+  "ocr_headlines_eligible": 336,
+  "searched": 328,
+  "confident_public_urls_added": 0,
+  "candidate_only": 0,
+  "no_confident_result": 326,
+  "search_errors": 2,
+  "search_backend": "Bing public web search (Exa unavailable: HTTP 429 rate limit)"
+}
