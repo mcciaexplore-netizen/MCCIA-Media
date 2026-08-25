@@ -65,6 +65,26 @@
     "year": 2026,
     "type": "Article",
     "format": "News Article",
+    "publisher": "Pudhari",
+    "title": "Udyojak Ravi Pandit yanche nidhan",
+    "language": "Marathi",
+    "presence": "Named / occurrence reported",
+    "topic": "Pudhari",
+    "description": "Page 7 obituary.",
+    "status": "Partially verified",
+    "url": "https://www.pudhari.com",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG005",
+    "date": "2026-09-05",
+    "year": 2026,
+    "type": "Article",
+    "format": "News Article",
     "publisher": "Times of India",
     "title": "Ravi Pandit,KPIT Tech Co-founder,Passes away at 75",
     "language": "English",
@@ -80,7 +100,47 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG005",
+    "id": "PG006",
+    "date": "2026-09-05",
+    "year": 2026,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Kesari",
+    "title": "Khyatnam udyojak Ravi Pandit yanche nidhan",
+    "language": "Marathi",
+    "presence": "Named / occurrence reported",
+    "topic": "Kesari",
+    "description": "Front page obituary. Former MCCIA President 2004-2006.",
+    "status": "Partially verified",
+    "url": "https://www.kesari.com",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG007",
+    "date": "2026-09-05",
+    "year": 2026,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Prabhat",
+    "title": "KPIT che Ravi Pandit yanche nidhan",
+    "language": "Marathi",
+    "presence": "Named / occurrence reported",
+    "topic": "Prabhat",
+    "description": "Front page coverage.",
+    "status": "Partially verified",
+    "url": "https://www.prabhat.com",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG008",
     "date": "2026-09-05",
     "year": 2026,
     "type": "Article",
@@ -100,7 +160,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG006",
+    "id": "PG009",
     "date": "2026-08-15",
     "year": 2026,
     "type": "Article",
@@ -120,7 +180,67 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG007",
+    "id": "PG010",
+    "date": "2026-08-09",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Anamika Kumari",
+    "title": "Article published in SAMPADA Magazine",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Article published in July 2026 edition of SAMPADA Magazine by MCCIA.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/anamika-kumari-38499a201_going-beyond-hr-sandbox-activity-7492121145677242368-iQD1",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG011",
+    "date": "2026-08-07",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Pune International Centre",
+    "title": "Handloom Day at PIC",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Handloom Day celebration. Prashant Girbane mentioned as attendee/speaker.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/puneinternationalcentre_handloomday-handloomforlife-puneinternationalcentre-activity-7491345901052108801-vLtj",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG012",
+    "date": "2026-08-07",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Dinanath Kholkar",
+    "title": "Congratulations Dr Arvind Goel — President Elect",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Congratulations to Dr Arvind Goel for taking up role of President Elect of MCCIA. Prashant Girbane mentioned.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/dinanathkholkar_mccia-legacy-activity-7491328976557228032-HgDd",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG013",
     "date": "2026-08-06",
     "year": 2026,
     "type": "Article",
@@ -140,7 +260,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG008",
+    "id": "PG014",
     "date": "2026-08-06",
     "year": 2026,
     "type": "Social",
@@ -155,12 +275,12 @@
     "url": "https://www.linkedin.com/posts/dinanathkholkar_msme-sector-%E0%A4%AE-%E0%A4%AC%E0%A4%A1-%E0%A4%AC%E0%A4%A6%E0%A4%B2%E0%A4%B5-ai-automation-activity-7491008221806231553-ByE8",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New source not present in dashboard baseline"
+    "sourceDataset": "Comprehensive research workbook; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in table.csv"
   },
   {
-    "id": "PG009",
+    "id": "PG015",
     "date": "2026-08-06",
     "year": 2026,
     "type": "Social",
@@ -180,7 +300,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG010",
+    "id": "PG016",
     "date": "2026-07-26",
     "year": 2026,
     "type": "Social",
@@ -200,7 +320,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG011",
+    "id": "PG017",
     "date": "2026-07-22",
     "year": 2026,
     "type": "Social",
@@ -220,7 +340,27 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG012",
+    "id": "PG018",
+    "date": "2026-07-20",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Pune International Centre",
+    "title": "Maharashtra Advanced Manufacturing & Frontier Technology Institute meeting",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Participated in meeting chaired by CM Devendra Fadnavis. Briefed CM on Pune Growth Hub Project.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/puneinternationalcentre_pune-puneinternationalcentre-thinktank-activity-7484849504404267008-tDVR",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG019",
     "date": "2026-07-19",
     "year": 2026,
     "type": "Article",
@@ -240,7 +380,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG013",
+    "id": "PG020",
     "date": "2026-07-19",
     "year": 2026,
     "type": "Article",
@@ -260,7 +400,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG014",
+    "id": "PG021",
     "date": "2026-07-19",
     "year": 2026,
     "type": "Article",
@@ -280,7 +420,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG015",
+    "id": "PG022",
     "date": "2026-07-19",
     "year": 2026,
     "type": "Article",
@@ -300,7 +440,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG016",
+    "id": "PG023",
     "date": "2026-07-19",
     "year": 2026,
     "type": "Article",
@@ -320,7 +460,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG017",
+    "id": "PG024",
     "date": "2026-07-17",
     "year": 2026,
     "type": "PDF",
@@ -340,7 +480,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG018",
+    "id": "PG025",
     "date": "2026-07-06",
     "year": 2026,
     "type": "Article",
@@ -360,7 +500,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG019",
+    "id": "PG026",
     "date": "2026-07-06",
     "year": 2026,
     "type": "Social",
@@ -380,7 +520,67 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG020",
+    "id": "PG027",
+    "date": "2026-06-29",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Maharashtra Small Scale Industries Development Corporation",
+    "title": "Maharashtra MSME Summit & Awards 2026",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Distinguished leaders: Shri Prashant Girbane, Director General, MCCIA.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/maharashtra-small-scale-industries-development-corporation-limited_the-maharashtra-msme-summit-awards-2026-activity-7477393313336184832-_zWo",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG028",
+    "date": "2026-06-08",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Pune International Centre",
+    "title": "Taming the Dragon discussion on YouTube",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Recording of PIC's discussion on India-China relations. Prashant Girbane mentioned.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/puneinternationalcentre_puneinternationalcentre-bookdiscussion-activity-7469598311692533760-FIDJ",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG029",
+    "date": "2026-06-08",
+    "year": 2026,
+    "type": "Video",
+    "format": "Video",
+    "publisher": "Pune International Centre",
+    "title": "Taming the Dragon discussion",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "YouTube",
+    "description": "Recording of PIC's discussion on India-China relations. Prashant Girbane mentioned.",
+    "status": "Partially verified",
+    "url": "https://lnkd.in/dvevVc-E",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG030",
     "date": "2026-06-01",
     "year": 2026,
     "type": "Social",
@@ -400,7 +600,67 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG021",
+    "id": "PG031",
+    "date": "2026-05-29",
+    "year": 2026,
+    "type": "Video",
+    "format": "Social Media / Podcast",
+    "publisher": "Pune International Centre",
+    "title": "PIC's Global Compass Episode 7",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Podcast on China's Bid for Global Primacy. Prashant Girbane mentioned.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/puneinternationalcentre_episode-7-chinas-bid-for-global-primacy-activity-7466125204692459520-ccFq",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG032",
+    "date": "2026-05-29",
+    "year": 2026,
+    "type": "Video",
+    "format": "Podcast",
+    "publisher": "PIC's Global Compass",
+    "title": "Episode 7: China's Bid for Global Primacy",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "YouTube / Spotify",
+    "description": "PIC podcast. Prashant Girbane mentioned.",
+    "status": "Partially verified",
+    "url": "https://lnkd.in/dumMuj3p",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG033",
+    "date": "2026-05-23",
+    "year": 2026,
+    "type": "Video",
+    "format": "Video / Event",
+    "publisher": "TEDxPune",
+    "title": "TEDxPune talk on sustainable growth",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "TEDxPune",
+    "description": "Talk delivered by Prashant Girbane. Sketch noting by Gajanan. Theme: the giraffe metaphor.",
+    "status": "Partially verified",
+    "url": "https://www.tedxpune.com",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG034",
     "date": "2026-05-11",
     "year": 2026,
     "type": "Social",
@@ -420,7 +680,107 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG022",
+    "id": "PG035",
+    "date": "2026-05-09",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Prashant Girbane Post",
+    "title": "Remembering Ravi: The smile, the simplicity and the vision",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Tribute to Ravi Pandit. First met 2011 during PIC formation. Founding trustee & honorary treasurer. Attended 118 of 120 meetings over a decade.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/prashant-girbane-245840_remembering-ravi-the-smile-the-simplicity-activity-7458749542491013120-UYgX",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG036",
+    "date": "2026-05-06",
+    "year": 2026,
+    "type": "PDF",
+    "format": "PDF",
+    "publisher": "MCCIA",
+    "title": "MSME Helpline 100 Case Studies 2.0",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA Website",
+    "description": "Real stories of Guidance to Transformation. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.mcciapune.com/media/Publication/Publication_File/MSME_Helpline_Compilation_of_100_Case_Studies_Proof_28-4-2026.pdf",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG037",
+    "date": "2026-05-04",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "MCCIA Company Page",
+    "title": "MCCIA AI Hackathon results",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Winner: Team HoneyBadger. Runner-Up: Team Ballers & Team Knight Coders. 13 colleges.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/mcciapune_aihackathon-buildthewave-mccia-activity-7456973480660508672-cCLU",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG038",
+    "date": "2026-05-01",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Atul Gupta",
+    "title": "Winners of inaugural MCCIA AI Hackathon",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Only 2nd-year students competing against 3rd/4th year engineering, MBA, MCA students.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/atul-gupta-b5525626b_ias-mccia-aihackathon-activity-7455928777957855233-xJ5w",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG039",
+    "date": "2026-05-01",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "OMKAR GADEKAR",
+    "title": "Team HoneyBadger wins MCCIA AI Hackathon",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Felicitated by Ms Varsha Thakur IAS (Joint CEO MIDC) and Prashant Girbane (DG MCCIA).",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/gadekaromkar_ias-midc-directorgeneral-activity-7455936301712855040-oiZf",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG040",
     "date": "2026-05-01",
     "year": 2026,
     "type": "Video",
@@ -440,7 +800,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG023",
+    "id": "PG041",
     "date": "2026-04-30",
     "year": 2026,
     "type": "Article",
@@ -460,7 +820,27 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG024",
+    "id": "PG042",
+    "date": "2026-04-30",
+    "year": 2026,
+    "type": "Other",
+    "format": "Event",
+    "publisher": "MCCIA",
+    "title": "MCCIA AI Hackathon 2026",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA Website",
+    "description": "20 teams, 6 problems, 1 day. Shekhar Natu Training Hall. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://mcciapune.com/events/events-detail-page/2771/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG043",
     "date": "2026-04-27",
     "year": 2026,
     "type": "Article",
@@ -480,7 +860,67 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG025",
+    "id": "PG044",
+    "date": "2026-04-24",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "MCCIA Company Page",
+    "title": "Build. Break. Innovate.",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Join the AI Hackathon. Date: 30th April 2026. Venue: SB Road, Pune.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/mcciapune_aihackathon-buildinpublic-artificialintelligence-activity-7453435124479647745-aO0N",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG045",
+    "date": "2026-04-22",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "MCCIA Company Page",
+    "title": "MSMEs have problems. You have AI. Let's fix this.",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "20 Teams · 6 Problems · 1 Day. April 30, 2026. MCCIA Trade Tower, Pune.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/mcciapune_mcciahackathon-aihackathon-msme-activity-7452725409823129601-ZuPK",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG046",
+    "date": "2026-04-20",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "MCCIA Company Page",
+    "title": "Got an idea that can solve real MSME challenges?",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Work on actual business problems faced by MSMEs. Innovation matters most when it creates real impact.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/mcciapune_aihackathon-msmeinnovation-buildwithai-activity-7451925847340408832-NFJk",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG047",
     "date": "2026-04-17",
     "year": 2026,
     "type": "Social",
@@ -500,7 +940,47 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG026",
+    "id": "PG048",
+    "date": "2026-04-15",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "MCCIA Company Page",
+    "title": "MCCIA AI Hackathon registration open",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Open for Final Year Engineering/MBA & 3rd Year Engineering. Team size 1-3. April 30, 2026.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/mcciapune_mccia-aihackathon2026-aiinnovation-activity-7450131841971331072-RA5K",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG049",
+    "date": "2026-04-15",
+    "year": 2026,
+    "type": "PDF",
+    "format": "PDF",
+    "publisher": "MCCIA",
+    "title": "FAQ Series 2 Helpline Report",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA Website",
+    "description": "FAQs on Every Crucial Business Area. English & Marathi. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_FAQ__2.0_Proof_15-04-2026.pdf",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG050",
     "date": "2026-04-07",
     "year": 2026,
     "type": "Article",
@@ -520,7 +1000,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG027",
+    "id": "PG051",
     "date": "2026-04-06",
     "year": 2026,
     "type": "Article",
@@ -540,7 +1020,47 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG028",
+    "id": "PG052",
+    "date": "2026-03-30",
+    "year": 2026,
+    "type": "PDF",
+    "format": "PDF",
+    "publisher": "MCCIA",
+    "title": "Government Schemes Handbook (Revised)",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA Website",
+    "description": "Comprehensive Guide for MSMEs. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_Government_Schemes_Handbook_Revised_30-03-2026.pdf",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG053",
+    "date": "2026-03-24",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Leena Khandekar",
+    "title": "MCCIA CEWE testimonial — 16 years of trust",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "MCCIA guidance and helpline helped gain knowledge, discover government schemes, make better business decisions.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/leena-khandekar-14a95018_impactful-working-activity-7442053473686405120-8xxl",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG054",
     "date": "2026-03-23",
     "year": 2026,
     "type": "Social",
@@ -560,7 +1080,27 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG029",
+    "id": "PG055",
+    "date": "2026-03-19",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "MCCIA Company Page",
+    "title": "MSME Helpline recruitment",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Join MCCIA's MSME Helpline. Learn. Work. Create impact. Pune.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/mcciapune_mccia-msme-helpline-activity-7440303265478688768-phTf",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG056",
     "date": "2026-03-18",
     "year": 2026,
     "type": "Social",
@@ -580,7 +1120,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG030",
+    "id": "PG057",
     "date": "2026-03-07",
     "year": 2026,
     "type": "Article",
@@ -600,7 +1140,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG031",
+    "id": "PG058",
     "date": "2026-03-04",
     "year": 2026,
     "type": "Article",
@@ -620,7 +1160,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG032",
+    "id": "PG059",
     "date": "2026-02-28",
     "year": 2026,
     "type": "Article",
@@ -635,12 +1175,12 @@
     "url": "https://medtechspectrum.com/news/25/25243/union-budget-2026-signals-strong-push-for-innovation-driven-inclusive-healthcare-ecosystem.html",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG033",
+    "id": "PG060",
     "date": "2026-02-23",
     "year": 2026,
     "type": "Social",
@@ -660,7 +1200,27 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG034",
+    "id": "PG061",
+    "date": "2026-02-22",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Pune International Centre",
+    "title": "T.M. Krishna event at PIC",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "T.M. Krishna coming to Pune. Prashant Girbane listed among organizers/attendees.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/puneinternationalcentre_palashfestival-flameoftheforest-pic-activity-7431301527593664512-1qfV",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG062",
     "date": "2026-02-17",
     "year": 2026,
     "type": "Article",
@@ -680,7 +1240,27 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG035",
+    "id": "PG063",
+    "date": "2026-02-12",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "MCCIA Company Page",
+    "title": "Sakal coverage of PIBS 2026",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Coverage from Sakal Media Group highlighting address by Shri P. Velrasu, IAS, CEO, MIDC.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/mcciapune_puneinternationalbusinesssummit-activity-7427685999977304064-tP-T",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG064",
     "date": "2026-02-12",
     "year": 2026,
     "type": "Social",
@@ -700,7 +1280,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG036",
+    "id": "PG065",
     "date": "2026-02-12",
     "year": 2026,
     "type": "Social",
@@ -720,7 +1300,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG037",
+    "id": "PG066",
     "date": "2026-02-09",
     "year": 2026,
     "type": "Other",
@@ -735,12 +1315,12 @@
     "url": "https://mcciapune.com/events/events-detail-page/2534/",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG038",
+    "id": "PG067",
     "date": "2026-02-09",
     "year": 2026,
     "type": "Social",
@@ -760,7 +1340,27 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG039",
+    "id": "PG068",
+    "date": "2026-02-09",
+    "year": 2026,
+    "type": "Other",
+    "format": "Event",
+    "publisher": "Indian Embassy Qatar",
+    "title": "Pune International Business Summit 2026",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Indian Embassy Qatar",
+    "description": "7th edition with Buyers-Sellers meet. 9-10 February 2026. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.indianembassyqatar.gov.in/whats_new?id=NDYx",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG069",
     "date": "2026-02-06",
     "year": 2026,
     "type": "Article",
@@ -775,12 +1375,12 @@
     "url": "https://timesofindia.indiatimes.com/city/pune/mccia-to-host-7th-international-business-summit-in-pune/articleshow/127951917.cms",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG040",
+    "id": "PG070",
     "date": "2026-02-01",
     "year": 2026,
     "type": "Video",
@@ -800,7 +1400,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG041",
+    "id": "PG071",
     "date": "2026-02-01",
     "year": 2026,
     "type": "Article",
@@ -820,7 +1420,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG042",
+    "id": "PG072",
     "date": "2026-02-01",
     "year": 2026,
     "type": "Article",
@@ -835,12 +1435,12 @@
     "url": "https://www.linkedin.com/posts/aispectrumindia_unionbudget2026-economicstability-fiscaldiscipline-activity-7423742550148308992-frTD",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG043",
+    "id": "PG073",
     "date": "2026-02-01",
     "year": 2026,
     "type": "Article",
@@ -860,7 +1460,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG044",
+    "id": "PG074",
     "date": "2026-02-01",
     "year": 2026,
     "type": "Article",
@@ -880,7 +1480,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG045",
+    "id": "PG075",
     "date": "2026-01-22",
     "year": 2026,
     "type": "Social",
@@ -900,7 +1500,27 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG046",
+    "id": "PG076",
+    "date": "2026-01-22",
+    "year": 2026,
+    "type": "Video",
+    "format": "Podcast",
+    "publisher": "PIC's Global Compass",
+    "title": "Episode 1: Exploring US-India Relations Under Trump 2.0",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "YouTube / Spotify",
+    "description": "Official launch of podcast. Prashant Girbane mentioned as PIC General Secretary.",
+    "status": "Partially verified",
+    "url": "https://bit.ly/ep1_YouTube",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG077",
     "date": "2026-01-13",
     "year": 2026,
     "type": "Other",
@@ -920,7 +1540,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG047",
+    "id": "PG078",
     "date": "2026-01-10",
     "year": 2026,
     "type": "Social",
@@ -940,7 +1560,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG048",
+    "id": "PG079",
     "date": "2026-01-06",
     "year": 2026,
     "type": "Article",
@@ -960,7 +1580,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG049",
+    "id": "PG080",
     "date": "2026-01-05",
     "year": 2026,
     "type": "Social",
@@ -975,12 +1595,152 @@
     "url": "https://www.linkedin.com/posts/mcciapune_pibs2026-puneinternationalbusinesssummit-activity-7413882181556584448-wzoV",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook B. Supplied verification label: To Verify; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook B",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG050",
+    "id": "PG081",
+    "date": "2026-01-01",
+    "year": 2026,
+    "type": "Social",
+    "format": "Social Innovation Hub Team",
+    "publisher": "Pune International Centre",
+    "title": "https://yellow-seal-502661.hostingersite.com/about-us/team/",
+    "language": "Webpage",
+    "presence": "Named / occurrence reported",
+    "topic": "Pune International Centre",
+    "description": "To Verify",
+    "status": "Partially verified",
+    "url": "Mr Prashant Girbane, Convenor of Social Innovation Hub.",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG082",
+    "date": "2026-01-01",
+    "year": 2026,
+    "type": "PDF",
+    "format": "Annual Report 2024-25",
+    "publisher": "Pune International Centre",
+    "title": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
+    "language": "PDF",
+    "presence": "Named / occurrence reported",
+    "topic": "Pune International Centre",
+    "description": "To Verify",
+    "status": "Partially verified",
+    "url": "Mr Prashant Girbane, General Secretary (Hon.). Dr Ravi Pandit, Treasurer (Hon.).",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG083",
+    "date": "2026-01-01",
+    "year": 2026,
+    "type": "Other",
+    "format": "Document",
+    "publisher": "Scribd",
+    "title": "Women Entrepreneurs Directory 2021-22",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Scribd",
+    "description": "104 pages. MCCIA publication.",
+    "status": "Partially verified",
+    "url": "https://www.scribd.com/document/620897412/Women-Entrepreneurs-Directory-2021-22",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG084",
+    "date": "2026-01-01",
+    "year": 2026,
+    "type": "Video",
+    "format": "Podcast",
+    "publisher": "Various",
+    "title": "Various Podcast Interviews",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Podcast",
+    "description": "Multiple podcast appearances by Prashant Girbane.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG085",
+    "date": "2026-01-01",
+    "year": 2026,
+    "type": "Other",
+    "format": "Encyclopedia",
+    "publisher": "Wikipedia",
+    "title": "Mahratta Chamber of Commerce Industries and Agriculture",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Wikipedia",
+    "description": "Dr Sudhir Mehta appointed president 2020. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://en.wikipedia.org/wiki/Mahratta_Chamber_of_Commerce_Industries_and_Agriculture",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG086",
+    "date": "2026-01-01",
+    "year": 2026,
+    "type": "Other",
+    "format": "Document",
+    "publisher": "Scribd",
+    "title": "MCCIA Women Entrepreneurs Directory 2021-22",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Scribd",
+    "description": "196 pages. Published during Prashant Girbane tenure.",
+    "status": "Partially verified",
+    "url": "https://www.scribd.com/document/788816100/MCCIA-Women-Entrepreneurs-Directory-2021-22-1-1",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG087",
+    "date": "2026-01-01",
+    "year": 2026,
+    "type": "Other",
+    "format": "Webpage",
+    "publisher": "MCCIA",
+    "title": "Indirect Tax Committee",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA Website",
+    "description": "GST issues. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.mcciapune.com/committees/indirect-taxation/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG088",
     "date": "2025-12-23",
     "year": 2025,
     "type": "Social",
@@ -1000,7 +1760,27 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG051",
+    "id": "PG089",
+    "date": "2025-12-21",
+    "year": 2025,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Prashant Girbane Post",
+    "title": "IIM Ahmedabad guest faculty MDP Programme LEAP-EMB",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Guest faculty at IIM Ahmedabad. Session on Managing Paradoxes in Leadership. MSME participants hungry for growth.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/prashant-girbane-245840_msme-activity-7408377995859492865-E2d2",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG090",
     "date": "2025-12-21",
     "year": 2025,
     "type": "Social",
@@ -1020,7 +1800,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG052",
+    "id": "PG091",
     "date": "2025-12-12",
     "year": 2025,
     "type": "PDF",
@@ -1040,7 +1820,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG053",
+    "id": "PG092",
     "date": "2025-12-09",
     "year": 2025,
     "type": "Other",
@@ -1060,7 +1840,27 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG054",
+    "id": "PG093",
+    "date": "2025-12-06",
+    "year": 2025,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "FCA Geetanjali Jojare",
+    "title": "Women Members Networking Meet",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "MCCIA initiatives: AI Experience Centre, MSME Helpline, Studio & Conference facilities empowering women entrepreneurs.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/geetanjali-jojare-ca_thank-you-mccia-cewe-team-for-an-inspiring-activity-7403026533507825664-JPQD",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG094",
     "date": "2025-11-30",
     "year": 2025,
     "type": "Article",
@@ -1080,7 +1880,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG055",
+    "id": "PG095",
     "date": "2025-11-29",
     "year": 2025,
     "type": "Article",
@@ -1095,12 +1895,12 @@
     "url": "https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-women-led-enterprises-receive-major-boost-with-mccia-helpline-23605479",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 3,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG056",
+    "id": "PG096",
     "date": "2025-11-29",
     "year": 2025,
     "type": "Article",
@@ -1120,7 +1920,47 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG057",
+    "id": "PG097",
+    "date": "2025-11-29",
+    "year": 2025,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Pune Mirror",
+    "title": "MCCIA Helpline and AI Lab Help 2,500+ MSMEs Grow Across Maharashtra",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Pune Mirror",
+    "description": "Within just a year, helpline has assisted over 2,500 entrepreneurs across 35 districts.",
+    "status": "Partially verified",
+    "url": "https://punemirror.com/city/mccia-msme-helpline-ai-lab-maharashtra-growth/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG098",
+    "date": "2025-11-29",
+    "year": 2025,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Punekar News",
+    "title": "MCCIA Helpline Assists 2,500 MSMEs Across Maharashtra in One Year",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Punekar News",
+    "description": "Panel of 55 specialists. DG Prashant Girbane quoted. 350 MSMEs tapped AI studio.",
+    "status": "Partially verified",
+    "url": "https://www.punekarnews.in/pune-mccia-helpline-assists-2500-msmes-across-maharashtra-in-one-year/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG099",
     "date": "2025-11-28",
     "year": 2025,
     "type": "Article",
@@ -1135,12 +1975,12 @@
     "url": "https://timesofindia.indiatimes.com/city/pune/mccia-helpline-and-ai-lab-enable-msmes-to-grow-their-businesses/articleshow/125645820.cms",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG058",
+    "id": "PG100",
     "date": "2025-11-27",
     "year": 2025,
     "type": "Social",
@@ -1155,12 +1995,12 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_it-felt-great-to-be-back-on-campus-indian-activity-7399772826196545537-ygAb",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook B. Supplied verification label: To Verify; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook B",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG059",
+    "id": "PG101",
     "date": "2025-11-18",
     "year": 2025,
     "type": "PDF",
@@ -1180,7 +2020,7 @@
     "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG060",
+    "id": "PG102",
     "date": "2025-09-25",
     "year": 2025,
     "type": "Article",
@@ -1200,7 +2040,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG061",
+    "id": "PG103",
     "date": "2025-09-22",
     "year": 2025,
     "type": "Article",
@@ -1215,12 +2055,12 @@
     "url": "https://www.freepressjournal.in/pune/pune-us-h-1b-fee-hike-will-hurt-both-indian-american-tech-firms-says-mccias-prashant-girbane",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 3,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG062",
+    "id": "PG104",
     "date": "2025-09-22",
     "year": 2025,
     "type": "Article",
@@ -1235,12 +2075,12 @@
     "url": "https://www.usnews.net/news/278593274/also-impacting-american-companies-they-wouldve-huge-issues-mccia-dg-prashant-girbane-on-h1b-visa-fee-hike",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 3,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG063",
+    "id": "PG105",
     "date": "2025-09-22",
     "year": 2025,
     "type": "Article",
@@ -1260,7 +2100,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG064",
+    "id": "PG106",
     "date": "2025-09-22",
     "year": 2025,
     "type": "Article",
@@ -1280,7 +2120,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG065",
+    "id": "PG107",
     "date": "2025-08-18",
     "year": 2025,
     "type": "Other",
@@ -1295,12 +2135,12 @@
     "url": "https://www.linkedin.com/posts/easebuzz_dea2026-buzzingforbharat-digitalexcellenceawards-activity-7495459608745013248-kZg2",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG066",
+    "id": "PG108",
     "date": "2025-08-07",
     "year": 2025,
     "type": "Video",
@@ -1320,7 +2160,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG067",
+    "id": "PG109",
     "date": "2025-08-01",
     "year": 2025,
     "type": "Video",
@@ -1340,7 +2180,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG068",
+    "id": "PG110",
     "date": "2025-07-31",
     "year": 2025,
     "type": "Social",
@@ -1360,7 +2200,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG069",
+    "id": "PG111",
     "date": "2025-07-16",
     "year": 2025,
     "type": "Other",
@@ -1380,7 +2220,27 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG070",
+    "id": "PG112",
+    "date": "2025-06-21",
+    "year": 2025,
+    "type": "PDF",
+    "format": "PDF",
+    "publisher": "MCCIA",
+    "title": "AI Inspiration Report 2025",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA Website",
+    "description": "Empowering MSMEs with AI: Experiences from 100 Champions. Foreword by Prashant Girbane.",
+    "status": "Partially verified",
+    "url": "https://www.mcciapune.com/media/Publication/Publication_File/AI_Inspiration_Report_2025_Inside_Pages_Final_for_Print_21-6-2025.pdf",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG113",
     "date": "2025-06-13",
     "year": 2025,
     "type": "Social",
@@ -1395,12 +2255,32 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_hearty-congratulations-to-general-dhiraj-activity-7471520040861966336-hfWu",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG071",
+    "id": "PG114",
+    "date": "2025-06-04",
+    "year": 2025,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Nisha Jadhav",
+    "title": "Certificate Course in Foreign Trade",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Launch of Certificate Course in Foreign Trade, 14 June to 13 September 2025. 12 full-day training programs.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-foreigntrade-certificatecourse-activity-7335886382453641216-wf8j",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG115",
     "date": "2025-05-29",
     "year": 2025,
     "type": "Social",
@@ -1420,7 +2300,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG072",
+    "id": "PG116",
     "date": "2025-05-23",
     "year": 2025,
     "type": "Other",
@@ -1435,12 +2315,12 @@
     "url": "https://www.linkedin.com/posts/tedxpune_tedxpune-prashantgirbane-sketchnoting-activity-7463963345486848000-MMBt",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New source not present in dashboard baseline"
+    "sourceDataset": "Comprehensive research workbook; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in table.csv"
   },
   {
-    "id": "PG073",
+    "id": "PG117",
     "date": "2025-05-16",
     "year": 2025,
     "type": "Article",
@@ -1455,12 +2335,32 @@
     "url": "https://theindianeye.com/2025/05/16/can-apple-ceo-overlook-india-or-profits/",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG074",
+    "id": "PG118",
+    "date": "2025-04-02",
+    "year": 2025,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Bharat Agarwal",
+    "title": "MCCIA Edu Fest 2025 organising",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Chairman of Higher Education and Skills Development Committee. Industry Academia Relations.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/bharatagarwal_very-excited-to-be-organising-yet-another-activity-7313195186279395328-apbb",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG119",
     "date": "2025-03-29",
     "year": 2025,
     "type": "Article",
@@ -1480,7 +2380,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG075",
+    "id": "PG120",
     "date": "2025-03-04",
     "year": 2025,
     "type": "Article",
@@ -1500,7 +2400,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG076",
+    "id": "PG121",
     "date": "2025-03-02",
     "year": 2025,
     "type": "Article",
@@ -1520,7 +2420,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG077",
+    "id": "PG122",
     "date": "2025-03-01",
     "year": 2025,
     "type": "PDF",
@@ -1540,7 +2440,27 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG078",
+    "id": "PG123",
+    "date": "2025-02-28",
+    "year": 2025,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Ziya Ahmad",
+    "title": "Pune International Business Summit 2025 experience",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Organizing team member experience. JW Marriott Pune. Global leaders, industry experts, entrepreneurs.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/ziyaahmad_puneinternationalbusinesssummit-mccia-activity-7301253991680655360-Pjta",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG124",
     "date": "2025-02-24",
     "year": 2025,
     "type": "Article",
@@ -1560,7 +2480,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG079",
+    "id": "PG125",
     "date": "2025-02-24",
     "year": 2025,
     "type": "Social",
@@ -1580,7 +2500,27 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG080",
+    "id": "PG126",
+    "date": "2025-02-24",
+    "year": 2025,
+    "type": "Other",
+    "format": "Event",
+    "publisher": "MCCIA",
+    "title": "Pune International Business Summit 2025",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA Website",
+    "description": "JW Marriott Pune. 25+ countries. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://mcciapune.com/events/events-detail-page/2079/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG127",
     "date": "2025-02-23",
     "year": 2025,
     "type": "Article",
@@ -1600,7 +2540,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG081",
+    "id": "PG128",
     "date": "2025-02-22",
     "year": 2025,
     "type": "Social",
@@ -1620,7 +2560,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG082",
+    "id": "PG129",
     "date": "2025-02-20",
     "year": 2025,
     "type": "Article",
@@ -1635,12 +2575,12 @@
     "url": "https://timesofindia.indiatimes.com/city/pune/mccia-to-host-international-business-summit-2025-on-feb-24-25/articleshow/118395785.cms",
     "mediaUrl": null,
     "notes": "Direct article",
-    "sourceDataset": "Existing dashboard",
-    "duplicateCount": 1,
-    "mergeNotes": "Baseline structured record"
+    "sourceDataset": "Existing dashboard; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "Baseline structured record; Also present in table.csv"
   },
   {
-    "id": "PG083",
+    "id": "PG130",
     "date": "2025-02-13",
     "year": 2025,
     "type": "Social",
@@ -1660,7 +2600,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG084",
+    "id": "PG131",
     "date": "2025-02-12",
     "year": 2025,
     "type": "Article",
@@ -1680,7 +2620,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG085",
+    "id": "PG132",
     "date": "2025-02-12",
     "year": 2025,
     "type": "Social",
@@ -1700,7 +2640,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG086",
+    "id": "PG133",
     "date": "2025-02-08",
     "year": 2024,
     "type": "Social",
@@ -1720,7 +2660,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG087",
+    "id": "PG134",
     "date": "2025-02-01",
     "year": 2025,
     "type": "PDF",
@@ -1735,12 +2675,12 @@
     "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Digitisation_Report_17-2-2025_Proof.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG088",
+    "id": "PG135",
     "date": "2025-01-22",
     "year": 2025,
     "type": "Social",
@@ -1755,12 +2695,12 @@
     "url": "https://www.linkedin.com/posts/puneinternationalcentre_episode-1-exploring-us-india-relations-activity-7287868447101755394-NpTy",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New source not present in dashboard baseline"
+    "sourceDataset": "Comprehensive research workbook; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in table.csv"
   },
   {
-    "id": "PG089",
+    "id": "PG136",
     "date": "2025-01-15",
     "year": 2025,
     "type": "Social",
@@ -1775,12 +2715,52 @@
     "url": "https://www.linkedin.com/posts/mcciapune_hear-from-the-director-general-of-mccia-prashant-activity-7417513390270500864-sQiK",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG090",
+    "id": "PG137",
+    "date": "2025-01-14",
+    "year": 2025,
+    "type": "Social",
+    "format": "Social Media / Event",
+    "publisher": "Prashant Girbane Post",
+    "title": "Moderating panel at Entrepreneurs Conclave",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Panelists: Dr Niteen Kareer (Former Chief Secretary), Unmesh Wagh (JNPA Chairperson), Mahesh Bhagwat (CP Hyderabad), Dr Sandeep Wasalekar.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/prashant-girbane-245840_moderating-a-panel-discussion-is-an-opportunity-activity-7284770113793257472-E1t7",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG138",
+    "date": "2025-01-06",
+    "year": 2025,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Tejaskumar Narute",
+    "title": "Professional Guidance for MSMEs — MSME Helpline",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "MSME Helpline call or WhatsApp +91 8308809334. Free expert guidance.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/tejaskumar-narute-b3287267_mccia-msme-helpline-activity-7281953142529814528-I05g",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG139",
     "date": "2025-01-03",
     "year": 2025,
     "type": "Other",
@@ -1795,12 +2775,12 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_small-businesses-big-power-invisible-decisions-activity-7413095094205194240-7bUS",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv; Also present in table.csv"
   },
   {
-    "id": "PG091",
+    "id": "PG140",
     "date": "2025-01-01",
     "year": 2025,
     "type": "Social",
@@ -1815,12 +2795,12 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_looking-back-looking-forward-activity-7280237279053238272-MQ6E",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG092",
+    "id": "PG141",
     "date": "2024-12-30",
     "year": 2024,
     "type": "Article",
@@ -1835,12 +2815,72 @@
     "url": "https://indianexpress.com/article/cities/pune/growth-msme-defence-manufacturing-hub-pune-inc-9751812/",
     "mediaUrl": null,
     "notes": "Direct article",
-    "sourceDataset": "Existing dashboard; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 3,
-    "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Existing dashboard; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG093",
+    "id": "PG142",
+    "date": "2024-12-20",
+    "year": 2024,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Prashant Girbane Post",
+    "title": "Completion of term on Board of Management — Symbiosis International University",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Served on BoM. Emphasis on industry-academia partnerships. Prof Mujumdar's 50+ years dedication.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/prashant-girbane-245840_i-am-deeply-grateful-to-chancellor-prof-activity-7275842815174037504-CvyP",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG143",
+    "date": "2024-12-11",
+    "year": 2024,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "The Bridge Chronicle",
+    "title": "MCCIA Survey: Pune Industries Project 20% Revenue Growth; Defense and Electronics Shine",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "The Bridge Chronicle",
+    "description": "81% expect growth. 37% anticipate >20% revenue increase.",
+    "status": "Partially verified",
+    "url": "https://www.thebridgechronicle.com/news/mccia-survey-pune-industries-project-20-revenue-growth-defense-and-electronics-shine",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG144",
+    "date": "2024-12-10",
+    "year": 2024,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Hindustan Times",
+    "title": "Monthly growth tracking survey by industry body",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Hindustan Times",
+    "description": "37% of companies projecting 20%+ revenue growth. Defence and electronics lead.",
+    "status": "Partially verified",
+    "url": "https://www.hindustantimes.com/cities/pune-news/monthly-growth-tracking-survey-by-industry-body-101733857342655.html",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG145",
     "date": "2024-12-10",
     "year": 2024,
     "type": "Article",
@@ -1860,7 +2900,27 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG094",
+    "id": "PG146",
+    "date": "2024-10-05",
+    "year": 2024,
+    "type": "PDF",
+    "format": "PDF",
+    "publisher": "MCCIA",
+    "title": "RAMP Initiative Report",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA Website",
+    "description": "MCCIA's Pathway to MSME Empowerment in Maharashtra. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.mcciapune.com/media/Publication/Publication_File/MSME_RAMP_Proof_05-10-2024.pdf",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG147",
     "date": "2024-09-28",
     "year": 2024,
     "type": "Article",
@@ -1880,7 +2940,27 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG095",
+    "id": "PG148",
+    "date": "2024-09-28",
+    "year": 2024,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Ganesh Mate",
+    "title": "Leadership transition — Deepak Karandikar to Sanjay Kirloskar",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Deepak Karandikar concludes tenure. Sanjay Kirloskar new President. Prashant Girbane continues as DG.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/ganeshmate_leadershiptransition-mccia-msmegrowth-activity-7245837768054984706-iEG4",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG149",
     "date": "2024-08-23",
     "year": 2024,
     "type": "Article",
@@ -1900,7 +2980,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG096",
+    "id": "PG150",
     "date": "2024-08-01",
     "year": 2024,
     "type": "PDF",
@@ -1915,12 +2995,12 @@
     "url": "https://mcciapune.com/media/Publication/Publication_File/MSME_Facilitation_Report_Final_28-8-2024.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG097",
+    "id": "PG151",
     "date": "2024-07-31",
     "year": 2024,
     "type": "Other",
@@ -1940,7 +3020,27 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG098",
+    "id": "PG152",
+    "date": "2024-07-24",
+    "year": 2024,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "The Bridge Chronicle",
+    "title": "Land Reforms: First Step of Dematerialized Account of Land Record",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "The Bridge Chronicle",
+    "description": "Prashant Girbane: government balanced fiscal deficit, infrastructure push, consumption boost.",
+    "status": "Partially verified",
+    "url": "https://www.thebridgechronicle.com/news/land-reforms-first-step-of-dematerialized-account-of-land-record",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG153",
     "date": "2024-07-23",
     "year": 2024,
     "type": "Article",
@@ -1955,12 +3055,32 @@
     "url": "https://indianexpress.com/article/cities/pune/pune-msmes-budget-2024-letdown-western-maharashtra-neglected-infrastructure-investment-9470960/",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG099",
+    "id": "PG154",
+    "date": "2024-07-22",
+    "year": 2024,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Indian Express",
+    "title": "Expectations from Budget: Small scale industries want tax relief, investment in infra",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Indian Express",
+    "description": "Industry members hope for infrastructure investment. Prashant Girbane as DG quoted/involved.",
+    "status": "Partially verified",
+    "url": "https://indianexpress.com/article/cities/pune/expectations-budget-small-scale-industries-tax-relief-investment-in-infra-9469233/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG155",
     "date": "2024-07-19",
     "year": 2024,
     "type": "Article",
@@ -1980,7 +3100,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG100",
+    "id": "PG156",
     "date": "2024-07-18",
     "year": 2024,
     "type": "Article",
@@ -2000,7 +3120,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG101",
+    "id": "PG157",
     "date": "2024-07-16",
     "year": 2024,
     "type": "Other",
@@ -2020,7 +3140,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG102",
+    "id": "PG158",
     "date": "2024-07-16",
     "year": 2024,
     "type": "Article",
@@ -2040,7 +3160,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG103",
+    "id": "PG159",
     "date": "2024-07-15",
     "year": 2024,
     "type": "Article",
@@ -2060,7 +3180,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG104",
+    "id": "PG160",
     "date": "2024-07-15",
     "year": 2024,
     "type": "Article",
@@ -2080,7 +3200,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG105",
+    "id": "PG161",
     "date": "2024-07-15",
     "year": 2024,
     "type": "Article",
@@ -2100,7 +3220,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG106",
+    "id": "PG162",
     "date": "2024-07-08",
     "year": 2024,
     "type": "Article",
@@ -2120,7 +3240,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG107",
+    "id": "PG163",
     "date": "2024-07-01",
     "year": 2024,
     "type": "PDF",
@@ -2140,7 +3260,7 @@
     "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG108",
+    "id": "PG164",
     "date": "2024-07-01",
     "year": 2024,
     "type": "Other",
@@ -2160,7 +3280,27 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG109",
+    "id": "PG165",
+    "date": "2024-05-31",
+    "year": 2024,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "MCCIA Company Page",
+    "title": "Round Table on Maharashtra Industrial Policy",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Maharashtra State Industrial Policy discussion. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/mcciapune_around-table-on-maharashtra-industrial-policy-activity-7202270077360996352-qZpX",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG166",
     "date": "2024-05-14",
     "year": 2024,
     "type": "Social",
@@ -2175,12 +3315,32 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_i-am-grateful-to-my-alma-mater-udct-now-activity-7328448874593861634-bHsm",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG110",
+    "id": "PG167",
+    "date": "2024-04-02",
+    "year": 2024,
+    "type": "Other",
+    "format": "Event",
+    "publisher": "iFOREST",
+    "title": "Just Transition Roadmap for Maharashtra's Automobile Sector",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "iFOREST",
+    "description": "Report release at MCCIA Trade Tower. Prashant Girbane likely participated.",
+    "status": "Partially verified",
+    "url": "https://iforest.global/event/report-release-meeting-just-transition-roadmap-for-maharashtras-automobile-sector/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG168",
     "date": "2024-03-17",
     "year": 2024,
     "type": "Social",
@@ -2195,12 +3355,12 @@
     "url": "https://www.linkedin.com/posts/sudhir-bhandurga-38498526_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-19-sidhakala-activity-7175072336184807426-IUvO",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New source not present in dashboard baseline"
+    "sourceDataset": "Comprehensive research workbook; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in table.csv"
   },
   {
-    "id": "PG111",
+    "id": "PG169",
     "date": "2024-03-17",
     "year": 2024,
     "type": "Other",
@@ -2220,7 +3380,27 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG112",
+    "id": "PG170",
+    "date": "2024-03-17",
+    "year": 2024,
+    "type": "Video",
+    "format": "Video",
+    "publisher": "UdyogDhanda Kasa Kay",
+    "title": "Interview with Sudhir Bhandurga — Episode 19",
+    "language": "Marathi",
+    "presence": "Named / occurrence reported",
+    "topic": "YouTube",
+    "description": "MCCIA interview series. Prashant Girbane as interviewer.",
+    "status": "Partially verified",
+    "url": "https://www.youtube.com",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "New CSV record absent from prior 345-record master; Also present in table.csv; Also present in table.csv; Also present in table.csv"
+  },
+  {
+    "id": "PG171",
     "date": "2024-03-01",
     "year": 2024,
     "type": "PDF",
@@ -2235,12 +3415,12 @@
     "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_PBIS_MARCH_2024_Proof1_14-3-24_2.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG113",
+    "id": "PG172",
     "date": "2024-03-01",
     "year": 2024,
     "type": "Other",
@@ -2260,7 +3440,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG114",
+    "id": "PG173",
     "date": "2024-02-27",
     "year": 2024,
     "type": "Article",
@@ -2280,7 +3460,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG115",
+    "id": "PG174",
     "date": "2024-02-26",
     "year": 2024,
     "type": "Article",
@@ -2300,7 +3480,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG116",
+    "id": "PG175",
     "date": "2024-02-26",
     "year": 2024,
     "type": "Other",
@@ -2320,7 +3500,27 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG117",
+    "id": "PG176",
+    "date": "2024-02-26",
+    "year": 2024,
+    "type": "Other",
+    "format": "Event",
+    "publisher": "Indian Embassy Belgrade",
+    "title": "Pune International Business Summit 2024",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA / MEA",
+    "description": "12 countries, 398 participants, 56 speakers. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://eoibelgrade.gov.in/public_files/assets/pdf/MCCIA_PIBS_28_Aug_2024.pdf",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG177",
     "date": "2024-02-21",
     "year": 2024,
     "type": "Article",
@@ -2340,7 +3540,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG118",
+    "id": "PG178",
     "date": "2024-02-04",
     "year": 2024,
     "type": "Social",
@@ -2360,7 +3560,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG119",
+    "id": "PG179",
     "date": "2024-02-04",
     "year": 2024,
     "type": "Social",
@@ -2375,12 +3575,12 @@
     "url": "https://www.linkedin.com/posts/ajaydeshkar_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-44-3d-engineering-activity-7159806444874145792-GwbC",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New source not present in dashboard baseline"
+    "sourceDataset": "Comprehensive research workbook; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in table.csv"
   },
   {
-    "id": "PG120",
+    "id": "PG180",
     "date": "2024-02-01",
     "year": 2024,
     "type": "PDF",
@@ -2400,7 +3600,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG121",
+    "id": "PG181",
     "date": "2024-01-28",
     "year": 2024,
     "type": "Article",
@@ -2420,7 +3620,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG122",
+    "id": "PG182",
     "date": "2024-01-27",
     "year": 2024,
     "type": "Article",
@@ -2435,12 +3635,12 @@
     "url": "https://www.hindustantimes.com/cities/pune-news/pic-moves-to-new-campus-in-pashan-101738004711050.html",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG123",
+    "id": "PG183",
     "date": "2024-01-05",
     "year": 2024,
     "type": "Article",
@@ -2460,7 +3660,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG124",
+    "id": "PG184",
     "date": "2024-01-03",
     "year": 2024,
     "type": "Article",
@@ -2480,7 +3680,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG125",
+    "id": "PG185",
     "date": "2024-01-03",
     "year": 2024,
     "type": "Article",
@@ -2500,7 +3700,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG126",
+    "id": "PG186",
     "date": "2024-01-03",
     "year": 2024,
     "type": "Image",
@@ -2520,7 +3720,7 @@
     "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG127",
+    "id": "PG187",
     "date": "2024-01-01",
     "year": 2024,
     "type": "PDF",
@@ -2540,7 +3740,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG128",
+    "id": "PG188",
     "date": "2023-11-07",
     "year": 2023,
     "type": "Article",
@@ -2560,7 +3760,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG129",
+    "id": "PG189",
     "date": "2023-10-01",
     "year": 2023,
     "type": "Article",
@@ -2580,7 +3780,27 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG130",
+    "id": "PG190",
+    "date": "2023-08-01",
+    "year": 2023,
+    "type": "PDF",
+    "format": "Annual Report 2022-23",
+    "publisher": "Pune International Centre",
+    "title": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
+    "language": "PDF",
+    "presence": "Named / occurrence reported",
+    "topic": "Pune International Centre",
+    "description": "To Verify",
+    "status": "Partially verified",
+    "url": "Mr Prashant Girbane, Gen. Secretary (Hon.). Mr Ravi Pandit, Treasurer (Hon.).",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG191",
     "date": "2023-07-03",
     "year": 2023,
     "type": "Video",
@@ -2595,12 +3815,12 @@
     "url": "https://www.etnownews.com/videos/shows/leaders-of-tomorrow-season-11-pune-springboard-part-2-video-101447629",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG131",
+    "id": "PG192",
     "date": "2023-06-08",
     "year": 2023,
     "type": "Video",
@@ -2615,12 +3835,12 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_unlocking-opportunities-for-smes-with-ondc-activity-7072475488039968768-iq5n",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG132",
+    "id": "PG193",
     "date": "2023-06-08",
     "year": 2023,
     "type": "Video",
@@ -2640,7 +3860,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG133",
+    "id": "PG194",
     "date": "2023-04-01",
     "year": 2023,
     "type": "Image",
@@ -2660,7 +3880,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG134",
+    "id": "PG195",
     "date": "2023-03-19",
     "year": 2023,
     "type": "Social",
@@ -2680,7 +3900,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG135",
+    "id": "PG196",
     "date": "2023-03-11",
     "year": 2023,
     "type": "Article",
@@ -2700,7 +3920,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG136",
+    "id": "PG197",
     "date": "2023-02-27",
     "year": 2023,
     "type": "Social",
@@ -2720,7 +3940,7 @@
     "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG137",
+    "id": "PG198",
     "date": "2023-02-25",
     "year": 2023,
     "type": "Social",
@@ -2740,7 +3960,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG138",
+    "id": "PG199",
     "date": "2023-02-19",
     "year": 2023,
     "type": "Social",
@@ -2760,7 +3980,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG139",
+    "id": "PG200",
     "date": "2023-01-05",
     "year": 2023,
     "type": "Social",
@@ -2780,7 +4000,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG140",
+    "id": "PG201",
     "date": "2023-01-02",
     "year": 2023,
     "type": "Video",
@@ -2800,7 +4020,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG141",
+    "id": "PG202",
     "date": "2022-12-01",
     "year": 2022,
     "type": "Image",
@@ -2820,7 +4040,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG142",
+    "id": "PG203",
     "date": "2022-11-26",
     "year": 2022,
     "type": "Article",
@@ -2840,7 +4060,27 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG143",
+    "id": "PG204",
+    "date": "2022-11-08",
+    "year": 2022,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Agro Spectrum India",
+    "title": "MCCIA launches initiative to support Agri-tech start-ups",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Agro Spectrum India",
+    "description": "Ajinkya Rahane chief guest. Deepak Karandikar, Prashant Girbane.",
+    "status": "Partially verified",
+    "url": "https://agrospectrumindia.com/2022/11/08/mahratta-chamber-launches-an-initiative-to-support-agri-tech-start-ups.html",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG205",
     "date": "2022-11-08",
     "year": 2022,
     "type": "Article",
@@ -2855,12 +4095,72 @@
     "url": "https://www.hindustantimes.com/cities/pune-news/mccia-and-ajinkya-rahane-announce-rs-1-crore-seed-fund-for-agri-tech-startups-101667935420723.html",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG144",
+    "id": "PG206",
+    "date": "2022-11-08",
+    "year": 2022,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "MCCIA Company Page",
+    "title": "Agri-tech startups initiative with Ajinkya Rahane",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Launch event with Ajinkya Rahane. Deepak Karandikar, Prashant Girbane, Amit Paranjape.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/mcciapune_agritech-startups-agritech-activity-6995627855967629312-_jQK",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG207",
+    "date": "2022-11-01",
+    "year": 2022,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Times of India",
+    "title": "Amid row over investments, Pune gets mega electronics manufacturing park",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Times of India",
+    "description": "Deputy CM Devendra Fadnavis announced Centre approval for Ranjangaon cluster.",
+    "status": "Partially verified",
+    "url": "https://timesofindia.indiatimes.com/city/mumbai/amid-row-over-investments-pune-gets-mega-electronics-manufacturing-park/articleshow/95216284.cms",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG208",
+    "date": "2022-10-31",
+    "year": 2022,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Economic Times",
+    "title": "Govt announces Electronics Manufacturing Cluster in Ranjangaon with Rs 500 cr outlay",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Economic Times",
+    "description": "To make Maharashtra into electronics hub. Total investment about ₹500 crore.",
+    "status": "Partially verified",
+    "url": "https://telecom.economictimes.indiatimes.com/news/govt-announces-electronics-manufacturing-cluster-in-ranjangaon-maharashtra-with-rs-500-cr-outlay/95202277",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG209",
     "date": "2022-10-29",
     "year": 2022,
     "type": "Article",
@@ -2880,7 +4180,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG145",
+    "id": "PG210",
     "date": "2022-10-17",
     "year": 2022,
     "type": "Article",
@@ -2900,7 +4200,87 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG146",
+    "id": "PG211",
+    "date": "2022-09-25",
+    "year": 2022,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Punekar News",
+    "title": "Pune Region Can Become Fastest Growing Urban Region In India",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Punekar News",
+    "description": "Devendra Fadnavis chief guest. Prashant Girbane as DG organized.",
+    "status": "Partially verified",
+    "url": "https://www.punekarnews.in/pune-region-can-become-fastest-growing-urban-region-in-india-mccia-president-sudhir-mehta/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG212",
+    "date": "2022-06-12",
+    "year": 2022,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Times of India",
+    "title": "Minister unveils electronics testing facility in Bhosari",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Times of India",
+    "description": "Minister Subhash Desai unveils electronics testing facility.",
+    "status": "Partially verified",
+    "url": "https://timesofindia.indiatimes.com/city/pune/minister-unveils-electronics-testing-facility-in-bhosari/articleshow/92155504.cms",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG213",
+    "date": "2022-06-12",
+    "year": 2022,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Hindustan Times",
+    "title": "MCCIA Electronics Cluster Foundation inaugurated in Pune",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Hindustan Times",
+    "description": "Testing, certification, calibration facilities. Subhash Desai inaugurated.",
+    "status": "Partially verified",
+    "url": "https://www.hindustantimes.com/cities/pune-news/mccia-electronics-cluster-foundation-inaugurated-in-pune-101655044015389.html",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG214",
+    "date": "2022-06-11",
+    "year": 2022,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Indian Express",
+    "title": "Maharashtra govt to set up electronic park in Ranjangaon industrial area",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Indian Express",
+    "description": "Subhash Desai inaugurated MCCIA Electronic Cluster Foundation. 600-acre park.",
+    "status": "Partially verified",
+    "url": "https://indianexpress.com/article/cities/pune/maharashtra-govt-to-set-up-electronic-park-in-ranjangaon-industrial-area-7965254/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG215",
     "date": "2022-04-21",
     "year": 2022,
     "type": "Social",
@@ -2915,12 +4295,12 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_trade-investments-internationaltrade-activity-6922920255652605952-twgi",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New source not present in dashboard baseline"
+    "sourceDataset": "Comprehensive research workbook; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in table.csv"
   },
   {
-    "id": "PG147",
+    "id": "PG216",
     "date": "2022-04-04",
     "year": 2022,
     "type": "Article",
@@ -2935,12 +4315,32 @@
     "url": "https://www.hindustantimes.com/india-news/pune-afc-credit-default-fund-should-be-set-up-for-easy-ev-financing-says-sanjiv-bajaj-101649082812829.html",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG148",
+    "id": "PG217",
+    "date": "2022-03-01",
+    "year": 2022,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Pune Pulse",
+    "title": "MCCIA organizes exhibition for women entrepreneurs",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Pune Pulse",
+    "description": "Women Entrepreneurs Committee. Acharya Atre Sabhagruha. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.mypunepulse.com/mccia-organizes-exhibition-for-women-entrepreneurs/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG218",
     "date": "2022-03-01",
     "year": 2022,
     "type": "PDF",
@@ -2960,7 +4360,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG149",
+    "id": "PG219",
     "date": "2022-02-14",
     "year": 2022,
     "type": "Other",
@@ -2980,7 +4380,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG150",
+    "id": "PG220",
     "date": "2022-02-02",
     "year": 2022,
     "type": "Article",
@@ -3000,7 +4400,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG151",
+    "id": "PG221",
     "date": "2022-01-29",
     "year": 2022,
     "type": "Article",
@@ -3020,7 +4420,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG152",
+    "id": "PG222",
     "date": "2022-01-19",
     "year": 2022,
     "type": "Video",
@@ -3035,12 +4435,12 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_msme-activity-6889474392645017600-DFtz",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG153",
+    "id": "PG223",
     "date": "2022-01-19",
     "year": 2022,
     "type": "Article",
@@ -3060,7 +4460,27 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG154",
+    "id": "PG224",
+    "date": "2022-01-12",
+    "year": 2022,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Indian Express",
+    "title": "Lockdowns to result in economic hardships: MCCIA president",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Indian Express",
+    "description": "Sudhir Mehta MCCIA President. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://indianexpress.com/article/cities/pune/lockdowns-to-result-in-economic-hardships-mccia-president-7719785/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG225",
     "date": "2021-11-23",
     "year": 2021,
     "type": "Article",
@@ -3080,7 +4500,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG155",
+    "id": "PG226",
     "date": "2021-08-04",
     "year": 2021,
     "type": "Article",
@@ -3100,7 +4520,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG156",
+    "id": "PG227",
     "date": "2021-07-23",
     "year": 2021,
     "type": "Article",
@@ -3120,7 +4540,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG157",
+    "id": "PG228",
     "date": "2021-07-12",
     "year": 2021,
     "type": "Article",
@@ -3135,12 +4555,12 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_india-needs-to-empower-its-women-entrepreneurs-activity-6820375166661480448-P7_j",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG158",
+    "id": "PG229",
     "date": "2021-07-12",
     "year": 2021,
     "type": "Article",
@@ -3160,7 +4580,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG159",
+    "id": "PG230",
     "date": "2021-07-02",
     "year": 2021,
     "type": "Article",
@@ -3180,7 +4600,27 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG160",
+    "id": "PG231",
+    "date": "2021-07-01",
+    "year": 2021,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "The Hindu BusinessLine",
+    "title": "Pune: About 23% of companies reach pre-Covid level production",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "The Hindu BusinessLine",
+    "description": "Survey by MCCIA. 150 companies. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.thehindubusinessline.com/news/pune-about-23-of-companies-reach-pre-covid-level-production-says-survey/article35073610.ece",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG232",
     "date": "2021-06-09",
     "year": 2021,
     "type": "Article",
@@ -3200,7 +4640,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG161",
+    "id": "PG233",
     "date": "2021-06-03",
     "year": 2021,
     "type": "Article",
@@ -3220,7 +4660,27 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG162",
+    "id": "PG234",
+    "date": "2021-05-31",
+    "year": 2021,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Times of India",
+    "title": "Collaboration is key, Pune model for Covid-19 response shows how",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Times of India",
+    "description": "Pune Platform for Covid Response. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://timesofindia.indiatimes.com/city/pune/collaboration-is-key-pune-model-for-covid-19-response-shows-how/articleshow/83097817.cms",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG235",
     "date": "2021-05-27",
     "year": 2021,
     "type": "Article",
@@ -3240,7 +4700,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG163",
+    "id": "PG236",
     "date": "2021-05-07",
     "year": 2021,
     "type": "Article",
@@ -3260,7 +4720,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG164",
+    "id": "PG237",
     "date": "2021-05-06",
     "year": 2021,
     "type": "Article",
@@ -3275,12 +4735,12 @@
     "url": "https://www.financialexpress.com/life/pune-model-of-collaboration-among-all-covid-stakeholders-is-going-pan-india-2247462/",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG165",
+    "id": "PG238",
     "date": "2021-05-02",
     "year": 2021,
     "type": "Article",
@@ -3300,7 +4760,7 @@
     "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG166",
+    "id": "PG239",
     "date": "2021-04-28",
     "year": 2021,
     "type": "PDF",
@@ -3315,12 +4775,12 @@
     "url": "https://mcciapune.com/media/printmedia/Pune_Platform_for__COVID-19_Response_28.4.21.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG167",
+    "id": "PG240",
     "date": "2021-04-27",
     "year": 2021,
     "type": "Article",
@@ -3340,7 +4800,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG168",
+    "id": "PG241",
     "date": "2021-04-24",
     "year": 2021,
     "type": "Article",
@@ -3360,7 +4820,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG169",
+    "id": "PG242",
     "date": "2021-04-24",
     "year": 2021,
     "type": "Article",
@@ -3380,7 +4840,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG170",
+    "id": "PG243",
     "date": "2021-04-14",
     "year": 2021,
     "type": "Article",
@@ -3400,7 +4860,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG171",
+    "id": "PG244",
     "date": "2021-04-07",
     "year": 2021,
     "type": "Article",
@@ -3420,7 +4880,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG172",
+    "id": "PG245",
     "date": "2021-04-01",
     "year": 2021,
     "type": "Article",
@@ -3440,7 +4900,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG173",
+    "id": "PG246",
     "date": "2021-03-31",
     "year": 2021,
     "type": "Article",
@@ -3460,7 +4920,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG174",
+    "id": "PG247",
     "date": "2021-03-02",
     "year": 2021,
     "type": "Article",
@@ -3480,7 +4940,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG175",
+    "id": "PG248",
     "date": "2021-02-19",
     "year": 2021,
     "type": "Article",
@@ -3500,7 +4960,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG176",
+    "id": "PG249",
     "date": "2021-02-02",
     "year": 2021,
     "type": "Article",
@@ -3520,7 +4980,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG177",
+    "id": "PG250",
     "date": "2020-12-10",
     "year": 2020,
     "type": "Article",
@@ -3540,7 +5000,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG178",
+    "id": "PG251",
     "date": "2020-12-01",
     "year": 2020,
     "type": "Article",
@@ -3560,7 +5020,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG179",
+    "id": "PG252",
     "date": "2020-11-28",
     "year": 2020,
     "type": "Article",
@@ -3575,12 +5035,52 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_the-hindu-business-line-today-published-my-activity-6738398816455688192-mKoT",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG180",
+    "id": "PG253",
+    "date": "2020-10-15",
+    "year": 2020,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "Indian Express",
+    "title": "Covid pandemic has proven one can't work in silos: Sudhir Mehta",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Indian Express",
+    "description": "Sudhir Mehta MCCIA President interview. Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://preprod.indianexpress.com/article/india/covid-pandemic-has-proven-one-cant-work-in-silos-need-better-coordination-sudhir-mehta-6731159/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG254",
+    "date": "2020-10-01",
+    "year": 2020,
+    "type": "Other",
+    "format": "Event",
+    "publisher": "Pune International Centre",
+    "title": "Pune's War Against Covid-19: Civil Society Perspectives",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "Pune International Centre",
+    "description": "Webinar with Sudhir Mehta as Coordinator. Prashant Girbane involved.",
+    "status": "Partially verified",
+    "url": "https://puneinternationalcentre.org/event/punes-war-against-covid-19-civil-society-perspectives/",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG255",
     "date": "2020-08-05",
     "year": 2020,
     "type": "Other",
@@ -3600,7 +5100,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG181",
+    "id": "PG256",
     "date": "2020-04-11",
     "year": 2020,
     "type": "Article",
@@ -3615,12 +5115,12 @@
     "url": "https://www.hindustantimes.com/pune-news/pune-inc-fears-serious-disruption-in-cash-flows-fresh-orders-mccia/story-E9mHLUibMbClVJiwLFyWuI.html",
     "mediaUrl": null,
     "notes": "Direct article",
-    "sourceDataset": "Existing dashboard; Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 4,
-    "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Existing dashboard; Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 5,
+    "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG182",
+    "id": "PG257",
     "date": "2020-04-04",
     "year": 2020,
     "type": "Article",
@@ -3640,7 +5140,27 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG183",
+    "id": "PG258",
+    "date": "2020-03-22",
+    "year": 2020,
+    "type": "Social",
+    "format": "Social Media",
+    "publisher": "Sudhir Mehta",
+    "title": "Pune Platform for Covid Response launched",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Raised ₹5 crores in 3 days. Ordered 25 ventilators. Prashant Girbane as DG involved.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/dr-sudhir-mehta-79a2839_pune-leaders-are-truly-exceptional-activity-6647600210593832960-ULZ5",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG259",
     "date": "2020-03-21",
     "year": 2020,
     "type": "Article",
@@ -3660,7 +5180,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG184",
+    "id": "PG260",
     "date": "2020-03-10",
     "year": 2020,
     "type": "PDF",
@@ -3680,7 +5200,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG185",
+    "id": "PG261",
     "date": "2020-03-08",
     "year": 2020,
     "type": "Article",
@@ -3700,7 +5220,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG186",
+    "id": "PG262",
     "date": "2020-02-17",
     "year": 2020,
     "type": "Article",
@@ -3720,7 +5240,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG187",
+    "id": "PG263",
     "date": "2020-02-01",
     "year": 2020,
     "type": "Video",
@@ -3740,7 +5260,47 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG188",
+    "id": "PG264",
+    "date": "2020-01-28",
+    "year": 2020,
+    "type": "Article",
+    "format": "News Article",
+    "publisher": "New Indian Express",
+    "title": "Won't take part in political bandhs declares Maharashtra's top chamber",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "New Indian Express",
+    "description": "MCCIA resolution. Prashant Girbane as DG involved.",
+    "status": "Partially verified",
+    "url": "https://www.newindianexpress.com/nation/2020/Jan/28/wont-take-part-in-political-bandhs-declares-maharashtras-top-chamber-of-commerce-2095696.html",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG265",
+    "date": "2020-01-01",
+    "year": 2020,
+    "type": "PDF",
+    "format": "PDF",
+    "publisher": "MCCIA",
+    "title": "MCCIA Annual Awards 2020 Winners",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "MCCIA Website",
+    "description": "Prashant Girbane as DG.",
+    "status": "Partially verified",
+    "url": "https://www.mcciapune.com/media/printmedia/MCCIA_Annual_Awards_2020.pdf",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG266",
     "date": "2020-01-01",
     "year": 2020,
     "type": "PDF",
@@ -3755,12 +5315,12 @@
     "url": "https://mcciapune.com/media/Publication/Publication_File/ER-BOOK-WEB-VERSION_N5kXHDK.pdf",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 3,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG189",
+    "id": "PG267",
     "date": "2019-12-03",
     "year": 2019,
     "type": "Article",
@@ -3780,7 +5340,7 @@
     "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG190",
+    "id": "PG268",
     "date": "2019-11-17",
     "year": 2019,
     "type": "Article",
@@ -3800,7 +5360,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG191",
+    "id": "PG269",
     "date": "2019-11-15",
     "year": 2019,
     "type": "Article",
@@ -3820,7 +5380,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG192",
+    "id": "PG270",
     "date": "2019-10-13",
     "year": 2019,
     "type": "Video",
@@ -3840,7 +5400,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG193",
+    "id": "PG271",
     "date": "2019-10-02",
     "year": 2019,
     "type": "Social",
@@ -3855,12 +5415,32 @@
     "url": "https://www.linkedin.com/posts/prashant-girbane-245840_participated-in-et-now-panel-discussions-activity-6585118145059622912-eaJ3",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook B. Supplied verification label: To Verify; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook B",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG194",
+    "id": "PG272",
+    "date": "2019-09-21",
+    "year": 2019,
+    "type": "Social",
+    "format": "Social Media / Event",
+    "publisher": "Abhijeet Gholap",
+    "title": "Pune International Literary Festival panel",
+    "language": "English",
+    "presence": "Named / occurrence reported",
+    "topic": "LinkedIn",
+    "description": "Panel on International Relations and Cultural ties with Gautam Bambawale, Nimrod Kalmar, Prashant Girbane.",
+    "status": "Partially verified",
+    "url": "https://www.linkedin.com/posts/abhigholap_wonderful-panel-session-on-international-activity-6581127041402437632-4cqL",
+    "mediaUrl": null,
+    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+    "sourceDataset": "Additional table.csv source inventory",
+    "duplicateCount": 1,
+    "mergeNotes": "New CSV record absent from prior 345-record master"
+  },
+  {
+    "id": "PG273",
     "date": "2019-09-01",
     "year": 2019,
     "type": "Article",
@@ -3880,7 +5460,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG195",
+    "id": "PG274",
     "date": "2019-06-14",
     "year": 2019,
     "type": "Other",
@@ -3900,7 +5480,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG196",
+    "id": "PG275",
     "date": "2019-02-07",
     "year": 2019,
     "type": "Article",
@@ -3920,7 +5500,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG197",
+    "id": "PG276",
     "date": "2019-01-12",
     "year": 2019,
     "type": "Article",
@@ -3940,7 +5520,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG198",
+    "id": "PG277",
     "date": "2019-01-12",
     "year": 2019,
     "type": "Social",
@@ -3960,7 +5540,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook B; Also present in Additional comprehensive workbook B"
   },
   {
-    "id": "PG199",
+    "id": "PG278",
     "date": "2018-09-29",
     "year": 2018,
     "type": "Article",
@@ -3980,7 +5560,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG200",
+    "id": "PG279",
     "date": "2018-09-05",
     "year": 2018,
     "type": "Article",
@@ -4000,7 +5580,7 @@
     "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG201",
+    "id": "PG280",
     "date": "2018-07-19",
     "year": 2018,
     "type": "Article",
@@ -4020,7 +5600,7 @@
     "mergeNotes": "Baseline structured record"
   },
   {
-    "id": "PG202",
+    "id": "PG281",
     "date": "",
     "year": 0,
     "type": "Article",
@@ -4040,7 +5620,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG203",
+    "id": "PG282",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4060,7 +5640,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG204",
+    "id": "PG283",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4075,12 +5655,12 @@
     "url": "https://www.youtube.com/watch?v=UCwBcXsyfi8",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 3,
-    "mergeNotes": "URL appeared only in PDF source index; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "PDF report source index; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG205",
+    "id": "PG284",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4100,7 +5680,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG206",
+    "id": "PG285",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4120,7 +5700,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG207",
+    "id": "PG286",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4140,7 +5720,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG208",
+    "id": "PG287",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4160,7 +5740,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG209",
+    "id": "PG288",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4180,7 +5760,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG210",
+    "id": "PG289",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4200,7 +5780,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG211",
+    "id": "PG290",
     "date": "",
     "year": 0,
     "type": "Article",
@@ -4220,7 +5800,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG212",
+    "id": "PG291",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4240,7 +5820,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG213",
+    "id": "PG292",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -4255,12 +5835,12 @@
     "url": "https://www.mcciapune.com/publications/publication-annual-report/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv"
   },
   {
-    "id": "PG214",
+    "id": "PG293",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4280,7 +5860,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG215",
+    "id": "PG294",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4295,12 +5875,12 @@
     "url": "https://www.mcciapune.com/initiatives/ppcr/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "URL appeared only in PDF source index; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "PDF report source index; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG216",
+    "id": "PG295",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4320,7 +5900,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG217",
+    "id": "PG296",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4335,12 +5915,12 @@
     "url": "https://www.mcciapune.com/initiatives/pibs/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "URL appeared only in PDF source index; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "PDF report source index; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG218",
+    "id": "PG297",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4360,7 +5940,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG219",
+    "id": "PG298",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4375,12 +5955,12 @@
     "url": "https://www.mcciapune.com/mcciaadmin/past_presidents_tab/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv"
   },
   {
-    "id": "PG220",
+    "id": "PG299",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4400,7 +5980,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG221",
+    "id": "PG300",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4420,7 +6000,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG222",
+    "id": "PG301",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4440,7 +6020,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG223",
+    "id": "PG302",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4455,12 +6035,12 @@
     "url": "https://www.mcciapune.com/initiatives/msme/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv"
   },
   {
-    "id": "PG224",
+    "id": "PG303",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4480,7 +6060,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG225",
+    "id": "PG304",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4495,12 +6075,12 @@
     "url": "https://www.mcciapune.com",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 11,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv"
   },
   {
-    "id": "PG226",
+    "id": "PG305",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4520,7 +6100,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG227",
+    "id": "PG306",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4540,7 +6120,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG228",
+    "id": "PG307",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4560,7 +6140,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG229",
+    "id": "PG308",
     "date": "",
     "year": 0,
     "type": "Article",
@@ -4580,7 +6160,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG230",
+    "id": "PG309",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4595,12 +6175,12 @@
     "url": "https://maharashtratimes.com",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv; Also present in table.csv"
   },
   {
-    "id": "PG231",
+    "id": "PG310",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4615,12 +6195,12 @@
     "url": "https://www.loksatta.com",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv"
   },
   {
-    "id": "PG232",
+    "id": "PG311",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4635,12 +6215,12 @@
     "url": "https://www.lokmat.com",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv"
   },
   {
-    "id": "PG233",
+    "id": "PG312",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4660,7 +6240,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG234",
+    "id": "PG313",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4680,7 +6260,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG235",
+    "id": "PG314",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4700,7 +6280,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG236",
+    "id": "PG315",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4720,7 +6300,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG237",
+    "id": "PG316",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4740,7 +6320,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG238",
+    "id": "PG317",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4760,7 +6340,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG239",
+    "id": "PG318",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4780,7 +6360,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG240",
+    "id": "PG319",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4795,12 +6375,12 @@
     "url": "https://www.mcciapune.com/events/events-landing-page/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv"
   },
   {
-    "id": "PG241",
+    "id": "PG320",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4815,12 +6395,12 @@
     "url": "https://www.esakal.com",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv; Also present in table.csv; Also present in table.csv"
   },
   {
-    "id": "PG242",
+    "id": "PG321",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4840,7 +6420,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG243",
+    "id": "PG322",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4855,12 +6435,12 @@
     "url": "https://www.mcciapune.com/initiatives/electronic-cluster/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv"
   },
   {
-    "id": "PG244",
+    "id": "PG323",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4880,7 +6460,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG245",
+    "id": "PG324",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4900,7 +6480,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG246",
+    "id": "PG325",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4920,7 +6500,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG247",
+    "id": "PG326",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4940,7 +6520,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG248",
+    "id": "PG327",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -4960,7 +6540,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG249",
+    "id": "PG328",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4980,7 +6560,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG250",
+    "id": "PG329",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -4995,12 +6575,12 @@
     "url": "https://www.mcciapune.com/initiatives/cewe/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv"
   },
   {
-    "id": "PG251",
+    "id": "PG330",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -5020,7 +6600,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG252",
+    "id": "PG331",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5035,12 +6615,12 @@
     "url": "https://www.mcciapune.com/awards/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "URL appeared only in PDF source index; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "PDF report source index; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in Additional comprehensive workbook A; Also present in table.csv"
   },
   {
-    "id": "PG253",
+    "id": "PG332",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5060,7 +6640,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG254",
+    "id": "PG333",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -5080,7 +6660,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG255",
+    "id": "PG334",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -5100,7 +6680,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG256",
+    "id": "PG335",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5115,12 +6695,12 @@
     "url": "https://www.mcciapune.com/initiatives/ai-studio/",
     "mediaUrl": null,
     "notes": "Imported from PDF source index",
-    "sourceDataset": "PDF report source index",
-    "duplicateCount": 1,
-    "mergeNotes": "URL appeared only in PDF source index"
+    "sourceDataset": "PDF report source index; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "URL appeared only in PDF source index; Also present in table.csv"
   },
   {
-    "id": "PG257",
+    "id": "PG336",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5140,7 +6720,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG258",
+    "id": "PG337",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5155,12 +6735,12 @@
     "url": "https://puneinternationalcentre.org/social-innovation-hub/",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG259",
+    "id": "PG338",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5180,7 +6760,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG260",
+    "id": "PG339",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5200,7 +6780,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG261",
+    "id": "PG340",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5220,7 +6800,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG262",
+    "id": "PG341",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5240,7 +6820,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG263",
+    "id": "PG342",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5260,7 +6840,7 @@
     "mergeNotes": "URL appeared only in PDF source index"
   },
   {
-    "id": "PG264",
+    "id": "PG343",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5280,7 +6860,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG265",
+    "id": "PG344",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5300,7 +6880,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG266",
+    "id": "PG345",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5320,7 +6900,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG267",
+    "id": "PG346",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -5340,7 +6920,7 @@
     "mergeNotes": "New source not present in dashboard baseline"
   },
   {
-    "id": "PG268",
+    "id": "PG347",
     "date": "",
     "year": 0,
     "type": "Article",
@@ -5355,12 +6935,12 @@
     "url": "https://www.thebridgechronicle.com/topic/prashant-girbane",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A",
-    "duplicateCount": 2,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 8,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv; Also present in table.csv"
   },
   {
-    "id": "PG269",
+    "id": "PG348",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5375,12 +6955,12 @@
     "url": "https://linkedin.com/in/prashant-girbane-245840",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; PDF report source index; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 4,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; PDF report source index; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 5,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG270",
+    "id": "PG349",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5395,12 +6975,12 @@
     "url": "https://www.adapt.io/contact/prashant-girbane/227487200",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 3,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG271",
+    "id": "PG350",
     "date": "",
     "year": 0,
     "type": "Social",
@@ -5420,7 +7000,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG272",
+    "id": "PG351",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5440,7 +7020,7 @@
     "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A"
   },
   {
-    "id": "PG273",
+    "id": "PG352",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5460,7 +7040,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG274",
+    "id": "PG353",
     "date": "",
     "year": 2021,
     "type": "Other",
@@ -5475,12 +7055,12 @@
     "url": "https://mcciapune.com/media/printmedia/Presentation_on_PPCR.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG275",
+    "id": "PG354",
     "date": "",
     "year": 2026,
     "type": "PDF",
@@ -5495,12 +7075,12 @@
     "url": "https://mcciapune.com/media/printmedia2023/PIBS_Feb_2026_01.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG276",
+    "id": "PG355",
     "date": "",
     "year": 2026,
     "type": "Other",
@@ -5520,7 +7100,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG277",
+    "id": "PG356",
     "date": "",
     "year": 2026,
     "type": "Image",
@@ -5535,12 +7115,12 @@
     "url": "https://www.mcciapune.com/mcciaadmin/team_tab/",
     "mediaUrl": null,
     "notes": "Official source",
-    "sourceDataset": "Existing dashboard; Comprehensive research workbook; PDF report source index; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 5,
-    "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Existing dashboard; Comprehensive research workbook; PDF report source index; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 6,
+    "mergeNotes": "Baseline structured record; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG278",
+    "id": "PG357",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5560,7 +7140,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG279",
+    "id": "PG358",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5575,12 +7155,12 @@
     "url": "https://puneinternationalcentre.org/about-us/office-bearers/mr-prashant-girbane/",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 3,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 4,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG280",
+    "id": "PG359",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5600,7 +7180,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG281",
+    "id": "PG360",
     "date": "",
     "year": 2021,
     "type": "PDF",
@@ -5615,12 +7195,12 @@
     "url": "https://mcciapune.com/media/printmedia/Mission_Vayu_by_Pune_Platform_for_COVID-19_Responses.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG282",
+    "id": "PG361",
     "date": "",
     "year": 2021,
     "type": "Other",
@@ -5640,7 +7220,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG283",
+    "id": "PG362",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5660,7 +7240,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG284",
+    "id": "PG363",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5680,7 +7260,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG285",
+    "id": "PG364",
     "date": "",
     "year": 0,
     "type": "Article",
@@ -5700,7 +7280,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG286",
+    "id": "PG365",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5720,7 +7300,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG287",
+    "id": "PG366",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5740,7 +7320,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG288",
+    "id": "PG367",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5760,7 +7340,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG289",
+    "id": "PG368",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5780,7 +7360,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG290",
+    "id": "PG369",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5800,7 +7380,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG291",
+    "id": "PG370",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5820,7 +7400,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG292",
+    "id": "PG371",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -5840,7 +7420,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG293",
+    "id": "PG372",
     "date": "",
     "year": 2021,
     "type": "PDF",
@@ -5860,7 +7440,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG294",
+    "id": "PG373",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5875,12 +7455,12 @@
     "url": "https://www.mcciapune.com/committees/taxation-committee/",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG295",
+    "id": "PG374",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5900,7 +7480,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG296",
+    "id": "PG375",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5920,7 +7500,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG297",
+    "id": "PG376",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5940,7 +7520,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG298",
+    "id": "PG377",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5960,7 +7540,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG299",
+    "id": "PG378",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -5980,7 +7560,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG300",
+    "id": "PG379",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6000,7 +7580,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG301",
+    "id": "PG380",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6020,7 +7600,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG302",
+    "id": "PG381",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6035,12 +7615,12 @@
     "url": "https://www.mcciapune.com/mcciaadmin/executive-board/",
     "mediaUrl": null,
     "notes": "Imported from comprehensive research workbook; review content against source",
-    "sourceDataset": "Comprehensive research workbook; PDF report source index; Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 4,
-    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Comprehensive research workbook; PDF report source index; Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 5,
+    "mergeNotes": "New source not present in dashboard baseline; Also present in Additional comprehensive workbook A; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG303",
+    "id": "PG382",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6060,7 +7640,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG304",
+    "id": "PG383",
     "date": "",
     "year": 2020,
     "type": "PDF",
@@ -6080,7 +7660,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG305",
+    "id": "PG384",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6100,7 +7680,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG306",
+    "id": "PG385",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6120,7 +7700,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG307",
+    "id": "PG386",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6140,7 +7720,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG308",
+    "id": "PG387",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6160,7 +7740,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG309",
+    "id": "PG388",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6180,7 +7760,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG310",
+    "id": "PG389",
     "date": "",
     "year": 2025,
     "type": "Other",
@@ -6195,12 +7775,12 @@
     "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Awards_Profile_2025_English_Final_for_Print.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG311",
+    "id": "PG390",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6220,7 +7800,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG312",
+    "id": "PG391",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6240,7 +7820,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG313",
+    "id": "PG392",
     "date": "",
     "year": 2024,
     "type": "PDF",
@@ -6255,12 +7835,12 @@
     "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_90Annual_Report_23-24.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B",
-    "duplicateCount": 2,
-    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B"
+    "sourceDataset": "Additional comprehensive workbook A; Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in Additional comprehensive workbook B; Also present in table.csv"
   },
   {
-    "id": "PG314",
+    "id": "PG393",
     "date": "",
     "year": 2022,
     "type": "PDF",
@@ -6275,12 +7855,12 @@
     "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Annual_Report_FY_2022_FKDOl76.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG315",
+    "id": "PG394",
     "date": "",
     "year": 2020,
     "type": "PDF",
@@ -6295,12 +7875,12 @@
     "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA-ANNUAL-REPORT-2019-20-WEB-VERSION_Zp6lFtm.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook B. Supplied verification label: To Verify; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook B",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG316",
+    "id": "PG395",
     "date": "",
     "year": 2018,
     "type": "PDF",
@@ -6320,7 +7900,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG317",
+    "id": "PG396",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6340,7 +7920,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG318",
+    "id": "PG397",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6360,7 +7940,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG319",
+    "id": "PG398",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6380,7 +7960,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG320",
+    "id": "PG399",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6400,7 +7980,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG321",
+    "id": "PG400",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6420,7 +8000,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG322",
+    "id": "PG401",
     "date": "",
     "year": 2021,
     "type": "Social",
@@ -6435,12 +8015,12 @@
     "url": "https://www.facebook.com/PuneMCCIA/posts/industries-want-administration-to-restore-o2-supplythousands-of-units-are-facing/1763483270497527/",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG323",
+    "id": "PG402",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6460,7 +8040,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG324",
+    "id": "PG403",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6480,7 +8060,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG325",
+    "id": "PG404",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6500,7 +8080,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG326",
+    "id": "PG405",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6520,7 +8100,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG327",
+    "id": "PG406",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6540,7 +8120,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG328",
+    "id": "PG407",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6560,7 +8140,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG329",
+    "id": "PG408",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6580,7 +8160,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG330",
+    "id": "PG409",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6595,12 +8175,12 @@
     "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Avantis_Report__BuD2wxf.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook A. Supplied verification label: VERIFIED; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook A",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook A; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG331",
+    "id": "PG410",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6620,7 +8200,7 @@
     "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
-    "id": "PG332",
+    "id": "PG411",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6640,7 +8220,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG333",
+    "id": "PG412",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6660,7 +8240,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG334",
+    "id": "PG413",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6680,7 +8260,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG335",
+    "id": "PG414",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6700,7 +8280,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG336",
+    "id": "PG415",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6720,7 +8300,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG337",
+    "id": "PG416",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6740,7 +8320,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG338",
+    "id": "PG417",
     "date": "",
     "year": 2024,
     "type": "PDF",
@@ -6755,12 +8335,12 @@
     "url": "https://mcciapune.com/media/printmedia2023/Award_Winners_and_Jury_members_2024.pdf",
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook B. Supplied verification label: To Verify; independent review pending.",
-    "sourceDataset": "Additional comprehensive workbook B",
-    "duplicateCount": 1,
-    "mergeNotes": "New record absent from prior 246-record master"
+    "sourceDataset": "Additional comprehensive workbook B; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New record absent from prior 246-record master; Also present in table.csv"
   },
   {
-    "id": "PG339",
+    "id": "PG418",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6780,7 +8360,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG340",
+    "id": "PG419",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6800,7 +8380,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG341",
+    "id": "PG420",
     "date": "",
     "year": 0,
     "type": "Other",
@@ -6820,7 +8400,7 @@
     "mergeNotes": "New record absent from prior 246-record master"
   },
   {
-    "id": "PG342",
+    "id": "PG421",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6840,7 +8420,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG343",
+    "id": "PG422",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6860,7 +8440,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG344",
+    "id": "PG423",
     "date": "",
     "year": 0,
     "type": "PDF",
@@ -6880,7 +8460,7 @@
     "mergeNotes": "Linkless publication lead retained for research"
   },
   {
-    "id": "PG345",
+    "id": "PG424",
     "date": "",
     "year": 2026,
     "type": "Other",
