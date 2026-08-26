@@ -20,6 +20,28 @@ Vercel uses the repository-level `vercel.json` override to run the native
 `next build` command and create `.next/routes-manifest.json`. The regular npm
 build remains `vinext build` for the OpenAI Sites deployment.
 
+## Add and read newspaper clippings
+
+Use **Add clipping** in the dashboard header to process a JPG, PNG or WebP
+newspaper image (maximum 20 MB). The browser:
+
+- preserves the original file without alteration;
+- creates a separate enlarged, grayscale, auto-contrasted and sharpened WebP;
+- runs Tesseract.js OCR with selectable English, Marathi and Hindi models;
+- proposes the publisher, date, page, language, headline and relevant MCCIA
+  person or organisation;
+- requires an editor to compare and correct the extracted fields before saving.
+
+Reviewed metadata is stored in D1 and original/enhanced images are stored in R2.
+An exact SHA-256 match reuses the existing clipping instead of creating a
+duplicate. Saved uploads appear in the **Clipping evidence** archive, work with
+the archive filters and are included in the clipping CSV export.
+
+OCR processing runs locally in the user's browser, but the language model files
+must be downloaded when a language is used for the first time. PDF clippings
+should be exported as a clear page image before upload. OCR text is not factual
+verification, and an enhanced copy never replaces the original evidence.
+
 ## Weekly Google News discovery
 
 The workflow in `.github/workflows/weekly-google-news.yml` runs every Monday at 08:45 IST and can also be started manually from GitHub Actions. It runs:
@@ -53,5 +75,7 @@ Google News is a discovery channel, not an exhaustive archive or verification au
 ## Evidence policy
 
 - Original clipping images remain the evidence of record.
+- Enhanced OCR copies are labelled derivative images and remain linked to the
+  untouched original.
 - OCR text is an AI-assisted transcription and can contain errors.
 - Public source URLs, source candidates and unresolved records remain visibly distinguished.

@@ -1,0 +1,38 @@
+import { index, integer, real, sqliteTable, text, uniqueIndex } from 'drizzle-orm/sqlite-core';
+
+export const clippingUploads = sqliteTable(
+  'clipping_uploads',
+  {
+    id: text('id').primaryKey(),
+    sha256: text('sha256').notNull(),
+    uploadedAt: text('uploaded_at').notNull(),
+    originalFilename: text('original_filename').notNull(),
+    originalKey: text('original_key').notNull(),
+    enhancedKey: text('enhanced_key').notNull(),
+    originalContentType: text('original_content_type').notNull(),
+    enhancedContentType: text('enhanced_content_type').notNull(),
+    originalSize: integer('original_size').notNull(),
+    enhancedSize: integer('enhanced_size').notNull(),
+    width: integer('width').notNull(),
+    height: integer('height').notNull(),
+    publisher: text('publisher').notNull(),
+    publicationDate: text('publication_date').notNull(),
+    page: text('page'),
+    language: text('language').notNull(),
+    headline: text('headline').notNull(),
+    ocrText: text('ocr_text').notNull(),
+    ocrConfidence: real('ocr_confidence'),
+    ocrLanguages: text('ocr_languages').notNull(),
+    presence: text('presence').notNull(),
+    status: text('status').notNull(),
+    reviewed: integer('reviewed', { mode: 'boolean' }).notNull(),
+    notes: text('notes').notNull(),
+    sourceUrl: text('source_url'),
+  },
+  (table) => [
+    uniqueIndex('idx_clipping_uploads_sha256').on(table.sha256),
+    index('idx_clipping_uploads_publication_date').on(table.publicationDate),
+    index('idx_clipping_uploads_publisher').on(table.publisher),
+    index('idx_clipping_uploads_uploaded_at').on(table.uploadedAt),
+  ],
+);
