@@ -27,3 +27,6 @@
 
 /* OCR provenance */
 .tags .tag-ai{background:#e4eef8;color:#205b7a;font-weight:700}.clipping-card .card-actions a:first-child{font-weight:700}
+
+/* Public source audit */
+.source-audit{margin:0 0 14px;padding:9px 10px;border-left:3px solid var(--amber);background:var(--amber-soft);color:#76521e}.source-audit strong,.source-audit span{display:block}.source-audit strong{font-size:10px;letter-spacing:.035em}.source-audit span{margin-top:4px;overflow:hidden;color:#806a49;font-size:9px;line-height:1.35;text-overflow:ellipsis;white-space:nowrap}.source-audit.audit-headline-confirmed{border-color:var(--green);background:var(--green-soft);color:var(--green)}.source-audit.audit-no-public-url,.source-audit.audit-invalid-url,.source-audit.audit-unreachable,.source-audit.audit-audit-error{border-color:var(--red);background:var(--red-soft);color:var(--red)}.source-audit.audit-homepage-only,.source-audit.audit-restricted,.source-audit.audit-discovery-link{border-color:var(--amber)}
