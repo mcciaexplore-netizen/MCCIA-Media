@@ -1,0 +1,27 @@
+[
+  {
+    "id": "GN-82D63A64218B24",
+    "date": "2026-08-19",
+    "year": 2026,
+    "type": "Article",
+    "format": "Google News RSS alert",
+    "publisher": "Energetica India Magazine",
+    "title": "Second Edition of REconnect Pune to be Held on August 19, 2026",
+    "language": "Unknown",
+    "presence": "MCCIA mention",
+    "topic": "Weekly Google News alert",
+    "description": "Automatically discovered by the MCCIA Google News RSS watch. Open the source and complete editorial verification before relying on this item.",
+    "status": "Unverified",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRllMU01BUW93NTRqSW5lY3d6UlN4VmdQQjQ3S0lEcC1sc1IxUXdQam9MLXROYkZyLUs1aWRXRk1NUFRFa0N3VGl0TWU0M1AxTVp2eDZmbEMzVzY4T3R1V1F2QjJLaGFnVDIwMENLcUh4T2RLX3I2OWZ6RVpJWWRkOEhjcXJCUTgwNlBSWGZ0SU45amNGbmZEdGI5eEF1WnFH?oc=5",
+    "mediaUrl": null,
+    "evidenceImageUrl": null,
+    "notes": "Automated discovery only; Google News coverage is not exhaustive.",
+    "sourceDataset": "Weekly Google News RSS",
+    "sourceSearchStatus": "google-news-rss",
+    "verificationMethod": "Automated discovery; editorial verification required",
+    "googleNewsWatch": "MCCIA",
+    "googleNewsQuery": "MCCIA OR \"Mahratta Chamber of Commerce\" OR \"Maratha Chamber of Commerce\"",
+    "googleNewsFetchedAt": "2026-08-26T06:19:11+00:00",
+    "publisherUrl": "https://www.energetica-india.net"
+  }
+]

@@ -1,0 +1,43 @@
+name: Weekly MCCIA Google News discovery
+
+on:
+  schedule:
+    # Monday at 08:45 India Standard Time (03:15 UTC).
+    - cron: "15 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-mccia-google-news
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out dashboard
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch the latest discoveries
+        run: python scripts/fetch_google_news.py --days 10 --max-per-query 50
+
+      - name: Commit new discoveries
+        shell: bash
+        run: |
+          if git diff --quiet -- app/google-news-alerts.json; then
+            echo "No new Google News discoveries."
+            exit 0
+          fi
+          git config user.name "mccia-media-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add app/google-news-alerts.json
+          git commit -m "data: update weekly Google News alerts"
+          git push
