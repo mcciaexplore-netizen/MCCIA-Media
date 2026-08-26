@@ -52,6 +52,21 @@ type Fields = {
 type Props = {
   onClose: () => void;
   onSaved: (record: UploadedClipping) => void;
+  intake?: IntakeReviewItem | null;
+};
+
+export type IntakeReviewItem = {
+  id: string;
+  imageUrl: string;
+  originalFilename: string;
+  publisher: string;
+  publicationDate: string;
+  page?: string | null;
+  language: string;
+  headline: string;
+  presence: string;
+  notes: string;
+  sourceUrl?: string | null;
 };
 
 const acceptedTypes = new Set(['image/jpeg', 'image/png', 'image/webp']);
@@ -209,8 +224,9 @@ async function enhanceNewspaper(file: File) {
   return { blob, width, height };
 }
 
-export default function ClippingIngest({ onClose, onSaved }: Props) {
+export default function ClippingIngest({ onClose, onSaved, intake }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
+  const loadedIntakeId = useRef('');
   const [originalFile, setOriginalFile] = useState<File | null>(null);
   const [originalUrl, setOriginalUrl] = useState('');
   const [enhancedBlob, setEnhancedBlob] = useState<Blob | null>(null);
@@ -230,7 +246,7 @@ export default function ClippingIngest({ onClose, onSaved }: Props) {
   const updateField = <Key extends keyof Fields>(key: Key, value: Fields[Key]) =>
     setFields((current) => ({ ...current, [key]: value }));
 
-  const runPipeline = async (file: File) => {
+  const runPipeline = async (file: File, preset?: IntakeReviewItem | null) => {
     setError('');
     setMessage('');
     setReviewed(false);
@@ -268,16 +284,16 @@ export default function ClippingIngest({ onClose, onSaved }: Props) {
         const text = result.data.text.replace(/\n{3,}/g, '\n\n').trim();
         const publisher = detectPublisher(text);
         setFields({
-          publisher,
-          publicationDate: detectDate(text),
-          page: detectPage(text),
-          language: detectLanguage(text),
-          headline: detectHeadline(text, publisher),
+          publisher: preset?.publisher || publisher,
+          publicationDate: preset?.publicationDate || detectDate(text),
+          page: preset?.page || detectPage(text),
+          language: preset?.language && preset.language !== 'Unknown' ? preset.language : detectLanguage(text),
+          headline: preset?.headline && !preset.headline.toLowerCase().includes('requires') ? preset.headline : detectHeadline(text, preset?.publisher || publisher),
           ocrText: text,
           ocrConfidence: Math.round(result.data.confidence || 0),
-          presence: detectPresence(text),
-          notes: 'Original and enhanced copies preserved; OCR text reviewed during upload.',
-          sourceUrl: '',
+          presence: preset?.presence && !preset.presence.toLowerCase().includes('requires review') ? preset.presence : detectPresence(text),
+          notes: preset?.notes || 'Original and enhanced copies preserved; OCR text reviewed during upload.',
+          sourceUrl: preset?.sourceUrl || '',
         });
       } finally {
         await worker.terminate();
@@ -289,6 +305,28 @@ export default function ClippingIngest({ onClose, onSaved }: Props) {
       setError(pipelineError instanceof Error ? pipelineError.message : 'The clipping could not be processed.');
     }
   };
+
+  useEffect(() => {
+    if (!intake || loadedIntakeId.current === intake.id) return;
+    loadedIntakeId.current = intake.id;
+    let cancelled = false;
+    fetch(intake.imageUrl, { cache: 'no-store' })
+      .then((response) => {
+        if (!response.ok) throw new Error(`Unable to load the submitted clipping (HTTP ${response.status}).`);
+        return response.blob();
+      })
+      .then((blob) => {
+        if (cancelled) return;
+        const file = new File([blob], intake.originalFilename, { type: blob.type || 'image/jpeg' });
+        void runPipeline(file, intake);
+      })
+      .catch((loadError) => {
+        if (!cancelled) setError(loadError instanceof Error ? loadError.message : 'Unable to load the submitted clipping.');
+      });
+    return () => { cancelled = true; };
+    // Each inbox ID is loaded once. The OCR language selection is intentionally read at review start.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [intake?.id]);
 
   const handleInput = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -323,6 +361,7 @@ export default function ClippingIngest({ onClose, onSaved }: Props) {
       form.append('enhanced', enhancedBlob, `${originalFile.name.replace(/\.[^.]+$/, '')}-enhanced.webp`);
       form.append('metadata', JSON.stringify({
         ...fields,
+        intakeId: intake?.id || undefined,
         ocrLanguages: selectedLanguages.join('+') || 'eng',
         width: dimensions.width,
         height: dimensions.height,
@@ -341,7 +380,7 @@ export default function ClippingIngest({ onClose, onSaved }: Props) {
   };
 
   return <section className="ingest-panel" id="add-clipping" aria-labelledby="ingest-title">
-    <div className="ingest-heading"><div><p className="kicker">NEW EVIDENCE / OWNER WORKSPACE</p><h2 id="ingest-title">Add a newspaper clipping</h2><p>Original evidence stays untouched. A separate OCR copy is enlarged, converted to grayscale, auto-contrasted and sharpened.</p></div><button className="ingest-close" onClick={onClose} aria-label="Close clipping uploader">Close</button></div>
+    <div className="ingest-heading"><div><p className="kicker">{intake?'SUBMISSION INBOX / EDITORIAL REVIEW':'NEW EVIDENCE / OWNER WORKSPACE'}</p><h2 id="ingest-title">{intake?'Review team submission':'Add a newspaper clipping'}</h2><p>{intake?'The Drive original is being enhanced and read with OCR. Approval will move it into the main Clipping Evidence archive.':'Original evidence stays untouched. A separate OCR copy is enlarged, converted to grayscale, auto-contrasted and sharpened.'}</p></div><button className="ingest-close" onClick={onClose} aria-label="Close clipping uploader">Close</button></div>
     <div className="ingest-languages" aria-label="OCR languages"><strong>OCR languages</strong>{[['eng','English'],['mar','Marathi'],['hin','Hindi']].map(([code,label])=><label key={code}><input type="checkbox" checked={selectedLanguages.includes(code)} onChange={()=>toggleLanguage(code)}/><span>{label}</span></label>)}</div>
     <div className="drop-zone" role="button" tabIndex={0} onClick={()=>inputRef.current?.click()} onKeyDown={event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();inputRef.current?.click()}}} onDragOver={event=>event.preventDefault()} onDrop={handleDrop}>
       <input ref={inputRef} type="file" accept="image/jpeg,image/png,image/webp" onChange={handleInput}/><strong>{originalFile?'Choose a different clipping':'Drop a clipping here or choose an image'}</strong><span>JPG, PNG or WebP · maximum 20 MB · clearer source images produce better OCR</span>

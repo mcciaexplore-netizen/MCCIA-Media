@@ -1,4 +1,4 @@
-import { ensureUploadsSchema, getStorageBindings } from '@/db';
+import { ensureFormIntakeSchema, ensureUploadsSchema, getStorageBindings } from '@/db';
 
 export const dynamic = 'force-dynamic';
 
@@ -34,6 +34,7 @@ type UploadedRow = {
 };
 
 type UploadMetadata = {
+  intakeId?: string;
   publisher?: string;
   publicationDate?: string;
   page?: string;
@@ -183,11 +184,22 @@ export async function POST(request: Request) {
     const id = `UPL-${hash.slice(0, 12).toUpperCase()}`;
     const { db, files } = getStorageBindings();
     await ensureUploadsSchema(db);
+    const intakeId = clean(metadata.intakeId, 200);
+    if (intakeId) {
+      await ensureFormIntakeSchema(db);
+      const intake = await db.prepare('SELECT id FROM google_form_intake WHERE id = ? LIMIT 1').bind(intakeId).first<{ id: string }>();
+      if (!intake) return jsonError('The submission inbox record was not found.', 400);
+    }
     const existing = await db
       .prepare('SELECT * FROM clipping_uploads WHERE sha256 = ? LIMIT 1')
       .bind(hash)
       .first<UploadedRow>();
     if (existing) {
+      if (intakeId) {
+        await db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, error_message = NULL WHERE id = ?`)
+          .bind(existing.id, new Date().toISOString(), intakeId)
+          .run();
+      }
       return Response.json({ record: toClippingRecord(existing), duplicate: true });
     }
 
@@ -218,8 +230,7 @@ export async function POST(request: Request) {
       : null;
 
     try {
-      await db
-        .prepare(`INSERT INTO clipping_uploads (
+      const insertUpload = db.prepare(`INSERT INTO clipping_uploads (
           id, sha256, uploaded_at, original_filename, original_key, enhanced_key,
           original_content_type, enhanced_content_type, original_size, enhanced_size,
           width, height, publisher, publication_date, page, language, headline,
@@ -251,8 +262,14 @@ export async function POST(request: Request) {
           1,
           notes,
           sourceUrl,
-        )
-        .run();
+        );
+      if (intakeId) {
+        const approveIntake = db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, error_message = NULL WHERE id = ?`)
+          .bind(id, uploadedAt, intakeId);
+        await db.batch([insertUpload, approveIntake]);
+      } else {
+        await insertUpload.run();
+      }
     } catch (error) {
       await Promise.allSettled([files.delete(originalKey), files.delete(enhancedKey)]);
       throw error;
