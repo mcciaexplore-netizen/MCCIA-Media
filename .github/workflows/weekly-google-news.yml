@@ -29,18 +29,21 @@ jobs:
       - name: Fetch the latest discoveries
         run: python scripts/fetch_google_news.py --days 10 --max-per-query 50
 
+      - name: Refresh public e-paper sources
+        run: python scripts/fetch_epaper_sources.py
+
       - name: Audit new and stale public sources
         run: python scripts/verify_sources.py --stale-days 30 --workers 12 --timeout 12
 
       - name: Commit new discoveries
         shell: bash
         run: |
-          if git diff --quiet -- app/google-news-alerts.json app/source-verification.json source_verification_report.json; then
+          if git diff --quiet -- app/google-news-alerts.json app/epaper-sources.json app/epaper-portals.json app/source-verification.json epaper_research_report.json source_verification_report.json; then
             echo "No new discoveries or source-audit changes."
             exit 0
           fi
           git config user.name "mccia-media-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add app/google-news-alerts.json app/source-verification.json source_verification_report.json
-          git commit -m "data: update weekly news and source audit"
+          git add app/google-news-alerts.json app/epaper-sources.json app/epaper-portals.json app/source-verification.json epaper_research_report.json source_verification_report.json
+          git commit -m "data: update weekly news, e-papers and source audit"
           git push

@@ -72,6 +72,30 @@ change an editorial verification label.
 
 Google News is a discovery channel, not an exhaustive archive or verification authority. Every automated record is labelled `Unverified` until an editor checks the publisher article and evidence.
 
+## E-paper research
+
+The **E-paper sources** dataset separates three things that should not be
+confused:
+
+- exact full public PDF evidence that was reviewed for a named MCCIA or
+  Prashant Girbane mention;
+- issue cards harvested from MCCIA's official Sampada archive, whose cover and
+  issue link are verified but whose individual pages still need review;
+- a labelled directory of official, subscription and legacy newspaper portals
+  for Sakal, Loksatta, Lokmat, Maharashtra Times, Times of India, Indian
+  Express, Saamana, Pudhari, Kesari and others.
+
+Refresh the catalogue with:
+
+```bash
+python scripts/fetch_epaper_sources.py
+```
+
+The weekly GitHub Action runs this collector together with Google News discovery
+and source auditing. It links to publisher pages and cover thumbnails and does
+not copy third-party newspaper pages or bypass subscriptions. The generated
+`epaper_research_report.json` records the method, counts and known limitations.
+
 ## Evidence policy
 
 - Original clipping images remain the evidence of record.

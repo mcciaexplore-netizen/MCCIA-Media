@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-08-26T10:14:14Z",
+  "scope": "Publicly indexed or publisher-controlled e-paper sources relevant to MCCIA and Director General Prashant Girbane",
+  "summary": {
+    "epaperRecords": 64,
+    "officialSampadaIssues": 63,
+    "exactFullPdfEvidence": 2,
+    "publisherPortals": 13
+  },
+  "method": [
+    "Harvest every issue card from the official MCCIA Sampada index.",
+    "Add only exact public newspaper PDFs whose full text and identity were reviewed.",
+    "Catalogue official or publisher-labelled e-paper portals for manual archive searching.",
+    "Keep subscription, login and legacy-access limitations visible."
+  ],
+  "limitations": [
+    "E-paper search engines and paywalled archives do not expose every historical page to public web indexing.",
+    "A portal listing is a research location, not evidence that a specific MCCIA mention exists.",
+    "No third-party full newspaper pages are copied into the repository; the dashboard links to the publisher or public PDF.",
+    "The catalogue is a best-available public index, not a guarantee that every offline or unindexed edition has been found."
+  ],
+  "archive": "https://www.mcciapune.com/publications/publication-sampada/"
+}

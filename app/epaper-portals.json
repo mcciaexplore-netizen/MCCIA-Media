@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-08-26T10:14:14Z",
+  "portals": [
+    {
+      "publisher": "MCCIA Sampada",
+      "edition": "Official MCCIA periodical",
+      "url": "https://www.mcciapune.com/publications/publication-sampada/",
+      "access": "Public issue archive",
+      "coverage": "Jan 2021 onward, plus separately indexed older PDFs",
+      "notes": "Publisher-controlled issue index with cover images and issue links.",
+      "verification": "Official publisher portal"
+    },
+    {
+      "publisher": "Sakal",
+      "edition": "Pune / selectable editions",
+      "url": "https://epaper.esakal.com/smartepaper/UI/",
+      "access": "Portal; archive controls may require sign-in",
+      "coverage": "Date and edition selector",
+      "notes": "Use Marathi and English spellings when searching issue text.",
+      "verification": "Official e-paper portal"
+    },
+    {
+      "publisher": "Loksatta",
+      "edition": "Pune",
+      "url": "https://epaper.loksatta.com/",
+      "access": "Subscription / login may apply",
+      "coverage": "Current and archived editions",
+      "notes": "The public Loksatta website links directly to this e-paper service.",
+      "verification": "Official e-paper portal"
+    },
+    {
+      "publisher": "Lokmat",
+      "edition": "Pune Main",
+      "url": "https://epaper.lokmat.com/home.php",
+      "access": "Public portal; issue access varies",
+      "coverage": "Date and edition selector",
+      "notes": "Pune Main is the principal edition for the MCCIA search scope.",
+      "verification": "Official e-paper portal"
+    },
+    {
+      "publisher": "Maharashtra Times",
+      "edition": "Pune",
+      "url": "https://epaper.timesgroup.com/maharashtratimes/",
+      "access": "Times e-paper account may be required",
+      "coverage": "Current and archived editions",
+      "notes": "Times Group Marathi e-paper portal.",
+      "verification": "Official publisher portal"
+    },
+    {
+      "publisher": "The Times of India",
+      "edition": "Pune",
+      "url": "https://epaper.indiatimes.com/timesepaper/publication-the-times-of-india%2Ccity-pune.cms",
+      "access": "Times e-paper account may be required",
+      "coverage": "Pune edition",
+      "notes": "Direct Pune-edition landing page.",
+      "verification": "Official publisher portal"
+    },
+    {
+      "publisher": "The Indian Express",
+      "edition": "Pune",
+      "url": "https://pdf.indianexpress.com/ieepaper/ie/pune/",
+      "access": "Public landing page; subscription may apply",
+      "coverage": "Pune edition",
+      "notes": "Indian Express Pune e-paper landing page.",
+      "verification": "Official publisher portal"
+    },
+    {
+      "publisher": "Express Group ePaper Archive",
+      "edition": "Pune",
+      "url": "https://epaperarchive.indianexpress.com/edition/Pune/643",
+      "access": "Archive portal; login may apply",
+      "coverage": "Express Group Pune archive",
+      "notes": "Useful for Loksatta and Indian Express archive discovery.",
+      "verification": "Official publisher archive"
+    },
+    {
+      "publisher": "Saamana",
+      "edition": "Pune / selectable editions",
+      "url": "https://epaper.saamana.com/",
+      "access": "Public portal; issue access varies",
+      "coverage": "Date and edition selector",
+      "notes": "Official Saamana e-paper portal.",
+      "verification": "Official e-paper portal"
+    },
+    {
+      "publisher": "Pudhari",
+      "edition": "Pune / selectable editions",
+      "url": "https://epaper.pudhari.news/",
+      "access": "Public portal; issue access varies",
+      "coverage": "Date and edition selector",
+      "notes": "Official Pudhari e-paper portal.",
+      "verification": "Official e-paper portal"
+    },
+    {
+      "publisher": "Kesari",
+      "edition": "Pune",
+      "url": "https://www.magzter.com/IN/Kesari-Mahratta-Trust/Kesari-Pune/Newspaper/All-Issues",
+      "access": "Third-party subscription archive",
+      "coverage": "All-issues catalogue",
+      "notes": "Kesari Pune archive hosted by Magzter; not the similarly named Ekta Kesari.",
+      "verification": "Publisher-labelled third-party archive"
+    },
+    {
+      "publisher": "Dainik Prabhat",
+      "edition": "Legacy e-paper service",
+      "url": "http://epaper.eprabhat.net/",
+      "access": "Legacy portal; availability varies",
+      "coverage": "Historical portal",
+      "notes": "Kept as a research lead; confirm availability before relying on a result.",
+      "verification": "Legacy portal lead"
+    },
+    {
+      "publisher": "Hindustan Times",
+      "edition": "Legacy e-paper viewer",
+      "url": "http://paper.hindustantimes.com/epaper/viewer.aspx",
+      "access": "Legacy portal; availability varies",
+      "coverage": "Historical e-paper viewer",
+      "notes": "Kept as a research lead; current access may redirect or require a subscription.",
+      "verification": "Legacy portal lead"
+    }
+  ]
+}
