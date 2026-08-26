@@ -1,0 +1,2691 @@
+{
+  "method": "PP-OCRv5 English and Devanagari recognition, compared only with pre-existing candidate records",
+  "policy": "AI transcription and matching are aids, not verification; original clipping remains the evidence of record",
+  "ambiguousReviewed": 98,
+  "acceptedMatches": 3,
+  "remainingAmbiguous": 95,
+  "decisions": [
+    {
+      "clippingId": "CLIP-762ACB5BE74A",
+      "date": "2024-10-11",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0315",
+      "bestTitle": "Ratan Tata yanchi Pune Bhet : Kirloskar Brothers                                                             रतन टाटा यांची पुणे भेट : किर्लोस्कर ब्रथर्स",
+      "bestScore": 0.429,
+      "secondScore": 0.333,
+      "margin": 0.096,
+      "candidateScores": [
+        {
+          "recordId": "PG0315",
+          "score": 0.429,
+          "title": "Ratan Tata yanchi Pune Bhet : Kirloskar Brothers                                                             रतन टाटा यांची पुणे भेट : किर्लोस्कर ब्रथर्स"
+        },
+        {
+          "recordId": "PG0316",
+          "score": 0.333,
+          "title": "Rantan Tata yanchy Samvet  Sanjay kirloskar  रतन टाटा यांच्या समवेत संजय किर्लोस्कर"
+        }
+      ],
+      "ocrHeadline": "सन २०१९एमध्ये किलाॉस्कर बरदस्स ने १००व्या वर्षात पदार्ण केले होते;तेव्हा रतन टाटा यांनी पुण्यात भेट दिली होती."
+    },
+    {
+      "clippingId": "CLIP-1F845F3C530B",
+      "date": "2024-09-29",
+      "publisher": "Sakal",
+      "accepted": true,
+      "bestRecordId": "PG0328",
+      "bestTitle": "MCCIA'Chy Adhkshy Padi Sanjay kirloskar 'एमसीसीआयए' च्या अध्यक्षपदी संजय किर्लोस्कर",
+      "bestScore": 1.0,
+      "secondScore": 0.222,
+      "margin": 0.778,
+      "candidateScores": [
+        {
+          "recordId": "PG0328",
+          "score": 1.0,
+          "title": "MCCIA'Chy Adhkshy Padi Sanjay kirloskar 'एमसीसीआयए' च्या अध्यक्षपदी संजय किर्लोस्कर"
+        },
+        {
+          "recordId": "PG0331",
+          "score": 0.222,
+          "title": "Harit Urjje chi Kimat Aavakyt Havi  हरित उर्जेची किंमत आवाक्यता हवी"
+        }
+      ],
+      "ocrHeadline": "'एमसीसीआयए'च्या"
+    },
+    {
+      "clippingId": "CLIP-6F440EEF6059",
+      "date": "2024-07-18",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0368",
+      "bestTitle": "Rajjay Semiconductor Chip Utpadan September Pasune                                    राज्यात सेमीकंडक्टर चिप उत्पादन सप्टेंबरपासून",
+      "bestScore": 0.8,
+      "secondScore": 0.625,
+      "margin": 0.175,
+      "candidateScores": [
+        {
+          "recordId": "PG0368",
+          "score": 0.8,
+          "title": "Rajjay Semiconductor Chip Utpadan September Pasune                                    राज्यात सेमीकंडक्टर चिप उत्पादन सप्टेंबरपासून"
+        },
+        {
+          "recordId": "PG0366",
+          "score": 0.625,
+          "title": "Semiconductor September Madhe Karaynvit                               सेमीकंडक्टर सप्टेंबर मध्ये कार्यन्वित"
+        },
+        {
+          "recordId": "PG0367",
+          "score": 0.364,
+          "title": "Semiconductor Sathi Punya chi Mola chi Bhumika                                                                   सेमीकंडक्टर साठी पुण्याची मोलाची भूमिका"
+        }
+      ],
+      "ocrHeadline": "अध्यक्ष चोडणकर यांची माहिती"
+    },
+    {
+      "clippingId": "CLIP-949B8BF94476",
+      "date": "2024-05-21",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0392",
+      "bestTitle": "Bharta Kadun Americe la Pasanti (भारताकडून अमेरिकेला पसंती)",
+      "bestScore": 0.583,
+      "secondScore": 0.374,
+      "margin": 0.209,
+      "candidateScores": [
+        {
+          "recordId": "PG0392",
+          "score": 0.583,
+          "title": "Bharta Kadun Americe la Pasanti (भारताकडून अमेरिकेला पसंती)"
+        },
+        {
+          "recordId": "PG0391",
+          "score": 0.374,
+          "title": "Cyber Gunhyshi Bharta chy Madtine Ldha        ( सायबर गुन्ह्याशी भारताच्या मदतीने लढा)"
+        }
+      ],
+      "ocrHeadline": "एरिक गर्सटी याची"
+    },
+    {
+      "clippingId": "CLIP-8E8B1F7D346C",
+      "date": "2024-05-21",
+      "publisher": "Maharashtra Times",
+      "accepted": true,
+      "bestRecordId": "PG0391",
+      "bestTitle": "Cyber Gunhyshi Bharta chy Madtine Ldha        ( सायबर गुन्ह्याशी भारताच्या मदतीने लढा)",
+      "bestScore": 0.959,
+      "secondScore": 0.295,
+      "margin": 0.664,
+      "candidateScores": [
+        {
+          "recordId": "PG0391",
+          "score": 0.959,
+          "title": "Cyber Gunhyshi Bharta chy Madtine Ldha        ( सायबर गुन्ह्याशी भारताच्या मदतीने लढा)"
+        },
+        {
+          "recordId": "PG0392",
+          "score": 0.295,
+          "title": "Bharta Kadun Americe la Pasanti (भारताकडून अमेरिकेला पसंती)"
+        }
+      ],
+      "ocrHeadline": "'सायबर गुन्यांशी भारताच्या मदतीने लढा'"
+    },
+    {
+      "clippingId": "CLIP-8E17B253BE72",
+      "date": "2024-03-12",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0415",
+      "bestTitle": "Divyang Kalyna sathi Kendra",
+      "bestScore": 0.103,
+      "secondScore": 0.092,
+      "margin": 0.011,
+      "candidateScores": [
+        {
+          "recordId": "PG0415",
+          "score": 0.103,
+          "title": "Divyang Kalyna sathi Kendra"
+        },
+        {
+          "recordId": "PG0413",
+          "score": 0.092,
+          "title": "MSME chy Vikasa sathi Punyt Kendra"
+        }
+      ],
+      "ocrHeadline": "'एमएसएमई'च्या पुण्यात विकासासाठी"
+    },
+    {
+      "clippingId": "CLIP-62C1A5AB56E8",
+      "date": "2024-03-12",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0413",
+      "bestTitle": "MSME chy Vikasa sathi Punyt Kendra",
+      "bestScore": 0.097,
+      "secondScore": 0.062,
+      "margin": 0.035,
+      "candidateScores": [
+        {
+          "recordId": "PG0413",
+          "score": 0.097,
+          "title": "MSME chy Vikasa sathi Punyt Kendra"
+        },
+        {
+          "recordId": "PG0415",
+          "score": 0.062,
+          "title": "Divyang Kalyna sathi Kendra"
+        }
+      ],
+      "ocrHeadline": "कल्याणासाठी पुणे"
+    },
+    {
+      "clippingId": "CLIP-4DF98C44705B",
+      "date": "2023-01-31",
+      "publisher": "Hindustan Times",
+      "accepted": false,
+      "bestRecordId": "PG0567",
+      "bestTitle": "Increase Capex for infra Projects,add new Schemes",
+      "bestScore": 0.371,
+      "secondScore": 0.333,
+      "margin": 0.038,
+      "candidateScores": [
+        {
+          "recordId": "PG0567",
+          "score": 0.371,
+          "title": "Increase Capex for infra Projects,add new Schemes"
+        },
+        {
+          "recordId": "PG0565",
+          "score": 0.333,
+          "title": "Reduce GST ,widen tax net,say Industrialists"
+        }
+      ],
+      "ocrHeadline": "projects will Many l be"
+    },
+    {
+      "clippingId": "CLIP-C6CF98D9F6B6",
+      "date": "2022-11-08",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0641",
+      "bestTitle": "Pune Economic System che Kedra",
+      "bestScore": 0.1,
+      "secondScore": 0.087,
+      "margin": 0.013,
+      "candidateScores": [
+        {
+          "recordId": "PG0641",
+          "score": 0.1,
+          "title": "Pune Economic System che Kedra"
+        },
+        {
+          "recordId": "PG0636",
+          "score": 0.087,
+          "title": "`Sarkar chi Dhorne Udhojakan sathi Purak"
+        }
+      ],
+      "ocrHeadline": "इकॉनामिक पुणे"
+    },
+    {
+      "clippingId": "CLIP-1E0546A53FAE",
+      "date": "2022-11-08",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0641",
+      "bestTitle": "Pune Economic System che Kedra",
+      "bestScore": 0.102,
+      "secondScore": 0.093,
+      "margin": 0.009,
+      "candidateScores": [
+        {
+          "recordId": "PG0641",
+          "score": 0.102,
+          "title": "Pune Economic System che Kedra"
+        },
+        {
+          "recordId": "PG0636",
+          "score": 0.093,
+          "title": "`Sarkar chi Dhorne Udhojakan sathi Purak"
+        }
+      ],
+      "ocrHeadline": "'सरकारची धोणे उदोजकांसाठी पूरक"
+    },
+    {
+      "clippingId": "CLIP-F4B841EF9927",
+      "date": "2022-09-26",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0685",
+      "bestTitle": "karandikar `MCCIA`che Niyojit Adhksh",
+      "bestScore": 0.034,
+      "secondScore": 0.033,
+      "margin": 0.001,
+      "candidateScores": [
+        {
+          "recordId": "PG0685",
+          "score": 0.034,
+          "title": "karandikar `MCCIA`che Niyojit Adhksh"
+        },
+        {
+          "recordId": "PG0686",
+          "score": 0.033,
+          "title": "`Vedant' la Jaga Tari Dhakhvili Hoti ka"
+        },
+        {
+          "recordId": "PG0699",
+          "score": 0.033,
+          "title": "Multimodal Ringroad Vikasache Engine"
+        },
+        {
+          "recordId": "PG0700",
+          "score": 0.027,
+          "title": "Deshvirodhi Ghoshana Khapvun Ghenar Nahi : Phadnavis"
+        }
+      ],
+      "ocrHeadline": "उपमुख्यमंत्री मल्टिमॉडेल"
+    },
+    {
+      "clippingId": "CLIP-BA66AF184F80",
+      "date": "2022-09-26",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0685",
+      "bestTitle": "karandikar `MCCIA`che Niyojit Adhksh",
+      "bestScore": 0.113,
+      "secondScore": 0.11,
+      "margin": 0.003,
+      "candidateScores": [
+        {
+          "recordId": "PG0685",
+          "score": 0.113,
+          "title": "karandikar `MCCIA`che Niyojit Adhksh"
+        },
+        {
+          "recordId": "PG0686",
+          "score": 0.11,
+          "title": "`Vedant' la Jaga Tari Dhakhvili Hoti ka"
+        },
+        {
+          "recordId": "PG0699",
+          "score": 0.095,
+          "title": "Multimodal Ringroad Vikasache Engine"
+        },
+        {
+          "recordId": "PG0700",
+          "score": 0.093,
+          "title": "Deshvirodhi Ghoshana Khapvun Ghenar Nahi : Phadnavis"
+        }
+      ],
+      "ocrHeadline": "'एमसीसीआयए'चे पुणे (एमसीसीआयए)"
+    },
+    {
+      "clippingId": "CLIP-DAF007824A5F",
+      "date": "2022-09-26",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0691",
+      "bestTitle": "Vimantal cha Vikasat Motha Wata",
+      "bestScore": 0.09,
+      "secondScore": 0.085,
+      "margin": 0.005,
+      "candidateScores": [
+        {
+          "recordId": "PG0691",
+          "score": 0.09,
+          "title": "Vimantal cha Vikasat Motha Wata"
+        },
+        {
+          "recordId": "PG0694",
+          "score": 0.085,
+          "title": "Ring Road Tharnar Pragti che `Engine'"
+        },
+        {
+          "recordId": "PG0697",
+          "score": 0.077,
+          "title": "Prakalpa Sathi Shevat Pariyant Praytn Kele"
+        }
+      ],
+      "ocrHeadline": "प्रकल्पासाठी"
+    },
+    {
+      "clippingId": "CLIP-E8DA568BF906",
+      "date": "2022-09-26",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0691",
+      "bestTitle": "Vimantal cha Vikasat Motha Wata",
+      "bestScore": 0.122,
+      "secondScore": 0.108,
+      "margin": 0.014,
+      "candidateScores": [
+        {
+          "recordId": "PG0691",
+          "score": 0.122,
+          "title": "Vimantal cha Vikasat Motha Wata"
+        },
+        {
+          "recordId": "PG0697",
+          "score": 0.108,
+          "title": "Prakalpa Sathi Shevat Pariyant Praytn Kele"
+        },
+        {
+          "recordId": "PG0694",
+          "score": 0.095,
+          "title": "Ring Road Tharnar Pragti che `Engine'"
+        }
+      ],
+      "ocrHeadline": "विमानतळाचा विकासात मोठा वाटा"
+    },
+    {
+      "clippingId": "CLIP-4B6DB73E3443",
+      "date": "2022-09-03",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0721",
+      "bestTitle": "Singapore,Bangkok la Viaman Seva",
+      "bestScore": 0.099,
+      "secondScore": 0.082,
+      "margin": 0.017,
+      "candidateScores": [
+        {
+          "recordId": "PG0721",
+          "score": 0.099,
+          "title": "Singapore,Bangkok la Viaman Seva"
+        },
+        {
+          "recordId": "PG0716",
+          "score": 0.082,
+          "title": "`Viaman Udhogala Chalna Milel'"
+        }
+      ],
+      "ocrHeadline": "विमान उद्योगाला चालना मिळेल पुणे : पुठारी वृत्तसेवा"
+    },
+    {
+      "clippingId": "CLIP-3CB13F9E96D9",
+      "date": "2022-09-03",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0716",
+      "bestTitle": "`Viaman Udhogala Chalna Milel'",
+      "bestScore": 0.074,
+      "secondScore": 0.069,
+      "margin": 0.005,
+      "candidateScores": [
+        {
+          "recordId": "PG0716",
+          "score": 0.074,
+          "title": "`Viaman Udhogala Chalna Milel'"
+        },
+        {
+          "recordId": "PG0721",
+          "score": 0.069,
+          "title": "Singapore,Bangkok la Viaman Seva"
+        }
+      ],
+      "ocrHeadline": "सिंगापूर, बैकॉकला"
+    },
+    {
+      "clippingId": "CLIP-DECBF913808D",
+      "date": "2022-04-06",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0803",
+      "bestTitle": "E-Mobility Hech Vyvahry Uttar",
+      "bestScore": 0.111,
+      "secondScore": 0.099,
+      "margin": 0.012,
+      "candidateScores": [
+        {
+          "recordId": "PG0803",
+          "score": 0.111,
+          "title": "E-Mobility Hech Vyvahry Uttar"
+        },
+        {
+          "recordId": "PG0801",
+          "score": 0.099,
+          "title": "EV Chy Karja Babat Banka,Finance Santh Sakaratmak"
+        },
+        {
+          "recordId": "PG0805",
+          "score": 0.097,
+          "title": "Bhavishyat hydrogen Pasun Vij Nirmiti"
+        },
+        {
+          "recordId": "PG0804",
+          "score": 0.086,
+          "title": "Deshachi Ev Rajdhani Honaychi Punaychi Shmata"
+        }
+      ],
+      "ocrHeadline": "'इव्ही'च्या कर्जाबाबत बँका, फायनान्स संस्था सकारात्मक बकिंग व फायनान्स संस्थांच्या तज्जांचे मत"
+    },
+    {
+      "clippingId": "CLIP-2B55E08AD96E",
+      "date": "2022-04-06",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0803",
+      "bestTitle": "E-Mobility Hech Vyvahry Uttar",
+      "bestScore": 0.123,
+      "secondScore": 0.123,
+      "margin": 0.0,
+      "candidateScores": [
+        {
+          "recordId": "PG0803",
+          "score": 0.123,
+          "title": "E-Mobility Hech Vyvahry Uttar"
+        },
+        {
+          "recordId": "PG0804",
+          "score": 0.123,
+          "title": "Deshachi Ev Rajdhani Honaychi Punaychi Shmata"
+        },
+        {
+          "recordId": "PG0801",
+          "score": 0.118,
+          "title": "EV Chy Karja Babat Banka,Finance Santh Sakaratmak"
+        },
+        {
+          "recordId": "PG0805",
+          "score": 0.11,
+          "title": "Bhavishyat hydrogen Pasun Vij Nirmiti"
+        }
+      ],
+      "ocrHeadline": "ई-मोबिलिटी"
+    },
+    {
+      "clippingId": "CLIP-84B7711434A1",
+      "date": "2022-04-06",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0803",
+      "bestTitle": "E-Mobility Hech Vyvahry Uttar",
+      "bestScore": 0.148,
+      "secondScore": 0.129,
+      "margin": 0.019,
+      "candidateScores": [
+        {
+          "recordId": "PG0803",
+          "score": 0.148,
+          "title": "E-Mobility Hech Vyvahry Uttar"
+        },
+        {
+          "recordId": "PG0805",
+          "score": 0.129,
+          "title": "Bhavishyat hydrogen Pasun Vij Nirmiti"
+        },
+        {
+          "recordId": "PG0804",
+          "score": 0.114,
+          "title": "Deshachi Ev Rajdhani Honaychi Punaychi Shmata"
+        },
+        {
+          "recordId": "PG0801",
+          "score": 0.108,
+          "title": "EV Chy Karja Babat Banka,Finance Santh Sakaratmak"
+        }
+      ],
+      "ocrHeadline": "हायड्ोजनपासून"
+    },
+    {
+      "clippingId": "CLIP-73FA4663323C",
+      "date": "2022-04-06",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0801",
+      "bestTitle": "EV Chy Karja Babat Banka,Finance Santh Sakaratmak",
+      "bestScore": 0.329,
+      "secondScore": 0.261,
+      "margin": 0.068,
+      "candidateScores": [
+        {
+          "recordId": "PG0801",
+          "score": 0.329,
+          "title": "EV Chy Karja Babat Banka,Finance Santh Sakaratmak"
+        },
+        {
+          "recordId": "PG0804",
+          "score": 0.261,
+          "title": "Deshachi Ev Rajdhani Honaychi Punaychi Shmata"
+        },
+        {
+          "recordId": "PG0803",
+          "score": 0.226,
+          "title": "E-Mobility Hech Vyvahry Uttar"
+        },
+        {
+          "recordId": "PG0805",
+          "score": 0.164,
+          "title": "Bhavishyat hydrogen Pasun Vij Nirmiti"
+        }
+      ],
+      "ocrHeadline": "देशाची ईव्ही राजधानी होण्याची पुण्याची क्षमता टो इंस्ट्री आण पुण प्रेश या मु्यावर आयोजित चसंत्रा संपादकांचे मत"
+    },
+    {
+      "clippingId": "CLIP-F4831A35B9BB",
+      "date": "2022-04-06",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0799",
+      "bestTitle": "Electric Vahanasathi Telegaont Vendor Park",
+      "bestScore": 0.067,
+      "secondScore": 0.061,
+      "margin": 0.006,
+      "candidateScores": [
+        {
+          "recordId": "PG0799",
+          "score": 0.067,
+          "title": "Electric Vahanasathi Telegaont Vendor Park"
+        },
+        {
+          "recordId": "PG0788",
+          "score": 0.061,
+          "title": "`E-Mobility`ch Vyvhary"
+        },
+        {
+          "recordId": "PG0802",
+          "score": 0.043,
+          "title": "E-Vahanana Urjja"
+        }
+      ],
+      "ocrHeadline": "व्यवहार्य"
+    },
+    {
+      "clippingId": "CLIP-D811766391F3",
+      "date": "2022-04-06",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0802",
+      "bestTitle": "E-Vahanana Urjja",
+      "bestScore": 0.061,
+      "secondScore": 0.053,
+      "margin": 0.008,
+      "candidateScores": [
+        {
+          "recordId": "PG0802",
+          "score": 0.061,
+          "title": "E-Vahanana Urjja"
+        },
+        {
+          "recordId": "PG0788",
+          "score": 0.053,
+          "title": "`E-Mobility`ch Vyvhary"
+        },
+        {
+          "recordId": "PG0799",
+          "score": 0.034,
+          "title": "Electric Vahanasathi Telegaont Vendor Park"
+        }
+      ],
+      "ocrHeadline": "इलेक्टिक तळेगावात"
+    },
+    {
+      "clippingId": "CLIP-B55137CE267D",
+      "date": "2022-04-06",
+      "publisher": "Lokmat",
+      "accepted": false,
+      "bestRecordId": "PG0795",
+      "bestTitle": "Rajjayt HydrogenPasun Vij Nirmiti Karnar",
+      "bestScore": 0.103,
+      "secondScore": 0.08,
+      "margin": 0.023,
+      "candidateScores": [
+        {
+          "recordId": "PG0795",
+          "score": 0.103,
+          "title": "Rajjayt HydrogenPasun Vij Nirmiti Karnar"
+        },
+        {
+          "recordId": "PG0796",
+          "score": 0.08,
+          "title": "Maharashtra Electric Vahan Utpadakankdun Honar Mothi Guntvanuk"
+        }
+      ],
+      "ocrHeadline": "राज्यात हायड़ोजनपासून वीज निमिती करणार"
+    },
+    {
+      "clippingId": "CLIP-B38203518794",
+      "date": "2022-04-06",
+      "publisher": "Lokmat",
+      "accepted": false,
+      "bestRecordId": "PG0796",
+      "bestTitle": "Maharashtra Electric Vahan Utpadakankdun Honar Mothi Guntvanuk",
+      "bestScore": 0.097,
+      "secondScore": 0.078,
+      "margin": 0.019,
+      "candidateScores": [
+        {
+          "recordId": "PG0796",
+          "score": 0.097,
+          "title": "Maharashtra Electric Vahan Utpadakankdun Honar Mothi Guntvanuk"
+        },
+        {
+          "recordId": "PG0795",
+          "score": 0.078,
+          "title": "Rajjayt HydrogenPasun Vij Nirmiti Karnar"
+        }
+      ],
+      "ocrHeadline": "महाराष्टरात इलेक्टरक वाहन उत्पादकांकडून होणार मोठी गुतवणूक मुख्य कार्यकारी अधिकारी डॉ पी. अनबलगन: पुणे अल्टरनेट फ्युएल कॉन्क्लेव्ह परिषदेचे आयोजन"
+    },
+    {
+      "clippingId": "CLIP-1A5192191C49",
+      "date": "2022-04-05",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0816",
+      "bestTitle": "Paryayi Indhanat Rajyache Netrutwa",
+      "bestScore": 0.075,
+      "secondScore": 0.066,
+      "margin": 0.009,
+      "candidateScores": [
+        {
+          "recordId": "PG0816",
+          "score": 0.075,
+          "title": "Paryayi Indhanat Rajyache Netrutwa"
+        },
+        {
+          "recordId": "PG0833",
+          "score": 0.066,
+          "title": "Bhavishyat Paryayi Indhanacha Wapar wadhel"
+        },
+        {
+          "recordId": "PG0820",
+          "score": 0.054,
+          "title": "Mahavitaran kadun Rajyat 50 EV station chi ubharni suru"
+        }
+      ],
+      "ocrHeadline": "राज्याचे 'पुणे ठाकरे"
+    },
+    {
+      "clippingId": "CLIP-6AE98551E7F8",
+      "date": "2022-04-05",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0820",
+      "bestTitle": "Mahavitaran kadun Rajyat 50 EV station chi ubharni suru",
+      "bestScore": 0.128,
+      "secondScore": 0.082,
+      "margin": 0.046,
+      "candidateScores": [
+        {
+          "recordId": "PG0820",
+          "score": 0.128,
+          "title": "Mahavitaran kadun Rajyat 50 EV station chi ubharni suru"
+        },
+        {
+          "recordId": "PG0833",
+          "score": 0.082,
+          "title": "Bhavishyat Paryayi Indhanacha Wapar wadhel"
+        },
+        {
+          "recordId": "PG0816",
+          "score": 0.067,
+          "title": "Paryayi Indhanat Rajyache Netrutwa"
+        }
+      ],
+      "ocrHeadline": "इंधनाचा वापर वाढेल पर्यायी इंधन आणि वाहन व्यवसाय क्षत्रातील तज्ञाचे मत"
+    },
+    {
+      "clippingId": "CLIP-121F5C1649F5",
+      "date": "2022-04-05",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0809",
+      "bestTitle": "Pune parisarat startupna chalana denar - Aditya Thakare",
+      "bestScore": 0.143,
+      "secondScore": 0.113,
+      "margin": 0.03,
+      "candidateScores": [
+        {
+          "recordId": "PG0809",
+          "score": 0.143,
+          "title": "Pune parisarat startupna chalana denar - Aditya Thakare"
+        },
+        {
+          "recordId": "PG0824",
+          "score": 0.113,
+          "title": "Hydroijan pasun vij nirmiti karnar"
+        },
+        {
+          "recordId": "PG0808",
+          "score": 0.102,
+          "title": "Punyat navin antarrashtiry wimantal have"
+        },
+        {
+          "recordId": "PG0829",
+          "score": 0.085,
+          "title": "E wahnancha Wapar kalachi garaj - Nitin Raut"
+        }
+      ],
+      "ocrHeadline": "पुढापी हायड्रोजनपासून वीजनिर्मिती करणार पुण्यातील इंधन परिषदेत ऊर्जामंत्र डॉ. नितीन राऊत यांची घोषणा"
+    },
+    {
+      "clippingId": "CLIP-6DF85AA7B709",
+      "date": "2022-04-05",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0809",
+      "bestTitle": "Pune parisarat startupna chalana denar - Aditya Thakare",
+      "bestScore": 0.143,
+      "secondScore": 0.105,
+      "margin": 0.038,
+      "candidateScores": [
+        {
+          "recordId": "PG0809",
+          "score": 0.143,
+          "title": "Pune parisarat startupna chalana denar - Aditya Thakare"
+        },
+        {
+          "recordId": "PG0824",
+          "score": 0.105,
+          "title": "Hydroijan pasun vij nirmiti karnar"
+        },
+        {
+          "recordId": "PG0808",
+          "score": 0.095,
+          "title": "Punyat navin antarrashtiry wimantal have"
+        },
+        {
+          "recordId": "PG0829",
+          "score": 0.092,
+          "title": "E wahnancha Wapar kalachi garaj - Nitin Raut"
+        }
+      ],
+      "ocrHeadline": "-वाहनांचा गरज : डॉ."
+    },
+    {
+      "clippingId": "CLIP-84D82017EAC1",
+      "date": "2022-04-05",
+      "publisher": "Navrashtra",
+      "accepted": false,
+      "bestRecordId": "PG0830",
+      "bestTitle": "E wahnancha Wapar kalachi garaj",
+      "bestScore": 0.14,
+      "secondScore": 0.111,
+      "margin": 0.029,
+      "candidateScores": [
+        {
+          "recordId": "PG0830",
+          "score": 0.14,
+          "title": "E wahnancha Wapar kalachi garaj"
+        },
+        {
+          "recordId": "PG0815",
+          "score": 0.111,
+          "title": "Paryayi Indhnanwaril Wahnansathi Suwidha Denar"
+        }
+      ],
+      "ocrHeadline": "नवराष्ट्र ई-वाहनांचा वापर काळाची गरज ऊ्जामंत्र ना.डॉ.नितीन राऊत यंचेप्तिपादन"
+    },
+    {
+      "clippingId": "CLIP-533E5E6C0824",
+      "date": "2022-04-05",
+      "publisher": "Navrashtra",
+      "accepted": false,
+      "bestRecordId": "PG0830",
+      "bestTitle": "E wahnancha Wapar kalachi garaj",
+      "bestScore": 0.101,
+      "secondScore": 0.085,
+      "margin": 0.016,
+      "candidateScores": [
+        {
+          "recordId": "PG0830",
+          "score": 0.101,
+          "title": "E wahnancha Wapar kalachi garaj"
+        },
+        {
+          "recordId": "PG0815",
+          "score": 0.085,
+          "title": "Paryayi Indhnanwaril Wahnansathi Suwidha Denar"
+        }
+      ],
+      "ocrHeadline": "पर्यी इंधनावरील वाहनांसाठीसुविधा देणार ः उद्व वाकरे"
+    },
+    {
+      "clippingId": "CLIP-48727BD26C74",
+      "date": "2022-04-05",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0831",
+      "bestTitle": "Diselwaril Bus honar  E-bus",
+      "bestScore": 0.049,
+      "secondScore": 0.048,
+      "margin": 0.001,
+      "candidateScores": [
+        {
+          "recordId": "PG0831",
+          "score": 0.049,
+          "title": "Diselwaril Bus honar  E-bus"
+        },
+        {
+          "recordId": "PG0810",
+          "score": 0.048,
+          "title": "Pune Electric Wahnanche Hub"
+        },
+        {
+          "recordId": "PG0807",
+          "score": 0.043,
+          "title": "Rajjayt Udhogana Purak Vatavarn"
+        },
+        {
+          "recordId": "PG0817",
+          "score": 0.041,
+          "title": "Paryayi Indhanasathi havi Yantrana"
+        }
+      ],
+      "ocrHeadline": "पुणे इलेक्ट्रिक"
+    },
+    {
+      "clippingId": "CLIP-BA8D32BEF250",
+      "date": "2022-04-05",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0831",
+      "bestTitle": "Diselwaril Bus honar  E-bus",
+      "bestScore": 0.109,
+      "secondScore": 0.107,
+      "margin": 0.002,
+      "candidateScores": [
+        {
+          "recordId": "PG0831",
+          "score": 0.109,
+          "title": "Diselwaril Bus honar  E-bus"
+        },
+        {
+          "recordId": "PG0810",
+          "score": 0.107,
+          "title": "Pune Electric Wahnanche Hub"
+        },
+        {
+          "recordId": "PG0807",
+          "score": 0.1,
+          "title": "Rajjayt Udhogana Purak Vatavarn"
+        },
+        {
+          "recordId": "PG0817",
+          "score": 0.095,
+          "title": "Paryayi Indhanasathi havi Yantrana"
+        }
+      ],
+      "ocrHeadline": "उ्ोगांना राज्यात पूरक वातावरण"
+    },
+    {
+      "clippingId": "CLIP-12A3DC83361D",
+      "date": "2022-04-05",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0831",
+      "bestTitle": "Diselwaril Bus honar  E-bus",
+      "bestScore": 0.127,
+      "secondScore": 0.094,
+      "margin": 0.033,
+      "candidateScores": [
+        {
+          "recordId": "PG0831",
+          "score": 0.127,
+          "title": "Diselwaril Bus honar  E-bus"
+        },
+        {
+          "recordId": "PG0810",
+          "score": 0.094,
+          "title": "Pune Electric Wahnanche Hub"
+        },
+        {
+          "recordId": "PG0807",
+          "score": 0.088,
+          "title": "Rajjayt Udhogana Purak Vatavarn"
+        },
+        {
+          "recordId": "PG0817",
+          "score": 0.085,
+          "title": "Paryayi Indhanasathi havi Yantrana"
+        }
+      ],
+      "ocrHeadline": "इंधनासाठी"
+    },
+    {
+      "clippingId": "CLIP-A8F02E9217F8",
+      "date": "2022-04-05",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG0819",
+      "bestTitle": "Mahavitaranch pahile atyadhunik charging kenra",
+      "bestScore": 0.086,
+      "secondScore": 0.085,
+      "margin": 0.001,
+      "candidateScores": [
+        {
+          "recordId": "PG0819",
+          "score": 0.086,
+          "title": "Mahavitaranch pahile atyadhunik charging kenra"
+        },
+        {
+          "recordId": "PG0823",
+          "score": 0.085,
+          "title": "Lashinchi kamtarta nahi. Wardhak matra aavashyak"
+        },
+        {
+          "recordId": "PG0814",
+          "score": 0.073,
+          "title": "Paryayi indhanansathi yantrana nirman karnyachi aavshyakta"
+        },
+        {
+          "recordId": "PG0825",
+          "score": 0.073,
+          "title": "Guntawnukipudhil gatirodhak dur"
+        }
+      ],
+      "ocrHeadline": "गुंतवणुकीपुढील गतिरोधक दूर!"
+    },
+    {
+      "clippingId": "CLIP-6DC17F35A2E2",
+      "date": "2022-04-04",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0844",
+      "bestTitle": "E wahnansathi protsahan dya",
+      "bestScore": 0.091,
+      "secondScore": 0.078,
+      "margin": 0.013,
+      "candidateScores": [
+        {
+          "recordId": "PG0844",
+          "score": 0.091,
+          "title": "E wahnansathi protsahan dya"
+        },
+        {
+          "recordId": "PG0840",
+          "score": 0.078,
+          "title": "Harit Indhan Kshetrat Agresar Rahu"
+        },
+        {
+          "recordId": "PG0839",
+          "score": 0.075,
+          "title": "Krushi Kamanna Gati Denare Sanshodhn"
+        }
+      ],
+      "ocrHeadline": "'गती' देणारे संशोधन"
+    },
+    {
+      "clippingId": "CLIP-C88AC7B2E573",
+      "date": "2022-04-04",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0844",
+      "bestTitle": "E wahnansathi protsahan dya",
+      "bestScore": 0.111,
+      "secondScore": 0.098,
+      "margin": 0.013,
+      "candidateScores": [
+        {
+          "recordId": "PG0844",
+          "score": 0.111,
+          "title": "E wahnansathi protsahan dya"
+        },
+        {
+          "recordId": "PG0840",
+          "score": 0.098,
+          "title": "Harit Indhan Kshetrat Agresar Rahu"
+        },
+        {
+          "recordId": "PG0839",
+          "score": 0.095,
+          "title": "Krushi Kamanna Gati Denare Sanshodhn"
+        }
+      ],
+      "ocrHeadline": "ई-वाहनांसाठी प्रोत्साहन द्ा"
+    },
+    {
+      "clippingId": "CLIP-857ED18F6001",
+      "date": "2022-04-04",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0840",
+      "bestTitle": "Harit Indhan Kshetrat Agresar Rahu",
+      "bestScore": 0.125,
+      "secondScore": 0.121,
+      "margin": 0.004,
+      "candidateScores": [
+        {
+          "recordId": "PG0840",
+          "score": 0.125,
+          "title": "Harit Indhan Kshetrat Agresar Rahu"
+        },
+        {
+          "recordId": "PG0839",
+          "score": 0.121,
+          "title": "Krushi Kamanna Gati Denare Sanshodhn"
+        },
+        {
+          "recordId": "PG0844",
+          "score": 0.105,
+          "title": "E wahnansathi protsahan dya"
+        }
+      ],
+      "ocrHeadline": "ई-वाहन रली'ला उत्फू्त प्रतिसाद"
+    },
+    {
+      "clippingId": "CLIP-D2811B1C0348",
+      "date": "2022-04-03",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0859",
+      "bestTitle": "Ithe E wahan duniyechi safar",
+      "bestScore": 0.123,
+      "secondScore": 0.118,
+      "margin": 0.005,
+      "candidateScores": [
+        {
+          "recordId": "PG0859",
+          "score": 0.123,
+          "title": "Ithe E wahan duniyechi safar"
+        },
+        {
+          "recordId": "PG0851",
+          "score": 0.118,
+          "title": "Punyane deshachya EV chalwaliche netrutwa karave"
+        },
+        {
+          "recordId": "PG0848",
+          "score": 0.105,
+          "title": "Three wheelarsche Changle challele aahe"
+        }
+      ],
+      "ocrHeadline": "थी व्हिलर्स'चे चांगले चालले आहे : ठाकरे"
+    },
+    {
+      "clippingId": "CLIP-4E3EC79435BD",
+      "date": "2022-04-03",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0859",
+      "bestTitle": "Ithe E wahan duniyechi safar",
+      "bestScore": 0.163,
+      "secondScore": 0.108,
+      "margin": 0.055,
+      "candidateScores": [
+        {
+          "recordId": "PG0859",
+          "score": 0.163,
+          "title": "Ithe E wahan duniyechi safar"
+        },
+        {
+          "recordId": "PG0851",
+          "score": 0.108,
+          "title": "Punyane deshachya EV chalwaliche netrutwa karave"
+        },
+        {
+          "recordId": "PG0848",
+          "score": 0.095,
+          "title": "Three wheelarsche Changle challele aahe"
+        }
+      ],
+      "ocrHeadline": "'पुण्याने देशाच्या ईन्ही चळवळीचे नेतृत्व करावे"
+    },
+    {
+      "clippingId": "CLIP-C4AB4A47EBCA",
+      "date": "2022-04-03",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0862",
+      "bestTitle": "Charging station ubharnar",
+      "bestScore": 0.05,
+      "secondScore": 0.038,
+      "margin": 0.012,
+      "candidateScores": [
+        {
+          "recordId": "PG0862",
+          "score": 0.05,
+          "title": "Charging station ubharnar"
+        },
+        {
+          "recordId": "PG0861",
+          "score": 0.038,
+          "title": "Dalanwalnache Paryawaran purak Paryay"
+        }
+      ],
+      "ocrHeadline": "'सीआयआरटी,' 'एआरएआय"
+    },
+    {
+      "clippingId": "CLIP-EFB02251DF05",
+      "date": "2022-04-03",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG0862",
+      "bestTitle": "Charging station ubharnar",
+      "bestScore": 0.074,
+      "secondScore": 0.061,
+      "margin": 0.013,
+      "candidateScores": [
+        {
+          "recordId": "PG0862",
+          "score": 0.074,
+          "title": "Charging station ubharnar"
+        },
+        {
+          "recordId": "PG0861",
+          "score": 0.061,
+          "title": "Dalanwalnache Paryawaran purak Paryay"
+        }
+      ],
+      "ocrHeadline": "दळणवळणाचे पर्यावरणपूरक पर्याय"
+    },
+    {
+      "clippingId": "CLIP-076F3FD362A4",
+      "date": "2022-04-03",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG0847",
+      "bestTitle": "Wahan pradarshant 30 % Navudymi",
+      "bestScore": 0.097,
+      "secondScore": 0.083,
+      "margin": 0.014,
+      "candidateScores": [
+        {
+          "recordId": "PG0847",
+          "score": 0.097,
+          "title": "Wahan pradarshant 30 % Navudymi"
+        },
+        {
+          "recordId": "PG0846",
+          "score": 0.083,
+          "title": "Wahantalachya Tees takke jagewar charguing suvidha bandhankarak"
+        }
+      ],
+      "ocrHeadline": "टक्के नवउद्मी ३०"
+    },
+    {
+      "clippingId": "CLIP-F959AA556F41",
+      "date": "2022-04-03",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG0846",
+      "bestTitle": "Wahantalachya Tees takke jagewar charguing suvidha bandhankarak",
+      "bestScore": 0.1,
+      "secondScore": 0.07,
+      "margin": 0.03,
+      "candidateScores": [
+        {
+          "recordId": "PG0846",
+          "score": 0.1,
+          "title": "Wahantalachya Tees takke jagewar charguing suvidha bandhankarak"
+        },
+        {
+          "recordId": "PG0847",
+          "score": 0.07,
+          "title": "Wahan pradarshant 30 % Navudymi"
+        }
+      ],
+      "ocrHeadline": "तीस टक्के जागेवर वाहनतळाच्या विधुत वाहने चर्जिंगची सुविधा"
+    },
+    {
+      "clippingId": "CLIP-3B1990F44B9D",
+      "date": "2022-02-26",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG0916",
+      "bestTitle": "Udhachi Silicon Vaily",
+      "bestScore": 0.095,
+      "secondScore": 0.083,
+      "margin": 0.012,
+      "candidateScores": [
+        {
+          "recordId": "PG0916",
+          "score": 0.095,
+          "title": "Udhachi Silicon Vaily"
+        },
+        {
+          "recordId": "PG0918",
+          "score": 0.083,
+          "title": "Niryatil til  Kamgiri Damdar"
+        },
+        {
+          "recordId": "PG0919",
+          "score": 0.077,
+          "title": "Manoranjnachi Uladhal Lashkvedi"
+        }
+      ],
+      "ocrHeadline": "शिलिकॉन वलंली उदधयाची"
+    },
+    {
+      "clippingId": "CLIP-2AAC73E3DEC7",
+      "date": "2022-02-26",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG0918",
+      "bestTitle": "Niryatil til  Kamgiri Damdar",
+      "bestScore": 0.113,
+      "secondScore": 0.087,
+      "margin": 0.026,
+      "candidateScores": [
+        {
+          "recordId": "PG0918",
+          "score": 0.113,
+          "title": "Niryatil til  Kamgiri Damdar"
+        },
+        {
+          "recordId": "PG0916",
+          "score": 0.087,
+          "title": "Udhachi Silicon Vaily"
+        },
+        {
+          "recordId": "PG0919",
+          "score": 0.071,
+          "title": "Manoranjnachi Uladhal Lashkvedi"
+        }
+      ],
+      "ocrHeadline": "निर्यातीतील कामगिरी दमदार"
+    },
+    {
+      "clippingId": "CLIP-2C0EDA175AD3",
+      "date": "2022-02-26",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG0918",
+      "bestTitle": "Niryatil til  Kamgiri Damdar",
+      "bestScore": 0.08,
+      "secondScore": 0.058,
+      "margin": 0.022,
+      "candidateScores": [
+        {
+          "recordId": "PG0918",
+          "score": 0.08,
+          "title": "Niryatil til  Kamgiri Damdar"
+        },
+        {
+          "recordId": "PG0916",
+          "score": 0.058,
+          "title": "Udhachi Silicon Vaily"
+        },
+        {
+          "recordId": "PG0919",
+          "score": 0.051,
+          "title": "Manoranjnachi Uladhal Lashkvedi"
+        }
+      ],
+      "ocrHeadline": "देशभरातील वाहनउद्योग पुणेस्थित \"ऑटोमोटिव्ह रिसर्च"
+    },
+    {
+      "clippingId": "CLIP-58C2355E14D0",
+      "date": "2022-02-26",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG0916",
+      "bestTitle": "Udhachi Silicon Vaily",
+      "bestScore": 0.089,
+      "secondScore": 0.078,
+      "margin": 0.011,
+      "candidateScores": [
+        {
+          "recordId": "PG0916",
+          "score": 0.089,
+          "title": "Udhachi Silicon Vaily"
+        },
+        {
+          "recordId": "PG0918",
+          "score": 0.078,
+          "title": "Niryatil til  Kamgiri Damdar"
+        },
+        {
+          "recordId": "PG0919",
+          "score": 0.073,
+          "title": "Manoranjnachi Uladhal Lashkvedi"
+        }
+      ],
+      "ocrHeadline": "मनोरंजनाची उलाढाल लशवेधी"
+    },
+    {
+      "clippingId": "CLIP-71B9E4203689",
+      "date": "2022-02-15",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0927",
+      "bestTitle": "Udhog Prosanhanasathi `Play and plug' Suvidha",
+      "bestScore": 0.0,
+      "secondScore": 0.0,
+      "margin": 0.0,
+      "candidateScores": [
+        {
+          "recordId": "PG0927",
+          "score": 0.0,
+          "title": "Udhog Prosanhanasathi `Play and plug' Suvidha"
+        },
+        {
+          "recordId": "PG0930",
+          "score": 0.0,
+          "title": "Serum Sah Vividh Snthana Udhogmatri Deasi Yanchi Bhet"
+        },
+        {
+          "recordId": "PG0932",
+          "score": 0.0,
+          "title": "Pune Vimantal Honar Jagtik Drjayche"
+        },
+        {
+          "recordId": "PG0933",
+          "score": 0.0,
+          "title": "Parvdnary Dart Las Dilyne Lakhona Jivdan"
+        }
+      ],
+      "ocrHeadline": "कोविशिल्ड"
+    },
+    {
+      "clippingId": "CLIP-6227AE175EDF",
+      "date": "2022-02-15",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0933",
+      "bestTitle": "Parvdnary Dart Las Dilyne Lakhona Jivdan",
+      "bestScore": 0.148,
+      "secondScore": 0.119,
+      "margin": 0.029,
+      "candidateScores": [
+        {
+          "recordId": "PG0933",
+          "score": 0.148,
+          "title": "Parvdnary Dart Las Dilyne Lakhona Jivdan"
+        },
+        {
+          "recordId": "PG0927",
+          "score": 0.119,
+          "title": "Udhog Prosanhanasathi `Play and plug' Suvidha"
+        },
+        {
+          "recordId": "PG0932",
+          "score": 0.105,
+          "title": "Pune Vimantal Honar Jagtik Drjayche"
+        },
+        {
+          "recordId": "PG0930",
+          "score": 0.096,
+          "title": "Serum Sah Vividh Snthana Udhogmatri Deasi Yanchi Bhet"
+        }
+      ],
+      "ocrHeadline": "उ्योग प्रोत्साहनासाठी 'प्ले ऑअंड प्लग उधोगमंत्रीसुभाष देसाई यांचेप्रतपादन: पणे इंटरनंशनल बिझनेस"
+    },
+    {
+      "clippingId": "CLIP-2B5D83DB6210",
+      "date": "2022-02-15",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0932",
+      "bestTitle": "Pune Vimantal Honar Jagtik Drjayche",
+      "bestScore": 0.161,
+      "secondScore": 0.125,
+      "margin": 0.036,
+      "candidateScores": [
+        {
+          "recordId": "PG0932",
+          "score": 0.161,
+          "title": "Pune Vimantal Honar Jagtik Drjayche"
+        },
+        {
+          "recordId": "PG0930",
+          "score": 0.125,
+          "title": "Serum Sah Vividh Snthana Udhogmatri Deasi Yanchi Bhet"
+        },
+        {
+          "recordId": "PG0927",
+          "score": 0.114,
+          "title": "Udhog Prosanhanasathi `Play and plug' Suvidha"
+        },
+        {
+          "recordId": "PG0933",
+          "score": 0.09,
+          "title": "Parvdnary Dart Las Dilyne Lakhona Jivdan"
+        }
+      ],
+      "ocrHeadline": "दिल्याने लाखोना लस"
+    },
+    {
+      "clippingId": "CLIP-83879F2C5239",
+      "date": "2022-02-15",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG0932",
+      "bestTitle": "Pune Vimantal Honar Jagtik Drjayche",
+      "bestScore": 0.07,
+      "secondScore": 0.065,
+      "margin": 0.005,
+      "candidateScores": [
+        {
+          "recordId": "PG0932",
+          "score": 0.07,
+          "title": "Pune Vimantal Honar Jagtik Drjayche"
+        },
+        {
+          "recordId": "PG0933",
+          "score": 0.065,
+          "title": "Parvdnary Dart Las Dilyne Lakhona Jivdan"
+        },
+        {
+          "recordId": "PG0927",
+          "score": 0.062,
+          "title": "Udhog Prosanhanasathi `Play and plug' Suvidha"
+        },
+        {
+          "recordId": "PG0930",
+          "score": 0.053,
+          "title": "Serum Sah Vividh Snthana Udhogmatri Deasi Yanchi Bhet"
+        }
+      ],
+      "ocrHeadline": "सीरमसह उद्योगमंत्री"
+    },
+    {
+      "clippingId": "CLIP-370A1C9E1082",
+      "date": "2022-02-13",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0943",
+      "bestTitle": "Udhog Vishwatil `Chetak'",
+      "bestScore": 0.048,
+      "secondScore": 0.042,
+      "margin": 0.006,
+      "candidateScores": [
+        {
+          "recordId": "PG0943",
+          "score": 0.048,
+          "title": "Udhog Vishwatil `Chetak'"
+        },
+        {
+          "recordId": "PG0942",
+          "score": 0.042,
+          "title": "Udhogvishwasathi Prarnasthan"
+        }
+      ],
+      "ocrHeadline": "उद्योगविश्वातील 'चेतक'"
+    },
+    {
+      "clippingId": "CLIP-08A1D552BB7C",
+      "date": "2022-02-13",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0943",
+      "bestTitle": "Udhog Vishwatil `Chetak'",
+      "bestScore": 0.038,
+      "secondScore": 0.018,
+      "margin": 0.02,
+      "candidateScores": [
+        {
+          "recordId": "PG0943",
+          "score": 0.038,
+          "title": "Udhog Vishwatil `Chetak'"
+        },
+        {
+          "recordId": "PG0942",
+          "score": 0.018,
+          "title": "Udhogvishwasathi Prarnasthan"
+        }
+      ],
+      "ocrHeadline": "चार दशके नेतृत्व रहुल बजाज योंनी समुहचे चार दशके नेतृत्व केले, पण सामाजिक बाधिलकीचे भान कायमठेवले समाजहिताचे उपक्रम टस्ट आणि फाउंडेशनच्या माध्यमातून राबवले. ग्रामीण भागात विकासाची कमे"
+    },
+    {
+      "clippingId": "CLIP-3234C3873CD1",
+      "date": "2022-02-13",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG0943",
+      "bestTitle": "Udhog Vishwatil `Chetak'",
+      "bestScore": 0.042,
+      "secondScore": 0.037,
+      "margin": 0.005,
+      "candidateScores": [
+        {
+          "recordId": "PG0943",
+          "score": 0.042,
+          "title": "Udhog Vishwatil `Chetak'"
+        },
+        {
+          "recordId": "PG0942",
+          "score": 0.037,
+          "title": "Udhogvishwasathi Prarnasthan"
+        }
+      ],
+      "ocrHeadline": "उदधोगविशासाठी प्रेरणास्थान"
+    },
+    {
+      "clippingId": "CLIP-0B823B8D2E91",
+      "date": "2022-01-09",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1003",
+      "bestTitle": "Vimantalacha Prashn Lavkar Margi Lagawa",
+      "bestScore": 0.071,
+      "secondScore": 0.039,
+      "margin": 0.032,
+      "candidateScores": [
+        {
+          "recordId": "PG1003",
+          "score": 0.071,
+          "title": "Vimantalacha Prashn Lavkar Margi Lagawa"
+        },
+        {
+          "recordId": "PG1004",
+          "score": 0.039,
+          "title": "Antarrastriy Vimantalachi Garj"
+        }
+      ],
+      "ocrHeadline": "आतरराष्ट्रीय विमानतलाची गरज कागों सुविधाही उपलब्ध करण्याची उधोजकांची मागणी मृक"
+    },
+    {
+      "clippingId": "CLIP-0030E1B95E42",
+      "date": "2022-01-09",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1003",
+      "bestTitle": "Vimantalacha Prashn Lavkar Margi Lagawa",
+      "bestScore": 0.09,
+      "secondScore": 0.077,
+      "margin": 0.013,
+      "candidateScores": [
+        {
+          "recordId": "PG1003",
+          "score": 0.09,
+          "title": "Vimantalacha Prashn Lavkar Margi Lagawa"
+        },
+        {
+          "recordId": "PG1004",
+          "score": 0.077,
+          "title": "Antarrastriy Vimantalachi Garj"
+        }
+      ],
+      "ocrHeadline": "विमानतळाचा प्रश्न लवकर"
+    },
+    {
+      "clippingId": "CLIP-C88D610BE2BE",
+      "date": "2022-01-07",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1007",
+      "bestTitle": "Pune Antarrastriy Vimantal Ajun `Havetch'",
+      "bestScore": 0.2,
+      "secondScore": 0.086,
+      "margin": 0.114,
+      "candidateScores": [
+        {
+          "recordId": "PG1007",
+          "score": 0.2,
+          "title": "Pune Antarrastriy Vimantal Ajun `Havetch'"
+        },
+        {
+          "recordId": "PG1008",
+          "score": 0.086,
+          "title": "Dhavpatti Wadhisathi SnrkshnMantrana Sakde"
+        }
+      ],
+      "ocrHeadline": "पुणे आंतराष्टीय विमानतळ अजून"
+    },
+    {
+      "clippingId": "CLIP-B6CAAA53E1A6",
+      "date": "2022-01-07",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1007",
+      "bestTitle": "Pune Antarrastriy Vimantal Ajun `Havetch'",
+      "bestScore": 0.074,
+      "secondScore": 0.071,
+      "margin": 0.003,
+      "candidateScores": [
+        {
+          "recordId": "PG1007",
+          "score": 0.074,
+          "title": "Pune Antarrastriy Vimantal Ajun `Havetch'"
+        },
+        {
+          "recordId": "PG1008",
+          "score": 0.071,
+          "title": "Dhavpatti Wadhisathi SnrkshnMantrana Sakde"
+        }
+      ],
+      "ocrHeadline": "धावपट्री"
+    },
+    {
+      "clippingId": "CLIP-7B5C07C217C7",
+      "date": "2021-12-08",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1057",
+      "bestTitle": "Annual Awards 2021",
+      "bestScore": 0.333,
+      "secondScore": 0.0,
+      "margin": 0.333,
+      "candidateScores": [
+        {
+          "recordId": "PG1057",
+          "score": 0.333,
+          "title": "Annual Awards 2021"
+        },
+        {
+          "recordId": "PG1056",
+          "score": 0.0,
+          "title": "Udhoganachi Vyvsayik Purnbadhani Garjechi"
+        }
+      ],
+      "ocrHeadline": "पुनर्वाधणी"
+    },
+    {
+      "clippingId": "CLIP-0EBBF379CFD9",
+      "date": "2021-12-04",
+      "publisher": "Times of India",
+      "accepted": false,
+      "bestRecordId": "PG1063",
+      "bestTitle": "Rebuilding Businesses",
+      "bestScore": 0.645,
+      "secondScore": 0.583,
+      "margin": 0.062,
+      "candidateScores": [
+        {
+          "recordId": "PG1063",
+          "score": 0.645,
+          "title": "Rebuilding Businesses"
+        },
+        {
+          "recordId": "PG1064",
+          "score": 0.583,
+          "title": "Annual Awards 2021"
+        }
+      ],
+      "ocrHeadline": "businesses"
+    },
+    {
+      "clippingId": "CLIP-3EFE0D025AA9",
+      "date": "2021-12-03",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG1065",
+      "bestTitle": "`Omicron' Niymavalisathi Madt Denays Mahratta Chamber Tayar",
+      "bestScore": 0.0,
+      "secondScore": 0.0,
+      "margin": 0.0,
+      "candidateScores": [
+        {
+          "recordId": "PG1065",
+          "score": 0.0,
+          "title": "`Omicron' Niymavalisathi Madt Denays Mahratta Chamber Tayar"
+        },
+        {
+          "recordId": "PG1067",
+          "score": 0.0,
+          "title": "Udhoganchi Utpaadan Patli 90 % Var Kayam"
+        }
+      ],
+      "ocrHeadline": "उत्पादनपातळी"
+    },
+    {
+      "clippingId": "CLIP-3687E81131BB",
+      "date": "2021-12-03",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG1067",
+      "bestTitle": "Udhoganchi Utpaadan Patli 90 % Var Kayam",
+      "bestScore": 0.112,
+      "secondScore": 0.111,
+      "margin": 0.001,
+      "candidateScores": [
+        {
+          "recordId": "PG1067",
+          "score": 0.112,
+          "title": "Udhoganchi Utpaadan Patli 90 % Var Kayam"
+        },
+        {
+          "recordId": "PG1065",
+          "score": 0.111,
+          "title": "`Omicron' Niymavalisathi Madt Denays Mahratta Chamber Tayar"
+        }
+      ],
+      "ocrHeadline": "'ओमायक्रॉन' नियमावलीसाठी मदत देण्यास मराठा चैंबर तयार"
+    },
+    {
+      "clippingId": "CLIP-3336A873D5B2",
+      "date": "2021-12-02",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1073",
+      "bestTitle": "Mathadi Kayda Udhogana Nko",
+      "bestScore": 0.085,
+      "secondScore": 0.083,
+      "margin": 0.002,
+      "candidateScores": [
+        {
+          "recordId": "PG1073",
+          "score": 0.085,
+          "title": "Mathadi Kayda Udhogana Nko"
+        },
+        {
+          "recordId": "PG1074",
+          "score": 0.083,
+          "title": "Andharat Baan Kashala Marta"
+        }
+      ],
+      "ocrHeadline": "संघटनेवर खंडणीचा आरोप केला जातो. खंडणीचे परावे न देताच आरोप करणे योग्य नाही"
+    },
+    {
+      "clippingId": "CLIP-EDD1576EB7E2",
+      "date": "2021-12-02",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1073",
+      "bestTitle": "Mathadi Kayda Udhogana Nko",
+      "bestScore": 0.082,
+      "secondScore": 0.08,
+      "margin": 0.002,
+      "candidateScores": [
+        {
+          "recordId": "PG1073",
+          "score": 0.082,
+          "title": "Mathadi Kayda Udhogana Nko"
+        },
+        {
+          "recordId": "PG1074",
+          "score": 0.08,
+          "title": "Andharat Baan Kashala Marta"
+        }
+      ],
+      "ocrHeadline": "माथाडी कायदा उद्योगांना"
+    },
+    {
+      "clippingId": "CLIP-06B822E8BFA6",
+      "date": "2021-11-18",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1095",
+      "bestTitle": "Vahn Vikrila Tantrik `Break'",
+      "bestScore": 0.0,
+      "secondScore": 0.0,
+      "margin": 0.0,
+      "candidateScores": [
+        {
+          "recordId": "PG1095",
+          "score": 0.0,
+          "title": "Vahn Vikrila Tantrik `Break'"
+        },
+        {
+          "recordId": "PG1096",
+          "score": 0.0,
+          "title": "Navin Vimantal  Garjech ch"
+        }
+      ],
+      "ocrHeadline": "तुटवड्चामुळे"
+    },
+    {
+      "clippingId": "CLIP-2499F9992752",
+      "date": "2021-11-18",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1096",
+      "bestTitle": "Navin Vimantal  Garjech ch",
+      "bestScore": 0.143,
+      "secondScore": 0.141,
+      "margin": 0.002,
+      "candidateScores": [
+        {
+          "recordId": "PG1096",
+          "score": 0.143,
+          "title": "Navin Vimantal  Garjech ch"
+        },
+        {
+          "recordId": "PG1095",
+          "score": 0.141,
+          "title": "Vahn Vikrila Tantrik `Break'"
+        }
+      ],
+      "ocrHeadline": "नवीन विमानतळ"
+    },
+    {
+      "clippingId": "CLIP-6E1939C19951",
+      "date": "2021-05-29",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG1236",
+      "bestTitle": "Udhoganchi May Madhil Utpadan Patli April Etkich",
+      "bestScore": 0.074,
+      "secondScore": 0.066,
+      "margin": 0.008,
+      "candidateScores": [
+        {
+          "recordId": "PG1236",
+          "score": 0.074,
+          "title": "Udhoganchi May Madhil Utpadan Patli April Etkich"
+        },
+        {
+          "recordId": "PG1243",
+          "score": 0.066,
+          "title": "Companychy Aavaratch Testing Karun Kharkhane Chalvine Shky"
+        }
+      ],
+      "ocrHeadline": "कंपनीच्या.आवारातच कारखाने चालविणे"
+    },
+    {
+      "clippingId": "CLIP-9611747944BD",
+      "date": "2021-05-07",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1289",
+      "bestTitle": "`Mission Wayu' T Upkarne",
+      "bestScore": 0.109,
+      "secondScore": 0.09,
+      "margin": 0.019,
+      "candidateScores": [
+        {
+          "recordId": "PG1289",
+          "score": 0.109,
+          "title": "`Mission Wayu' T Upkarne"
+        },
+        {
+          "recordId": "PG1290",
+          "score": 0.09,
+          "title": "Surlit arthchkrasathi Lockdown Nko"
+        }
+      ],
+      "ocrHeadline": "सुरळठीत अर्थचक्रासाठी लॉकडाउन नको"
+    },
+    {
+      "clippingId": "CLIP-00154E3F2772",
+      "date": "2021-05-03",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1312",
+      "bestTitle": "Udhogana 6 Mahinayt `Aache Din'",
+      "bestScore": 0.0,
+      "secondScore": 0.0,
+      "margin": 0.0,
+      "candidateScores": [
+        {
+          "recordId": "PG1312",
+          "score": 0.0,
+          "title": "Udhogana 6 Mahinayt `Aache Din'"
+        },
+        {
+          "recordId": "PG1316",
+          "score": 0.0,
+          "title": "Atyvsth Rugnaasathi `Mission Wayu'"
+        }
+      ],
+      "ocrHeadline": "उद्योगाना"
+    },
+    {
+      "clippingId": "CLIP-5221930DB1E0",
+      "date": "2021-05-03",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1312",
+      "bestTitle": "Udhogana 6 Mahinayt `Aache Din'",
+      "bestScore": 0.12,
+      "secondScore": 0.113,
+      "margin": 0.007,
+      "candidateScores": [
+        {
+          "recordId": "PG1312",
+          "score": 0.12,
+          "title": "Udhogana 6 Mahinayt `Aache Din'"
+        },
+        {
+          "recordId": "PG1316",
+          "score": 0.113,
+          "title": "Atyvsth Rugnaasathi `Mission Wayu'"
+        }
+      ],
+      "ocrHeadline": "'मिशन वायू'"
+    },
+    {
+      "clippingId": "CLIP-E867CD8870F5",
+      "date": "2021-04-09",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG1385",
+      "bestTitle": "Compnyana Pryay Nivdnyachi Mubha",
+      "bestScore": 0.066,
+      "secondScore": 0.04,
+      "margin": 0.026,
+      "candidateScores": [
+        {
+          "recordId": "PG1385",
+          "score": 0.066,
+          "title": "Compnyana Pryay Nivdnyachi Mubha"
+        },
+        {
+          "recordId": "PG1386",
+          "score": 0.04,
+          "title": "Compayni krmcharychya Lashikarnachi Parvangi Denyachya Niryya che Swagat"
+        }
+      ],
+      "ocrHeadline": "कर्मचान्यांच्या कंपनी परवानगी"
+    },
+    {
+      "clippingId": "CLIP-712C993997E3",
+      "date": "2021-04-09",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG1385",
+      "bestTitle": "Compnyana Pryay Nivdnyachi Mubha",
+      "bestScore": 0.065,
+      "secondScore": 0.039,
+      "margin": 0.026,
+      "candidateScores": [
+        {
+          "recordId": "PG1385",
+          "score": 0.065,
+          "title": "Compnyana Pryay Nivdnyachi Mubha"
+        },
+        {
+          "recordId": "PG1386",
+          "score": 0.039,
+          "title": "Compayni krmcharychya Lashikarnachi Parvangi Denyachya Niryya che Swagat"
+        }
+      ],
+      "ocrHeadline": "चाचण्यांसाठी निवडण्याची पर्याय"
+    },
+    {
+      "clippingId": "CLIP-97C338D0C238",
+      "date": "2021-04-03",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1413",
+      "bestTitle": "PMP Bandcha Trivra Virod",
+      "bestScore": 0.1,
+      "secondScore": 0.08,
+      "margin": 0.02,
+      "candidateScores": [
+        {
+          "recordId": "PG1413",
+          "score": 0.1,
+          "title": "PMP Bandcha Trivra Virod"
+        },
+        {
+          "recordId": "PG1420",
+          "score": 0.08,
+          "title": "Kon kay mhnale"
+        }
+      ],
+      "ocrHeadline": "विचारणा केली असता, अध्यक्ष ड. राजेंद्र"
+    },
+    {
+      "clippingId": "CLIP-553AF93DCE56",
+      "date": "2021-04-03",
+      "publisher": "Prabhat",
+      "accepted": false,
+      "bestRecordId": "PG1416",
+      "bestTitle": "Nibardhache Mahratta chemberkdun Swagat",
+      "bestScore": 0.091,
+      "secondScore": 0.082,
+      "margin": 0.009,
+      "candidateScores": [
+        {
+          "recordId": "PG1416",
+          "score": 0.091,
+          "title": "Nibardhache Mahratta chemberkdun Swagat"
+        },
+        {
+          "recordId": "PG1411",
+          "score": 0.082,
+          "title": "Pune Parisaratil Auodhogik Utpaadanvar Parinam"
+        }
+      ],
+      "ocrHeadline": "निर्वधाचे मराठा चेंबरकडून"
+    },
+    {
+      "clippingId": "CLIP-ED30CC77325C",
+      "date": "2021-04-03",
+      "publisher": "Prabhat",
+      "accepted": false,
+      "bestRecordId": "PG1411",
+      "bestTitle": "Pune Parisaratil Auodhogik Utpaadanvar Parinam",
+      "bestScore": 0.092,
+      "secondScore": 0.075,
+      "margin": 0.017,
+      "candidateScores": [
+        {
+          "recordId": "PG1411",
+          "score": 0.092,
+          "title": "Pune Parisaratil Auodhogik Utpaadanvar Parinam"
+        },
+        {
+          "recordId": "PG1416",
+          "score": 0.075,
+          "title": "Nibardhache Mahratta chemberkdun Swagat"
+        }
+      ],
+      "ocrHeadline": "पुणे परिसरातील औद्योगिक उत्पादनावर परिणाम"
+    },
+    {
+      "clippingId": "CLIP-66D4B10C386F",
+      "date": "2021-03-09",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG1451",
+      "bestTitle": "Udhym Nondni madhe Maharashtrachi Aaghadi",
+      "bestScore": 0.086,
+      "secondScore": 0.078,
+      "margin": 0.008,
+      "candidateScores": [
+        {
+          "recordId": "PG1451",
+          "score": 0.086,
+          "title": "Udhym Nondni madhe Maharashtrachi Aaghadi"
+        },
+        {
+          "recordId": "PG1452",
+          "score": 0.078,
+          "title": "Rajjychya Arthsanklpache Badhkam Shetrakdun Swagat"
+        }
+      ],
+      "ocrHeadline": "राज्याच्या अर्थसंकल्पाचे बांधकाम क्षेत्राकडून स्वागत"
+    },
+    {
+      "clippingId": "CLIP-C63DCDD5EAF4",
+      "date": "2021-03-09",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG1451",
+      "bestTitle": "Udhym Nondni madhe Maharashtrachi Aaghadi",
+      "bestScore": 0.075,
+      "secondScore": 0.07,
+      "margin": 0.005,
+      "candidateScores": [
+        {
+          "recordId": "PG1451",
+          "score": 0.075,
+          "title": "Udhym Nondni madhe Maharashtrachi Aaghadi"
+        },
+        {
+          "recordId": "PG1452",
+          "score": 0.07,
+          "title": "Rajjychya Arthsanklpache Badhkam Shetrakdun Swagat"
+        }
+      ],
+      "ocrHeadline": "महाराषट्राची"
+    },
+    {
+      "clippingId": "CLIP-969B65ECB28D",
+      "date": "2021-03-06",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG1457",
+      "bestTitle": "Sammnacha Abhimaan:pan Sudhrnela Motha Wav",
+      "bestScore": 0.125,
+      "secondScore": 0.06,
+      "margin": 0.065,
+      "candidateScores": [
+        {
+          "recordId": "PG1457",
+          "score": 0.125,
+          "title": "Sammnacha Abhimaan:pan Sudhrnela Motha Wav"
+        },
+        {
+          "recordId": "PG1458",
+          "score": 0.06,
+          "title": "Aanetrrastriy Vimantal Aavshk"
+        }
+      ],
+      "ocrHeadline": "सन्मानाचा अभिमान; पण सुधारणेला मोठा वाव"
+    },
+    {
+      "clippingId": "CLIP-B8D9B37A228D",
+      "date": "2021-03-06",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG1457",
+      "bestTitle": "Sammnacha Abhimaan:pan Sudhrnela Motha Wav",
+      "bestScore": 0.114,
+      "secondScore": 0.053,
+      "margin": 0.061,
+      "candidateScores": [
+        {
+          "recordId": "PG1457",
+          "score": 0.114,
+          "title": "Sammnacha Abhimaan:pan Sudhrnela Motha Wav"
+        },
+        {
+          "recordId": "PG1458",
+          "score": 0.053,
+          "title": "Aanetrrastriy Vimantal Aavshk"
+        }
+      ],
+      "ocrHeadline": "आंतरराष्रीय विमानतळ आवरथक वास्तव्यास सवोतम शहर म्हणून पुण्याची दखल घेतली जाणे, अतिशय स्वागताई आणि महत्वाचे"
+    },
+    {
+      "clippingId": "CLIP-60B9C64FE4A9",
+      "date": "2021-03-02",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1469",
+      "bestTitle": "Jagbharatil Udhojkani Maharashrat Yave",
+      "bestScore": 0.188,
+      "secondScore": 0.053,
+      "margin": 0.135,
+      "candidateScores": [
+        {
+          "recordId": "PG1469",
+          "score": 0.188,
+          "title": "Jagbharatil Udhojkani Maharashrat Yave"
+        },
+        {
+          "recordId": "PG1467",
+          "score": 0.053,
+          "title": "Pune Vhave Eletric Vahnanchya Utpadnache Kendra"
+        }
+      ],
+      "ocrHeadline": "उद्योजकांनी यावे महाराष्ट्रात"
+    },
+    {
+      "clippingId": "CLIP-3DC0695DDE30",
+      "date": "2021-03-02",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1469",
+      "bestTitle": "Jagbharatil Udhojkani Maharashrat Yave",
+      "bestScore": 0.188,
+      "secondScore": 0.086,
+      "margin": 0.102,
+      "candidateScores": [
+        {
+          "recordId": "PG1469",
+          "score": 0.188,
+          "title": "Jagbharatil Udhojkani Maharashrat Yave"
+        },
+        {
+          "recordId": "PG1467",
+          "score": 0.086,
+          "title": "Pune Vhave Eletric Vahnanchya Utpadnache Kendra"
+        }
+      ],
+      "ocrHeadline": "उत्पादनाचे"
+    },
+    {
+      "clippingId": "CLIP-F43786F8784D",
+      "date": "2021-02-28",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1478",
+      "bestTitle": "Pune Business Summit Pratyksh V Online",
+      "bestScore": 0.2,
+      "secondScore": 0.096,
+      "margin": 0.104,
+      "candidateScores": [
+        {
+          "recordId": "PG1478",
+          "score": 0.2,
+          "title": "Pune Business Summit Pratyksh V Online"
+        },
+        {
+          "recordId": "PG1481",
+          "score": 0.096,
+          "title": "Anlock Nantar Utpadan v Manushybalthi Wad"
+        }
+      ],
+      "ocrHeadline": "पुणे बिझनेस समिट प्रत्यक्ष व आनलाइनही पुणे : मराठा चंबर ऑफ कॉमर्स,"
+    },
+    {
+      "clippingId": "CLIP-FEEF366363B1",
+      "date": "2021-02-28",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1478",
+      "bestTitle": "Pune Business Summit Pratyksh V Online",
+      "bestScore": 0.2,
+      "secondScore": 0.11,
+      "margin": 0.09,
+      "candidateScores": [
+        {
+          "recordId": "PG1478",
+          "score": 0.2,
+          "title": "Pune Business Summit Pratyksh V Online"
+        },
+        {
+          "recordId": "PG1481",
+          "score": 0.11,
+          "title": "Anlock Nantar Utpadan v Manushybalthi Wad"
+        }
+      ],
+      "ocrHeadline": "अनलॉक'नतर उत्पादन व मनुष्यबळातही"
+    },
+    {
+      "clippingId": "CLIP-6160F362B34E",
+      "date": "2021-02-28",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG1482",
+      "bestTitle": "Aanetrrastriy Vyapar Parishd 1 v 2 March la",
+      "bestScore": 0.143,
+      "secondScore": 0.117,
+      "margin": 0.026,
+      "candidateScores": [
+        {
+          "recordId": "PG1482",
+          "score": 0.143,
+          "title": "Aanetrrastriy Vyapar Parishd 1 v 2 March la"
+        },
+        {
+          "recordId": "PG1477",
+          "score": 0.117,
+          "title": "Pune Parisaratil 51 % Companayna Carona Purv Kalatil Utpadan Patlivar"
+        },
+        {
+          "recordId": "PG1479",
+          "score": 0.105,
+          "title": "Maharashtratil Berojgaricha dar Gujratchya Tulnet adik"
+        }
+      ],
+      "ocrHeadline": "आंतराष्टरीय व्यापार परिद लोकसत्ता प्रतिनिधी पुणे : मरठा चेंबर ऑफ कॉरमर्स,"
+    },
+    {
+      "clippingId": "CLIP-52BB21A23111",
+      "date": "2021-02-28",
+      "publisher": "Loksatta",
+      "accepted": false,
+      "bestRecordId": "PG1482",
+      "bestTitle": "Aanetrrastriy Vyapar Parishd 1 v 2 March la",
+      "bestScore": 0.083,
+      "secondScore": 0.072,
+      "margin": 0.011,
+      "candidateScores": [
+        {
+          "recordId": "PG1482",
+          "score": 0.083,
+          "title": "Aanetrrastriy Vyapar Parishd 1 v 2 March la"
+        },
+        {
+          "recordId": "PG1479",
+          "score": 0.072,
+          "title": "Maharashtratil Berojgaricha dar Gujratchya Tulnet adik"
+        },
+        {
+          "recordId": "PG1477",
+          "score": 0.062,
+          "title": "Pune Parisaratil 51 % Companayna Carona Purv Kalatil Utpadan Patlivar"
+        }
+      ],
+      "ocrHeadline": "महाराष्ातील गैल्या दोन वर्षात"
+    },
+    {
+      "clippingId": "CLIP-82FAE8B981D5",
+      "date": "2021-02-14",
+      "publisher": "Indian Express",
+      "accepted": false,
+      "bestRecordId": "PG1503",
+      "bestTitle": "Easy Dry Systems:Innovation for making life simpler",
+      "bestScore": 1.0,
+      "secondScore": 1.0,
+      "margin": 0.0,
+      "candidateScores": [
+        {
+          "recordId": "PG1503",
+          "score": 1.0,
+          "title": "Easy Dry Systems:Innovation for making life simpler"
+        },
+        {
+          "recordId": "PG1504",
+          "score": 1.0,
+          "title": "Easy Dry Systems"
+        }
+      ],
+      "ocrHeadline": "Easy Dry Systems: Innovation for making life simpler easydry"
+    },
+    {
+      "clippingId": "CLIP-4785BFE0DFD1",
+      "date": "2021-02-02",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1515",
+      "bestTitle": "Udhog  Shetra la Bhakkam Aadhar",
+      "bestScore": 0.136,
+      "secondScore": 0.125,
+      "margin": 0.011,
+      "candidateScores": [
+        {
+          "recordId": "PG1515",
+          "score": 0.136,
+          "title": "Udhog  Shetra la Bhakkam Aadhar"
+        },
+        {
+          "recordId": "PG1511",
+          "score": 0.125,
+          "title": "Yojnanche Swgat; pan Tartudi Apurayy"
+        },
+        {
+          "recordId": "PG1527",
+          "score": 0.116,
+          "title": "Kar Kapat Swagahat Star-up Baddl Nirasha"
+        }
+      ],
+      "ocrHeadline": "पण तरतुदी"
+    },
+    {
+      "clippingId": "CLIP-CB728FD86464",
+      "date": "2021-02-02",
+      "publisher": "Sakal",
+      "accepted": false,
+      "bestRecordId": "PG1511",
+      "bestTitle": "Yojnanche Swgat; pan Tartudi Apurayy",
+      "bestScore": 0.138,
+      "secondScore": 0.075,
+      "margin": 0.063,
+      "candidateScores": [
+        {
+          "recordId": "PG1511",
+          "score": 0.138,
+          "title": "Yojnanche Swgat; pan Tartudi Apurayy"
+        },
+        {
+          "recordId": "PG1515",
+          "score": 0.075,
+          "title": "Udhog  Shetra la Bhakkam Aadhar"
+        },
+        {
+          "recordId": "PG1527",
+          "score": 0.063,
+          "title": "Kar Kapat Swagahat Star-up Baddl Nirasha"
+        }
+      ],
+      "ocrHeadline": "स्वागताह स्टार्टअपबदल निराशा"
+    },
+    {
+      "clippingId": "CLIP-47B801255FC5",
+      "date": "2021-02-02",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG1532",
+      "bestTitle": "IT la Kahi Changlya Tartudi",
+      "bestScore": 0.097,
+      "secondScore": 0.083,
+      "margin": 0.014,
+      "candidateScores": [
+        {
+          "recordId": "PG1532",
+          "score": 0.097,
+          "title": "IT la Kahi Changlya Tartudi"
+        },
+        {
+          "recordId": "PG1535",
+          "score": 0.083,
+          "title": "Arthvyvstha Gatimaan Karnaray Ghoshna"
+        },
+        {
+          "recordId": "PG1521",
+          "score": 0.066,
+          "title": "Payabhut Suvidhanvaril Mothay Trtudine Arthvyvsthela Bal"
+        },
+        {
+          "recordId": "PG1518",
+          "score": 0.036,
+          "title": "Rojgarwadhila Chalana"
+        }
+      ],
+      "ocrHeadline": "अन्वयार्थ अर्थव्यवस्था गतिमान घोषणा!"
+    },
+    {
+      "clippingId": "CLIP-694AA2ED4538",
+      "date": "2021-02-02",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG1532",
+      "bestTitle": "IT la Kahi Changlya Tartudi",
+      "bestScore": 0.097,
+      "secondScore": 0.083,
+      "margin": 0.014,
+      "candidateScores": [
+        {
+          "recordId": "PG1532",
+          "score": 0.097,
+          "title": "IT la Kahi Changlya Tartudi"
+        },
+        {
+          "recordId": "PG1535",
+          "score": 0.083,
+          "title": "Arthvyvstha Gatimaan Karnaray Ghoshna"
+        },
+        {
+          "recordId": "PG1521",
+          "score": 0.066,
+          "title": "Payabhut Suvidhanvaril Mothay Trtudine Arthvyvsthela Bal"
+        },
+        {
+          "recordId": "PG1518",
+          "score": 0.036,
+          "title": "Rojgarwadhila Chalana"
+        }
+      ],
+      "ocrHeadline": "विश्लेषण पायाभूत सुविधांवरील मोठ्या"
+    },
+    {
+      "clippingId": "CLIP-6BA01B3DEEFF",
+      "date": "2021-02-02",
+      "publisher": "Pudhari",
+      "accepted": false,
+      "bestRecordId": "PG1518",
+      "bestTitle": "Rojgarwadhila Chalana",
+      "bestScore": 0.051,
+      "secondScore": 0.044,
+      "margin": 0.007,
+      "candidateScores": [
+        {
+          "recordId": "PG1518",
+          "score": 0.051,
+          "title": "Rojgarwadhila Chalana"
+        },
+        {
+          "recordId": "PG1532",
+          "score": 0.044,
+          "title": "IT la Kahi Changlya Tartudi"
+        },
+        {
+          "recordId": "PG1535",
+          "score": 0.036,
+          "title": "Arthvyvstha Gatimaan Karnaray Ghoshna"
+        },
+        {
+          "recordId": "PG1521",
+          "score": 0.027,
+          "title": "Payabhut Suvidhanvaril Mothay Trtudine Arthvyvsthela Bal"
+        }
+      ],
+      "ocrHeadline": "रोजगारवाढीला चालना"
+    },
+    {
+      "clippingId": "CLIP-3B085B4CFD92",
+      "date": "2021-02-02",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1533",
+      "bestTitle": "IT la Apratysh Labha",
+      "bestScore": 0.048,
+      "secondScore": 0.044,
+      "margin": 0.004,
+      "candidateScores": [
+        {
+          "recordId": "PG1533",
+          "score": 0.048,
+          "title": "IT la Apratysh Labha"
+        },
+        {
+          "recordId": "PG1519",
+          "score": 0.044,
+          "title": "RojgaarNirmitila Chalna"
+        },
+        {
+          "recordId": "PG1526",
+          "score": 0.038,
+          "title": "Kardataynche Shram,Vel Vachnar"
+        },
+        {
+          "recordId": "PG1523",
+          "score": 0.016,
+          "title": "Navin Shaishnik Dhornatil Ucch Shishan Aayogachi Nirmiti Karnyasathi ArthSanklpat Tarrudi Karnnyt Aali Aahe"
+        }
+      ],
+      "ocrHeadline": "रोजगारनिर्मितीला चालना"
+    },
+    {
+      "clippingId": "CLIP-B00727BC2765",
+      "date": "2021-02-02",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1523",
+      "bestTitle": "Navin Shaishnik Dhornatil Ucch Shishan Aayogachi Nirmiti Karnyasathi ArthSanklpat Tarrudi Karnnyt Aali Aahe",
+      "bestScore": 0.094,
+      "secondScore": 0.085,
+      "margin": 0.009,
+      "candidateScores": [
+        {
+          "recordId": "PG1523",
+          "score": 0.094,
+          "title": "Navin Shaishnik Dhornatil Ucch Shishan Aayogachi Nirmiti Karnyasathi ArthSanklpat Tarrudi Karnnyt Aali Aahe"
+        },
+        {
+          "recordId": "PG1533",
+          "score": 0.085,
+          "title": "IT la Apratysh Labha"
+        },
+        {
+          "recordId": "PG1526",
+          "score": 0.074,
+          "title": "Kardataynche Shram,Vel Vachnar"
+        },
+        {
+          "recordId": "PG1519",
+          "score": 0.027,
+          "title": "RojgaarNirmitila Chalna"
+        }
+      ],
+      "ocrHeadline": "नवीन शेक्षणिक धोरणातील उच्च शिक्षण आयोगाची निर्मिती करण्यासाठी अर्थसंकल्पात तरतूद कण्यात आली आहे विद्यापीठामध्ये संशोधनासाठी सरकारकडन निधी मिळण्याची"
+    },
+    {
+      "clippingId": "CLIP-CA2EC02E3CEE",
+      "date": "2021-02-02",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1533",
+      "bestTitle": "IT la Apratysh Labha",
+      "bestScore": 0.143,
+      "secondScore": 0.115,
+      "margin": 0.028,
+      "candidateScores": [
+        {
+          "recordId": "PG1533",
+          "score": 0.143,
+          "title": "IT la Apratysh Labha"
+        },
+        {
+          "recordId": "PG1526",
+          "score": 0.115,
+          "title": "Kardataynche Shram,Vel Vachnar"
+        },
+        {
+          "recordId": "PG1523",
+          "score": 0.047,
+          "title": "Navin Shaishnik Dhornatil Ucch Shishan Aayogachi Nirmiti Karnyasathi ArthSanklpat Tarrudi Karnnyt Aali Aahe"
+        },
+        {
+          "recordId": "PG1519",
+          "score": 0.044,
+          "title": "RojgaarNirmitila Chalna"
+        }
+      ],
+      "ocrHeadline": "आयटी'ला अप्रत्यक्ष लाभ"
+    },
+    {
+      "clippingId": "CLIP-D84DB00A3397",
+      "date": "2021-02-02",
+      "publisher": "Maharashtra Times",
+      "accepted": false,
+      "bestRecordId": "PG1533",
+      "bestTitle": "IT la Apratysh Labha",
+      "bestScore": 0.128,
+      "secondScore": 0.105,
+      "margin": 0.023,
+      "candidateScores": [
+        {
+          "recordId": "PG1533",
+          "score": 0.128,
+          "title": "IT la Apratysh Labha"
+        },
+        {
+          "recordId": "PG1526",
+          "score": 0.105,
+          "title": "Kardataynche Shram,Vel Vachnar"
+        },
+        {
+          "recordId": "PG1523",
+          "score": 0.056,
+          "title": "Navin Shaishnik Dhornatil Ucch Shishan Aayogachi Nirmiti Karnyasathi ArthSanklpat Tarrudi Karnnyt Aali Aahe"
+        },
+        {
+          "recordId": "PG1519",
+          "score": 0.04,
+          "title": "RojgaarNirmitila Chalna"
+        }
+      ],
+      "ocrHeadline": "करदात्यांचे श्रम, वेळ वाचणार"
+    },
+    {
+      "clippingId": "CLIP-283F8983CF2A",
+      "date": "2021-02-02",
+      "publisher": "Aaj Ka Anand",
+      "accepted": false,
+      "bestRecordId": "PG1525",
+      "bestTitle": "Kendriy Budget Ko Lekar Udhogpatiyo Ki Mili-Jili PratiKriya",
+      "bestScore": 0.098,
+      "secondScore": 0.074,
+      "margin": 0.024,
+      "candidateScores": [
+        {
+          "recordId": "PG1525",
+          "score": 0.098,
+          "title": "Kendriy Budget Ko Lekar Udhogpatiyo Ki Mili-Jili PratiKriya"
+        },
+        {
+          "recordId": "PG1530",
+          "score": 0.074,
+          "title": "Industies ko Prosahit karnewala Budget"
+        }
+      ],
+      "ocrHeadline": "इंडस्ट्री को प्ोत्साहित करने वाता बजट यह इंडस्ट्ी को प्ोत्साहित करने वाला बजट है MSME सेक्टर सबसे बड़ा है. भारतीय उदघोग के लिए"
+    },
+    {
+      "clippingId": "CLIP-C7DE9BC05D8F",
+      "date": "2021-02-02",
+      "publisher": "Aaj Ka Anand",
+      "accepted": false,
+      "bestRecordId": "PG1525",
+      "bestTitle": "Kendriy Budget Ko Lekar Udhogpatiyo Ki Mili-Jili PratiKriya",
+      "bestScore": 0.138,
+      "secondScore": 0.084,
+      "margin": 0.054,
+      "candidateScores": [
+        {
+          "recordId": "PG1525",
+          "score": 0.138,
+          "title": "Kendriy Budget Ko Lekar Udhogpatiyo Ki Mili-Jili PratiKriya"
+        },
+        {
+          "recordId": "PG1530",
+          "score": 0.084,
+          "title": "Industies ko Prosahit karnewala Budget"
+        }
+      ],
+      "ocrHeadline": "केंदीय बजट को लेकर उ्योगपतियों की मिली-जुली प्रतिक्रियाएँ"
+    },
+    {
+      "clippingId": "CLIP-05A4372CA927",
+      "date": "2021-01-02",
+      "publisher": "Hindustan Times",
+      "accepted": true,
+      "bestRecordId": "PG1570",
+      "bestTitle": "Lessons from 2020 drive wishlist for 2021",
+      "bestScore": 1.0,
+      "secondScore": 0.75,
+      "margin": 0.25,
+      "candidateScores": [
+        {
+          "recordId": "PG1570",
+          "score": 1.0,
+          "title": "Lessons from 2020 drive wishlist for 2021"
+        },
+        {
+          "recordId": "PG1569",
+          "score": 0.75,
+          "title": "MCCIA AWARDS FOR  2020 OUT,SANS CEREMONY DUE TO COVID"
+        }
+      ],
+      "ocrHeadline": "Lessons from 2020 drive wishlist for 2021 What founders, funders and entrepreneurs want $1 billion"
+    }
+  ]
+}

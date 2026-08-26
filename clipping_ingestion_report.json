@@ -29,12 +29,18 @@
     "unique_originals_preserved": 1488,
     "duplicate_copies_removed": 4,
     "auto_connected": 1149,
-    "ocr_connected": 77,
+    "ocr_connected": 80,
     "new_records_created": 164,
-    "connected_evidence_total": 1390,
-    "ambiguous_after_ocr": 98,
-    "ocr_completed": 336,
-    "ocr_timed_out": 3,
+    "connected_evidence_total": 1393,
+    "ambiguous_after_ocr": 95,
+    "ocr_completed": 339,
+    "ocr_timed_out": 0,
+    "ai_ocr_upgraded": 38,
+    "ocr_engines": {
+      "Tesseract 5": 301,
+      "Not read": 1149,
+      "PaddleOCR": 38
+    },
     "potential_new_items_reviewed": 207,
     "thumbnail_bytes": 102769264,
     "public_url_search": {

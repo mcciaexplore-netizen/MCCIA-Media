@@ -24,3 +24,6 @@
 /* Official MCCIA identity */
 .brand{gap:13px}.brand-logo{display:block;width:118px;height:auto}.brand-product{padding-left:13px;border-left:1px solid var(--line);color:var(--muted);font-size:11px;line-height:1.25}
 @media(max-width:700px){.brand{gap:0}.brand-logo{width:104px}.brand-product{display:none}}
+
+/* OCR provenance */
+.tags .tag-ai{background:#e4eef8;color:#205b7a;font-weight:700}.clipping-card .card-actions a:first-child{font-weight:700}

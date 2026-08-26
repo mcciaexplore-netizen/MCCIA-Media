@@ -19,6 +19,7 @@
 # misc
 .DS_Store
 *.pem
+__pycache__/
 
 # debug
 npm-debug.log*
@@ -41,5 +42,9 @@ next-env.d.ts
 /artifact-work/tesseract-portable/
 /artifact-work/tesseract-installer.exe
 /artifact-work/tesseract.nupkg
+/artifact-work/paddle-ocr-env/
+/artifact-work/paddle-models/
+/artifact-work/ocr-v2-checkpoint.json
+/artifact-work/ocr-v2-results/
 /site-build.tar.gz
 /ocr_source_search_checkpoint.json

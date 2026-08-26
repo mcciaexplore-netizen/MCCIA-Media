@@ -10859,7 +10859,24 @@
         "published": "2024-09-28T00:00:00.000Z",
         "matchScore": 0.207
       }
-    ]
+    ],
+    "evidenceImages": [
+      {
+        "sha256": "1f845f3c530bb2045ad22f0bc991f7b720446f4511104560116254c36f53c1c6",
+        "thumbnailUrl": "/clippings/1f/1f845f3c530bb2045ad22f0bc991f7b720446f4511104560116254c36f53c1c6.webp",
+        "originalFilename": "2024/September - 2024/Sakal 29.9.2024,Sunday, P.no.3(i).jpg",
+        "publisher": "Sakal",
+        "date": "2024-09-29",
+        "page": "3",
+        "quality": "Low",
+        "ocrConfidence": 92.1,
+        "ocrEngine": "Tesseract 5",
+        "ocrModel": null,
+        "ocrReviewStatus": null
+      }
+    ],
+    "evidenceImageUrl": "/clippings/1f/1f845f3c530bb2045ad22f0bc991f7b720446f4511104560116254c36f53c1c6.webp",
+    "verificationMethod": "AI OCR candidate match; editorial review recommended"
   },
   {
     "id": "PG0329",
@@ -13213,7 +13230,24 @@
         "published": "N/A",
         "matchScore": 0.195
       }
-    ]
+    ],
+    "evidenceImages": [
+      {
+        "sha256": "8e8b1f7d346ccbdba2642b5559584bd0ff007a9c685edff53b993197d6d2a302",
+        "thumbnailUrl": "/clippings/8e/8e8b1f7d346ccbdba2642b5559584bd0ff007a9c685edff53b993197d6d2a302.webp",
+        "originalFilename": "2024/May - 2024/Maharashtra Times 21.5.2024, Tuesday, P.no.3.jpg",
+        "publisher": "Maharashtra Times",
+        "date": "2024-05-21",
+        "page": "3",
+        "quality": "Medium",
+        "ocrConfidence": 91.8,
+        "ocrEngine": "PaddleOCR",
+        "ocrModel": "devanagari_PP-OCRv5_mobile_rec",
+        "ocrReviewStatus": "AI transcription; editorial verification recommended"
+      }
+    ],
+    "evidenceImageUrl": "/clippings/8e/8e8b1f7d346ccbdba2642b5559584bd0ff007a9c685edff53b993197d6d2a302.webp",
+    "verificationMethod": "AI OCR candidate match; editorial review recommended"
   },
   {
     "id": "PG0392",
@@ -52898,7 +52932,24 @@
     "duplicateCount": 1,
     "mergeNotes": "New print-index record absent from the prior dashboard dataset",
     "sourceSearchStatus": "search-error",
-    "sourceCandidates": []
+    "sourceCandidates": [],
+    "evidenceImages": [
+      {
+        "sha256": "05a4372ca9274293beec93ea1adc1cf0e20f5fc77890f09350dec906bbfec239",
+        "thumbnailUrl": "/clippings/05/05a4372ca9274293beec93ea1adc1cf0e20f5fc77890f09350dec906bbfec239.webp",
+        "originalFilename": "2021/Jan - 2021/Hindustan Times 2.01.2021,Saturday,P.no.4 001.JPG",
+        "publisher": "Hindustan Times",
+        "date": "2021-01-02",
+        "page": "4",
+        "quality": "High",
+        "ocrConfidence": 98.2,
+        "ocrEngine": "PaddleOCR",
+        "ocrModel": "en_PP-OCRv5_mobile_rec",
+        "ocrReviewStatus": "AI transcription; editorial verification recommended"
+      }
+    ],
+    "evidenceImageUrl": "/clippings/05/05a4372ca9274293beec93ea1adc1cf0e20f5fc77890f09350dec906bbfec239.webp",
+    "verificationMethod": "AI OCR candidate match; editorial review recommended"
   },
   {
     "id": "PG1571",

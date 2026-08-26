@@ -18,25 +18,37 @@ def write_json(path, value):
 
 
 def main():
-    clippings = json.loads(CLIPPINGS_PATH.read_text(encoding='utf-8'))
+    # The private manifest is authoritative because it preserves full OCR text,
+    # local evidence paths, and legacy readings.  Public JSON is a redacted view.
+    source_path = PRIVATE_MANIFEST_PATH if PRIVATE_MANIFEST_PATH.exists() else CLIPPINGS_PATH
+    clippings = json.loads(source_path.read_text(encoding='utf-8'))
     records = json.loads(RECORDS_PATH.read_text(encoding='utf-8'))
     ingestion = json.loads(INGESTION_REPORT_PATH.read_text(encoding='utf-8'))
     source_report = json.loads(SOURCE_REPORT_PATH.read_text(encoding='utf-8')) if SOURCE_REPORT_PATH.exists() else {}
     comparison = json.loads(COMPARISON_PATH.read_text(encoding='utf-8'))
 
-    write_json(PRIVATE_MANIFEST_PATH, clippings)
+    if not PRIVATE_MANIFEST_PATH.exists():
+        write_json(PRIVATE_MANIFEST_PATH, clippings)
     public_clippings = []
     for item in clippings:
-        public = {key: value for key, value in item.items() if key not in {'originalLocalPath', 'ocrText', 'byteSize'}}
+        public = {
+            key: value
+            for key, value in item.items()
+            if key not in {'originalLocalPath', 'ocrText', 'byteSize', 'legacyOcr'}
+        }
         ocr_text = ' '.join(str(item.get('ocrText') or '').split())
         public['ocrExcerpt'] = ocr_text[:700] or None
         public_clippings.append(public)
 
     match_counts = Counter(item.get('matchStatus') for item in public_clippings)
     ocr_counts = Counter(item.get('ocrStatus') for item in public_clippings)
+    engine_counts = Counter(
+        item.get('ocrEngine') or ('Tesseract 5' if item.get('ocrStatus') == 'Completed' else 'Not read')
+        for item in public_clippings
+    )
     thumbnail_bytes = sum((ROOT / 'public' / Path(item['thumbnailUrl'].lstrip('/'))).stat().st_size for item in public_clippings)
     connected = sum(bool(item.get('matchedRecordId')) for item in public_clippings)
-    ambiguous = match_counts['Ambiguous: OCR review required']
+    ambiguous = sum(count for label, count in match_counts.items() if str(label).startswith('Ambiguous'))
     auto_connected = sum(count for label, count in match_counts.items() if str(label).startswith('Auto matched'))
     ocr_connected = sum(count for label, count in match_counts.items() if str(label).startswith('Matched by OCR'))
     new_records = match_counts['New record created after OCR review']
@@ -51,6 +63,8 @@ def main():
         'ambiguous_after_ocr': ambiguous,
         'ocr_completed': ocr_counts['Completed'],
         'ocr_timed_out': ocr_counts['Timed out'],
+        'ai_ocr_upgraded': engine_counts['PaddleOCR'],
+        'ocr_engines': dict(engine_counts),
         'potential_new_items_reviewed': new_records + match_counts['Matched by OCR across publisher aliases'],
         'thumbnail_bytes': thumbnail_bytes,
         'public_url_search': source_report,
