@@ -15,6 +15,8 @@ export type IntakeRecord = {
   submitterEmail?: string | null;
   originalFilename: string;
   imageUrl: string;
+  evidenceUrl?: string;
+  isImage?: boolean;
   originalContentType: string;
   originalSize: number;
   publicationDate: string;
@@ -30,6 +32,31 @@ export type IntakeRecord = {
   errorMessage?: string | null;
   approvedAt?: string | null;
   approvedRecordId?: string | null;
+  editionCity?: string | null;
+  mediaType?: string | null;
+  ocrText?: string | null;
+  ocrConfidence?: number | null;
+  ocrEngine?: string | null;
+  duplicateScore?: number | null;
+  duplicateRecordId?: string | null;
+  duplicateReasons?: string | null;
+  linkStatus?: string | null;
+  linkHttpStatus?: number | null;
+  verificationStatus?: string | null;
+  reviewedBy?: string | null;
+  reviewedAt?: string | null;
+};
+
+type AuditEvent = {
+  id: string;
+  createdAt: string;
+  recordId?: string | null;
+  action: string;
+  actor: string;
+  previousStatus?: string | null;
+  newStatus?: string | null;
+  details?: string | null;
+  source: string;
 };
 
 type Props = {
@@ -64,10 +91,11 @@ export default function IntakeInbox({ records, loading, loadError, onReview, onR
   const [year, setYear] = useState('All');
   const [publisher, setPublisher] = useState('All');
   const [presence, setPresence] = useState('All');
-  const [status, setStatus] = useState('Pending OCR');
+  const [status, setStatus] = useState('All');
   const [busyId, setBusyId] = useState('');
   const [actionError, setActionError] = useState('');
   const [formUrl, setFormUrl] = useState('');
+  const [auditEvents, setAuditEvents] = useState<AuditEvent[]>([]);
 
   useEffect(() => {
     fetch('/api/form-intake/config')
@@ -75,6 +103,12 @@ export default function IntakeInbox({ records, loading, loadError, onReview, onR
       .then((payload) => setFormUrl(payload.formUrl || ''))
       .catch(() => setFormUrl(''));
   }, []);
+  useEffect(() => {
+    fetch('/api/audit-log', { cache: 'no-store' })
+      .then(async (response) => response.ok ? await response.json() as { events?: AuditEvent[] } : { events: [] })
+      .then((payload) => setAuditEvents(Array.isArray(payload.events) ? payload.events : []))
+      .catch(() => setAuditEvents([]));
+  }, [records]);
 
   const years = options(records.map((record) => String(record.year)).filter((value) => value !== '0')).sort((left, right) => Number(right) - Number(left));
   const publishers = options(records.map((record) => record.publisher));
@@ -141,13 +175,14 @@ export default function IntakeInbox({ records, loading, loadError, onReview, onR
     <div className="intake-result-heading"><strong>{loading ? 'Loading submissions…' : `${filtered.length.toLocaleString('en-IN')} submission${filtered.length === 1 ? '' : 's'}`}</strong><span>Images remain in Drive and are mirrored privately for OCR review.</span></div>
     {!loading && !filtered.length ? <div className="empty-state"><strong>No matching submissions</strong><p>{records.length ? 'Change the inbox filters to see other workflow states.' : 'The inbox is ready. New Google Form submissions will appear here.'}</p><button onClick={clear}>Show all statuses</button></div> : <div className="intake-grid">
       {filtered.map((record) => <article className="intake-card" key={record.id}>
-        <a className="intake-image" href={record.imageUrl} target="_blank" rel="noreferrer"><img src={record.imageUrl} alt={`${record.publisher} submission from ${record.publicationDate}`} loading="lazy" /><span>{record.originalFilename}</span></a>
-        <div className="intake-card-body"><div className="card-meta"><span>{record.publisher}</span><time>{prettyDate(record.publicationDate)}{record.page ? ` · p.${record.page}` : ''}</time></div><h3>{record.headline || 'Headline requires OCR review'}</h3><p>{record.notes}</p><div className="tags"><span>{record.language}</span><span>{record.presence}</span><span>{Math.max(1, Math.round(record.originalSize / 1024)).toLocaleString('en-IN')} KB</span>{record.submitterEmail && <span>{record.submitterEmail}</span>}</div>
+        <a className="intake-image" href={record.evidenceUrl || record.imageUrl} target="_blank" rel="noreferrer"><img src={record.isImage === false ? (record.originalContentType === 'application/pdf' ? '/fallbacks/pdf.webp' : '/fallbacks/video.webp') : record.imageUrl} alt={`${record.publisher} submission from ${record.publicationDate}`} loading="lazy" /><span>{record.originalFilename}</span></a>
+        <div className="intake-card-body"><div className="card-meta"><span>{record.publisher}</span><time>{prettyDate(record.publicationDate)}{record.page ? ` · p.${record.page}` : ''}</time></div><h3>{record.headline || 'Headline requires OCR review'}</h3><p>{record.notes}</p><div className="tags"><span>{record.language}</span><span>{record.presence}</span>{record.mediaType&&<span>{record.mediaType}</span>}{record.ocrEngine&&<span>{record.ocrEngine}{record.ocrConfidence!=null?` · ${Math.round(record.ocrConfidence)}%`:''}</span>}{Number(record.duplicateScore)>=0.72&&<span className="tag-warning">Duplicate {Math.round(Number(record.duplicateScore)*100)}%</span>}{record.linkStatus&&<span>{record.linkStatus}{record.linkHttpStatus?` · HTTP ${record.linkHttpStatus}`:''}</span>}<span>{Math.max(1, Math.round(record.originalSize / 1024)).toLocaleString('en-IN')} KB</span>{record.submitterEmail && <span>{record.submitterEmail}</span>}</div>
           <div className="intake-provenance"><span>Inbox ID <strong>{record.id}</strong></span>{record.sheetRow && <span>Sheet row <strong>{record.sheetRow}</strong></span>}{record.approvedRecordId && <span>Evidence <strong>{record.approvedRecordId}</strong></span>}</div>
           <div className="intake-links">{record.driveFileUrl && <a href={record.driveFileUrl} target="_blank" rel="noreferrer">Drive original</a>}{record.driveFolderUrl && <a href={record.driveFolderUrl} target="_blank" rel="noreferrer">Year / month folder</a>}{record.sourceUrl && <a href={record.sourceUrl} target="_blank" rel="noreferrer">Public source</a>}</div>
           <div className="intake-actions"><span className={`intake-status intake-status-${record.status.toLowerCase().replaceAll(' ', '-')}`}>{record.status}</span><div>{record.status !== 'Approved' && record.status !== 'Rejected' && <><button className="intake-reject" onClick={() => void patchStatus(record, 'Rejected')} disabled={busyId === record.id}>{busyId === record.id ? 'Updating…' : 'Reject'}</button><button className="intake-review" onClick={() => void beginReview(record)} disabled={busyId === record.id}>Enhance &amp; OCR</button></>}{record.status === 'Rejected' && <button className="intake-review" onClick={() => void patchStatus(record, 'Pending OCR')} disabled={busyId === record.id}>Return to inbox</button>}{record.status === 'Approved' && <span className="intake-approved">Editorial approval complete</span>}</div></div>
         </div>
       </article>)}
     </div>}
+    <details className="audit-trail"><summary>Editorial audit trail <span>{auditEvents.length.toLocaleString('en-IN')} events</span></summary><div>{auditEvents.slice(0,80).map((event)=><article key={event.id}><time>{new Date(event.createdAt).toLocaleString('en-IN')}</time><strong>{event.action.replaceAll('_',' ')}</strong><span>{event.recordId||'System'} · {event.actor} · {event.source}</span>{event.previousStatus||event.newStatus?<small>{event.previousStatus||'—'} → {event.newStatus||'—'}</small>:null}{event.details&&<p>{event.details}</p>}</article>)}</div></details>
   </section>;
 }

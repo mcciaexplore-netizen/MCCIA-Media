@@ -1,9 +1,13 @@
-import { ensureFormIntakeSchema, getGoogleFormIntakeSecret, getStorageBindings } from '@/db';
+import { ensureFormIntakeSchema, getStorageBindings } from '@/db';
+import { authorizeAutomationRequest } from '../automation-auth';
 
 export const dynamic = 'force-dynamic';
 
-const MAX_IMAGE_BYTES = 20 * 1024 * 1024;
-const ACCEPTED_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
+const MAX_EVIDENCE_BYTES = 45 * 1024 * 1024;
+const ACCEPTED_TYPES = new Set([
+  'image/jpeg', 'image/png', 'image/webp', 'application/pdf',
+  'video/mp4', 'video/webm', 'video/quicktime',
+]);
 
 export type FormIntakeRow = {
   id: string;
@@ -32,6 +36,21 @@ export type FormIntakeRow = {
   error_message: string | null;
   approved_at: string | null;
   approved_record_id: string | null;
+  edition_city: string | null;
+  media_type: string | null;
+  ocr_text: string | null;
+  ocr_confidence: number | null;
+  ocr_engine: string | null;
+  duplicate_score: number | null;
+  duplicate_record_id: string | null;
+  duplicate_reasons: string | null;
+  link_status: string | null;
+  link_http_status: number | null;
+  last_link_check: string | null;
+  verification_status: string | null;
+  reviewed_by: string | null;
+  reviewed_at: string | null;
+  updated_at: string | null;
 };
 
 type IntakeMetadata = {
@@ -50,6 +69,16 @@ type IntakeMetadata = {
   presence?: string;
   notes?: string;
   sourceUrl?: string;
+  editionCity?: string;
+  mediaType?: string;
+  ocrText?: string;
+  ocrConfidence?: number;
+  ocrEngine?: string;
+  duplicateScore?: number;
+  duplicateRecordId?: string;
+  duplicateReasons?: string;
+  linkStatus?: string;
+  linkHttpStatus?: number;
 };
 
 export function toIntakeRecord(row: FormIntakeRow) {
@@ -66,6 +95,8 @@ export function toIntakeRecord(row: FormIntakeRow) {
     submitterEmail: row.submitter_email,
     originalFilename: row.original_filename,
     imageUrl: `/api/form-intake/${encodeURIComponent(row.id)}/image`,
+    evidenceUrl: `/api/form-intake/${encodeURIComponent(row.id)}/image`,
+    isImage: row.original_content_type.startsWith('image/'),
     originalContentType: row.original_content_type,
     originalSize: row.original_size,
     publicationDate: row.publication_date,
@@ -81,6 +112,21 @@ export function toIntakeRecord(row: FormIntakeRow) {
     errorMessage: row.error_message,
     approvedAt: row.approved_at,
     approvedRecordId: row.approved_record_id,
+    editionCity: row.edition_city,
+    mediaType: row.media_type,
+    ocrText: row.ocr_text,
+    ocrConfidence: row.ocr_confidence,
+    ocrEngine: row.ocr_engine,
+    duplicateScore: row.duplicate_score,
+    duplicateRecordId: row.duplicate_record_id,
+    duplicateReasons: row.duplicate_reasons,
+    linkStatus: row.link_status,
+    linkHttpStatus: row.link_http_status,
+    lastLinkCheck: row.last_link_check,
+    verificationStatus: row.verification_status,
+    reviewedBy: row.reviewed_by,
+    reviewedAt: row.reviewed_at,
+    updatedAt: row.updated_at,
   };
 }
 
@@ -116,26 +162,18 @@ function validUrl(value: unknown) {
 }
 
 function extensionFor(type: string) {
-  return type === 'image/png' ? 'png' : type === 'image/webp' ? 'webp' : 'jpg';
+  if (type === 'image/png') return 'png';
+  if (type === 'image/webp') return 'webp';
+  if (type === 'application/pdf') return 'pdf';
+  if (type === 'video/webm') return 'webm';
+  if (type === 'video/quicktime') return 'mov';
+  if (type === 'video/mp4') return 'mp4';
+  return 'jpg';
 }
 
 async function sha256(file: File) {
   const digest = await crypto.subtle.digest('SHA-256', await file.arrayBuffer());
   return [...new Uint8Array(digest)].map((value) => value.toString(16).padStart(2, '0')).join('');
-}
-
-async function digestSecret(value: string) {
-  return new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(value)));
-}
-
-async function authorized(request: Request) {
-  const expected = getGoogleFormIntakeSecret();
-  const supplied = request.headers.get('x-mccia-intake-secret') || '';
-  if (!expected || !supplied) return false;
-  const [left, right] = await Promise.all([digestSecret(expected), digestSecret(supplied)]);
-  let difference = left.length ^ right.length;
-  for (let index = 0; index < left.length; index += 1) difference |= left[index] ^ (right[index] ?? 0);
-  return difference === 0;
 }
 
 export async function GET() {
@@ -157,15 +195,16 @@ export async function GET() {
 export async function POST(request: Request) {
   let originalKey = '';
   try {
-    if (!(await authorized(request))) return jsonError('The intake webhook is not authorized.', 401);
+    const authorization = await authorizeAutomationRequest(request);
+    if (!authorization.authorized) return jsonError('The intake webhook is not authorized.', 401);
     const form = await request.formData();
     const file = form.get('file');
     const metadataValue = form.get('metadata');
     if (!(file instanceof File) || typeof metadataValue !== 'string') {
       return jsonError('A clipping image and metadata are required.', 400);
     }
-    if (!ACCEPTED_TYPES.has(file.type)) return jsonError('Use a JPG, PNG or WebP newspaper image.', 415);
-    if (!file.size || file.size > MAX_IMAGE_BYTES) return jsonError('Each clipping must be between 1 byte and 20 MB.', 413);
+    if (!ACCEPTED_TYPES.has(file.type)) return jsonError('Use an image, PDF or supported video evidence file.', 415);
+    if (!file.size || file.size > MAX_EVIDENCE_BYTES) return jsonError('Each evidence file must be between 1 byte and 45 MB.', 413);
 
     let metadata: IntakeMetadata;
     try {
@@ -190,13 +229,19 @@ export async function POST(request: Request) {
     });
 
     const receivedAt = new Date().toISOString();
+    const initialStatus = clean(metadata.ocrText, 100_000) ? 'In review' : 'Pending OCR';
+    const confidence = Number.isFinite(Number(metadata.ocrConfidence)) ? Math.max(0, Math.min(100, Number(metadata.ocrConfidence))) : null;
+    const duplicateScore = Number.isFinite(Number(metadata.duplicateScore)) ? Math.max(0, Math.min(1, Number(metadata.duplicateScore))) : null;
     try {
       await db.prepare(`INSERT INTO google_form_intake (
         id, sha256, received_at, form_timestamp, form_response_id, drive_file_id,
         drive_file_url, drive_folder_url, sheet_row, submitter_email, original_filename,
         original_key, original_content_type, original_size, publication_date, publisher,
-        page, language, headline, presence, notes, source_url, status
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+        page, language, headline, presence, notes, source_url, status,
+        edition_city, media_type, ocr_text, ocr_confidence, ocr_engine,
+        duplicate_score, duplicate_record_id, duplicate_reasons, link_status,
+        link_http_status, last_link_check, verification_status, updated_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
         .bind(
           id,
           hash,
@@ -220,7 +265,28 @@ export async function POST(request: Request) {
           clean(metadata.presence, 200, 'MCCIA relevance requires review'),
           clean(metadata.notes, 2000, 'Submitted through the MCCIA team collection form.'),
           validUrl(metadata.sourceUrl),
-          'Pending OCR',
+          initialStatus,
+          clean(metadata.editionCity, 200) || null,
+          clean(metadata.mediaType, 100) || null,
+          clean(metadata.ocrText, 100_000) || null,
+          confidence,
+          clean(metadata.ocrEngine, 100) || null,
+          duplicateScore,
+          clean(metadata.duplicateRecordId, 200) || null,
+          clean(metadata.duplicateReasons, 2000) || null,
+          clean(metadata.linkStatus, 100) || null,
+          Number.isFinite(Number(metadata.linkHttpStatus)) ? Math.trunc(Number(metadata.linkHttpStatus)) : null,
+          metadata.linkStatus ? receivedAt : null,
+          duplicateScore != null && duplicateScore >= 0.72 ? 'Potential duplicate — verify' : 'Unverified',
+          receivedAt,
+        )
+        .run();
+      await db.prepare(`INSERT INTO audit_events (
+        id, created_at, record_id, action, actor, previous_status, new_status, details, source
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+        .bind(
+          crypto.randomUUID(), receivedAt, id, 'INTAKE_RECEIVED', authorization.actor,
+          null, initialStatus, 'Evidence stored in R2 with OCR and duplicate metadata.', 'Google Form automation',
         )
         .run();
     } catch (error) {

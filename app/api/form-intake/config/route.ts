@@ -2,7 +2,7 @@ import { env } from 'cloudflare:workers';
 
 export const dynamic = 'force-dynamic';
 
-const DEFAULT_GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/1Ejcmw09OgeMwyx1KhBsx7e9KjnjdrMSojXE41haeS7c/viewform';
+const DEFAULT_GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/1RhQNG2vzrBuyIEdIgEKXPBqfRi-GOrjLhWg34TibB5Q/viewform';
 
 export async function GET() {
   const candidate = env.GOOGLE_FORM_URL?.trim() || DEFAULT_GOOGLE_FORM_URL;

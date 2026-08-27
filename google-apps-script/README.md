@@ -1,56 +1,46 @@
-# MCCIA Google Form intake setup
+# MCCIA automated media-intelligence pipeline
 
-This package connects a team Google Form to the private MCCIA Media Intelligence dashboard.
+This Apps Script belongs to **MCCIA Media & Newspaper Clipping Submission** in
+`mccianewsclipping@gmail.com`.
 
-## 1. Create the Google Form
+## What it automates
 
-Create a form titled **MCCIA Newspaper Clipping Submission** and add these questions with the exact titles below. Collecting verified email addresses is optional; enable it only after the team agrees that submitter identities should be stored in the log.
+- Moves each uploaded evidence file into the permanent `YYYY/MM-Month` Drive archive.
+- Runs Google Drive OCR immediately for images and PDFs.
+- Scores possible duplicates using binary SHA-256, publication date, headline similarity,
+  OCR/image-content similarity, publisher and file-size similarity.
+- Creates native `Pending`, `Approved` and `Rejected` editorial controls in the
+  **Submissions** sheet.
+- Sends intake records and approved evidence to the dashboard.
+- Searches Google News RSS, MCCIA RSS and the MCCIA Sampada portal each Monday.
+- Checks source URLs daily and flags broken links.
+- Maintains **Source Monitoring**, **Analytics**, **Audit Log** and **Errors** sheets.
 
-1. **Publication date** — Date, required.
-2. **Publisher / news channel** — Short answer, required.
-3. **Newspaper clipping image(s)** — File upload, required; image files only; maximum 10 files; maximum 10 MB per file.
-4. **Page number** — Short answer, optional.
-5. **Language** — Dropdown: Marathi, English, Hindi, Bilingual, Unknown.
-6. **People / organisation** — Multiple choice: MCCIA; Director General / Prashant Girbane; MCCIA President; Other MCCIA representative; MCCIA relevance requires review.
-7. **Headline, if readable** — Short answer, optional.
-8. **Public source URL, if known** — Short answer, optional.
-9. **Notes for the editor** — Paragraph, optional.
+## Installation
 
-Google requires respondents to sign in for a File upload question. Keep the form restricted to the intended MCCIA team until its access list has been approved.
+1. Open a new Apps Script project while signed in as `mccianewsclipping@gmail.com`.
+2. Replace the default script with `Pipeline.gs` and replace the manifest with
+   `appsscript.json`.
+3. Run `setupMcciaMediaIntelligence` once and approve the requested Form, Drive,
+   Docs, Sheets, external-request and trigger permissions.
 
-## 2. Add the Apps Script
+The setup function validates the exact 12 Form questions, prepares the existing
+**MCCIA Clipping Intake Log**, and installs four triggers:
 
-From the form, open **More > Apps Script**, or create a standalone Apps Script project. Replace `Code.gs` with this folder's `Code.gs`. The checked-in script contains this form's ID so either project type works. In **Project Settings**, enable “Show appsscript.json” and replace the manifest with `appsscript.json`.
+- Google Form submission
+- Google Sheet editorial-status edit
+- weekly source discovery
+- daily link health monitoring
 
-In **Project Settings > Script properties**, add:
+The dashboard accepts the short-lived Google OAuth token only when it belongs to
+`mccianewsclipping@gmail.com`; no shared secret is stored in source code or in the Sheet.
 
-- `MCCIA_INTAKE_SECRET` — the same private secret configured on the Sites deployment.
-- `DASHBOARD_WEBHOOK_URL` — `https://mccia-media-monitor.guptaaarushi592.chatgpt.site/api/form-intake`
+## Editorial workflow
 
-Do not place the secret inside the source file or Google Sheet.
+1. New files are archived and OCR-processed immediately.
+2. Duplicate and verification signals are written to the submission row.
+3. An editor selects `Pending`, `Approved` or `Rejected` in **Editorial status**.
+4. An approved item is added automatically to the dashboard's Clipping Evidence data.
+5. Every submission, status change, discovery run and link-monitor run is recorded.
 
-Run `setupMcciaIntake` once and authorize the requested Form, Drive, Sheets, external request, and trigger permissions. The setup validates the question titles, creates the permanent Drive archive and log Sheet, and installs the submit trigger.
-
-## 3. Created archive structure
-
-The script creates:
-
-```text
-MCCIA Media Intelligence/
-└── Newspaper Clippings/
-    └── YYYY/
-        └── MM-Month/
-            └── YYYY-MM-DD__Publisher__01.jpg
-```
-
-Every image is moved into its Year/Month folder. Every webhook attempt is appended to **MCCIA Clipping Submission and Error Log**, including its Drive URL, HTTP status, dashboard inbox ID, duplicate result, and error message.
-
-## 4. Editorial workflow
-
-1. Team submits the clipping from a phone or desktop.
-2. Drive stores it permanently under Year/Month.
-3. Apps Script logs the attempt and sends a private copy to the Dashboard Inbox.
-4. An editor opens **Submission inbox > Enhance & OCR**.
-5. Only after the editor checks the image, OCR, date, publisher, headline and people/organisation fields does the dashboard create an approved Clipping Evidence record.
-
-Rejected submissions stay in the inbox audit trail and never appear in the main Clipping Evidence archive.
+OCR and duplicate scoring assist the editor; they do not replace source verification.

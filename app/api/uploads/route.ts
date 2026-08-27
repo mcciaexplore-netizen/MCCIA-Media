@@ -196,9 +196,13 @@ export async function POST(request: Request) {
       .first<UploadedRow>();
     if (existing) {
       if (intakeId) {
-        await db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, error_message = NULL WHERE id = ?`)
-          .bind(existing.id, new Date().toISOString(), intakeId)
-          .run();
+        const approvedAt = new Date().toISOString();
+        await db.batch([
+          db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?, error_message = NULL WHERE id = ?`)
+            .bind(existing.id, approvedAt, 'Dashboard editor', approvedAt, approvedAt, intakeId),
+          db.prepare(`INSERT INTO audit_events (id, created_at, record_id, action, actor, previous_status, new_status, details, source) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+            .bind(crypto.randomUUID(), approvedAt, intakeId, 'EDITORIAL_APPROVED', 'Dashboard editor', 'In review', 'Approved', `Connected to existing evidence ${existing.id}`, 'Dashboard OCR review'),
+        ]);
       }
       return Response.json({ record: toClippingRecord(existing), duplicate: true });
     }
@@ -264,9 +268,11 @@ export async function POST(request: Request) {
           sourceUrl,
         );
       if (intakeId) {
-        const approveIntake = db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, error_message = NULL WHERE id = ?`)
-          .bind(id, uploadedAt, intakeId);
-        await db.batch([insertUpload, approveIntake]);
+        const approveIntake = db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?, error_message = NULL WHERE id = ?`)
+          .bind(id, uploadedAt, 'Dashboard editor', uploadedAt, uploadedAt, intakeId);
+        const audit = db.prepare(`INSERT INTO audit_events (id, created_at, record_id, action, actor, previous_status, new_status, details, source) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+          .bind(crypto.randomUUID(), uploadedAt, intakeId, 'EDITORIAL_APPROVED', 'Dashboard editor', 'In review', 'Approved', `Approved as evidence ${id}`, 'Dashboard OCR review');
+        await db.batch([insertUpload, approveIntake, audit]);
       } else {
         await insertUpload.run();
       }
