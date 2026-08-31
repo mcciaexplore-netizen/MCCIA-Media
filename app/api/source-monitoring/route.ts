@@ -1,4 +1,5 @@
 import { ensureFormIntakeSchema, getStorageBindings } from '@/db';
+import { inferDgEngagementType, normalizeDgEngagementType } from '@/app/dg-classification';
 import { authorizeAutomationRequest } from '../automation-auth';
 
 export const dynamic = 'force-dynamic';
@@ -11,6 +12,7 @@ type SourceRow = {
   title: string;
   language: string;
   presence: string;
+  dg_engagement_type: string | null;
   topic: string;
   source_url: string;
   discovery_type: string;
@@ -31,6 +33,7 @@ type SourcePayload = {
   title?: string;
   language?: string;
   presence?: string;
+  dgEngagementType?: string;
   topic?: string;
   url?: string;
   discoveryType?: string;
@@ -67,6 +70,7 @@ function toRecord(row: SourceRow) {
     title: row.title,
     language: row.language,
     presence: row.presence,
+    dgEngagementType: normalizeDgEngagementType(row.dg_engagement_type),
     topic: row.topic,
     description: row.notes,
     status: row.verification_status,
@@ -99,19 +103,33 @@ export async function POST(request: Request) {
   try {
     const authorization = await authorizeAutomationRequest(request);
     if (!authorization.authorized) return Response.json({ error: 'Source monitoring is not authorized.' }, { status: 401 });
-    const payload = await request.json() as SourcePayload;
+    let payload: SourcePayload;
+    try {
+      const parsed = await request.json() as unknown;
+      if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new Error('Invalid payload object');
+      payload = parsed as SourcePayload;
+    } catch {
+      return Response.json({ error: 'The source-monitoring payload must be a JSON object.' }, { status: 400 });
+    }
     const sourceUrl = url(payload.url);
     if (!sourceUrl) return Response.json({ error: 'A public HTTP(S) source URL is required.' }, { status: 400 });
     const id = clean(payload.id, 100) || `SRC-${crypto.randomUUID().replaceAll('-', '').slice(0, 14).toUpperCase()}`;
     const now = new Date().toISOString();
     const discoveredAt = clean(payload.discoveredAt, 100) || now;
+    const requestedDgEngagementType = clean(payload.dgEngagementType, 100);
+    const normalizedDgEngagementType = normalizeDgEngagementType(requestedDgEngagementType);
+    if (requestedDgEngagementType && !normalizedDgEngagementType) {
+      return Response.json({ error: 'Choose one of the three available DG content classifications.' }, { status: 400 });
+    }
+    const dgEngagementType = normalizedDgEngagementType
+      ?? inferDgEngagementType(`${payload.title || ''} ${payload.notes || ''} ${payload.presence || ''}`);
     const { db } = getStorageBindings();
     await ensureFormIntakeSchema(db);
     await db.prepare(`INSERT INTO source_monitoring (
-      id, discovered_at, publication_date, publisher, title, language, presence,
+      id, discovered_at, publication_date, publisher, title, language, presence, dg_engagement_type,
       topic, source_url, discovery_type, query_text, link_status, http_status,
       last_checked_at, verification_status, notes, updated_at
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ON CONFLICT(source_url) DO UPDATE SET
       discovered_at = excluded.discovered_at,
       publication_date = excluded.publication_date,
@@ -119,6 +137,12 @@ export async function POST(request: Request) {
       title = excluded.title,
       language = excluded.language,
       presence = excluded.presence,
+      dg_engagement_type = CASE
+        WHEN source_monitoring.dg_engagement_type IN (
+          'Post/article written by DG Sir', 'Quote given by DG Sir', 'Conversation with DG Sir'
+        ) THEN source_monitoring.dg_engagement_type
+        ELSE excluded.dg_engagement_type
+      END,
       topic = excluded.topic,
       discovery_type = excluded.discovery_type,
       query_text = excluded.query_text,
@@ -136,6 +160,7 @@ export async function POST(request: Request) {
         clean(payload.title, 1000, 'Untitled source candidate'),
         clean(payload.language, 100, 'Unknown'),
         clean(payload.presence, 500, 'MCCIA relevance requires review'),
+        dgEngagementType,
         clean(payload.topic, 250, 'MCCIA media monitoring'),
         sourceUrl,
         clean(payload.discoveryType, 200, 'Automated discovery'),

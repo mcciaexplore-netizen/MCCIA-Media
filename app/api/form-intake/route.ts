@@ -1,4 +1,5 @@
 import { ensureFormIntakeSchema, getStorageBindings } from '@/db';
+import { inferDgEngagementType, normalizeDgEngagementType } from '@/app/dg-classification';
 import { authorizeAutomationRequest } from '../automation-auth';
 
 export const dynamic = 'force-dynamic';
@@ -30,6 +31,7 @@ export type FormIntakeRow = {
   language: string;
   headline: string;
   presence: string;
+  dg_engagement_type: string | null;
   notes: string;
   source_url: string | null;
   status: string;
@@ -67,6 +69,7 @@ type IntakeMetadata = {
   language?: string;
   headline?: string;
   presence?: string;
+  dgEngagementType?: string;
   notes?: string;
   sourceUrl?: string;
   editionCity?: string;
@@ -106,6 +109,7 @@ export function toIntakeRecord(row: FormIntakeRow) {
     language: row.language,
     headline: row.headline,
     presence: row.presence,
+    dgEngagementType: normalizeDgEngagementType(row.dg_engagement_type),
     notes: row.notes,
     sourceUrl: row.source_url,
     status: row.status,
@@ -208,12 +212,19 @@ export async function POST(request: Request) {
 
     let metadata: IntakeMetadata;
     try {
-      metadata = JSON.parse(metadataValue) as IntakeMetadata;
+      const parsed = JSON.parse(metadataValue) as unknown;
+      if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new Error('Invalid metadata object');
+      metadata = parsed as IntakeMetadata;
     } catch {
       return jsonError('The intake metadata is not valid JSON.', 400);
     }
     const publicationDate = validDate(metadata.publicationDate);
     if (!publicationDate) return jsonError('A valid publication date is required.', 400);
+    const requestedDgEngagementType = clean(metadata.dgEngagementType, 100);
+    const normalizedDgEngagementType = normalizeDgEngagementType(requestedDgEngagementType);
+    if (requestedDgEngagementType && !normalizedDgEngagementType) {
+      return jsonError('Choose one of the three available DG content classifications.', 400);
+    }
 
     const hash = await sha256(file);
     const id = `INT-${hash.slice(0, 12).toUpperCase()}`;
@@ -232,12 +243,14 @@ export async function POST(request: Request) {
     const initialStatus = clean(metadata.ocrText, 100_000) ? 'In review' : 'Pending OCR';
     const confidence = Number.isFinite(Number(metadata.ocrConfidence)) ? Math.max(0, Math.min(100, Number(metadata.ocrConfidence))) : null;
     const duplicateScore = Number.isFinite(Number(metadata.duplicateScore)) ? Math.max(0, Math.min(1, Number(metadata.duplicateScore))) : null;
+    const dgEngagementType = normalizedDgEngagementType
+      ?? inferDgEngagementType(`${metadata.headline || ''} ${metadata.ocrText || ''} ${metadata.presence || ''}`);
     try {
       await db.prepare(`INSERT INTO google_form_intake (
         id, sha256, received_at, form_timestamp, form_response_id, drive_file_id,
         drive_file_url, drive_folder_url, sheet_row, submitter_email, original_filename,
         original_key, original_content_type, original_size, publication_date, publisher,
-        page, language, headline, presence, notes, source_url, status,
+        page, language, headline, presence, dg_engagement_type, notes, source_url, status,
         edition_city, media_type, ocr_text, ocr_confidence, ocr_engine,
         duplicate_score, duplicate_record_id, duplicate_reasons, link_status,
         link_http_status, last_link_check, verification_status, updated_at
@@ -263,6 +276,7 @@ export async function POST(request: Request) {
           clean(metadata.language, 100, 'Unknown'),
           clean(metadata.headline, 500, 'Headline requires OCR review'),
           clean(metadata.presence, 200, 'MCCIA relevance requires review'),
+          dgEngagementType,
           clean(metadata.notes, 2000, 'Submitted through the MCCIA team collection form.'),
           validUrl(metadata.sourceUrl),
           initialStatus,

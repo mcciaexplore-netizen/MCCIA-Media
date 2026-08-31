@@ -1,6 +1,7 @@
 'use client';
 
 import { ChangeEvent, DragEvent, useEffect, useRef, useState } from 'react';
+import { DG_ENGAGEMENT_TYPES, DgEngagementType, inferDgEngagementType, mentionsDg, normalizeDgEngagementType } from './dg-classification';
 
 export type UploadedClipping = {
   id: string;
@@ -31,6 +32,7 @@ export type UploadedClipping = {
   sourceSearchStatus?: string | null;
   language?: string;
   presence?: string;
+  dgEngagementType?: DgEngagementType | null;
   uploaded?: boolean;
   uploadedAt?: string;
   status?: string;
@@ -45,6 +47,7 @@ type Fields = {
   ocrText: string;
   ocrConfidence: number;
   presence: string;
+  dgEngagementType: DgEngagementType | '';
   notes: string;
   sourceUrl: string;
 };
@@ -65,6 +68,7 @@ export type IntakeReviewItem = {
   language: string;
   headline: string;
   presence: string;
+  dgEngagementType?: DgEngagementType | null;
   notes: string;
   sourceUrl?: string | null;
 };
@@ -92,6 +96,7 @@ const emptyFields = (): Fields => ({
   ocrText: '',
   ocrConfidence: 0,
   presence: 'MCCIA relevance requires review',
+  dgEngagementType: '',
   notes: 'Original and enhanced copies preserved; OCR text reviewed during upload.',
   sourceUrl: '',
 });
@@ -292,6 +297,9 @@ export default function ClippingIngest({ onClose, onSaved, intake }: Props) {
           ocrText: text,
           ocrConfidence: Math.round(result.data.confidence || 0),
           presence: preset?.presence && !preset.presence.toLowerCase().includes('requires review') ? preset.presence : detectPresence(text),
+          dgEngagementType: normalizeDgEngagementType(preset?.dgEngagementType)
+            ?? inferDgEngagementType(`${preset?.headline || ''} ${text} ${preset?.presence || ''}`)
+            ?? '',
           notes: preset?.notes || 'Original and enhanced copies preserved; OCR text reviewed during upload.',
           sourceUrl: preset?.sourceUrl || '',
         });
@@ -353,6 +361,7 @@ export default function ClippingIngest({ onClose, onSaved, intake }: Props) {
 
   const save = async () => {
     if (!originalFile || !enhancedBlob || !fields.ocrText || !fields.publicationDate || !reviewed) return;
+    if (mentionsDg(`${fields.headline} ${fields.ocrText} ${fields.presence}`) && !fields.dgEngagementType) return;
     setStage('saving');
     setError('');
     try {
@@ -379,6 +388,8 @@ export default function ClippingIngest({ onClose, onSaved, intake }: Props) {
     }
   };
 
+  const dgClassificationRequired = mentionsDg(`${fields.headline} ${fields.ocrText} ${fields.presence}`);
+
   return <section className="ingest-panel" id="add-clipping" aria-labelledby="ingest-title">
     <div className="ingest-heading"><div><p className="kicker">{intake?'SUBMISSION INBOX / EDITORIAL REVIEW':'NEW EVIDENCE / OWNER WORKSPACE'}</p><h2 id="ingest-title">{intake?'Review team submission':'Add a newspaper clipping'}</h2><p>{intake?'The Drive original is being enhanced and read with OCR. Approval will move it into the main Clipping Evidence archive.':'Original evidence stays untouched. A separate OCR copy is enlarged, converted to grayscale, auto-contrasted and sharpened.'}</p></div><button className="ingest-close" onClick={onClose} aria-label="Close clipping uploader">Close</button></div>
     <div className="ingest-languages" aria-label="OCR languages"><strong>OCR languages</strong>{[['eng','English'],['mar','Marathi'],['hin','Hindi']].map(([code,label])=><label key={code}><input type="checkbox" checked={selectedLanguages.includes(code)} onChange={()=>toggleLanguage(code)}/><span>{label}</span></label>)}</div>
@@ -389,6 +400,6 @@ export default function ClippingIngest({ onClose, onSaved, intake }: Props) {
     {message&&<div className="ingest-alert ingest-success" role="status">{message}</div>}
     {(stage==='enhancing'||stage==='ocr'||stage==='saving')&&<div className="ingest-progress"><div><span style={{width:`${stage==='enhancing'?18:stage==='saving'?100:Math.max(24,progress)}%`}}/></div><strong>{stage==='enhancing'?'Creating a clear OCR copy…':stage==='ocr'?`Reading English, Marathi and Hindi text… ${progress}%`:'Saving original, enhanced copy and metadata…'}</strong></div>}
     {originalUrl&&enhancedUrl&&<div className="image-comparison"><figure><div><img src={originalUrl} alt="Original uploaded newspaper clipping"/></div><figcaption><strong>Original evidence</strong><span>Preserved without changes</span></figcaption></figure><figure><div><img src={enhancedUrl} alt="Enhanced OCR copy of the newspaper clipping"/></div><figcaption><strong>Enhanced OCR copy</strong><span>{dimensions.width.toLocaleString('en-IN')} × {dimensions.height.toLocaleString('en-IN')} px</span><button onClick={downloadEnhanced}>Download enhanced</button></figcaption></figure></div>}
-    {(stage==='review'||stage==='saving'||stage==='saved')&&<div className="ingest-review"><div className="review-heading"><div><strong>Review extracted information</strong><span>OCR is evidence assistance, not final fact verification.</span></div><span className="confidence-score">OCR confidence {fields.ocrConfidence}%</span></div><div className="review-fields"><label>News channel / publisher<input value={fields.publisher} onChange={event=>updateField('publisher',event.target.value)} placeholder="Publisher not identified"/></label><label>Publication date<input type="date" required value={fields.publicationDate} onChange={event=>updateField('publicationDate',event.target.value)}/></label><label>Page<input value={fields.page} onChange={event=>updateField('page',event.target.value)} placeholder="Optional"/></label><label>Language<input value={fields.language} onChange={event=>updateField('language',event.target.value)}/></label><label className="field-wide">Headline<input value={fields.headline} onChange={event=>updateField('headline',event.target.value)}/></label><label className="field-wide">People / organisation<select value={fields.presence} onChange={event=>updateField('presence',event.target.value)}><option>MCCIA mention</option><option>Director General / Prashant Girbane mention</option><option>MCCIA President mention</option><option>MCCIA relevance requires review</option></select></label><label className="field-wide">Public source URL, if known<input type="url" value={fields.sourceUrl} onChange={event=>updateField('sourceUrl',event.target.value)} placeholder="https://publisher.example/article"/></label><label className="field-wide">Full OCR text<textarea rows={12} value={fields.ocrText} onChange={event=>updateField('ocrText',event.target.value)}/></label><label className="field-wide">Review note<textarea rows={3} value={fields.notes} onChange={event=>updateField('notes',event.target.value)}/></label></div><label className="review-confirm"><input type="checkbox" checked={reviewed} onChange={event=>setReviewed(event.target.checked)} disabled={stage==='saved'}/><span>I checked the enhanced image against the extracted headline, date, publisher and OCR text.</span></label><div className="ingest-actions"><button className="button-secondary" onClick={downloadEnhanced}>Download enhanced copy</button><button className="button-primary" onClick={save} disabled={!reviewed||!fields.ocrText||!fields.publicationDate||stage==='saving'||stage==='saved'}>{stage==='saved'?'Saved to clipping evidence':stage==='saving'?'Saving…':'Save reviewed clipping'}</button></div></div>}
+    {(stage==='review'||stage==='saving'||stage==='saved')&&<div className="ingest-review"><div className="review-heading"><div><strong>Review extracted information</strong><span>OCR is evidence assistance, not final fact verification.</span></div><span className="confidence-score">OCR confidence {fields.ocrConfidence}%</span></div><div className="review-fields"><label>News channel / publisher<input value={fields.publisher} onChange={event=>updateField('publisher',event.target.value)} placeholder="Publisher not identified"/></label><label>Publication date<input type="date" required value={fields.publicationDate} onChange={event=>updateField('publicationDate',event.target.value)}/></label><label>Page<input value={fields.page} onChange={event=>updateField('page',event.target.value)} placeholder="Optional"/></label><label>Language<input value={fields.language} onChange={event=>updateField('language',event.target.value)}/></label><label className="field-wide">Headline<input value={fields.headline} onChange={event=>updateField('headline',event.target.value)}/></label><label className="field-wide">People / organisation<select value={fields.presence} onChange={event=>updateField('presence',event.target.value)}><option>MCCIA mention</option><option>Director General / Prashant Girbane mention</option><option>MCCIA President mention</option><option>MCCIA relevance requires review</option></select></label><label className="field-wide">DG content classification<select value={fields.dgEngagementType} onChange={event=>updateField('dgEngagementType',event.target.value as DgEngagementType|'')}><option value="">{dgClassificationRequired?'Select one before approval':'Not applicable / not identified'}</option>{DG_ENGAGEMENT_TYPES.map(value=><option key={value}>{value}</option>)}</select><small>Choose how DG Sir participated in this coverage.</small></label><label className="field-wide">Public source URL, if known<input type="url" value={fields.sourceUrl} onChange={event=>updateField('sourceUrl',event.target.value)} placeholder="https://publisher.example/article"/></label><label className="field-wide">Full OCR text<textarea rows={12} value={fields.ocrText} onChange={event=>updateField('ocrText',event.target.value)}/></label><label className="field-wide">Review note<textarea rows={3} value={fields.notes} onChange={event=>updateField('notes',event.target.value)}/></label></div><label className="review-confirm"><input type="checkbox" checked={reviewed} onChange={event=>setReviewed(event.target.checked)} disabled={stage==='saved'}/><span>I checked the enhanced image against the extracted headline, date, publisher, DG classification and OCR text.</span></label><div className="ingest-actions"><button className="button-secondary" onClick={downloadEnhanced}>Download enhanced copy</button><button className="button-primary" onClick={save} disabled={!reviewed||!fields.ocrText||!fields.publicationDate||(dgClassificationRequired&&!fields.dgEngagementType)||stage==='saving'||stage==='saved'}>{stage==='saved'?'Saved to clipping evidence':stage==='saving'?'Saving…':'Save reviewed clipping'}</button></div></div>}
   </section>;
 }

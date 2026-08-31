@@ -17,6 +17,11 @@ const MI = Object.freeze({
     config: 'Configuration', sources: 'Source Monitoring', analytics: 'Analytics',
   }),
   statuses: Object.freeze(['Pending', 'Approved', 'Rejected']),
+  dgClassifications: Object.freeze([
+    'Post/article written by DG Sir',
+    'Quote given by DG Sir',
+    'Conversation with DG Sir',
+  ]),
   queries: Object.freeze([
     'MCCIA', '"Prashant Girbane"', '"Mahratta Chamber of Commerce"',
     '"Maratha Chamber of Commerce" Pune', 'MCCIA president', 'एमसीसीआयए',
@@ -34,11 +39,11 @@ const MI_SUBMISSION_HEADERS = [
   'Duplicate score', 'Duplicate record ID', 'Duplicate reasons', 'Link status',
   'Link HTTP status', 'Last link check', 'Verification status', 'Editorial status',
   'Reviewer', 'Reviewed at', 'Dashboard inbox ID', 'Approved record ID',
-  'Dashboard status', 'Error message', 'Updated at',
+  'Dashboard status', 'Error message', 'Updated at', 'DG content classification',
 ];
 const MI_AUDIT_HEADERS = ['Timestamp', 'Record ID', 'Action', 'Actor', 'Previous status', 'New status', 'Details', 'Source'];
 const MI_ERROR_HEADERS = ['Timestamp', 'Stage', 'Record ID', 'Form response ID', 'Drive file ID', 'Error message', 'Stack', 'Resolved', 'Resolved by', 'Resolved at'];
-const MI_SOURCE_HEADERS = ['Source ID', 'Discovered at', 'Publication date', 'Publisher', 'Title', 'Language', 'People / organisation', 'Topic', 'Source URL', 'Discovery type', 'Query / feed', 'HTTP status', 'Link status', 'Last checked', 'Verification status', 'Dashboard status', 'Notes'];
+const MI_SOURCE_HEADERS = ['Source ID', 'Discovered at', 'Publication date', 'Publisher', 'Title', 'Language', 'People / organisation', 'Topic', 'Source URL', 'Discovery type', 'Query / feed', 'HTTP status', 'Link status', 'Last checked', 'Verification status', 'Dashboard status', 'Notes', 'DG content classification'];
 
 function setupMcciaMediaIntelligence() {
   const form = FormApp.openById(MI.formId);
@@ -104,6 +109,7 @@ function miProcessFile_(fileId, sequence, response, values, date, publisher) {
     duplicateReasons: duplicate.reasons.join('; '), linkStatus: link.status,
     linkHttpStatus: link.code,
   };
+  metadata.dgEngagementType = miDgClassification_([headline, ocr.text, metadata.presence].join(' '));
   const sheet = miSheet_(MI.sheets.submissions);
   sheet.appendRow([
     recordId, response.getId(), response.getTimestamp(), now, date, Number(date.slice(0, 4)), miMonthLabel_(date),
@@ -112,7 +118,7 @@ function miProcessFile_(fileId, sequence, response, values, date, publisher) {
     originalName, archivedName, mime, size, file.getId(), file.getUrl(), folder.getUrl(), sha,
     ocr.text, ocr.confidence, ocr.engine, duplicate.score, duplicate.recordId, duplicate.reasons.join('; '),
     link.status, link.code, sourceUrl ? now : '', duplicate.score >= 0.72 ? 'Potential duplicate — verify' : 'Unverified',
-    'Pending', '', '', '', '', 'Pending dashboard delivery', '', now,
+    'Pending', '', '', '', '', 'Pending dashboard delivery', '', now, metadata.dgEngagementType,
   ]);
   const row = sheet.getLastRow();
   metadata.sheetRow = row;
@@ -190,9 +196,9 @@ function rebuildMcciaAnalytics() {
     ['Broken source links', submissions.concat(sources).filter(function(r) { return r['Link status'] === 'Broken'; }).length],
     ['Weekly source candidates', sources.length], ['', ''],
   ];
-  [['Editorial status', 'Editorial status'], ['People / organisation', 'People / organisation'], ['Language', 'Language'], ['Publisher', 'Publisher']].forEach(function(group) {
+  [['Editorial status', 'Editorial status', submissions], ['DG content classification', 'DG content classification', submissions.concat(sources)], ['People / organisation', 'People / organisation', submissions], ['Language', 'Language', submissions], ['Publisher', 'Publisher', submissions]].forEach(function(group) {
     rows.push([group[0], 'Count']);
-    const values = count(submissions, group[1]);
+    const values = count(group[2], group[1]);
     Object.keys(values).sort(function(a, b) { return values[b] - values[a]; }).slice(0, 30).forEach(function(key) { rows.push([key, values[key]]); });
     rows.push(['', '']);
   });
@@ -208,7 +214,7 @@ function miEnsureWorkbook_() {
   miEnsureSheet_(ss, MI.sheets.submissions, MI_SUBMISSION_HEADERS);
   miEnsureSheet_(ss, MI.sheets.audit, MI_AUDIT_HEADERS);
   miEnsureSheet_(ss, MI.sheets.errors, MI_ERROR_HEADERS);
-  miEnsureSheet_(ss, MI.sheets.sources, MI_SOURCE_HEADERS);
+  const sources = miEnsureSheet_(ss, MI.sheets.sources, MI_SOURCE_HEADERS);
   miEnsureSheet_(ss, MI.sheets.analytics, ['Metric', 'Count']);
   const config = miEnsureSheet_(ss, MI.sheets.config, ['Setting', 'Value', 'Purpose']);
   const configRows = [
@@ -224,6 +230,7 @@ function miEnsureWorkbook_() {
   config.clearContents(); config.getRange(1, 1, configRows.length, 3).setValues(configRows); miStyle_(config, 3);
   const submissions = ss.getSheetByName(MI.sheets.submissions);
   miValidation_(submissions, 2, Math.max(1, submissions.getMaxRows() - 1));
+  miDgValidation_(sources, 2, Math.max(1, sources.getMaxRows() - 1), 18);
 }
 
 function miInstallTriggers_(form) {
@@ -288,7 +295,7 @@ function miSendIntake_(file, metadata) {
 function miDecision_(row, status, actor) {
   const id = miClean_(row['Dashboard inbox ID'], 200);
   if (!id) return { approvedId: '', status: 'No dashboard inbox ID', error: 'Submission has not reached the dashboard.' };
-  const response = miFetch_(MI.dashboardUrl + '/api/form-intake/' + encodeURIComponent(id), { method: 'patch', contentType: 'application/json', muteHttpExceptions: true, payload: JSON.stringify({ status: status === 'Pending' ? 'Pending OCR' : status, actor: actor, headline: row['Headline'], ocrText: row['OCR text'], ocrConfidence: row['OCR confidence'], verificationStatus: row['Verification status'] }) });
+  const response = miFetch_(MI.dashboardUrl + '/api/form-intake/' + encodeURIComponent(id), { method: 'patch', contentType: 'application/json', muteHttpExceptions: true, payload: JSON.stringify({ status: status === 'Pending' ? 'Pending OCR' : status, actor: actor, headline: row['Headline'], ocrText: row['OCR text'], ocrConfidence: row['OCR confidence'], verificationStatus: row['Verification status'], dgEngagementType: miDgValue_(row['DG content classification']) }) });
   const body = miJson_(response.getContentText()) || {};
   if (response.getResponseCode() < 200 || response.getResponseCode() >= 300) throw new Error(body.error || ('HTTP ' + response.getResponseCode()));
   return { approvedId: body.record && body.record.approvedRecordId || '', status: 'Editorial status synchronized', error: '' };
@@ -312,20 +319,23 @@ function miFeed_(url, type, query, now) {
     let link = child('link');
     if (!link) { const element = item.getChildren().filter(function(value) { return value.getName().toLowerCase() === 'link'; })[0]; link = element && element.getAttribute('href') ? element.getAttribute('href').getValue() : ''; }
     const title = child('title'); const date = miDate_(child('pubDate') || child('published') || child('updated'));
-    return { id: miSourceId_(link, title), discoveredAt: now, date: date, publisher: child('source') || miPublisher_(title) || 'Publisher not recorded', title: title, language: miLanguage_(title), presence: miPresence_(title), topic: miTopic_(title), url: link, discoveryType: type, query: query, notes: 'Automated discovery; editorial verification required.' };
+    return { id: miSourceId_(link, title), discoveredAt: now, date: date, publisher: child('source') || miPublisher_(title) || 'Publisher not recorded', title: title, language: miLanguage_(title), presence: miPresence_(title), topic: miTopic_(title), url: link, discoveryType: type, query: query, notes: 'Automated discovery; editorial verification required.', dgEngagementType: miDgClassification_(title) };
   }).filter(function(item) { return item.title && miUrl_(item.url); });
 }
 
-function miPortalRecord_(feed, now) { return { id: miSourceId_(feed.url, feed.label), discoveredAt: now, date: '', publisher: feed.label, title: feed.label + ' source requires manual review', language: 'Unknown', presence: 'MCCIA', topic: 'E-paper / publisher portal', url: feed.url, discoveryType: 'E-paper / publisher portal', query: feed.label, notes: 'Public portal monitored; page-level search may require editorial review.' }; }
+function miPortalRecord_(feed, now) { return { id: miSourceId_(feed.url, feed.label), discoveredAt: now, date: '', publisher: feed.label, title: feed.label + ' source requires manual review', language: 'Unknown', presence: 'MCCIA', topic: 'E-paper / publisher portal', url: feed.url, discoveryType: 'E-paper / publisher portal', query: feed.label, notes: 'Public portal monitored; page-level search may require editorial review.', dgEngagementType: '' }; }
 
 function miUpsertSources_(records) {
   const sheet = miSheet_(MI.sheets.sources); const byUrl = {};
   miObjects_(sheet).forEach(function(row, index) { if (row['Source URL']) byUrl[row['Source URL']] = index + 2; });
   records.forEach(function(record) {
     const link = miCheckUrl_(record.url);
-    const values = [record.id, record.discoveredAt, record.date, record.publisher, record.title, record.language, record.presence, record.topic, record.url, record.discoveryType, record.query, link.code, link.status, new Date(), 'Unverified', 'Pending dashboard delivery', record.notes];
-    if (byUrl[record.url]) sheet.getRange(byUrl[record.url], 1, 1, MI_SOURCE_HEADERS.length).setValues([values]); else { sheet.appendRow(values); byUrl[record.url] = sheet.getLastRow(); }
-    try { miFetch_(MI.dashboardUrl + '/api/source-monitoring', { method: 'post', contentType: 'application/json', muteHttpExceptions: true, payload: JSON.stringify(Object.assign({}, record, { linkStatus: link.status, httpStatus: link.code })) }); } catch (error) { miError_('SOURCE_DELIVERY', record.id, '', '', error); }
+    const existingRow = byUrl[record.url] || 0;
+    const manualClassification = existingRow ? miDgValue_(sheet.getRange(existingRow, 18).getDisplayValue()) : '';
+    const dgEngagementType = manualClassification || miDgValue_(record.dgEngagementType) || miDgClassification_([record.title, record.notes, record.presence].join(' '));
+    const values = [record.id, record.discoveredAt, record.date, record.publisher, record.title, record.language, record.presence, record.topic, record.url, record.discoveryType, record.query, link.code, link.status, new Date(), 'Unverified', 'Pending dashboard delivery', record.notes, dgEngagementType];
+    if (existingRow) sheet.getRange(existingRow, 1, 1, MI_SOURCE_HEADERS.length).setValues([values]); else { sheet.appendRow(values); byUrl[record.url] = sheet.getLastRow(); miDgValidation_(sheet, byUrl[record.url], 1, 18); }
+    try { miFetch_(MI.dashboardUrl + '/api/source-monitoring', { method: 'post', contentType: 'application/json', muteHttpExceptions: true, payload: JSON.stringify(Object.assign({}, record, { linkStatus: link.status, httpStatus: link.code, dgEngagementType: dgEngagementType })) }); } catch (error) { miError_('SOURCE_DELIVERY', record.id, '', '', error); }
   });
 }
 
@@ -341,7 +351,8 @@ function miCheckUrl_(url) { try { const response = UrlFetchApp.fetch(url, { meth
 
 function miEnsureSheet_(ss, name, headers) { const sheet = ss.getSheetByName(name) || ss.insertSheet(name); /* Always restore the canonical schema when upgrading an older workbook. */ sheet.getRange(1, 1, 1, headers.length).setValues([headers]); miStyle_(sheet, headers.length); return sheet; }
 function miStyle_(sheet, width) { sheet.setFrozenRows(1); sheet.getRange(1, 1, 1, width).setFontWeight('bold').setBackground('#e8eee9').setFontColor('#172019').setWrap(true); if (sheet.getLastRow() > 1 && !sheet.getFilter()) sheet.getRange(1, 1, sheet.getLastRow(), width).createFilter(); }
-function miValidation_(sheet, start, count) { const status = SpreadsheetApp.newDataValidation().requireValueInList(MI.statuses, true).setAllowInvalid(false).build(); const verify = SpreadsheetApp.newDataValidation().requireValueInList(['Unverified', 'Potential duplicate — verify', 'Verified', 'Broken source', 'Not applicable'], true).setAllowInvalid(false).build(); sheet.getRange(start, 36, count, 1).setDataValidation(verify); sheet.getRange(start, 37, count, 1).setDataValidation(status); }
+function miValidation_(sheet, start, count) { const status = SpreadsheetApp.newDataValidation().requireValueInList(MI.statuses, true).setAllowInvalid(false).build(); const verify = SpreadsheetApp.newDataValidation().requireValueInList(['Unverified', 'Potential duplicate — verify', 'Verified', 'Broken source', 'Not applicable'], true).setAllowInvalid(false).build(); sheet.getRange(start, 36, count, 1).setDataValidation(verify); sheet.getRange(start, 37, count, 1).setDataValidation(status); miDgValidation_(sheet, start, count, 45); }
+function miDgValidation_(sheet, start, count, column) { const rule = SpreadsheetApp.newDataValidation().requireValueInList(MI.dgClassifications, true).setAllowInvalid(false).build(); sheet.getRange(start, column, count, 1).setDataValidation(rule); }
 function miSpreadsheet_() { return SpreadsheetApp.openById(MI.spreadsheetId); }
 function miSheet_(name) { const sheet = miSpreadsheet_().getSheetByName(name); if (!sheet) throw new Error('Missing sheet ' + name + '. Run setupMcciaMediaIntelligence.'); return sheet; }
 function miObjects_(sheet) { if (sheet.getLastRow() < 2) return []; const values = sheet.getRange(1, 1, sheet.getLastRow(), sheet.getLastColumn()).getValues(); const headers = values.shift().map(String); return values.filter(function(row) { return row.some(function(value) { return value !== ''; }); }).map(function(row) { return headers.reduce(function(out, header, index) { out[header] = row[index]; return out; }, {}); }); }
@@ -364,6 +375,22 @@ function miMediaType_(mime) { return mime === MimeType.PDF ? 'PDF / report' : /^
 function miHeadline_(text) { return String(text || '').split(/\r?\n/).map(function(line) { return line.replace(/\s+/g, ' ').trim(); }).filter(function(line) { return line.length >= 12 && line.length <= 220; }).sort(function(a, b) { return b.length - a.length; })[0] || ''; }
 function miLanguage_(text) { const value = String(text || ''); const dev = (value.match(/[\u0900-\u097f]/g) || []).length; const latin = (value.match(/[A-Za-z]/g) || []).length; return dev && latin ? 'Marathi / Hindi / English' : dev ? 'Marathi / Hindi' : latin ? 'English' : 'Unknown'; }
 function miPresence_(text) { const value = miNorm_(text); if (['prashant girbane', 'प्रशांत गिरबने', 'प्रशांत गिरबाणे', 'director general', 'महासंचालक'].some(function(term) { return value.indexOf(miNorm_(term)) >= 0; })) return 'Prashant Girbane — Director General'; if (['mccia president', 'president of mccia', 'एमसीसीआयए अध्यक्ष'].some(function(term) { return value.indexOf(miNorm_(term)) >= 0; })) return 'MCCIA President'; return value.indexOf('mccia') >= 0 || value.indexOf('mahratta chamber') >= 0 || value.indexOf('एमसीसीआयए') >= 0 ? 'MCCIA' : 'MCCIA relevance requires review'; }
+function miDgValue_(value) { const text = miClean_(value, 100); return MI.dgClassifications.indexOf(text) >= 0 ? text : ''; }
+function miDgClassification_(text) {
+  const value = miNorm_(text);
+  const dg = '(?:prashant\\s+girbane|प्रशांत\\s+गिरबने|प्रशांत\\s+गिरबाणे|mccia\\s+director\\s+general|director\\s+general\\s+(?:of\\s+)?mccia)';
+  if (!(new RegExp(dg)).test(value)) return '';
+  if ((new RegExp('(?:article|column|op\\s+ed|opinion|post|blog|commentary)\\s+by\\s+' + dg)).test(value) ||
+      (new RegExp('(?:written|authored|penned)\\s+by\\s+' + dg)).test(value) ||
+      (new RegExp(dg + '\\s+(?:writes|authors|pens|wrote|लिखित|यांचा\\s+लेख|यांचा\\s+लेख)')).test(value)) return 'Post/article written by DG Sir';
+  if ((new RegExp('(?:interview|conversation|dialogue|q\\s+a|podcast|fireside\\s+chat)\\s+with\\s+' + dg)).test(value) ||
+      (new RegExp(dg + '\\s+(?:in\\s+conversation\\s+with|speaks\\s+with|talks\\s+to|interviewed\\s+by)')).test(value) ||
+      (new RegExp('(?:मुलाखत|संवाद)\\s+(?:with\\s+)?' + dg)).test(value) ||
+      (new RegExp(dg + '\\s+(?:यांची\\s+मुलाखत|यांच्याशी\\s+संवाद)')).test(value)) return 'Conversation with DG Sir';
+  if ((new RegExp(dg + '\\s+(?:said|says|stated|told|added|observed|remarked|noted|asserted|explained|commented|emphasised|emphasized|म्हणाले|सांगितले|यांनी\\s+म्हटले|यांनी\\s+सांगितले|मत\\s+व्यक्त\\s+केले)')).test(value) ||
+      (new RegExp('(?:said|stated|according\\s+to|quote\\s+from|quote\\s+by)\\s+' + dg)).test(value)) return 'Quote given by DG Sir';
+  return '';
+}
 function miTopic_(text) { const value = miNorm_(text); return /budget|policy|tax|government|infrastructure/.test(value) ? 'Policy and infrastructure' : /manufactur|industry|msme|factory/.test(value) ? 'Industry and manufacturing' : /export|trade|international|delegation/.test(value) ? 'Trade and international' : /event|summit|conference|expo|award/.test(value) ? 'Events and recognition' : 'MCCIA media monitoring'; }
 function miPublisher_(title) { const parts = String(title || '').split(' - '); return parts.length > 1 ? parts[parts.length - 1].trim() : ''; }
 function miSourceId_(url, title) { return 'SRC-' + miSha_(Utilities.newBlob(miNorm_(url + '|' + title)).getBytes()).slice(0, 14).toUpperCase(); }

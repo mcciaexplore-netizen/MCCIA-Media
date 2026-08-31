@@ -1,21 +1,36 @@
 'use client';
 
+import { DG_ENGAGEMENT_TYPES, DgEngagementType, resolveDgEngagementType, resolveRecordDgEngagementType } from './dg-classification';
+
 type RecordLike = {
+  id?: string;
   year: number;
   publisher: string;
   language: string;
   presence: string;
   topic: string;
   status: string;
+  title?: string;
+  description?: string;
+  notes?: string;
+  format?: string;
+  dgEngagementType?: DgEngagementType | null;
   url?: string | null;
 };
 
 type ClippingLike = {
+  id?: string;
   year: number;
   publisher: string;
   language?: string;
   presence?: string;
   status?: string;
+  matchedRecordId?: string | null;
+  dgEngagementType?: DgEngagementType | null;
+  ocrHeadline?: string | null;
+  ocrExcerpt?: string | null;
+  ocrText?: string | null;
+  reviewDecision?: string | null;
 };
 
 type IntakeLike = {
@@ -42,7 +57,7 @@ function topCounts(values: string[], limit = 6) {
 function Bars({ rows }: { rows: [string, number][] }) {
   const maximum = Math.max(1, ...rows.map(([, count]) => count));
   return <div className="analytics-bars">{rows.map(([label, count]) => <div key={label}>
-    <span title={label}>{label}</span><i><b style={{ width: `${Math.max(4, (count / maximum) * 100)}%` }} /></i><strong>{count.toLocaleString('en-IN')}</strong>
+    <span title={label}>{label}</span><i><b style={{ width: count ? `${Math.max(4, (count / maximum) * 100)}%` : '0%' }} /></i><strong>{count.toLocaleString('en-IN')}</strong>
   </div>)}</div>;
 }
 
@@ -53,6 +68,17 @@ export default function AnalyticsPanel({ records, monitoredSources, clippings, i
   const people = topCounts([...records.map((item) => item.presence), ...clippings.map((item) => item.presence || 'Unknown')], 6);
   const languages = topCounts([...records.map((item) => item.language), ...clippings.map((item) => item.language || 'Unknown')], 6);
   const topics = topCounts(records.map((item) => item.topic), 6);
+  const recordIds = new Set(records.map((item) => item.id || '').filter(Boolean));
+  const uniqueClassifications = [
+    ...records.map((item) => resolveRecordDgEngagementType(item)),
+    ...clippings
+      .filter((item) => !item.matchedRecordId || !recordIds.has(item.matchedRecordId))
+      .map((item) => resolveDgEngagementType(item.dgEngagementType, `${item.ocrHeadline || ''} ${item.ocrExcerpt || ''} ${item.ocrText || ''} ${item.presence || ''} ${item.reviewDecision || ''}`)),
+  ];
+  const classifications = DG_ENGAGEMENT_TYPES.map((classification) => [
+    classification,
+    uniqueClassifications.filter((value) => value === classification).length,
+  ] as [string, number]);
   const approved = intake.filter((item) => item.status === 'Approved').length;
   const pending = intake.filter((item) => item.status === 'Pending OCR' || item.status === 'In review').length;
   const duplicates = intake.filter((item) => Number(item.duplicateScore) >= 0.72).length;
@@ -74,6 +100,7 @@ export default function AnalyticsPanel({ records, monitoredSources, clippings, i
       <article><h3>People / organisations</h3><Bars rows={people} /></article>
       <article><h3>Languages</h3><Bars rows={languages} /></article>
       <article><h3>Topics</h3><Bars rows={topics} /></article>
+      <article><h3>DG content classification</h3><Bars rows={classifications} /></article>
       <article className="analytics-workflow"><h3>Editorial workflow</h3><div><span><b className="pending" />Pending / review<strong>{pending}</strong></span><span><b className="approved" />Approved<strong>{approved}</strong></span><span><b className="rejected" />Rejected<strong>{intake.filter((item) => item.status === 'Rejected').length}</strong></span></div></article>
     </div>
   </section>;

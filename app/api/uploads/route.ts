@@ -1,4 +1,5 @@
 import { ensureFormIntakeSchema, ensureUploadsSchema, getStorageBindings } from '@/db';
+import { inferDgEngagementType, mentionsDg, normalizeDgEngagementType } from '@/app/dg-classification';
 
 export const dynamic = 'force-dynamic';
 
@@ -27,6 +28,7 @@ type UploadedRow = {
   ocr_confidence: number | null;
   ocr_languages: string;
   presence: string;
+  dg_engagement_type: string | null;
   status: string;
   reviewed: number;
   notes: string;
@@ -44,6 +46,7 @@ type UploadMetadata = {
   ocrConfidence?: number;
   ocrLanguages?: string;
   presence?: string;
+  dgEngagementType?: string;
   notes?: string;
   sourceUrl?: string;
   width?: number;
@@ -126,6 +129,7 @@ function toClippingRecord(row: UploadedRow) {
     sourceCandidates: [],
     language: row.language,
     presence: row.presence,
+    dgEngagementType: normalizeDgEngagementType(row.dg_engagement_type),
     uploadedAt: row.uploaded_at,
     uploaded: true,
     status: row.status,
@@ -168,17 +172,29 @@ export async function POST(request: Request) {
 
     let metadata: UploadMetadata;
     try {
-      metadata = JSON.parse(metadataValue) as UploadMetadata;
+      const parsed = JSON.parse(metadataValue) as unknown;
+      if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new Error('Invalid metadata object');
+      metadata = parsed as UploadMetadata;
     } catch {
       return jsonError('The clipping metadata is not valid JSON.', 400);
     }
-    if (!metadata.reviewed) {
+    if (metadata.reviewed !== true) {
       return jsonError('Review the OCR fields before saving the clipping.', 400);
     }
     const ocrText = clean(metadata.ocrText, 100_000);
     if (!ocrText) return jsonError('OCR text is required before saving.', 400);
     const publicationDate = validDate(metadata.publicationDate);
     if (!publicationDate) return jsonError('Review and enter a valid publication date before saving.', 400);
+    const requestedDgEngagementType = clean(metadata.dgEngagementType, 100);
+    const normalizedDgEngagementType = normalizeDgEngagementType(requestedDgEngagementType);
+    if (requestedDgEngagementType && !normalizedDgEngagementType) {
+      return jsonError('Choose one of the three available DG content classifications.', 400);
+    }
+    const dgEvidence = `${metadata.headline || ''} ${ocrText} ${metadata.presence || ''}`;
+    const dgEngagementType = normalizedDgEngagementType ?? inferDgEngagementType(dgEvidence);
+    if (mentionsDg(dgEvidence) && !dgEngagementType) {
+      return jsonError('Choose how DG Sir participated in this coverage before approval.', 400);
+    }
 
     const hash = await sha256(original);
     const id = `UPL-${hash.slice(0, 12).toUpperCase()}`;
@@ -195,15 +211,24 @@ export async function POST(request: Request) {
       .bind(hash)
       .first<UploadedRow>();
     if (existing) {
+      const statements = [];
+      const existingDgEngagementType = normalizeDgEngagementType(existing.dg_engagement_type);
+      const duplicateDgEngagementType = dgEngagementType ?? existingDgEngagementType;
+      if (duplicateDgEngagementType && existingDgEngagementType !== duplicateDgEngagementType) {
+        statements.push(db.prepare('UPDATE clipping_uploads SET dg_engagement_type = ? WHERE id = ?')
+          .bind(duplicateDgEngagementType, existing.id));
+        existing.dg_engagement_type = duplicateDgEngagementType;
+      }
       if (intakeId) {
         const approvedAt = new Date().toISOString();
-        await db.batch([
-          db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?, error_message = NULL WHERE id = ?`)
-            .bind(existing.id, approvedAt, 'Dashboard editor', approvedAt, approvedAt, intakeId),
+        statements.push(
+          db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, dg_engagement_type = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?, error_message = NULL WHERE id = ?`)
+            .bind(existing.id, approvedAt, duplicateDgEngagementType, 'Dashboard editor', approvedAt, approvedAt, intakeId),
           db.prepare(`INSERT INTO audit_events (id, created_at, record_id, action, actor, previous_status, new_status, details, source) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
             .bind(crypto.randomUUID(), approvedAt, intakeId, 'EDITORIAL_APPROVED', 'Dashboard editor', 'In review', 'Approved', `Connected to existing evidence ${existing.id}`, 'Dashboard OCR review'),
-        ]);
+        );
       }
+      if (statements.length) await db.batch(statements);
       return Response.json({ record: toClippingRecord(existing), duplicate: true });
     }
 
@@ -238,8 +263,8 @@ export async function POST(request: Request) {
           id, sha256, uploaded_at, original_filename, original_key, enhanced_key,
           original_content_type, enhanced_content_type, original_size, enhanced_size,
           width, height, publisher, publication_date, page, language, headline,
-          ocr_text, ocr_confidence, ocr_languages, presence, status, reviewed, notes, source_url
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+          ocr_text, ocr_confidence, ocr_languages, presence, dg_engagement_type, status, reviewed, notes, source_url
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`)
         .bind(
           id,
           hash,
@@ -262,14 +287,15 @@ export async function POST(request: Request) {
           confidence,
           clean(metadata.ocrLanguages, 100, 'eng+mar+hin'),
           presence,
+          dgEngagementType,
           'Uploaded · OCR reviewed',
           1,
           notes,
           sourceUrl,
         );
       if (intakeId) {
-        const approveIntake = db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?, error_message = NULL WHERE id = ?`)
-          .bind(id, uploadedAt, 'Dashboard editor', uploadedAt, uploadedAt, intakeId);
+        const approveIntake = db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, dg_engagement_type = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?, error_message = NULL WHERE id = ?`)
+          .bind(id, uploadedAt, dgEngagementType, 'Dashboard editor', uploadedAt, uploadedAt, intakeId);
         const audit = db.prepare(`INSERT INTO audit_events (id, created_at, record_id, action, actor, previous_status, new_status, details, source) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
           .bind(crypto.randomUUID(), uploadedAt, intakeId, 'EDITORIAL_APPROVED', 'Dashboard editor', 'In review', 'Approved', `Approved as evidence ${id}`, 'Dashboard OCR review');
         await db.batch([insertUpload, approveIntake, audit]);

@@ -22,6 +22,7 @@ const createUploadsTable = `CREATE TABLE IF NOT EXISTS clipping_uploads (
   ocr_confidence REAL,
   ocr_languages TEXT NOT NULL,
   presence TEXT NOT NULL,
+  dg_engagement_type TEXT,
   status TEXT NOT NULL,
   reviewed INTEGER NOT NULL,
   notes TEXT NOT NULL,
@@ -56,6 +57,7 @@ const createFormIntakeTable = `CREATE TABLE IF NOT EXISTS google_form_intake (
   language TEXT NOT NULL,
   headline TEXT NOT NULL,
   presence TEXT NOT NULL,
+  dg_engagement_type TEXT,
   notes TEXT NOT NULL,
   source_url TEXT,
   status TEXT NOT NULL,
@@ -95,6 +97,7 @@ const createSourceMonitoringTable = `CREATE TABLE IF NOT EXISTS source_monitorin
   title TEXT NOT NULL,
   language TEXT NOT NULL,
   presence TEXT NOT NULL,
+  dg_engagement_type TEXT,
   topic TEXT NOT NULL,
   source_url TEXT NOT NULL,
   discovery_type TEXT NOT NULL,
@@ -146,6 +149,15 @@ const intakeAddedColumns: Record<string, string> = {
   reviewed_by: 'TEXT',
   reviewed_at: 'TEXT',
   updated_at: 'TEXT',
+  dg_engagement_type: 'TEXT',
+};
+
+const uploadAddedColumns: Record<string, string> = {
+  dg_engagement_type: 'TEXT',
+};
+
+const sourceAddedColumns: Record<string, string> = {
+  dg_engagement_type: 'TEXT',
 };
 
 async function ensureColumns(db: D1Database, table: string, columns: Record<string, string>) {
@@ -173,6 +185,7 @@ export async function ensureUploadsSchema(db: D1Database) {
     db.prepare(createUploadsTable),
     ...indexStatements.map((statement) => db.prepare(statement)),
   ]);
+  await ensureColumns(db, 'clipping_uploads', uploadAddedColumns);
   await db.prepare('PRAGMA optimize').run();
 }
 
@@ -186,5 +199,6 @@ export async function ensureFormIntakeSchema(db: D1Database) {
     ...auditIndexStatements.map((statement) => db.prepare(statement)),
   ]);
   await ensureColumns(db, 'google_form_intake', intakeAddedColumns);
+  await ensureColumns(db, 'source_monitoring', sourceAddedColumns);
   await db.prepare('PRAGMA optimize').run();
 }

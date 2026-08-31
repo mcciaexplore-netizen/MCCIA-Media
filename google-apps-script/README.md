@@ -11,6 +11,9 @@ This Apps Script belongs to **MCCIA Media & Newspaper Clipping Submission** in
   OCR/image-content similarity, publisher and file-size similarity.
 - Creates native `Pending`, `Approved` and `Rejected` editorial controls in the
   **Submissions** sheet.
+- Classifies high-confidence DG coverage as `Post/article written by DG Sir`,
+  `Quote given by DG Sir` or `Conversation with DG Sir`; ambiguous evidence stays blank
+  for editorial review.
 - Sends intake records and approved evidence to the dashboard.
 - Searches Google News RSS, MCCIA RSS and the MCCIA Sampada portal each Monday.
 - Checks source URLs daily and flags broken links.
@@ -39,8 +42,12 @@ The dashboard accepts the short-lived Google OAuth token only when it belongs to
 
 1. New files are archived and OCR-processed immediately.
 2. Duplicate and verification signals are written to the submission row.
-3. An editor selects `Pending`, `Approved` or `Rejected` in **Editorial status**.
-4. An approved item is added automatically to the dashboard's Clipping Evidence data.
-5. Every submission, status change, discovery run and link-monitor run is recorded.
+3. The pipeline suggests one of the three DG content classifications only when the OCR,
+   headline or source title has a high-confidence authorship, quotation or conversation
+   signal. Editors can keep the value blank or replace it using the Sheet dropdown.
+4. An editor selects `Pending`, `Approved` or `Rejected` in **Editorial status**.
+5. An approved item, including its DG classification, is added automatically to the
+   dashboard's Clipping Evidence data.
+6. Every submission, status change, discovery run and link-monitor run is recorded.
 
 OCR and duplicate scoring assist the editor; they do not replace source verification.
