@@ -2,6 +2,8 @@ import { sites } from '@openai/sites-vite-plugin';
 import tailwindcss from '@tailwindcss/postcss';
 import vinext from 'vinext';
 import { defineConfig } from 'vite';
+import { rm } from 'node:fs/promises';
+import { resolve } from 'node:path';
 import hostingConfig from './.openai/hosting.json' with { type: 'json' };
 
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
@@ -11,6 +13,14 @@ const { d1, r2 } = hostingConfig;
 
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === 'seatbelt';
+
+const omitExternalClippingArchive = {
+  name: 'omit-external-clipping-archive',
+  apply: 'build' as const,
+  async closeBundle() {
+    await rm(resolve(process.cwd(), 'dist/client/clippings'), { recursive: true, force: true });
+  },
+};
 
 const localBindingConfig = {
   main: 'vinext/server/app-router-entry',
@@ -56,6 +66,7 @@ export default defineConfig(async () => {
         viteEnvironment: { name: 'rsc', childEnvironments: ['ssr'] },
         config: localBindingConfig,
       }),
+      omitExternalClippingArchive,
     ],
   };
 });

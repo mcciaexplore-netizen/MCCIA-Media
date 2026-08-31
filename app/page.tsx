@@ -21,11 +21,15 @@ type EpaperPortalPayload={generatedAt:string;portals:EpaperPortal[]};
 type SourceVerification={recordId:string;url?:string|null;category:string;displayLabel:string;explanation:string;checkedAt:string;httpStatus?:number|null;finalUrl?:string|null;contentType?:string|null;pageTitle?:string|null;titleMatchScore?:number|null};
 type SourceVerificationPayload={generatedAt:string;methodology:string;summary:{totalRecords:number;sourceCheckedRecords:number;withPublicUrl:number;withoutPublicUrl:number;reachablePublicUrls:number;headlineConfirmed:number;manualReviewRequired:number;categories:Record<string,number>};records:Record<string,SourceVerification>};
 
-const baseRecords=recordsData as RecordItem[];
+const CLIPPING_ARCHIVE_ORIGIN='https://raw.githubusercontent.com/mcciaexplore-netizen/MCCIA-Media/c872b974feaca0efcd6dc04d23ac2056a1a1bf88/public';
+const archiveAsset=(value?:string|null)=>value?.startsWith('/clippings/')?`${CLIPPING_ARCHIVE_ORIGIN}${value}`:value;
+const externalizeRecordEvidence=(item:RecordItem):RecordItem=>({...item,evidenceImageUrl:archiveAsset(item.evidenceImageUrl),mediaUrl:archiveAsset(item.mediaUrl),evidenceImages:item.evidenceImages?.map(image=>({...image,thumbnailUrl:archiveAsset(image.thumbnailUrl)||image.thumbnailUrl}))});
+const externalizeClippingEvidence=(item:ClippingItem):ClippingItem=>({...item,thumbnailUrl:archiveAsset(item.thumbnailUrl)||item.thumbnailUrl,originalImageUrl:archiveAsset(item.originalImageUrl)||item.originalImageUrl,enhancedImageUrl:archiveAsset(item.enhancedImageUrl)||item.enhancedImageUrl});
+const baseRecords=(recordsData as RecordItem[]).map(externalizeRecordEvidence);
 const epaperRecords=epaperSourcesData as RecordItem[];
 const epaperPortals=(epaperPortalsData as EpaperPortalPayload).portals;
 const bundledGoogleNewsAlerts=googleNewsAlertsData as RecordItem[];
-const bundledClippings=clippingsData as ClippingItem[];
+const bundledClippings=(clippingsData as ClippingItem[]).map(externalizeClippingEvidence);
 const bundledSourceVerification=sourceVerificationData as unknown as SourceVerificationPayload;
 const GOOGLE_NEWS_ALERTS_URL='https://raw.githubusercontent.com/mcciaexplore-netizen/MCCIA-Media/main/app/google-news-alerts.json';
 const SOURCE_VERIFICATION_URL='https://raw.githubusercontent.com/mcciaexplore-netizen/MCCIA-Media/main/app/source-verification.json';
