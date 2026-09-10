@@ -1,4 +1,4 @@
-"""Collect weekly MCCIA discoveries from public Google News RSS feeds.
+"""Collect daily MCCIA discoveries from public Google News RSS feeds.
 
 This is a discovery feed, not a verification system.  Every created dashboard
 record remains Unverified until an editor checks the publisher article.
@@ -135,7 +135,7 @@ def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
                 "title": title,
                 "language": "Language not recorded",
                 "presence": presence_for(title, watch["id"]),
-                "topic": "Weekly Google News alert",
+                "topic": "Daily Google News alert",
                 "description": (
                     f"Automatically discovered by the {watch['label']} Google News RSS watch. "
                     "Open the source and complete editorial verification before relying on this item."
@@ -145,12 +145,13 @@ def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
                 "mediaUrl": None,
                 "evidenceImageUrl": None,
                 "notes": "Automated discovery only; Google News coverage is not exhaustive.",
-                "sourceDataset": "Weekly Google News RSS",
+                "sourceDataset": "Daily Google News RSS",
                 "sourceSearchStatus": "google-news-rss",
                 "verificationMethod": "Automated discovery; editorial verification required",
                 "googleNewsWatch": watch["label"],
                 "googleNewsQuery": watch["query"],
                 "googleNewsFetchedAt": fetched_at,
+                "firstSeenAt": fetched_at,
                 "publisherUrl": publisher_url,
             }
         )
@@ -179,6 +180,7 @@ def main() -> int:
     merged = sorted(by_id.values(), key=lambda record: (record.get("date", ""), record.get("title", "")), reverse=True)
     if not args.dry_run:
         OUTPUT_PATH.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        (ROOT / "app" / "discovery-status.json").write_text(json.dumps({"checkedAt": datetime.now(timezone.utc).isoformat(), "state": "partial" if errors else "success", "newItems": discovered, "failedWatches": len(errors), "totalWatches": len(WATCHES)}, indent=2) + "\n", encoding="utf-8")
     print(
         json.dumps(
             {

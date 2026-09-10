@@ -50,7 +50,7 @@ its code with `google-apps-script/Pipeline.gs` and its manifest with
 `https://mccia-media.vercel.app`; verify the installed `MI.dashboardUrl` agrees.
 
 Run `setupMcciaMediaIntelligence` as the configured owner account. This installs
-form-submit, five-minute delivery-retry, weekly discovery and daily link-check
+form-submit, five-minute delivery-retry, daily discovery and daily link-check
 triggers, and removes the old sheet-edit approval trigger. The ingestion routes
 validate the owner's Google access token. Optionally set
 `GOOGLE_FORM_INTAKE_SECRET` in both Script Properties and Vercel to authenticate

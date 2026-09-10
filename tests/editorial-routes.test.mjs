@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import {GET as automationStatus} from '../app/api/automation-status/route.ts';
 import {DatabaseSync} from 'node:sqlite';
 
 const sqlite=new DatabaseSync(':memory:');const objects=new Map();
@@ -94,4 +95,15 @@ test('automatic publication preserves missing dates and blocks invalid or future
 test('automatic retry completes stored evidence without another file transfer',async()=>{
  const row={...seed,id:'INT-RETRY',sha256:'f'.repeat(64),status:'Processing'};insert('google_form_intake',row);
  const response=await autoPublish.POST(new Request(origin+'/auto',{method:'POST',headers:{'x-mccia-intake-secret':globalThis.testStorageEnv.GOOGLE_FORM_INTAKE_SECRET}}),context(row.id));assert.equal(response.status,200);const payload=await response.json();assert.equal(payload.record.status,'Auto-published');assert.equal(sqlite.prepare('SELECT original_key FROM clipping_uploads WHERE id=?').get(payload.publishedId).original_key,row.original_key);
+});
+
+test('public automation alerts report failures without exposing submission details',async()=>{
+ const originalFetch=globalThis.fetch;
+ try{
+  globalThis.fetch=async()=>Response.json({workflow_runs:[{status:'completed',conclusion:'failure',created_at:'2026-09-10T03:15:00Z',html_url:'https://github.com/mcciaexplore-netizen/MCCIA-Media/actions/runs/1'}]});
+  const response=await automationStatus(),body=await response.json();
+  assert.equal(body.discovery.state,'failed');assert.equal(JSON.stringify(body).includes('Private note'),false);assert.equal(JSON.stringify(body).includes('submitter_email'),false);
+  globalThis.fetch=async()=>{throw new Error('Unavailable')};
+  assert.equal((await (await automationStatus()).json()).discovery.state,'unavailable');
+ }finally{globalThis.fetch=originalFetch}
 });

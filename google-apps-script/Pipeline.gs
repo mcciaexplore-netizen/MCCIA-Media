@@ -130,7 +130,9 @@ function miProcessFile_(fileId, sequence, response, values, date, publisher) {
   return recordId;
 }
 
-function runWeeklyDiscovery() {
+function runWeeklyDiscovery() { return runDailyDiscovery(); }
+
+function runDailyDiscovery() {
   const now = new Date();
   let records = [];
   MI.queries.forEach(function(query) {
@@ -172,7 +174,7 @@ function rebuildMcciaAnalytics() {
     ['Potential duplicates', submissions.filter(function(r) { return Number(r['Duplicate score']) >= 0.72; }).length],
     ['OCR completed', submissions.filter(function(r) { return Boolean(r['OCR text']); }).length],
     ['Broken source links', submissions.concat(sources).filter(function(r) { return r['Link status'] === 'Broken'; }).length],
-    ['Weekly source candidates', sources.length], ['', ''],
+    ['Discovered source candidates', sources.length], ['', ''],
   ];
   [['Processing status', 'Processing status', submissions], ['DG content classification', 'DG content classification', submissions.concat(sources)], ['People / organisation', 'People / organisation', submissions], ['Language', 'Language', submissions], ['Publisher', 'Publisher', submissions]].forEach(function(group) {
     rows.push([group[0], 'Count']);
@@ -199,7 +201,7 @@ function miEnsureWorkbook_() {
     ['Setting', 'Value', 'Purpose'], ['Form ID', MI.formId, 'MCCIA team collection form'],
     ['Archive folder ID', MI.archiveFolderId, 'Permanent Year / Month archive'],
     ['Dashboard URL', MI.dashboardUrl, 'Automatic upload publication and archive'],
-    ['Weekly discovery', 'Monday 07:00 Asia/Kolkata', 'Google News, RSS and e-paper search'],
+    ['Daily discovery', 'Daily around 08:45 Asia/Kolkata', 'Google News, RSS and e-paper search'],
     ['Daily link checks', '06:00 Asia/Kolkata', 'Broken-source monitoring'],
     ['Duplicate threshold', '0.72', 'Headline, date and image-content score'],
     ['Upload workflow', 'Processing → Auto-published', 'No manual approval; automatic metadata stays unverified'],
@@ -212,11 +214,11 @@ function miEnsureWorkbook_() {
 }
 
 function miInstallTriggers_(form) {
-  const handlers = ['onMcciaFormSubmit', 'onMcciaSheetEdit', 'runWeeklyDiscovery', 'monitorSourceLinks', 'retryMcciaDeliveries'];
+  const handlers = ['onMcciaFormSubmit', 'onMcciaSheetEdit', 'runWeeklyDiscovery', 'runDailyDiscovery', 'monitorSourceLinks', 'retryMcciaDeliveries'];
   ScriptApp.getProjectTriggers().forEach(function(trigger) { if (handlers.indexOf(trigger.getHandlerFunction()) >= 0) ScriptApp.deleteTrigger(trigger); });
   ScriptApp.newTrigger('onMcciaFormSubmit').forForm(form).onFormSubmit().create();
   ScriptApp.newTrigger('retryMcciaDeliveries').timeBased().everyMinutes(5).create();
-  ScriptApp.newTrigger('runWeeklyDiscovery').timeBased().onWeekDay(ScriptApp.WeekDay.MONDAY).atHour(7).create();
+  ScriptApp.newTrigger('runDailyDiscovery').timeBased().everyDays(1).atHour(8).nearMinute(45).inTimezone('Asia/Kolkata').create();
   ScriptApp.newTrigger('monitorSourceLinks').timeBased().everyDays(1).atHour(6).create();
 }
 

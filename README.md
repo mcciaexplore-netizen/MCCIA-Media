@@ -134,3 +134,13 @@ not copy third-party newspaper pages or bypass subscriptions. The generated
   untouched original.
 - OCR text is an AI-assisted transcription and can contain errors.
 - Public source URLs, source candidates and unresolved records remain visibly distinguished.
+
+## Coverage desk
+
+The homepage includes a daily discovery digest, suggested story groups, monthly insights and website-only system alerts. Digest dates use the first discovery timestamp in India time, independently of publication dates. The collector preserves first-seen timestamps and records partial feed failures.
+
+Story suggestions use matching article URLs or strongly similar headlines within three days. They never remove publisher records and do not claim cross-language story equivalence. Search recognises common English/Marathi names, publisher aliases and topics, with limited spelling tolerance; it is not a general translation engine.
+
+Monthly Excel reports include a summary, all dated coverage items for the selected month, source/evidence links and publisher totals. Connected evidence is counted once. Missing-date records are excluded explicitly. Current months can be incomplete.
+
+System alerts read public GitHub run status and private-storage aggregate health every five minutes while the page is open. They show failed, stale, partial and unavailable states without publishing private submission details. Pre-delivery failures in an unconnected Google Form script cannot yet reach the website. No email delivery is configured.

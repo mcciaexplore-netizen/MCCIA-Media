@@ -51,7 +51,7 @@ export function canonicalPublisher(value: string, sourceUrl?: string | null) {
 
 export function canonicalTopic(value: string, publisher = '') {
   const label = value.trim();
-  if (!label || /^(general|linkedin.*|youtube.*|wikipedia|scribd|tedxpune|podcast|weekly google news alert|internal media tracking|mccia \/ prashant girbane media monitoring)$/i.test(label)) return 'Topic not assigned';
+  if (!label || /^(general|linkedin.*|youtube.*|wikipedia|scribd|tedxpune|podcast|(?:weekly|daily) google news alert|internal media tracking|mccia \/ prashant girbane media monitoring)$/i.test(label)) return 'Topic not assigned';
   if (label.toLowerCase() === publisher.toLowerCase() || Object.values(hostPublishers).some(p => p.toLowerCase() === label.toLowerCase())) return 'Topic not assigned';
   if (/^MCCIA newspaper/i.test(label)) return 'MCCIA coverage';
   if (/^MCCIA publications?$/i.test(label)) return 'MCCIA publication';
