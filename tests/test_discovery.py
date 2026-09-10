@@ -11,6 +11,12 @@ discovery = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(discovery)
 
 class DiscoveryTest(unittest.TestCase):
+    def test_relevance_uses_headline_not_query_or_generic_industry_terms(self):
+        for title in ['MCCIA launches MSME helpline', 'Prashant Girbane on exports', 'प्रशांत गिरबणे यांचे मार्गदर्शन']:
+            self.assertTrue(discovery.relevant_headline(title))
+        for title in ['Homeless man steals seven seized pistols', 'Pune MSMEs get support', 'NotMCCIA headline']:
+            self.assertFalse(discovery.relevant_headline(title))
+
     def test_first_seen_is_stable_and_partial_failure_is_recorded(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

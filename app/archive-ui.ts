@@ -1,4 +1,5 @@
 import { prettyDate, validPublicationDate } from './media-metadata.ts';
+import { topicLabel } from './topic-labels.ts';
 
 const publisherAliases: Record<string, string> = {
   'sakal': 'Sakal', 'सकाळ': 'Sakal', 'esakal.com': 'Sakal', 'sakal (marathi)': 'Sakal', 'sakal/esakal (marathi)': 'Sakal',
@@ -58,9 +59,9 @@ export function canonicalTopic(value: string, publisher = '') {
   return label;
 }
 
-export function normalizeCategories<T extends { publisher: string; topic?: string; url?: string | null; originalPublisher?: string; originalTopic?: string }>(item: T): T {
+export function normalizeCategories<T extends { publisher: string; title?: string; topic?: string; url?: string | null; originalPublisher?: string; originalTopic?: string }>(item: T): T {
   const publisher = canonicalPublisher(item.publisher, item.url);
-  const topic = item.topic === undefined ? undefined : canonicalTopic(item.topic, publisher);
+  const topic = item.topic === undefined ? undefined : topicLabel(canonicalTopic(item.topic, publisher),item.title);
   return { ...item, publisher, ...(topic === undefined ? {} : { topic }), originalPublisher: item.originalPublisher || item.publisher, originalTopic: item.originalTopic || item.topic };
 }
 

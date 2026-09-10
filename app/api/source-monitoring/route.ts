@@ -1,4 +1,5 @@
 import {pageRequest,pageResult} from '../pagination';
+import { relevantHeadline } from '@/app/discovery-relevance';
 import { normalizeLanguage, validPublicationDate } from '@/app/media-metadata';
 import { ensureFormIntakeSchema, getStorageBindings } from '@/db';
 import { inferDgEngagementType, normalizeDgEngagementType } from '@/app/dg-classification';
@@ -97,7 +98,7 @@ export async function GET(request:Request) {
     const {limit,before}=pageRequest(request);
     const result=await db.prepare('SELECT * FROM source_monitoring WHERE (? IS NULL OR discovered_at < ? OR (discovered_at = ? AND id < ?)) ORDER BY discovered_at DESC,id DESC LIMIT ?').bind(before?.at??null,before?.at??null,before?.at??null,before?.id??null,limit+1).all<SourceRow>();
     const page=pageResult(result.results??[],limit,r=>r.discovered_at,r=>r.id);
-    return Response.json({records:page.records.map(toRecord),nextCursor:page.nextCursor}, { headers: { 'Cache-Control': 'public, max-age=300' } });
+    return Response.json({records:page.records.filter(row=>relevantHeadline(row.title)).map(toRecord),nextCursor:page.nextCursor}, { headers: { 'Cache-Control': 'public, max-age=300' } });
   } catch (error) {
     return Response.json({ error: error instanceof Error ? error.message : 'Unable to load monitored sources.' }, { status: 503 });
   }
@@ -116,6 +117,7 @@ export async function POST(request: Request) {
       return Response.json({ error: 'The source-monitoring payload must be a JSON object.' }, { status: 400 });
     }
     const sourceUrl = url(payload.url);
+    if (!relevantHeadline(clean(payload.title, 1000))) return Response.json({ error: 'Discovery needs an explicit MCCIA or Prashant Girbane mention in its own headline.' }, { status: 422 });
     if (!sourceUrl) return Response.json({ error: 'A public HTTP(S) source URL is required.' }, { status: 400 });
     const id = clean(payload.id, 100) || `SRC-${crypto.randomUUID().replaceAll('-', '').slice(0, 14).toUpperCase()}`;
     const now = new Date().toISOString();

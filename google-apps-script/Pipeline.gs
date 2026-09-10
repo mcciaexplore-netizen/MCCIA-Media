@@ -340,6 +340,8 @@ function retryMcciaDeliveries() {
 
 function miGoogleNewsUrl_(query) { return 'https://news.google.com/rss/search?q=' + encodeURIComponent(query + ' when:8d') + '&hl=en-IN&gl=IN&ceid=IN:en'; }
 
+function miRelevantHeadline_(title) { const text = ' ' + String(title).toLowerCase().replace(/[^a-z0-9\u0900-\u097f]+/g, ' ').trim() + ' '; return ['mccia','mahratta chamber','maratha chamber','prashant girbane','प्रशांत गिरबने','प्रशांत गिरबाणे','प्रशांत गिरबणे','एमसीसीआयए','एमसीसीआईए','मराठा चेंबर'].some(function(marker) { return text.indexOf(' ' + marker + ' ') >= 0; }); }
+
 function miFeed_(url, type, query, now) {
   const response = UrlFetchApp.fetch(url, { muteHttpExceptions: true, followRedirects: true });
   if (response.getResponseCode() >= 400) throw new Error(query + ' returned HTTP ' + response.getResponseCode());
@@ -351,7 +353,7 @@ function miFeed_(url, type, query, now) {
     if (!link) { const element = item.getChildren().filter(function(value) { return value.getName().toLowerCase() === 'link'; })[0]; link = element && element.getAttribute('href') ? element.getAttribute('href').getValue() : ''; }
     const title = child('title'); const date = miDate_(child('pubDate') || child('published') || child('updated'));
     return { id: miSourceId_(link, title), discoveredAt: now, date: date, publisher: child('source') || miPublisher_(title) || 'Publisher not recorded', title: title, language: miLanguage_(title), presence: miPresence_(title), topic: miTopic_(title), url: link, discoveryType: type, query: query, notes: 'Automated discovery; editorial verification required.', dgEngagementType: miDgClassification_(title) };
-  }).filter(function(item) { return item.title && miUrl_(item.url); });
+  }).filter(function(item) { return item.title && miUrl_(item.url) && miRelevantHeadline_(item.title); });
 }
 
 function miPortalRecord_(feed, now) { return { id: miSourceId_(feed.url, feed.label), discoveredAt: now, date: '', publisher: feed.label, title: feed.label + ' source requires manual review', language: 'Language not recorded', presence: 'MCCIA', topic: 'E-paper / publisher portal', url: feed.url, discoveryType: 'E-paper / publisher portal', query: feed.label, notes: 'Public portal monitored; page-level search may require editorial review.', dgEngagementType: '' }; }

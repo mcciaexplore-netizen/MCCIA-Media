@@ -64,6 +64,17 @@ def normalized(value: str) -> str:
     return re.sub(r"[^a-z0-9\u0900-\u097f]+", " ", value.lower()).strip()
 
 
+def relevant_headline(value: str) -> bool:
+    # RSS descriptions often contain unrelated sidebar headlines. Only the item's
+    # own headline establishes relevance; a matching search query is not evidence.
+    value = ' ' + normalized(value) + ' '
+    return any(' ' + marker + ' ' in value for marker in (
+        'mccia', 'mahratta chamber', 'maratha chamber', 'prashant girbane',
+        'प्रशांत गिरबने', 'प्रशांत गिरबाणे', 'प्रशांत गिरबणे',
+        'एमसीसीआयए', 'एमसीसीआईए', 'मराठा चेंबर',
+    ))
+
+
 def published_date(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -119,7 +130,7 @@ def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
         suffix = f" - {publisher}"
         title = raw_title[: -len(suffix)].strip() if raw_title.endswith(suffix) else raw_title
         link = clean_text(item.findtext("link"))
-        if not title or not link:
+        if not title or not link or not relevant_headline(title):
             continue
         date_value = date.date().isoformat() if date else ''
         stable = normalized(f"{title}|{publisher}|{date_value}")
@@ -161,7 +172,7 @@ def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
 def main() -> int:
     args = parse_args()
     existing = json.loads(OUTPUT_PATH.read_text(encoding="utf-8")) if OUTPUT_PATH.exists() else []
-    by_id = {record["id"]: record for record in existing if record.get("id")}
+    by_id = {record["id"]: record for record in existing if record.get("id") and relevant_headline(record.get('title', ''))}
     errors = []
     discovered = 0
     for watch in WATCHES:
@@ -181,6 +192,10 @@ def main() -> int:
     if not args.dry_run:
         OUTPUT_PATH.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         (ROOT / "app" / "discovery-status.json").write_text(json.dumps({"checkedAt": datetime.now(timezone.utc).isoformat(), "state": "partial" if errors else "success", "newItems": discovered, "failedWatches": len(errors), "totalWatches": len(WATCHES)}, indent=2) + "\n", encoding="utf-8")
+        history_path = ROOT / 'app' / 'collection-history.json'
+        history = json.loads(history_path.read_text(encoding='utf-8')) if history_path.exists() else []
+        history.insert(0, {'checkedAt': datetime.now(timezone.utc).isoformat(), 'state': 'partial' if errors else 'success', 'newItems': discovered, 'totalItems': len(merged), 'failedSources': [error['watch'] for error in errors]})
+        history_path.write_text(json.dumps(history[:365], ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(
         json.dumps(
             {
