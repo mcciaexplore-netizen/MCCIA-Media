@@ -25,7 +25,7 @@ first day of a month. A separately known year can be retained without a full dat
 Existing record IDs remain permanent so clipping and source-audit links survive
 subsequent imports.
 
-Run `npm run data:check` after an import. Both production builds and the weekly
+Run `npm run data:check` after an import. Both production builds and the daily
 collector run this check before publishing. It checks real dates, future dates,
 year consistency, known languages, source URL structure, duplicate IDs, clipping
 references and suspected day/month reversals against connected evidence.
@@ -73,9 +73,9 @@ bucket. Native Cloudflare deployments continue to use D1/R2. Follow
 [Vercel and installed Apps Script setup](docs/vercel-submissions.md); changing the
 repository alone does not configure storage or replace an installed script.
 
-## Weekly Google News discovery
+## Daily Google News discovery
 
-The workflow in `.github/workflows/weekly-google-news.yml` runs every Monday at 08:45 IST and can also be started manually from GitHub Actions. It runs:
+The workflow in `.github/workflows/weekly-google-news.yml` runs every day at 08:45 IST and can also be started manually from GitHub Actions. It runs:
 
 ```bash
 python scripts/fetch_google_news.py --days 10 --max-per-query 50
@@ -88,7 +88,7 @@ The collector monitors public Google News RSS results for:
 - MCCIA President;
 - MCCIA leadership.
 
-Discoveries are deduplicated into `app/google-news-alerts.json`. The release bundles these records with the archive and source audit. The weekly data commit triggers the connected Vercel deployment, keeping the displayed records and audit consistent.
+Discoveries are deduplicated into `app/google-news-alerts.json`. The release bundles these records with the archive and source audit. The daily data commit triggers the connected Vercel deployment, keeping the displayed records and audit consistent.
 
 The same workflow audits new and 30-day-old public links with:
 
@@ -122,7 +122,7 @@ Refresh the catalogue with:
 python scripts/fetch_epaper_sources.py
 ```
 
-The weekly GitHub Action runs this collector together with Google News discovery
+The daily GitHub Action runs this collector together with Google News discovery
 and source auditing. It links to publisher pages and cover thumbnails and does
 not copy third-party newspaper pages or bypass subscriptions. The generated
 `epaper_research_report.json` records the method, counts and known limitations.
