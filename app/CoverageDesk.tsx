@@ -6,6 +6,10 @@ import {publicationLabel} from './archive-ui';
 type Health={checkedAt:string;discovery:{state:string;partial?:boolean;failedWatches?:number|null;lastRun?:string;lastSuccess?:string;runUrl?:string;lastFailure?:{date:string;url:string}|null};uploads:{state:string;message:string;failures?:number}};
 const workflowUrl='https://github.com/mcciaexplore-netizen/MCCIA-Media/actions/workflows/weekly-google-news.yml';
 export default function CoverageDesk({records}:{records:CoverageArticle[]}){
+  const [open,setOpen]=useState(false);
+  return <><div className="briefing-access"><button type="button" aria-expanded={open} aria-controls="media-briefing-panel" onClick={()=>setOpen(value=>!value)}>{open?'Hide media briefing':'View media briefing'}</button></div><div id="media-briefing-panel" hidden={!open}>{open&&<CoverageDeskContent records={records}/>}</div></>;
+}
+function CoverageDeskContent({records}:{records:CoverageArticle[]}){
   const [tab,setTab]=useState('Daily digest'),[day,setDay]=useState(''),[month,setMonth]=useState(''),[health,setHealth]=useState<Health|null>(null),[healthError,setHealthError]=useState(false),[exporting,setExporting]=useState(false),[exportError,setExportError]=useState(''),[showAll,setShowAll]=useState(false),[report,setReport]=useState<{url:string;month:string}|null>(null);
   useEffect(()=>()=>{if(report)URL.revokeObjectURL(report.url)},[report]);
   const months=useMemo(()=>[...new Set(records.map(publicationMonth).filter(Boolean))].sort().reverse(),[records]);
