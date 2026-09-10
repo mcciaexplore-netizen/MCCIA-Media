@@ -46,6 +46,7 @@ const MI_ERROR_HEADERS = ['Timestamp', 'Stage', 'Record ID', 'Form response ID',
 const MI_SOURCE_HEADERS = ['Source ID', 'Discovered at', 'Publication date', 'Publisher', 'Title', 'Language', 'People / organisation', 'Topic', 'Source URL', 'Discovery type', 'Query / feed', 'HTTP status', 'Link status', 'Last checked', 'Verification status', 'Dashboard status', 'Notes', 'DG content classification'];
 
 function setupMcciaMediaIntelligence() {
+  if (Session.getEffectiveUser().getEmail().toLowerCase() !== MI.ownerEmail) throw new Error('Sign in as ' + MI.ownerEmail + ' before running setup.');
   const form = FormApp.openById(MI.formId);
   miValidateForm_(form);
   miEnsureWorkbook_();

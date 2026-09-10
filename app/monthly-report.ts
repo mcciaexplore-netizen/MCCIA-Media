@@ -2,11 +2,14 @@ import {counts,monthRows,safeLink,type CoverageArticle} from './coverage-intelli
 import {publicationLabel} from './archive-ui.ts';
 
 export async function monthlyWorkbook(records:CoverageArticle[],month:string){
+  return coverageWorkbook(monthRows(records,month),month);
+}
+export async function coverageWorkbook(rows:CoverageArticle[],label:string){
   const {default:ExcelJS}=await import('exceljs');
   const book=new ExcelJS.Workbook();book.creator='MCCIA Media Intelligence';book.created=new Date();
-  const rows=monthRows(records,month),summary=book.addWorksheet('Summary');
+  const summary=book.addWorksheet('Summary');
   summary.columns=[{header:'Metric',key:'metric',width:42},{header:'Value',key:'value',width:28}];
-  summary.addRows([['Publication month',month],['Coverage items',rows.length],['Publishers',new Set(rows.map(r=>r.publisher)).size],['Generated at',new Date().toISOString()],['Missing dates excluded',records.filter(r=>!r.date&&!r.publicationMonth).length],['Scope','All archive coverage, including unlinked clippings'],['Verification','Automatic metadata may contain errors']]);
+  summary.addRows([['Report selection',label],['Coverage items',rows.length],['Publishers',new Set(rows.map(r=>r.publisher)).size],['Generated at',new Date().toISOString()],['Date scope','Only selected dated coverage'],['Scope','All archive coverage, including unlinked clippings'],['Verification','Automatic metadata may contain errors']]);
   const sheet=book.addWorksheet('Coverage',{views:[{state:'frozen',ySplit:1}]});
   sheet.columns=[['ID',25],['Publication date',26],['Publisher',28],['Headline',75],['Language',24],['People / organisation',34],['Topic',28],['Verification',26],['Source URL',65],['Clipping / evidence',65]].map(([header,width])=>({header:String(header),width:Number(width)}));
   for(const r of rows){const row=sheet.addRow([r.id,publicationLabel(r),r.publisher,r.title,r.language||'Language not recorded',r.presence||'Person not recorded',r.topic||'Topic not assigned',r.status||'Unverified',safeLink(r.url)||'',safeLink(r.evidenceImageUrl)||'']);row.alignment={vertical:'top',wrapText:true};}
