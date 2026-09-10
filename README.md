@@ -150,15 +150,14 @@ System alerts read public GitHub run status and private-storage aggregate health
 
 - Every record and clipping has a Read article button: preserved evidence, available OCR (or an explicit unavailable label), the publisher source and closely related coverage appear together.
 - Report an error prepares a GitHub issue from inside the reader. Reports are public and require the team member to sign in to GitHub and submit; preparing the link does not send a report.
-- Quick searches include Prashant Girbane, MSME and exports. Up to 20 custom query strings can be saved locally in the browser; these do not sync between devices and selecting one clears other filters.
 - Broad topic labels are inferred conservatively from English and Marathi headline keywords; specific existing topics are preserved, and unmatched headlines remain Topic not assigned.
 - Automatic RSS inclusion requires an explicit MCCIA/chamber/Prashant Girbane mention in the headline. Search-query matches, feed descriptions and generic industry terms are insufficient. This deliberately trades recall for relevance; a relevant story that names MCCIA only in its body may be omitted. The excluded historic discovery IDs are retained in app/discovery-exclusions.json for review.
 - Collection history records up to 365 completed feed collections, with additions and failed watch names. History begins with the next scheduled run. Entirely failed workflow attempts remain visible through the workflow run link and System alerts.
 - Upload activation still requires durable storage and the owner-authorized Apps Script setup. The newly shared container-bound Apps Script was an empty starter project with Viewer-only access from the available browser account; its existence does not establish a working pipeline.
 
 
-## Navigation, reports, collections and authorised corrections
+## Navigation, reports and authorised corrections
 
 The compact sticky header offers Archive, Media briefing, Reports and About, with an Add clipping link and a mobile menu. Archive export applies to the visible filtered results. Reports supports publication date ranges, topic and publisher selection; Excel cells remain typed strings rather than executable formulas.
 
-Collections are stored in this browser (up to 30 collections, 500 IDs each). The reader can compare up to four strongly related coverage items side by side. Direct metadata correction is separately protected by editor authentication and same-origin checks. It requires the configured durable storage and MCCIA_EDITOR_KEY; it is not activated merely by publishing this code. Corrections are stored as overlays, with an audit row containing the server-derived actor and reason, and optimistic version checks to prevent overwriting newer edits. The public correction feed exposes only published title/date patches. Unlinked clippings use Report an error.
+The reader can compare up to four strongly related coverage items side by side. Direct metadata correction is separately protected by editor authentication and same-origin checks. It requires the configured durable storage and MCCIA_EDITOR_KEY; it is not activated merely by publishing this code. Corrections are stored as overlays, with an audit row containing the server-derived actor and reason, and optimistic version checks to prevent overwriting newer edits. The public correction feed exposes only published title/date patches. Unlinked clippings use Report an error.

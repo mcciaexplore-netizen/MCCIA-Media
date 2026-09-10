@@ -7,8 +7,6 @@ import CoverageDesk from './CoverageDesk';
 import SiteHeader, {type SiteSection} from './SiteHeader';
 import ReportBuilder from './ReportBuilder';
 import ArticleView from './ArticleView';
-import SavedSearches from './SavedSearches';
-import {CollectionShelf} from './Collections';
 import {bilingualMatch,type CoverageArticle} from './coverage-intelligence';
 import { comparePublicationDates, normalizeRecordMetadata, peopleCategory, recordLookup, resolveClippingMetadata, YEAR_NOT_RECORDED } from './media-metadata';
 import { archiveQuery, readArchiveState, csvCell, normalizeCategories, publicationLabel, publicationSortDate, QUALITY_FILTERS, qualityMatches, clippingHeadline, clippingSearchText } from './archive-ui';
@@ -149,8 +147,6 @@ export default function Home(){
     <AnalyticsPanel records={records} clippings={clippings} sourceChecks={sourceChecks} auditUpdatedAt={auditUpdatedAt}/>
     {(liveUploadsAvailable===false||monitoringAvailable===false||correctionsAvailable===false)&&<p className="backend-notice" role="status">Automatic updates are currently unavailable. The saved archive remains accessible.</p>}
     <section className="dataset-switch" aria-label="Dataset"><button className={dataset==='records'?'active':''} onClick={()=>switchDataset('records')}><strong>Media records</strong><span>Articles, video, PDFs, social and image records</span></button><button className={dataset==='clippings'?'active':''} onClick={()=>switchDataset('clippings')}><strong>Clipping evidence</strong><span>{clippings.length.toLocaleString('en-IN')} preserved clipping previews · review status shown per item</span></button><button className={dataset==='epapers'?'active':''} onClick={()=>switchDataset('epapers')}><strong>E-paper sources</strong><span>{epaperRecords.length.toLocaleString('en-IN')} issues and exact public PDFs, plus {epaperPortals.length} archive portals</span></button></section>
-    <SavedSearches query={search} onSelect={value=>{switchDataset('records');setSearch(value)}}/>
-    <CollectionShelf records={deskCoverage} onSelect={setArticleId}/>
     {selectedArticle&&<ArticleView key={selectedArticle.id} article={selectedArticle} correctionVersion={correctionById.get(selectedArticle.id)?.updatedAt} evidence={articleEvidence} records={deskCoverage} onClose={()=>setArticleId(null)} onSelect={setArticleId}/>}
     <section className="workspace" id="archive"><button className="mobile-filter" onClick={()=>setShowFilters(v=>!v)}>Refine {dataset==='clippings'?'images':dataset==='epapers'?'e-papers':'records'} {active>0&&<span>{active}</span>}</button>
       <aside className={`filters ${showFilters?'filters-open':''}`}><div className="filter-heading"><div><strong>Refine {dataset==='clippings'?'clippings':dataset==='epapers'?'e-papers':'archive'}</strong><small>{active?`${active} active`:'All items'}</small></div><button onClick={reset}>Clear all</button></div>
