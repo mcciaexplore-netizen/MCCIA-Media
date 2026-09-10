@@ -1,3 +1,4 @@
+from import_dates import publication_date, publication_year
 import json
 from pathlib import Path
 import openpyxl
@@ -13,7 +14,7 @@ records = []
 for row in rows[1:]:
     item = dict(zip(headers, row))
     value = item["Date"]
-    date = value.strftime("%Y-%m-%d") if hasattr(value, "strftime") else str(value or "")
+    date = publication_date(value)
     media_type = str(item["Media Type"] or "Other")
     broad_type = (
         "Video" if "video" in media_type.lower() else
@@ -24,10 +25,10 @@ for row in rows[1:]:
         "Other"
     )
     records.append({
-        "id": item["ID"], "date": date, "year": item["Year"],
+        "id": item["ID"], "date": date, "year": publication_year(item["Year"], date),
         "type": broad_type, "format": media_type,
         "publisher": item["Publisher / Platform"], "title": item["Headline / Item"],
-        "language": item["Language"] or "Unknown", "presence": item["DG Presence"] or "Named",
+        "language": item["Language"] or "Language not recorded", "presence": item["DG Presence"] or "Named",
         "topic": item["Topic"] or "General", "description": item["Description / Evidence"] or "",
         "status": item["Verification"] or "Unverified", "url": item["Source URL"] or None,
         "mediaUrl": item["Image / Video URL"] or None, "notes": item["Research Notes"] or ""

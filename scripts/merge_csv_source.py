@@ -1,3 +1,4 @@
+from import_dates import assign_missing_ids, publication_date, publication_year
 import csv, json, re
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
@@ -29,7 +30,9 @@ by_key={(norm(r.get('title')),r.get('date','')):r for r in records}
 added=matched=0
 with CSV_PATH.open('r',encoding='utf-8-sig',newline='') as f:
  for d in csv.DictReader(f):
-  url=txt(d.get('URL')); title=txt(d.get('Title / Headline')); date=txt(d.get('Date'))
+  url=txt(d.get('URL')); title=txt(d.get('Title / Headline')); date=publication_date(d.get('Date'))
+  if txt(d.get('Language')) in ('PDF', 'Webpage') or (url and not re.fullmatch(r'https?://\S+',url)):
+   raise ValueError(f'Misaligned CSV columns; correct this source row before importing: {title}')
   if not url and not title: continue
   cu=canonical(url); key=(norm(title),date)
   found=by_url.get(cu) if cu else by_key.get(key)
@@ -39,13 +42,13 @@ with CSV_PATH.open('r',encoding='utf-8-sig',newline='') as f:
    found['mergeNotes']=f"{found.get('mergeNotes','')}; Also present in table.csv".strip('; ')
    matched+=1; continue
   supplied=txt(d.get('Verified'))
-  rec={'id':'','date':date if re.fullmatch(r'20\d{2}-\d{2}-\d{2}',date) else '','year':year(date),'type':broad(d.get('Type')),'format':txt(d.get('Type')) or 'CSV source','publisher':txt(d.get('Publication / Channel')) or txt(d.get('Source Platform')) or 'Publisher not recorded','title':title or 'Untitled source','language':txt(d.get('Language')) or 'Unknown','presence':'Named / occurrence reported','topic':txt(d.get('Source Platform')) or 'General','description':txt(d.get('Context / Snippet')),'status':'Unverified' if 'unverified' in supplied.lower() else 'Partially verified','url':url or None,'mediaUrl':None,'notes':f'Imported from table.csv. Supplied verification label: {supplied or "not stated"}; independent review pending.','sourceDataset':LABEL,'duplicateCount':1,'mergeNotes':'New CSV record absent from prior 345-record master'}
+  rec={'id':'','date':date if re.fullmatch(r'20\d{2}-\d{2}-\d{2}',date) else '','year':publication_year('',date),'type':broad(d.get('Type')),'format':txt(d.get('Type')) or 'CSV source','publisher':txt(d.get('Publication / Channel')) or txt(d.get('Source Platform')) or 'Publisher not recorded','title':title or 'Untitled source','language':txt(d.get('Language')) or 'Language not recorded','presence':'Named / occurrence reported','topic':txt(d.get('Source Platform')) or 'General','description':txt(d.get('Context / Snippet')),'status':'Unverified' if 'unverified' in supplied.lower() else 'Partially verified','url':url or None,'mediaUrl':None,'notes':f'Imported from table.csv. Supplied verification label: {supplied or "not stated"}; independent review pending.','sourceDataset':LABEL,'duplicateCount':1,'mergeNotes':'New CSV record absent from prior 345-record master'}
   records.append(rec); added+=1
   if cu: by_url[cu]=rec
   by_key[key]=rec
 
 records.sort(key=lambda r:(r.get('date') or '0000',r.get('title') or ''),reverse=True)
-for i,r in enumerate(records,1): r['id']=f'PG{i:03d}'
+assign_missing_ids(records)
 TARGET.write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
 comparison=json.loads(COMPARE.read_text(encoding='utf-8'))
 comparison['duplicate_workbook_ignored']=True

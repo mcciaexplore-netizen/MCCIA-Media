@@ -1,10 +1,14 @@
+import { authorizeEditor, editorRequired } from '../editor-auth';
+import { pageRequest, pageResult } from '../pagination';
+import { normalizeLanguage, validPublicationDate } from '@/app/media-metadata';
 import { ensureFormIntakeSchema, getStorageBindings } from '@/db';
 import { inferDgEngagementType, normalizeDgEngagementType } from '@/app/dg-classification';
 import { authorizeAutomationRequest } from '../automation-auth';
+import { publishAutomatically } from '../automatic-publication';
 
 export const dynamic = 'force-dynamic';
 
-const MAX_EVIDENCE_BYTES = 45 * 1024 * 1024;
+const MAX_EVIDENCE_BYTES = 100 * 1024 * 1024;
 const ACCEPTED_TYPES = new Set([
   'image/jpeg', 'image/png', 'image/webp', 'application/pdf',
   'video/mp4', 'video/webm', 'video/quicktime',
@@ -143,16 +147,7 @@ function clean(value: unknown, maxLength: number, fallback = '') {
   return (result || fallback).slice(0, maxLength);
 }
 
-function validDate(value: unknown) {
-  const candidate = clean(value, 10);
-  const match = candidate.match(/^(\d{4})-(\d{2})-(\d{2})$/);
-  if (!match) return null;
-  const expected = [Number(match[1]), Number(match[2]), Number(match[3])];
-  const parsed = new Date(Date.UTC(expected[0], expected[1] - 1, expected[2]));
-  return parsed.getUTCFullYear() === expected[0] && parsed.getUTCMonth() + 1 === expected[1] && parsed.getUTCDate() === expected[2]
-    ? candidate
-    : null;
-}
+const validDate = validPublicationDate;
 
 function validUrl(value: unknown) {
   const candidate = clean(value, 2000);
@@ -180,15 +175,16 @@ async function sha256(file: File) {
   return [...new Uint8Array(digest)].map((value) => value.toString(16).padStart(2, '0')).join('');
 }
 
-export async function GET() {
+export async function GET(request: Request) {
+  if(!(await authorizeEditor(request)).authorized)return editorRequired();
   try {
     const { db } = getStorageBindings();
     await ensureFormIntakeSchema(db);
-    const result = await db
-      .prepare('SELECT * FROM google_form_intake ORDER BY received_at DESC LIMIT 500')
-      .all<FormIntakeRow>();
+    const {limit,before}=pageRequest(request,50);
+    const result=await db.prepare('SELECT * FROM google_form_intake WHERE (? IS NULL OR received_at < ? OR (received_at = ? AND id < ?)) ORDER BY received_at DESC, id DESC LIMIT ?').bind(before?.at??null,before?.at??null,before?.at??null,before?.id??null,limit+1).all<FormIntakeRow>();
+    const page=pageResult(result.results??[],limit,r=>r.received_at,r=>r.id);
     return Response.json(
-      { records: (result.results ?? []).map(toIntakeRecord) },
+      { records: page.records.map(toIntakeRecord), nextCursor: page.nextCursor },
       { headers: { 'Cache-Control': 'private, no-store' } },
     );
   } catch (error) {
@@ -208,7 +204,7 @@ export async function POST(request: Request) {
       return jsonError('A clipping image and metadata are required.', 400);
     }
     if (!ACCEPTED_TYPES.has(file.type)) return jsonError('Use an image, PDF or supported video evidence file.', 415);
-    if (!file.size || file.size > MAX_EVIDENCE_BYTES) return jsonError('Each evidence file must be between 1 byte and 45 MB.', 413);
+    if (!file.size || file.size > MAX_EVIDENCE_BYTES) return jsonError('Each evidence file must be between 1 byte and 100 MB.', 413);
 
     let metadata: IntakeMetadata;
     try {
@@ -218,8 +214,8 @@ export async function POST(request: Request) {
     } catch {
       return jsonError('The intake metadata is not valid JSON.', 400);
     }
-    const publicationDate = validDate(metadata.publicationDate);
-    if (!publicationDate) return jsonError('A valid publication date is required.', 400);
+    const publicationDate = validDate(metadata.publicationDate) || '';
+    if (metadata.publicationDate && !publicationDate) return jsonError('The publication date is invalid or in the future.', 400);
     const requestedDgEngagementType = clean(metadata.dgEngagementType, 100);
     const normalizedDgEngagementType = normalizeDgEngagementType(requestedDgEngagementType);
     if (requestedDgEngagementType && !normalizedDgEngagementType) {
@@ -231,7 +227,11 @@ export async function POST(request: Request) {
     const { db, files } = getStorageBindings();
     await ensureFormIntakeSchema(db);
     const existing = await db.prepare('SELECT * FROM google_form_intake WHERE sha256 = ? LIMIT 1').bind(hash).first<FormIntakeRow>();
-    if (existing) return Response.json({ record: toIntakeRecord(existing), duplicate: true });
+    if (existing) {
+      const publishedId = await publishAutomatically(db, existing);
+      const updated = await db.prepare('SELECT * FROM google_form_intake WHERE id = ?').bind(existing.id).first<FormIntakeRow>();
+      return Response.json({ record: toIntakeRecord(updated || existing), publishedId, duplicate: true });
+    }
 
     originalKey = `form-intake/${hash}/original.${extensionFor(file.type)}`;
     await files.put(originalKey, file.stream(), {
@@ -240,8 +240,8 @@ export async function POST(request: Request) {
     });
 
     const receivedAt = new Date().toISOString();
-    const initialStatus = clean(metadata.ocrText, 100_000) ? 'In review' : 'Pending OCR';
-    const confidence = Number.isFinite(Number(metadata.ocrConfidence)) ? Math.max(0, Math.min(100, Number(metadata.ocrConfidence))) : null;
+    const initialStatus = 'Processing';
+    const confidence = metadata.ocrConfidence != null && String(metadata.ocrConfidence) !== '' && Number.isFinite(Number(metadata.ocrConfidence)) ? Math.max(0, Math.min(100, Number(metadata.ocrConfidence))) : null;
     const duplicateScore = Number.isFinite(Number(metadata.duplicateScore)) ? Math.max(0, Math.min(1, Number(metadata.duplicateScore))) : null;
     const dgEngagementType = normalizedDgEngagementType
       ?? inferDgEngagementType(`${metadata.headline || ''} ${metadata.ocrText || ''} ${metadata.presence || ''}`);
@@ -273,7 +273,7 @@ export async function POST(request: Request) {
           publicationDate,
           clean(metadata.publisher, 200, 'Publisher requires review'),
           clean(metadata.page, 50) || null,
-          clean(metadata.language, 100, 'Unknown'),
+          normalizeLanguage(metadata.language),
           clean(metadata.headline, 500, 'Headline requires OCR review'),
           clean(metadata.presence, 200, 'MCCIA relevance requires review'),
           dgEngagementType,
@@ -304,13 +304,16 @@ export async function POST(request: Request) {
         )
         .run();
     } catch (error) {
-      await files.delete(originalKey);
+      const duplicate=await db.prepare('SELECT id FROM google_form_intake WHERE sha256 = ? LIMIT 1').bind(hash).first();
+      if(!duplicate)await files.delete(originalKey);
       throw error;
     }
 
     const saved = await db.prepare('SELECT * FROM google_form_intake WHERE id = ?').bind(id).first<FormIntakeRow>();
     if (!saved) throw new Error('The intake image was stored but its metadata could not be reloaded.');
-    return Response.json({ record: toIntakeRecord(saved), duplicate: false }, { status: 201 });
+    const publishedId = await publishAutomatically(db, saved);
+    const published = await db.prepare('SELECT * FROM google_form_intake WHERE id = ?').bind(id).first<FormIntakeRow>();
+    return Response.json({ record: toIntakeRecord(published || saved), publishedId, duplicate: false }, { status: 201 });
   } catch (error) {
     return jsonError(error instanceof Error ? error.message : 'Unable to add the clipping to the inbox.', 500);
   }

@@ -1,3 +1,4 @@
+import { authorizeEditor, editorRequired } from '../../../editor-auth';
 import { ensureFormIntakeSchema, getStorageBindings } from '@/db';
 
 export const dynamic = 'force-dynamic';
@@ -7,7 +8,8 @@ type ImageRow = {
   original_content_type: string;
 };
 
-export async function GET(_request: Request, context: { params: Promise<{ id: string }> }) {
+export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
+  if(!(await authorizeEditor(request)).authorized)return editorRequired();
   try {
     const { id } = await context.params;
     const { db, files } = getStorageBindings();
@@ -22,7 +24,7 @@ export async function GET(_request: Request, context: { params: Promise<{ id: st
     return new Response(object.body, {
       headers: {
         'Content-Type': object.httpMetadata?.contentType || row.original_content_type,
-        'Cache-Control': 'private, max-age=300',
+        'Cache-Control': 'private, no-store',
         'X-Content-Type-Options': 'nosniff',
       },
     });

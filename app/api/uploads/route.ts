@@ -1,9 +1,13 @@
+import { authorizeEditor, editorRequired } from '../editor-auth';
+import { pageRequest, pageResult } from '../pagination';
+import { normalizeLanguage, validPublicationDate } from '@/app/media-metadata';
 import { ensureFormIntakeSchema, ensureUploadsSchema, getStorageBindings } from '@/db';
 import { inferDgEngagementType, mentionsDg, normalizeDgEngagementType } from '@/app/dg-classification';
+import archive from '@/app/clippings.json' with {type:'json'};
 
 export const dynamic = 'force-dynamic';
 
-const MAX_IMAGE_BYTES = 20 * 1024 * 1024;
+const MAX_IMAGE_BYTES = 100 * 1024 * 1024;
 const ACCEPTED_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
 
 type UploadedRow = {
@@ -63,16 +67,7 @@ function clean(value: unknown, maxLength: number, fallback = '') {
   return (result || fallback).slice(0, maxLength);
 }
 
-function validDate(value: unknown) {
-  const candidate = clean(value, 10);
-  const match = candidate.match(/^(\d{4})-(\d{2})-(\d{2})$/);
-  if (!match) return null;
-  const expected = [Number(match[1]), Number(match[2]), Number(match[3])];
-  const parsed = new Date(Date.UTC(expected[0], expected[1] - 1, expected[2]));
-  return parsed.getUTCFullYear() === expected[0] && parsed.getUTCMonth() + 1 === expected[1] && parsed.getUTCDate() === expected[2]
-    ? candidate
-    : null;
-}
+const validDate = validPublicationDate;
 
 function validSourceUrl(value: unknown) {
   const candidate = clean(value, 2000);
@@ -96,32 +91,35 @@ async function sha256(file: File) {
 
 function toClippingRecord(row: UploadedRow) {
   const imageBase = `/api/uploads/${encodeURIComponent(row.id)}/image`;
+  const automated = row.status === 'Auto-published';
+  const enhanced = row.original_key !== row.enhanced_key;
+  const historical = archive.find(item => item.sha256 === row.sha256);
   return {
     id: row.id,
     sha256: row.sha256,
-    year: Number(row.publication_date.slice(0, 4)) || 0,
+    year: Number(row.publication_date.slice(0, 4)) || null,
     date: row.publication_date,
     publisher: row.publisher,
     page: row.page,
     originalFilename: row.original_filename,
     duplicateFilenames: [],
-    sourceArchive: 'Owner upload',
-    thumbnailUrl: `${imageBase}?variant=enhanced`,
+    sourceArchive: automated ? 'Automatic form upload' : 'Owner upload',
+    thumbnailUrl: row.original_content_type.startsWith('image/') ? `${imageBase}?variant=enhanced` : row.original_content_type === 'application/pdf' ? '/fallbacks/pdf.webp' : '/fallbacks/video.webp',
     originalImageUrl: `${imageBase}?variant=original`,
-    enhancedImageUrl: `${imageBase}?variant=enhanced`,
+    enhancedImageUrl: enhanced ? `${imageBase}?variant=enhanced` : undefined,
     width: row.width,
     height: row.height,
-    quality: 'Enhanced',
-    matchStatus: 'New upload · OCR reviewed',
-    matchedRecordId: null,
-    ocrStatus: 'Completed',
+    quality: enhanced ? 'Enhanced' : 'Original',
+    matchStatus: automated ? 'Automatically processed upload' : 'New upload · OCR reviewed',
+    matchedRecordId: historical?.matchedRecordId || null,
+    ocrStatus: row.ocr_text ? 'Completed' : 'Not available',
     ocrHeadline: row.headline,
     ocrExcerpt: row.ocr_text.slice(0, 650),
     ocrText: row.ocr_text,
     ocrConfidence: row.ocr_confidence,
-    ocrEngine: 'Tesseract.js 7',
-    ocrModel: row.ocr_languages,
-    ocrReviewStatus: row.reviewed ? 'Reviewed during upload' : 'Review required',
+    ocrEngine: enhanced ? 'Tesseract.js 7' : row.ocr_languages,
+    ocrModel: enhanced ? row.ocr_languages : null,
+    ocrReviewStatus: row.reviewed ? 'Reviewed during upload' : 'Automatic transcription · not editorially verified',
     reviewDecision: row.notes,
     publicSourceUrl: row.source_url,
     publicSourceTitle: null,
@@ -132,19 +130,20 @@ function toClippingRecord(row: UploadedRow) {
     dgEngagementType: normalizeDgEngagementType(row.dg_engagement_type),
     uploadedAt: row.uploaded_at,
     uploaded: true,
+    automated,
     status: row.status,
   };
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
     const { db } = getStorageBindings();
     await ensureUploadsSchema(db);
-    const result = await db
-      .prepare('SELECT * FROM clipping_uploads ORDER BY uploaded_at DESC LIMIT 250')
-      .all<UploadedRow>();
+    const {limit,before}=pageRequest(request,50);
+    const result=await db.prepare("SELECT * FROM clipping_uploads WHERE ((reviewed = 1 AND status = 'Published') OR status = 'Auto-published') AND (? IS NULL OR uploaded_at < ? OR (uploaded_at = ? AND id < ?)) ORDER BY uploaded_at DESC, id DESC LIMIT ?").bind(before?.at??null,before?.at??null,before?.at??null,before?.id??null,limit+1).all<UploadedRow>();
+    const page=pageResult(result.results??[],limit,r=>r.uploaded_at,r=>r.id);
     return Response.json(
-      { records: (result.results ?? []).map(toClippingRecord) },
+      { records: page.records.map(toClippingRecord), nextCursor: page.nextCursor },
       { headers: { 'Cache-Control': 'private, no-store' } },
     );
   } catch (error) {
@@ -153,6 +152,8 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  const authorization=await authorizeEditor(request);
+  if(!authorization.authorized)return editorRequired();
   let originalKey = '';
   let enhancedKey = '';
   try {
@@ -167,7 +168,7 @@ export async function POST(request: Request) {
       return jsonError('Use a JPG, PNG or WebP newspaper image.', 415);
     }
     if (!original.size || !enhanced.size || original.size > MAX_IMAGE_BYTES || enhanced.size > MAX_IMAGE_BYTES) {
-      return jsonError('Each image must be between 1 byte and 20 MB.', 413);
+      return jsonError('Each image must be between 1 byte and 100 MB.', 413);
     }
 
     let metadata: UploadMetadata;
@@ -184,7 +185,7 @@ export async function POST(request: Request) {
     const ocrText = clean(metadata.ocrText, 100_000);
     if (!ocrText) return jsonError('OCR text is required before saving.', 400);
     const publicationDate = validDate(metadata.publicationDate);
-    if (!publicationDate) return jsonError('Review and enter a valid publication date before saving.', 400);
+    if (!publicationDate) return jsonError('Enter a real publication date that is not in the future before saving.', 400);
     const requestedDgEngagementType = clean(metadata.dgEngagementType, 100);
     const normalizedDgEngagementType = normalizeDgEngagementType(requestedDgEngagementType);
     if (requestedDgEngagementType && !normalizedDgEngagementType) {
@@ -203,15 +204,16 @@ export async function POST(request: Request) {
     const intakeId = clean(metadata.intakeId, 200);
     if (intakeId) {
       await ensureFormIntakeSchema(db);
-      const intake = await db.prepare('SELECT id FROM google_form_intake WHERE id = ? LIMIT 1').bind(intakeId).first<{ id: string }>();
+      const intake = await db.prepare('SELECT id, sha256 FROM google_form_intake WHERE id = ? LIMIT 1').bind(intakeId).first<{ id: string; sha256: string }>();
       if (!intake) return jsonError('The submission inbox record was not found.', 400);
+      if(intake.sha256!==hash)return jsonError('This evidence does not belong to the selected submission.',409);
     }
     const existing = await db
       .prepare('SELECT * FROM clipping_uploads WHERE sha256 = ? LIMIT 1')
       .bind(hash)
       .first<UploadedRow>();
     if (existing) {
-      const statements = [];
+      const statements = [db.prepare("UPDATE clipping_uploads SET status = 'Published', reviewed = 1 WHERE id = ?").bind(existing.id)];
       const existingDgEngagementType = normalizeDgEngagementType(existing.dg_engagement_type);
       const duplicateDgEngagementType = dgEngagementType ?? existingDgEngagementType;
       if (duplicateDgEngagementType && existingDgEngagementType !== duplicateDgEngagementType) {
@@ -223,12 +225,14 @@ export async function POST(request: Request) {
         const approvedAt = new Date().toISOString();
         statements.push(
           db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, dg_engagement_type = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?, error_message = NULL WHERE id = ?`)
-            .bind(existing.id, approvedAt, duplicateDgEngagementType, 'Dashboard editor', approvedAt, approvedAt, intakeId),
+            .bind(existing.id, approvedAt, duplicateDgEngagementType, authorization.actor, approvedAt, approvedAt, intakeId),
           db.prepare(`INSERT INTO audit_events (id, created_at, record_id, action, actor, previous_status, new_status, details, source) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
-            .bind(crypto.randomUUID(), approvedAt, intakeId, 'EDITORIAL_APPROVED', 'Dashboard editor', 'In review', 'Approved', `Connected to existing evidence ${existing.id}`, 'Dashboard OCR review'),
+            .bind(crypto.randomUUID(), approvedAt, intakeId, 'EDITORIAL_APPROVED', authorization.actor, 'In review', 'Approved', `Connected to existing evidence ${existing.id}`, 'Dashboard OCR review'),
         );
       }
       if (statements.length) await db.batch(statements);
+      existing.status = 'Published';
+      existing.reviewed = 1;
       return Response.json({ record: toClippingRecord(existing), duplicate: true });
     }
 
@@ -248,13 +252,13 @@ export async function POST(request: Request) {
     const uploadedAt = new Date().toISOString();
     const publisher = clean(metadata.publisher, 200, 'Publisher not identified');
     const headline = clean(metadata.headline, 500, 'Headline requires review');
-    const language = clean(metadata.language, 100, 'Unknown');
+    const language = normalizeLanguage(metadata.language);
     const presence = clean(metadata.presence, 200, 'MCCIA relevance requires review');
     const notes = clean(metadata.notes, 2000, 'Original and enhanced copies preserved; OCR reviewed at upload.');
     const sourceUrl = validSourceUrl(metadata.sourceUrl);
     const width = Math.max(1, Math.min(20_000, Number(metadata.width) || 1));
     const height = Math.max(1, Math.min(20_000, Number(metadata.height) || 1));
-    const confidence = Number.isFinite(Number(metadata.ocrConfidence))
+    const confidence = metadata.ocrConfidence != null && String(metadata.ocrConfidence) !== '' && Number.isFinite(Number(metadata.ocrConfidence))
       ? Math.max(0, Math.min(100, Number(metadata.ocrConfidence)))
       : null;
 
@@ -288,22 +292,23 @@ export async function POST(request: Request) {
           clean(metadata.ocrLanguages, 100, 'eng+mar+hin'),
           presence,
           dgEngagementType,
-          'Uploaded · OCR reviewed',
+          'Published',
           1,
           notes,
           sourceUrl,
         );
       if (intakeId) {
         const approveIntake = db.prepare(`UPDATE google_form_intake SET status = 'Approved', approved_record_id = ?, approved_at = ?, dg_engagement_type = ?, reviewed_by = ?, reviewed_at = ?, updated_at = ?, error_message = NULL WHERE id = ?`)
-          .bind(id, uploadedAt, dgEngagementType, 'Dashboard editor', uploadedAt, uploadedAt, intakeId);
+          .bind(id, uploadedAt, dgEngagementType, authorization.actor, uploadedAt, uploadedAt, intakeId);
         const audit = db.prepare(`INSERT INTO audit_events (id, created_at, record_id, action, actor, previous_status, new_status, details, source) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
-          .bind(crypto.randomUUID(), uploadedAt, intakeId, 'EDITORIAL_APPROVED', 'Dashboard editor', 'In review', 'Approved', `Approved as evidence ${id}`, 'Dashboard OCR review');
+          .bind(crypto.randomUUID(), uploadedAt, intakeId, 'EDITORIAL_APPROVED', authorization.actor, 'In review', 'Approved', `Approved as evidence ${id}`, 'Dashboard OCR review');
         await db.batch([insertUpload, approveIntake, audit]);
       } else {
         await insertUpload.run();
       }
     } catch (error) {
-      await Promise.allSettled([files.delete(originalKey), files.delete(enhancedKey)]);
+      const duplicate=await db.prepare('SELECT id FROM clipping_uploads WHERE sha256 = ? LIMIT 1').bind(hash).first();
+      if(!duplicate)await Promise.allSettled([files.delete(originalKey), files.delete(enhancedKey)]);
       throw error;
     }
 

@@ -1,10 +1,12 @@
 'use client';
 
 import { DG_ENGAGEMENT_TYPES, DgEngagementType, resolveDgEngagementType, resolveRecordDgEngagementType } from './dg-classification';
+import { normalizeLanguage, peopleCategory, recordLookup, uniqueCoverage, yearCounts } from './media-metadata';
 
 type RecordLike = {
   id?: string;
-  year: number;
+  year: number | null;
+  date?: string;
   publisher: string;
   language: string;
   presence: string;
@@ -20,7 +22,8 @@ type RecordLike = {
 
 type ClippingLike = {
   id?: string;
-  year: number;
+  year: number | null;
+  date?: string;
   publisher: string;
   language?: string;
   presence?: string;
@@ -33,17 +36,11 @@ type ClippingLike = {
   reviewDecision?: string | null;
 };
 
-type IntakeLike = {
-  status: string;
-  duplicateScore?: number | null;
-  linkStatus?: string | null;
-};
-
 type Props = {
   records: RecordLike[];
-  monitoredSources: RecordLike[];
   clippings: ClippingLike[];
-  intake: IntakeLike[];
+  sourceChecks: Record<string,{category:string;checkedAt:string}>;
+  auditUpdatedAt: string;
 };
 
 function topCounts(values: string[], limit = 6) {
@@ -61,14 +58,14 @@ function Bars({ rows }: { rows: [string, number][] }) {
   </div>)}</div>;
 }
 
-export default function AnalyticsPanel({ records, monitoredSources, clippings, intake }: Props) {
-  const allCoverage = [...records, ...clippings];
-  const years = topCounts(allCoverage.map((item) => String(item.year)).filter((year) => year !== '0'), 12).sort((left, right) => Number(left[0]) - Number(right[0]));
+export default function AnalyticsPanel({ records, clippings, sourceChecks, auditUpdatedAt }: Props) {
+  const allCoverage = uniqueCoverage(records, clippings);
+  const years = yearCounts(allCoverage);
   const publishers = topCounts(allCoverage.map((item) => item.publisher), 7);
-  const people = topCounts([...records.map((item) => item.presence), ...clippings.map((item) => item.presence || 'Unknown')], 6);
-  const languages = topCounts([...records.map((item) => item.language), ...clippings.map((item) => item.language || 'Unknown')], 6);
+  const people = topCounts(allCoverage.map((item) => peopleCategory(item.presence)), 8);
+  const languages = topCounts(allCoverage.map((item) => normalizeLanguage(item.language)), 8);
   const topics = topCounts(records.map((item) => item.topic), 6);
-  const recordIds = new Set(records.map((item) => item.id || '').filter(Boolean));
+  const recordIds = new Set(recordLookup(records).keys());
   const uniqueClassifications = [
     ...records.map((item) => resolveRecordDgEngagementType(item)),
     ...clippings
@@ -79,21 +76,17 @@ export default function AnalyticsPanel({ records, monitoredSources, clippings, i
     classification,
     uniqueClassifications.filter((value) => value === classification).length,
   ] as [string, number]);
-  const approved = intake.filter((item) => item.status === 'Approved').length;
-  const pending = intake.filter((item) => item.status === 'Pending OCR' || item.status === 'In review').length;
-  const duplicates = intake.filter((item) => Number(item.duplicateScore) >= 0.72).length;
-  const broken = intake.filter((item) => item.linkStatus === 'Broken').length;
+  const discoveries = records.filter(item=>item.id?.startsWith('GN-')||item.id?.startsWith('SRC-')).length;
+  const broken = Object.values(sourceChecks).filter(item=>item.category==='unreachable').length;
 
   return <section className="analytics-panel" aria-labelledby="analytics-title">
-    <div className="analytics-heading"><div><p className="kicker">LIVE COVERAGE INTELLIGENCE</p><h2 id="analytics-title">Media analytics</h2></div><p>People, organisations, languages, topics, editorial progress and monitored-source health update as new evidence enters the workflow.</p></div>
+    <div className="analytics-heading"><div><p className="kicker">LIVE COVERAGE INTELLIGENCE</p><h2 id="analytics-title">Media analytics</h2></div><p>Connected clippings count with their article once. Unconnected clippings count separately. Missing dates, languages and people remain labelled for review.</p></div>
     <div className="analytics-kpis">
-      <span><strong>{allCoverage.length.toLocaleString('en-IN')}</strong>Indexed records</span>
-      <span><strong>{monitoredSources.length.toLocaleString('en-IN')}</strong>Automated leads</span>
-      <span><strong>{pending.toLocaleString('en-IN')}</strong>Awaiting review</span>
-      <span><strong>{approved.toLocaleString('en-IN')}</strong>Approved intake</span>
-      <span><strong>{duplicates.toLocaleString('en-IN')}</strong>Duplicate alerts</span>
-      <span><strong>{broken.toLocaleString('en-IN')}</strong>Broken links</span>
+      <span><strong>{allCoverage.length.toLocaleString('en-IN')}</strong>Unique coverage items</span>
+      <span><strong>{discoveries.toLocaleString('en-IN')}</strong>Automated discoveries</span>
+      <span><strong>{broken.toLocaleString('en-IN')}</strong>Archive URLs last recorded unreachable</span>
     </div>
+<p className="audit-freshness">Stored source audit refreshed {new Date(auditUpdatedAt).toLocaleDateString('en-IN')}. Individual checks may be older; this is not a fresh live availability test.</p>
     <div className="analytics-grid">
       <article><h3>Coverage by year</h3><Bars rows={years} /></article>
       <article><h3>Leading publishers</h3><Bars rows={publishers} /></article>
@@ -101,7 +94,6 @@ export default function AnalyticsPanel({ records, monitoredSources, clippings, i
       <article><h3>Languages</h3><Bars rows={languages} /></article>
       <article><h3>Topics</h3><Bars rows={topics} /></article>
       <article><h3>DG content classification</h3><Bars rows={classifications} /></article>
-      <article className="analytics-workflow"><h3>Editorial workflow</h3><div><span><b className="pending" />Pending / review<strong>{pending}</strong></span><span><b className="approved" />Approved<strong>{approved}</strong></span><span><b className="rejected" />Rejected<strong>{intake.filter((item) => item.status === 'Rejected').length}</strong></span></div></article>
     </div>
   </section>;
 }

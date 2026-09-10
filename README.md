@@ -16,31 +16,62 @@ npm run lint
 npm run build
 ```
 
+## Date and metadata quality
+
+Publication dates use `YYYY-MM-DD`. Numeric dates in legacy workbooks and CSVs
+are read explicitly as day/month/year. Invalid and future publication dates
+must be reviewed; missing dates are never replaced with today's date or the
+first day of a month. A separately known year can be retained without a full date.
+Existing record IDs remain permanent so clipping and source-audit links survive
+subsequent imports.
+
+Run `npm run data:check` after an import. Both production builds and the weekly
+collector run this check before publishing. It checks real dates, future dates,
+year consistency, known languages, source URL structure, duplicate IDs, clipping
+references and suspected day/month reversals against connected evidence.
+Run `npm test` and `python -m unittest discover -s tests -p 'test_*.py'` for the
+regression checks.
+
+`npm run data:repair` applies only the reviewed date corrections and metadata
+normalization. It preserves original merged records and changed values in
+`archive-repair-history.json`; it never reverses all dates automatically.
+The reviewed duplicates are searchable through their former IDs.
+
+Analytics count connected clippings with their structured article once, and
+unconnected clippings separately. Clippings reuse the connected article's known
+language and people metadata. Missing years, languages and people stay visibly
+labelled rather than being guessed. These labels do not imply that the original
+newspaper omitted that information.
+
+If the Google Apps Script pipeline is used separately, update its deployed code
+from `google-apps-script/Pipeline.gs` to use the same explicit day-first parsing.
+The website API also validates dates independently. Updating the repository does not update an already installed Apps Script project; follow [deployment setup](docs/vercel-submissions.md).
+
 Vercel uses the repository-level `vercel.json` override to run the native
 `next build` command and create `.next/routes-manifest.json`. The regular npm
 build remains `vinext build` for the OpenAI Sites deployment.
 
-## Add and read newspaper clippings
+## Automatic clipping uploads
 
-Use **Add clipping** in the dashboard header to process a JPG, PNG or WebP
-newspaper image (maximum 20 MB). The browser:
+Use **Add clipping** to upload evidence through the team Google Form. The installed
+Apps Script archives the original file, runs OCR where supported, extracts metadata,
+checks duplicates and source links, and sends it to the Vercel archive automatically.
+There is no public editor sign-in, submission inbox or manual approval step.
 
-- preserves the original file without alteration;
-- creates a separate enlarged, grayscale, auto-contrasted and sharpened WebP;
-- runs Tesseract.js OCR with selectable English, Marathi and Hindi models;
-- proposes the publisher, date, page, language, headline and relevant MCCIA
-  person or organisation;
-- requires an editor to compare and correct the extracted fields before saving.
+Files up to 100 MB transfer in authenticated 2 MB parts. The server verifies the
+original hash and deduplicates repeated files. Publication preserves the original,
+exposes available OCR, and labels automatic metadata as unverified. Missing dates
+remain unavailable; invalid or future dates are rejected. A withdrawn record cannot
+be republished by a delivery retry. Private submission details stay protected.
 
-Reviewed metadata is stored in D1 and original/enhanced images are stored in R2.
-An exact SHA-256 match reuses the existing clipping instead of creating a
-duplicate. Saved uploads appear in the **Clipping evidence** archive, work with
-the archive filters and are included in the clipping CSV export.
+The page refreshes uploads every minute and when returning from the form. Failed
+deliveries retry every five minutes. Existing pending submissions can be processed
+by ID without uploading their binary evidence again.
 
-OCR processing runs locally in the user's browser, but the language model files
-must be downloaded when a language is used for the first time. PDF clippings
-should be exported as a clear page image before upload. OCR text is not factual
-verification, and an enhanced copy never replaces the original evidence.
+Vercel requires a durable libSQL database and a private S3-compatible evidence
+bucket. Native Cloudflare deployments continue to use D1/R2. Follow
+[Vercel and installed Apps Script setup](docs/vercel-submissions.md); changing the
+repository alone does not configure storage or replace an installed script.
 
 ## Weekly Google News discovery
 
@@ -57,7 +88,7 @@ The collector monitors public Google News RSS results for:
 - MCCIA President;
 - MCCIA leadership.
 
-Discoveries are deduplicated into `app/google-news-alerts.json`. The live client reads that public GitHub file, so a weekly data commit can appear without changing the dashboard code.
+Discoveries are deduplicated into `app/google-news-alerts.json`. The release bundles these records with the archive and source audit. The weekly data commit triggers the connected Vercel deployment, keeping the displayed records and audit consistent.
 
 The same workflow audits new and 30-day-old public links with:
 

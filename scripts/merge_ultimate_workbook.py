@@ -1,3 +1,4 @@
+from import_dates import assign_missing_ids, publication_date, publication_year
 import json, re
 from datetime import date, datetime
 from pathlib import Path
@@ -29,21 +30,9 @@ def canonical(url):
     except ValueError:
         return value.lower().split('?', 1)[0].split('#', 1)[0].rstrip('/')
 
-def date_value(value):
-    if isinstance(value, (datetime, date)):
-        return value.strftime('%Y-%m-%d')
-    value = text(value)
-    for fmt in ('%Y-%m-%d', '%d-%m-%Y', '%d/%m/%Y', '%B %d, %Y', '%b %d, %Y'):
-        try:
-            return datetime.strptime(value, fmt).strftime('%Y-%m-%d')
-        except ValueError:
-            pass
-    match = re.search(r'\b(20\d{2})[-/](\d{1,2})[-/](\d{1,2})\b', value)
-    return f'{match.group(1)}-{int(match.group(2)):02d}-{int(match.group(3)):02d}' if match else ''
+date_value = publication_date
 
-def year_value(year, parsed_date):
-    match = re.search(r'\b(20\d{2})\b', text(year))
-    return int(match.group(1)) if match else (int(parsed_date[:4]) if parsed_date else None)
+year_value = publication_year
 
 def broad_type(source_type):
     value = norm(source_type)
@@ -90,7 +79,7 @@ for values in sheet.iter_rows(min_row=2, values_only=True):
         'id': '', 'date': parsed_date, 'year': year,
         'type': broad_type(source_type), 'format': source_type,
         'publisher': text(row.get('Platform/Channel')) or 'Publisher not recorded',
-        'title': title or 'Untitled source', 'language': text(row.get('Language')) or 'Unknown',
+        'title': title or 'Untitled source', 'language': text(row.get('Language')) or 'Language not recorded',
         'presence': text(row.get('Mention Type')) or 'MCCIA / Prashant Girbane occurrence reported',
         'topic': 'MCCIA / Prashant Girbane media monitoring',
         'description': text(row.get('Brief Description')),
@@ -106,8 +95,7 @@ for values in sheet.iter_rows(min_row=2, values_only=True):
     added += 1
 
 records.sort(key=lambda r: (text(r.get('date')), text(r.get('title'))), reverse=True)
-for index, record in enumerate(records, 1):
-    record['id'] = f'PG{index:03d}'
+assign_missing_ids(records)
 
 TARGET.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding='utf-8')
 comparison = json.loads(COMPARE.read_text(encoding='utf-8'))

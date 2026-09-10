@@ -8,7 +8,7 @@
     "internal_added": 58,
     "internal_matched": 22
   },
-  "final_records": 2934,
+  "final_records": 2923,
   "with_url": 485,
   "without_url": 2449,
   "verified": 49,
@@ -107,5 +107,20 @@
       "search_errors": 2,
       "search_backend": "Bing public web search (Exa unavailable: HTTP 429 rate limit)"
     }
+  },
+  "date_quality_repairs": {
+    "mergedRecordIds": [
+      "PG0001",
+      "PG0002",
+      "PG0003",
+      "PG0004",
+      "PG0005",
+      "PG0006",
+      "PG0007",
+      "PG0008",
+      "PG0014",
+      "PG0028"
+    ],
+    "history": "archive-repair-history.json"
   }
 }

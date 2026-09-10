@@ -24,7 +24,7 @@ async function isOwnerGoogleToken(authorization: string) {
     });
     if (!response.ok) return false;
     const profile = await response.json() as { email?: string; email_verified?: boolean };
-    return profile.email_verified !== false && profile.email?.toLowerCase() === AUTOMATION_OWNER;
+    return profile.email_verified === true && profile.email?.toLowerCase() === AUTOMATION_OWNER;
   } catch {
     return false;
   }

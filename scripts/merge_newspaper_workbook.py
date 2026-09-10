@@ -1,3 +1,4 @@
+from import_dates import assign_missing_ids, publication_date, publication_year
 import json
 import re
 from datetime import date, datetime
@@ -33,12 +34,12 @@ def parsed_date(day, month, year):
     for fmt in ('%B', '%b'):
         try:
             month_number = datetime.strptime(month_text, fmt).month
-            return date(year_number, month_number, day_number).isoformat()
+            return publication_date(date(year_number, month_number, day_number))
         except (ValueError, TypeError):
             pass
     month_number = integer(month)
     try:
-        return date(year_number, month_number, day_number).isoformat() if month_number else ''
+        return publication_date(date(year_number, month_number, day_number)) if month_number else ''
     except ValueError:
         return ''
 
@@ -89,7 +90,7 @@ for values in sheet.iter_rows(min_row=2, values_only=True):
         'format': 'Print newspaper index',
         'publisher': publisher or 'Newspaper not recorded',
         'title': title,
-        'language': text(row.get('Language')) or 'Unknown',
+        'language': text(row.get('Language')) or 'Language not recorded',
         'presence': person or 'MCCIA-related newspaper item; named person not recorded',
         'topic': 'MCCIA newspaper coverage',
         'description': '; '.join(detail_parts),
@@ -106,8 +107,7 @@ for values in sheet.iter_rows(min_row=2, values_only=True):
     added += 1
 
 records.sort(key=lambda r: (text(r.get('date')), text(r.get('title'))), reverse=True)
-for index, record in enumerate(records, 1):
-    record['id'] = f'PG{index:04d}'
+assign_missing_ids(records)
 
 TARGET.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding='utf-8')
 comparison = json.loads(COMPARE.read_text(encoding='utf-8'))

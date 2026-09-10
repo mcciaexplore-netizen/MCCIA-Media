@@ -1,185 +1,5 @@
 [
   {
-    "id": "PG0001",
-    "date": "2026-12-07",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Sakal",
-    "title": "पुण्यातच हवे 'एमएसएमई' आयुक्तालय !",
-    "language": "Marathi",
-    "presence": "DG quote recorded",
-    "topic": "Internal media tracking",
-    "description": "एखादे सरकारी कार्यालय कुठे असावे, हा प्रश्न अनेकदा प्रशासकीय वाटतो. पण काही निर्णय हे केवळ कार्यालयाच्या पत्त्यापुरते मर्यादित नसतात, तर ते शासनाचे प्राधान्यक्रम आणि विकासाची दिशा निश्चित करणारे असतात. महाराष्ट्र सरकारने २०२६-२७ च्या अर्थसंकल्पात सूक्ष्म, लघु व मध्यम उद्योगांसाठी (एमएसएमई) स्वतंत्र आयुक्तालय स्थापन करण्याची घोषणा केली आहे. मराठा चेंबर ऑफ कॉमर्स, इंडस्ट्रीज अँड अॅग्रिकल्चरने (एमसीसीआयए) मुख्यमंत्री देवेंद्र फडणवीस यांच्यासमवेत वेळोवेळी झालेल्या चर्चेमध्ये नेमकी हीच मागणी केली होती. त्यामुळे आम्हाला या घोषणेचे विशेष स्वागत करावेसे वाटते. मात्र आता खरा प्रश्न आहे तो या आयुक्तालयाचे मुख्यालय नेमके कुठे असावे याचा. हा प्रश्न एका शहराचा नसून महाराष्ट्रातील एमएसएमई क्षेत्राला सर्वाधिक परिणामकारक सेवा कुठून देता येईल, याचा आहे.",
-    "status": "Unverified",
-    "url": null,
-    "mediaUrl": null,
-    "notes": "Internal tracker item; public source link missing",
-    "sourceDataset": "Internal media tracker",
-    "duplicateCount": 1,
-    "mergeNotes": "Linkless internal record retained as a lead"
-  },
-  {
-    "id": "PG0002",
-    "date": "2026-11-05",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Loksatta",
-    "title": "द्रष्टा उद्यमी",
-    "language": "Marathi",
-    "presence": "MCCIA-related item",
-    "topic": "Internal media tracking",
-    "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
-    "status": "Unverified",
-    "url": null,
-    "mediaUrl": null,
-    "notes": "Internal tracker item; public source link missing",
-    "sourceDataset": "Internal media tracker; Internal media tracker",
-    "duplicateCount": 2,
-    "mergeNotes": "Linkless internal record retained as a lead"
-  },
-  {
-    "id": "PG0003",
-    "date": "2026-09-05",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Kesari",
-    "title": "ख्यातनाम उद्योजक रवी पंडित यांचे निधन",
-    "language": "Marathi",
-    "presence": "MCCIA-related item",
-    "topic": "Internal media tracking",
-    "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
-    "status": "Unverified",
-    "url": null,
-    "mediaUrl": null,
-    "notes": "Internal tracker item; public source link missing",
-    "sourceDataset": "Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker",
-    "duplicateCount": 11,
-    "mergeNotes": "Linkless internal record retained as a lead"
-  },
-  {
-    "id": "PG0004",
-    "date": "2026-09-05",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Pudhari",
-    "title": "Udyojak Ravi Pandit yanche nidhan",
-    "language": "Marathi",
-    "presence": "Named / occurrence reported",
-    "topic": "Pudhari",
-    "description": "Page 7 obituary.",
-    "status": "Partially verified",
-    "url": "https://www.pudhari.com",
-    "mediaUrl": null,
-    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
-    "sourceDataset": "Additional table.csv source inventory",
-    "duplicateCount": 1,
-    "mergeNotes": "New CSV record absent from prior 345-record master"
-  },
-  {
-    "id": "PG0005",
-    "date": "2026-09-05",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Times of India",
-    "title": "Ravi Pandit,KPIT Tech Co-founder,Passes away at 75",
-    "language": "English",
-    "presence": "MCCIA-related item",
-    "topic": "Internal media tracking",
-    "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
-    "status": "Unverified",
-    "url": null,
-    "mediaUrl": null,
-    "notes": "Internal tracker item; public source link missing",
-    "sourceDataset": "Internal media tracker",
-    "duplicateCount": 1,
-    "mergeNotes": "Linkless internal record retained as a lead"
-  },
-  {
-    "id": "PG0006",
-    "date": "2026-09-05",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Kesari",
-    "title": "Khyatnam udyojak Ravi Pandit yanche nidhan",
-    "language": "Marathi",
-    "presence": "Named / occurrence reported",
-    "topic": "Kesari",
-    "description": "Front page obituary. Former MCCIA President 2004-2006.",
-    "status": "Partially verified",
-    "url": "https://www.kesari.com",
-    "mediaUrl": null,
-    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
-    "sourceDataset": "Additional table.csv source inventory",
-    "duplicateCount": 1,
-    "mergeNotes": "New CSV record absent from prior 345-record master"
-  },
-  {
-    "id": "PG0007",
-    "date": "2026-09-05",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Prabhat",
-    "title": "KPIT che Ravi Pandit yanche nidhan",
-    "language": "Marathi",
-    "presence": "Named / occurrence reported",
-    "topic": "Prabhat",
-    "description": "Front page coverage.",
-    "status": "Partially verified",
-    "url": "https://www.prabhat.com",
-    "mediaUrl": null,
-    "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
-    "sourceDataset": "Additional table.csv source inventory",
-    "duplicateCount": 1,
-    "mergeNotes": "New CSV record absent from prior 345-record master"
-  },
-  {
-    "id": "PG0008",
-    "date": "2026-09-05",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Indian Express",
-    "title": "KPIT Techonolgies Co-founder Ravi Pandit Passes away at 76",
-    "language": "English",
-    "presence": "MCCIA-related item",
-    "topic": "Internal media tracking",
-    "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
-    "status": "Unverified",
-    "url": null,
-    "mediaUrl": null,
-    "notes": "Internal tracker item; public source link missing",
-    "sourceDataset": "Internal media tracker",
-    "duplicateCount": 1,
-    "mergeNotes": "Linkless internal record retained as a lead"
-  },
-  {
-    "id": "PG0009",
-    "date": "2026-08-15",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Sakal",
-    "title": "सेमीकंडक्टर क्षेत्रात भारताची मोठी झेप",
-    "language": "Marathi",
-    "presence": "MCCIA-related item",
-    "topic": "Internal media tracking",
-    "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
-    "status": "Unverified",
-    "url": null,
-    "mediaUrl": null,
-    "notes": "Internal tracker item; public source link missing",
-    "sourceDataset": "Internal media tracker",
-    "duplicateCount": 1,
-    "mergeNotes": "Linkless internal record retained as a lead"
-  },
-  {
     "id": "PG0010",
     "date": "2026-08-14",
     "year": 2026,
@@ -258,26 +78,6 @@
     "sourceDataset": "Additional table.csv source inventory",
     "duplicateCount": 1,
     "mergeNotes": "New CSV record absent from prior 345-record master"
-  },
-  {
-    "id": "PG0014",
-    "date": "2026-08-06",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Maharashtra Times",
-    "title": "एमएसएमई'ची हेल्पलाइन सुरू",
-    "language": "Marathi",
-    "presence": "MCCIA-related item",
-    "topic": "Internal media tracking",
-    "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
-    "status": "Unverified",
-    "url": null,
-    "mediaUrl": null,
-    "notes": "Internal tracker item; public source link missing",
-    "sourceDataset": "Internal media tracker",
-    "duplicateCount": 1,
-    "mergeNotes": "Linkless internal record retained as a lead"
   },
   {
     "id": "PG0015",
@@ -596,14 +396,14 @@
     "language": "Marathi",
     "presence": "Prashant Girbane",
     "topic": "MCCIA newspaper coverage",
-    "description": "Newspaper: Sakal; Page: 8",
+    "description": "एखादे सरकारी कार्यालय कुठे असावे, हा प्रश्न अनेकदा प्रशासकीय वाटतो. पण काही निर्णय हे केवळ कार्यालयाच्या पत्त्यापुरते मर्यादित नसतात, तर ते शासनाचे प्राधान्यक्रम आणि विकासाची दिशा निश्चित करणारे असतात. महाराष्ट्र सरकारने २०२६-२७ च्या अर्थसंकल्पात सूक्ष्म, लघु व मध्यम उद्योगांसाठी (एमएसएमई) स्वतंत्र आयुक्तालय स्थापन करण्याची घोषणा केली आहे. मराठा चेंबर ऑफ कॉमर्स, इंडस्ट्रीज अँड अॅग्रिकल्चरने (एमसीसीआयए) मुख्यमंत्री देवेंद्र फडणवीस यांच्यासमवेत वेळोवेळी झालेल्या चर्चेमध्ये नेमकी हीच मागणी केली होती. त्यामुळे आम्हाला या घोषणेचे विशेष स्वागत करावेसे वाटते. मात्र आता खरा प्रश्न आहे तो या आयुक्तालयाचे मुख्यालय नेमके कुठे असावे याचा. हा प्रश्न एका शहराचा नसून महाराष्ट्रातील एमएसएमई क्षेत्राला सर्वाधिक परिणामकारक सेवा कुठून देता येईल, याचा आहे.",
     "status": "Clipping verified",
     "url": null,
     "mediaUrl": null,
     "notes": "Imported from a supplied print-newspaper index. No public source URL or clipping was supplied; publication details require independent verification.",
-    "sourceDataset": "News Paper data Files 2018-2026 workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New print-index record absent from the prior dashboard dataset",
+    "sourceDataset": "News Paper data Files 2018-2026 workbook; Internal media tracker",
+    "duplicateCount": 2,
+    "mergeNotes": "New print-index record absent from the prior dashboard dataset; PG0001 merged after publication date correction",
     "sourceSearchStatus": "no-confident-link",
     "sourceCandidates": [
       {
@@ -637,27 +437,11 @@
       }
     ],
     "evidenceImageUrl": "/clippings/bb/bbf5854a701edff2b7509b77e941ca90f89dd03424f021149a28fcb4f5a2ee3c.webp",
-    "verificationMethod": "Clipping verified"
-  },
-  {
-    "id": "PG0028",
-    "date": "2026-07-06",
-    "year": 2026,
-    "type": "Article",
-    "format": "News Article",
-    "publisher": "Sakal",
-    "title": "एमएसएमई क्लस्टर्सना चाचणी सुविधेसाठी 'बीआयएस'चे बळ",
-    "language": "Marathi",
-    "presence": "MCCIA-related item",
-    "topic": "Internal media tracking",
-    "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
-    "status": "Unverified",
-    "url": null,
-    "mediaUrl": null,
-    "notes": "Internal tracker item; public source link missing",
-    "sourceDataset": "Internal media tracker",
-    "duplicateCount": 1,
-    "mergeNotes": "Linkless internal record retained as a lead"
+    "verificationMethod": "Clipping verified",
+    "mergedRecordIds": [
+      "PG0001"
+    ],
+    "dateSource": "2026/July - 2026/Sakal 12.7.2026, Sunday,P.no.8.jpg"
   },
   {
     "id": "PG0029",
@@ -807,7 +591,7 @@
         "date": "2026-06-26",
         "page": "7",
         "quality": "High",
-        "ocrConfidence": 76.0
+        "ocrConfidence": 76
       },
       {
         "sha256": "0eed40c3d60465d68ed8d94e80207a9b0c339f936e79becc2290ce7b09f2d0c9",
@@ -839,9 +623,9 @@
     "url": null,
     "mediaUrl": null,
     "notes": "Imported from a supplied print-newspaper index. No public source URL or clipping was supplied; publication details require independent verification.",
-    "sourceDataset": "News Paper data Files 2018-2026 workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New print-index record absent from the prior dashboard dataset",
+    "sourceDataset": "News Paper data Files 2018-2026 workbook; Internal media tracker",
+    "duplicateCount": 2,
+    "mergeNotes": "New print-index record absent from the prior dashboard dataset; PG0014 merged after publication date correction",
     "sourceSearchStatus": "no-confident-link",
     "sourceCandidates": [
       {
@@ -875,7 +659,11 @@
       }
     ],
     "evidenceImageUrl": "/clippings/d3/d3eddb395931dc78a0f30457b746a051c0a98e71cc4e83455533e91031ed968e.webp",
-    "verificationMethod": "Clipping verified"
+    "verificationMethod": "Clipping verified",
+    "mergedRecordIds": [
+      "PG0014"
+    ],
+    "dateSource": "2026/June - 2026/Maharashtra Times 8.6.2026,Monday, P.no.5.jpg"
   },
   {
     "id": "PG0035",
@@ -933,9 +721,9 @@
     "url": null,
     "mediaUrl": null,
     "notes": "Imported from a supplied print-newspaper index. No public source URL or clipping was supplied; publication details require independent verification.",
-    "sourceDataset": "News Paper data Files 2018-2026 workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New print-index record absent from the prior dashboard dataset",
+    "sourceDataset": "News Paper data Files 2018-2026 workbook; Internal media tracker",
+    "duplicateCount": 2,
+    "mergeNotes": "New print-index record absent from the prior dashboard dataset; PG0028 merged after publication date correction",
     "sourceSearchStatus": "no-confident-link",
     "sourceCandidates": [
       {
@@ -969,7 +757,11 @@
       }
     ],
     "evidenceImageUrl": "/clippings/b6/b62dc748dd809b882921a0c6f0e69229548647f4e6595e5f04cfb3c79eb85049.webp",
-    "verificationMethod": "Clipping verified"
+    "verificationMethod": "Clipping verified",
+    "mergedRecordIds": [
+      "PG0028"
+    ],
+    "dateSource": "2026/June - 2026/Sakal 7.6.2026, Sunday,P.no.9.jpg"
   },
   {
     "id": "PG0038",
@@ -1192,9 +984,9 @@
     "url": null,
     "mediaUrl": null,
     "notes": "Imported from a supplied print-newspaper index. No public source URL or clipping was supplied; publication details require independent verification.",
-    "sourceDataset": "News Paper data Files 2018-2026 workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New print-index record absent from the prior dashboard dataset",
+    "sourceDataset": "News Paper data Files 2018-2026 workbook; Internal media tracker",
+    "duplicateCount": 3,
+    "mergeNotes": "New print-index record absent from the prior dashboard dataset; PG0002 merged after publication date correction",
     "sourceSearchStatus": "no-confident-link",
     "sourceCandidates": [
       {
@@ -1228,7 +1020,11 @@
       }
     ],
     "evidenceImageUrl": "/clippings/49/4952a37f3086061cd435eff22bc41b2ffbb16bed1df35f0e136b530ededc9c6f.webp",
-    "verificationMethod": "Clipping verified"
+    "verificationMethod": "Clipping verified",
+    "mergedRecordIds": [
+      "PG0002"
+    ],
+    "dateSource": "2026/May - 2026/Loksatta 11.5.2026, Monday, P.no.7.JPG"
   },
   {
     "id": "PG0047",
@@ -1592,9 +1388,9 @@
     "url": null,
     "mediaUrl": null,
     "notes": "Imported from a supplied print-newspaper index. No public source URL or clipping was supplied; publication details require independent verification.",
-    "sourceDataset": "News Paper data Files 2018-2026 workbook",
-    "duplicateCount": 2,
-    "mergeNotes": "New print-index record absent from the prior dashboard dataset; Matched newspaper workbook by normalized title and publication date",
+    "sourceDataset": "News Paper data Files 2018-2026 workbook; Internal media tracker; Additional table.csv source inventory",
+    "duplicateCount": 14,
+    "mergeNotes": "New print-index record absent from the prior dashboard dataset; Matched newspaper workbook by normalized title and publication date; PG0003 merged after publication date correction; PG0006 merged after publication date correction",
     "sourceSearchStatus": "no-confident-link",
     "sourceCandidates": [
       {
@@ -1637,7 +1433,12 @@
       }
     ],
     "evidenceImageUrl": "/clippings/b4/b43fe8ec8dbb95d59ed2b8521b2da07e79e9f1dae95a6296724dc2bd5cd89a19.webp",
-    "verificationMethod": "Clipping verified"
+    "verificationMethod": "Clipping verified",
+    "mergedRecordIds": [
+      "PG0003",
+      "PG0006"
+    ],
+    "dateSource": "2026/May - 2026/Kesari 9.5.2026 Saturday, P.no.2.jpg; 2026/May - 2026/Kesari 9.5.2026, Saturday,P.no.5, Continued from P.no.1.jpg"
   },
   {
     "id": "PG0055",
@@ -1709,9 +1510,9 @@
     "url": null,
     "mediaUrl": null,
     "notes": "Imported from a supplied print-newspaper index. No public source URL or clipping was supplied; publication details require independent verification.",
-    "sourceDataset": "News Paper data Files 2018-2026 workbook",
-    "duplicateCount": 2,
-    "mergeNotes": "New print-index record absent from the prior dashboard dataset; Matched newspaper workbook by normalized title and publication date",
+    "sourceDataset": "News Paper data Files 2018-2026 workbook; Additional table.csv source inventory",
+    "duplicateCount": 3,
+    "mergeNotes": "New print-index record absent from the prior dashboard dataset; Matched newspaper workbook by normalized title and publication date; PG0007 merged after publication date correction",
     "sourceSearchStatus": "no-confident-link",
     "sourceCandidates": [
       {
@@ -1754,7 +1555,11 @@
       }
     ],
     "evidenceImageUrl": "/clippings/3b/3b19b4a978af104612adcc57f7b23883f980c9a3fd4bdaf195a8fde20776943c.webp",
-    "verificationMethod": "Clipping verified"
+    "verificationMethod": "Clipping verified",
+    "mergedRecordIds": [
+      "PG0007"
+    ],
+    "dateSource": "2026/May - 2026/Prabhat 9.5.2026,Saturday, P,no. 2,Continued from P.no.1.PNG; 2026/May - 2026/Prabhat 9.5.2026,Saturday,1.jpg"
   },
   {
     "id": "PG0057",
@@ -1772,9 +1577,9 @@
     "url": null,
     "mediaUrl": null,
     "notes": "Imported from a supplied print-newspaper index. No public source URL or clipping was supplied; publication details require independent verification.",
-    "sourceDataset": "News Paper data Files 2018-2026 workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New print-index record absent from the prior dashboard dataset",
+    "sourceDataset": "News Paper data Files 2018-2026 workbook; Additional table.csv source inventory",
+    "duplicateCount": 2,
+    "mergeNotes": "New print-index record absent from the prior dashboard dataset; PG0004 merged after publication date correction",
     "sourceSearchStatus": "no-confident-link",
     "sourceCandidates": [
       {
@@ -1796,7 +1601,11 @@
       }
     ],
     "evidenceImageUrl": "/clippings/fe/fef69b5d45a95479e8e1c6a9ef6e78069affaeed77036055cd97c10050133f6f.webp",
-    "verificationMethod": "Clipping verified"
+    "verificationMethod": "Clipping verified",
+    "mergedRecordIds": [
+      "PG0004"
+    ],
+    "dateSource": "2026/May - 2026/Pudhari 9.5.2026, Saturday, P.no.7.jpg"
   },
   {
     "id": "PG0058",
@@ -1929,9 +1738,9 @@
     "url": "https://timesofindia.indiatimes.com/city/pune/ravi-pandit-kpit-tech-co-founder-passes-away-at-75/articleshow/130973886.cms",
     "mediaUrl": "https://static.toiimg.com/thumb/msid-130973858,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
     "notes": "Imported from a supplied print-newspaper index. No public source URL or clipping was supplied; publication details require independent verification. Public search match attached (exact-link, score 0.949); page content still requires human verification. Public search match attached (exact-link, score 0.949); page content still requires human verification. Public search match attached (exact-link, score 0.949); page content still requires human verification. Public search match attached (exact-link, score 0.949); page content still requires human verification.",
-    "sourceDataset": "News Paper data Files 2018-2026 workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New print-index record absent from the prior dashboard dataset",
+    "sourceDataset": "News Paper data Files 2018-2026 workbook; Internal media tracker",
+    "duplicateCount": 2,
+    "mergeNotes": "New print-index record absent from the prior dashboard dataset; PG0005 merged after publication date correction",
     "sourceSearchStatus": "exact-link",
     "sourceCandidates": [
       {
@@ -1965,7 +1774,11 @@
       }
     ],
     "evidenceImageUrl": "/clippings/de/de22a0fb668419a52b23a5724b4b2959a83241d0c1267a84a71579439498372a.webp",
-    "verificationMethod": "URL and clipping verified"
+    "verificationMethod": "URL and clipping verified",
+    "mergedRecordIds": [
+      "PG0005"
+    ],
+    "dateSource": "2026/May - 2026/Times of India 9.5.2026, Saturday, P.no.5.jpg"
   },
   {
     "id": "PG0062",
@@ -1983,9 +1796,9 @@
     "url": null,
     "mediaUrl": null,
     "notes": "Imported from a supplied print-newspaper index. No public source URL or clipping was supplied; publication details require independent verification.",
-    "sourceDataset": "News Paper data Files 2018-2026 workbook",
-    "duplicateCount": 1,
-    "mergeNotes": "New print-index record absent from the prior dashboard dataset",
+    "sourceDataset": "News Paper data Files 2018-2026 workbook; Internal media tracker",
+    "duplicateCount": 2,
+    "mergeNotes": "New print-index record absent from the prior dashboard dataset; PG0008 merged after publication date correction",
     "sourceSearchStatus": "no-confident-link",
     "sourceCandidates": [
       {
@@ -2019,7 +1832,11 @@
       }
     ],
     "evidenceImageUrl": "/clippings/29/2965e5dc8f4e9c214271a3ef33e7225ed6ae351fcf818f6084410abd9c5358af.webp",
-    "verificationMethod": "Clipping verified"
+    "verificationMethod": "Clipping verified",
+    "mergedRecordIds": [
+      "PG0008"
+    ],
+    "dateSource": "2026/May - 2026/Indian Express 9.5.2026,Saturday,P.no.4.jpg"
   },
   {
     "id": "PG0063",
@@ -2129,7 +1946,7 @@
     "format": "Press Release",
     "publisher": "Publisher not recorded",
     "title": "MCCIA AI Hackathon 2026",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "DG quote recorded",
     "topic": "Internal media tracking",
     "description": "Not published (to be re shared next week)",
@@ -3891,43 +3708,45 @@
   },
   {
     "id": "PG0131",
-    "date": "2026-01-01",
-    "year": 2026,
-    "type": "Social",
-    "format": "Social Innovation Hub Team",
+    "date": "",
+    "year": null,
+    "type": "Other",
+    "format": "Webpage",
     "publisher": "Pune International Centre",
-    "title": "https://yellow-seal-502661.hostingersite.com/about-us/team/",
-    "language": "Webpage",
+    "title": "Social Innovation Hub Team",
+    "language": "Language not recorded",
     "presence": "Named / occurrence reported",
     "topic": "Pune International Centre",
-    "description": "To Verify",
-    "status": "Partially verified",
-    "url": "Mr Prashant Girbane, Convenor of Social Innovation Hub.",
+    "description": "Mr Prashant Girbane, Convenor of Social Innovation Hub.",
+    "status": "Unverified",
+    "url": "https://yellow-seal-502661.hostingersite.com/about-us/team/",
     "mediaUrl": null,
-    "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending.",
+    "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending. Misaligned CSV columns repaired; publication date and language require source review.",
     "sourceDataset": "Additional table.csv source inventory",
     "duplicateCount": 1,
-    "mergeNotes": "New CSV record absent from prior 345-record master"
+    "mergeNotes": "New CSV record absent from prior 345-record master",
+    "dateReviewStatus": "Publication date requires source review"
   },
   {
     "id": "PG0132",
-    "date": "2026-01-01",
-    "year": 2026,
+    "date": "",
+    "year": null,
     "type": "PDF",
-    "format": "Annual Report 2024-25",
+    "format": "PDF",
     "publisher": "Pune International Centre",
-    "title": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
-    "language": "PDF",
+    "title": "Annual Report 2024-25",
+    "language": "Language not recorded",
     "presence": "Named / occurrence reported",
     "topic": "Pune International Centre",
-    "description": "To Verify",
-    "status": "Partially verified",
-    "url": "Mr Prashant Girbane, General Secretary (Hon.). Dr Ravi Pandit, Treasurer (Hon.).",
+    "description": "Mr Prashant Girbane, General Secretary (Hon.). Dr Ravi Pandit, Treasurer (Hon.).",
+    "status": "Unverified",
+    "url": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
     "mediaUrl": null,
-    "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending.",
+    "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending. Misaligned CSV columns repaired; publication date and language require source review.",
     "sourceDataset": "Additional table.csv source inventory",
     "duplicateCount": 1,
-    "mergeNotes": "New CSV record absent from prior 345-record master"
+    "mergeNotes": "New CSV record absent from prior 345-record master",
+    "dateReviewStatus": "Publication date requires source review"
   },
   {
     "id": "PG0133",
@@ -4177,7 +3996,7 @@
     "format": "Print newspaper index",
     "publisher": "Loksatta",
     "title": "Pune Expo",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA News",
     "topic": "MCCIA newspaper coverage",
     "description": "Newspaper: Loksatta; Page: 3",
@@ -5521,7 +5340,7 @@
         "title": "Consumer durable retailers expect a bumper Diwali post-GST rate cuts",
         "url": "https://timesofindia.indiatimes.com/city/pune/consumer-durable-retailers-expect-a-bumper-diwali-post-gst-rate-cuts/articleshow/123725905.cms",
         "published": "2025-09-06T00:00:00.000Z",
-        "matchScore": 1.0
+        "matchScore": 1
       },
       {
         "title": "Makers of durables expect rise in premium products' demand - The Times of India",
@@ -8779,7 +8598,7 @@
   {
     "id": "PG0269",
     "date": "2025-02-08",
-    "year": 2024,
+    "year": 2025,
     "type": "Social",
     "format": "LinkedIn Post",
     "publisher": "LinkedIn",
@@ -9082,7 +8901,7 @@
     "format": "Print newspaper index",
     "publisher": "Loksatta",
     "title": "उधोगांच्या वृद्धीबाबत आशादायी चित्र",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA-related newspaper item; named person not recorded",
     "topic": "MCCIA newspaper coverage",
     "description": "Newspaper: Loksatta; Page: 18",
@@ -17720,23 +17539,24 @@
   },
   {
     "id": "PG0505",
-    "date": "2023-08-01",
-    "year": 2023,
+    "date": "",
+    "year": null,
     "type": "PDF",
-    "format": "Annual Report 2022-23",
+    "format": "PDF",
     "publisher": "Pune International Centre",
-    "title": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
-    "language": "PDF",
+    "title": "Annual Report 2022-23",
+    "language": "Language not recorded",
     "presence": "Named / occurrence reported",
     "topic": "Pune International Centre",
-    "description": "To Verify",
-    "status": "Partially verified",
-    "url": "Mr Prashant Girbane, Gen. Secretary (Hon.). Mr Ravi Pandit, Treasurer (Hon.).",
+    "description": "Mr Prashant Girbane, Gen. Secretary (Hon.). Mr Ravi Pandit, Treasurer (Hon.).",
+    "status": "Unverified",
+    "url": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
     "mediaUrl": null,
-    "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending.",
+    "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending. Misaligned CSV columns repaired; publication date and language require source review.",
     "sourceDataset": "Additional table.csv source inventory",
     "duplicateCount": 1,
-    "mergeNotes": "New CSV record absent from prior 345-record master"
+    "mergeNotes": "New CSV record absent from prior 345-record master",
+    "dateReviewStatus": "Publication date requires source review"
   },
   {
     "id": "PG0506",
@@ -35843,7 +35663,7 @@
         "date": "2021-12-06",
         "page": "9",
         "quality": "High",
-        "ocrConfidence": 55.0
+        "ocrConfidence": 55
       }
     ],
     "evidenceImageUrl": "/clippings/e4/e4ee812cafbff371e4f691e7ec47d9017310108e0ccfea8392d3d718282a1546.webp",
@@ -41654,7 +41474,7 @@
         "date": "2021-05-31",
         "page": "4",
         "quality": "High",
-        "ocrConfidence": 80.0
+        "ocrConfidence": 80
       }
     ],
     "evidenceImageUrl": "/clippings/ba/baf59149f757ad681a3d547226c7866a6206169bef5b223d9e705e041ac1f836.webp",
@@ -49510,7 +49330,7 @@
         "date": "2021-03-02",
         "page": "5",
         "quality": "Low",
-        "ocrConfidence": 85.0
+        "ocrConfidence": 85
       }
     ],
     "evidenceImageUrl": "/clippings/f8/f8c38eff0c20c2e5fedaeedf2c6f208797af4821a0f4b6bc34f8c9914061342c.webp",
@@ -58699,7 +58519,7 @@
     "format": "Print newspaper index",
     "publisher": "Indian Express",
     "title": "State govt to focus on Ease of Doing Agriculture : Aaditya Thackeray",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA-related newspaper item; named person not recorded",
     "topic": "MCCIA newspaper coverage",
     "description": "Newspaper: Indian Express; Supplement: Pune Newsline; Page: 3",
@@ -72786,7 +72606,7 @@
   {
     "id": "PG2473",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Article",
     "format": "News Article",
     "publisher": "Maharashtra Times",
@@ -73466,12 +73286,12 @@
   {
     "id": "PG2504",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "ziyaahmad",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73486,12 +73306,12 @@
   {
     "id": "PG2505",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "youtube.com",
     "title": "watch",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73506,12 +73326,12 @@
   {
     "id": "PG2506",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "timesofindia.indiatimes.com",
     "title": "timesofindia.indiatimes.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73526,12 +73346,12 @@
   {
     "id": "PG2507",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "thehindubusinessline.com",
     "title": "thehindubusinessline.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73546,12 +73366,12 @@
   {
     "id": "PG2508",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "thebridgechronicle.com",
     "title": "thebridgechronicle.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73566,12 +73386,12 @@
   {
     "id": "PG2509",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "swarajyamag.com",
     "title": "swarajyamag.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73586,12 +73406,12 @@
   {
     "id": "PG2510",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "sudhirmehta.in",
     "title": "sudhirmehta.in",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73606,12 +73426,12 @@
   {
     "id": "PG2511",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "punemirror",
     "title": "punemirror",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73626,12 +73446,12 @@
   {
     "id": "PG2512",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Article",
     "format": "Source index URL",
     "publisher": "punekarnews.in",
     "title": "punekarnews.in",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73646,12 +73466,12 @@
   {
     "id": "PG2513",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "puneinternationalcentre.org",
     "title": "puneinternationalcentre.org",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73666,12 +73486,12 @@
   {
     "id": "PG2514",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "publication annual report",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73686,12 +73506,12 @@
   {
     "id": "PG2515",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "prashant jogalekar 7427326",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73706,12 +73526,12 @@
   {
     "id": "PG2516",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "ppcr",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73726,12 +73546,12 @@
   {
     "id": "PG2517",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "youtube.com",
     "title": "playlist",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73746,12 +73566,12 @@
   {
     "id": "PG2518",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "pibs",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73766,12 +73586,12 @@
   {
     "id": "PG2519",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "pib.gov.in",
     "title": "pib.gov.in",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73786,12 +73606,12 @@
   {
     "id": "PG2520",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "past presidents tab",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73806,12 +73626,12 @@
   {
     "id": "PG2521",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "nisha jadhav 15801723b",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73826,12 +73646,12 @@
   {
     "id": "PG2522",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "newindianexpress.com",
     "title": "newindianexpress.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73846,12 +73666,12 @@
   {
     "id": "PG2523",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mypunepulse.com",
     "title": "mypunepulse.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73866,12 +73686,12 @@
   {
     "id": "PG2524",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "msme",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73886,12 +73706,12 @@
   {
     "id": "PG2525",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mid-day.com",
     "title": "mid day.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73906,12 +73726,12 @@
   {
     "id": "PG2526",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "mcciapune.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73926,12 +73746,12 @@
   {
     "id": "PG2527",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "mcciapune",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73946,12 +73766,12 @@
   {
     "id": "PG2528",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "mcciapune",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73966,12 +73786,12 @@
   {
     "id": "PG2529",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "marathi.abplive.com",
     "title": "marathi.abplive.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -73986,12 +73806,12 @@
   {
     "id": "PG2530",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Article",
     "format": "Source index URL",
     "publisher": "zeenews.india.com",
     "title": "marathi",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74006,12 +73826,12 @@
   {
     "id": "PG2531",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "maharashtratimes.com",
     "title": "maharashtratimes.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74026,12 +73846,12 @@
   {
     "id": "PG2532",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "loksatta.com",
     "title": "loksatta.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74046,12 +73866,12 @@
   {
     "id": "PG2533",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "lokmat.com",
     "title": "lokmat.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74066,12 +73886,12 @@
   {
     "id": "PG2534",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "livemint.com",
     "title": "livemint.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74086,12 +73906,12 @@
   {
     "id": "PG2535",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "kpit.com",
     "title": "kpit.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74106,12 +73926,12 @@
   {
     "id": "PG2536",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "indianexpress.com",
     "title": "indianexpress.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74126,12 +73946,12 @@
   {
     "id": "PG2537",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "indianembassyqatar",
     "title": "indianembassyqatar",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74406,12 +74226,12 @@
   {
     "id": "PG2551",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "hindustantimes.com",
     "title": "hindustantimes.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74448,12 +74268,12 @@
   {
     "id": "PG2553",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "ganeshmate",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74468,12 +74288,12 @@
   {
     "id": "PG2554",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "financialexpress.com",
     "title": "financialexpress.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74488,12 +74308,12 @@
   {
     "id": "PG2555",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "events landing page",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74508,12 +74328,12 @@
   {
     "id": "PG2556",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "esakal.com",
     "title": "esakal.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74528,12 +74348,12 @@
   {
     "id": "PG2557",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "eoibelgrade.gov.in",
     "title": "eoibelgrade.gov.in",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74548,12 +74368,12 @@
   {
     "id": "PG2558",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "electronic cluster",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74568,12 +74388,12 @@
   {
     "id": "PG2559",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "economictimes.indiatimes.com",
     "title": "economictimes.indiatimes.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74588,12 +74408,12 @@
   {
     "id": "PG2560",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "easebuzz",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74608,12 +74428,12 @@
   {
     "id": "PG2561",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "dr sudhir mehta 79a2839",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74628,12 +74448,12 @@
   {
     "id": "PG2562",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "dr sudhir mehta 79a2839",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74648,12 +74468,12 @@
   {
     "id": "PG2563",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "dinanathkholkar",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74668,12 +74488,12 @@
   {
     "id": "PG2564",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "cnbctv18.com",
     "title": "cnbctv18.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74688,12 +74508,12 @@
   {
     "id": "PG2565",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "cewe",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74708,12 +74528,12 @@
   {
     "id": "PG2566",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "bharatagarwal",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74728,12 +74548,12 @@
   {
     "id": "PG2567",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "awards",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74748,12 +74568,12 @@
   {
     "id": "PG2568",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "archive.jcci.or",
     "title": "archive.jcci.or",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74768,12 +74588,12 @@
   {
     "id": "PG2569",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "anamika kumari 38499a201",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74788,12 +74608,12 @@
   {
     "id": "PG2570",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Source index URL",
     "publisher": "linkedin.com",
     "title": "aispectrumindia",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74808,12 +74628,12 @@
   {
     "id": "PG2571",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "mcciapune.com",
     "title": "ai studio",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -74828,12 +74648,12 @@
   {
     "id": "PG2572",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "agrospectrumindia.com",
     "title": "agrospectrumindia.com",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -75352,7 +75172,7 @@
   {
     "id": "PG2596",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "Pune International Centre",
@@ -75394,12 +75214,12 @@
   {
     "id": "PG2598",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Skill Training Report",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -75436,12 +75256,12 @@
   {
     "id": "PG2600",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Shared Service Infrastructure Supporting MSMEs in Pune (Clusters)",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -75522,12 +75342,12 @@
   {
     "id": "PG2604",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "SEC 2025 Report",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -75586,12 +75406,12 @@
   {
     "id": "PG2607",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Ravi Pandit Coffee Table Book",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -75628,12 +75448,12 @@
   {
     "id": "PG2609",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Source index URL",
     "publisher": "facebook.com",
     "title": "PuneMCCIA",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA / DG relevance reported in source index",
     "topic": "General",
     "description": "Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.",
@@ -75692,12 +75512,12 @@
   {
     "id": "PG2612",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Pune Investment Report",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -75732,12 +75552,12 @@
   {
     "id": "PG2614",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Pune Incubation Report (updated)",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -75840,12 +75660,12 @@
   {
     "id": "PG2619",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "MSME case studies",
     "publisher": "Publisher not recorded",
     "title": "Proposed news article- impact led 36 districts overview",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA-related item",
     "topic": "Internal media tracking",
     "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
@@ -75882,7 +75702,7 @@
   {
     "id": "PG2621",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Social Media Archive",
     "publisher": "Zamantika",
@@ -75902,7 +75722,7 @@
   {
     "id": "PG2622",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Article",
     "format": "News Aggregator",
     "publisher": "The Bridge Chronicle",
@@ -75922,7 +75742,7 @@
   {
     "id": "PG2623",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Professional Profile",
     "publisher": "LinkedIn",
@@ -75942,7 +75762,7 @@
   {
     "id": "PG2624",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Business Directory",
     "publisher": "Adapt.io",
@@ -75962,7 +75782,7 @@
   {
     "id": "PG2625",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Social",
     "format": "Social Media",
     "publisher": "Twitter/X",
@@ -75972,17 +75792,18 @@
     "topic": "General",
     "description": "Twitter profile: Dir. Gen., MCCIA @mccia_pune & Sec. Gen., PIC @Puneintcentre || UDCT & IIMA || 6.7K posts, 5.3K followers",
     "status": "Partially verified",
-    "url": "https://zamantika.com/profile/Girbane (archived)",
+    "url": null,
     "mediaUrl": null,
     "notes": "Imported from Additional comprehensive workbook B. Supplied verification label: To Verify; independent review pending.",
     "sourceDataset": "Additional comprehensive workbook B; Prashant Girbane MCCIA ULTIMATE Research workbook",
     "duplicateCount": 2,
-    "mergeNotes": "New record absent from prior 246-record master; Matched ULTIMATE workbook by canonical URL"
+    "mergeNotes": "New record absent from prior 246-record master; Matched ULTIMATE workbook by canonical URL",
+    "sourceUrlForReview": "https://zamantika.com/profile/Girbane (archived)"
   },
   {
     "id": "PG2626",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Corporate Profile",
     "publisher": "The Company Check",
@@ -76112,12 +75933,12 @@
   {
     "id": "PG2632",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "PUNE AI REPORT",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76234,12 +76055,12 @@
   {
     "id": "PG2638",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Niryatgatha Coffee Table Book",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76296,7 +76117,7 @@
   {
     "id": "PG2641",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "Pune International Centre",
@@ -76316,7 +76137,7 @@
   {
     "id": "PG2642",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Website",
     "publisher": "Social Innovation Hub (PIC)",
@@ -76396,12 +76217,12 @@
   {
     "id": "PG2646",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Member success stories across all sectors",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76482,7 +76303,7 @@
   {
     "id": "PG2650",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Encyclopedia",
     "publisher": "Wikipedia",
@@ -76568,7 +76389,7 @@
   {
     "id": "PG2654",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Article",
     "format": "News Article",
     "publisher": "Indian Express",
@@ -76610,12 +76431,12 @@
   {
     "id": "PG2656",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MSME Marketing & Branding Handbook",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76630,12 +76451,12 @@
   {
     "id": "PG2657",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MSME Helpline Brochure_Marathi",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76650,12 +76471,12 @@
   {
     "id": "PG2658",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MSME Helpline Brochure_English",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76670,12 +76491,12 @@
   {
     "id": "PG2659",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MSME Helpline 100 Case studies 2.0",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76690,12 +76511,12 @@
   {
     "id": "PG2660",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MSME FAQs_Marathi",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76710,12 +76531,12 @@
   {
     "id": "PG2661",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MSME FAQs_English",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76730,12 +76551,12 @@
   {
     "id": "PG2662",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MCCIA_Pune GCC_Report (Incl. Coverage)",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -76878,7 +76699,7 @@
   {
     "id": "PG2669",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -76938,7 +76759,7 @@
   {
     "id": "PG2672",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -76958,7 +76779,7 @@
   {
     "id": "PG2673",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -76978,7 +76799,7 @@
   {
     "id": "PG2674",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Official Website",
     "publisher": "MCCIA Official",
@@ -76998,7 +76819,7 @@
   {
     "id": "PG2675",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -77018,7 +76839,7 @@
   {
     "id": "PG2676",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -77038,7 +76859,7 @@
   {
     "id": "PG2677",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -77058,7 +76879,7 @@
   {
     "id": "PG2678",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -77098,7 +76919,7 @@
   {
     "id": "PG2680",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA",
@@ -77118,7 +76939,7 @@
   {
     "id": "PG2681",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -77178,7 +76999,7 @@
   {
     "id": "PG2684",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -77198,7 +77019,7 @@
   {
     "id": "PG2685",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Blog",
     "publisher": "MCCIA Official",
@@ -77218,12 +77039,12 @@
   {
     "id": "PG2686",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MCCIA Annual Report 2024-25",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -77238,12 +77059,12 @@
   {
     "id": "PG2687",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MCCIA Annual Awards 2025_Profile_Marathi",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -77258,12 +77079,12 @@
   {
     "id": "PG2688",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "MCCIA Annual Awards 2025_Profile_English",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -77298,7 +77119,7 @@
   {
     "id": "PG2690",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -77318,7 +77139,7 @@
   {
     "id": "PG2691",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -77418,7 +77239,7 @@
   {
     "id": "PG2696",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Awards Page",
     "publisher": "MCCIA Official",
@@ -77438,7 +77259,7 @@
   {
     "id": "PG2697",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Awards Page",
     "publisher": "MCCIA Official",
@@ -77458,7 +77279,7 @@
   {
     "id": "PG2698",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Awards Page",
     "publisher": "MCCIA Official",
@@ -77588,12 +77409,12 @@
   {
     "id": "PG2704",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "JOURNEYS OF OPPORTUNITY: STORIES FROM MCCIA DELEGATIONS",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -77608,7 +77429,7 @@
   {
     "id": "PG2705",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -77780,12 +77601,12 @@
   {
     "id": "PG2713",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Incubation Report",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -77888,12 +77709,12 @@
   {
     "id": "PG2718",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Government Schemes_Marathi",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -77908,12 +77729,12 @@
   {
     "id": "PG2719",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Government Schemes_English",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -77972,12 +77793,12 @@
   {
     "id": "PG2722",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "FROM INCLUSION TO IMPACT: ECONOMIC CONTRIBUTIONS OF WOMEN ENTREPRENEURS",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -77992,12 +77813,12 @@
   {
     "id": "PG2723",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "FAQ Series 2 Helpline Report Marathi",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78012,12 +77833,12 @@
   {
     "id": "PG2724",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "FAQ Series 2 Helpline Report English",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78054,12 +77875,12 @@
   {
     "id": "PG2726",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Excellence in Manufacturing in Maharashtra",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78074,7 +77895,7 @@
   {
     "id": "PG2727",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Report",
     "publisher": "MCCIA Official",
@@ -78094,12 +77915,12 @@
   {
     "id": "PG2728",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Tourism Policy",
     "publisher": "Publisher not recorded",
     "title": "ERU",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA-related item",
     "topic": "Internal media tracking",
     "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
@@ -78158,12 +77979,12 @@
   {
     "id": "PG2731",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "DESTINATION MAHARASHTRA: THE RISE OF TOURISM",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78178,12 +77999,12 @@
   {
     "id": "PG2732",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "DECODING LABOUR CODES: A COMPLIANCE HANDBOOK FOR INDUSTRY",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78372,12 +78193,12 @@
   {
     "id": "PG2741",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "CSR Impact Report 2026",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78392,12 +78213,12 @@
   {
     "id": "PG2742",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "CBP Report 2.0",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78412,12 +78233,12 @@
   {
     "id": "PG2743",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "CBP Report",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78542,7 +78363,7 @@
   {
     "id": "PG2749",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Awards Page",
     "publisher": "MCCIA Official",
@@ -78582,12 +78403,12 @@
   {
     "id": "PG2751",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Autocluster",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78734,12 +78555,12 @@
   {
     "id": "PG2758",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "Annual Report (25-26)",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78842,7 +78663,7 @@
   {
     "id": "PG2763",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "Other",
     "format": "Institutional Profile",
     "publisher": "MCCIA Official",
@@ -78862,12 +78683,12 @@
   {
     "id": "PG2764",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "AI tools directory for Pune Report",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78882,12 +78703,12 @@
   {
     "id": "PG2765",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "AI Inspiration Report (100 Champions)",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -78902,12 +78723,12 @@
   {
     "id": "PG2766",
     "date": "",
-    "year": 0,
+    "year": null,
     "type": "PDF",
     "format": "Publication inventory",
     "publisher": "MCCIA",
     "title": "AI FAQs",
-    "language": "Unknown",
+    "language": "Language not recorded",
     "presence": "MCCIA publication; DG occurrence not yet checked",
     "topic": "MCCIA publication",
     "description": "Publication listed in MCCIA's internal dissemination tracker.",
@@ -79012,7 +78833,7 @@
     "type": "Image",
     "format": "Newspaper clipping image",
     "publisher": "Sakal",
-    "title": "> ६.2 SRA (कि NN हेन",
+    "title": "सेमीकंडक्टर क्षेत्रात भारताची मोठी झेप",
     "language": "Marathi",
     "presence": "MCCIA named in clipping",
     "topic": "MCCIA newspaper clipping archive",
@@ -79022,9 +78843,9 @@
     "mediaUrl": "/clippings/64/6401d1b742d9f1eed189827207e058f95a8c50c7f357042e32d18a136db4443f.webp",
     "evidenceImageUrl": "/clippings/64/6401d1b742d9f1eed189827207e058f95a8c50c7f357042e32d18a136db4443f.webp",
     "notes": "Authentic supplied newspaper clipping. OCR confidence 88.0; editorial text review recommended.",
-    "sourceDataset": "Supplied newspaper clipping archives 2021-2026",
-    "duplicateCount": 1,
-    "mergeNotes": "New image-backed record created after OCR review",
+    "sourceDataset": "Supplied newspaper clipping archives 2021-2026; Internal media tracker",
+    "duplicateCount": 2,
+    "mergeNotes": "New image-backed record created after OCR review; PG0009 merged after headline comparison against clipping preview",
     "verificationMethod": "Clipping verified",
     "evidencePrimarySha256": "6401d1b742d9f1eed189827207e058f95a8c50c7f357042e32d18a136db4443f",
     "evidenceImages": [
@@ -79036,9 +78857,15 @@
         "date": "2026-08-15",
         "page": "8",
         "quality": "Low",
-        "ocrConfidence": 88.0
+        "ocrConfidence": 88
       }
-    ]
+    ],
+    "originalOcrTitle": "> ६.2 SRA (कि NN हेन",
+    "headlineReviewStatus": "Headline checked against clipping preview; full OCR unreviewed",
+    "mergedRecordIds": [
+      "PG0009"
+    ],
+    "dateSource": "2026/August - 2026/Sakal -Special Suppliment  15.08.2026  Part No. 2 P.no. 8.jpg"
   },
   {
     "id": "PG2772",
@@ -79246,7 +79073,7 @@
         "date": "2026-02-26",
         "page": "iii",
         "quality": "Low",
-        "ocrConfidence": 92.0
+        "ocrConfidence": 92
       },
       {
         "sha256": "c62cec59d4c423b3aa07b909072c20d1e721746895327fe5ee0693bbfa3b2fd9",
@@ -79441,7 +79268,7 @@
         "date": "2026-02-13",
         "page": "3",
         "quality": "High",
-        "ocrConfidence": 86.0
+        "ocrConfidence": 86
       }
     ]
   },
@@ -79686,7 +79513,7 @@
         "date": "2026-02-12",
         "page": "22",
         "quality": "Low",
-        "ocrConfidence": 84.0
+        "ocrConfidence": 84
       }
     ]
   },
@@ -79791,7 +79618,7 @@
         "date": "2026-02-11",
         "page": "1",
         "quality": "High",
-        "ocrConfidence": 86.0
+        "ocrConfidence": 86
       }
     ]
   },
@@ -79896,7 +79723,7 @@
         "date": "2026-02-10",
         "page": "9",
         "quality": "Low",
-        "ocrConfidence": 86.0
+        "ocrConfidence": 86
       }
     ]
   },
@@ -79966,7 +79793,7 @@
         "date": "2026-02-10",
         "page": "21",
         "quality": "Low",
-        "ocrConfidence": 85.0
+        "ocrConfidence": 85
       }
     ]
   },
@@ -80336,7 +80163,7 @@
         "date": "2026-02-02",
         "page": "1",
         "quality": "High",
-        "ocrConfidence": 76.0
+        "ocrConfidence": 76
       }
     ]
   },
@@ -80371,7 +80198,7 @@
         "date": "2026-02-02",
         "page": "15",
         "quality": "Medium",
-        "ocrConfidence": 84.0
+        "ocrConfidence": 84
       }
     ]
   },
@@ -80581,7 +80408,7 @@
         "date": "2025-06-09",
         "page": "2",
         "quality": "Low",
-        "ocrConfidence": 78.0
+        "ocrConfidence": 78
       }
     ]
   },
@@ -80651,7 +80478,7 @@
         "date": "2025-02-26",
         "page": "4",
         "quality": "Low",
-        "ocrConfidence": 80.0
+        "ocrConfidence": 80
       }
     ]
   },
@@ -80966,7 +80793,7 @@
         "date": "2025-02-21",
         "page": "9",
         "quality": "High",
-        "ocrConfidence": 77.0
+        "ocrConfidence": 77
       }
     ]
   },
@@ -81218,7 +81045,7 @@
   {
     "id": "PG2833",
     "date": "2025-02-11",
-    "year": 2026,
+    "year": 2025,
     "type": "Image",
     "format": "Newspaper clipping image",
     "publisher": "Sakal",
@@ -81316,7 +81143,7 @@
         "date": "2025-02-02",
         "page": "3",
         "quality": "High",
-        "ocrConfidence": 81.0
+        "ocrConfidence": 81
       }
     ]
   },
@@ -81721,7 +81548,7 @@
         "date": "2024-07-28",
         "page": "4",
         "quality": "Medium",
-        "ocrConfidence": 87.0
+        "ocrConfidence": 87
       }
     ]
   },
@@ -81811,7 +81638,7 @@
         "date": "2024-02-27",
         "page": "3",
         "quality": "High",
-        "ocrConfidence": 88.0
+        "ocrConfidence": 88
       },
       {
         "sha256": "fa68e8743515faf1c0d1f9412411a618663fd624f3e585a6d1097638525d19e8",
@@ -81856,7 +81683,7 @@
         "date": "2024-02-27",
         "page": "17",
         "quality": "Medium",
-        "ocrConfidence": 85.0
+        "ocrConfidence": 85
       }
     ]
   },
@@ -81996,14 +81823,14 @@
         "date": "2024-02-26",
         "page": "3",
         "quality": "Medium",
-        "ocrConfidence": 91.0
+        "ocrConfidence": 91
       }
     ]
   },
   {
     "id": "PG2854",
     "date": "2024-02-25",
-    "year": 2025,
+    "year": 2024,
     "type": "Image",
     "format": "Newspaper clipping image",
     "publisher": "Pudhari",
@@ -82528,7 +82355,7 @@
   {
     "id": "PG2869",
     "date": "2024-02-04",
-    "year": 2025,
+    "year": 2024,
     "type": "Image",
     "format": "Newspaper clipping image",
     "publisher": "Times of India",
@@ -82691,7 +82518,7 @@
         "date": "2024-02-02",
         "page": "10",
         "quality": "High",
-        "ocrConfidence": 79.0
+        "ocrConfidence": 79
       }
     ]
   },
@@ -82796,7 +82623,7 @@
         "date": "2024-02-02",
         "page": "5",
         "quality": "Medium",
-        "ocrConfidence": 51.0
+        "ocrConfidence": 51
       }
     ]
   },
@@ -83081,7 +82908,7 @@
         "date": "2023-08-05",
         "page": "4",
         "quality": "Medium",
-        "ocrConfidence": 85.0
+        "ocrConfidence": 85
       }
     ]
   },
@@ -83776,7 +83603,7 @@
         "date": "2023-02-04",
         "page": "4",
         "quality": "Low",
-        "ocrConfidence": 94.0
+        "ocrConfidence": 94
       }
     ]
   },
@@ -84056,7 +83883,7 @@
         "date": "2023-02-02",
         "page": "5",
         "quality": "High",
-        "ocrConfidence": 54.0
+        "ocrConfidence": 54
       }
     ]
   },
@@ -84406,7 +84233,7 @@
         "date": "2022-04-05",
         "page": "5",
         "quality": "Medium",
-        "ocrConfidence": 93.0
+        "ocrConfidence": 93
       }
     ]
   },
@@ -84706,7 +84533,7 @@
         "date": "2022-03-28",
         "page": "7",
         "quality": "High",
-        "ocrConfidence": 56.0
+        "ocrConfidence": 56
       }
     ]
   },
@@ -84853,7 +84680,7 @@
   {
     "id": "PG2932",
     "date": "2021-01-20",
-    "year": 2022,
+    "year": 2021,
     "type": "Image",
     "format": "Newspaper clipping image",
     "publisher": "Maharashtra Times",
@@ -84888,7 +84715,7 @@
   {
     "id": "PG2933",
     "date": "2021-01-13",
-    "year": 2022,
+    "year": 2021,
     "type": "Image",
     "format": "Newspaper clipping image",
     "publisher": "Maharashtra Times",

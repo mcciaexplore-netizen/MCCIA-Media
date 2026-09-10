@@ -1,4 +1,5 @@
 import { env } from 'cloudflare:workers';
+import { getVercelStorageBindings } from './vercel-storage';
 
 const createUploadsTable = `CREATE TABLE IF NOT EXISTS clipping_uploads (
   id TEXT PRIMARY KEY NOT NULL,
@@ -171,13 +172,13 @@ async function ensureColumns(db: D1Database, table: string, columns: Record<stri
 
 export function getStorageBindings() {
   if (!env.DB || !env.FILES) {
-    throw new Error('Persistent clipping storage is unavailable in this deployment.');
+    return getVercelStorageBindings();
   }
   return { db: env.DB, files: env.FILES };
 }
 
 export function getGoogleFormIntakeSecret() {
-  return env.GOOGLE_FORM_INTAKE_SECRET?.trim() || '';
+  return env.GOOGLE_FORM_INTAKE_SECRET?.trim() || process.env.GOOGLE_FORM_INTAKE_SECRET?.trim() || '';
 }
 
 export async function ensureUploadsSchema(db: D1Database) {

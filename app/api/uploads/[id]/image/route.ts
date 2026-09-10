@@ -16,7 +16,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     const { db, files } = getStorageBindings();
     await ensureUploadsSchema(db);
     const row = await db
-      .prepare('SELECT original_key, enhanced_key, original_content_type, enhanced_content_type FROM clipping_uploads WHERE id = ? LIMIT 1')
+      .prepare("SELECT original_key, enhanced_key, original_content_type, enhanced_content_type FROM clipping_uploads WHERE id = ? AND ((reviewed = 1 AND status = 'Published') OR status = 'Auto-published') LIMIT 1")
       .bind(id)
       .first<ImageRow>();
     if (!row) return Response.json({ error: 'Clipping image not found.' }, { status: 404 });
@@ -27,7 +27,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     return new Response(object.body, {
       headers: {
         'Content-Type': object.httpMetadata?.contentType || contentType,
-        'Cache-Control': 'private, max-age=300',
+        'Cache-Control': 'private, no-store',
         'X-Content-Type-Options': 'nosniff',
       },
     });

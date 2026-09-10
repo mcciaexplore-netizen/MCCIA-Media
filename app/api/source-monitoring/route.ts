@@ -1,3 +1,5 @@
+import {pageRequest,pageResult} from '../pagination';
+import { normalizeLanguage, validPublicationDate } from '@/app/media-metadata';
 import { ensureFormIntakeSchema, getStorageBindings } from '@/db';
 import { inferDgEngagementType, normalizeDgEngagementType } from '@/app/dg-classification';
 import { authorizeAutomationRequest } from '../automation-auth';
@@ -59,16 +61,16 @@ function url(value: unknown) {
 }
 
 function toRecord(row: SourceRow) {
-  const date = row.publication_date || row.discovered_at.slice(0, 10);
+  const date = validPublicationDate(row.publication_date) || ''; // Discovery time is not a publication date.
   return {
     id: row.id,
     date,
-    year: Number(date.slice(0, 4)) || 0,
+    year: Number(date.slice(0, 4)) || null,
     type: row.discovery_type.toLowerCase().includes('e-paper') ? 'PDF' : 'Article',
     format: row.discovery_type,
     publisher: row.publisher,
     title: row.title,
-    language: row.language,
+    language: normalizeLanguage(row.language),
     presence: row.presence,
     dgEngagementType: normalizeDgEngagementType(row.dg_engagement_type),
     topic: row.topic,
@@ -88,12 +90,14 @@ function toRecord(row: SourceRow) {
   };
 }
 
-export async function GET() {
+export async function GET(request:Request) {
   try {
     const { db } = getStorageBindings();
     await ensureFormIntakeSchema(db);
-    const result = await db.prepare('SELECT * FROM source_monitoring ORDER BY discovered_at DESC LIMIT 1000').all<SourceRow>();
-    return Response.json({ records: (result.results ?? []).map(toRecord) }, { headers: { 'Cache-Control': 'public, max-age=300' } });
+    const {limit,before}=pageRequest(request);
+    const result=await db.prepare('SELECT * FROM source_monitoring WHERE (? IS NULL OR discovered_at < ? OR (discovered_at = ? AND id < ?)) ORDER BY discovered_at DESC,id DESC LIMIT ?').bind(before?.at??null,before?.at??null,before?.at??null,before?.id??null,limit+1).all<SourceRow>();
+    const page=pageResult(result.results??[],limit,r=>r.discovered_at,r=>r.id);
+    return Response.json({records:page.records.map(toRecord),nextCursor:page.nextCursor}, { headers: { 'Cache-Control': 'public, max-age=300' } });
   } catch (error) {
     return Response.json({ error: error instanceof Error ? error.message : 'Unable to load monitored sources.' }, { status: 503 });
   }
@@ -116,6 +120,8 @@ export async function POST(request: Request) {
     const id = clean(payload.id, 100) || `SRC-${crypto.randomUUID().replaceAll('-', '').slice(0, 14).toUpperCase()}`;
     const now = new Date().toISOString();
     const discoveredAt = clean(payload.discoveredAt, 100) || now;
+    if (payload.date && !validPublicationDate(payload.date)) return Response.json({ error: 'Publication date must be a real date and cannot be in the future.' }, { status: 400 });
+
     const requestedDgEngagementType = clean(payload.dgEngagementType, 100);
     const normalizedDgEngagementType = normalizeDgEngagementType(requestedDgEngagementType);
     if (requestedDgEngagementType && !normalizedDgEngagementType) {
@@ -155,10 +161,10 @@ export async function POST(request: Request) {
       .bind(
         id,
         discoveredAt,
-        clean(payload.date, 10) || null,
+        validPublicationDate(payload.date),
         clean(payload.publisher, 250, 'Publisher not recorded'),
         clean(payload.title, 1000, 'Untitled source candidate'),
-        clean(payload.language, 100, 'Unknown'),
+        normalizeLanguage(payload.language),
         clean(payload.presence, 500, 'MCCIA relevance requires review'),
         dgEngagementType,
         clean(payload.topic, 250, 'MCCIA media monitoring'),

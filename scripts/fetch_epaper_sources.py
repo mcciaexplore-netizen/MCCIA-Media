@@ -171,7 +171,9 @@ def parse_sampada(html_text: str) -> list[dict]:
         records.append(
             {
                 "id": record_id,
-                "date": f"{issue_date:%Y-%m}-01",
+                "date": "",
+                "publicationMonth": f"{issue_date:%Y-%m}",
+                "datePrecision": "month",
                 "year": issue_date.year,
                 "type": "PDF",
                 "format": "Official e-paper issue",

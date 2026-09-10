@@ -2,7 +2,7 @@ const MI = Object.freeze({
   formId: '1RhQNG2vzrBuyIEdIgEKXPBqfRi-GOrjLhWg34TibB5Q',
   archiveFolderId: '105kcn3EBPbTF8Iy5JkWudlG7FUMmeGps',
   spreadsheetId: '16O4eViZ9I7y8YbUaaPt3jMjfQW9nvdaOAHAPtw0NAgA',
-  dashboardUrl: 'https://mccia-media-monitor.guptaaarushi592.chatgpt.site',
+  dashboardUrl: 'https://mccia-media.vercel.app',
   ownerEmail: 'mccianewsclipping@gmail.com',
   fields: Object.freeze({
     date: 'Clipping / publication date', publisher: 'Publisher / news channel',
@@ -16,7 +16,7 @@ const MI = Object.freeze({
     submissions: 'Submissions', audit: 'Audit Log', errors: 'Errors',
     config: 'Configuration', sources: 'Source Monitoring', analytics: 'Analytics',
   }),
-  statuses: Object.freeze(['Pending', 'Approved', 'Rejected']),
+  statuses: Object.freeze(['Processing', 'Auto-published', 'Delivery failed', 'Withdrawn']),
   dgClassifications: Object.freeze([
     'Post/article written by DG Sir',
     'Quote given by DG Sir',
@@ -37,7 +37,7 @@ const MI_SUBMISSION_HEADERS = [
   'Archived filename', 'MIME type', 'File size', 'Drive file ID', 'Drive file URL',
   'Drive folder URL', 'Binary SHA-256', 'OCR text', 'OCR confidence', 'OCR engine',
   'Duplicate score', 'Duplicate record ID', 'Duplicate reasons', 'Link status',
-  'Link HTTP status', 'Last link check', 'Verification status', 'Editorial status',
+  'Link HTTP status', 'Last link check', 'Verification status', 'Processing status',
   'Reviewer', 'Reviewed at', 'Dashboard inbox ID', 'Approved record ID',
   'Dashboard status', 'Error message', 'Updated at', 'DG content classification',
 ];
@@ -63,13 +63,13 @@ function onMcciaFormSubmit(event) {
   const publisher = miClean_(values[MI.fields.publisher], 250) || 'Publisher requires review';
   const actor = response.getRespondentEmail() || miClean_(values[MI.fields.submittedBy], 250) || 'Form respondent';
   const fileIds = miFileIds_(response);
-  if (!date) throw new Error('A valid clipping/publication date is required.');
+  if (values[MI.fields.date] && !date) { miError_('PUBLICATION_DATE', '', response.getId(), '', new Error('Publication date is invalid or in the future.')); throw new Error('Publication date is invalid or in the future.'); }
   if (!fileIds.length) throw new Error('No uploaded evidence was found.');
   fileIds.forEach(function(fileId, index) {
     let recordId = '';
     try {
       recordId = miProcessFile_(fileId, index + 1, response, values, date, publisher);
-      miAudit_(recordId, 'SUBMITTED', actor, '', 'Pending', 'Archived, OCR processed and duplicate checked.', 'Google Form');
+      miAudit_(recordId, 'SUBMITTED', actor, '', 'Processing', 'Archived, OCR processed and sent for automatic publication.', 'Google Form');
     } catch (error) { miError_('FORM_SUBMIT', recordId, response.getId(), fileId, error); }
   });
   rebuildMcciaAnalytics();
@@ -87,7 +87,7 @@ function miProcessFile_(fileId, sequence, response, values, date, publisher) {
   file.moveTo(folder);
   file.setName(archivedName);
   const ocr = miOcr_(file, mime);
-  const headline = miClean_(values[MI.fields.headline], 500) || miHeadline_(ocr.text) || 'Headline requires editorial review';
+  const headline = miClean_(values[MI.fields.headline], 500) || miHeadline_(ocr.text) || publisher + ' clipping';
   const duplicate = miDuplicate_({ recordId: recordId, sha: sha, date: date, publisher: publisher, headline: headline, ocr: ocr.text, size: size });
   const sourceUrl = miUrl_(values[MI.fields.sourceUrl]);
   const link = sourceUrl ? miCheckUrl_(sourceUrl) : { status: 'Missing', code: '' };
@@ -112,43 +112,22 @@ function miProcessFile_(fileId, sequence, response, values, date, publisher) {
   metadata.dgEngagementType = miDgClassification_([headline, ocr.text, metadata.presence].join(' '));
   const sheet = miSheet_(MI.sheets.submissions);
   sheet.appendRow([
-    recordId, response.getId(), response.getTimestamp(), now, date, Number(date.slice(0, 4)), miMonthLabel_(date),
+    recordId, response.getId(), response.getTimestamp(), now, date, date ? Number(date.slice(0, 4)) : '', miMonthLabel_(date),
     publisher, metadata.editionCity, metadata.mediaType, metadata.presence, headline, metadata.language,
     sourceUrl, metadata.page, metadata.notes, miClean_(values[MI.fields.submittedBy], 250), metadata.submitterEmail,
     originalName, archivedName, mime, size, file.getId(), file.getUrl(), folder.getUrl(), sha,
     ocr.text, ocr.confidence, ocr.engine, duplicate.score, duplicate.recordId, duplicate.reasons.join('; '),
     link.status, link.code, sourceUrl ? now : '', duplicate.score >= 0.72 ? 'Potential duplicate — verify' : 'Unverified',
-    'Pending', '', '', '', '', 'Pending dashboard delivery', '', now, metadata.dgEngagementType,
+    'Processing', '', '', '', '', 'Pending dashboard delivery', '', now, metadata.dgEngagementType,
   ]);
   const row = sheet.getLastRow();
   metadata.sheetRow = row;
   miValidation_(sheet, row, 1);
   const delivery = miSendIntake_(file, metadata);
-  sheet.getRange(row, 40, 1, 4).setValues([[delivery.id, '', delivery.status, delivery.error]]);
+  sheet.getRange(row, 37).setValue(delivery.error ? 'Delivery failed' : delivery.publishedId ? 'Auto-published' : 'Withdrawn');
+  sheet.getRange(row, 40, 1, 4).setValues([[delivery.id, delivery.publishedId || '', delivery.status, delivery.error]]);
   sheet.getRange(row, 44).setValue(new Date());
   return recordId;
-}
-
-function onMcciaSheetEdit(event) {
-  if (!event || !event.range) return;
-  const range = event.range;
-  if (range.getSheet().getName() !== MI.sheets.submissions || range.getRow() < 2 || range.getColumn() !== 37) return;
-  const status = miClean_(range.getDisplayValue(), 50);
-  const previous = miClean_(event.oldValue, 50) || 'Pending';
-  if (MI.statuses.indexOf(status) < 0) { range.setValue(previous); throw new Error('Use Pending, Approved or Rejected.'); }
-  const row = miRow_(range.getSheet(), range.getRow());
-  const actor = Session.getActiveUser().getEmail() || Session.getEffectiveUser().getEmail() || 'Sheet editor';
-  range.getSheet().getRange(range.getRow(), 38, 1, 2).setValues([[actor, new Date()]]);
-  try {
-    const result = miDecision_(row, status, actor);
-    range.getSheet().getRange(range.getRow(), 41, 1, 3).setValues([[result.approvedId, result.status, result.error]]);
-  } catch (error) {
-    range.getSheet().getRange(range.getRow(), 43).setValue(error.message || String(error));
-    miError_('EDITORIAL_DECISION', row['Record ID'], row['Form response ID'], row['Drive file ID'], error);
-  }
-  range.getSheet().getRange(range.getRow(), 44).setValue(new Date());
-  miAudit_(row['Record ID'], 'EDITORIAL_STATUS_CHANGED', actor, previous, status, 'Decision synchronized to the dashboard.', 'Google Sheet');
-  rebuildMcciaAnalytics();
 }
 
 function runWeeklyDiscovery() {
@@ -188,15 +167,14 @@ function rebuildMcciaAnalytics() {
   const rows = [
     ['MCCIA MEDIA INTELLIGENCE — LIVE OPERATIONS', 'Count'],
     ['Total form evidence', submissions.length],
-    ['Pending editorial review', submissions.filter(function(r) { return r['Editorial status'] === 'Pending'; }).length],
-    ['Approved evidence', submissions.filter(function(r) { return r['Editorial status'] === 'Approved'; }).length],
-    ['Rejected evidence', submissions.filter(function(r) { return r['Editorial status'] === 'Rejected'; }).length],
+    ['Automatically published', submissions.filter(function(r) { return r['Processing status'] === 'Auto-published'; }).length],
+    ['Delivery errors', submissions.filter(function(r) { return r['Processing status'] === 'Delivery failed'; }).length],
     ['Potential duplicates', submissions.filter(function(r) { return Number(r['Duplicate score']) >= 0.72; }).length],
     ['OCR completed', submissions.filter(function(r) { return Boolean(r['OCR text']); }).length],
     ['Broken source links', submissions.concat(sources).filter(function(r) { return r['Link status'] === 'Broken'; }).length],
     ['Weekly source candidates', sources.length], ['', ''],
   ];
-  [['Editorial status', 'Editorial status', submissions], ['DG content classification', 'DG content classification', submissions.concat(sources)], ['People / organisation', 'People / organisation', submissions], ['Language', 'Language', submissions], ['Publisher', 'Publisher', submissions]].forEach(function(group) {
+  [['Processing status', 'Processing status', submissions], ['DG content classification', 'DG content classification', submissions.concat(sources)], ['People / organisation', 'People / organisation', submissions], ['Language', 'Language', submissions], ['Publisher', 'Publisher', submissions]].forEach(function(group) {
     rows.push([group[0], 'Count']);
     const values = count(group[2], group[1]);
     Object.keys(values).sort(function(a, b) { return values[b] - values[a]; }).slice(0, 30).forEach(function(key) { rows.push([key, values[key]]); });
@@ -220,11 +198,11 @@ function miEnsureWorkbook_() {
   const configRows = [
     ['Setting', 'Value', 'Purpose'], ['Form ID', MI.formId, 'MCCIA team collection form'],
     ['Archive folder ID', MI.archiveFolderId, 'Permanent Year / Month archive'],
-    ['Dashboard URL', MI.dashboardUrl, 'Dashboard webhook and review UI'],
+    ['Dashboard URL', MI.dashboardUrl, 'Automatic upload publication and archive'],
     ['Weekly discovery', 'Monday 07:00 Asia/Kolkata', 'Google News, RSS and e-paper search'],
     ['Daily link checks', '06:00 Asia/Kolkata', 'Broken-source monitoring'],
     ['Duplicate threshold', '0.72', 'Headline, date and image-content score'],
-    ['Editorial states', 'Pending, Approved, Rejected', 'Only approved evidence enters the main archive'],
+    ['Upload workflow', 'Processing → Auto-published', 'No manual approval; automatic metadata stays unverified'],
     ['Owner', MI.ownerEmail, 'Authorized Apps Script identity'],
   ];
   config.clearContents(); config.getRange(1, 1, configRows.length, 3).setValues(configRows); miStyle_(config, 3);
@@ -234,10 +212,10 @@ function miEnsureWorkbook_() {
 }
 
 function miInstallTriggers_(form) {
-  const handlers = ['onMcciaFormSubmit', 'onMcciaSheetEdit', 'runWeeklyDiscovery', 'monitorSourceLinks'];
+  const handlers = ['onMcciaFormSubmit', 'onMcciaSheetEdit', 'runWeeklyDiscovery', 'monitorSourceLinks', 'retryMcciaDeliveries'];
   ScriptApp.getProjectTriggers().forEach(function(trigger) { if (handlers.indexOf(trigger.getHandlerFunction()) >= 0) ScriptApp.deleteTrigger(trigger); });
   ScriptApp.newTrigger('onMcciaFormSubmit').forForm(form).onFormSubmit().create();
-  ScriptApp.newTrigger('onMcciaSheetEdit').forSpreadsheet(MI.spreadsheetId).onEdit().create();
+  ScriptApp.newTrigger('retryMcciaDeliveries').timeBased().everyMinutes(5).create();
   ScriptApp.newTrigger('runWeeklyDiscovery').timeBased().onWeekDay(ScriptApp.WeekDay.MONDAY).atHour(7).create();
   ScriptApp.newTrigger('monitorSourceLinks').timeBased().everyDays(1).atHour(6).create();
 }
@@ -258,15 +236,15 @@ function miOcr_(file, mime) {
     const created = Drive.Files.create({ name: 'OCR temporary — ' + file.getName(), mimeType: 'application/vnd.google-apps.document' }, file.getBlob(), { ocrLanguage: 'en', fields: 'id' });
     tempId = created.id; Utilities.sleep(800);
     const text = DocumentApp.openById(tempId).getBody().getText().replace(/\n{3,}/g, '\n\n').trim().slice(0, 100000);
-    return { text: text, confidence: text ? Math.min(95, Math.round(45 + Math.log(text.length + 1) * 7)) : 0, engine: 'Google Drive OCR' };
-  } catch (error) { miError_('OCR', '', '', file.getId(), error); return { text: '', confidence: 0, engine: 'Google Drive OCR failed' }; }
+    return { text: text, confidence: null, engine: 'Google Drive OCR' };
+  } catch (error) { miError_('OCR', '', '', file.getId(), error); return { text: '', confidence: null, engine: 'Google Drive OCR failed' }; }
   finally { if (tempId) try { DriveApp.getFileById(tempId).setTrashed(true); } catch (ignore) {} }
 }
 
 function miDuplicate_(candidate) {
   let best = { score: 0, recordId: '', reasons: [] };
   miObjects_(miSheet_(MI.sheets.submissions)).forEach(function(row) {
-    if (!row['Record ID'] || row['Record ID'] === candidate.recordId) return;
+    if (!row['Record ID']) return;
     const exact = miClean_(row['Binary SHA-256'], 100) === candidate.sha;
     const date = miClean_(row['Publication date'], 20) === candidate.date ? 1 : 0;
     const headline = miSimilarity_(row['Headline'], candidate.headline);
@@ -274,7 +252,7 @@ function miDuplicate_(candidate) {
     const oldSize = Number(row['File size']) || 0;
     const size = oldSize && candidate.size ? Math.min(oldSize, candidate.size) / Math.max(oldSize, candidate.size) : 0;
     const image = exact ? 1 : ocr * 0.8 + size * 0.2;
-    const score = Math.min(1, image * 0.45 + headline * 0.30 + date * 0.20 + (miNorm_(row['Publisher']) === miNorm_(candidate.publisher) ? 0.05 : 0));
+    const score = exact ? 1 : Math.min(1, image * 0.45 + headline * 0.30 + date * 0.20 + (miNorm_(row['Publisher']) === miNorm_(candidate.publisher) ? 0.05 : 0));
     const reasons = [];
     if (exact) reasons.push('exact image SHA-256'); else if (image >= 0.72) reasons.push('high OCR/image-content similarity ' + Math.round(image * 100) + '%');
     if (headline >= 0.72) reasons.push('headline similarity ' + Math.round(headline * 100) + '%'); if (date) reasons.push('same publication date');
@@ -285,26 +263,77 @@ function miDuplicate_(candidate) {
 
 function miSendIntake_(file, metadata) {
   try {
-    const response = miFetch_(MI.dashboardUrl + '/api/form-intake', { method: 'post', payload: { file: file.getBlob().setName(file.getName()), metadata: JSON.stringify(metadata) }, muteHttpExceptions: true });
+    if (file.getSize() > 100 * 1024 * 1024) throw new Error('Evidence exceeds the 100 MB collection limit.');
+    const bytes = file.getBlob().getBytes();
+    const start = miFetch_(MI.dashboardUrl + '/api/evidence-transfer', {method:'post',contentType:'application/json',muteHttpExceptions:true,payload:JSON.stringify({mode:'intake',metadata:metadata,files:{file:{name:file.getName(),type:file.getMimeType(),size:bytes.length,sha256:miSha_(bytes)}}})});
+    const session = miJson_(start.getContentText()) || {};
+    if (start.getResponseCode() !== 201 || !session.id || !session.chunkBytes) throw new Error(session.error || 'Unable to start evidence transfer.');
+    for (let offset = 0; offset < bytes.length; offset += session.chunkBytes) {
+      const chunk = Utilities.newBlob(bytes.slice(offset,offset+session.chunkBytes),'application/octet-stream');
+      let sent = false;
+      for(let attempt=0;attempt<3;attempt++){
+        const part = miFetch_(MI.dashboardUrl+'/api/evidence-transfer/'+session.id+'?file=file&part='+(offset/session.chunkBytes),{method:'put',contentType:'application/octet-stream',payload:chunk,muteHttpExceptions:true});
+        if(part.getResponseCode()===200){sent=true;break;}
+      }
+      if(!sent)throw new Error('Evidence transfer interrupted at part '+(offset/session.chunkBytes)+'. Retry delivery.');
+    }
+    const response = miFetch_(MI.dashboardUrl+'/api/evidence-transfer/'+session.id,{method:'post',muteHttpExceptions:true});
     const body = miJson_(response.getContentText()) || {};
     if (response.getResponseCode() < 200 || response.getResponseCode() >= 300) throw new Error(body.error || ('HTTP ' + response.getResponseCode()));
-    return { id: body.record && body.record.id || '', status: body.duplicate ? 'Duplicate connected' : 'Delivered', error: '' };
+    return { id: body.record && body.record.id || '', publishedId: body.publishedId || '', status: body.publishedId ? (body.duplicate ? 'Duplicate connected' : 'Auto-published') : 'Withdrawn', error: '' };
   } catch (error) { return { id: '', status: 'Delivery failed', error: error.message || String(error) }; }
-}
-
-function miDecision_(row, status, actor) {
-  const id = miClean_(row['Dashboard inbox ID'], 200);
-  if (!id) return { approvedId: '', status: 'No dashboard inbox ID', error: 'Submission has not reached the dashboard.' };
-  const response = miFetch_(MI.dashboardUrl + '/api/form-intake/' + encodeURIComponent(id), { method: 'patch', contentType: 'application/json', muteHttpExceptions: true, payload: JSON.stringify({ status: status === 'Pending' ? 'Pending OCR' : status, actor: actor, headline: row['Headline'], ocrText: row['OCR text'], ocrConfidence: row['OCR confidence'], verificationStatus: row['Verification status'], dgEngagementType: miDgValue_(row['DG content classification']) }) });
-  const body = miJson_(response.getContentText()) || {};
-  if (response.getResponseCode() < 200 || response.getResponseCode() >= 300) throw new Error(body.error || ('HTTP ' + response.getResponseCode()));
-  return { approvedId: body.record && body.record.approvedRecordId || '', status: 'Editorial status synchronized', error: '' };
 }
 
 function miFetch_(url, options) {
   const request = Object.assign({}, options || {});
   request.headers = Object.assign({}, request.headers || {}, { Authorization: 'Bearer ' + ScriptApp.getOAuthToken() });
+  const secret = PropertiesService.getScriptProperties().getProperty('GOOGLE_FORM_INTAKE_SECRET');
+  if (secret) request.headers['x-mccia-intake-secret'] = secret;
   return UrlFetchApp.fetch(url, request);
+}
+
+// Retry failed deliveries and finish previously delivered legacy submissions.
+// Existing evidence is processed by ID; it does not need another binary upload.
+function retryMcciaDeliveries() {
+  const lock = LockService.getScriptLock();
+  if (!lock.tryLock(1000)) return;
+  try {
+    const sheet = miSheet_(MI.sheets.submissions);
+    const candidates = [];
+    for (let number=2; number<=sheet.getLastRow(); number++) {
+      const row = miRow_(sheet,number);
+      if (!row['Drive file ID'] || ['Auto-published','Withdrawn','Rejected'].indexOf(row['Processing status'])>=0) continue;
+      const updated = new Date(row['Updated at']).getTime() || 0;
+      if (Date.now()-updated < 5*60*1000) continue;
+      candidates.push({number:number,row:row,updated:updated});
+    }
+    candidates.sort(function(a,b){return a.updated-b.updated;});
+    candidates.slice(0,3).forEach(function(candidate){
+      const row=candidate.row, number=candidate.number;
+      sheet.getRange(number,44).setValue(new Date());
+      let result;
+      try {
+        if (row['Dashboard inbox ID']) {
+          const response=miFetch_(MI.dashboardUrl+'/api/form-intake/'+encodeURIComponent(row['Dashboard inbox ID'])+'/auto-publish',{method:'post',muteHttpExceptions:true});
+          const body=miJson_(response.getContentText())||{};
+          if(response.getResponseCode()!==200)throw new Error(body.error||'Automatic publication failed.');
+          result={id:row['Dashboard inbox ID'],publishedId:body.publishedId||'',status:body.publishedId?'Auto-published':'Withdrawn',error:''};
+        } else {
+          const date=miDate_(row['Publication date']);
+          if(row['Publication date']&&!date)throw new Error('Publication date is invalid or in the future.');
+          result=miSendIntake_(DriveApp.getFileById(row['Drive file ID']),{
+            publicationDate:date,publisher:row['Publisher'],headline:row['Headline'],language:row['Language'],presence:row['People / organisation'],page:row['Page number'],sourceUrl:row['Source URL'],
+            ocrText:row['OCR text'],ocrConfidence:row['OCR confidence']||null,ocrEngine:row['OCR engine'],mediaType:row['Media type'],editionCity:row['Edition / city'],
+            formResponseId:row['Form response ID'],driveFileId:row['Drive file ID'],driveFileUrl:row['Drive file URL'],driveFolderUrl:row['Drive folder URL'],submitterEmail:row['Submitter email'],notes:row['Description / notes'],sheetRow:number,
+            duplicateScore:row['Duplicate score'],duplicateRecordId:row['Duplicate record ID'],duplicateReasons:row['Duplicate reasons'],dgEngagementType:miDgValue_(row['DG content classification'])
+          });
+        }
+      } catch(error) {result={id:row['Dashboard inbox ID']||'',publishedId:'',status:'Delivery failed',error:error.message||String(error)};}
+      sheet.getRange(number,37).setValue(result.error?'Delivery failed':result.publishedId?'Auto-published':'Withdrawn');
+      sheet.getRange(number,40,1,4).setValues([[result.id,result.publishedId||'',result.status,result.error]]);
+    });
+    rebuildMcciaAnalytics();
+  } finally {lock.releaseLock();}
 }
 
 function miGoogleNewsUrl_(query) { return 'https://news.google.com/rss/search?q=' + encodeURIComponent(query + ' when:8d') + '&hl=en-IN&gl=IN&ceid=IN:en'; }
@@ -323,7 +352,7 @@ function miFeed_(url, type, query, now) {
   }).filter(function(item) { return item.title && miUrl_(item.url); });
 }
 
-function miPortalRecord_(feed, now) { return { id: miSourceId_(feed.url, feed.label), discoveredAt: now, date: '', publisher: feed.label, title: feed.label + ' source requires manual review', language: 'Unknown', presence: 'MCCIA', topic: 'E-paper / publisher portal', url: feed.url, discoveryType: 'E-paper / publisher portal', query: feed.label, notes: 'Public portal monitored; page-level search may require editorial review.', dgEngagementType: '' }; }
+function miPortalRecord_(feed, now) { return { id: miSourceId_(feed.url, feed.label), discoveredAt: now, date: '', publisher: feed.label, title: feed.label + ' source requires manual review', language: 'Language not recorded', presence: 'MCCIA', topic: 'E-paper / publisher portal', url: feed.url, discoveryType: 'E-paper / publisher portal', query: feed.label, notes: 'Public portal monitored; page-level search may require editorial review.', dgEngagementType: '' }; }
 
 function miUpsertSources_(records) {
   const sheet = miSheet_(MI.sheets.sources); const byUrl = {};
@@ -359,9 +388,9 @@ function miObjects_(sheet) { if (sheet.getLastRow() < 2) return []; const values
 function miRow_(sheet, row) { const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getDisplayValues()[0]; const values = sheet.getRange(row, 1, 1, sheet.getLastColumn()).getValues()[0]; return headers.reduce(function(out, header, index) { out[header] = values[index]; return out; }, {}); }
 function miResponseMap_(response) { return response.getItemResponses().reduce(function(out, item) { const value = item.getResponse(); out[item.getItem().getTitle()] = Array.isArray(value) ? value.join(', ') : value; return out; }, {}); }
 function miFileIds_(response) { const ids = []; response.getItemResponses().forEach(function(item) { if (item.getItem().getType() !== FormApp.ItemType.FILE_UPLOAD) return; const value = item.getResponse(); (Array.isArray(value) ? value : [value]).forEach(function(id) { if (id) ids.push(String(id)); }); }); return ids; }
-function miArchiveFolder_(date) { const root = DriveApp.getFolderById(MI.archiveFolderId); const year = miFolder_(root, date.slice(0, 4)); return miFolder_(year, miMonthLabel_(date)); }
+function miArchiveFolder_(date) { const root = DriveApp.getFolderById(MI.archiveFolderId); if (!date) return miFolder_(root, 'Date unavailable'); const year = miFolder_(root, date.slice(0, 4)); return miFolder_(year, miMonthLabel_(date)); }
 function miFolder_(parent, name) { const folders = parent.getFoldersByName(name); return folders.hasNext() ? folders.next() : parent.createFolder(name); }
-function miFilename_(date, publisher, sequence, original) { const ext = (original.match(/\.[A-Za-z0-9]{2,6}$/) || ['.bin'])[0].toLowerCase(); const safe = publisher.replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '').slice(0, 70) || 'Publisher'; return date + '__' + safe + '__' + Utilities.formatString('%02d', sequence) + ext; }
+function miFilename_(date, publisher, sequence, original) { const ext = (original.match(/\.[A-Za-z0-9]{2,6}$/) || ['.bin'])[0].toLowerCase(); const safe = publisher.replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '').slice(0, 70) || 'Publisher'; return (date || 'undated') + '__' + safe + '__' + Utilities.formatString('%02d', sequence) + ext; }
 function miAudit_(record, action, actor, previous, next, details, source) { try { miSheet_(MI.sheets.audit).appendRow([new Date(), record, action, actor, previous, next, details, source]); } catch (ignore) {} }
 function miError_(stage, record, response, file, error) { try { miSheet_(MI.sheets.errors).appendRow([new Date(), stage, record, response, file, error && error.message ? error.message : String(error), error && error.stack ? error.stack : '', false, '', '']); } catch (ignore) {} }
 function miSha_(bytes) { return Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, bytes).map(function(value) { return (value < 0 ? value + 256 : value).toString(16).padStart(2, '0'); }).join(''); }
@@ -369,8 +398,28 @@ function miSimilarity_(left, right) { const a = new Set(miNorm_(left).split(' ')
 function miNorm_(value) { return String(value == null ? '' : value).toLowerCase().replace(/[^a-z0-9\u0900-\u097f]+/g, ' ').trim(); }
 function miClean_(value, max) { return String(value == null ? '' : value).replace(/\u0000/g, '').trim().slice(0, max); }
 function miUrl_(value) { const url = miClean_(value, 2000); return /^https?:\/\/\S+$/i.test(url) ? url : ''; }
-function miDate_(value) { if (value instanceof Date && !isNaN(value.getTime())) return Utilities.formatDate(value, Session.getScriptTimeZone(), 'yyyy-MM-dd'); const text = miClean_(value, 100); const iso = text.match(/^(\d{4})[-\/]?(\d{2})[-\/]?(\d{2})/); if (iso) return iso[1] + '-' + iso[2] + '-' + iso[3]; const parsed = new Date(text); return isNaN(parsed.getTime()) ? '' : Utilities.formatDate(parsed, Session.getScriptTimeZone(), 'yyyy-MM-dd'); }
-function miMonthLabel_(date) { const month = Number(date.slice(5, 7)); return Utilities.formatString('%02d-%s', month, ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][month - 1] || 'Unknown'); }
+function miDate_(value) {
+  const text = miClean_(value, 100).replace(/[०-९]/g, function(digit) { return String('०१२३४५६७८९'.indexOf(digit)); });
+  let candidate = '';
+  if (value instanceof Date && !isNaN(value.getTime())) {
+    candidate = Utilities.formatDate(value, 'Asia/Kolkata', 'yyyy-MM-dd');
+  } else {
+    const iso = text.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})(?:[T ].*)?$/);
+    const dmy = text.match(/^(\d{1,2})[./-](\d{1,2})[./-](\d{4})$/);
+    if (iso) candidate = iso[1] + '-' + iso[2].padStart(2, '0') + '-' + iso[3].padStart(2, '0');
+    else if (dmy) candidate = dmy[3] + '-' + dmy[2].padStart(2, '0') + '-' + dmy[1].padStart(2, '0');
+    else if (/[A-Za-z]{3}/.test(text)) {
+      const parsed = new Date(text); // Named months/RSS timestamps only; never guess numeric order.
+      if (!isNaN(parsed.getTime())) candidate = Utilities.formatDate(parsed, 'Asia/Kolkata', 'yyyy-MM-dd');
+    }
+  }
+  if (!candidate) return '';
+  const parsed = new Date(candidate + 'T00:00:00Z');
+  const today = Utilities.formatDate(new Date(), 'Asia/Kolkata', 'yyyy-MM-dd');
+  return !isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === candidate && candidate <= today ? candidate : '';
+}
+
+function miMonthLabel_(date) { if (!date) return 'Date unavailable'; const month = Number(date.slice(5, 7)); return Utilities.formatString('%02d-%s', month, ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][month - 1] || 'Unknown'); }
 function miMediaType_(mime) { return mime === MimeType.PDF ? 'PDF / report' : /^video\//i.test(mime) ? 'Video' : /^image\//i.test(mime) ? 'Newspaper clipping' : 'Other'; }
 function miHeadline_(text) { return String(text || '').split(/\r?\n/).map(function(line) { return line.replace(/\s+/g, ' ').trim(); }).filter(function(line) { return line.length >= 12 && line.length <= 220; }).sort(function(a, b) { return b.length - a.length; })[0] || ''; }
 function miLanguage_(text) { const value = String(text || ''); const dev = (value.match(/[\u0900-\u097f]/g) || []).length; const latin = (value.match(/[A-Za-z]/g) || []).length; return dev && latin ? 'Marathi / Hindi / English' : dev ? 'Marathi / Hindi' : latin ? 'English' : 'Unknown'; }

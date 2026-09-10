@@ -1,3 +1,4 @@
+from import_dates import assign_missing_ids, publication_date, publication_year
 import json, re
 from copy import deepcopy
 from pathlib import Path
@@ -27,15 +28,10 @@ def broad_type(value):
     if "social" in v or "linkedin" in v or "twitter" in v: return "Social"
     if any(k in v for k in ("article","interview","release","news","op ed")): return "Article"
     return "Other"
-def date_value(v):
-    if hasattr(v,"strftime"): return v.strftime("%Y-%m-%d")
-    s=text(v)
-    m=re.match(r"(20\d{2})[-/](\d{1,2})(?:[-/](\d{1,2}))?",s)
-    return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3) or 1):02d}" if m else ""
-def year_value(v, date=""):
-    try: return int(v)
-    except Exception:
-        m=re.search(r"20\d{2}",date or text(v)); return int(m.group()) if m else 0
+date_value = publication_date
+
+year_value = publication_year
+
 def domain(url):
     try: return urlsplit(url).netloc.removeprefix("www.")
     except Exception: return "Web source"
@@ -61,7 +57,7 @@ for row in rows[1:]:
         found["duplicateCount"]+=1; found["sourceDataset"] += "; Comprehensive research workbook"; stats["research_matched"]+=1
         if not found.get("description"): found["description"]=text(d.get("Summary/Key Points"))
         continue
-    rec={"id":"","date":dt,"year":year_value(d.get("Year"),dt),"type":broad_type(d.get("Content Type")),"format":text(d.get("Content Type")) or "Web source","publisher":text(d.get("Source Name/Publisher")) or domain(url),"title":title or "Untitled source","language":text(d.get("Language")) or "Unknown","presence":"Named / occurrence reported","topic":"General","description":text(d.get("Summary/Key Points")),"status":text(d.get("Verification Status")) or "Partially verified","url":url or None,"mediaUrl":None,"notes":"Imported from comprehensive research workbook; review content against source","sourceDataset":"Comprehensive research workbook","canonicalUrl":cu,"duplicateCount":1,"mergeNotes":"New source not present in dashboard baseline"}
+    rec={"id":"","date":dt,"year":year_value(d.get("Year"),dt),"type":broad_type(d.get("Content Type")),"format":text(d.get("Content Type")) or "Web source","publisher":text(d.get("Source Name/Publisher")) or domain(url),"title":title or "Untitled source","language":text(d.get("Language")) or "Language not recorded","presence":"Named / occurrence reported","topic":"General","description":text(d.get("Summary/Key Points")),"status":text(d.get("Verification Status")) or "Partially verified","url":url or None,"mediaUrl":None,"notes":"Imported from comprehensive research workbook; review content against source","sourceDataset":"Comprehensive research workbook","canonicalUrl":cu,"duplicateCount":1,"mergeNotes":"New source not present in dashboard baseline"}
     records.append(rec); stats["research_added"]+=1
     if cu: by_url[cu]=rec
     by_key[(norm(rec["title"]),rec["date"])]=rec
@@ -73,7 +69,7 @@ for url in inventory["pdf"]["urls"]:
         by_url[cu]["duplicateCount"]+=1; by_url[cu]["sourceDataset"] += "; PDF report source index"; stats["pdf_matched"]+=1; continue
     slug=Path(urlsplit(url).path).name or domain(url)
     title=re.sub(r"[-_]+"," ",slug).strip()[:180] or "Source listed in PDF report"
-    rec={"id":"","date":"","year":year_value(url),"type":broad_type(url),"format":"Source index URL","publisher":domain(url),"title":title,"language":"Unknown","presence":"MCCIA / DG relevance reported in source index","topic":"General","description":"Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.","status":"Partially verified","url":url,"mediaUrl":None,"notes":"Imported from PDF source index","sourceDataset":"PDF report source index","canonicalUrl":cu,"duplicateCount":1,"mergeNotes":"URL appeared only in PDF source index"}
+    rec={"id":"","date":"","year":year_value(url),"type":broad_type(url),"format":"Source index URL","publisher":domain(url),"title":title,"language":"Language not recorded","presence":"MCCIA / DG relevance reported in source index","topic":"General","description":"Direct URL extracted from the comprehensive PDF report source index. Page-level context requires review.","status":"Partially verified","url":url,"mediaUrl":None,"notes":"Imported from PDF source index","sourceDataset":"PDF report source index","canonicalUrl":cu,"duplicateCount":1,"mergeNotes":"URL appeared only in PDF source index"}
     records.append(rec); by_url[cu]=rec; stats["pdf_added"]+=1
 
 wb2=openpyxl.load_workbook(INTERNAL,data_only=True,read_only=True)
@@ -85,7 +81,7 @@ for row in rows[1:]:
     if key in by_key:
         by_key[key]["duplicateCount"]+=1; by_key[key]["sourceDataset"] += "; Internal media tracker"; stats["internal_matched"]+=1; continue
     quote=text(d.get("DG Quote")); published=bool(pub and quote.lower() not in ("not published","not published (to be re shared next week)"))
-    rec={"id":"","date":dt,"year":year_value("",dt),"type":broad_type(typ),"format":typ or "Internal media lead","publisher":pub or "Publisher not recorded","title":title,"language":text(d.get("Language")) or "Unknown","presence":"DG quote recorded" if quote and quote!='NA' else "MCCIA-related item","topic":"Internal media tracking","description":quote if quote and quote!='NA' else "Item listed in the MCCIA internal media tracker; no public source URL supplied.","status":"Unverified","url":None,"mediaUrl":None,"notes":"Internal tracker item; public source link missing" if published else "Planned, proposed or publication status unclear","sourceDataset":"Internal media tracker","canonicalUrl":"","duplicateCount":1,"mergeNotes":"Linkless internal record retained as a lead"}
+    rec={"id":"","date":dt,"year":year_value("",dt),"type":broad_type(typ),"format":typ or "Internal media lead","publisher":pub or "Publisher not recorded","title":title,"language":text(d.get("Language")) or "Language not recorded","presence":"DG quote recorded" if quote and quote!='NA' else "MCCIA-related item","topic":"Internal media tracking","description":quote if quote and quote!='NA' else "Item listed in the MCCIA internal media tracker; no public source URL supplied.","status":"Unverified","url":None,"mediaUrl":None,"notes":"Internal tracker item; public source link missing" if published else "Planned, proposed or publication status unclear","sourceDataset":"Internal media tracker","canonicalUrl":"","duplicateCount":1,"mergeNotes":"Linkless internal record retained as a lead"}
     records.append(rec); by_key[key]=rec; stats["internal_added"]+=1
 
 pubs=wb2["Publications"]
@@ -94,12 +90,12 @@ for row in list(pubs.iter_rows(values_only=True))[1:]:
     if not title: continue
     key=(norm(title),"")
     if key in by_key: by_key[key]["duplicateCount"]+=1; stats["internal_matched"]+=1; continue
-    rec={"id":"","date":"","year":0,"type":"PDF","format":"Publication inventory","publisher":"MCCIA","title":title,"language":"Unknown","presence":"MCCIA publication; DG occurrence not yet checked","topic":"MCCIA publication","description":"Publication listed in MCCIA's internal dissemination tracker.","status":"Unverified","url":None,"mediaUrl":None,"notes":"Confirm public publication URL and inspect for DG name/photo","sourceDataset":"Internal publications tracker","canonicalUrl":"","duplicateCount":1,"mergeNotes":"Linkless publication lead retained for research"}
+    rec={"id":"","date":"","year":None,"type":"PDF","format":"Publication inventory","publisher":"MCCIA","title":title,"language":"Language not recorded","presence":"MCCIA publication; DG occurrence not yet checked","topic":"MCCIA publication","description":"Publication listed in MCCIA's internal dissemination tracker.","status":"Unverified","url":None,"mediaUrl":None,"notes":"Confirm public publication URL and inspect for DG name/photo","sourceDataset":"Internal publications tracker","canonicalUrl":"","duplicateCount":1,"mergeNotes":"Linkless publication lead retained for research"}
     records.append(rec); by_key[key]=rec; stats["internal_added"]+=1
 
 records.sort(key=lambda r:(r.get("date") or "0000",r.get("title") or ""),reverse=True)
-for idx,r in enumerate(records,1):
-    r["id"]=f"PG{idx:03d}"
+assign_missing_ids(records)
+for r in records:
     r.pop("canonicalUrl",None)
 
 (ROOT/"app"/"records.json").write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding="utf-8")

@@ -1,3 +1,4 @@
+from import_dates import publication_date, publication_year
 import hashlib
 import io
 import json
@@ -73,13 +74,13 @@ def parse_date(filename, archive_year):
         if len(re.search(r'(20\d{2}\d?)', match.group(0)).group(1)) == 5:
             parsed_year = archive_year
         try:
-            return date(parsed_year, int(match.group(2)), int(match.group(1))).isoformat(), match.start()
+            return publication_date(date(parsed_year, int(match.group(2)), int(match.group(1)))), match.start()
         except ValueError:
             pass
     match = re.search(r'(?i)([0-3]?\d)\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(20\d{2})', value)
     if match:
         month = datetime.strptime(match.group(2), '%B').month
-        return date(int(match.group(3)), month, int(match.group(1))).isoformat(), match.start()
+        return publication_date(date(int(match.group(3)), month, int(match.group(1)))), match.start()
     return '', -1
 
 
@@ -166,7 +167,7 @@ def main():
 
                 item = {
                     'id': f'CLIP-{digest[:12].upper()}', 'sha256': digest,
-                    'year': archive_year, 'date': published, 'publisher': publisher,
+                    'year': publication_year(archive_year, published), 'date': published, 'publisher': publisher,
                     'page': page, 'originalFilename': member.filename,
                     'duplicateFilenames': [], 'sourceArchive': archive_path.name,
                     'originalLocalPath': str(original_path),
@@ -174,6 +175,8 @@ def main():
                     'width': width, 'height': height, 'byteSize': len(data),
                     'quality': quality, 'matchStatus': match_status,
                     'matchedRecordId': matched.get('id') if matched else None,
+                    'language': matched.get('language', 'Language not recorded') if matched else 'Language not recorded',
+                    'presence': matched.get('presence', 'Person not recorded') if matched else 'Person not recorded',
                     'candidateRecordIds': [record.get('id') for record in candidates],
                     'ocrText': None, 'ocrHeadline': None, 'ocrStatus': 'Not requested',
                     'reviewDecision': None,

@@ -1,4 +1,6 @@
 'use client';
+import { loadPages } from './load-pages';
+import { csvCell } from './archive-ui';
 
 import { useEffect, useMemo, useState } from 'react';
 import { DG_ENGAGEMENT_TYPES, DgEngagementType, resolveRecordDgEngagementType } from './dg-classification';
@@ -89,7 +91,7 @@ function prettyDate(value: string) {
 function downloadCsv(records: IntakeRecord[]) {
   const columns = ['Inbox ID', 'Status', 'Received', 'Publication date', 'Publisher', 'Headline', 'Page', 'Language', 'People / organisation', 'DG content classification', 'Submitter', 'Drive file', 'Source URL', 'Approved record', 'Error'];
   const rows = records.map((record) => [record.id, record.status, record.receivedAt, record.publicationDate, record.publisher, record.headline, record.page, record.language, record.presence, intakeDgClassification(record), record.submitterEmail, record.driveFileUrl, record.sourceUrl, record.approvedRecordId, record.errorMessage]);
-  const csv = [columns, ...rows].map((row) => row.map((value) => `"${String(value ?? '').replaceAll('"', '""')}"`).join(',')).join('\n');
+  const csv = [columns, ...rows].map((row) => row.map(csvCell).join(',')).join('\n');
   const link = document.createElement('a');
   link.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
   link.download = 'mccia-submission-inbox.csv';
@@ -107,6 +109,7 @@ export default function IntakeInbox({ records, loading, loadError, onReview, onR
   const [busyId, setBusyId] = useState('');
   const [actionError, setActionError] = useState('');
   const [formUrl, setFormUrl] = useState('');
+  const [auditError,setAuditError]=useState('');
   const [auditEvents, setAuditEvents] = useState<AuditEvent[]>([]);
 
   useEffect(() => {
@@ -116,10 +119,7 @@ export default function IntakeInbox({ records, loading, loadError, onReview, onR
       .catch(() => setFormUrl(''));
   }, []);
   useEffect(() => {
-    fetch('/api/audit-log', { cache: 'no-store' })
-      .then(async (response) => response.ok ? await response.json() as { events?: AuditEvent[] } : { events: [] })
-      .then((payload) => setAuditEvents(Array.isArray(payload.events) ? payload.events : []))
-      .catch(() => setAuditEvents([]));
+    loadPages<AuditEvent>('/api/audit-log','events').then(rows=>{setAuditEvents(rows);setAuditError('')}).catch(error=>{setAuditEvents([]);setAuditError(error.message||'Audit unavailable')});
   }, [records]);
 
   const years = options(records.map((record) => String(record.year)).filter((value) => value !== '0')).sort((left, right) => Number(right) - Number(left));
@@ -172,10 +172,10 @@ export default function IntakeInbox({ records, loading, loadError, onReview, onR
     if (updated) onReview(updated);
   };
 
-  return <section className="intake-workspace" id="archive" aria-labelledby="intake-title">
+  return <section className="intake-workspace" id="submission-inbox" aria-labelledby="intake-title">
     <div className="intake-intro">
       <div><p className="kicker">TEAM COLLECTION / EDITORIAL GATE</p><h2 id="intake-title">Submission inbox</h2><p>Google Form images arrive here first. Run enhancement and OCR, verify the extracted information, then approve the record into Clipping Evidence.</p>{formUrl && <a className="team-form-link" href={formUrl} target="_blank" rel="noreferrer">Open team collection form</a>}</div>
-      <div className="intake-summary"><span><strong>{records.filter((record) => record.status === 'Pending OCR').length}</strong>Pending OCR</span><span><strong>{records.filter((record) => record.status === 'In review').length}</strong>In review</span><span><strong>{records.filter((record) => record.status === 'Approved').length}</strong>Approved</span></div>
+      <div className="intake-summary"><span><strong>{loadError?'Unavailable':loading?'…':records.filter((record) => record.status === 'Pending OCR').length}</strong>Pending OCR</span><span><strong>{loadError?'Unavailable':loading?'…':records.filter((record) => record.status === 'In review').length}</strong>In review</span><span><strong>{loadError?'Unavailable':loading?'…':records.filter((record) => record.status === 'Approved').length}</strong>Approved</span></div>
     </div>
     {(loadError || actionError) && <div className="ingest-alert ingest-error" role="alert">{actionError || loadError} <button onClick={onReload}>Retry</button></div>}
     <div className="intake-controls">
@@ -185,19 +185,19 @@ export default function IntakeInbox({ records, loading, loadError, onReview, onR
       <label>People / organisation<select value={presence} onChange={(event) => setPresence(event.target.value)}><option>All</option>{presences.map((value) => <option key={value}>{value}</option>)}</select></label>
       <label>DG classification<select value={dgEngagementType} onChange={(event) => setDgEngagementType(event.target.value)}><option>All</option>{DG_ENGAGEMENT_TYPES.map((value) => <option key={value}>{value}</option>)}</select></label>
       <label>Status<select value={status} onChange={(event) => setStatus(event.target.value)}><option>All</option><option>Pending OCR</option><option>In review</option><option>Approved</option><option>Rejected</option></select></label>
-      <div className="intake-control-actions"><button onClick={clear} disabled={!active}>Clear</button><button onClick={() => downloadCsv(filtered)}>Export {filtered.length}</button></div>
+      <div className="intake-control-actions"><button onClick={clear} disabled={!active}>Clear</button><button onClick={() => downloadCsv(filtered)} disabled={Boolean(loadError)||loading}>{loadError?'Export unavailable':loading?'Export loading…':`Export ${filtered.length}`}</button></div>
     </div>
-    <div className="intake-result-heading"><strong>{loading ? 'Loading submissions…' : `${filtered.length.toLocaleString('en-IN')} submission${filtered.length === 1 ? '' : 's'}`}</strong><span>Images remain in Drive and are mirrored privately for OCR review.</span></div>
-    {!loading && !filtered.length ? <div className="empty-state"><strong>No matching submissions</strong><p>{records.length ? 'Change the inbox filters to see other workflow states.' : 'The inbox is ready. New Google Form submissions will appear here.'}</p><button onClick={clear}>Show all statuses</button></div> : <div className="intake-grid">
+    <div className="intake-result-heading"><strong>{loadError ? 'Submissions unavailable' : loading ? 'Loading submissions…' : `${filtered.length.toLocaleString('en-IN')} submission${filtered.length === 1 ? '' : 's'}`}</strong><span>Images remain in Drive and are mirrored privately for OCR review.</span></div>
+    {!loadError && !loading && !filtered.length ? <div className="empty-state"><strong>No matching submissions</strong><p>{records.length ? 'Change the inbox filters to see other workflow states.' : 'The inbox is ready. New Google Form submissions will appear here.'}</p><button onClick={clear}>Show all statuses</button></div> : <div className="intake-grid">
       {filtered.map((record) => <article className="intake-card" key={record.id}>
         <a className="intake-image" href={record.evidenceUrl || record.imageUrl} target="_blank" rel="noreferrer"><img src={record.isImage === false ? (record.originalContentType === 'application/pdf' ? '/fallbacks/pdf.webp' : '/fallbacks/video.webp') : record.imageUrl} alt={`${record.publisher} submission from ${record.publicationDate}`} loading="lazy" /><span>{record.originalFilename}</span></a>
         <div className="intake-card-body"><div className="card-meta"><span>{record.publisher}</span><time>{prettyDate(record.publicationDate)}{record.page ? ` · p.${record.page}` : ''}</time></div><h3>{record.headline || 'Headline requires OCR review'}</h3><p>{record.notes}</p><div className="tags"><span>{record.language}</span><span>{record.presence}</span>{intakeDgClassification(record)&&<span className="tag-dg-classification">{intakeDgClassification(record)}</span>}{record.mediaType&&<span>{record.mediaType}</span>}{record.ocrEngine&&<span>{record.ocrEngine}{record.ocrConfidence!=null?` · ${Math.round(record.ocrConfidence)}%`:''}</span>}{Number(record.duplicateScore)>=0.72&&<span className="tag-warning">Duplicate {Math.round(Number(record.duplicateScore)*100)}%</span>}{record.linkStatus&&<span>{record.linkStatus}{record.linkHttpStatus?` · HTTP ${record.linkHttpStatus}`:''}</span>}<span>{Math.max(1, Math.round(record.originalSize / 1024)).toLocaleString('en-IN')} KB</span>{record.submitterEmail && <span>{record.submitterEmail}</span>}</div>
           <div className="intake-provenance"><span>Inbox ID <strong>{record.id}</strong></span>{record.sheetRow && <span>Sheet row <strong>{record.sheetRow}</strong></span>}{record.approvedRecordId && <span>Evidence <strong>{record.approvedRecordId}</strong></span>}</div>
           <div className="intake-links">{record.driveFileUrl && <a href={record.driveFileUrl} target="_blank" rel="noreferrer">Drive original</a>}{record.driveFolderUrl && <a href={record.driveFolderUrl} target="_blank" rel="noreferrer">Year / month folder</a>}{record.sourceUrl && <a href={record.sourceUrl} target="_blank" rel="noreferrer">Public source</a>}</div>
-          <div className="intake-actions"><span className={`intake-status intake-status-${record.status.toLowerCase().replaceAll(' ', '-')}`}>{record.status}</span><div>{record.status !== 'Approved' && record.status !== 'Rejected' && <><button className="intake-reject" onClick={() => void patchStatus(record, 'Rejected')} disabled={busyId === record.id}>{busyId === record.id ? 'Updating…' : 'Reject'}</button><button className="intake-review" onClick={() => void beginReview(record)} disabled={busyId === record.id}>Enhance &amp; OCR</button></>}{record.status === 'Rejected' && <button className="intake-review" onClick={() => void patchStatus(record, 'Pending OCR')} disabled={busyId === record.id}>Return to inbox</button>}{record.status === 'Approved' && <span className="intake-approved">Editorial approval complete</span>}</div></div>
+          <div className="intake-actions"><span className={`intake-status intake-status-${record.status.toLowerCase().replaceAll(' ', '-')}`}>{record.status}</span><div>{record.status !== 'Approved' && record.status !== 'Rejected' && <><button className="intake-reject" onClick={() => void patchStatus(record, 'Rejected')} disabled={busyId === record.id}>{busyId === record.id ? 'Updating…' : 'Reject'}</button><button className="intake-review" onClick={() => void beginReview(record)} disabled={busyId === record.id}>Enhance &amp; OCR</button></>}{record.status === 'Rejected' && <button className="intake-review" onClick={() => void patchStatus(record, 'Pending OCR')} disabled={busyId === record.id}>Return to inbox</button>}{record.status === 'Approved' && <button className="intake-reject" onClick={()=>void patchStatus(record,'Rejected')} disabled={busyId===record.id}>Withdraw approval</button>}</div></div>
         </div>
       </article>)}
     </div>}
-    <details className="audit-trail"><summary>Editorial audit trail <span>{auditEvents.length.toLocaleString('en-IN')} events</span></summary><div>{auditEvents.slice(0,80).map((event)=><article key={event.id}><time>{new Date(event.createdAt).toLocaleString('en-IN')}</time><strong>{event.action.replaceAll('_',' ')}</strong><span>{event.recordId||'System'} · {event.actor} · {event.source}</span>{event.previousStatus||event.newStatus?<small>{event.previousStatus||'—'} → {event.newStatus||'—'}</small>:null}{event.details&&<p>{event.details}</p>}</article>)}</div></details>
+    <details className="audit-trail"><summary>Editorial audit trail <span>{auditError?'Unavailable':auditEvents.length.toLocaleString('en-IN')+' events'}</span></summary><div>{auditError&&<p role="alert">{auditError}</p>}{auditEvents.map((event)=><article key={event.id}><time>{new Date(event.createdAt).toLocaleString('en-IN')}</time><strong>{event.action.replaceAll('_',' ')}</strong><span>{event.recordId||'System'} · {event.actor} · {event.source}</span>{event.previousStatus||event.newStatus?<small>{event.previousStatus||'—'} → {event.newStatus||'—'}</small>:null}{event.details&&<p>{event.details}</p>}</article>)}</div></details>
   </section>;
 }

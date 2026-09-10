@@ -110,7 +110,7 @@ def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
     records = []
     for item in root.findall("./channel/item")[:limit]:
         date = published_date(clean_text(item.findtext("pubDate")))
-        if date and date < cutoff:
+        if date and (date < cutoff or date > datetime.now(timezone.utc)):
             continue
         source = item.find("source")
         publisher = clean_text(source.text if source is not None else "") or "Publisher not recorded"
@@ -121,19 +121,19 @@ def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
         link = clean_text(item.findtext("link"))
         if not title or not link:
             continue
-        date_value = (date or datetime.now(timezone.utc)).date().isoformat()
+        date_value = date.date().isoformat() if date else ''
         stable = normalized(f"{title}|{publisher}|{date_value}")
         record_id = f"GN-{hashlib.sha256(stable.encode('utf-8')).hexdigest()[:14].upper()}"
         records.append(
             {
                 "id": record_id,
                 "date": date_value,
-                "year": int(date_value[:4]),
+                "year": int(date_value[:4]) if date_value else None,
                 "type": "Article",
                 "format": "Google News RSS alert",
                 "publisher": publisher,
                 "title": title,
-                "language": "Unknown",
+                "language": "Language not recorded",
                 "presence": presence_for(title, watch["id"]),
                 "topic": "Weekly Google News alert",
                 "description": (

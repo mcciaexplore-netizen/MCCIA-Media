@@ -1,3 +1,4 @@
+from import_dates import assign_missing_ids, publication_date, publication_year
 import json, re
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
@@ -16,13 +17,10 @@ def canonical(url):
  try:
   p=urlsplit(txt(url)); return urlunsplit((p.scheme.lower(),p.netloc.lower().removeprefix('www.'),re.sub(r'/+','/',p.path).rstrip('/'),'',''))
  except Exception: return txt(url).rstrip('/')
-def date_value(v):
- s=txt(v); m=re.search(r'(20\d{2})[-/](\d{1,2})(?:[-/](\d{1,2}))?',s)
- return f'{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3) or 1):02d}' if m and not re.search(r'20\d{2}\s*[-–]\s*20\d{2}',s) else ''
-def year_value(v,date=''):
- s=txt(v)
- if re.search(r'20\d{2}\s*[-–]\s*20\d{2}',s): return 0
- m=re.search(r'20\d{2}',date or s); return int(m.group()) if m else 0
+date_value = publication_date
+
+year_value = publication_year
+
 def broad_type(v):
  s=norm(v)
  if any(k in s for k in ('video','tv interview','youtube')): return 'Video'
@@ -44,9 +42,9 @@ for path,sheet_name,label in FILES:
  for row in rows[1:]:
   d=dict(zip(headers,row))
   if sheet_name=='All Sources Master List':
-   url=txt(d.get('Source URL')); title=txt(d.get('Title/Headline')); dt=date_value(d.get('Date')); yr=year_value(d.get('Year'),dt); fmt=txt(d.get('Content Type')); pub=txt(d.get('Source Name')); lang=txt(d.get('Language')) or 'Unknown'; topic=txt(d.get('Category')) or 'General'; desc=txt(d.get('Summary/Key Points')); supplied=txt(d.get('Verification Status')); presence='Name / photo / relevance reported'
+   url=txt(d.get('Source URL')); title=txt(d.get('Title/Headline')); dt=date_value(d.get('Date')); yr=year_value(d.get('Year'),dt); fmt=txt(d.get('Content Type')); pub=txt(d.get('Source Name')); lang=txt(d.get('Language')) or 'Language not recorded'; topic=txt(d.get('Category')) or 'General'; desc=txt(d.get('Summary/Key Points')); supplied=txt(d.get('Verification Status')); presence='Name / photo / relevance reported'
   else:
-   url=txt(d.get('URL')); title=txt(d.get('Title/Headline')); dt=date_value(d.get('Date')); yr=year_value(d.get('Year'),dt); fmt=txt(d.get('Source Type')); pub=txt(d.get('Platform/Channel')); lang=txt(d.get('Language')) or 'Unknown'; topic='General'; desc=txt(d.get('Brief Description')); supplied=txt(d.get('Verification Status')); presence=txt(d.get('Mention Type')) or 'Named / occurrence reported'
+   url=txt(d.get('URL')); title=txt(d.get('Title/Headline')); dt=date_value(d.get('Date')); yr=year_value(d.get('Year'),dt); fmt=txt(d.get('Source Type')); pub=txt(d.get('Platform/Channel')); lang=txt(d.get('Language')) or 'Language not recorded'; topic='General'; desc=txt(d.get('Brief Description')); supplied=txt(d.get('Verification Status')); presence=txt(d.get('Mention Type')) or 'Named / occurrence reported'
   if not url and not title: continue
   cu=canonical(url); key=(norm(title),dt)
   found=by_url.get(cu) if cu else by_key.get(key)
@@ -62,7 +60,7 @@ for path,sheet_name,label in FILES:
  add_stats.append({'source':label,'input_rows':len(rows)-1,'added':added,'matched':matched})
 
 records.sort(key=lambda r:(r.get('date') or '0000',r.get('title') or ''),reverse=True)
-for i,r in enumerate(records,1): r['id']=f'PG{i:03d}'
+assign_missing_ids(records)
 TARGET.write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
 comparison=json.loads(COMPARE.read_text(encoding='utf-8'))
 comparison['additional_workbooks']=add_stats

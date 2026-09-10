@@ -1,0 +1,1514 @@
+[
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0001",
+      "date": "2026-12-07",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Sakal",
+      "title": "पुण्यातच हवे 'एमएसएमई' आयुक्तालय !",
+      "language": "Marathi",
+      "presence": "DG quote recorded",
+      "topic": "Internal media tracking",
+      "description": "एखादे सरकारी कार्यालय कुठे असावे, हा प्रश्न अनेकदा प्रशासकीय वाटतो. पण काही निर्णय हे केवळ कार्यालयाच्या पत्त्यापुरते मर्यादित नसतात, तर ते शासनाचे प्राधान्यक्रम आणि विकासाची दिशा निश्चित करणारे असतात. महाराष्ट्र सरकारने २०२६-२७ च्या अर्थसंकल्पात सूक्ष्म, लघु व मध्यम उद्योगांसाठी (एमएसएमई) स्वतंत्र आयुक्तालय स्थापन करण्याची घोषणा केली आहे. मराठा चेंबर ऑफ कॉमर्स, इंडस्ट्रीज अँड अॅग्रिकल्चरने (एमसीसीआयए) मुख्यमंत्री देवेंद्र फडणवीस यांच्यासमवेत वेळोवेळी झालेल्या चर्चेमध्ये नेमकी हीच मागणी केली होती. त्यामुळे आम्हाला या घोषणेचे विशेष स्वागत करावेसे वाटते. मात्र आता खरा प्रश्न आहे तो या आयुक्तालयाचे मुख्यालय नेमके कुठे असावे याचा. हा प्रश्न एका शहराचा नसून महाराष्ट्रातील एमएसएमई क्षेत्राला सर्वाधिक परिणामकारक सेवा कुठून देता येईल, याचा आहे.",
+      "status": "Unverified",
+      "url": null,
+      "mediaUrl": null,
+      "notes": "Internal tracker item; public source link missing",
+      "sourceDataset": "Internal media tracker",
+      "duplicateCount": 1,
+      "mergeNotes": "Linkless internal record retained as a lead"
+    },
+    "retainedRecordId": "PG0027",
+    "correctedDate": "2026-07-12",
+    "evidence": [
+      "2026/July - 2026/Sakal 12.7.2026, Sunday,P.no.8.jpg"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0002",
+      "date": "2026-11-05",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Loksatta",
+      "title": "द्रष्टा उद्यमी",
+      "language": "Marathi",
+      "presence": "MCCIA-related item",
+      "topic": "Internal media tracking",
+      "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
+      "status": "Unverified",
+      "url": null,
+      "mediaUrl": null,
+      "notes": "Internal tracker item; public source link missing",
+      "sourceDataset": "Internal media tracker; Internal media tracker",
+      "duplicateCount": 2,
+      "mergeNotes": "Linkless internal record retained as a lead"
+    },
+    "retainedRecordId": "PG0046",
+    "correctedDate": "2026-05-11",
+    "evidence": [
+      "2026/May - 2026/Loksatta 11.5.2026, Monday, P.no.7.JPG"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0003",
+      "date": "2026-09-05",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Kesari",
+      "title": "ख्यातनाम उद्योजक रवी पंडित यांचे निधन",
+      "language": "Marathi",
+      "presence": "MCCIA-related item",
+      "topic": "Internal media tracking",
+      "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
+      "status": "Unverified",
+      "url": null,
+      "mediaUrl": null,
+      "notes": "Internal tracker item; public source link missing",
+      "sourceDataset": "Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker; Internal media tracker",
+      "duplicateCount": 11,
+      "mergeNotes": "Linkless internal record retained as a lead"
+    },
+    "retainedRecordId": "PG0054",
+    "correctedDate": "2026-05-09",
+    "evidence": [
+      "2026/May - 2026/Kesari 9.5.2026 Saturday, P.no.2.jpg",
+      "2026/May - 2026/Kesari 9.5.2026, Saturday,P.no.5, Continued from P.no.1.jpg"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0004",
+      "date": "2026-09-05",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Pudhari",
+      "title": "Udyojak Ravi Pandit yanche nidhan",
+      "language": "Marathi",
+      "presence": "Named / occurrence reported",
+      "topic": "Pudhari",
+      "description": "Page 7 obituary.",
+      "status": "Partially verified",
+      "url": "https://www.pudhari.com",
+      "mediaUrl": null,
+      "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+      "sourceDataset": "Additional table.csv source inventory",
+      "duplicateCount": 1,
+      "mergeNotes": "New CSV record absent from prior 345-record master"
+    },
+    "retainedRecordId": "PG0057",
+    "correctedDate": "2026-05-09",
+    "evidence": [
+      "2026/May - 2026/Pudhari 9.5.2026, Saturday, P.no.7.jpg"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0005",
+      "date": "2026-09-05",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Times of India",
+      "title": "Ravi Pandit,KPIT Tech Co-founder,Passes away at 75",
+      "language": "English",
+      "presence": "MCCIA-related item",
+      "topic": "Internal media tracking",
+      "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
+      "status": "Unverified",
+      "url": null,
+      "mediaUrl": null,
+      "notes": "Internal tracker item; public source link missing",
+      "sourceDataset": "Internal media tracker",
+      "duplicateCount": 1,
+      "mergeNotes": "Linkless internal record retained as a lead"
+    },
+    "retainedRecordId": "PG0061",
+    "correctedDate": "2026-05-09",
+    "evidence": [
+      "2026/May - 2026/Times of India 9.5.2026, Saturday, P.no.5.jpg"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0006",
+      "date": "2026-09-05",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Kesari",
+      "title": "Khyatnam udyojak Ravi Pandit yanche nidhan",
+      "language": "Marathi",
+      "presence": "Named / occurrence reported",
+      "topic": "Kesari",
+      "description": "Front page obituary. Former MCCIA President 2004-2006.",
+      "status": "Partially verified",
+      "url": "https://www.kesari.com",
+      "mediaUrl": null,
+      "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+      "sourceDataset": "Additional table.csv source inventory",
+      "duplicateCount": 1,
+      "mergeNotes": "New CSV record absent from prior 345-record master"
+    },
+    "retainedRecordId": "PG0054",
+    "correctedDate": "2026-05-09",
+    "evidence": [
+      "2026/May - 2026/Kesari 9.5.2026 Saturday, P.no.2.jpg",
+      "2026/May - 2026/Kesari 9.5.2026, Saturday,P.no.5, Continued from P.no.1.jpg"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0007",
+      "date": "2026-09-05",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Prabhat",
+      "title": "KPIT che Ravi Pandit yanche nidhan",
+      "language": "Marathi",
+      "presence": "Named / occurrence reported",
+      "topic": "Prabhat",
+      "description": "Front page coverage.",
+      "status": "Partially verified",
+      "url": "https://www.prabhat.com",
+      "mediaUrl": null,
+      "notes": "Imported from table.csv. Supplied verification label: To Verify; independent review pending.",
+      "sourceDataset": "Additional table.csv source inventory",
+      "duplicateCount": 1,
+      "mergeNotes": "New CSV record absent from prior 345-record master"
+    },
+    "retainedRecordId": "PG0056",
+    "correctedDate": "2026-05-09",
+    "evidence": [
+      "2026/May - 2026/Prabhat 9.5.2026,Saturday, P,no. 2,Continued from P.no.1.PNG",
+      "2026/May - 2026/Prabhat 9.5.2026,Saturday,1.jpg"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0008",
+      "date": "2026-09-05",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Indian Express",
+      "title": "KPIT Techonolgies Co-founder Ravi Pandit Passes away at 76",
+      "language": "English",
+      "presence": "MCCIA-related item",
+      "topic": "Internal media tracking",
+      "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
+      "status": "Unverified",
+      "url": null,
+      "mediaUrl": null,
+      "notes": "Internal tracker item; public source link missing",
+      "sourceDataset": "Internal media tracker",
+      "duplicateCount": 1,
+      "mergeNotes": "Linkless internal record retained as a lead"
+    },
+    "retainedRecordId": "PG0062",
+    "correctedDate": "2026-05-09",
+    "evidence": [
+      "2026/May - 2026/Indian Express 9.5.2026,Saturday,P.no.4.jpg"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0014",
+      "date": "2026-08-06",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Maharashtra Times",
+      "title": "एमएसएमई'ची हेल्पलाइन सुरू",
+      "language": "Marathi",
+      "presence": "MCCIA-related item",
+      "topic": "Internal media tracking",
+      "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
+      "status": "Unverified",
+      "url": null,
+      "mediaUrl": null,
+      "notes": "Internal tracker item; public source link missing",
+      "sourceDataset": "Internal media tracker",
+      "duplicateCount": 1,
+      "mergeNotes": "Linkless internal record retained as a lead"
+    },
+    "retainedRecordId": "PG0034",
+    "correctedDate": "2026-06-08",
+    "evidence": [
+      "2026/June - 2026/Maharashtra Times 8.6.2026,Monday, P.no.5.jpg"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "date correction and duplicate merge",
+    "original": {
+      "id": "PG0028",
+      "date": "2026-07-06",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Sakal",
+      "title": "एमएसएमई क्लस्टर्सना चाचणी सुविधेसाठी 'बीआयएस'चे बळ",
+      "language": "Marathi",
+      "presence": "MCCIA-related item",
+      "topic": "Internal media tracking",
+      "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
+      "status": "Unverified",
+      "url": null,
+      "mediaUrl": null,
+      "notes": "Internal tracker item; public source link missing",
+      "sourceDataset": "Internal media tracker",
+      "duplicateCount": 1,
+      "mergeNotes": "Linkless internal record retained as a lead"
+    },
+    "retainedRecordId": "PG0037",
+    "correctedDate": "2026-06-07",
+    "evidence": [
+      "2026/June - 2026/Sakal 7.6.2026, Sunday,P.no.9.jpg"
+    ],
+    "reason": "Day/month reversal; matching publisher and headline (including transliterated headlines) in dated clipping evidence."
+  },
+  {
+    "kind": "shifted CSV columns",
+    "original": {
+      "id": "PG0131",
+      "date": "2026-01-01",
+      "year": 2026,
+      "type": "Social",
+      "format": "Social Innovation Hub Team",
+      "publisher": "Pune International Centre",
+      "title": "https://yellow-seal-502661.hostingersite.com/about-us/team/",
+      "language": "Webpage",
+      "presence": "Named / occurrence reported",
+      "topic": "Pune International Centre",
+      "description": "To Verify",
+      "status": "Partially verified",
+      "url": "Mr Prashant Girbane, Convenor of Social Innovation Hub.",
+      "mediaUrl": null,
+      "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending.",
+      "sourceDataset": "Additional table.csv source inventory",
+      "duplicateCount": 1,
+      "mergeNotes": "New CSV record absent from prior 345-record master"
+    },
+    "reason": "Title contained URL; URL contained description; language contained media format. Publication date is unconfirmed."
+  },
+  {
+    "kind": "shifted CSV columns",
+    "original": {
+      "id": "PG0132",
+      "date": "2026-01-01",
+      "year": 2026,
+      "type": "PDF",
+      "format": "Annual Report 2024-25",
+      "publisher": "Pune International Centre",
+      "title": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
+      "language": "PDF",
+      "presence": "Named / occurrence reported",
+      "topic": "Pune International Centre",
+      "description": "To Verify",
+      "status": "Partially verified",
+      "url": "Mr Prashant Girbane, General Secretary (Hon.). Dr Ravi Pandit, Treasurer (Hon.).",
+      "mediaUrl": null,
+      "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending.",
+      "sourceDataset": "Additional table.csv source inventory",
+      "duplicateCount": 1,
+      "mergeNotes": "New CSV record absent from prior 345-record master"
+    },
+    "reason": "Title contained URL; URL contained description; language contained media format. Publication date is unconfirmed."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG0269",
+    "previousYear": 2024,
+    "year": 2025,
+    "date": "2025-02-08",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "shifted CSV columns",
+    "original": {
+      "id": "PG0505",
+      "date": "2023-08-01",
+      "year": 2023,
+      "type": "PDF",
+      "format": "Annual Report 2022-23",
+      "publisher": "Pune International Centre",
+      "title": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
+      "language": "PDF",
+      "presence": "Named / occurrence reported",
+      "topic": "Pune International Centre",
+      "description": "To Verify",
+      "status": "Partially verified",
+      "url": "Mr Prashant Girbane, Gen. Secretary (Hon.). Mr Ravi Pandit, Treasurer (Hon.).",
+      "mediaUrl": null,
+      "notes": "Imported from table.csv. Supplied verification label: not stated; independent review pending.",
+      "sourceDataset": "Additional table.csv source inventory",
+      "duplicateCount": 1,
+      "mergeNotes": "New CSV record absent from prior 345-record master"
+    },
+    "reason": "Title contained URL; URL contained description; language contained media format. Publication date is unconfirmed."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2473",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2504",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2505",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2506",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2507",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2508",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2509",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2510",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2511",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2512",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2513",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2514",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2515",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2516",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2517",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2518",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2519",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2520",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2521",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2522",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2523",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2524",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2525",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2526",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2527",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2528",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2529",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2530",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2531",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2532",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2533",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2534",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2535",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2536",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2537",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2551",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2553",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2554",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2555",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2556",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2557",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2558",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2559",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2560",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2561",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2562",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2563",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2564",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2565",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2566",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2567",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2568",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2569",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2570",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2571",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2572",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2596",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2598",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2600",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2604",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2607",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2609",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2612",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2614",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2619",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2621",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2622",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2623",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2624",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2625",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2626",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2632",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2638",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2641",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2642",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2646",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2650",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2654",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2656",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2657",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2658",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2659",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2660",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2661",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2662",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2669",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2672",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2673",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2674",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2675",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2676",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2677",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2678",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2680",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2681",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2684",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2685",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2686",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2687",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2688",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2690",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2691",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2696",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2697",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2698",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2704",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2705",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2713",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2718",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2719",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2722",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2723",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2724",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2726",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2727",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2728",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2731",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2732",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2741",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2742",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2743",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2749",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2751",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2758",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2763",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2764",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2765",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2766",
+    "previousYear": 0,
+    "year": null,
+    "date": "",
+    "reason": "Missing year normalized to null."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2833",
+    "previousYear": 2026,
+    "year": 2025,
+    "date": "2025-02-11",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2854",
+    "previousYear": 2025,
+    "year": 2024,
+    "date": "2024-02-25",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2869",
+    "previousYear": 2025,
+    "year": 2024,
+    "date": "2024-02-04",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2932",
+    "previousYear": 2022,
+    "year": 2021,
+    "date": "2021-01-20",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "year normalization",
+    "id": "PG2933",
+    "previousYear": 2022,
+    "year": 2021,
+    "date": "2021-01-13",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "clipping year normalization",
+    "id": "CLIP-C1DA0D7CBC5D",
+    "previousYear": 2026,
+    "year": 2025,
+    "date": "2025-02-11",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "clipping year normalization",
+    "id": "CLIP-1C33D1B1704E",
+    "previousYear": 2025,
+    "year": 2024,
+    "date": "2024-02-25",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "clipping year normalization",
+    "id": "CLIP-2DE5C76CB634",
+    "previousYear": 2025,
+    "year": 2024,
+    "date": "2024-02-04",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "clipping year normalization",
+    "id": "CLIP-18E29DF76BC4",
+    "previousYear": 2022,
+    "year": 2021,
+    "date": "2021-01-20",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "clipping year normalization",
+    "id": "CLIP-9D1A52990472",
+    "previousYear": 2022,
+    "year": 2021,
+    "date": "2021-01-13",
+    "reason": "Year derived from publication date, not archive folder."
+  },
+  {
+    "kind": "invalid source URL",
+    "id": "PG2625",
+    "originalUrl": "https://zamantika.com/profile/Girbane (archived)",
+    "reason": "Retained for editorial review; not a valid clickable source."
+  },
+  {
+    "kind": "headline review and duplicate merge",
+    "original": {
+      "id": "PG0009",
+      "date": "2026-08-15",
+      "year": 2026,
+      "type": "Article",
+      "format": "News Article",
+      "publisher": "Sakal",
+      "title": "सेमीकंडक्टर क्षेत्रात भारताची मोठी झेप",
+      "language": "Marathi",
+      "presence": "MCCIA-related item",
+      "topic": "Internal media tracking",
+      "description": "Item listed in the MCCIA internal media tracker; no public source URL supplied.",
+      "status": "Unverified",
+      "url": null,
+      "mediaUrl": null,
+      "notes": "Internal tracker item; public source link missing",
+      "sourceDataset": "Internal media tracker",
+      "duplicateCount": 1,
+      "mergeNotes": "Linkless internal record retained as a lead"
+    },
+    "retainedRecordId": "PG2771",
+    "correctedDate": "2026-08-15",
+    "evidence": [
+      "2026/August - 2026/Sakal -Special Suppliment  15.08.2026  Part No. 2 P.no. 8.jpg"
+    ],
+    "reason": "Headline visually checked against CLIP-6401D1B742D9 preview: same Sakal story and publication date. Full OCR has not been reviewed."
+  }
+]

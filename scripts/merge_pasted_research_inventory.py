@@ -1,3 +1,4 @@
+from import_dates import assign_missing_ids, publication_date, publication_year
 import json, re
 from datetime import datetime
 from pathlib import Path
@@ -34,13 +35,7 @@ def norm(v): return re.sub(r'[^a-z0-9]+',' ',text(v).lower()).strip()
 def canonical(url):
     p=urlsplit(text(url)); host=p.netloc.lower().removeprefix('www.'); path=re.sub(r'/+','/',p.path).rstrip('/')
     return urlunsplit(('',host,path,'',''))
-def parse_date(value):
-    value=text(value)
-    for fmt in ('%b %Y','%B %Y','%Y-%m-%d'):
-        try: return datetime.strptime(value,fmt).strftime('%Y-%m-%d')
-        except ValueError: pass
-    m=re.search(r'\b(20\d{2})\b',value)
-    return f'{m.group(1)}-01-01' if m else ''
+parse_date = publication_date
 def media_type(url, section):
     low=(url+' '+section).lower()
     if '.pdf' in low: return 'PDF','PDF Document'
@@ -89,7 +84,7 @@ for dt,title,publisher,url,desc in unique:
     records.append(rec); by_url[key]=rec; added+=1
 
 records.sort(key=lambda r:(text(r.get('date')),text(r.get('title'))),reverse=True)
-for i,r in enumerate(records,1): r['id']=f'PG{i:03d}'
+assign_missing_ids(records)
 TARGET.write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
 comparison=json.loads(COMPARE.read_text(encoding='utf-8'))
 comparison['pasted_inventory']={'input_unique_urls':len(unique),'added':added,'matched':matched,'raw_unique_urls':143}
