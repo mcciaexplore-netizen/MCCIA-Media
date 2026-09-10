@@ -1,6 +1,6 @@
 import { authorizeEditor, editorRequired } from '../editor-auth';
 import { pageRequest, pageResult } from '../pagination';
-import { normalizeLanguage, validPublicationDate } from '@/app/media-metadata';
+import { normalizeLanguage, validPublicationDate, normalizeRecordMetadata } from '@/app/media-metadata';
 import { ensureFormIntakeSchema, ensureUploadsSchema, getStorageBindings } from '@/db';
 import { inferDgEngagementType, mentionsDg, normalizeDgEngagementType } from '@/app/dg-classification';
 import archive from '@/app/clippings.json' with {type:'json'};
@@ -94,7 +94,7 @@ function toClippingRecord(row: UploadedRow) {
   const automated = row.status === 'Auto-published';
   const enhanced = row.original_key !== row.enhanced_key;
   const historical = archive.find(item => item.sha256 === row.sha256);
-  return {
+  return normalizeRecordMetadata({
     id: row.id,
     sha256: row.sha256,
     year: Number(row.publication_date.slice(0, 4)) || null,
@@ -132,7 +132,7 @@ function toClippingRecord(row: UploadedRow) {
     uploaded: true,
     automated,
     status: row.status,
-  };
+  });
 }
 
 export async function GET(request: Request) {

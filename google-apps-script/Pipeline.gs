@@ -39,7 +39,7 @@ const MI_SUBMISSION_HEADERS = [
   'Duplicate score', 'Duplicate record ID', 'Duplicate reasons', 'Link status',
   'Link HTTP status', 'Last link check', 'Verification status', 'Processing status',
   'Reviewer', 'Reviewed at', 'Dashboard inbox ID', 'Approved record ID',
-  'Dashboard status', 'Error message', 'Updated at', 'DG content classification',
+  'Dashboard status', 'Error message', 'Updated at', 'DG content classification', 'Topic',
 ];
 const MI_AUDIT_HEADERS = ['Timestamp', 'Record ID', 'Action', 'Actor', 'Previous status', 'New status', 'Details', 'Source'];
 const MI_ERROR_HEADERS = ['Timestamp', 'Stage', 'Record ID', 'Form response ID', 'Drive file ID', 'Error message', 'Stack', 'Resolved', 'Resolved by', 'Resolved at'];
@@ -101,16 +101,17 @@ function miProcessFile_(fileId, sequence, response, values, date, publisher) {
     publisher: publisher, editionCity: miClean_(values[MI.fields.edition], 200),
     mediaType: miClean_(values[MI.fields.mediaType], 100) || miMediaType_(mime),
     page: miClean_(values[MI.fields.page], 50),
-    language: miClean_(values[MI.fields.language], 100) || miLanguage_(ocr.text),
+    language: miMetadataValue_(values[MI.fields.language], miLanguage_(ocr.text || headline)),
     headline: headline,
-    presence: miClean_(values[MI.fields.presence], 500) || miPresence_(headline + ' ' + ocr.text),
+    presence: miMetadataValue_(values[MI.fields.presence], miPresence_(headline + ' ' + ocr.text)),
     notes: miClean_(values[MI.fields.notes], 3000), sourceUrl: sourceUrl,
     ocrText: ocr.text, ocrConfidence: ocr.confidence, ocrEngine: ocr.engine,
     duplicateScore: duplicate.score, duplicateRecordId: duplicate.recordId,
     duplicateReasons: duplicate.reasons.join('; '), linkStatus: link.status,
     linkHttpStatus: link.code,
   };
-  metadata.dgEngagementType = miDgClassification_([headline, ocr.text, metadata.presence].join(' '));
+  metadata.dgEngagementType = miDgClassification_([headline, ocr.text].join(' '));
+  metadata.topic = miTopic_(headline + ' ' + ocr.text);
   const sheet = miSheet_(MI.sheets.submissions);
   sheet.appendRow([
     recordId, response.getId(), response.getTimestamp(), now, date, date ? Number(date.slice(0, 4)) : '', miMonthLabel_(date),
@@ -119,7 +120,7 @@ function miProcessFile_(fileId, sequence, response, values, date, publisher) {
     originalName, archivedName, mime, size, file.getId(), file.getUrl(), folder.getUrl(), sha,
     ocr.text, ocr.confidence, ocr.engine, duplicate.score, duplicate.recordId, duplicate.reasons.join('; '),
     link.status, link.code, sourceUrl ? now : '', duplicate.score >= 0.72 ? 'Potential duplicate — verify' : 'Unverified',
-    'Processing', '', '', '', '', 'Pending dashboard delivery', '', now, metadata.dgEngagementType,
+    'Processing', '', '', '', '', 'Pending dashboard delivery', '', now, metadata.dgEngagementType, metadata.topic,
   ]);
   const row = sheet.getLastRow();
   metadata.sheetRow = row;
@@ -225,7 +226,8 @@ function miInstallTriggers_(form) {
 
 function miValidateForm_(form) {
   const titles = form.getItems().map(function(item) { return item.getTitle(); });
-  const missing = Object.keys(MI.fields).map(function(key) { return MI.fields[key]; }).filter(function(title) { return titles.indexOf(title) < 0; });
+  form.getItems().forEach(function(item) { if ([MI.fields.language, MI.fields.presence].indexOf(item.getTitle()) < 0) return; const type = item.getType(); if (type === FormApp.ItemType.TEXT) item.asTextItem().setRequired(false); else if (type === FormApp.ItemType.LIST) item.asListItem().setRequired(false); else if (type === FormApp.ItemType.MULTIPLE_CHOICE) item.asMultipleChoiceItem().setRequired(false); else if (type === FormApp.ItemType.CHECKBOX) item.asCheckboxItem().setRequired(false); });
+  const missing = Object.keys(MI.fields).filter(function(key) { return ['language','presence'].indexOf(key) < 0; }).map(function(key) { return MI.fields[key]; }).filter(function(title) { return titles.indexOf(title) < 0; });
   if (missing.length) throw new Error('The Form is missing: ' + missing.join(', '));
   const uploads = form.getItems(FormApp.ItemType.FILE_UPLOAD);
   if (!uploads.length || uploads[0].getTitle() !== MI.fields.evidence) throw new Error('The evidence File upload question is missing.');
@@ -427,25 +429,55 @@ function miDate_(value) {
 function miMonthLabel_(date) { if (!date) return 'Date unavailable'; const month = Number(date.slice(5, 7)); return Utilities.formatString('%02d-%s', month, ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][month - 1] || 'Unknown'); }
 function miMediaType_(mime) { return mime === MimeType.PDF ? 'PDF / report' : /^video\//i.test(mime) ? 'Video' : /^image\//i.test(mime) ? 'Newspaper clipping' : 'Other'; }
 function miHeadline_(text) { return String(text || '').split(/\r?\n/).map(function(line) { return line.replace(/\s+/g, ' ').trim(); }).filter(function(line) { return line.length >= 12 && line.length <= 220; }).sort(function(a, b) { return b.length - a.length; })[0] || ''; }
-function miLanguage_(text) { const value = String(text || ''); const dev = (value.match(/[\u0900-\u097f]/g) || []).length; const latin = (value.match(/[A-Za-z]/g) || []).length; return dev && latin ? 'Marathi / Hindi / English' : dev ? 'Marathi / Hindi' : latin ? 'English' : 'Unknown'; }
-function miPresence_(text) { const value = miNorm_(text); if (['prashant girbane', 'प्रशांत गिरबने', 'प्रशांत गिरबाणे', 'director general', 'महासंचालक'].some(function(term) { return value.indexOf(miNorm_(term)) >= 0; })) return 'Prashant Girbane — Director General'; if (['mccia president', 'president of mccia', 'एमसीसीआयए अध्यक्ष'].some(function(term) { return value.indexOf(miNorm_(term)) >= 0; })) return 'MCCIA President'; return value.indexOf('mccia') >= 0 || value.indexOf('mahratta chamber') >= 0 || value.indexOf('एमसीसीआयए') >= 0 ? 'MCCIA' : 'MCCIA relevance requires review'; }
+function miMetadataValue_(value, fallback) { const supplied = miClean_(value, 500); return !supplied || /^(unknown|auto(?:matic)?(?: detect)?|not recorded|language not recorded|person not recorded)$/i.test(supplied) ? fallback : supplied; }
+function miLanguage_(text) { return detectMediaMetadata(text).language; }
+function miPresence_(text) { return detectMediaMetadata(text).presence; }
 function miDgValue_(value) { const text = miClean_(value, 100); return MI.dgClassifications.indexOf(text) >= 0 ? text : ''; }
-function miDgClassification_(text) {
-  const value = miNorm_(text);
-  const dg = '(?:prashant\\s+girbane|प्रशांत\\s+गिरबने|प्रशांत\\s+गिरबाणे|mccia\\s+director\\s+general|director\\s+general\\s+(?:of\\s+)?mccia)';
-  if (!(new RegExp(dg)).test(value)) return '';
-  if ((new RegExp('(?:article|column|op\\s+ed|opinion|post|blog|commentary)\\s+by\\s+' + dg)).test(value) ||
-      (new RegExp('(?:written|authored|penned)\\s+by\\s+' + dg)).test(value) ||
-      (new RegExp(dg + '\\s+(?:writes|authors|pens|wrote|लिखित|यांचा\\s+लेख|यांचा\\s+लेख)')).test(value)) return 'Post/article written by DG Sir';
-  if ((new RegExp('(?:interview|conversation|dialogue|q\\s+a|podcast|fireside\\s+chat)\\s+with\\s+' + dg)).test(value) ||
-      (new RegExp(dg + '\\s+(?:in\\s+conversation\\s+with|speaks\\s+with|talks\\s+to|interviewed\\s+by)')).test(value) ||
-      (new RegExp('(?:मुलाखत|संवाद)\\s+(?:with\\s+)?' + dg)).test(value) ||
-      (new RegExp(dg + '\\s+(?:यांची\\s+मुलाखत|यांच्याशी\\s+संवाद)')).test(value)) return 'Conversation with DG Sir';
-  if ((new RegExp(dg + '\\s+(?:said|says|stated|told|added|observed|remarked|noted|asserted|explained|commented|emphasised|emphasized|म्हणाले|सांगितले|यांनी\\s+म्हटले|यांनी\\s+सांगितले|मत\\s+व्यक्त\\s+केले)')).test(value) ||
-      (new RegExp('(?:said|stated|according\\s+to|quote\\s+from|quote\\s+by)\\s+' + dg)).test(value)) return 'Quote given by DG Sir';
-  return '';
-}
-function miTopic_(text) { const value = miNorm_(text); return /budget|policy|tax|government|infrastructure/.test(value) ? 'Policy and infrastructure' : /manufactur|industry|msme|factory/.test(value) ? 'Industry and manufacturing' : /export|trade|international|delegation/.test(value) ? 'Trade and international' : /event|summit|conference|expo|award/.test(value) ? 'Events and recognition' : 'MCCIA media monitoring'; }
+function miDgClassification_(text) { return detectMediaMetadata(text).dgEngagementType || ''; }
+function miTopic_(text) { return detectMediaMetadata(text).topic; }
 function miPublisher_(title) { const parts = String(title || '').split(' - '); return parts.length > 1 ? parts[parts.length - 1].trim() : ''; }
 function miSourceId_(url, title) { return 'SRC-' + miSha_(Utilities.newBlob(miNorm_(url + '|' + title)).getBytes()).slice(0, 14).toUpperCase(); }
 function miJson_(value) { try { return JSON.parse(value); } catch (error) { return null; } }
+
+// Shared automatic metadata rules; kept in sync with app/automatic-metadata.js.
+/** Deterministic suggestions from article text; these do not assert editorial review. */
+function detectMediaMetadata(input) {
+  const text = String(input || '').normalize('NFKC').replace(/[\u200b-\u200d\ufeff]/g, '').toLowerCase().replace(/\s+/g, ' ').slice(0, 100000);
+  const words = new Set(text.replace(/[^\p{L}\p{M}]+/gu, ' ').split(' '));
+  const hits = terms => terms.filter(term => words.has(term)).length;
+  const dev = (text.match(/[\u0900-\u097f]/g) || []).length;
+  const latin = (text.match(/[a-z]/g) || []).length;
+  const mr = hits(['आहे','आहेत','यांनी','यांचे','यांच्या','मध्ये','आणि','असे','म्हणाले','होणार','असून','साठी','करणार','केले','झाले']);
+  const hi = hits(['है','हैं','में','और','ने','कहा','होगा','लिए','किया','हुए','करने','इसके','साथ']);
+  const en = hits(['the','and','with','for','said','from','this','will','has','have','was','in','to','over','since','via']);
+  let language = 'Language not recorded';
+  if (dev >= 12) {
+    language = mr >= 2 && mr > hi ? 'Marathi' : hi >= 2 && hi > mr ? 'Hindi' : 'Marathi / Hindi';
+    if (latin > dev * 0.35 && en >= 3) language = language === 'Marathi' ? 'English / Marathi' : 'Multilingual';
+  } else if (latin >= 25 && en >= 2) language = 'English';
+  const dg = /prashan(?:t|th)\s+girban[ei]|प्रशांत\s+गिरब(?:ने|ाणे|णे|भने)/.test(text);
+  const org = /\bmccia\b|ma[hr]*atta chamber|maratha chamber|एमसीसी[आइ]यए|एमसीसीआयए|एमसीसीआईए|मराठा चेंबर/.test(text);
+  const president = /mccia.{0,20}president|president.{0,20}mccia|एमसीसीआयए.{0,15}अध्यक्ष/.test(text);
+  const people = [];
+  if (dg) people.push('Prashant Girbane — Director General');
+  if (president) people.push('MCCIA President');
+  if (/sudhanwa kopardekar|सुधन्वा कोपर्डेकर/.test(text)) people.push('Sudhanwa Kopardekar');
+  if (org) people.push('MCCIA');
+  const name = '(?:prashan(?:t|th)\\s+girban[ei]|प्रशांत\\s+गिरब(?:ने|ाणे|णे|भने))';
+  let dgEngagementType = null;
+  if (new RegExp('(?:article|column|op[- ]?ed|post|written|authored)\\s+by\\s+(?:mr\\.?\\s+)?' + name).test(text) || new RegExp(name + '\\s+(?:यांचा\\s+लेख|यांनी\\s+लिहिलेला|writes|wrote)').test(text)) dgEngagementType = 'Post/article written by DG Sir';
+  else if (new RegExp('(?:interview|conversation|podcast|dialogue)\\s+with\\s+(?:mr\\.?\\s+)?' + name).test(text) || new RegExp(name + '\\s+(?:यांची\\s+मुलाखत|यांच्याशी\\s+संवाद|in conversation with)').test(text)) dgEngagementType = 'Conversation with DG Sir';
+  else if (new RegExp(name + '[^.!?।]{0,45}(?:\\bsaid\\b|\\bsays\\b|\\bstated\\b|म्हणाले|सांगितले|नमूद केले)').test(text)) dgEngagementType = 'Quote given by DG Sir';
+  const rules = [
+    ['Exports & trade', /\bexport|\btrade\b|निर्यात|व्यापार/],
+    ['Skills & education', /\bskill|\btraining\b|\beducation\b|कौशल्य|प्रशिक्षण|शिक्षण/],
+    ['Policy & regulation', /\bpolicy\b|\bbudget\b|\bregulation|\blabour code|धोरण|अर्थसंकल्प|नियम|आयुक्तालय/],
+    ['Technology & innovation', /\bsemiconductor|\bartificial intelligence\b|\bai\b|\bcyber|तंत्रज्ञान|सेमीकंडक्टर|कृत्रिम बुद्धिमत्ता/],
+    ['Manufacturing', /\bmanufactur|\bfactory|\bproduction\b|उत्पादन|कारखान/],
+    ['Events & awards', /\bsummit\b|\bconclave\b|\bconference\b|\bawards?\b|परिषद|पुरस्कार|मेळावा/],
+    ['MSME support', /\bmsmes?\b|एमएसएमई|लघु उद्योग/],
+    ['Health & environment', /\bhealth\b|\bsustainab|\bclimate\b|आरोग्य|पर्यावरण/]
+  ];
+  const topic = (rules.find(rule => rule[1].test(text)) || ['Topic not assigned'])[0];
+  return {language, topic, presence: people.join('; ') || 'Person not recorded', dgEngagementType};
+}

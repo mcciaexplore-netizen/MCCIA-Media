@@ -1,3 +1,4 @@
+import {detectMediaMetadata} from './automatic-metadata.js';
 /** Shared rules for archive display, incoming metadata and data validation. */
 export const LANGUAGE_NOT_RECORDED = 'Language not recorded';
 export const PERSON_NOT_RECORDED = 'Person not recorded';
@@ -45,7 +46,15 @@ export function comparePublicationDates(a: string, b: string, oldest = false) {
 }
 
 export function normalizeRecordMetadata<T extends CoverageMetadata>(item: T): T {
-  return { ...item, year: publicationYear(item), language: normalizeLanguage(item.language) };
+  const evidence = [item.title, item.ocrHeadline, item.ocrText || item.ocrExcerpt, item.description].filter(Boolean).join(' ');
+  const inferred = detectMediaMetadata(evidence);
+  const languageEvidence = item.ocrText || item.ocrExcerpt || item.title || item.ocrHeadline || '';
+  const language = normalizeLanguage(item.language);
+  return { ...item, year: publicationYear(item), language: language === LANGUAGE_NOT_RECORDED ? detectMediaMetadata(languageEvidence).language : language,
+    presence: !item.presence || /^(unknown|person not recorded|mccia|mccia news)$/i.test(item.presence) ? (inferred.presence === PERSON_NOT_RECORDED ? item.presence || PERSON_NOT_RECORDED : inferred.presence) : item.presence,
+    topic: !item.topic || /^(topic not assigned|mccia coverage|mccia media monitoring)$/i.test(item.topic) ? inferred.topic : item.topic,
+    dgEngagementType: item.dgEngagementType || inferred.dgEngagementType,
+  };
 }
 
 export function normalizeLanguage(value: unknown): string {
@@ -55,6 +64,7 @@ export function normalizeLanguage(value: unknown): string {
 }
 
 export type CoverageMetadata = {
+  title?: string; description?: string; ocrHeadline?: string | null; ocrText?: string | null; ocrExcerpt?: string | null; topic?: string; dgEngagementType?: string | null;
   id?: string;
   date?: string;
   year?: number | null;

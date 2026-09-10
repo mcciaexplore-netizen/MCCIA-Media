@@ -1,3 +1,4 @@
+import {detectMediaMetadata} from '@/app/automatic-metadata.js';
 import { authorizeEditor, editorRequired } from '../editor-auth';
 import { pageRequest, pageResult } from '../pagination';
 import { normalizeLanguage, validPublicationDate } from '@/app/media-metadata';
@@ -243,6 +244,8 @@ export async function POST(request: Request) {
     const initialStatus = 'Processing';
     const confidence = metadata.ocrConfidence != null && String(metadata.ocrConfidence) !== '' && Number.isFinite(Number(metadata.ocrConfidence)) ? Math.max(0, Math.min(100, Number(metadata.ocrConfidence))) : null;
     const duplicateScore = Number.isFinite(Number(metadata.duplicateScore)) ? Math.max(0, Math.min(1, Number(metadata.duplicateScore))) : null;
+    const automatic = detectMediaMetadata(`${metadata.headline || ''} ${metadata.ocrText || ''}`);
+    const automaticLanguage = detectMediaMetadata(metadata.ocrText || metadata.headline || '').language;
     const dgEngagementType = normalizedDgEngagementType
       ?? inferDgEngagementType(`${metadata.headline || ''} ${metadata.ocrText || ''} ${metadata.presence || ''}`);
     try {
@@ -273,9 +276,9 @@ export async function POST(request: Request) {
           publicationDate,
           clean(metadata.publisher, 200, 'Publisher requires review'),
           clean(metadata.page, 50) || null,
-          normalizeLanguage(metadata.language),
+          normalizeLanguage(metadata.language) === 'Language not recorded' ? automaticLanguage : normalizeLanguage(metadata.language),
           clean(metadata.headline, 500, 'Headline requires OCR review'),
-          clean(metadata.presence, 200, 'MCCIA relevance requires review'),
+          clean(metadata.presence, 200) || automatic.presence,
           dgEngagementType,
           clean(metadata.notes, 2000, 'Submitted through the MCCIA team collection form.'),
           validUrl(metadata.sourceUrl),

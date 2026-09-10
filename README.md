@@ -161,3 +161,9 @@ System alerts read public GitHub run status and private-storage aggregate health
 The compact sticky header offers Archive, Media briefing, Reports and About, with an Add clipping link and a mobile menu. Archive export applies to the visible filtered results. Reports supports publication date ranges, topic and publisher selection; Excel cells remain typed strings rather than executable formulas.
 
 The reader can compare up to four strongly related coverage items side by side. Direct metadata correction is separately protected by editor authentication and same-origin checks. It requires the configured durable storage and MCCIA_EDITOR_KEY; it is not activated merely by publishing this code. Corrections are stored as overlays, with an audit row containing the server-derived actor and reason, and optimistic version checks to prevent overwriting newer edits. The public correction feed exposes only published title/date patches. Unlinked clippings use Report an error.
+
+## Automatic metadata
+
+Missing language, topic, people/organisation and DG participation are suggested from available headlines and OCR. Existing supplied values are retained. Marathi and Hindi use word evidence; ambiguous Devanagari stays Marathi / Hindi, and insufficient text stays unrecorded. People detection recognises named MCCIA entities rather than treating any Director General as Prashant Girbane. A mention alone does not imply a quote, authored article or interview. These suggestions are not editorial verification.
+
+The Apps Script includes the same rules (tested for parity), adds Topic to the submission log, and setup makes Language and People / organisation questions optional. Replace Code.gs and rerun setupMcciaMediaIntelligence as mccianewsclipping@gmail.com to activate the changes. Durable website storage remains required for delivery.
