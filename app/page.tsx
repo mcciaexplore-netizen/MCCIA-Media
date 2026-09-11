@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { loadPages } from './load-pages';
+import {useArchiveRefresh} from './use-archive-refresh';
 import AnalyticsPanel from './AnalyticsPanel';
 import CoverageDesk from './CoverageDesk';
 import SiteHeader, {type SiteSection} from './SiteHeader';
@@ -70,6 +71,7 @@ const contentImage=(item:RecordItem)=>{const haystack=`${item.title} ${item.topi
 const paginationPages=(total:number,current:number)=>{const selected=[1,total,current-2,current-1,current,current+1,current+2].filter(page=>page>=1&&page<=total);const sorted=[...new Set(selected)].sort((a,b)=>a-b);const result:(number|string)[]=[];sorted.forEach((page,index)=>{const previous=sorted[index-1];if(index>0&&page-previous>1)result.push(`gap-${previous}-${page}`);result.push(page)});return result};
 
 export default function Home(){
+  useArchiveRefresh();
   const [auditUpdatedAt]=useState(bundledSourceVerification.generatedAt);
   const [corrections,setCorrections]=useState<{id:string;patch:Partial<RecordItem>;updatedAt:string}[]>([]);
   const [correctionsAvailable,setCorrectionsAvailable]=useState<boolean|null>(null);

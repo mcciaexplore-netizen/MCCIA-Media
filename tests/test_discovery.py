@@ -11,6 +11,21 @@ discovery = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(discovery)
 
 class DiscoveryTest(unittest.TestCase):
+    def test_marathi_suffix_and_bilingual_editions(self):
+        self.assertTrue(discovery.relevant_headline('एमसीसीआयएच्या हेल्पलाइनचा विस्तार'))
+        self.assertIn('ceid=IN%3Aen', discovery.feed_url('MCCIA अध्यक्ष', 10, 'en'))
+        self.assertIn('ceid=IN%3Amr', discovery.feed_url('MCCIA अध्यक्ष', 10, 'mr'))
+        self.assertEqual({w['language'] for w in discovery.WATCHES}, {'en', 'mr'})
+
+    def test_daily_run_preserves_curated_articles(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);(root/'app').mkdir();output=root/'app/google-news-alerts.json'
+            original={'id':'GN-CURATED','title':'Industry summit opens today','status':'Partially verified'}
+            output.write_text(json.dumps([original]))
+            with patch.object(discovery,'ROOT',root),patch.object(discovery,'OUTPUT_PATH',output),patch.object(discovery,'parse_args',return_value=Namespace(days=10,max_per_query=50,dry_run=False)),patch.object(discovery,'WATCHES',[{'label':'A'}]),patch.object(discovery,'fetch_watch',return_value=[]):
+                self.assertEqual(discovery.main(),0)
+            self.assertEqual(json.loads(output.read_text()),[original])
+
     def test_relevance_uses_headline_not_query_or_generic_industry_terms(self):
         for title in ['MCCIA launches MSME helpline', 'Prashant Girbane on exports', 'प्रशांत गिरबणे यांचे मार्गदर्शन']:
             self.assertTrue(discovery.relevant_headline(title))

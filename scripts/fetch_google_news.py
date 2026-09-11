@@ -48,6 +48,11 @@ WATCHES = (
 )
 
 
+# Search both editions explicitly so mixed-language queries do not exclude English news.
+WATCHES = tuple({**watch, 'language': language, 'label': f"{watch['label']} ({language})"}
+                for watch in WATCHES for language in ('en', 'mr'))
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fetch MCCIA Google News RSS discoveries.")
     parser.add_argument("--days", type=int, default=10, help="Look-back window; default 10 days.")
@@ -69,7 +74,7 @@ def relevant_headline(value: str) -> bool:
     # RSS descriptions often contain unrelated sidebar headlines. Only the item's
     # own headline establishes relevance; a matching search query is not evidence.
     value = ' ' + normalized(value) + ' '
-    return any(' ' + marker + ' ' in value for marker in (
+    return bool(re.search(r' (?:एमसीसीआयए|एमसीसीआईए)(?:च्या|चे|ची|ला|ने|मध्ये)? ', value)) or any(' ' + marker + ' ' in value for marker in (
         'mccia', 'mahratta chamber', 'maratha chamber', 'prashant girbane',
         'प्रशांत गिरबने', 'प्रशांत गिरबाणे', 'प्रशांत गिरबणे',
         'एमसीसीआयए', 'एमसीसीआईए', 'मराठा चेंबर',
@@ -90,29 +95,30 @@ def published_date(value: str | None) -> datetime | None:
 
 def presence_for(title: str, watch_id: str) -> str:
     value = normalized(title)
-    if watch_id == "director-general" or any(
+    if any(
         marker in value
-        for marker in ("prashant girbane", "प्रशांत गिरबने", "प्रशांत गिरबाणे", "director general")
+        for marker in ("prashant girbane", "प्रशांत गिरबने", "प्रशांत गिरबाणे", "प्रशांत गिरबणे", "director general")
     ):
         return "Director General / Prashant Girbane mention"
-    if watch_id == "president" or any(marker in value for marker in ("president", "अध्यक्ष")):
+    if any(marker in value for marker in ("president", "अध्यक्ष")):
         return "MCCIA President mention"
     return "MCCIA mention"
 
 
-def feed_url(query: str, days: int) -> str:
+def feed_url(query: str, days: int, language: str | None = None) -> str:
+    language = language or ('mr' if re.search(r'[\u0900-\u097f]', query) else 'en')
     params = {
         "q": f"{query} when:{days}d",
-        "hl": "mr" if re.search(r"[\u0900-\u097f]", query) else "en-IN",
+        "hl": 'en-IN' if language == 'en' else language,
         "gl": "IN",
-        "ceid": "IN:mr" if re.search(r"[\u0900-\u097f]", query) else "IN:en",
+        "ceid": f'IN:{language}',
     }
     return f"{GOOGLE_NEWS_RSS}?{urllib.parse.urlencode(params)}"
 
 
 def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
     request = urllib.request.Request(
-        feed_url(watch["query"], days),
+        feed_url(watch["query"], days, watch.get('language')),
         headers={"User-Agent": "MCCIA-Media-Monitor/1.0 (+https://github.com/mcciaexplore-netizen/MCCIA-Media)"},
     )
     with urllib.request.urlopen(request, timeout=40) as response:
@@ -173,7 +179,8 @@ def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
 def main() -> int:
     args = parse_args()
     existing = json.loads(OUTPUT_PATH.read_text(encoding="utf-8")) if OUTPUT_PATH.exists() else []
-    by_id = {record["id"]: record for record in existing if record.get("id") and relevant_headline(record.get('title', ''))}
+    # Relevance gates new discoveries; scheduled collection must not delete curated records.
+    by_id = {record["id"]: record for record in existing if record.get("id")}
     def urls(record):
         return {value for value in [record.get('url'), *record.get('discoveryUrls', [])] if value}
     known_urls = set().union(*(urls(r) for r in by_id.values())) if by_id else set()
