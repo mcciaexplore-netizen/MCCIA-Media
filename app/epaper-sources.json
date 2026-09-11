@@ -1,7 +1,35 @@
 [
   {
+    "id": "EP-SAMPADA-2026-08",
+    "date": "",
+    "publicationMonth": "2026-08",
+    "datePrecision": "month",
+    "year": 2026,
+    "type": "PDF",
+    "format": "Official e-paper issue",
+    "publisher": "MCCIA Sampada",
+    "title": "Sampada — August 2026",
+    "language": "English / Marathi",
+    "presence": "MCCIA (named-person presence not yet reviewed)",
+    "topic": "MCCIA official e-paper",
+    "description": "Issue listed in MCCIA's official Sampada archive. The archive link and cover are publisher-verified; individual named-person mentions still require issue-level review.",
+    "status": "Partially verified",
+    "url": "https://www.mcciapunesampada.com/p/sampada-august-2026.html",
+    "mediaUrl": "https://www.mcciapune.com/media/Publication/CoverImages/Sampada_MCCIA_August_2026_Cover_Final_for_Print_28-8-2026_page-0001.jpg",
+    "evidenceImageUrl": null,
+    "notes": "Official MCCIA issue listing. Do not infer that every article or page contains a named-person mention without checking the issue.",
+    "sourceSearchStatus": "official-epaper-index",
+    "sourceDataset": "Official MCCIA Sampada archive",
+    "verificationMethod": "Official publisher index; issue content review pending",
+    "epaperKind": "MCCIA periodical",
+    "access": "Public issue page",
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
+  },
+  {
     "id": "EP-SAMPADA-2026-07",
     "date": "",
+    "publicationMonth": "2026-07",
+    "datePrecision": "month",
     "year": 2026,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -21,13 +49,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2026-07",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2026-06",
     "date": "",
+    "publicationMonth": "2026-06",
+    "datePrecision": "month",
     "year": 2026,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -47,13 +75,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2026-06",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2026-05",
     "date": "",
+    "publicationMonth": "2026-05",
+    "datePrecision": "month",
     "year": 2026,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -73,13 +101,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2026-05",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2026-04",
     "date": "",
+    "publicationMonth": "2026-04",
+    "datePrecision": "month",
     "year": 2026,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -99,13 +127,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2026-04",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2026-03",
     "date": "",
+    "publicationMonth": "2026-03",
+    "datePrecision": "month",
     "year": 2026,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -125,13 +153,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2026-03",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2026-02",
     "date": "",
+    "publicationMonth": "2026-02",
+    "datePrecision": "month",
     "year": 2026,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -151,13 +179,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2026-02",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2026-01",
     "date": "",
+    "publicationMonth": "2026-01",
+    "datePrecision": "month",
     "year": 2026,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -177,13 +205,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2026-01",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-12",
     "date": "",
+    "publicationMonth": "2025-12",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -203,13 +231,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-12",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-10",
     "date": "",
+    "publicationMonth": "2025-10",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -229,13 +257,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-10",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-09",
     "date": "",
+    "publicationMonth": "2025-09",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -255,13 +283,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-09",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-08",
     "date": "",
+    "publicationMonth": "2025-08",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -281,13 +309,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-08",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-07",
     "date": "",
+    "publicationMonth": "2025-07",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -307,13 +335,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-07",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-06",
     "date": "",
+    "publicationMonth": "2025-06",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -333,13 +361,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-06",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-05",
     "date": "",
+    "publicationMonth": "2025-05",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -359,13 +387,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-05",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-04",
     "date": "",
+    "publicationMonth": "2025-04",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -385,13 +413,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-04",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-03",
     "date": "",
+    "publicationMonth": "2025-03",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -411,13 +439,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-03",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-02",
     "date": "",
+    "publicationMonth": "2025-02",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -437,13 +465,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-02",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2025-01",
     "date": "",
+    "publicationMonth": "2025-01",
+    "datePrecision": "month",
     "year": 2025,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -463,13 +491,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2025-01",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-12",
     "date": "",
+    "publicationMonth": "2024-12",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -489,13 +517,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-12",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-10",
     "date": "",
+    "publicationMonth": "2024-10",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -515,13 +543,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-10",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-09",
     "date": "",
+    "publicationMonth": "2024-09",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -541,13 +569,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-09",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-08",
     "date": "",
+    "publicationMonth": "2024-08",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -567,13 +595,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-08",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-07",
     "date": "",
+    "publicationMonth": "2024-07",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -593,13 +621,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-07",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-06",
     "date": "",
+    "publicationMonth": "2024-06",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -619,13 +647,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-06",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-05",
     "date": "",
+    "publicationMonth": "2024-05",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -645,9 +673,7 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-05",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-NEWSEXPRESS-2024-04-17",
@@ -677,6 +703,8 @@
   {
     "id": "EP-SAMPADA-2024-04",
     "date": "",
+    "publicationMonth": "2024-04",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -696,13 +724,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-04",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-03",
     "date": "",
+    "publicationMonth": "2024-03",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -722,13 +750,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-03",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-02",
     "date": "",
+    "publicationMonth": "2024-02",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -748,13 +776,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-02",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2024-01",
     "date": "",
+    "publicationMonth": "2024-01",
+    "datePrecision": "month",
     "year": 2024,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -774,13 +802,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2024-01",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-12",
     "date": "",
+    "publicationMonth": "2023-12",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -800,13 +828,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-12",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-11",
     "date": "",
+    "publicationMonth": "2023-11",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -826,13 +854,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-11",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-09",
     "date": "",
+    "publicationMonth": "2023-09",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -852,13 +880,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-09",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-08",
     "date": "",
+    "publicationMonth": "2023-08",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -878,13 +906,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-08",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-07",
     "date": "",
+    "publicationMonth": "2023-07",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -904,13 +932,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-07",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-06",
     "date": "",
+    "publicationMonth": "2023-06",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -930,13 +958,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-06",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-05",
     "date": "",
+    "publicationMonth": "2023-05",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -956,13 +984,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-05",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-04",
     "date": "",
+    "publicationMonth": "2023-04",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -982,13 +1010,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-04",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-03",
     "date": "",
+    "publicationMonth": "2023-03",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1008,13 +1036,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-03",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-02",
     "date": "",
+    "publicationMonth": "2023-02",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1034,13 +1062,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-02",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2023-01",
     "date": "",
+    "publicationMonth": "2023-01",
+    "datePrecision": "month",
     "year": 2023,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1060,13 +1088,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2023-01",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-12",
     "date": "",
+    "publicationMonth": "2022-12",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1086,13 +1114,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-12",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-10",
     "date": "",
+    "publicationMonth": "2022-10",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1112,13 +1140,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-10",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-09",
     "date": "",
+    "publicationMonth": "2022-09",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1138,13 +1166,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-09",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-08",
     "date": "",
+    "publicationMonth": "2022-08",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1164,13 +1192,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-08",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-07",
     "date": "",
+    "publicationMonth": "2022-07",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1190,13 +1218,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-07",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-06",
     "date": "",
+    "publicationMonth": "2022-06",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1216,13 +1244,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-06",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-05",
     "date": "",
+    "publicationMonth": "2022-05",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1242,13 +1270,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-05",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-04",
     "date": "",
+    "publicationMonth": "2022-04",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1268,13 +1296,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-04",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-03",
     "date": "",
+    "publicationMonth": "2022-03",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1294,13 +1322,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-03",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-02",
     "date": "",
+    "publicationMonth": "2022-02",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1320,13 +1348,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-02",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2022-01",
     "date": "",
+    "publicationMonth": "2022-01",
+    "datePrecision": "month",
     "year": 2022,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1346,13 +1374,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2022-01",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-12",
     "date": "",
+    "publicationMonth": "2021-12",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1372,13 +1400,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-12",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-10",
     "date": "",
+    "publicationMonth": "2021-10",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1398,13 +1426,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-10",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-09",
     "date": "",
+    "publicationMonth": "2021-09",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1424,13 +1452,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-09",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-08",
     "date": "",
+    "publicationMonth": "2021-08",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1450,13 +1478,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-08",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-07",
     "date": "",
+    "publicationMonth": "2021-07",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1476,13 +1504,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-07",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-06",
     "date": "",
+    "publicationMonth": "2021-06",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1502,13 +1530,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-06",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-05",
     "date": "",
+    "publicationMonth": "2021-05",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1528,13 +1556,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-05",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-04",
     "date": "",
+    "publicationMonth": "2021-04",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1554,13 +1582,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-04",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-03",
     "date": "",
+    "publicationMonth": "2021-03",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1580,13 +1608,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-03",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-02",
     "date": "",
+    "publicationMonth": "2021-02",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1606,13 +1634,13 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-02",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2021-01",
     "date": "",
+    "publicationMonth": "2021-01",
+    "datePrecision": "month",
     "year": 2021,
     "type": "PDF",
     "format": "Official e-paper issue",
@@ -1632,9 +1660,7 @@
     "verificationMethod": "Official publisher index; issue content review pending",
     "epaperKind": "MCCIA periodical",
     "access": "Public issue page",
-    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/",
-    "publicationMonth": "2021-01",
-    "datePrecision": "month"
+    "archiveUrl": "https://www.mcciapune.com/publications/publication-sampada/"
   },
   {
     "id": "EP-SAMPADA-2020-03",

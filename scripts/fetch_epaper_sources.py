@@ -271,7 +271,7 @@ def main() -> int:
     records_by_id = {record["id"]: record for record in archive_records}
     for record in exact_public_evidence():
         records_by_id[record["id"]] = record
-    records = sorted(records_by_id.values(), key=lambda item: (item["date"], item["id"]), reverse=True)
+    records = sorted(records_by_id.values(), key=lambda item: (item.get("publicationMonth") or item["date"], item["id"]), reverse=True)
 
     generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     portal_payload = {"generatedAt": generated_at, "portals": PORTALS}

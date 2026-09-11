@@ -33,6 +33,16 @@ class DiscoveryTest(unittest.TestCase):
             self.assertEqual(status['failedWatches'], 1)
             self.assertEqual(status['newItems'], 0)
 
+    def test_same_source_url_does_not_create_another_id(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);(root/'app').mkdir();output=root/'app/google-news-alerts.json'
+            original={'id':'GN-OLD','title':'MCCIA news','url':'https://example.test/story','date':'2026-09-01'}
+            output.write_text(json.dumps([original]))
+            changed={**original,'id':'GN-NEW','publisher':'New publisher spelling','date':'2026-09-02'}
+            with patch.object(discovery,'ROOT',root),patch.object(discovery,'OUTPUT_PATH',output),patch.object(discovery,'parse_args',return_value=Namespace(days=10,max_per_query=50,dry_run=False)),patch.object(discovery,'WATCHES',[{'label':'A'}]),patch.object(discovery,'fetch_watch',return_value=[changed]):
+                self.assertEqual(discovery.main(),0)
+            self.assertEqual(len(json.loads(output.read_text())),1)
+
     def test_all_watches_failing_does_not_overwrite_archive(self):
         with tempfile.TemporaryDirectory() as folder:
             output = Path(folder) / 'alerts.json'

@@ -11,6 +11,7 @@ import {bilingualMatch,isCoverageArticle,type CoverageArticle} from './coverage-
 import { comparePublicationDates, normalizeRecordMetadata, peopleCategory, recordLookup, resolveClippingMetadata, YEAR_NOT_RECORDED } from './media-metadata';
 import { archiveQuery, readArchiveState, normalizeCategories, publicationLabel, publicationSortDate, QUALITY_FILTERS, qualityMatches, clippingHeadline, clippingSearchText } from './archive-ui';
 import archiveMetadata from './archive-metadata.json';
+import discoveryStatus from './discovery-status.json';
 import clippingsData from './clippings.json';
 import epaperPortalsData from './epaper-portals.json';
 import epaperSourcesData from './epaper-sources.json';
@@ -139,7 +140,7 @@ export default function Home(){
   return <main id="top">
     <SiteHeader active={section} onNavigate={navigate} formUrl={formUrl}/>
     <section className="masthead"><div><p className="kicker">AUDITABLE MEDIA ARCHIVE / 2018 TO 2026</p><h1>Coverage, connected<br/>to its evidence.</h1><p className="intro">Search structured reports about MCCIA Director General Prashant Girbane, inspect supplied newspaper clippings, and open publisher-controlled e-paper sources.</p></div><div className="metrics" aria-label="Archive summary"><div><strong>{records.length.toLocaleString('en-IN')}</strong><span>Structured records</span></div><div><strong>{clippings.length.toLocaleString('en-IN')}</strong><span>Unique clippings</span></div><div><strong>{clippings.filter(c=>c.matchedRecordId).length.toLocaleString('en-IN')}</strong><span>Connected evidence</span></div><div><strong>{epaperRecords.length.toLocaleString('en-IN')}</strong><span>E-paper sources</span></div><div><strong>{Object.values(sourceChecks).filter(check=>check.category==='headline-confirmed').length.toLocaleString('en-IN')}</strong><span>Headline-confirmed sources</span></div></div></section>
-    <p className="archive-updated">Last updated {new Date(archiveMetadata.updatedAt).toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric',timeZone:'Asia/Kolkata'})}</p>
+    <p className="archive-updated">Catalogue updated {new Date(archiveMetadata.updatedAt).toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric',timeZone:'Asia/Kolkata'})} · News last checked {discoveryStatus.checkedAt?new Date(discoveryStatus.checkedAt).toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric',timeZone:'Asia/Kolkata'}):'Not recorded'}</p>
     {section==='reports'&&<ReportBuilder records={deskCoverage}/>}
     <div id="media-briefing-panel" hidden={!briefingOpen}>{briefingOpen&&<CoverageDesk records={deskCoverage}/>}</div>
     <AnalyticsPanel records={records} clippings={clippings} sourceChecks={sourceChecks} auditUpdatedAt={auditUpdatedAt}/>

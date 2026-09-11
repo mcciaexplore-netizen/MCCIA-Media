@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "app" / "google-news-alerts.json"
 GOOGLE_NEWS_RSS = "https://news.google.com/rss/search"
 WATCHES = (
+    {"id":"marathi", "label":"Marathi MCCIA news", "query":'"एमसीसीआयए" OR "मराठा चेंबर" OR "प्रशांत गिरबणे"'},
     {
         "id": "mccia",
         "label": "MCCIA",
@@ -102,9 +103,9 @@ def presence_for(title: str, watch_id: str) -> str:
 def feed_url(query: str, days: int) -> str:
     params = {
         "q": f"{query} when:{days}d",
-        "hl": "en-IN",
+        "hl": "mr" if re.search(r"[\u0900-\u097f]", query) else "en-IN",
         "gl": "IN",
-        "ceid": "IN:en",
+        "ceid": "IN:mr" if re.search(r"[\u0900-\u097f]", query) else "IN:en",
     }
     return f"{GOOGLE_NEWS_RSS}?{urllib.parse.urlencode(params)}"
 
@@ -132,7 +133,7 @@ def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
         link = clean_text(item.findtext("link"))
         if not title or not link or not relevant_headline(title):
             continue
-        date_value = date.date().isoformat() if date else ''
+        date_value = date.astimezone(timezone(timedelta(hours=5, minutes=30))).date().isoformat() if date else ''
         stable = normalized(f"{title}|{publisher}|{date_value}")
         record_id = f"GN-{hashlib.sha256(stable.encode('utf-8')).hexdigest()[:14].upper()}"
         records.append(
@@ -173,14 +174,22 @@ def main() -> int:
     args = parse_args()
     existing = json.loads(OUTPUT_PATH.read_text(encoding="utf-8")) if OUTPUT_PATH.exists() else []
     by_id = {record["id"]: record for record in existing if record.get("id") and relevant_headline(record.get('title', ''))}
+    def urls(record):
+        return {value for value in [record.get('url'), *record.get('discoveryUrls', [])] if value}
+    known_urls = set().union(*(urls(r) for r in by_id.values())) if by_id else set()
+    bundled = ROOT / 'app' / 'records.json'
+    if bundled.exists():
+        for record in json.loads(bundled.read_text(encoding='utf-8')):
+            known_urls.update(urls(record))
     errors = []
     discovered = 0
     for watch in WATCHES:
         try:
             records = fetch_watch(watch, args.days, args.max_per_query)
             for record in records:
-                if record["id"] not in by_id:
+                if record["id"] not in by_id and record.get("url") not in known_urls:
                     by_id[record["id"]] = record
+                    known_urls.update(urls(record))
                     discovered += 1
         except Exception as exc:  # Keep other watches useful when one endpoint fails.
             errors.append({"watch": watch["label"], "error": str(exc)[:300]})
