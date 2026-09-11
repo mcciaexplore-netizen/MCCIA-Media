@@ -176,6 +176,15 @@ def fetch_watch(watch: dict, days: int, limit: int) -> list[dict]:
     return records
 
 
+def story_key(record: dict) -> tuple[str, str, str] | None:
+    title = normalized(re.sub(r'^Pune News\s*[:：-]\s*', '', record.get('title', ''), flags=re.I))
+    publisher = normalized(record.get('publisher', ''))
+    publisher = {'esakal': 'sakal', 'the times of india': 'times of india',
+                 'timesofindia indiatimes com': 'times of india'}.get(publisher, publisher)
+    date = record.get('date', '')
+    return (title, publisher, date) if title and publisher and date else None
+
+
 def main() -> int:
     args = parse_args()
     existing = json.loads(OUTPUT_PATH.read_text(encoding="utf-8")) if OUTPUT_PATH.exists() else []
@@ -184,19 +193,33 @@ def main() -> int:
     def urls(record):
         return {value for value in [record.get('url'), *record.get('discoveryUrls', [])] if value}
     known_urls = set().union(*(urls(r) for r in by_id.values())) if by_id else set()
+    identities = {}
+    for record in sorted(by_id.values(), key=lambda r: r.get('status') == 'Unverified'):
+        key = story_key(record)
+        if key and key in identities:
+            kept = identities[key]
+            kept['discoveryUrls'] = sorted(urls(kept) | urls(record) - {kept.get('url')})
+            kept['mergedRecordIds'] = sorted(set(kept.get('mergedRecordIds', [])) | {record['id']})
+            by_id.pop(record['id'], None)
+        elif key:
+            identities[key] = record
     bundled = ROOT / 'app' / 'records.json'
     if bundled.exists():
         for record in json.loads(bundled.read_text(encoding='utf-8')):
             known_urls.update(urls(record))
+            if story_key(record):
+                identities.setdefault(story_key(record), record)
     errors = []
     discovered = 0
     for watch in WATCHES:
         try:
             records = fetch_watch(watch, args.days, args.max_per_query)
             for record in records:
-                if record["id"] not in by_id and record.get("url") not in known_urls:
+                if record["id"] not in by_id and record.get("url") not in known_urls and story_key(record) not in identities:
                     by_id[record["id"]] = record
                     known_urls.update(urls(record))
+                    if story_key(record):
+                        identities[story_key(record)] = record
                     discovered += 1
         except Exception as exc:  # Keep other watches useful when one endpoint fails.
             errors.append({"watch": watch["label"], "error": str(exc)[:300]})

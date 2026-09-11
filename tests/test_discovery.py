@@ -11,6 +11,12 @@ discovery = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(discovery)
 
 class DiscoveryTest(unittest.TestCase):
+    def test_same_publisher_story_with_rss_prefix_is_duplicate(self):
+        article={'title':'एमसीसीआयएच्या हेल्पलाइनचा विस्तार','publisher':'Sakal','date':'2026-09-01'}
+        rss={**article,'title':'Pune News : '+article['title'],'publisher':'Esakal'}
+        self.assertEqual(discovery.story_key(article),discovery.story_key(rss))
+        self.assertNotEqual(discovery.story_key(article),discovery.story_key({**article,'publisher':'Loksatta'}))
+
     def test_marathi_suffix_and_bilingual_editions(self):
         self.assertTrue(discovery.relevant_headline('एमसीसीआयएच्या हेल्पलाइनचा विस्तार'))
         self.assertIn('ceid=IN%3Aen', discovery.feed_url('MCCIA अध्यक्ष', 10, 'en'))
