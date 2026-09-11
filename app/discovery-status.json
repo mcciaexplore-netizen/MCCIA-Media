@@ -1,9 +1,7 @@
 {
-  "checkedAt": "2026-09-11T05:26:43.018811+00:00",
+  "checkedAt": "2026-09-11T05:37:44.845619+00:00",
   "state": "success",
-  "newItems": 4,
+  "newItems": 0,
   "failedWatches": 0,
-  "totalWatches": 5,
-  "checkedThrough": "2026-09-11",
-  "newEpaperIssues": 1
+  "totalWatches": 5
 }
