@@ -80,33 +80,14 @@
     "sourceSearchStatus": "public-source-refresh",
     "verificationMethod": "Publisher page and publication metadata checked",
     "firstSeenAt": "2026-09-11T05:28:01.062972+00:00",
-    "googleNewsFetchedAt": "2026-09-11T05:28:01.062972+00:00"
-  },
-  {
-    "id": "GN-852B2E35C5D6A1",
-    "date": "2026-09-01",
-    "year": 2026,
-    "type": "Article",
-    "format": "Google News RSS alert",
-    "publisher": "Esakal",
-    "title": "Pune News : एमसीसीआयएच्या हेल्पलाइनचा दहा हजार सल्लामसलतींचा टप्पा पूर्ण; देशातील २९ राज्ये आणि केंद्रशासित प्रदेशांमधील एमएसएमईना मदत",
-    "language": "Language not recorded",
-    "presence": "MCCIA mention",
-    "topic": "Daily Google News alert",
-    "description": "Automatically discovered by the Marathi MCCIA news (mr) Google News RSS watch. Open the source and complete editorial verification before relying on this item.",
-    "status": "Unverified",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY05CaTUwMERCcE5WdEExS0dLU0VxTTNBMEN5Zk9hRWVxSDQ4Z05hOEZmZDQ5akdyRHl2ajVxWW9QMHllaWxoeVRwUm95STlvVVRwZWNuTEtPQnZXN2xxbURMNllSb21hSUliSGFtTEdRd1hsTmFZaF93Q1k3ZTZsdjVOQTI1b1QwNlZUU1dPT3A3b2k3Ykh0bDZYNVVBdXFnV3hhcTFkZUNGNzVhMHVtVnFIZEYycld4ZHhtamRIVnFicG5HREF4VndYUEhyd3psd2hGdVBsZw?oc=5",
-    "mediaUrl": null,
-    "evidenceImageUrl": null,
-    "notes": "Automated discovery only; Google News coverage is not exhaustive.",
-    "sourceDataset": "Daily Google News RSS",
-    "sourceSearchStatus": "google-news-rss",
-    "verificationMethod": "Automated discovery; editorial verification required",
-    "googleNewsWatch": "Marathi MCCIA news (mr)",
-    "googleNewsQuery": "\"एमसीसीआयए\" OR \"मराठा चेंबर\" OR \"प्रशांत गिरबणे\"",
-    "googleNewsFetchedAt": "2026-09-11T05:45:40+00:00",
-    "firstSeenAt": "2026-09-11T05:45:40+00:00",
-    "publisherUrl": "https://www.esakal.com"
+    "googleNewsFetchedAt": "2026-09-11T05:28:01.062972+00:00",
+    "discoveryUrls": [
+      "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY05CaTUwMERCcE5WdEExS0dLU0VxTTNBMEN5Zk9hRWVxSDQ4Z05hOEZmZDQ5akdyRHl2ajVxWW9QMHllaWxoeVRwUm95STlvVVRwZWNuTEtPQnZXN2xxbURMNllSb21hSUliSGFtTEdRd1hsTmFZaF93Q1k3ZTZsdjVOQTI1b1QwNlZUU1dPT3A3b2k3Ykh0bDZYNVVBdXFnV3hhcTFkZUNGNzVhMHVtVnFIZEYycld4ZHhtamRIVnFicG5HREF4VndYUEhyd3psd2hGdVBsZw?oc=5",
+      "https://www.esakal.com/pune/mccia-helpline-crosses-10000-consultations-supporting-msme-across-29-states-and-union-territories-in-india-pjp78"
+    ],
+    "mergedRecordIds": [
+      "GN-852B2E35C5D6A1"
+    ]
   },
   {
     "id": "GN-A2FB2CEE280C74",
