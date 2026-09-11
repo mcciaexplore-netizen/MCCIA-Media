@@ -86,14 +86,14 @@ test('authenticated form upload publishes automatically without editor credentia
 });
 
 test('automatic publication preserves missing dates and blocks invalid or future dates',async()=>{
- const send=async(date,suffix)=>{const form=new FormData();form.append('file',new File(['date evidence '+suffix],'dated.png',{type:'image/png'}));form.append('metadata',JSON.stringify({publicationDate:date,publisher:'Sakal'}));return intake.POST(new Request(origin+'/api/form-intake',{method:'POST',headers:{'x-mccia-intake-secret':globalThis.testStorageEnv.GOOGLE_FORM_INTAKE_SECRET},body:form}));};
+ const send=async(date,suffix)=>{const form=new FormData();form.append('file',new File(['date evidence '+suffix],'dated.png',{type:'image/png'}));form.append('metadata',JSON.stringify({publicationDate:date,publisher:'Sakal',ocrText:'Readable publication text for date validation'}));return intake.POST(new Request(origin+'/api/form-intake',{method:'POST',headers:{'x-mccia-intake-secret':globalThis.testStorageEnv.GOOGLE_FORM_INTAKE_SECRET},body:form}));};
  const missing=await send('','missing');assert.equal(missing.status,201);const value=await missing.json();const stored=sqlite.prepare('SELECT publication_date,reviewed FROM clipping_uploads WHERE id=?').get(value.publishedId);assert.equal(stored.publication_date,'');assert.equal(stored.reviewed,0);
  assert.equal((await send('2050-12-07','future')).status,400);assert.equal((await send('2025-02-30','invalid')).status,400);
  assert.equal((await autoPublish.POST(request('/auto','POST',null,false),context(value.record.id))).status,401);
 });
 
 test('automatic retry completes stored evidence without another file transfer',async()=>{
- const row={...seed,id:'INT-RETRY',sha256:'f'.repeat(64),status:'Processing'};insert('google_form_intake',row);
+ const row={...seed,id:'INT-RETRY',sha256:'f'.repeat(64),status:'Processing',ocr_text:'Readable retry evidence'};insert('google_form_intake',row);
  const response=await autoPublish.POST(new Request(origin+'/auto',{method:'POST',headers:{'x-mccia-intake-secret':globalThis.testStorageEnv.GOOGLE_FORM_INTAKE_SECRET}}),context(row.id));assert.equal(response.status,200);const payload=await response.json();assert.equal(payload.record.status,'Auto-published');assert.equal(sqlite.prepare('SELECT original_key FROM clipping_uploads WHERE id=?').get(payload.publishedId).original_key,row.original_key);
 });
 
@@ -107,3 +107,7 @@ test('public automation alerts report failures without exposing submission detai
   assert.equal((await (await automationStatus()).json()).discovery.state,'unavailable');
  }finally{globalThis.fetch=originalFetch}
 });
+
+test('automatic publication pauses when image OCR is empty',async()=>{const row={...seed,id:'INT-OCR-EMPTY',sha256:'e'.repeat(64),status:'Processing',ocr_text:''};insert('google_form_intake',row);const response=await autoPublish.POST(new Request(origin+'/auto',{method:'POST',headers:{'x-mccia-intake-secret':globalThis.testStorageEnv.GOOGLE_FORM_INTAKE_SECRET}}),context(row.id));const payload=await response.json();assert.equal(payload.publishedId,null);assert.equal(sqlite.prepare('SELECT status FROM google_form_intake WHERE id=?').get(row.id).status,'OCR retry pending');assert.equal(sqlite.prepare('SELECT id FROM clipping_uploads WHERE sha256=?').get(row.sha256),undefined);});
+
+test('expired transfer cleanup removes temporary chunks only',async()=>{const {ensureTransferIndex,cleanupExpiredTransfers}=await import('../app/api/transfer-cleanup.ts');await ensureTransferIndex(db);const id='11111111-1111-4111-8111-111111111111';sqlite.prepare('INSERT INTO evidence_transfers (id,expires) VALUES (?,?)').run(id,0);await files.put(`transfers/${id}/file/0`,'chunk');await files.put(`transfers/${id}/manifest.json`,'{}');await files.put('uploads/keep/original','published');await cleanupExpiredTransfers();assert.equal(objects.has(`transfers/${id}/file/0`),false);assert.equal(objects.has('uploads/keep/original'),true)});

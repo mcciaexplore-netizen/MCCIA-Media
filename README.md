@@ -58,20 +58,11 @@ Apps Script archives the original file, runs OCR where supported, extracts metad
 checks duplicates and source links, and sends it to the Vercel archive automatically.
 There is no public editor sign-in, submission inbox or manual approval step.
 
-Files up to 100 MB transfer in authenticated 2 MB parts. The server verifies the
-original hash and deduplicates repeated files. Publication preserves the original,
-exposes available OCR, and labels automatic metadata as unverified. Missing dates
-remain unavailable; invalid or future dates are rejected. A withdrawn record cannot
-be republished by a delivery retry. Private submission details stay protected.
+The preferred backend is now private Google Drive for evidence and Google Sheets for metadata. Deploy the signed Apps Script gateway as **mccianewsclipping@gmail.com**, then configure `DRIVE_GATEWAY_URL` and `DRIVE_GATEWAY_SECRET` in Vercel. Follow the [complete Drive installation guide](google-apps-script/README.md). This configuration has not been activated merely by publishing the code.
 
-The page refreshes uploads every minute and when returning from the form. Failed
-deliveries retry every five minutes. Existing pending submissions can be processed
-by ID without uploading their binary evidence again.
+Images and PDFs publish after OCR produces text. Failed OCR retries automatically with backoff; the website reports pending processing. Language, people, topics and DG attribution are inferred from available text and remain unverified. Missing dates remain unavailable; invalid/future dates are rejected. Original files and full text stay private in Drive and are exposed through the website only for published rows, without submitter details or private Drive links. The website refreshes uploads each minute while visible and when returning from the form.
 
-Vercel requires a durable libSQL database and a private S3-compatible evidence
-bucket. Native Cloudflare deployments continue to use D1/R2. Follow
-[Vercel and installed Apps Script setup](docs/vercel-submissions.md); changing the
-repository alone does not configure storage or replace an installed script.
+Legacy libSQL/S3 and Cloudflare D1/R2 backends remain supported. Their temporary upload chunks are indexed and cleaned on incoming transfers and automation health updates. They are not required for the Drive workflow. The older [Vercel submissions guide](docs/vercel-submissions.md) describes that fallback.
 
 ## Daily Google News discovery
 
@@ -160,10 +151,16 @@ System alerts read public GitHub run status and private-storage aggregate health
 
 The compact sticky header offers Archive, Media briefing, Reports and About, with an Add clipping link and a mobile menu. Archive export applies to the visible filtered results. Reports supports publication date ranges, topic and publisher selection; Excel cells remain typed strings rather than executable formulas.
 
-The reader can compare up to four strongly related coverage items side by side. Direct metadata correction is separately protected by editor authentication and same-origin checks. It requires the configured durable storage and MCCIA_EDITOR_KEY; it is not activated merely by publishing this code. Corrections are stored as overlays, with an audit row containing the server-derived actor and reason, and optimistic version checks to prevent overwriting newer edits. The public correction feed exposes only published title/date patches. Unlinked clippings use Report an error.
+The reader can compare up to four strongly related coverage items side by side. Direct metadata correction is separately protected by editor authentication and same-origin checks. It requires the configured durable storage and MCCIA_EDITOR_KEY; it is not activated merely by publishing this code. Corrections are stored as overlays, with an audit row containing the server-derived actor and reason, and optimistic version checks to prevent overwriting newer edits. The public correction feed exposes only published title/date patches. Archived clipping IDs and published upload IDs support the same authenticated correction workflow. Drive-backed corrections use a private sheet and audit trail.
 
 ## Automatic metadata
 
 Missing language, topic, people/organisation and DG participation are suggested from available headlines and OCR. Existing supplied values are retained. Marathi and Hindi use word evidence; ambiguous Devanagari stays Marathi / Hindi, and insufficient text stays unrecorded. People detection recognises named MCCIA entities rather than treating any Director General as Prashant Girbane. A mention alone does not imply a quote, authored article or interview. These suggestions are not editorial verification.
 
 The Apps Script includes the same rules (tested for parity), adds Topic to the submission log, and setup makes Language and People / organisation questions optional. Replace Code.gs and rerun setupMcciaMediaIntelligence as mccianewsclipping@gmail.com to activate the changes. Durable website storage remains required for delivery.
+
+## September audit fixes
+
+Report input now includes all 64 e-paper entries while preserving month precision. The four confirmed profile/index IDs PG2527, PG2528, PG2561 and PG2562 remain in the source dataset but are excluded from displayed coverage. Topics use the same article/unlinked-clipping collection as the other charts. Reports, briefing and article readers restore from URL state; prepared report downloads become invalid after data changes. Relative evidence URLs work in readers and become absolute in Excel exports. Search supports partial names and advertised Marathi aliases.
+
+Historical missing dates, missing original/full OCR files, ambiguous matches and stored unreachable-link results still require source recovery and verification. The new upload pipeline does not imply those historical gaps have been repaired.

@@ -2,9 +2,9 @@ import { validPublicationDate } from './media-metadata.ts';
 
 export type CoverageArticle = {id:string;title:string;publisher:string;date:string;year?:number|null;publicationMonth?:string;datePrecision?:string;topic?:string;language?:string;presence?:string;description?:string;status?:string;url?:string|null;evidenceImageUrl?:string|null;googleNewsFetchedAt?:string;firstSeenAt?:string;discoveredAt?:string};
 const aliases = [
-  ['prashant girbane','prashant girbani','prashanth girbane','प्रशांत गिरबने','प्रशांत गिरबाणे','प्रशांत गिरभने'],
+  ['prashant girbane','prashant girbani','prashanth girbane','प्रशांत गिरबने','प्रशांत गिरबाणे','प्रशांत गिरभने','प्रशांत गिरबणे'],
   ['mccia','m c c i a','mahratta chamber','maratha chamber','एमसीसीआयए','एमसीसीआईए','मराठा चेंबर'],
-  ['msme','msmes','सूक्ष्म लघु मध्यम उद्योग','लघु उद्योग'],
+  ['msme','msmes','एमएसएमई','सूक्ष्म लघु मध्यम उद्योग','लघु उद्योग'],
   ['semiconductor','semiconductors','सेमीकंडक्टर','सेमिकंडक्टर'],
   ['employment','jobs','रोजगार'],['exports','export','निर्यात'],
   ['industry','industrial','उद्योग','औद्योगिक'],['budget','अर्थसंकल्प'],
@@ -28,13 +28,25 @@ function nearWord(a:string,b:string) {
 }
 export function bilingualMatch(text:string,query:string) {
   if(!query.trim())return true;
+  const raw=searchNormalize(text),rawQuery=searchNormalize(query);
+  const rawWords=raw.split(' ');
+  if(rawQuery.split(' ').every(token=>rawWords.some(word=>word===token||(!/\d/.test(token)&&nearWord(token,word)))))return true;
   const haystack=aliasNormalize(text),needle=aliasNormalize(query);
   if(haystack.includes(needle))return true;
   const words=haystack.split(' ');
   return needle.split(' ').every(token=>words.some(word=>word===token||(!/\d/.test(token)&&nearWord(token,word))));
 }
-export function safeLink(value?:string|null){try{const u=new URL(value||'');return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}}
-function canonicalUrl(value?:string|null){const link=safeLink(value);if(!link)return '';const u=new URL(link);for(const key of [...u.searchParams.keys()])if(/^utm_|^(fbclid|gclid)$/.test(key))u.searchParams.delete(key);u.hash='';if(u.pathname==='/'&&!u.search)return '';return u.href.replace(/\/$/,'');}
+export const ARCHIVE_ORIGIN='https://mccia-media.vercel.app';
+export function safeLink(value?:string|null){
+ if(!value||/[\\\u0000-\u0020]/.test(value))return null;
+ if(value.startsWith('/')&&!value.startsWith('//'))return value;
+ try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)&&!u.username&&!u.password?u.href:null}catch{return null}
+}
+export function reportLink(value?:string|null){const safe=safeLink(value);return safe?new URL(safe,ARCHIVE_ORIGIN).href:null}
+export function isCoverageArticle(item:{id?:string;url?:string|null}){return !['PG2527','PG2528','PG2561','PG2562'].includes(item.id||'')}
+export function reportRevision(rows:CoverageArticle[]){return JSON.stringify(rows)}
+
+function canonicalUrl(value?:string|null){const link=safeLink(value);if(!link)return '';const u=new URL(link,ARCHIVE_ORIGIN);for(const key of [...u.searchParams.keys()])if(/^utm_|^(fbclid|gclid)$/.test(key))u.searchParams.delete(key);u.hash='';if(u.pathname==='/'&&!u.search)return '';return u.href.replace(/\/$/,'');}
 const stopwords=new Set('the a an and or of to in for on at by with from is are was mccia pune prashant girbane'.split(' '));
 function titleTokens(value:string){return new Set(searchNormalize(value).split(' ').filter(t=>t.length>2&&!stopwords.has(t)));}
 export function relatedStory(a:CoverageArticle,b:CoverageArticle){

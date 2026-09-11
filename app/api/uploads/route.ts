@@ -1,3 +1,4 @@
+import {driveConfigured,driveRequest} from '../drive-backend';
 import { authorizeEditor, editorRequired } from '../editor-auth';
 import { pageRequest, pageResult } from '../pagination';
 import { normalizeLanguage, validPublicationDate, normalizeRecordMetadata } from '@/app/media-metadata';
@@ -106,6 +107,7 @@ function toClippingRecord(row: UploadedRow) {
     sourceArchive: automated ? 'Automatic form upload' : 'Owner upload',
     thumbnailUrl: row.original_content_type.startsWith('image/') ? `${imageBase}?variant=enhanced` : row.original_content_type === 'application/pdf' ? '/fallbacks/pdf.webp' : '/fallbacks/video.webp',
     originalImageUrl: `${imageBase}?variant=original`,
+    originalContentType: row.original_content_type,
     enhancedImageUrl: enhanced ? `${imageBase}?variant=enhanced` : undefined,
     width: row.width,
     height: row.height,
@@ -137,6 +139,11 @@ function toClippingRecord(row: UploadedRow) {
 
 export async function GET(request: Request) {
   try {
+    if(driveConfigured()){
+      const params=new URL(request.url).searchParams;
+      const page=await driveRequest<{records:Record<string,unknown>[];nextCursor:string|null}>('published',{cursor:params.get('cursor')||'',limit:Math.min(100,Math.max(1,Number(params.get('limit'))||100))});
+      return Response.json({...page,records:page.records.map(row=>({...row,matchedRecordId:archive.find(item=>item.sha256===row.sha256)?.matchedRecordId||null}))},{headers:{'Cache-Control':'no-store'}});
+    }
     const { db } = getStorageBindings();
     await ensureUploadsSchema(db);
     const {limit,before}=pageRequest(request,50);

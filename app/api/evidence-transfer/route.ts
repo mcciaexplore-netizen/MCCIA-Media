@@ -1,3 +1,4 @@
+import {ensureTransferIndex,cleanupExpiredTransfers} from '../transfer-cleanup';
 import {getStorageBindings} from '@/db';
 import {authorizeEditor,editorRequired} from '../editor-auth';
 import {authorizeAutomationRequest} from '../automation-auth';
@@ -19,7 +20,7 @@ export async function POST(request:Request){
   const descriptors:Record<string,TransferFile>={};
   for(const name of names){const f=body.files[name];if(!f||!Number.isInteger(f.size)||f.size<1||f.size>MAX_FILE_BYTES||!allowed.has(f.type)||!/^[a-f0-9]{64}$/.test(f.sha256)||typeof f.name!=='string')return Response.json({error:'Each file must be a supported image, PDF or video, up to 100 MB, with a SHA-256 hash.'},{status:400});descriptors[name]={...f,name:f.name.slice(0,500)};}
   const transfer:Transfer={id:crypto.randomUUID(),mode:body.mode!,actor:auth.actor,expires:Date.now()+3600000,files:descriptors,metadata:body.metadata};
-  const {files}=getStorageBindings();await files.put(keyFor(transfer.id),JSON.stringify(transfer),{httpMetadata:{contentType:'application/json'}});
+  const {files,db}=getStorageBindings();await ensureTransferIndex(db);await cleanupExpiredTransfers(2);await db.prepare('INSERT INTO evidence_transfers (id,expires) VALUES (?,?)').bind(transfer.id,transfer.expires).run();await files.put(keyFor(transfer.id),JSON.stringify(transfer),{httpMetadata:{contentType:'application/json'}});
   return Response.json({id:transfer.id,chunkBytes:CHUNK_BYTES},{status:201,headers:{'Cache-Control':'private, no-store'}});
  }catch(error){return Response.json({error:error instanceof Error?error.message:'Unable to start evidence transfer.'},{status:503});}
 }

@@ -1,3 +1,4 @@
+import {driveConfigured,driveImage} from '../../../drive-backend';
 import { ensureUploadsSchema, getStorageBindings } from '@/db';
 
 export const dynamic = 'force-dynamic';
@@ -12,6 +13,7 @@ type ImageRow = {
 export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
     const { id } = await context.params;
+    if(driveConfigured())return await driveImage(request,id);
     const variant = new URL(request.url).searchParams.get('variant') === 'original' ? 'original' : 'enhanced';
     const { db, files } = getStorageBindings();
     await ensureUploadsSchema(db);

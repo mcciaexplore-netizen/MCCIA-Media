@@ -21,6 +21,7 @@ type RecordLike = {
 };
 
 type ClippingLike = {
+  topic?:string;
   id?: string;
   year: number | null;
   date?: string;
@@ -64,7 +65,7 @@ export default function AnalyticsPanel({ records, clippings, sourceChecks, audit
   const publishers = topCounts(allCoverage.map((item) => item.publisher), 7);
   const people = topCounts(allCoverage.map((item) => peopleCategory(item.presence)), 8);
   const languages = topCounts(allCoverage.map((item) => normalizeLanguage(item.language)), 8);
-  const topics = topCounts(records.map((item) => item.topic), 6);
+  const topics = topCounts(allCoverage.map((item) => item.topic || 'Topic not assigned'), 6);
   const recordIds = new Set(recordLookup(records).keys());
   const uniqueClassifications = [
     ...records.map((item) => resolveRecordDgEngagementType(item)),

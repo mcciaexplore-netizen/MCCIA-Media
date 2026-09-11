@@ -18,3 +18,10 @@ test('corrections require editor access, validate dates, retain audit and reject
  assert.equal((await route.POST(req(value))).status,409);
  const publicView=await (await route.GET(new Request(origin+'/api/corrections'))).json();assert.equal(publicView.records[0].patch.title,value.title);assert.equal(JSON.stringify(publicView).includes('Checked against'),false);
 });
+
+test('archived clipping IDs and published uploads use the correction workflow',async()=>{
+ const {ensureUploadsSchema}=await import('../db/index.ts');await ensureUploadsSchema(db);
+ sqlite.prepare("INSERT INTO clipping_uploads (id,sha256,uploaded_at,original_filename,original_key,enhanced_key,original_content_type,enhanced_content_type,original_size,enhanced_size,width,height,publisher,publication_date,language,headline,ocr_text,ocr_languages,presence,status,reviewed,notes) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)").run('AUTO-CORRECTION','correction-hash','2025-01-01','clip.png','file','file','image/png','image/png',1,1,1,1,'Sakal','2025-01-01','English','Title','Text','auto','MCCIA','Auto-published',0,'');
+ const {default:clips}=await import('../app/clippings.json',{with:{type:'json'}});
+ for(const id of ['AUTO-CORRECTION',clips[0].id]){const result=await route.POST(req({id,title:'Repaired clipping title',reason:'Verified against original publication'}));assert.equal(result.status,200,await result.text())}
+});

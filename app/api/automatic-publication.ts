@@ -8,6 +8,7 @@ import type { FormIntakeRow } from './form-intake/route';
 export async function publishAutomatically(db: D1Database, row: FormIntakeRow) {
   if (row.status === 'Rejected') return null;
   if (row.publication_date && !validPublicationDate(row.publication_date)) throw new Error('Invalid or future publication date.');
+  if ((row.original_content_type.startsWith('image/') || row.original_content_type === 'application/pdf') && !row.ocr_text?.trim()) { await db.prepare("UPDATE google_form_intake SET status='OCR retry pending', error_message='OCR has not produced readable text; publication paused.' WHERE id=?").bind(row.id).run(); return null; }
   await ensureUploadsSchema(db);
   const existing = await db.prepare('SELECT id,status FROM clipping_uploads WHERE sha256 = ? LIMIT 1').bind(row.sha256).first<{id:string;status:string}>();
   // A retry must never undo an intentional withdrawal.

@@ -96,7 +96,8 @@ export function qualityMatches(item: Reviewable, filter: string) {
     default: return true;
   }
 }
-export function clippingHeadline(item: Reviewable, record?: { title: string }) {
+export function clippingHeadline(item: Reviewable & {correctedHeadline?:string}, record?: { title: string }) {
+  if(item.correctedHeadline)return item.correctedHeadline;
   if ('automated' in item && item.automated && item.ocrHeadline && !/^[>_=]|\bSRA\b|requires.*review/i.test(item.ocrHeadline)) return item.ocrHeadline;
   if (record?.title && record.title !== item.ocrHeadline && !/^[>_=]|\bSRA\b/.test(record.title)) return record.title;
   if (/^Reviewed(?: by| during|$)/i.test(item.ocrReviewStatus || '') && item.ocrHeadline) return item.ocrHeadline;

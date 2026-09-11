@@ -4,6 +4,7 @@ const MI = Object.freeze({
   spreadsheetId: '16O4eViZ9I7y8YbUaaPt3jMjfQW9nvdaOAHAPtw0NAgA',
   dashboardUrl: 'https://mccia-media.vercel.app',
   ownerEmail: 'mccianewsclipping@gmail.com',
+  storage: 'drive',
   fields: Object.freeze({
     date: 'Clipping / publication date', publisher: 'Publisher / news channel',
     edition: 'Edition / city', mediaType: 'Media type',
@@ -16,7 +17,7 @@ const MI = Object.freeze({
     submissions: 'Submissions', audit: 'Audit Log', errors: 'Errors',
     config: 'Configuration', sources: 'Source Monitoring', analytics: 'Analytics',
   }),
-  statuses: Object.freeze(['Processing', 'Auto-published', 'Delivery failed', 'Withdrawn']),
+  statuses: Object.freeze(['Processing', 'Auto-published', 'Delivery failed', 'Withdrawn', 'OCR retry pending']),
   dgClassifications: Object.freeze([
     'Post/article written by DG Sir',
     'Quote given by DG Sir',
@@ -39,7 +40,7 @@ const MI_SUBMISSION_HEADERS = [
   'Duplicate score', 'Duplicate record ID', 'Duplicate reasons', 'Link status',
   'Link HTTP status', 'Last link check', 'Verification status', 'Processing status',
   'Reviewer', 'Reviewed at', 'Dashboard inbox ID', 'Approved record ID',
-  'Dashboard status', 'Error message', 'Updated at', 'DG content classification', 'Topic',
+  'Dashboard status', 'Error message', 'Updated at', 'DG content classification', 'Topic', 'OCR attempts', 'OCR next attempt', 'OCR text file ID',
 ];
 const MI_AUDIT_HEADERS = ['Timestamp', 'Record ID', 'Action', 'Actor', 'Previous status', 'New status', 'Details', 'Source'];
 const MI_ERROR_HEADERS = ['Timestamp', 'Stage', 'Record ID', 'Form response ID', 'Drive file ID', 'Error message', 'Stack', 'Resolved', 'Resolved by', 'Resolved at'];
@@ -49,7 +50,10 @@ function setupMcciaMediaIntelligence() {
   if (Session.getEffectiveUser().getEmail().toLowerCase() !== MI.ownerEmail) throw new Error('Sign in as ' + MI.ownerEmail + ' before running setup.');
   const form = FormApp.openById(MI.formId);
   miValidateForm_(form);
+  DriveApp.getFolderById(MI.archiveFolderId).setSharing(DriveApp.Access.PRIVATE,DriveApp.Permission.NONE);
+  DriveApp.getFileById(MI.spreadsheetId).setSharing(DriveApp.Access.PRIVATE,DriveApp.Permission.NONE);
   miEnsureWorkbook_();
+  if (!PropertiesService.getScriptProperties().getProperty('DRIVE_GATEWAY_SECRET')) PropertiesService.getScriptProperties().setProperty('DRIVE_GATEWAY_SECRET',Utilities.getUuid().replace(/-/g,'')+Utilities.getUuid().replace(/-/g,''));
   miInstallTriggers_(form);
   rebuildMcciaAnalytics();
   miAudit_('', 'SYSTEM_SETUP', Session.getEffectiveUser().getEmail(), '', '', 'The complete intake and monitoring pipeline was installed.', 'Apps Script');
@@ -86,8 +90,9 @@ function miProcessFile_(fileId, sequence, response, values, date, publisher) {
   const folder = miArchiveFolder_(date);
   const archivedName = miFilename_(date, publisher, sequence, originalName);
   file.moveTo(folder);
+  file.setSharing(DriveApp.Access.PRIVATE,DriveApp.Permission.NONE);
   file.setName(archivedName);
-  const ocr = miOcr_(file, mime);
+  const ocr = miOcr_(file, mime, values[MI.fields.language]);
   const headline = miClean_(values[MI.fields.headline], 500) || miHeadline_(ocr.text) || publisher + ' clipping';
   const duplicate = miDuplicate_({ recordId: recordId, sha: sha, date: date, publisher: publisher, headline: headline, ocr: ocr.text, size: size });
   const sourceUrl = miUrl_(values[MI.fields.sourceUrl]);
@@ -113,22 +118,24 @@ function miProcessFile_(fileId, sequence, response, values, date, publisher) {
   metadata.dgEngagementType = miDgClassification_([headline, ocr.text].join(' '));
   metadata.topic = miTopic_(headline + ' ' + ocr.text);
   const sheet = miSheet_(MI.sheets.submissions);
-  sheet.appendRow([
+  const rowLock=LockService.getScriptLock();rowLock.waitLock(30000);let row;
+  try { sheet.appendRow(miSafeRow_([
     recordId, response.getId(), response.getTimestamp(), now, date, date ? Number(date.slice(0, 4)) : '', miMonthLabel_(date),
     publisher, metadata.editionCity, metadata.mediaType, metadata.presence, headline, metadata.language,
     sourceUrl, metadata.page, metadata.notes, miClean_(values[MI.fields.submittedBy], 250), metadata.submitterEmail,
     originalName, archivedName, mime, size, file.getId(), file.getUrl(), folder.getUrl(), sha,
-    ocr.text, ocr.confidence, ocr.engine, duplicate.score, duplicate.recordId, duplicate.reasons.join('; '),
+    ocr.text.slice(0,45000), ocr.confidence, ocr.engine, duplicate.score, duplicate.recordId, duplicate.reasons.join('; '),
     link.status, link.code, sourceUrl ? now : '', duplicate.score >= 0.72 ? 'Potential duplicate — verify' : 'Unverified',
-    'Processing', '', '', '', '', 'Pending dashboard delivery', '', now, metadata.dgEngagementType, metadata.topic,
-  ]);
-  const row = sheet.getLastRow();
+    'Processing', '', '', '', '', 'Pending dashboard delivery', '', now, metadata.dgEngagementType, metadata.topic, 1, ocr.error ? new Date(Date.now()+5*60000) : '', ocr.text ? folder.createFile(recordId+'-ocr.txt',ocr.text,MimeType.PLAIN_TEXT).getId() : '',
+  ]));
+  row = sheet.getLastRow(); } finally { rowLock.releaseLock(); }
   metadata.sheetRow = row;
   miValidation_(sheet, row, 1);
+  if (ocr.error) { sheet.getRange(row,37).setValue(miSafeCell_('OCR retry pending'));sheet.getRange(row,43).setValue(miSafeCell_(ocr.error));miReportHealth_();return recordId; }
   const delivery = miSendIntake_(file, metadata);
-  sheet.getRange(row, 37).setValue(delivery.error ? 'Delivery failed' : delivery.publishedId ? 'Auto-published' : 'Withdrawn');
-  sheet.getRange(row, 40, 1, 4).setValues([[delivery.id, delivery.publishedId || '', delivery.status, delivery.error]]);
-  sheet.getRange(row, 44).setValue(new Date());
+  sheet.getRange(row, 37).setValue(miSafeCell_(delivery.error ? 'Delivery failed' : delivery.publishedId ? 'Auto-published' : 'Withdrawn'));
+  sheet.getRange(row, 40, 1, 4).setValues(miSafeRows_([[delivery.id, delivery.publishedId || '', delivery.status, delivery.error]]));
+  sheet.getRange(row, 44).setValue(miSafeCell_(new Date()));
   return recordId;
 }
 
@@ -185,7 +192,7 @@ function rebuildMcciaAnalytics() {
     rows.push(['', '']);
   });
   sheet.clearContents();
-  sheet.getRange(1, 1, rows.length, 2).setValues(rows);
+  sheet.getRange(1, 1, rows.length, 2).setValues(miSafeRows_(rows));
   sheet.setFrozenRows(1);
   sheet.getRange(1, 1, 1, 2).setFontWeight('bold').setBackground('#194d36').setFontColor('#ffffff');
   sheet.autoResizeColumn(1); sheet.setColumnWidth(2, 110);
@@ -209,7 +216,7 @@ function miEnsureWorkbook_() {
     ['Upload workflow', 'Processing → Auto-published', 'No manual approval; automatic metadata stays unverified'],
     ['Owner', MI.ownerEmail, 'Authorized Apps Script identity'],
   ];
-  config.clearContents(); config.getRange(1, 1, configRows.length, 3).setValues(configRows); miStyle_(config, 3);
+  config.clearContents(); config.getRange(1, 1, configRows.length, 3).setValues(miSafeRows_(configRows)); miStyle_(config, 3);
   const submissions = ss.getSheetByName(MI.sheets.submissions);
   miValidation_(submissions, 2, Math.max(1, submissions.getMaxRows() - 1));
   miDgValidation_(sources, 2, Math.max(1, sources.getMaxRows() - 1), 18);
@@ -233,16 +240,17 @@ function miValidateForm_(form) {
   if (!uploads.length || uploads[0].getTitle() !== MI.fields.evidence) throw new Error('The evidence File upload question is missing.');
 }
 
-function miOcr_(file, mime) {
+function miOcr_(file, mime, language) {
   if (/^video\//i.test(mime)) return { text: '', confidence: '', engine: 'Skipped — video evidence' };
   if (!/^image\//i.test(mime) && mime !== MimeType.PDF) return { text: '', confidence: '', engine: 'Skipped — unsupported OCR format' };
   let tempId = '';
   try {
-    const created = Drive.Files.create({ name: 'OCR temporary — ' + file.getName(), mimeType: 'application/vnd.google-apps.document' }, file.getBlob(), { ocrLanguage: 'en', fields: 'id' });
+    const created = Drive.Files.create({ name: 'OCR temporary — ' + file.getName(), mimeType: 'application/vnd.google-apps.document' }, file.getBlob(), Object.assign({fields:'id'}, /^(Marathi|mr)$/i.test(language||'')?{ocrLanguage:'mr'}:/^(Hindi|hi)$/i.test(language||'')?{ocrLanguage:'hi'}:/^(English|en)$/i.test(language||'')?{ocrLanguage:'en'}:{}));
     tempId = created.id; Utilities.sleep(800);
-    const text = DocumentApp.openById(tempId).getBody().getText().replace(/\n{3,}/g, '\n\n').trim().slice(0, 100000);
+    const text = DocumentApp.openById(tempId).getBody().getText().replace(/\n{3,}/g, '\n\n').trim();
+    if (!text.trim()) throw new Error('OCR returned no readable text.');
     return { text: text, confidence: null, engine: 'Google Drive OCR' };
-  } catch (error) { miError_('OCR', '', '', file.getId(), error); return { text: '', confidence: null, engine: 'Google Drive OCR failed' }; }
+  } catch (error) { miError_('OCR', '', '', file.getId(), error); return { text: '', confidence: null, engine: 'Google Drive OCR failed', error: error.message || 'OCR failed' }; }
   finally { if (tempId) try { DriveApp.getFileById(tempId).setTrashed(true); } catch (ignore) {} }
 }
 
@@ -268,6 +276,15 @@ function miDuplicate_(candidate) {
 
 function miSendIntake_(file, metadata) {
   try {
+    if(MI.storage==='drive'){
+      if(file.getSize()>100*1024*1024)throw new Error('Evidence exceeds 100 MB.');
+      if(!/^(image\/(jpeg|png|webp)|application\/pdf|video\/(mp4|webm|quicktime))$/.test(file.getMimeType()))throw new Error('Unsupported evidence type.');
+      if((/^image\//.test(file.getMimeType())||file.getMimeType()===MimeType.PDF)&&!String(metadata.ocrText||'').trim())throw new Error('OCR must finish before publication.');
+      if(metadata.publicationDate&&!miDate_(metadata.publicationDate))throw new Error('Invalid publication date.');
+      const id='AUTO-'+miSha_(file.getBlob().getBytes()).slice(0,12).toUpperCase();
+      if(miObjects_(miSheet_(MI.sheets.submissions)).some(function(row){return row['Approved record ID']===id&&['Withdrawn','Rejected'].indexOf(row['Processing status'])>=0}))return {id:'',publishedId:'',status:'Withdrawn',error:''};
+      return {id:'',publishedId:id,status:'Auto-published',error:''};
+    }
     if (file.getSize() > 100 * 1024 * 1024) throw new Error('Evidence exceeds the 100 MB collection limit.');
     const bytes = file.getBlob().getBytes();
     const start = miFetch_(MI.dashboardUrl + '/api/evidence-transfer', {method:'post',contentType:'application/json',muteHttpExceptions:true,payload:JSON.stringify({mode:'intake',metadata:metadata,files:{file:{name:file.getName(),type:file.getMimeType(),size:bytes.length,sha256:miSha_(bytes)}}})});
@@ -308,6 +325,7 @@ function retryMcciaDeliveries() {
     for (let number=2; number<=sheet.getLastRow(); number++) {
       const row = miRow_(sheet,number);
       if (!row['Drive file ID'] || ['Auto-published','Withdrawn','Rejected'].indexOf(row['Processing status'])>=0) continue;
+      if (new Date(row['OCR next attempt']).getTime() > Date.now()) continue;
       const updated = new Date(row['Updated at']).getTime() || 0;
       if (Date.now()-updated < 5*60*1000) continue;
       candidates.push({number:number,row:row,updated:updated});
@@ -315,10 +333,18 @@ function retryMcciaDeliveries() {
     candidates.sort(function(a,b){return a.updated-b.updated;});
     candidates.slice(0,3).forEach(function(candidate){
       const row=candidate.row, number=candidate.number;
-      sheet.getRange(number,44).setValue(new Date());
+      sheet.getRange(number,44).setValue(miSafeCell_(new Date()));
       let result;
       try {
-        if (row['Dashboard inbox ID']) {
+        if (!String(row['OCR text']||'').trim() && /^(image\/|application\/pdf)/.test(row['MIME type']||'')) {
+          const attempts=Number(row['OCR attempts']||0)+1;sheet.getRange(number,47).setValue(miSafeCell_(attempts));
+          const ocr=miOcr_(DriveApp.getFileById(row['Drive file ID']),row['MIME type'],row['Language']);
+          if(ocr.error){sheet.getRange(number,37).setValue(miSafeCell_('OCR retry pending'));sheet.getRange(number,43).setValue(miSafeCell_(ocr.error));sheet.getRange(number,48).setValue(miSafeCell_(new Date(Date.now()+Math.min(24*60,5*Math.pow(2,Math.min(attempts,9)))*60000)));return;}
+          row['OCR text']=ocr.text;row['OCR engine']=ocr.engine;sheet.getRange(number,27).setValue(miSafeCell_(ocr.text.slice(0,45000)));sheet.getRange(number,49).setValue(miSafeCell_(DriveApp.getFolderById(MI.archiveFolderId).createFile(row['Record ID']+'-ocr.txt',ocr.text,MimeType.PLAIN_TEXT).getId()));sheet.getRange(number,29).setValue(miSafeCell_(ocr.engine));sheet.getRange(number,48).setValue(miSafeCell_(''));
+          const detected=detectMediaMetadata(row['Headline']+' '+ocr.text);row['Language']=miMetadataValue_(row['Language'],detected.language);row['People / organisation']=miMetadataValue_(row['People / organisation'],detected.presence);row['DG content classification']=detected.dgEngagementType||'';
+          sheet.getRange(number,13).setValue(miSafeCell_(row['Language']));sheet.getRange(number,11).setValue(miSafeCell_(row['People / organisation']));sheet.getRange(number,45).setValue(miSafeCell_(row['DG content classification']));sheet.getRange(number,46).setValue(miSafeCell_(detected.topic));
+        }
+        if (row['Dashboard inbox ID'] && MI.storage!=='drive') {
           const response=miFetch_(MI.dashboardUrl+'/api/form-intake/'+encodeURIComponent(row['Dashboard inbox ID'])+'/auto-publish',{method:'post',muteHttpExceptions:true});
           const body=miJson_(response.getContentText())||{};
           if(response.getResponseCode()!==200)throw new Error(body.error||'Automatic publication failed.');
@@ -334,10 +360,10 @@ function retryMcciaDeliveries() {
           });
         }
       } catch(error) {result={id:row['Dashboard inbox ID']||'',publishedId:'',status:'Delivery failed',error:error.message||String(error)};}
-      sheet.getRange(number,37).setValue(result.error?'Delivery failed':result.publishedId?'Auto-published':'Withdrawn');
-      sheet.getRange(number,40,1,4).setValues([[result.id,result.publishedId||'',result.status,result.error]]);
+      sheet.getRange(number,37).setValue(miSafeCell_(result.error?'Delivery failed':result.publishedId?'Auto-published':'Withdrawn'));
+      sheet.getRange(number,40,1,4).setValues(miSafeRows_([[result.id,result.publishedId||'',result.status,result.error]]));
     });
-    rebuildMcciaAnalytics();
+    rebuildMcciaAnalytics();miReportHealth_();
   } finally {lock.releaseLock();}
 }
 
@@ -370,8 +396,8 @@ function miUpsertSources_(records) {
     const manualClassification = existingRow ? miDgValue_(sheet.getRange(existingRow, 18).getDisplayValue()) : '';
     const dgEngagementType = manualClassification || miDgValue_(record.dgEngagementType) || miDgClassification_([record.title, record.notes, record.presence].join(' '));
     const values = [record.id, record.discoveredAt, record.date, record.publisher, record.title, record.language, record.presence, record.topic, record.url, record.discoveryType, record.query, link.code, link.status, new Date(), 'Unverified', 'Pending dashboard delivery', record.notes, dgEngagementType];
-    if (existingRow) sheet.getRange(existingRow, 1, 1, MI_SOURCE_HEADERS.length).setValues([values]); else { sheet.appendRow(values); byUrl[record.url] = sheet.getLastRow(); miDgValidation_(sheet, byUrl[record.url], 1, 18); }
-    try { miFetch_(MI.dashboardUrl + '/api/source-monitoring', { method: 'post', contentType: 'application/json', muteHttpExceptions: true, payload: JSON.stringify(Object.assign({}, record, { linkStatus: link.status, httpStatus: link.code, dgEngagementType: dgEngagementType })) }); } catch (error) { miError_('SOURCE_DELIVERY', record.id, '', '', error); }
+    if (existingRow) sheet.getRange(existingRow, 1, 1, MI_SOURCE_HEADERS.length).setValues(miSafeRows_([values])); else { sheet.appendRow(miSafeRow_(values)); byUrl[record.url] = sheet.getLastRow(); miDgValidation_(sheet, byUrl[record.url], 1, 18); }
+    try { if(MI.storage!=='drive')miFetch_(MI.dashboardUrl + '/api/source-monitoring', { method: 'post', contentType: 'application/json', muteHttpExceptions: true, payload: JSON.stringify(Object.assign({}, record, { linkStatus: link.status, httpStatus: link.code, dgEngagementType: dgEngagementType })) }); } catch (error) { miError_('SOURCE_DELIVERY', record.id, '', '', error); }
   });
 }
 
@@ -379,13 +405,13 @@ function miCheckRows_(sheet, urlCol, httpCol, statusCol, checkedCol, now) {
   if (sheet.getLastRow() < 2) return;
   sheet.getRange(2, 1, sheet.getLastRow() - 1, sheet.getLastColumn()).getValues().forEach(function(row, index) {
     const url = miUrl_(row[urlCol - 1]); if (!url) return; const link = miCheckUrl_(url);
-    sheet.getRange(index + 2, httpCol).setValue(link.code); sheet.getRange(index + 2, statusCol).setValue(link.status); sheet.getRange(index + 2, checkedCol).setValue(now);
+    sheet.getRange(index + 2, httpCol).setValue(miSafeCell_(link.code)); sheet.getRange(index + 2, statusCol).setValue(miSafeCell_(link.status)); sheet.getRange(index + 2, checkedCol).setValue(miSafeCell_(now));
   });
 }
 
 function miCheckUrl_(url) { try { const response = UrlFetchApp.fetch(url, { method: 'get', followRedirects: true, muteHttpExceptions: true, validateHttpsCertificates: true }); const code = response.getResponseCode(); return { status: code >= 200 && code < 400 ? 'Reachable' : 'Broken', code: code }; } catch (error) { return { status: 'Broken', code: '' }; } }
 
-function miEnsureSheet_(ss, name, headers) { const sheet = ss.getSheetByName(name) || ss.insertSheet(name); /* Always restore the canonical schema when upgrading an older workbook. */ sheet.getRange(1, 1, 1, headers.length).setValues([headers]); miStyle_(sheet, headers.length); return sheet; }
+function miEnsureSheet_(ss, name, headers) { const sheet = ss.getSheetByName(name) || ss.insertSheet(name); /* Always restore the canonical schema when upgrading an older workbook. */ sheet.getRange(1, 1, 1, headers.length).setValues(miSafeRows_([headers])); miStyle_(sheet, headers.length); return sheet; }
 function miStyle_(sheet, width) { sheet.setFrozenRows(1); sheet.getRange(1, 1, 1, width).setFontWeight('bold').setBackground('#e8eee9').setFontColor('#172019').setWrap(true); if (sheet.getLastRow() > 1 && !sheet.getFilter()) sheet.getRange(1, 1, sheet.getLastRow(), width).createFilter(); }
 function miValidation_(sheet, start, count) { const status = SpreadsheetApp.newDataValidation().requireValueInList(MI.statuses, true).setAllowInvalid(false).build(); const verify = SpreadsheetApp.newDataValidation().requireValueInList(['Unverified', 'Potential duplicate — verify', 'Verified', 'Broken source', 'Not applicable'], true).setAllowInvalid(false).build(); sheet.getRange(start, 36, count, 1).setDataValidation(verify); sheet.getRange(start, 37, count, 1).setDataValidation(status); miDgValidation_(sheet, start, count, 45); }
 function miDgValidation_(sheet, start, count, column) { const rule = SpreadsheetApp.newDataValidation().requireValueInList(MI.dgClassifications, true).setAllowInvalid(false).build(); sheet.getRange(start, column, count, 1).setDataValidation(rule); }
@@ -396,10 +422,10 @@ function miRow_(sheet, row) { const headers = sheet.getRange(1, 1, 1, sheet.getL
 function miResponseMap_(response) { return response.getItemResponses().reduce(function(out, item) { const value = item.getResponse(); out[item.getItem().getTitle()] = Array.isArray(value) ? value.join(', ') : value; return out; }, {}); }
 function miFileIds_(response) { const ids = []; response.getItemResponses().forEach(function(item) { if (item.getItem().getType() !== FormApp.ItemType.FILE_UPLOAD) return; const value = item.getResponse(); (Array.isArray(value) ? value : [value]).forEach(function(id) { if (id) ids.push(String(id)); }); }); return ids; }
 function miArchiveFolder_(date) { const root = DriveApp.getFolderById(MI.archiveFolderId); if (!date) return miFolder_(root, 'Date unavailable'); const year = miFolder_(root, date.slice(0, 4)); return miFolder_(year, miMonthLabel_(date)); }
-function miFolder_(parent, name) { const folders = parent.getFoldersByName(name); return folders.hasNext() ? folders.next() : parent.createFolder(name); }
+function miFolder_(parent, name) { const folders = parent.getFoldersByName(name); const folder=folders.hasNext() ? folders.next() : parent.createFolder(name);folder.setSharing(DriveApp.Access.PRIVATE,DriveApp.Permission.NONE);return folder; }
 function miFilename_(date, publisher, sequence, original) { const ext = (original.match(/\.[A-Za-z0-9]{2,6}$/) || ['.bin'])[0].toLowerCase(); const safe = publisher.replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '').slice(0, 70) || 'Publisher'; return (date || 'undated') + '__' + safe + '__' + Utilities.formatString('%02d', sequence) + ext; }
-function miAudit_(record, action, actor, previous, next, details, source) { try { miSheet_(MI.sheets.audit).appendRow([new Date(), record, action, actor, previous, next, details, source]); } catch (ignore) {} }
-function miError_(stage, record, response, file, error) { try { miSheet_(MI.sheets.errors).appendRow([new Date(), stage, record, response, file, error && error.message ? error.message : String(error), error && error.stack ? error.stack : '', false, '', '']); } catch (ignore) {} }
+function miAudit_(record, action, actor, previous, next, details, source) { try { miSheet_(MI.sheets.audit).appendRow(miSafeRow_([new Date(), record, action, actor, previous, next, details, source])); } catch (ignore) {} }
+function miError_(stage, record, response, file, error) { try { miSheet_(MI.sheets.errors).appendRow(miSafeRow_([new Date(), stage, record, response, file, error && error.message ? error.message : String(error), error && error.stack ? error.stack : '', false, '', ''])); } catch (ignore) {} }
 function miSha_(bytes) { return Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, bytes).map(function(value) { return (value < 0 ? value + 256 : value).toString(16).padStart(2, '0'); }).join(''); }
 function miSimilarity_(left, right) { const a = new Set(miNorm_(left).split(' ').filter(function(t) { return t.length > 2; })); const b = new Set(miNorm_(right).split(' ').filter(function(t) { return t.length > 2; })); if (!a.size || !b.size) return 0; let overlap = 0; a.forEach(function(t) { if (b.has(t)) overlap += 1; }); return overlap / (a.size + b.size - overlap); }
 function miNorm_(value) { return String(value == null ? '' : value).toLowerCase().replace(/[^a-z0-9\u0900-\u097f]+/g, ' ').trim(); }
@@ -480,4 +506,49 @@ function detectMediaMetadata(input) {
   ];
   const topic = (rules.find(rule => rule[1].test(text)) || ['Topic not assigned'])[0];
   return {language, topic, presence: people.join('; ') || 'Person not recorded', dgEngagementType};
+}
+
+function miSafeCell_(value) { return typeof value === 'string' && /^[\s\u0000-\u001f]*[=+@-]/.test(value) ? "'" + value : value; }
+function miSafeRow_(row) { return row.map(miSafeCell_); }
+function miSafeRows_(rows) { return rows.map(miSafeRow_); }
+function miReportHealth_() { if(MI.storage==='drive')return;try { const rows=miObjects_(miSheet_(MI.sheets.submissions));miFetch_(MI.dashboardUrl+'/api/automation-status',{method:'post',contentType:'application/json',muteHttpExceptions:true,payload:JSON.stringify({pendingOcr:rows.filter(function(r){return r['Processing status']==='OCR retry pending'}).length,deliveryFailures:rows.filter(function(r){return r['Processing status']==='Delivery failed'}).length})}); } catch(error) { miError_('HEALTH_DELIVERY','','','',error); } }
+
+// The web app executes as its owner. Every data request requires a signed server request.
+function doGet() { return miGatewayJson_({ok:false,error:'Signed server request required.'}); }
+function doPost(event) {
+  try {
+    const outer=JSON.parse(event.postData.contents||'{}'),secret=PropertiesService.getScriptProperties().getProperty('DRIVE_GATEWAY_SECRET');
+    if(!secret||typeof outer.payload!=='string'||outer.payload.length>12000)throw new Error('Unauthorized');
+    const expected=Utilities.computeHmacSha256Signature(outer.payload,secret).map(function(v){return (v<0?v+256:v).toString(16).padStart(2,'0')}).join('');
+    if(typeof outer.signature!=='string'||outer.signature.length!==expected.length)throw new Error('Unauthorized');
+    let diff=0;for(let i=0;i<expected.length;i++)diff|=expected.charCodeAt(i)^outer.signature.charCodeAt(i);if(diff)throw new Error('Unauthorized');
+    const call=JSON.parse(outer.payload);if(Math.abs(Date.now()-call.at)>5*60000||!call.nonce)throw new Error('Expired request');
+    const data=call.data||{};let result;
+    if(call.action==='published'){const page=miPage_(miPublishedRows_().map(function(r){return {id:r['Approved record ID'],row:r}}),data);result={records:page.records.map(function(r){return miPublicClipping_(r.row)}),nextCursor:page.nextCursor};}
+    else if(call.action==='health'){const rows=miObjects_(miSheet_(MI.sheets.submissions)),pending=rows.filter(function(r){return r['Processing status']==='OCR retry pending'}).length,failed=rows.filter(function(r){return r['Processing status']==='Delivery failed'}).length;result={state:pending||failed?'attention':'connected',pendingOcr:pending,failures:failed,message:pending?pending+' clippings are waiting for automatic OCR retry.':failed?failed+' uploads need another delivery attempt.':'Drive and Sheets are connected. Only automatically published files are exposed.',lastPublished:rows.filter(function(r){return r['Processing status']==='Auto-published'}).map(function(r){return new Date(r['Updated at']).toISOString()}).sort().pop()||null};}
+    else if(call.action==='fileInfo'||call.action==='fileChunk'){
+      const row=miFindPublished_(data.id),file=DriveApp.getFileById(row['Drive file ID']);
+      if(call.action==='fileInfo')result={size:file.getSize(),type:file.getMimeType(),name:file.getName()};
+      else{const start=Number(data.start),end=Number(data.end);if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start<0||end<start||end>=file.getSize()||end-start>=512*1024)throw new Error('Invalid range');const response=UrlFetchApp.fetch('https://www.googleapis.com/drive/v3/files/'+encodeURIComponent(file.getId())+'?alt=media',{headers:{Authorization:'Bearer '+ScriptApp.getOAuthToken(),Range:'bytes='+start+'-'+end},muteHttpExceptions:true});if(response.getResponseCode()!==206&&!(response.getResponseCode()===200&&start===0&&end===file.getSize()-1))throw new Error('Evidence could not be read');result={base64:Utilities.base64Encode(response.getBlob().getBytes())};}
+    }else if(call.action==='sources')result=miPage_(miObjects_(miSheet_(MI.sheets.sources)).filter(function(r){return miRelevantHeadline_(r.Title)}).map(function(r){const date=miDate_(r['Publication date']);return {id:r['Source ID'],title:r.Title,date:date,year:date?Number(date.slice(0,4)):null,publisher:r.Publisher,url:miPublicSource_(r['Source URL']),language:r.Language,presence:r['People / organisation'],topic:r.Topic,dgEngagementType:r['DG content classification'],type:'Article',format:'Article',status:'Unverified',description:'Discovered source; verification required.',discoveredAt:new Date(r['Discovered at']).toISOString()}}),data);
+    else if(call.action==='corrections')result=miPage_(miObjects_(miGatewaySheet_('Website Corrections',['ID','Patch','Updated at'])).map(function(r){return {id:r.ID,patch:JSON.parse(r.Patch),updatedAt:r['Updated at']}}),data);
+    else if(call.action==='correct'){
+      const cache=CacheService.getScriptCache();if(cache.get(call.nonce))throw new Error('Request already used');cache.put(call.nonce,'1',300);result=miGatewayCorrection_(data);
+    }else throw new Error('Unknown action');
+    return miGatewayJson_({ok:true,data:result});
+  }catch(error){return miGatewayJson_({ok:false,error:error.message||'Drive request failed'});}
+}
+function miGatewayJson_(value){return ContentService.createTextOutput(JSON.stringify(value)).setMimeType(ContentService.MimeType.JSON);}
+function miPublishedRows_(){const seen={},rows=miObjects_(miSheet_(MI.sheets.submissions));rows.forEach(function(r){if(['Withdrawn','Rejected'].indexOf(r['Processing status'])>=0)seen[r['Approved record ID']]=true});return rows.filter(function(r){const id=r['Approved record ID'];if(r['Processing status']!=='Auto-published'||!id||seen[id])return false;seen[id]=true;return true;});}
+function miFindPublished_(id){const row=miPublishedRows_().filter(function(r){return r['Approved record ID']===id})[0];if(!row)throw new Error('Published clipping not found');return row;}
+function miPublicSource_(value){const url=miUrl_(value);return /^https?:\/\/(?:drive|docs)\.google\.com/i.test(url)?'':url;}
+function miPublicClipping_(r){const id=r['Approved record ID'],date=miDate_(r['Publication date']),image='/api/uploads/'+encodeURIComponent(id)+'/image';let text=String(r['OCR text']||'');if(r['OCR text file ID'])text=DriveApp.getFileById(r['OCR text file ID']).getBlob().getDataAsString();return {id:id,sha256:r['Binary SHA-256'],date:date,year:date?Number(date.slice(0,4)):null,publisher:r.Publisher,page:r['Page number'],language:r.Language,presence:r['People / organisation'],topic:r.Topic,dgEngagementType:r['DG content classification']||null,ocrHeadline:r.Headline,ocrText:text,ocrExcerpt:text.slice(0,650),ocrStatus:text?'Completed':'Not available',ocrEngine:r['OCR engine'],ocrConfidence:null,ocrReviewStatus:'Automatic transcription · not editorially verified',thumbnailUrl:/^image\//.test(r['MIME type'])?image:r['MIME type']==='application/pdf'?'/fallbacks/pdf.webp':'/fallbacks/video.webp',originalContentType:r['MIME type'],originalImageUrl:image,originalFilename:'Published clipping',quality:'Original',matchStatus:'Automatically processed upload',matchedRecordId:null,uploaded:true,automated:true,status:'Auto-published',uploadedAt:new Date(r['Updated at']).toISOString(),publicSourceUrl:miPublicSource_(r['Source URL'])};}
+function miPage_(rows,data){rows.sort(function(a,b){return b.id.localeCompare(a.id)});if(data.cursor)rows=rows.filter(function(r){return r.id<data.cursor});const n=Math.max(1,Math.min(100,Number(data.limit)||100)),page=rows.slice(0,n);return {records:page,nextCursor:rows.length>n?page[page.length-1].id:null};}
+function miGatewaySheet_(name,headers){const ss=miSpreadsheet_();let sheet=ss.getSheetByName(name);if(!sheet){sheet=ss.insertSheet(name);sheet.appendRow(miSafeRow_(headers));}return sheet;}
+function miGatewayCorrection_(data){
+ if(!/^[A-Z0-9-]{3,80}$/.test(data.id||'')||typeof data.title!=='string'||!data.title.trim()||data.title.length>1000||typeof data.reason!=='string'||data.reason.trim().length<10)throw new Error('Invalid correction');
+ if(data.date!==undefined&&data.date!==''&&(!/^\d{4}-\d{2}-\d{2}$/.test(data.date)||!miDate_(data.date)))throw new Error('Invalid date');
+ const lock=LockService.getScriptLock();lock.waitLock(10000);
+ try{const sheet=miGatewaySheet_('Website Corrections',['ID','Patch','Updated at']),rows=miObjects_(sheet);const index=rows.findIndex(function(r){return r.ID===data.id}),old=index>=0?rows[index]:null;if(String(old?old['Updated at']:'')!==String(data.version||''))throw new Error('This article changed. Reload before editing.');const patch=Object.assign({},old?JSON.parse(old.Patch):{},{title:data.title.trim()},data.date===undefined?{}:{date:data.date,year:data.date?Number(data.date.slice(0,4)):null,datePrecision:data.date?'day':'unavailable',publicationMonth:''}),now=new Date().toISOString();
+ miGatewaySheet_('Website Correction Audit',['Timestamp','ID','Actor','Reason','Previous patch','Patch']).appendRow(miSafeRow_([now,data.id,data.actor,data.reason,old?old.Patch:'',JSON.stringify(patch)]));const values=[data.id,JSON.stringify(patch),now];if(index>=0)sheet.getRange(index+2,1,1,3).setValues(miSafeRows_([values]));else sheet.appendRow(miSafeRow_(values));return {id:data.id,patch:patch,updatedAt:now};}finally{lock.releaseLock()}
 }

@@ -1,3 +1,4 @@
+import {driveConfigured,drivePage} from '../drive-backend';
 import {pageRequest,pageResult} from '../pagination';
 import { relevantHeadline } from '@/app/discovery-relevance';
 import { normalizeLanguage, validPublicationDate } from '@/app/media-metadata';
@@ -93,6 +94,7 @@ function toRecord(row: SourceRow) {
 
 export async function GET(request:Request) {
   try {
+    if(driveConfigured())return await drivePage(request,'sources');
     const { db } = getStorageBindings();
     await ensureFormIntakeSchema(db);
     const {limit,before}=pageRequest(request);
