@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-11T05:28:02+00:00",
+  "generatedAt": "2026-09-11T05:45:44+00:00",
   "methodology": "Automated URL reachability and page-title agreement audit. This does not replace editorial review of article contents.",
   "summary": {
-    "totalRecords": 2928,
-    "sourceCheckedRecords": 2928,
-    "withPublicUrl": 486,
+    "totalRecords": 2929,
+    "sourceCheckedRecords": 2929,
+    "withPublicUrl": 487,
     "withoutPublicUrl": 2442,
-    "reachablePublicUrls": 433,
+    "reachablePublicUrls": 434,
     "headlineConfirmed": 182,
-    "manualReviewRequired": 2746,
+    "manualReviewRequired": 2747,
     "categories": {
-      "discovery-link": 1,
+      "discovery-link": 2,
       "headline-confirmed": 182,
       "homepage-only": 32,
       "no-public-url": 2442,
@@ -21989,6 +21989,14 @@
       "httpStatus": 200,
       "pageTitle": "#organicsummit2026 #organicfarming #naturalfarming #residuefreefarming #agrifood #farmtofork | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
       "titleMatchScore": 0.252
+    },
+    {
+      "recordId": "GN-852B2E35C5D6A1",
+      "category": "discovery-link",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY05CaTUwMERCcE5WdEExS0dLU0VxTTNBMEN5Zk9hRWVxSDQ4Z05hOEZmZDQ5akdyRHl2ajVxWW9QMHllaWxoeVRwUm95STlvVVRwZWNuTEtPQnZXN2xxbURMNllSb21hSUliSGFtTEdRd1hsTmFZaF93Q1k3ZTZsdjVOQTI1b1QwNlZUU1dPT3A3b2k3Ykh0bDZYNVVBdXFnV3hhcTFkZUNGNzVhMHVtVnFIZEYycld4ZHhtamRIVnFicG5HREF4VndYUEhyd3psd2hGdVBsZw?oc=5",
+      "httpStatus": 200,
+      "pageTitle": "Google News",
+      "titleMatchScore": 0.085
     }
   ]
 }
