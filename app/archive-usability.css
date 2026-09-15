@@ -1,0 +1,21 @@
+#top .archive-search{display:flex;gap:10px;align-items:end;margin:24px auto;width:calc(100% - 2 * var(--media-gutter));max-width:1360px}
+#top .archive-search label{display:grid;gap:7px;flex:1;min-width:0;font-weight:600}
+#top .archive-search input{width:100%;min-width:0;min-height:46px;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:#fff;font:inherit}
+#top .archive-search button{min-height:46px;padding:10px 20px;background:var(--green);color:#fff;border:0;border-radius:6px;cursor:pointer}
+#top .metrics .metric-link{display:block;width:100%;text-align:left;border:0;background:none;padding:0;color:inherit;cursor:pointer}
+#top .metrics .metric-link:hover strong{text-decoration:underline;text-underline-offset:5px}
+#top .count-explanation,#top .quality-shortcuts{width:calc(100% - 2 * var(--media-gutter));max-width:1360px;margin:18px auto;color:var(--muted);font-size:14px;line-height:1.6}
+#top .quality-shortcuts summary{cursor:pointer;font-weight:600;color:var(--ink)}
+#top .quality-shortcuts div{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+#top .quality-shortcuts button{padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:5px;cursor:pointer;color:var(--ink)}
+#top .record-details{margin:12px 0;font-size:14px;line-height:1.6;color:var(--muted)}
+#top .record-details summary{cursor:pointer;color:var(--green);font-size:13px}
+#top .record-details p{display:block;margin:10px 0}
+#top .card-meta{flex-wrap:wrap;letter-spacing:0;text-transform:none}
+#top .card-meta span{white-space:normal;overflow-wrap:anywhere}
+#top .card-actions>a:last-child{padding:9px 12px;min-height:40px;border:1px solid var(--line);border-radius:5px}
+#top .report-preview{max-height:350px;overflow:auto;border:1px solid var(--line);margin:18px 0}
+#top .report-preview table{border-collapse:collapse;width:100%;font-size:14px}
+#top .report-preview th,#top .report-preview td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+#top .report-preview th{background:#edf5fb;position:sticky;top:0}
+@media(max-width:700px){#top .mobile-filter{position:sticky;top:64px;z-index:10;min-height:44px}#top .results-toolbar{flex-wrap:wrap}#top .card-actions{flex-direction:row;flex-wrap:wrap}#top .record-details .tags{display:flex}#top .archive-search{gap:8px}#top .archive-search button{padding:10px 14px}#top .quality-shortcuts button{min-height:44px}}

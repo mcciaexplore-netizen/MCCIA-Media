@@ -49,3 +49,6 @@ next-env.d.ts
 /artifact-work/ocr-v2-results/
 /site-build.tar.gz
 /ocr_source_search_checkpoint.json
+
+# Private local work tracker data
+/.local-work-tracker/

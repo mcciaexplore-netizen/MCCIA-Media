@@ -54,8 +54,8 @@ function topCounts(values: string[], limit = 6) {
 
 function Bars({ rows }: { rows: [string, number][] }) {
   const maximum = Math.max(1, ...rows.map(([, count]) => count));
-  return <div className="analytics-bars">{rows.map(([label, count]) => <div key={label}>
-    <span title={label}>{label}</span><i><b style={{ width: count ? `${Math.max(4, (count / maximum) * 100)}%` : '0%' }} /></i><strong>{count.toLocaleString('en-IN')}</strong>
+  return <div className="analytics-bars" role="list">{rows.map(([label, count]) => <div key={label} role="listitem">
+    <span title={label}>{label}</span><i aria-hidden="true"><b style={{ width: `${(count / maximum) * 100}%` }} /></i><strong>{count.toLocaleString('en-IN')}</strong>
   </div>)}</div>;
 }
 

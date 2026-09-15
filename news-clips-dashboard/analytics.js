@@ -1,0 +1,11 @@
+import {counts} from './model.js';
+import {bilingualMatch} from './lib/coverage-intelligence.js';
+import {validPublicationDate} from './lib/media-metadata.js';
+export const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+export const days=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+export function monthOf(r){if(r.datePrecision==='month'&&/^\d{4}-(0[1-9]|1[0-2])$/.test(r.publicationMonth||''))return r.publicationMonth;const date=validPublicationDate(r.date);return date?date.slice(0,7):'';}
+export function exactDate(r){return r.datePrecision==='month'||r.publicationMonth?'':validPublicationDate(r.date)||'';}
+export function filterRows(rows,f){if(f.from&&f.to&&f.from>f.to)return [];return rows.filter(r=>{for(const key of ['kind','publisher','language','person','topic'])if(f[key]&&String(r[key]||'Not recorded')!==f[key])return false;const month=monthOf(r);if(!month){if(!f.undated)return false;}else if((f.from&&month<f.from)||(f.to&&month>f.to))return false;return !f.search||bilingualMatch([r.id,r.title,r.publisher,r.topic,r.person,r.presence,r.description,r.language].filter(Boolean).join(' '),f.search);});}
+export function summarize(rows){const monthly=months.map(m=>[m,0]),weekly=days.map(d=>[d,0]);let noMonth=0,noDay=0;for(const r of rows){const month=monthOf(r),date=exactDate(r);if(month)monthly[Number(month.slice(5))-1][1]++;else noMonth++;if(date)weekly[(new Date(date+'T00:00:00Z').getUTCDay()+6)%7][1]++;else noDay++;}const years=counts(rows,r=>r.year||'Year unavailable').filter(e=>e[0]!=='Year unavailable').sort((a,b)=>Number(a[0])-Number(b[0]));return {monthly,weekly,noMonth,noDay,years,noYear:rows.filter(r=>!r.year).length};}
+export function sortRows(rows,sort){return [...rows].sort((a,b)=>{if(sort==='publisher')return String(a.publisher).localeCompare(String(b.publisher))||String(a.id).localeCompare(String(b.id));const da=monthOf(a)||String(a.year||''),db=monthOf(b)||String(b.year||'');if(!da||!db)return Number(!da)-Number(!db);return (sort==='oldest'?1:-1)*((exactDate(a)||da).localeCompare(exactDate(b)||db))||String(a.id).localeCompare(String(b.id));});}
+export function grouped(rows,key,limit){const all=counts(rows,key);return all.length<=limit?all:[...all.slice(0,limit-1),['Other categories',all.slice(limit-1).reduce((sum,e)=>sum+e[1],0)]];}

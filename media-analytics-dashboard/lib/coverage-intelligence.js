@@ -1,0 +1,122 @@
+import { validPublicationDate } from './media-metadata.js';
+const aliases = [
+    ['prashant girbane', 'prashant girbani', 'prashanth girbane', 'प्रशांत गिरबने', 'प्रशांत गिरबाणे', 'प्रशांत गिरभने', 'प्रशांत गिरबणे'],
+    ['mccia', 'm c c i a', 'mahratta chamber', 'maratha chamber', 'एमसीसीआयए', 'एमसीसीआईए', 'मराठा चेंबर'],
+    ['msme', 'msmes', 'एमएसएमई', 'सूक्ष्म लघु मध्यम उद्योग', 'लघु उद्योग'],
+    ['semiconductor', 'semiconductors', 'सेमीकंडक्टर', 'सेमिकंडक्टर'],
+    ['employment', 'jobs', 'रोजगार'], ['exports', 'export', 'निर्यात'],
+    ['industry', 'industrial', 'उद्योग', 'औद्योगिक'], ['budget', 'अर्थसंकल्प'],
+    ['sakal', 'सकाळ'], ['loksatta', 'लोकसत्ता'], ['lokmat', 'लोकमत'],
+    ['maharashtra times', 'महाराष्ट्र टाइम्स'], ['pudhari', 'पुढारी'],
+];
+export function searchNormalize(text) {
+    return text.normalize('NFKC').toLowerCase().replace(/[\u200b-\u200d\ufeff]/g, '').replace(/[०-९]/g, n => String(n.charCodeAt(0) - 0x0966)).replace(/[^\p{L}\p{M}\p{N}]+/gu, ' ').trim();
+}
+function aliasNormalize(text) {
+    let result = ` ${searchNormalize(text)} `;
+    for (const [index, group] of aliases.entries())
+        for (const phrase of [...group].sort((a, b) => b.length - a.length))
+            result = result.split(` ${searchNormalize(phrase)} `).join(` alias${index} `);
+    return result.trim();
+}
+function nearWord(a, b) {
+    if (a === b)
+        return true;
+    if (a.length < 5 || b.length < 5 || Math.abs(a.length - b.length) > 1)
+        return false;
+    let i = 0, j = 0, edits = 0;
+    while (i < a.length && j < b.length) {
+        if (a[i] === b[j]) {
+            i++;
+            j++;
+            continue;
+        }
+        if (++edits > 1)
+            return false;
+        if (a.length >= b.length)
+            i++;
+        if (b.length >= a.length)
+            j++;
+    }
+    return edits + (a.length - i) + (b.length - j) <= 1;
+}
+export function bilingualMatch(text, query) {
+    if (!query.trim())
+        return true;
+    const raw = searchNormalize(text), rawQuery = searchNormalize(query);
+    const rawWords = raw.split(' ');
+    if (rawQuery.split(' ').every(token => rawWords.some(word => word === token || (!/\d/.test(token) && nearWord(token, word)))))
+        return true;
+    const haystack = aliasNormalize(text), needle = aliasNormalize(query);
+    if (haystack.includes(needle))
+        return true;
+    const words = haystack.split(' ');
+    return needle.split(' ').every(token => words.some(word => word === token || (!/\d/.test(token) && nearWord(token, word))));
+}
+export const ARCHIVE_ORIGIN = 'https://mccia-media.vercel.app';
+export function safeLink(value) {
+    if (!value || /[\\\u0000-\u0020]/.test(value))
+        return null;
+    if (value.startsWith('/') && !value.startsWith('//'))
+        return value;
+    try {
+        const u = new URL(value);
+        return ['https:', 'http:'].includes(u.protocol) && !u.username && !u.password ? u.href : null;
+    }
+    catch {
+        return null;
+    }
+}
+export function reportLink(value) { const safe = safeLink(value); return safe ? new URL(safe, ARCHIVE_ORIGIN).href : null; }
+export function isCoverageArticle(item) { return !['PG2527', 'PG2528', 'PG2561', 'PG2562'].includes(item.id || ''); }
+export function reportRevision(rows) { return JSON.stringify(rows); }
+function canonicalUrl(value) { const link = safeLink(value); if (!link)
+    return ''; const u = new URL(link, ARCHIVE_ORIGIN); for (const key of [...u.searchParams.keys()])
+    if (/^utm_|^(fbclid|gclid)$/.test(key))
+        u.searchParams.delete(key); u.hash = ''; if (u.pathname === '/' && !u.search)
+    return ''; return u.href.replace(/\/$/, ''); }
+const stopwords = new Set('the a an and or of to in for on at by with from is are was mccia pune prashant girbane'.split(' '));
+function titleTokens(value) { return new Set(searchNormalize(value).split(' ').filter(t => t.length > 2 && !stopwords.has(t))); }
+export function relatedStory(a, b) {
+    const url = canonicalUrl(a.url);
+    if (url && url === canonicalUrl(b.url))
+        return true;
+    if (!validPublicationDate(a.date) || !validPublicationDate(b.date) || Math.abs(Date.parse(a.date) - Date.parse(b.date)) > 3 * 86400000)
+        return false;
+    const left = titleTokens(a.title), right = titleTokens(b.title);
+    if (left.size < 4 || right.size < 4)
+        return false;
+    const numbers = (s) => searchNormalize(s).match(/\d+/g)?.sort().join(',') || '';
+    if (numbers(a.title) !== numbers(b.title))
+        return false;
+    const intersection = [...left].filter(t => right.has(t)).length;
+    return intersection / (left.size + right.size - intersection) >= 0.7 && intersection / Math.min(left.size, right.size) >= 0.85;
+}
+export function groupStories(records) {
+    const groups = [];
+    const byDay = new Map(), byUrl = new Map();
+    // Compare with each group's representative to avoid chains of weak matches.
+    for (const record of [...records].sort((a, b) => a.id.localeCompare(b.id))) {
+        const day = validPublicationDate(record.date) ? Math.floor(Date.parse(record.date) / 86400000) : NaN, url = canonicalUrl(record.url);
+        const candidates = Number.isFinite(day) ? [-3, -2, -1, 0, 1, 2, 3].flatMap(offset => byDay.get(day + offset) || []) : [];
+        let group = (url ? byUrl.get(url) : undefined) || candidates.find(g => relatedStory(g.articles[0], record));
+        if (group)
+            group.articles.push(record);
+        else {
+            group = { id: record.id, articles: [record] };
+            groups.push(group);
+            if (Number.isFinite(day))
+                byDay.set(day, [...(byDay.get(day) || []), group]);
+        }
+        if (url)
+            byUrl.set(url, group);
+    }
+    return groups;
+}
+export function indiaDay(value = new Date()) { const date = new Date(value); return Number.isNaN(date.getTime()) ? '' : new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' }).format(date); }
+export function discoveredDay(item) { const timestamp = item.firstSeenAt || item.googleNewsFetchedAt || item.discoveredAt; return timestamp ? indiaDay(timestamp) : ''; }
+export function publicationMonth(item) { return item.datePrecision === 'month' && /^\d{4}-(0[1-9]|1[0-2])$/.test(item.publicationMonth || '') ? item.publicationMonth : validPublicationDate(item.date) ? item.date.slice(0, 7) : ''; }
+export function monthRows(records, month) { return records.filter(item => publicationMonth(item) === month); }
+export function counts(values) { const map = new Map(); for (const value of values)
+    map.set(value, (map.get(value) || 0) + 1); return [...map.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])); }
+export function previousMonth(month) { const [year, m] = month.split('-').map(Number); return new Date(Date.UTC(year, m - 2, 1)).toISOString().slice(0, 7); }
