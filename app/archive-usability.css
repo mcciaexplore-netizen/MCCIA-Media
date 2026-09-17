@@ -19,3 +19,8 @@
 #top .report-preview th,#top .report-preview td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
 #top .report-preview th{background:#edf5fb;position:sticky;top:0}
 @media(max-width:700px){#top .mobile-filter{position:sticky;top:64px;z-index:10;min-height:44px}#top .results-toolbar{flex-wrap:wrap}#top .card-actions{flex-direction:row;flex-wrap:wrap}#top .record-details .tags{display:flex}#top .archive-search{gap:8px}#top .archive-search button{padding:10px 14px}#top .quality-shortcuts button{min-height:44px}}
+
+/* Three live archive totals, with no empty grid cells. */
+#top .masthead .metrics.summary-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+#top .masthead .metrics.summary-metrics>div{grid-column:auto}
+@media(max-width:540px){#top .masthead .metrics.summary-metrics{grid-template-columns:minmax(0,1fr)}}
