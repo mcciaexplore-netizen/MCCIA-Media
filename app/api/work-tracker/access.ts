@@ -3,6 +3,7 @@ import {join} from 'node:path';
 import {randomBytes,scryptSync,timingSafeEqual,createHash} from 'node:crypto';
 export type Role='Administrator'|'Reviewer'|'Editor'|'Viewer';
 export type Identity={name:string;role:Role;id:string};
+type User=Identity&{salt:string;hash:string};
 type User=Identity&{salt:string;hash:string;zohoSubject?:string};
 type Access={users:User[];sessions:{hash:string;userId:string;expires:number}[]};
 const directory=join(process.cwd(),'.local-work-tracker'),file=join(directory,'access.json');
@@ -28,6 +29,7 @@ export async function changeAccess(request:Request,input:Record<string,unknown>)
  }
  if(action==='login'){
   const user=data.users.find(x=>x.name.toLowerCase()===String(input.name||'').trim().toLowerCase());const password=String(input.password||'');
+  if(password.length>200||!user||!timingSafeEqual(Buffer.from(user.hash,'hex'),scryptSync(password,user.salt,64)))throw Error('Name or password is incorrect.');
   if(password.length>200||!user||Boolean(user.zohoSubject)||!timingSafeEqual(Buffer.from(user.hash,'hex'),scryptSync(password,user.salt,64)))throw Error('Name or password is incorrect.');
   const token=Buffer.from(randomBytes(32)).toString('hex');data.sessions=data.sessions.filter(x=>x.expires>Date.now());data.sessions.push({hash:digest(token),userId:user.id,expires:Date.now()+8*60*60*1000});await write(data);return {token,message:'Signed in'};
  }

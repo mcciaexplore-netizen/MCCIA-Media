@@ -1,6 +1,7 @@
 import {readFile,mkdir,writeFile,rename} from 'node:fs/promises';
 import {join} from 'node:path';
 import {randomUUID} from 'node:crypto';
+import {validateItem,fields,applyAction,type WorkItem,type DocumentVersion} from '../../work-tracker/model';
 import {validateItem,fields,applyAction,publicSnapshot,type WorkItem,type DocumentVersion} from '../../work-tracker/model';
 import type {Identity} from './access';
 const directory=join(process.cwd(),'.local-work-tracker');
@@ -31,6 +32,10 @@ export function saveItem(input:Record<string,unknown>,actor:Identity={id:'local-
    item.documents=[...(previous?.documents||[]),{id:randomUUID(),name,url,version,kind:kind as DocumentVersion['kind'],addedAt:at,addedBy:actor.name}];
   }
   const changes=previous?[...fields.filter(f=>(previous[f]??(f==='priority'?'Normal':''))!==item[f]),...(input.newDocument?['document']:[]),...((previous.sourceConfirmed??false)!==(item.sourceConfirmed??false)?['sourceConfirmation']:[])]:[];
+  if(previous&&!changes.length&&!action&&!comment)return previous;
+  item.id=previous?.id??`WORK-${randomUUID().slice(0,8).toUpperCase()}`;
+  item.updatedAt=at;item.revision=(previous?.revision??0)+1;
+  item.history=[...(previous?.history??[]),{at,actor:actor.name,comment,fromStage:previous?.stage,toStage:item.stage,summary:action|| (previous?changes.map(f=>f==='stage'?`Stage: ${previous.stage} → ${item.stage}`:`Updated ${f.replace(/([A-Z])/g,' $1').toLowerCase()}`).join('; ')||'Comment added':'Created locally') }];
   if(previous&&!changes.length&&!action&&!comment&&!publication)return previous;
   item.id=previous?.id??`WORK-${randomUUID().slice(0,8).toUpperCase()}`;
   if(publication==='publish'){item.publicSnapshot=publicSnapshot(item);item.publicApprovedAt=at;item.publicApprovedBy=actor.name;}
