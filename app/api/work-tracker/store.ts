@@ -8,7 +8,7 @@ const file=join(directory,'records.json');
 export async function readItems():Promise<WorkItem[]>{try{const data=JSON.parse(await readFile(file,'utf8'));if(!Array.isArray(data))throw Error('Invalid tracker file');return data;}catch(error){if((error as NodeJS.ErrnoException).code==='ENOENT')return [];throw error;}}
 // A process-local queue plus revision checks prevents overlapping writes in the local server.
 let queue:Promise<unknown>=Promise.resolve();
-export function saveItem(input:Record<string,unknown>,actor:Identity={id:'local-owner',name:process.env.USERNAME||'Local owner',role:'Administrator'}):Promise<WorkItem>{
+export function saveItem(input:Record<string,unknown>,actor:Identity={id:'local-owner',name:process.env.USERNAME||'Local owner',role:'Administrator'},publish?: (item:WorkItem)=>Promise<void>):Promise<WorkItem>{
  const operation=queue.then(async()=>{
   if(actor.role==='Viewer')throw Error('Your role can view items but cannot edit them.');
   const items=await readItems();
@@ -39,7 +39,9 @@ export function saveItem(input:Record<string,unknown>,actor:Identity={id:'local-
   item.history=[...(previous?.history??[]),{at,actor:actor.name,comment,fromStage:previous?.stage,toStage:item.stage,summary:(publication==='publish'?'Approved public snapshot':publication==='unpublish'?'Removed public snapshot':'')||action|| (previous?changes.map(f=>f==='stage'?`Stage: ${previous.stage} → ${item.stage}`:`Updated ${f.replace(/([A-Z])/g,' $1').toLowerCase()}`).join('; ')||'Comment added':'Created locally') }];
   const next=previous?items.map(x=>x.id===item.id?item:x):[item,...items];
   await mkdir(directory,{recursive:true});const temp=join(directory,`${randomUUID()}.tmp`);
-  await writeFile(temp,JSON.stringify(next,null,2)+'\n','utf8');await rename(temp,file);return item;
+  await writeFile(temp,JSON.stringify(next,null,2)+'\n','utf8');
+  if(publication&&publish)await publish(item);
+  await rename(temp,file);return item;
  });
  queue=operation.catch(()=>{});return operation;
 }

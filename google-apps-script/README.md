@@ -30,3 +30,18 @@ The website fetches new data when opened, every minute while visible, and when r
 This connection processes new uploads. It does not invent missing publication dates or regenerate old OCR automatically. The existing archive still needs source recovery for missing originals/full text, ambiguous clipping matches, and undated records. Historical unreachable-link findings are stored audit results until retested. Legacy R2/Turso routes remain available as a fallback but are not required for this Drive workflow.
 
 Official references: [Deploy an Apps Script web app](https://developers.google.com/apps-script/guides/web) and [installable triggers](https://developers.google.com/apps-script/guides/triggers/installable).
+
+
+## Public Work Tracker
+
+The public viewer is `/work-tracker/public`. Editorial accounts, drafts, source rows and internal notes remain in the existing local tracker. The gateway stores only explicitly approved snapshots in a private `Public Work Tracker` sheet in the existing intake spreadsheet. Do not share this spreadsheet publicly.
+
+1. Back up the installed Apps Script, replace its code with this updated `Pipeline.gs`, and deploy a new version of the existing web app (same URL). No rerun of setup is needed for the tracker; its sheet is created when first used.
+2. Keep the working Production `DRIVE_GATEWAY_URL` and `DRIVE_GATEWAY_SECRET` in Vercel. Deploy the updated website code.
+3. Privately put the same two settings in the local website's ignored `.env.local`, then restart the local server. Never commit that file or send the secret in chat.
+4. Sign into the local tracker as an Editor or Administrator. Open an existing item, inspect the public preview, confirm it, and publish. Save a new item privately before publishing it.
+5. Verify that its approved snapshot appears at the public URL. Change a private draft field and confirm the public snapshot remains unchanged. Publish again to update it, or withdraw to remove it.
+
+Existing records are preserved and are not automatically approved or uploaded. With no local Drive settings, approvals remain local previews only. The public API reports unavailable storage rather than pretending there are zero records when the gateway fails. Signed publication requests are replay-protected, revision checked and retry-safe. Withdrawn rows retain an empty tombstone so older requests cannot republish them. If the local save fails after a successful remote publication, reload and retry the same action; identical revisions are idempotent.
+
+Activation must be verified with a real editor-approved record after both deployments and the local connection are configured. Passing local tests is not an end-to-end publication check.

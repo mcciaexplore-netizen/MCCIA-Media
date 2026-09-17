@@ -531,6 +531,8 @@ function doPost(event) {
       if(call.action==='fileInfo')result={size:file.getSize(),type:file.getMimeType(),name:file.getName()};
       else{const start=Number(data.start),end=Number(data.end);if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start<0||end<start||end>=file.getSize()||end-start>=512*1024)throw new Error('Invalid range');const response=UrlFetchApp.fetch('https://www.googleapis.com/drive/v3/files/'+encodeURIComponent(file.getId())+'?alt=media',{headers:{Authorization:'Bearer '+ScriptApp.getOAuthToken(),Range:'bytes='+start+'-'+end},muteHttpExceptions:true});if(response.getResponseCode()!==206&&!(response.getResponseCode()===200&&start===0&&end===file.getSize()-1))throw new Error('Evidence could not be read');result={base64:Utilities.base64Encode(response.getBlob().getBytes())};}
     }else if(call.action==='sources')result=miPage_(miObjects_(miSheet_(MI.sheets.sources)).filter(function(r){return miRelevantHeadline_(r.Title)}).map(function(r){const date=miDate_(r['Publication date']);return {id:r['Source ID'],title:r.Title,date:date,year:date?Number(date.slice(0,4)):null,publisher:r.Publisher,url:miPublicSource_(r['Source URL']),language:r.Language,presence:r['People / organisation'],topic:r.Topic,dgEngagementType:r['DG content classification'],type:'Article',format:'Article',status:'Unverified',description:'Discovered source; verification required.',discoveredAt:new Date(r['Discovered at']).toISOString()}}),data);
+    else if(call.action==='trackerPublished')result=miTrackerPublished_();
+    else if(call.action==='trackerPublish'){const cache=CacheService.getScriptCache();if(cache.get(call.nonce))throw new Error('Request already used');cache.put(call.nonce,'1',300);result=miTrackerPublish_(data);}
     else if(call.action==='corrections')result=miPage_(miObjects_(miGatewaySheet_('Website Corrections',['ID','Patch','Updated at'])).map(function(r){return {id:r.ID,patch:JSON.parse(r.Patch),updatedAt:r['Updated at']}}),data);
     else if(call.action==='correct'){
       const cache=CacheService.getScriptCache();if(cache.get(call.nonce))throw new Error('Request already used');cache.put(call.nonce,'1',300);result=miGatewayCorrection_(data);
@@ -551,4 +553,27 @@ function miGatewayCorrection_(data){
  const lock=LockService.getScriptLock();lock.waitLock(10000);
  try{const sheet=miGatewaySheet_('Website Corrections',['ID','Patch','Updated at']),rows=miObjects_(sheet);const index=rows.findIndex(function(r){return r.ID===data.id}),old=index>=0?rows[index]:null;if(String(old?old['Updated at']:'')!==String(data.version||''))throw new Error('This article changed. Reload before editing.');const patch=Object.assign({},old?JSON.parse(old.Patch):{},{title:data.title.trim()},data.date===undefined?{}:{date:data.date,year:data.date?Number(data.date.slice(0,4)):null,datePrecision:data.date?'day':'unavailable',publicationMonth:''}),now=new Date().toISOString();
  miGatewaySheet_('Website Correction Audit',['Timestamp','ID','Actor','Reason','Previous patch','Patch']).appendRow(miSafeRow_([now,data.id,data.actor,data.reason,old?old.Patch:'',JSON.stringify(patch)]));const values=[data.id,JSON.stringify(patch),now];if(index>=0)sheet.getRange(index+2,1,1,3).setValues(miSafeRows_([values]));else sheet.appendRow(miSafeRow_(values));return {id:data.id,patch:patch,updatedAt:now};}finally{lock.releaseLock()}
+}
+
+// Only approved, allowlisted snapshots enter this sheet. Local drafts stay local.
+function miTrackerSnapshot_(p,id){
+ if(!p||p.id!==id||typeof p.title!=='string'||!p.title.trim()||p.title.length>1000||!['Publications','News & press releases','Sampada','Annual reports','Representations','Distribution'].includes(p.category)||typeof p.stage!=='string'||p.stage.length>100||typeof p.publicationDate!=='string'||(p.publicationDate&&!/^\d{4}-\d{2}-\d{2}$/.test(p.publicationDate))||typeof p.completed!=='boolean')throw Error('Invalid public tracker snapshot');
+ return {id:id,title:p.title,category:p.category,stage:p.stage,publicationDate:p.publicationDate,completed:p.completed};
+}
+function miTrackerPublished_(){
+ const rows=miObjects_(miGatewaySheet_('Public Work Tracker',['ID','Snapshot','Revision','Updated at']));
+ return {items:rows.filter(function(r){return Boolean(r.Snapshot)}).map(function(r){return miTrackerSnapshot_(JSON.parse(r.Snapshot),r.ID)})};
+}
+function miTrackerPublish_(data){
+ if(typeof data.id!=='string'||!/^WORK-[A-Z0-9-]{1,80}$/.test(data.id)||!Number.isSafeInteger(data.revision)||data.revision<1)throw Error('Invalid tracker publication');
+ const snapshot=data.snapshot===null?null:miTrackerSnapshot_(data.snapshot,data.id),encoded=snapshot?JSON.stringify(snapshot):'';
+ const lock=LockService.getScriptLock();lock.waitLock(10000);
+ try{
+  const sheet=miGatewaySheet_('Public Work Tracker',['ID','Snapshot','Revision','Updated at']),rows=miObjects_(sheet),index=rows.findIndex(function(r){return r.ID===data.id}),old=index>=0?rows[index]:null;
+  if(old&&Number(old.Revision)>data.revision)throw Error('A newer public snapshot exists.');
+  if(old&&Number(old.Revision)===data.revision){if(String(old.Snapshot||'')!==encoded)throw Error('Conflicting public snapshot.');return {id:data.id,published:Boolean(snapshot)};}
+  const values=[data.id,encoded,data.revision,new Date().toISOString()];
+  if(index>=0)sheet.getRange(index+2,1,1,4).setValues(miSafeRows_([values]));else sheet.appendRow(miSafeRow_(values));
+  return {id:data.id,published:Boolean(snapshot)};
+ }finally{lock.releaseLock()}
 }
