@@ -1,5 +1,33 @@
 [
   {
+    "checkedAt": "2026-09-17T08:37:35.933042+00:00",
+    "state": "success",
+    "newItems": 0,
+    "totalItems": 5,
+    "failedSources": []
+  },
+  {
+    "checkedAt": "2026-09-16T08:33:29.852751+00:00",
+    "state": "success",
+    "newItems": 0,
+    "totalItems": 5,
+    "failedSources": []
+  },
+  {
+    "checkedAt": "2026-09-15T08:38:47.670042+00:00",
+    "state": "success",
+    "newItems": 0,
+    "totalItems": 5,
+    "failedSources": []
+  },
+  {
+    "checkedAt": "2026-09-14T08:52:25.515165+00:00",
+    "state": "success",
+    "newItems": 0,
+    "totalItems": 5,
+    "failedSources": []
+  },
+  {
     "checkedAt": "2026-09-13T08:16:45.146130+00:00",
     "state": "success",
     "newItems": 0,

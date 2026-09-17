@@ -4,6 +4,7 @@ import {randomBytes,scryptSync,timingSafeEqual,createHash} from 'node:crypto';
 export type Role='Administrator'|'Reviewer'|'Editor'|'Viewer';
 export type Identity={name:string;role:Role;id:string};
 type User=Identity&{salt:string;hash:string};
+type User=Identity&{salt:string;hash:string;zohoSubject?:string};
 type Access={users:User[];sessions:{hash:string;userId:string;expires:number}[]};
 const directory=join(process.cwd(),'.local-work-tracker'),file=join(directory,'access.json');
 const digest=(s:string)=>createHash('sha256').update(s).digest('hex');
@@ -29,7 +30,15 @@ export async function changeAccess(request:Request,input:Record<string,unknown>)
  if(action==='login'){
   const user=data.users.find(x=>x.name.toLowerCase()===String(input.name||'').trim().toLowerCase());const password=String(input.password||'');
   if(password.length>200||!user||!timingSafeEqual(Buffer.from(user.hash,'hex'),scryptSync(password,user.salt,64)))throw Error('Name or password is incorrect.');
+  if(password.length>200||!user||Boolean(user.zohoSubject)||!timingSafeEqual(Buffer.from(user.hash,'hex'),scryptSync(password,user.salt,64)))throw Error('Name or password is incorrect.');
   const token=Buffer.from(randomBytes(32)).toString('hex');data.sessions=data.sessions.filter(x=>x.expires>Date.now());data.sessions.push({hash:digest(token),userId:user.id,expires:Date.now()+8*60*60*1000});await write(data);return {token,message:'Signed in'};
  }
  throw Error('Unknown account action.');
+})}
+
+// Zoho identities are bound to their immutable subject, never merged by name.
+export async function zohoSession(subject:string,name:string,role:Role){return transact(async()=>{
+ const data=await read();let user=data.users.find(u=>u.zohoSubject===subject);
+ if(!user){user={id:Buffer.from(randomBytes(16)).toString('hex'),name,role,salt:'',hash:'',zohoSubject:subject};data.users.push(user);}else{user.name=name;user.role=role;}
+ const token=Buffer.from(randomBytes(32)).toString('hex');data.sessions=data.sessions.filter(s=>s.expires>Date.now());data.sessions.push({hash:digest(token),userId:user.id,expires:Date.now()+28800000});await write(data);return token;
 })}

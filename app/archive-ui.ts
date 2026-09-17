@@ -82,9 +82,10 @@ export function publicationLabel(item: DatedItem) {
 export function publicationSortDate(item: DatedItem) { return item.date || (validPublicationMonth(item.publicationMonth) ? `${item.publicationMonth}-01` : ''); }
 
 export type Reviewable = DatedItem & { matchStatus?: string; ocrStatus?: string; ocrReviewStatus?: string | null; originalImageUrl?: string; ocrText?: string | null; language?: string; presence?: string; ocrHeadline?: string | null; publisher?: string; originalFilename?: string; matchedRecordId?: string | null; id?: string };
-export const QUALITY_FILTERS = ['All', 'Date unavailable', 'OCR not completed', 'OCR needs review', 'Ambiguous connection', 'Original unavailable', 'Full OCR unavailable', 'Language not recorded', 'Person not recorded'];
+export const QUALITY_FILTERS = ['All', 'Connected to article', 'Date unavailable', 'OCR not completed', 'OCR needs review', 'Ambiguous connection', 'Original unavailable', 'Full OCR unavailable', 'Language not recorded', 'Person not recorded'];
 export function qualityMatches(item: Reviewable, filter: string) {
   switch (filter) {
+    case 'Connected to article': return Boolean(item.matchedRecordId);
     case 'Date unavailable': return !validPublicationDate(item.date) && !validPublicationMonth(item.publicationMonth);
     case 'OCR not completed': return item.ocrStatus !== 'Completed';
     case 'OCR needs review': return !/^Reviewed(?: by| during|$)/i.test(item.ocrReviewStatus || '');

@@ -2,6 +2,7 @@ import {readFile,mkdir,writeFile,rename} from 'node:fs/promises';
 import {join} from 'node:path';
 import {randomUUID} from 'node:crypto';
 import {validateItem,fields,applyAction,type WorkItem,type DocumentVersion} from '../../work-tracker/model';
+import {validateItem,fields,applyAction,publicSnapshot,type WorkItem,type DocumentVersion} from '../../work-tracker/model';
 import type {Identity} from './access';
 const directory=join(process.cwd(),'.local-work-tracker');
 const file=join(directory,'records.json');
@@ -15,6 +16,8 @@ export function saveItem(input:Record<string,unknown>,actor:Identity={id:'local-
   const previous=input.id?items.find(x=>x.id===input.id):undefined;
   if(input.id&&!previous)throw Error('Item not found.');
   if(previous&&input.revision!==previous.revision)throw Error('This item changed in another window. Reload the tracker before saving.');
+  const publication=input.publication;
+  if(publication!==undefined){if(!['publish','unpublish'].includes(String(publication)))throw Error('Invalid publication action.');if(!['Editor','Administrator'].includes(actor.role))throw Error('An editor or administrator must publish items.');if(!previous)throw Error('Save the item before publishing.');if(publication==='publish'&&input.confirmPublic!==true)throw Error('Confirm the public preview before publishing.');}
   const action=typeof input.action==='string'?input.action:'';
   const comment=typeof input.comment==='string'?input.comment.trim():'';
   if(comment.length>5000)throw Error('Comment is too long.');
@@ -33,6 +36,12 @@ export function saveItem(input:Record<string,unknown>,actor:Identity={id:'local-
   item.id=previous?.id??`WORK-${randomUUID().slice(0,8).toUpperCase()}`;
   item.updatedAt=at;item.revision=(previous?.revision??0)+1;
   item.history=[...(previous?.history??[]),{at,actor:actor.name,comment,fromStage:previous?.stage,toStage:item.stage,summary:action|| (previous?changes.map(f=>f==='stage'?`Stage: ${previous.stage} → ${item.stage}`:`Updated ${f.replace(/([A-Z])/g,' $1').toLowerCase()}`).join('; ')||'Comment added':'Created locally') }];
+  if(previous&&!changes.length&&!action&&!comment&&!publication)return previous;
+  item.id=previous?.id??`WORK-${randomUUID().slice(0,8).toUpperCase()}`;
+  if(publication==='publish'){item.publicSnapshot=publicSnapshot(item);item.publicApprovedAt=at;item.publicApprovedBy=actor.name;}
+  if(publication==='unpublish'){delete item.publicSnapshot;delete item.publicApprovedAt;delete item.publicApprovedBy;}
+  item.updatedAt=at;item.revision=(previous?.revision??0)+1;
+  item.history=[...(previous?.history??[]),{at,actor:actor.name,comment,fromStage:previous?.stage,toStage:item.stage,summary:(publication==='publish'?'Approved public snapshot':publication==='unpublish'?'Removed public snapshot':'')||action|| (previous?changes.map(f=>f==='stage'?`Stage: ${previous.stage} → ${item.stage}`:`Updated ${f.replace(/([A-Z])/g,' $1').toLowerCase()}`).join('; ')||'Comment added':'Created locally') }];
   const next=previous?items.map(x=>x.id===item.id?item:x):[item,...items];
   await mkdir(directory,{recursive:true});const temp=join(directory,`${randomUUID()}.tmp`);
   await writeFile(temp,JSON.stringify(next,null,2)+'\n','utf8');await rename(temp,file);return item;

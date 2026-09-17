@@ -1,8 +1,10 @@
+import {zohoReady} from '../zoho';
 import {localRequest} from '../store';
 import {accessStatus,changeAccess} from '../access';
 export const runtime='nodejs';export const dynamic='force-dynamic';
 const attempts=new Map<string,{count:number;at:number}>();
 export async function GET(request:Request){if(!localRequest(request))return new Response('Not found',{status:404});try{return Response.json(await accessStatus(request),{headers:{'Cache-Control':'no-store'}})}catch{return Response.json({error:'Local access settings are unavailable.'},{status:503})}}
+export async function GET(request:Request){if(!localRequest(request))return new Response('Not found',{status:404});try{return Response.json({...await accessStatus(request),zohoReady:zohoReady()},{headers:{'Cache-Control':'no-store'}})}catch{return Response.json({error:'Local access settings are unavailable.'},{status:503})}}
 export async function POST(request:Request){if(!localRequest(request))return new Response('Not found',{status:404});try{
  if(!request.headers.get('content-type')?.startsWith('application/json'))throw Error('JSON required.');
  const text=await request.text();if(text.length>4096)throw Error('Request too large.');const input=JSON.parse(text);

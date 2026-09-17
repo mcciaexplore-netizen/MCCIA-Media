@@ -54,8 +54,8 @@ function topCounts(values: string[], limit = 6) {
 
 function Bars({ rows }: { rows: [string, number][] }) {
   const maximum = Math.max(1, ...rows.map(([, count]) => count));
-  return <div className="analytics-bars">{rows.map(([label, count]) => <div key={label}>
-    <span title={label}>{label}</span><i><b style={{ width: count ? `${Math.max(4, (count / maximum) * 100)}%` : '0%' }} /></i><strong>{count.toLocaleString('en-IN')}</strong>
+  return <div className="analytics-bars" role="list">{rows.map(([label, count]) => <div key={label} role="listitem">
+    <span title={label}>{label}</span><i aria-hidden="true"><b style={{ width: `${(count / maximum) * 100}%` }} /></i><strong>{count.toLocaleString('en-IN')}</strong>
   </div>)}</div>;
 }
 
@@ -77,16 +77,10 @@ export default function AnalyticsPanel({ records, clippings, sourceChecks, audit
     classification,
     uniqueClassifications.filter((value) => value === classification).length,
   ] as [string, number]);
-  const discoveries = records.filter(item=>item.id?.startsWith('GN-')||item.id?.startsWith('SRC-')).length;
-  const broken = Object.values(sourceChecks).filter(item=>item.category==='unreachable').length;
 
   return <section className="analytics-panel" aria-labelledby="analytics-title">
     <div className="analytics-heading"><div><p className="kicker">LIVE COVERAGE INTELLIGENCE</p><h2 id="analytics-title">Media analytics</h2></div><p>Connected clippings count with their article once. Unconnected clippings count separately. Missing dates, languages and people remain labelled for review.</p></div>
-    <div className="analytics-kpis">
-      <span><strong>{allCoverage.length.toLocaleString('en-IN')}</strong>Unique coverage items</span>
-      <span><strong>{discoveries.toLocaleString('en-IN')}</strong>Automated discoveries</span>
-      <span><strong>{broken.toLocaleString('en-IN')}</strong>Archive URLs last recorded unreachable</span>
-    </div>
+
 <p className="audit-freshness">Stored source audit refreshed {new Date(auditUpdatedAt).toLocaleDateString('en-IN')}. Individual checks may be older; this is not a fresh live availability test.</p>
     <div className="analytics-grid">
       <article><h3>Coverage by year</h3><Bars rows={years} /></article>
