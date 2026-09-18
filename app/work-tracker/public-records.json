@@ -1,0 +1,6547 @@
+[
+  {
+    "id": "WORK-C1A8A4EFF8",
+    "category": "Publications",
+    "title": "MSME Helpline Brochure_English",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 2,
+      "cells": {
+        "B2": "MSME Helpline Brochure_English",
+        "C2": "Yes",
+        "D2": "Yes"
+      }
+    },
+    "revision": 5,
+    "updatedAt": "2026-09-17T20:12:47.557Z",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 2"
+      },
+      {
+        "at": "2026-09-13T09:33:19.237Z",
+        "actor": "Aarushi Gupta",
+        "comment": "",
+        "fromStage": "Needs confirmation",
+        "toStage": "Concept",
+        "summary": "Stage: Needs confirmation → Concept"
+      },
+      {
+        "at": "2026-09-13T09:33:24.538Z",
+        "actor": "Aarushi Gupta",
+        "comment": "",
+        "fromStage": "Concept",
+        "toStage": "Editing",
+        "summary": "Stage: Concept → Editing"
+      },
+      {
+        "at": "2026-09-13T09:33:31.727Z",
+        "actor": "Aarushi Gupta",
+        "comment": "",
+        "fromStage": "Editing",
+        "toStage": "Needs confirmation",
+        "summary": "Stage: Editing → Needs confirmation"
+      },
+      {
+        "at": "2026-09-17T20:12:47.557Z",
+        "actor": "Aarushi Gupta",
+        "comment": "",
+        "fromStage": "Needs confirmation",
+        "toStage": "Needs confirmation",
+        "summary": "Approved public snapshot"
+      }
+    ],
+    "reviewer": "",
+    "priority": "Normal",
+    "publicationDate": "",
+    "issueMonth": "",
+    "theme": "",
+    "acknowledgementDate": "",
+    "followUpDate": "",
+    "quantity": "",
+    "deliveryMethod": "",
+    "receiptDate": "",
+    "resolutionNote": ""
+  },
+  {
+    "id": "WORK-9CA70A8DF8",
+    "category": "Publications",
+    "title": "MSME Helpline Brochure_Marathi",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 3,
+      "cells": {
+        "B3": "MSME Helpline Brochure_Marathi",
+        "C3": "Yes",
+        "D3": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-63CC2B361D",
+    "category": "Publications",
+    "title": "CBP Report",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 4,
+      "cells": {
+        "B4": "CBP Report",
+        "C4": "Yes",
+        "D4": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-2832F29762",
+    "category": "Publications",
+    "title": "Skill Training Report",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 5,
+      "cells": {
+        "B5": "Skill Training Report",
+        "C5": "Yes",
+        "D5": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-0F26EBA18D",
+    "category": "Publications",
+    "title": "MCCIA_Pune GCC_Report (Incl. Coverage)",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 6,
+      "cells": {
+        "B6": "MCCIA_Pune GCC_Report (Incl. Coverage)",
+        "C6": "Yes",
+        "D6": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-D6ACC9EA93",
+    "category": "Publications",
+    "title": "MCCIA Annual Awards 2025_Profile_English",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 7,
+      "cells": {
+        "B7": "MCCIA Annual Awards 2025_Profile_English",
+        "C7": "Yes",
+        "D7": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 7"
+      }
+    ]
+  },
+  {
+    "id": "WORK-1F47AC93E5",
+    "category": "Publications",
+    "title": "MCCIA Annual Awards 2025_Profile_Marathi",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 8,
+      "cells": {
+        "B8": "MCCIA Annual Awards 2025_Profile_Marathi",
+        "C8": "Yes",
+        "D8": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 8"
+      }
+    ]
+  },
+  {
+    "id": "WORK-0A003683DD",
+    "category": "Publications",
+    "title": "AI FAQs",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 9,
+      "cells": {
+        "B9": "AI FAQs",
+        "C9": "Yes",
+        "D9": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 9"
+      }
+    ]
+  },
+  {
+    "id": "WORK-0EDE7B314A",
+    "category": "Publications",
+    "title": "MSME FAQs_English",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 10,
+      "cells": {
+        "B10": "MSME FAQs_English",
+        "C10": "Yes",
+        "D10": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 10"
+      }
+    ]
+  },
+  {
+    "id": "WORK-E3CBDC1CAD",
+    "category": "Publications",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 11,
+      "cells": {
+        "B11": "MSME FAQs_Marathi",
+        "C11": "Yes",
+        "D11": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 11"
+      }
+    ]
+  },
+  {
+    "id": "WORK-B8CABB3FDD",
+    "category": "Publications",
+    "title": "Incubation Report",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 12,
+      "cells": {
+        "B12": "Incubation Report",
+        "C12": "Yes",
+        "D12": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 12"
+      }
+    ]
+  },
+  {
+    "id": "WORK-5DA042EF8A",
+    "category": "Publications",
+    "title": "AI Inspiration Report (100 Champions)",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 13,
+      "cells": {
+        "B13": "AI Inspiration Report (100 Champions)",
+        "C13": "Yes",
+        "D13": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 13"
+      }
+    ]
+  },
+  {
+    "id": "WORK-063F984C83",
+    "category": "Publications",
+    "title": "Niryatgatha Coffee Table Book",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 14,
+      "cells": {
+        "B14": "Niryatgatha Coffee Table Book",
+        "C14": "Yes",
+        "D14": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 14"
+      }
+    ]
+  },
+  {
+    "id": "WORK-D2BA7C422A",
+    "category": "Publications",
+    "title": "MCCIA Annual Report 2024-25",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 15,
+      "cells": {
+        "B15": "MCCIA Annual Report 2024-25",
+        "C15": "Yes",
+        "D15": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 15"
+      }
+    ]
+  },
+  {
+    "id": "WORK-C31FCB049A",
+    "category": "Publications",
+    "title": "CSR Impact Report 2026",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 16,
+      "cells": {
+        "B16": "CSR Impact Report 2026",
+        "C16": "Yes",
+        "D16": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 16"
+      }
+    ]
+  },
+  {
+    "id": "WORK-94EEABC5FB",
+    "category": "Publications",
+    "title": "FAQ Series 2 Helpline Report English",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion",
+      "Unlabelled source date: 6th  May 2026 — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 17,
+      "cells": {
+        "B17": "FAQ Series 2 Helpline Report English",
+        "C17": "Yes",
+        "D17": "Yes",
+        "E17": "6th  May 2026"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 17"
+      }
+    ]
+  },
+  {
+    "id": "WORK-A7CF4C4B54",
+    "category": "Publications",
+    "title": "FAQ Series 2 Helpline Report Marathi",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 18,
+      "cells": {
+        "B18": "FAQ Series 2 Helpline Report Marathi",
+        "C18": "Yes",
+        "D18": "Yes"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 18"
+      }
+    ]
+  },
+  {
+    "id": "WORK-FCB97656B5",
+    "category": "Publications",
+    "title": "MSME Helpline 100 Case studies 2.0",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Yes",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion",
+      "Unlabelled source date: 6th  May 2026 — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 19,
+      "cells": {
+        "B19": "MSME Helpline 100 Case studies 2.0",
+        "C19": "Yes",
+        "D19": "Yes",
+        "E19": "6th  May 2026"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 19"
+      }
+    ]
+  },
+  {
+    "id": "WORK-908C730832",
+    "category": "Publications",
+    "title": "SEC 2025 Report",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Yes\nDissemination / progress: Online",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "“Yes” does not establish printing, upload or distribution completion"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 20,
+      "cells": {
+        "B20": "SEC 2025 Report",
+        "C20": "Yes",
+        "D20": "Online"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 20"
+      }
+    ]
+  },
+  {
+    "id": "WORK-FF7734E35E",
+    "category": "Publications",
+    "title": "Government Schemes_English",
+    "stage": "Design",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Design\nDissemination / progress: eCopy to all members",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 21,
+      "cells": {
+        "B21": "Government Schemes_English",
+        "C21": "Design",
+        "D21": "eCopy to all members"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 21"
+      }
+    ]
+  },
+  {
+    "id": "WORK-A51A0519E5",
+    "category": "Publications",
+    "title": "Government Schemes_Marathi",
+    "stage": "Design",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Design\nDissemination / progress: eCopy to all members",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 22,
+      "cells": {
+        "B22": "Government Schemes_Marathi",
+        "C22": "Design",
+        "D22": "eCopy to all members"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 22"
+      }
+    ]
+  },
+  {
+    "id": "WORK-A75C4A0CE3",
+    "category": "Publications",
+    "title": "Pune Incubation Report (updated)",
+    "stage": "Content preparation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Content stage\nDissemination / progress: e Copy",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Unlabelled source date: 20th June — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 23,
+      "cells": {
+        "B23": "Pune Incubation Report (updated)",
+        "C23": "Content stage",
+        "D23": "e Copy",
+        "E23": "20th June"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 23"
+      }
+    ]
+  },
+  {
+    "id": "WORK-9B97B43D6C",
+    "category": "Publications",
+    "title": "PUNE AI REPORT",
+    "stage": "Content preparation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Content  generation\nDissemination / progress: 80% done",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Unlabelled source date: 2026-07-30 — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 24,
+      "cells": {
+        "B24": "PUNE AI REPORT",
+        "C24": "Content  generation",
+        "D24": "80% done",
+        "E24": "2026-07-30"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 24"
+      }
+    ]
+  },
+  {
+    "id": "WORK-FF1765A4B8",
+    "category": "Publications",
+    "title": "Pune Investment Report",
+    "stage": "Content preparation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Content  generation\nDissemination / progress: 1st version presented",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Unlabelled source date: 15th July — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 25,
+      "cells": {
+        "B25": "Pune Investment Report",
+        "C25": "Content  generation",
+        "D25": "1st version presented",
+        "E25": "15th July"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 25"
+      }
+    ]
+  },
+  {
+    "id": "WORK-26A4822E08",
+    "category": "Publications",
+    "title": "AI tools directory for Pune Report",
+    "stage": "Design",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Design\nDissemination / progress: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 26,
+      "cells": {
+        "B26": "AI tools directory for Pune Report",
+        "C26": "Design"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 26"
+      }
+    ]
+  },
+  {
+    "id": "WORK-1B45E5DE65",
+    "category": "Publications",
+    "title": "FROM INCLUSION TO IMPACT: ECONOMIC CONTRIBUTIONS OF WOMEN ENTREPRENEURS",
+    "stage": "Design",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Design\nDissemination / progress: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Unlabelled source date: 2026-07-23 — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 27,
+      "cells": {
+        "B27": "FROM INCLUSION TO IMPACT: ECONOMIC CONTRIBUTIONS OF WOMEN ENTREPRENEURS",
+        "C27": "Design",
+        "E27": "2026-07-23"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 27"
+      }
+    ]
+  },
+  {
+    "id": "WORK-65DB8E2891",
+    "category": "Publications",
+    "title": "Annual Report (25-26)",
+    "stage": "Review",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Review Stage\nDissemination / progress: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Unlabelled source date: 2026-07-30 — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 28,
+      "cells": {
+        "B28": "Annual Report (25-26)",
+        "C28": "Review Stage",
+        "E28": "2026-07-30"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 28"
+      }
+    ]
+  },
+  {
+    "id": "WORK-CAB49F9E03",
+    "category": "Publications",
+    "title": "Ravi Pandit Coffee Table Book",
+    "stage": "Concept",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Concept stage\nDissemination / progress: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 29,
+      "cells": {
+        "B29": "Ravi Pandit Coffee Table Book",
+        "C29": "Concept stage"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 29"
+      }
+    ]
+  },
+  {
+    "id": "WORK-C559BCC486",
+    "category": "Publications",
+    "title": "MSME Marketing & Branding Handbook",
+    "stage": "Design",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Design Stage\nDissemination / progress: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Unlabelled source date: 2026-07-22 — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 30,
+      "cells": {
+        "B30": "MSME Marketing & Branding Handbook",
+        "C30": "Design Stage",
+        "E30": "2026-07-22"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 30"
+      }
+    ]
+  },
+  {
+    "id": "WORK-ABBF808C9E",
+    "category": "Publications",
+    "title": "CBP Report 2.0",
+    "stage": "Content preparation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Content Generation\nDissemination / progress: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Unlabelled source date: 2026-08-20 — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 31,
+      "cells": {
+        "B31": "CBP Report 2.0",
+        "C31": "Content Generation",
+        "E31": "2026-08-20"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 31"
+      }
+    ]
+  },
+  {
+    "id": "WORK-EB2186533D",
+    "category": "Publications",
+    "title": "DECODING LABOUR CODES: A COMPLIANCE HANDBOOK FOR INDUSTRY",
+    "stage": "Editing",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Editing Stage\nDissemination / progress: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Unlabelled source date: 30th June — confirm its meaning before setting a deadline"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 32,
+      "cells": {
+        "B32": "DECODING LABOUR CODES: A COMPLIANCE HANDBOOK FOR INDUSTRY",
+        "C32": "Editing Stage",
+        "E32": "30th June"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 32"
+      }
+    ]
+  },
+  {
+    "id": "WORK-8F46FA80F1",
+    "category": "Publications",
+    "title": "Autocluster",
+    "stage": "On hold",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Proposed\nDissemination / progress: on hold",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 33,
+      "cells": {
+        "B33": "Autocluster",
+        "C33": "Proposed",
+        "D33": "on hold"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 33"
+      }
+    ]
+  },
+  {
+    "id": "WORK-A433B6BA7A",
+    "category": "Publications",
+    "title": "Member success stories across all sectors",
+    "stage": "On hold",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Proposed\nDissemination / progress: on hold",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 34,
+      "cells": {
+        "B34": "Member success stories across all sectors",
+        "C34": "Proposed",
+        "D34": "on hold"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 34"
+      }
+    ]
+  },
+  {
+    "id": "WORK-ACBDCF057E",
+    "category": "Publications",
+    "title": "Excellence in Manufacturing in Maharashtra",
+    "stage": "On hold",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Proposed\nDissemination / progress: on hold",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 35,
+      "cells": {
+        "B35": "Excellence in Manufacturing in Maharashtra",
+        "C35": "Proposed",
+        "D35": "on hold"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 35"
+      }
+    ]
+  },
+  {
+    "id": "WORK-0E8BF78261",
+    "category": "Publications",
+    "title": "Shared Service Infrastructure Supporting MSMEs in Pune (Clusters)",
+    "stage": "On hold",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Proposed\nDissemination / progress: on hold",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 36,
+      "cells": {
+        "B36": "Shared Service Infrastructure Supporting MSMEs in Pune (Clusters)",
+        "C36": "Proposed",
+        "D36": "on hold"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 36"
+      }
+    ]
+  },
+  {
+    "id": "WORK-9E0CB412C2",
+    "category": "Publications",
+    "title": "JOURNEYS OF OPPORTUNITY: STORIES FROM MCCIA DELEGATIONS",
+    "stage": "On hold",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Proposed\nDissemination / progress: on hold",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 37,
+      "cells": {
+        "B37": "JOURNEYS OF OPPORTUNITY: STORIES FROM MCCIA DELEGATIONS",
+        "C37": "Proposed",
+        "D37": "on hold"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 37"
+      }
+    ]
+  },
+  {
+    "id": "WORK-838C4976F0",
+    "category": "Publications",
+    "title": "DESTINATION MAHARASHTRA: THE RISE OF TOURISM",
+    "stage": "On hold",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Proposed\nDissemination / progress: on hold",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Publications",
+      "row": 38,
+      "cells": {
+        "B38": "DESTINATION MAHARASHTRA: THE RISE OF TOURISM",
+        "C38": "Proposed",
+        "D38": "on hold"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Publications, row 38"
+      }
+    ]
+  },
+  {
+    "id": "WORK-127668AB25",
+    "category": "News & press releases",
+    "title": "स्वतंत्र आयुक्तालय देणार `एमएसएमई'ला बळ",
+    "stage": "Sent to publisher",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: 5.0\nLanguage: Marathi\nDG quote / source note: काही राज्यांत एमएसएमईसाठी स्वतंत्र आयुक्तालय आहे. त्यामुळे महाराष्ट्रातही एमएसएमईसाठी वेगळे आयुक्त असावेत, अशी मागणी आम्ही राज्य सरकारकडे केली होती. स्वतंत्र आयुक्तालय होणार ही आनंदाची बाब आहे. मात्र, त्याबाबतची माहिती व आयुक्तालयाची जबाबदारी काय असणार, हे सरकारने लवकर जाहीर करावे. राज्यात सर्वाधिक एमएसएमई पुण्यात आहेत. त्यामुळे आयुक्तांचे कार्यालय पुण्यात असावे, अशी आमची आग्रही मागणी आहे.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 2,
+      "cells": {
+        "A2": "2026-04-06",
+        "B2": "News Article",
+        "C2": "स्वतंत्र आयुक्तालय देणार `एमएसएमई'ला बळ",
+        "D2": "Sakal",
+        "E2": "5.0",
+        "F2": "Marathi",
+        "G2": "काही राज्यांत एमएसएमईसाठी स्वतंत्र आयुक्तालय आहे. त्यामुळे महाराष्ट्रातही एमएसएमईसाठी वेगळे आयुक्त असावेत, अशी मागणी आम्ही राज्य सरकारकडे केली होती. स्वतंत्र आयुक्तालय होणार ही आनंदाची बाब आहे. मात्र, त्याबाबतची माहिती व आयुक्तालयाची जबाबदारी काय असणार, हे सरकारने लवकर जाहीर करावे. राज्यात सर्वाधिक एमएसएमई पुण्यात आहेत. त्यामुळे आयुक्तांचे कार्यालय पुण्यात असावे, अशी आमची आग्रही मागणी आहे."
+      }
+    },
+    "revision": 10,
+    "updatedAt": "2026-09-15T09:45:39.690Z",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 2"
+      },
+      {
+        "at": "2026-09-11T11:46:10.412Z",
+        "summary": "Updated source confirmation"
+      },
+      {
+        "at": "2026-09-11T11:46:24.877Z",
+        "summary": "Stage: Needs confirmation → Proposed; Updated source confirmation"
+      },
+      {
+        "at": "2026-09-11T11:46:30.572Z",
+        "summary": "Stage: Proposed → Drafting"
+      },
+      {
+        "at": "2026-09-11T11:46:34.960Z",
+        "summary": "Stage: Drafting → Review"
+      },
+      {
+        "at": "2026-09-11T11:46:40.917Z",
+        "summary": "Stage: Review → Approved"
+      },
+      {
+        "at": "2026-09-11T11:46:46.920Z",
+        "summary": "Stage: Approved → Sent to publisher"
+      },
+      {
+        "at": "2026-09-11T11:46:51.763Z",
+        "summary": "Stage: Sent to publisher → Published"
+      },
+      {
+        "at": "2026-09-11T11:46:56.078Z",
+        "summary": "Stage: Published → Needs confirmation"
+      },
+      {
+        "at": "2026-09-15T09:45:39.690Z",
+        "actor": "Aarushi Gupta",
+        "comment": "",
+        "fromStage": "Needs confirmation",
+        "toStage": "Sent to publisher",
+        "summary": "Stage: Needs confirmation → Sent to publisher"
+      }
+    ],
+    "sourceConfirmed": false,
+    "reviewer": "",
+    "priority": "Normal",
+    "publicationDate": "",
+    "issueMonth": "",
+    "theme": "",
+    "acknowledgementDate": "",
+    "followUpDate": "",
+    "quantity": "",
+    "deliveryMethod": "",
+    "receiptDate": "",
+    "resolutionNote": ""
+  },
+  {
+    "id": "WORK-674A78BA5D",
+    "category": "News & press releases",
+    "title": "राज्यातील उधोगांना समान सवलत",
+    "stage": "Drafting",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: 4.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 3,
+      "cells": {
+        "A3": "2026-04-07",
+        "B3": "News Article",
+        "C3": "राज्यातील उधोगांना समान सवलत",
+        "D3": "Sakal",
+        "E3": "4.0",
+        "F3": "Marathi",
+        "G3": "NA"
+      }
+    },
+    "revision": 2,
+    "updatedAt": "2026-09-15T09:45:46.624Z",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 3"
+      },
+      {
+        "at": "2026-09-15T09:45:46.624Z",
+        "actor": "Aarushi Gupta",
+        "comment": "",
+        "fromStage": "Needs confirmation",
+        "toStage": "Drafting",
+        "summary": "Stage: Needs confirmation → Drafting"
+      }
+    ],
+    "reviewer": "",
+    "priority": "Normal",
+    "publicationDate": "",
+    "issueMonth": "",
+    "theme": "",
+    "acknowledgementDate": "",
+    "followUpDate": "",
+    "quantity": "",
+    "deliveryMethod": "",
+    "receiptDate": "",
+    "resolutionNote": ""
+  },
+  {
+    "id": "WORK-ED1B839146",
+    "category": "News & press releases",
+    "title": "एमएसएमई' मदतवाहिनी फायद्याची",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Maharashtra Times\nPage: 4.0\nLanguage: Marathi\nDG quote / source note: एमएसएमई मदतवाहिनी' हा उपक्रम केवळ सल्ला देणारा मंच नसून, तो लघु उद्योगांसाठी मार्गदर्शक आणि विकासाचा आधारस्तंभ ठरत आहे. उद्योजकांना योग्य वेळी योग्य मार्गदर्शन मिळाल्यास महाराष्ट्रच नव्हे; तर भारताची अर्थव्यवस्था अधिक मजबूत आणि आत्मनिर्भर होऊ शकते.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 4,
+      "cells": {
+        "A4": "2026-04-27",
+        "B4": "News Article",
+        "C4": "एमएसएमई' मदतवाहिनी फायद्याची",
+        "D4": "Maharashtra Times",
+        "E4": "4.0",
+        "F4": "Marathi",
+        "G4": "एमएसएमई मदतवाहिनी' हा उपक्रम केवळ सल्ला देणारा मंच नसून, तो लघु उद्योगांसाठी मार्गदर्शक आणि विकासाचा आधारस्तंभ ठरत आहे. उद्योजकांना योग्य वेळी योग्य मार्गदर्शन मिळाल्यास महाराष्ट्रच नव्हे; तर भारताची अर्थव्यवस्था अधिक मजबूत आणि आत्मनिर्भर होऊ शकते."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-08595974F8",
+    "category": "News & press releases",
+    "title": "MCCIA AI Hackathon 2026",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: Press Release\nPublisher: \nPage: \nLanguage: \nDG quote / source note: Not published (to be re shared next week)",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 5,
+      "cells": {
+        "A5": "2026-04-30",
+        "B5": "Press Release",
+        "C5": "MCCIA AI Hackathon 2026",
+        "G5": "Not published (to be re shared next week)"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-5B7294EB7B",
+    "category": "News & press releases",
+    "title": "Proposed news article- impact led 36 districts overview",
+    "stage": "Proposed",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: MSME case studies\nPublisher: \nPage: \nLanguage: \nDG quote / source note: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 6,
+      "cells": {
+        "B6": "MSME case studies",
+        "C6": "Proposed news article- impact led 36 districts overview"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-408661FD7B",
+    "category": "News & press releases",
+    "title": "Divnl. Comm visit proposed- press note for discussions",
+    "stage": "Proposed",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: Divnl. Comm visit proposed- press note for discussions\nPublisher: \nPage: \nLanguage: \nDG quote / source note: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 7,
+      "cells": {
+        "B7": "Divnl. Comm visit proposed- press note for discussions"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 7"
+      }
+    ]
+  },
+  {
+    "id": "WORK-A78AC0627D",
+    "category": "News & press releases",
+    "title": "ERU",
+    "stage": "Proposed",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: Tourism Policy\nPublisher: \nPage: \nLanguage: \nDG quote / source note: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 8,
+      "cells": {
+        "B8": "Tourism Policy",
+        "C8": "ERU"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 8"
+      }
+    ]
+  },
+  {
+    "id": "WORK-9C7180876B",
+    "category": "News & press releases",
+    "title": "ERU",
+    "stage": "Proposed",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: Skill Policy\nPublisher: \nPage: \nLanguage: \nDG quote / source note: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 9,
+      "cells": {
+        "B9": "Skill Policy",
+        "C9": "ERU"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 9"
+      }
+    ]
+  },
+  {
+    "id": "WORK-6C2B9F9E96",
+    "category": "News & press releases",
+    "title": "ERU",
+    "stage": "Proposed",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: FTA-NZ\nPublisher: Press Ready\nPage: \nLanguage: \nDG quote / source note: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 10,
+      "cells": {
+        "B10": "FTA-NZ",
+        "C10": "ERU",
+        "D10": "Press Ready"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 10"
+      }
+    ]
+  },
+  {
+    "id": "WORK-6A2B840585",
+    "category": "News & press releases",
+    "title": "ख्यातनाम उद्योजक रवी पंडित यांचे निधन",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Kesari\nPage: 1.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 11,
+      "cells": {
+        "A11": "2026-09-05",
+        "B11": "News Article",
+        "C11": "ख्यातनाम उद्योजक रवी पंडित यांचे निधन",
+        "D11": "Kesari",
+        "E11": "1.0",
+        "F11": "Marathi",
+        "G11": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 11"
+      }
+    ]
+  },
+  {
+    "id": "WORK-F22B373A73",
+    "category": "News & press releases",
+    "title": "केपीआयटी'चे संस्थापक-अध्यक्ष डॉ. रवी पंडित यांचे निधन",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Lokmat\nPage: II\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 12,
+      "cells": {
+        "A12": "2026-09-05",
+        "B12": "News Article",
+        "C12": "केपीआयटी'चे संस्थापक-अध्यक्ष डॉ. रवी पंडित यांचे निधन",
+        "D12": "Lokmat",
+        "E12": "II",
+        "F12": "Marathi",
+        "G12": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 12"
+      }
+    ]
+  },
+  {
+    "id": "WORK-977A67E8C5",
+    "category": "News & press releases",
+    "title": "सनदी लेखापाल ते तंत्रज्ञानातील उडी",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Loksatta\nPage: 18(i)\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 13,
+      "cells": {
+        "A13": "2026-09-05",
+        "B13": "News Article",
+        "C13": "सनदी लेखापाल ते तंत्रज्ञानातील उडी",
+        "D13": "Loksatta",
+        "E13": "18(i)",
+        "F13": "Marathi",
+        "G13": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 13"
+      }
+    ]
+  },
+  {
+    "id": "WORK-040CD62190",
+    "category": "News & press releases",
+    "title": "श्रद्धांजली",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Loksatta\nPage: 18(ii)\nLanguage: Marathi\nDG quote / source note: जनवाणीचे संस्थापक आणि पुणे इंटरनॅशनल सेंटरचे विश्वस्त म्हणून पुण्यातील नागरी प्रश्नांबाबत रवी पंडित यांनी महत्त्वपूर्ण योगदान दिले.\nचेंबरचे अध्यक्ष असताना त्यांनी संस्थेचे कार्यालय जागतिक दर्जाच्या इमारतीत स्थलांतरित केले. याचबरोबर ऑटो क्लस्टर रिसर्च अँड डेव्हलपमेंट इन्स्टिट्यूटची स्थापना त्यांच्या कार्यकाळात झाली. हे क्लस्टर दर वर्षी सातशे एमएसएमईना पाठबळ देत आहे. त्यांचे तंत्रज्ञान, नवोपक्रम, शाश्वत विकास याबद्दलचे दूरदर्शी विचार भविष्यात प्रेरणादायी ठरतील",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 14,
+      "cells": {
+        "A14": "2026-09-05",
+        "B14": "News Article",
+        "C14": "श्रद्धांजली",
+        "D14": "Loksatta",
+        "E14": "18(ii)",
+        "F14": "Marathi",
+        "G14": "जनवाणीचे संस्थापक आणि पुणे इंटरनॅशनल सेंटरचे विश्वस्त म्हणून पुण्यातील नागरी प्रश्नांबाबत रवी पंडित यांनी महत्त्वपूर्ण योगदान दिले.\nचेंबरचे अध्यक्ष असताना त्यांनी संस्थेचे कार्यालय जागतिक दर्जाच्या इमारतीत स्थलांतरित केले. याचबरोबर ऑटो क्लस्टर रिसर्च अँड डेव्हलपमेंट इन्स्टिट्यूटची स्थापना त्यांच्या कार्यकाळात झाली. हे क्लस्टर दर वर्षी सातशे एमएसएमईना पाठबळ देत आहे. त्यांचे तंत्रज्ञान, नवोपक्रम, शाश्वत विकास याबद्दलचे दूरदर्शी विचार भविष्यात प्रेरणादायी ठरतील"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 14"
+      }
+    ]
+  },
+  {
+    "id": "WORK-9FB10BBDE3",
+    "category": "News & press releases",
+    "title": "उद्योग क्षेत्रातील पुण्याचे दूरदर्शी नेतृत्व",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Loksatta\nPage: 18.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 15,
+      "cells": {
+        "A15": "2026-09-05",
+        "B15": "News Article",
+        "C15": "उद्योग क्षेत्रातील पुण्याचे दूरदर्शी नेतृत्व",
+        "D15": "Loksatta",
+        "E15": "18.0",
+        "F15": "Marathi",
+        "G15": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 15"
+      }
+    ]
+  },
+  {
+    "id": "WORK-6A5B9C44F2",
+    "category": "News & press releases",
+    "title": "वंचित, उपेक्षितांसाठी कायम एक पाऊल पुढे",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Maharashtra Times\nPage: 2.0\nLanguage: Marathi\nDG quote / source note: मराठा चेंबरने स्थापन केलेल्या जनवाणी या नागरी विषयांवर काम करणाऱ्या संस्थेची संकल्पना त्यांनी मांडली आणि अखेरपर्यंत ते त्या संस्थेचे मार्गदर्शक होते. जवळपास चार दशके चेंबरचा आणि त्यांचा घनिष्ट संबंध होता.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 16,
+      "cells": {
+        "A16": "2026-09-05",
+        "B16": "News Article",
+        "C16": "वंचित, उपेक्षितांसाठी कायम एक पाऊल पुढे",
+        "D16": "Maharashtra Times",
+        "E16": "2.0",
+        "F16": "Marathi",
+        "G16": "मराठा चेंबरने स्थापन केलेल्या जनवाणी या नागरी विषयांवर काम करणाऱ्या संस्थेची संकल्पना त्यांनी मांडली आणि अखेरपर्यंत ते त्या संस्थेचे मार्गदर्शक होते. जवळपास चार दशके चेंबरचा आणि त्यांचा घनिष्ट संबंध होता."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 16"
+      }
+    ]
+  },
+  {
+    "id": "WORK-5B1B025ADE",
+    "category": "News & press releases",
+    "title": "उद्योगपती रवी पंडित कालवश",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Maharashtra Times\nPage: 1.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 17,
+      "cells": {
+        "A17": "2026-09-05",
+        "B17": "News Article",
+        "C17": "उद्योगपती रवी पंडित कालवश",
+        "D17": "Maharashtra Times",
+        "E17": "1.0",
+        "F17": "Marathi",
+        "G17": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 17"
+      }
+    ]
+  },
+  {
+    "id": "WORK-14261DF370",
+    "category": "News & press releases",
+    "title": "केपीआयटी'चे रवी पंडित यांचे निधन",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Prabhat\nPage: 1.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 18,
+      "cells": {
+        "A18": "2026-09-05",
+        "B18": "News Article",
+        "C18": "केपीआयटी'चे रवी पंडित यांचे निधन",
+        "D18": "Prabhat",
+        "E18": "1.0",
+        "F18": "Marathi",
+        "G18": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 18"
+      }
+    ]
+  },
+  {
+    "id": "WORK-D04BAA65BA",
+    "category": "News & press releases",
+    "title": "उद्योजक रवी पंडित यांचे निधन",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Pudhari\nPage: 7.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 19,
+      "cells": {
+        "A19": "2026-09-05",
+        "B19": "News Article",
+        "C19": "उद्योजक रवी पंडित यांचे निधन",
+        "D19": "Pudhari",
+        "E19": "7.0",
+        "F19": "Marathi",
+        "G19": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 19"
+      }
+    ]
+  },
+  {
+    "id": "WORK-F23BE17979",
+    "category": "News & press releases",
+    "title": "रवी पंडित यांचे निधन",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: 1.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 20,
+      "cells": {
+        "A20": "2026-09-05",
+        "B20": "News Article",
+        "C20": "रवी पंडित यांचे निधन",
+        "D20": "Sakal",
+        "E20": "1.0",
+        "F20": "Marathi",
+        "G20": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 20"
+      }
+    ]
+  },
+  {
+    "id": "WORK-B0370EC888",
+    "category": "News & press releases",
+    "title": "संवेदनशील मार्गदर्शक",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: 4.0\nLanguage: Marathi\nDG quote / source note: उ द्योगविश्वातील दूरदृष्टीचे नेतृत्व आणि संवेदनशील व्यक्तिमत्त्व असलेले रवी पंडित यांचे निधन ही केवळ उद्योग क्षेत्राची हानी नाही, तर पुण्याच्या सामाजिक, बौद्धिक आणि सार्वजनिक जीवनातील मोठी पोकळी आहे. उद्योग, तंत्रज्ञान, शिक्षण, पर्यावरण आणि नागरी प्रश्नांबाबत त्यांनी केलेले कार्य दीर्घकाळ स्मरणात राहील. २०११ मध्ये पुणे इंटरनॅशनल सेंटरच्या स्थापनेपूर्वी झालेल्या बैठकीत माझी त्यांच्याशी पहिली भेट झाली. त्या बैठकीत डॉ. रघुनाथ माशेलकर, डॉ. विजय केळकर, रवी पंडित यांच्यासह विविध क्षेत्रांतील मान्यवर उपस्थित होते. पुण्यातून एक स्वतंत्र आणि जागतिक दृष्टी असलेला विचारमंच उभा करण्याची संकल्पना आकार घेत होती. त्या पहिल्याच भेटीत रवी पंडित यांचा साधेपणा, शांत स्वभाव आणि विषयाकडे पाहण्याची स्पष्ट दृष्टी प्रकषनि जाणवली. पुणे इंटरनॅशनल सेंटरचे (पोआयसी) ते संस्थापक विश्वस्त आणि मानद खजिनदार होते आणि मी संस्थापक मानद संचालक, त्यामुळे मला त्यांच्यासोबत जवळून काम करण्याची संधी मिळाली. पीआयसीच्या सुरुवातीच्या काळात संस्थेचे मासिक बजेट मर्यादित होते. त्यांच्या उद्योगसमूहाच्या उलाढालीच्या तुलनेत ती रक्कम अगदी छोटी होती. तरीही ते प्रत्येक महिन्याला स्वतः वेळ काढून आर्थिक आढावा घेत असत. दहा वर्षांत जवळपास १२० पैकी ११८ मासिक बैठकीला ते उपस्थित राहिले. दोन बैठका चुकल्या मात्र त्यांनी दोन्ही वेळा पुढच्या बैठकीत त्याबद्दल दिलगिरी व्यक्त करून सविस्तर आढावा घेत. एवढ्या मोठ्या उद्योगसमूहाचे नेतृत्व करणारी व्यक्ती छोट्या गोष्टींमध्येही इतकी काटेकोर असू शकते, हे त्यांच्याकडून शिकण्यासारखे होते. प्रत्येक बैठकीत ते एक गोष्ट आवर्जून विचारत सर्व विक्रेत्यांची आणि विशेषतः सूक्ष्म व लघुउद्योगांची देणी वेळेवर दिली आहेत ना? उद्योग म्हणजे केवळ स्वतःची वाढ नव्हे, तर संपूर्ण परिसंस्थेच्या वाढीची जबाबदारी, हे त्यांच्या वागण्यातून दिसून येत असे. लघुउद्योजकांना वेळेवर पैसे मिळणे किती महत्त्वाचे आहे, याची त्यांना सतत जाणीव होती. त्यामुळेच उद्योगविश्वातील अनेकांना ते केवळ यशस्वी उद्योजक नव्हे, तर संवेदनशील मार्गदर्शक वाटत. वी पंडित यांच्यातील सर्वांत मोठा गुण म्हणजे त्यांचा साधेपणा. जागतिक स्तरावर नावाजलेल्या कंपनीचे प्रमुख असूनही त्यांच्या वागण्यात कधीही अहंकार जाणवत नसे. बैठकीत ते सर्वांचे म्हणणे शांतपणे ऐकत. एखादा तरुण सदस्य बोलत असला, तरी त्याच्या मतालाही ते तितकेच महत्त्व देत. 'एमसीसीआयए मधील त्यांचे योगदानही महत्त्वाचे होते. २००४ ते २००६ या काळात ते 'एमसीसीआयए'चे अध्यक्ष होते. पुणे हे देशातील महत्त्वाचे उद्योग आणि ज्ञानकेंद्र बनावे, ही त्यांची स्पष्ट भूमिका होती. ऑटो क्लस्टर डेव्हलपमेंट अँड रिसर्च इन्स्टिट्यूट ही संकल्पना त्यांच्या नेतृत्वाखाली प्रत्यक्षात आली. गेली वीस वर्षे हा उपक्रम शेकडो लघु आणि मध्यम उद्योगांसाठी उपयोगी ठरत आहे. उद्योग आणि शिक्षण क्षेत्र यांच्यात अधिक सहकार्य व्हावे, संशोधन आणि कौशल्य विकासाला चालना मिळावी यासाठी त्यांनी प्रयत्न केले.\n\nजनवाणीसारख्या नागरिककेंद्रित उपक्रमामागेही त्यांची महत्त्वाची भूमिका होती. कचरा व्यवस्थापन, सार्वजनिक वाहतूक आणि शहरातील जीवनमान यांसारख्या नागरी प्रश्नांकडे उद्योग क्षेत्रानेही लक्ष दिले पाहिजे, असे त्यांचे मत होते. विकास हा सर्वसमावेशक असावा, पण पर्यावरणाचा समतोल राखूनच व्हावा, ही त्यांची ठाम भूमिका होती.\n\nकेपीआयटी टेक्नॉलॉजीज ही त्यांची मोठी ओळख. पुण्यातून सुरू झालेली कंपनी जागतिक स्तरावरील तंत्रज्ञान संस्था कशी बनू शकते, हे त्यांनी सिद्ध केले. ऑटोमोबाईल सॉफ्टवेअर आणि मोबिलिटी क्षेत्रात केपीआयटीने जागतिक ओळख निर्माण केली; पण एवढे यश मिळूनही त्यांचे पाय कायम जमिनीवर राहिले. कामातील गंभीरतेसोबतच त्यांच्यात मिष्कीलपणाही होता. काही आठवड्यांपूर्वी त्यांच्या अमृतमहोत्सवी वाढदिवसानंतर मी त्यांना विचारले, \"तुम्ही अजून स्वतः गाडी का चालवता?\" त्यावर ते हसून म्हणाले, \"नाहीतर गाडी चालवायची सवयच जाईल आणि लवकर म्हातारं व्हायचं नसेल तर अधूनमधून तू ही स्वतः गाडी चालवत जा!\" त्यांच्या या सहज विनोदामुळे त्यांच्या सहवासात आपलेपणा जाणवत असे. आज त्यांच्या आठवणी काढताना डोळ्यांसमोर येतो तो त्यांचा हसरा चेहरा. त्यांनी उभ्या केलेल्या संस्था, प्रेरणा आणि रुजवलेली मूल्ये पुढील अनेक वर्षे समाजाला दिशा देत राहतील.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 21,
+      "cells": {
+        "A21": "2026-09-05",
+        "B21": "News Article",
+        "C21": "संवेदनशील मार्गदर्शक",
+        "D21": "Sakal",
+        "E21": "4.0",
+        "F21": "Marathi",
+        "G21": "उ द्योगविश्वातील दूरदृष्टीचे नेतृत्व आणि संवेदनशील व्यक्तिमत्त्व असलेले रवी पंडित यांचे निधन ही केवळ उद्योग क्षेत्राची हानी नाही, तर पुण्याच्या सामाजिक, बौद्धिक आणि सार्वजनिक जीवनातील मोठी पोकळी आहे. उद्योग, तंत्रज्ञान, शिक्षण, पर्यावरण आणि नागरी प्रश्नांबाबत त्यांनी केलेले कार्य दीर्घकाळ स्मरणात राहील. २०११ मध्ये पुणे इंटरनॅशनल सेंटरच्या स्थापनेपूर्वी झालेल्या बैठकीत माझी त्यांच्याशी पहिली भेट झाली. त्या बैठकीत डॉ. रघुनाथ माशेलकर, डॉ. विजय केळकर, रवी पंडित यांच्यासह विविध क्षेत्रांतील मान्यवर उपस्थित होते. पुण्यातून एक स्वतंत्र आणि जागतिक दृष्टी असलेला विचारमंच उभा करण्याची संकल्पना आकार घेत होती. त्या पहिल्याच भेटीत रवी पंडित यांचा साधेपणा, शांत स्वभाव आणि विषयाकडे पाहण्याची स्पष्ट दृष्टी प्रकषनि जाणवली. पुणे इंटरनॅशनल सेंटरचे (पोआयसी) ते संस्थापक विश्वस्त आणि मानद खजिनदार होते आणि मी संस्थापक मानद संचालक, त्यामुळे मला त्यांच्यासोबत जवळून काम करण्याची संधी मिळाली. पीआयसीच्या सुरुवातीच्या काळात संस्थेचे मासिक बजेट मर्यादित होते. त्यांच्या उद्योगसमूहाच्या उलाढालीच्या तुलनेत ती रक्कम अगदी छोटी होती. तरीही ते प्रत्येक महिन्याला स्वतः वेळ काढून आर्थिक आढावा घेत असत. दहा वर्षांत जवळपास १२० पैकी ११८ मासिक बैठकीला ते उपस्थित राहिले. दोन बैठका चुकल्या मात्र त्यांनी दोन्ही वेळा पुढच्या बैठकीत त्याबद्दल दिलगिरी व्यक्त करून सविस्तर आढावा घेत. एवढ्या मोठ्या उद्योगसमूहाचे नेतृत्व करणारी व्यक्ती छोट्या गोष्टींमध्येही इतकी काटेकोर असू शकते, हे त्यांच्याकडून शिकण्यासारखे होते. प्रत्येक बैठकीत ते एक गोष्ट आवर्जून विचारत सर्व विक्रेत्यांची आणि विशेषतः सूक्ष्म व लघुउद्योगांची देणी वेळेवर दिली आहेत ना? उद्योग म्हणजे केवळ स्वतःची वाढ नव्हे, तर संपूर्ण परिसंस्थेच्या वाढीची जबाबदारी, हे त्यांच्या वागण्यातून दिसून येत असे. लघुउद्योजकांना वेळेवर पैसे मिळणे किती महत्त्वाचे आहे, याची त्यांना सतत जाणीव होती. त्यामुळेच उद्योगविश्वातील अनेकांना ते केवळ यशस्वी उद्योजक नव्हे, तर संवेदनशील मार्गदर्शक वाटत. वी पंडित यांच्यातील सर्वांत मोठा गुण म्हणजे त्यांचा साधेपणा. जागतिक स्तरावर नावाजलेल्या कंपनीचे प्रमुख असूनही त्यांच्या वागण्यात कधीही अहंकार जाणवत नसे. बैठकीत ते सर्वांचे म्हणणे शांतपणे ऐकत. एखादा तरुण सदस्य बोलत असला, तरी त्याच्या मतालाही ते तितकेच महत्त्व देत. 'एमसीसीआयए मधील त्यांचे योगदानही महत्त्वाचे होते. २००४ ते २००६ या काळात ते 'एमसीसीआयए'चे अध्यक्ष होते. पुणे हे देशातील महत्त्वाचे उद्योग आणि ज्ञानकेंद्र बनावे, ही त्यांची स्पष्ट भूमिका होती. ऑटो क्लस्टर डेव्हलपमेंट अँड रिसर्च इन्स्टिट्यूट ही संकल्पना त्यांच्या नेतृत्वाखाली प्रत्यक्षात आली. गेली वीस वर्षे हा उपक्रम शेकडो लघु आणि मध्यम उद्योगांसाठी उपयोगी ठरत आहे. उद्योग आणि शिक्षण क्षेत्र यांच्यात अधिक सहकार्य व्हावे, संशोधन आणि कौशल्य विकासाला चालना मिळावी यासाठी त्यांनी प्रयत्न केले.\n\nजनवाणीसारख्या नागरिककेंद्रित उपक्रमामागेही त्यांची महत्त्वाची भूमिका होती. कचरा व्यवस्थापन, सार्वजनिक वाहतूक आणि शहरातील जीवनमान यांसारख्या नागरी प्रश्नांकडे उद्योग क्षेत्रानेही लक्ष दिले पाहिजे, असे त्यांचे मत होते. विकास हा सर्वसमावेशक असावा, पण पर्यावरणाचा समतोल राखूनच व्हावा, ही त्यांची ठाम भूमिका होती.\n\nकेपीआयटी टेक्नॉलॉजीज ही त्यांची मोठी ओळख. पुण्यातून सुरू झालेली कंपनी जागतिक स्तरावरील तंत्रज्ञान संस्था कशी बनू शकते, हे त्यांनी सिद्ध केले. ऑटोमोबाईल सॉफ्टवेअर आणि मोबिलिटी क्षेत्रात केपीआयटीने जागतिक ओळख निर्माण केली; पण एवढे यश मिळूनही त्यांचे पाय कायम जमिनीवर राहिले. कामातील गंभीरतेसोबतच त्यांच्यात मिष्कीलपणाही होता. काही आठवड्यांपूर्वी त्यांच्या अमृतमहोत्सवी वाढदिवसानंतर मी त्यांना विचारले, \"तुम्ही अजून स्वतः गाडी का चालवता?\" त्यावर ते हसून म्हणाले, \"नाहीतर गाडी चालवायची सवयच जाईल आणि लवकर म्हातारं व्हायचं नसेल तर अधूनमधून तू ही स्वतः गाडी चालवत जा!\" त्यांच्या या सहज विनोदामुळे त्यांच्या सहवासात आपलेपणा जाणवत असे. आज त्यांच्या आठवणी काढताना डोळ्यांसमोर येतो तो त्यांचा हसरा चेहरा. त्यांनी उभ्या केलेल्या संस्था, प्रेरणा आणि रुजवलेली मूल्ये पुढील अनेक वर्षे समाजाला दिशा देत राहतील."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 21"
+      }
+    ]
+  },
+  {
+    "id": "WORK-DB3B53BB64",
+    "category": "News & press releases",
+    "title": "KPIT Techonolgies Co-founder Ravi Pandit Passes away at 76",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Indian Express\nPage: 4.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 22,
+      "cells": {
+        "A22": "2026-09-05",
+        "B22": "News Article",
+        "C22": "KPIT Techonolgies Co-founder Ravi Pandit Passes away at 76",
+        "D22": "Indian Express",
+        "E22": "4.0",
+        "F22": "English",
+        "G22": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 22"
+      }
+    ]
+  },
+  {
+    "id": "WORK-66F85C27C3",
+    "category": "News & press releases",
+    "title": "Ravi Pandit,KPIT Tech Co-founder,Passes away at 75",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Times of India\nPage: 5.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 23,
+      "cells": {
+        "A23": "2026-09-05",
+        "B23": "News Article",
+        "C23": "Ravi Pandit,KPIT Tech Co-founder,Passes away at 75",
+        "D23": "Times of India",
+        "E23": "5.0",
+        "F23": "English",
+        "G23": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 23"
+      }
+    ]
+  },
+  {
+    "id": "WORK-D8DC2D89A1",
+    "category": "News & press releases",
+    "title": "द्रष्टा उद्यमी",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Loksatta\nPage: 5.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation",
+      "Stored publication date is in the future; possible day/month reversal"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 24,
+      "cells": {
+        "A24": "2026-11-05",
+        "B24": "News Article",
+        "C24": "द्रष्टा उद्यमी",
+        "D24": "Loksatta",
+        "E24": "5.0",
+        "F24": "Marathi",
+        "G24": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 24"
+      }
+    ]
+  },
+  {
+    "id": "WORK-E9F14DA7E9",
+    "category": "News & press releases",
+    "title": "दूरदर्शी उद्योगपती",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Maharashtra Times\nPage: 6.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation",
+      "Stored publication date is in the future; possible day/month reversal"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 25,
+      "cells": {
+        "A25": "2026-11-05",
+        "B25": "News Article",
+        "C25": "दूरदर्शी उद्योगपती",
+        "D25": "Maharashtra Times",
+        "E25": "6.0",
+        "F25": "Marathi",
+        "G25": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 25"
+      }
+    ]
+  },
+  {
+    "id": "WORK-AC8282E64F",
+    "category": "News & press releases",
+    "title": "पुण्यातील सूक्ष्म, लघु, मध्यम उद्योगांना निर्यातीची संधी",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Maharashtra Times\nPage: II\nLanguage: Marathi\nDG quote / source note: भारत- न्यूझीलंड यांच्यातील मुक्त व्यापार  करारामुळे महाराष्ट्रातील औषधनिर्माण, अभियांत्रिकी, वाहन उद्योग, अन्नप्रक्रिया आणि तंत्रज्ञान या क्षेत्रांसाठी निर्यातीच्या नव्या, दीर्घकालीन संधी उपलब्ध होतील. या करारामुळे 'एमएसएमई'ना पाठबळ मिळेल. राज्याचे जागतिक पुरवठा साखळीतील स्थान अधिक बळकट होईल.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 26,
+      "cells": {
+        "A26": "5/20/2026",
+        "B26": "News Article",
+        "C26": "पुण्यातील सूक्ष्म, लघु, मध्यम उद्योगांना निर्यातीची संधी",
+        "D26": "Maharashtra Times",
+        "E26": "II",
+        "F26": "Marathi",
+        "G26": "भारत- न्यूझीलंड यांच्यातील मुक्त व्यापार  करारामुळे महाराष्ट्रातील औषधनिर्माण, अभियांत्रिकी, वाहन उद्योग, अन्नप्रक्रिया आणि तंत्रज्ञान या क्षेत्रांसाठी निर्यातीच्या नव्या, दीर्घकालीन संधी उपलब्ध होतील. या करारामुळे 'एमएसएमई'ना पाठबळ मिळेल. राज्याचे जागतिक पुरवठा साखळीतील स्थान अधिक बळकट होईल."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 26"
+      }
+    ]
+  },
+  {
+    "id": "WORK-261D05D28F",
+    "category": "News & press releases",
+    "title": "उद्योगांसाठी निर्यातीच्या नवीन संधी",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Loksatta\nPage: 18.0\nLanguage: Marathi\nDG quote / source note: भारत-न्यूझीलंड यांच्यातील मुक्त व्यापार करारामुळे महाराष्ट्रातील औषधनिर्माण, अभियांत्रिकी, वाहन उद्योग, अन्नप्रक्रिया आणि तंत्रज्ञान या क्षेत्रांसाठी निर्यातीच्या नव्या, दीर्घकालीन संधी उपलब्ध होणार आहेत. या करारामुळे सूक्ष्म, लघु आणि मध्यम उद्योगांना पाठबळ मिळेल आणि ओशनिया देशांबरोबर मजबूत आर्थिक संबंध निर्माण होण्यास मदत होईल. तसेच, राज्याचे जागतिक पुरवठा साखळीतील स्थान अधिक बळकट होईल.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 27,
+      "cells": {
+        "A27": "5/20/2026",
+        "B27": "News Article",
+        "C27": "उद्योगांसाठी निर्यातीच्या नवीन संधी",
+        "D27": "Loksatta",
+        "E27": "18.0",
+        "F27": "Marathi",
+        "G27": "भारत-न्यूझीलंड यांच्यातील मुक्त व्यापार करारामुळे महाराष्ट्रातील औषधनिर्माण, अभियांत्रिकी, वाहन उद्योग, अन्नप्रक्रिया आणि तंत्रज्ञान या क्षेत्रांसाठी निर्यातीच्या नव्या, दीर्घकालीन संधी उपलब्ध होणार आहेत. या करारामुळे सूक्ष्म, लघु आणि मध्यम उद्योगांना पाठबळ मिळेल आणि ओशनिया देशांबरोबर मजबूत आर्थिक संबंध निर्माण होण्यास मदत होईल. तसेच, राज्याचे जागतिक पुरवठा साखळीतील स्थान अधिक बळकट होईल."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 27"
+      }
+    ]
+  },
+  {
+    "id": "WORK-169FBCAD9B",
+    "category": "News & press releases",
+    "title": "संरक्षण उत्पादनात पुण्याचा 'सिंहाचा वाटा",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: 3.0\nLanguage: Marathi\nDG quote / source note: पुण्याचा इंजिनिअरिंग आणि ऑटोमोबाईल क्षेत्रातील वारसा हा संरक्षण उत्पादनासाठी मजबूत पाया ठरला आहे. येथील कंपन्या केवळ देशांतर्गत गरज भागवत नसून, जागतिक स्तरावर निर्यात करत आहेत. 'व्हॅली ऑफ डेथ'सारखी आव्हाने क्लस्टर्स आणि इनक्युबेशन सेंटर्सच्या माध्यमातून सोडवता आली, तर पुणे जागतिक संरक्षण नकाशावर निश्चितच अग्रस्थानी पोहोचेल.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 28,
+      "cells": {
+        "A28": "5/29/2026",
+        "B28": "News Article",
+        "C28": "संरक्षण उत्पादनात पुण्याचा 'सिंहाचा वाटा",
+        "D28": "Sakal",
+        "E28": "3.0",
+        "F28": "Marathi",
+        "G28": "पुण्याचा इंजिनिअरिंग आणि ऑटोमोबाईल क्षेत्रातील वारसा हा संरक्षण उत्पादनासाठी मजबूत पाया ठरला आहे. येथील कंपन्या केवळ देशांतर्गत गरज भागवत नसून, जागतिक स्तरावर निर्यात करत आहेत. 'व्हॅली ऑफ डेथ'सारखी आव्हाने क्लस्टर्स आणि इनक्युबेशन सेंटर्सच्या माध्यमातून सोडवता आली, तर पुणे जागतिक संरक्षण नकाशावर निश्चितच अग्रस्थानी पोहोचेल."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 28"
+      }
+    ]
+  },
+  {
+    "id": "WORK-567C2C974E",
+    "category": "News & press releases",
+    "title": "एमएसएमई क्लस्टर्सना चाचणी सुविधेसाठी 'बीआयएस'चे बळ",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: 9.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 29,
+      "cells": {
+        "A29": "2026-07-06",
+        "B29": "News Article",
+        "C29": "एमएसएमई क्लस्टर्सना चाचणी सुविधेसाठी 'बीआयएस'चे बळ",
+        "D29": "Sakal",
+        "E29": "9.0",
+        "F29": "Marathi",
+        "G29": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 29"
+      }
+    ]
+  },
+  {
+    "id": "WORK-574E783894",
+    "category": "News & press releases",
+    "title": "एमएसएमई'ची हेल्पलाइन सुरू",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Maharashtra Times\nPage: 5.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 30,
+      "cells": {
+        "A30": "2026-08-06",
+        "B30": "News Article",
+        "C30": "एमएसएमई'ची हेल्पलाइन सुरू",
+        "D30": "Maharashtra Times",
+        "E30": "5.0",
+        "F30": "Marathi",
+        "G30": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 30"
+      }
+    ]
+  },
+  {
+    "id": "WORK-010C1E2201",
+    "category": "News & press releases",
+    "title": "Maharashtra RAMP -Raising and Accelerating MSME Performance (RAMP) Programme - Maharashtra MSME Summit & Awards -2026 (MSME Helpline)",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Indian Express\nPage: 5.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 31,
+      "cells": {
+        "A31": "6/26/2026",
+        "B31": "News Article",
+        "C31": "Maharashtra RAMP -Raising and Accelerating MSME Performance (RAMP) Programme - Maharashtra MSME Summit & Awards -2026 (MSME Helpline)",
+        "D31": "Indian Express",
+        "E31": "5.0",
+        "F31": "English",
+        "G31": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 31"
+      }
+    ]
+  },
+  {
+    "id": "WORK-7398B72CEF",
+    "category": "News & press releases",
+    "title": "Maharashtra RAMP -Raising and Accelerating MSME Performance (RAMP) Programme -Maharashtra MSME Summit & Awards -2026 (MSME Helpline)",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Lokmat\nPage: 7.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 32,
+      "cells": {
+        "A32": "6/26/2026",
+        "B32": "News Article",
+        "C32": "Maharashtra RAMP -Raising and Accelerating MSME Performance (RAMP) Programme -Maharashtra MSME Summit & Awards -2026 (MSME Helpline)",
+        "D32": "Lokmat",
+        "E32": "7.0",
+        "F32": "English",
+        "G32": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 32"
+      }
+    ]
+  },
+  {
+    "id": "WORK-5F90CA0A93",
+    "category": "News & press releases",
+    "title": "Maharashtra RAMP -Raising and Accelerating MSME Performance (RAMP) Programme -Maharashtra MSME Summit & Awards -2026 (MSME Helpline)",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Loksatta\nPage: 5.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 33,
+      "cells": {
+        "A33": "6/26/2026",
+        "B33": "News Article",
+        "C33": "Maharashtra RAMP -Raising and Accelerating MSME Performance (RAMP) Programme -Maharashtra MSME Summit & Awards -2026 (MSME Helpline)",
+        "D33": "Loksatta",
+        "E33": "5.0",
+        "F33": "English",
+        "G33": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 33"
+      }
+    ]
+  },
+  {
+    "id": "WORK-C3603D9349",
+    "category": "News & press releases",
+    "title": "Maharashtra RAMP -Raising and Accelerating MSME Performance (RAMP) Programme -Maharashtra MSME Summit & Awards -2026 (MSME Helpline)",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Hindustan Times\nPage: 5.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 34,
+      "cells": {
+        "A34": "6/26/2026",
+        "B34": "News Article",
+        "C34": "Maharashtra RAMP -Raising and Accelerating MSME Performance (RAMP) Programme -Maharashtra MSME Summit & Awards -2026 (MSME Helpline)",
+        "D34": "Hindustan Times",
+        "E34": "5.0",
+        "F34": "English",
+        "G34": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 34"
+      }
+    ]
+  },
+  {
+    "id": "WORK-4612448E62",
+    "category": "News & press releases",
+    "title": "पुण्यातच हवे 'एमएसएमई' आयुक्तालय !",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: 8.0\nLanguage: Marathi\nDG quote / source note: एखादे सरकारी कार्यालय कुठे असावे, हा प्रश्न अनेकदा प्रशासकीय वाटतो. पण काही निर्णय हे केवळ कार्यालयाच्या पत्त्यापुरते मर्यादित नसतात, तर ते शासनाचे प्राधान्यक्रम आणि विकासाची दिशा निश्चित करणारे असतात. महाराष्ट्र सरकारने २०२६-२७ च्या अर्थसंकल्पात सूक्ष्म, लघु व मध्यम उद्योगांसाठी (एमएसएमई) स्वतंत्र आयुक्तालय स्थापन करण्याची घोषणा केली आहे. मराठा चेंबर ऑफ कॉमर्स, इंडस्ट्रीज अँड अॅग्रिकल्चरने (एमसीसीआयए) मुख्यमंत्री देवेंद्र फडणवीस यांच्यासमवेत वेळोवेळी झालेल्या चर्चेमध्ये नेमकी हीच मागणी केली होती. त्यामुळे आम्हाला या घोषणेचे विशेष स्वागत करावेसे वाटते. मात्र आता खरा प्रश्न आहे तो या आयुक्तालयाचे मुख्यालय नेमके कुठे असावे याचा. हा प्रश्न एका शहराचा नसून महाराष्ट्रातील एमएसएमई क्षेत्राला सर्वाधिक परिणामकारक सेवा कुठून देता येईल, याचा आहे.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation",
+      "Stored publication date is in the future; possible day/month reversal"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 35,
+      "cells": {
+        "A35": "2026-12-07",
+        "B35": "News Article",
+        "C35": "पुण्यातच हवे 'एमएसएमई' आयुक्तालय !",
+        "D35": "Sakal",
+        "E35": "8.0",
+        "F35": "Marathi",
+        "G35": "एखादे सरकारी कार्यालय कुठे असावे, हा प्रश्न अनेकदा प्रशासकीय वाटतो. पण काही निर्णय हे केवळ कार्यालयाच्या पत्त्यापुरते मर्यादित नसतात, तर ते शासनाचे प्राधान्यक्रम आणि विकासाची दिशा निश्चित करणारे असतात. महाराष्ट्र सरकारने २०२६-२७ च्या अर्थसंकल्पात सूक्ष्म, लघु व मध्यम उद्योगांसाठी (एमएसएमई) स्वतंत्र आयुक्तालय स्थापन करण्याची घोषणा केली आहे. मराठा चेंबर ऑफ कॉमर्स, इंडस्ट्रीज अँड अॅग्रिकल्चरने (एमसीसीआयए) मुख्यमंत्री देवेंद्र फडणवीस यांच्यासमवेत वेळोवेळी झालेल्या चर्चेमध्ये नेमकी हीच मागणी केली होती. त्यामुळे आम्हाला या घोषणेचे विशेष स्वागत करावेसे वाटते. मात्र आता खरा प्रश्न आहे तो या आयुक्तालयाचे मुख्यालय नेमके कुठे असावे याचा. हा प्रश्न एका शहराचा नसून महाराष्ट्रातील एमएसएमई क्षेत्राला सर्वाधिक परिणामकारक सेवा कुठून देता येईल, याचा आहे."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 35"
+      }
+    ]
+  },
+  {
+    "id": "WORK-EB60F6278D",
+    "category": "News & press releases",
+    "title": "Pune has reported the highest complaints about unhygienic food in state: Mundhe",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Hindustan Times\nPage: 2.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 36,
+      "cells": {
+        "A36": "2026-07-19",
+        "B36": "News Article",
+        "C36": "Pune has reported the highest complaints about unhygienic food in state: Mundhe",
+        "D36": "Hindustan Times",
+        "E36": "2.0",
+        "F36": "English",
+        "G36": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 36"
+      }
+    ]
+  },
+  {
+    "id": "WORK-B8D108C8F9",
+    "category": "News & press releases",
+    "title": "Maha FDA's integrated portal aims to rival that of the US",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Times of India\nPage: 2.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 37,
+      "cells": {
+        "A37": "2026-07-19",
+        "B37": "News Article",
+        "C37": "Maha FDA's integrated portal aims to rival that of the US",
+        "D37": "Times of India",
+        "E37": "2.0",
+        "F37": "English",
+        "G37": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 37"
+      }
+    ]
+  },
+  {
+    "id": "WORK-7EFA6A3A19",
+    "category": "News & press releases",
+    "title": "FDA launches grievance portal",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Pune Mirror\nPage: 7.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 38,
+      "cells": {
+        "A38": "2026-07-19",
+        "B38": "News Article",
+        "C38": "FDA launches grievance portal",
+        "D38": "Pune Mirror",
+        "E38": "7.0",
+        "F38": "English",
+        "G38": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 38"
+      }
+    ]
+  },
+  {
+    "id": "WORK-544DAC3BE2",
+    "category": "News & press releases",
+    "title": "Pune reported highest number of unhygienic food complaints in state: FDA Commissioner",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Indian Express\nPage: 4.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 39,
+      "cells": {
+        "A39": "2026-07-19",
+        "B39": "News Article",
+        "C39": "Pune reported highest number of unhygienic food complaints in state: FDA Commissioner",
+        "D39": "Indian Express",
+        "E39": "4.0",
+        "F39": "English",
+        "G39": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 39"
+      }
+    ]
+  },
+  {
+    "id": "WORK-8AEA63CAC4",
+    "category": "News & press releases",
+    "title": "खाद्यपदार्थांबाबत सर्वाधिक तक्रारी पुणेकरांकडून",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Maharashtra Times\nPage: 3.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 40,
+      "cells": {
+        "A40": "2026-07-19",
+        "B40": "News Article",
+        "C40": "खाद्यपदार्थांबाबत सर्वाधिक तक्रारी पुणेकरांकडून",
+        "D40": "Maharashtra Times",
+        "E40": "3.0",
+        "F40": "Marathi",
+        "G40": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 40"
+      }
+    ]
+  },
+  {
+    "id": "WORK-EE5D7C3ABC",
+    "category": "News & press releases",
+    "title": "खाद्य व्यवसायातील नियमभंगाचा इतिहास आता एका क्लिकवर",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Loksatta\nPage: 15.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 41,
+      "cells": {
+        "A41": "2026-07-19",
+        "B41": "News Article",
+        "C41": "खाद्य व्यवसायातील नियमभंगाचा इतिहास आता एका क्लिकवर",
+        "D41": "Loksatta",
+        "E41": "15.0",
+        "F41": "Marathi",
+        "G41": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 41"
+      }
+    ]
+  },
+  {
+    "id": "WORK-E8FE0F72D5",
+    "category": "News & press releases",
+    "title": "एआय शोधणार सराईत अन्न गुन्हेगार",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Pudhari\nPage: 4.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 42,
+      "cells": {
+        "A42": "2026-07-19",
+        "B42": "News Article",
+        "C42": "एआय शोधणार सराईत अन्न गुन्हेगार",
+        "D42": "Pudhari",
+        "E42": "4.0",
+        "F42": "Marathi",
+        "G42": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 42"
+      }
+    ]
+  },
+  {
+    "id": "WORK-C0BCBFFD9E",
+    "category": "News & press releases",
+    "title": "भेसळखोरांवर आता 'एआय'द्वारे नजर",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: 5.0\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 43,
+      "cells": {
+        "A43": "2026-07-19",
+        "B43": "News Article",
+        "C43": "भेसळखोरांवर आता 'एआय'द्वारे नजर",
+        "D43": "Sakal",
+        "E43": "5.0",
+        "F43": "Marathi",
+        "G43": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 43"
+      }
+    ]
+  },
+  {
+    "id": "WORK-9A0AC2AD17",
+    "category": "News & press releases",
+    "title": "तंत्रज्ञानाशी जुळवून घेण्यास सक्षम परिसंस्थेची गरज",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Lokmat\nPage: Hello Pune -3\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 44,
+      "cells": {
+        "A44": "2026-07-19",
+        "B44": "News Article",
+        "C44": "तंत्रज्ञानाशी जुळवून घेण्यास सक्षम परिसंस्थेची गरज",
+        "D44": "Lokmat",
+        "E44": "Hello Pune -3",
+        "F44": "Marathi",
+        "G44": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 44"
+      }
+    ]
+  },
+  {
+    "id": "WORK-DACB4C6B3C",
+    "category": "News & press releases",
+    "title": "सेमीकंडक्टर क्षेत्रात भारताची मोठी झेप",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: Special Suppliment  15.08.2026  Part No. 2 P.no. 8\nLanguage: Marathi\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 45,
+      "cells": {
+        "A45": "2026-08-15",
+        "B45": "News Article",
+        "C45": "सेमीकंडक्टर क्षेत्रात भारताची मोठी झेप",
+        "D45": "Sakal",
+        "E45": "Special Suppliment  15.08.2026  Part No. 2 P.no. 8",
+        "F45": "Marathi",
+        "G45": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 45"
+      }
+    ]
+  },
+  {
+    "id": "WORK-E71FB946E8",
+    "category": "News & press releases",
+    "title": "5k MSMEs reach out to MCCIA via hotline since '24",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Times of India\nPage: 6.0\nLanguage: English\nDG quote / source note: NA",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 46,
+      "cells": {
+        "A46": "2026-09-02",
+        "B46": "News Article",
+        "C46": "5k MSMEs reach out to MCCIA via hotline since '24",
+        "D46": "Times of India",
+        "E46": "6.0",
+        "F46": "English",
+        "G46": "NA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 46"
+      }
+    ]
+  },
+  {
+    "id": "WORK-78D43DC8F6",
+    "category": "News & press releases",
+    "title": "हजारो उद्योजकांना 'हेल्पलाइन'ची मदत",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Maharashtra Times\nPage: 5.0\nLanguage: Marathi\nDG quote / source note: दहा हजार सल्लामसलती पूर्ण होणे हे 'एमएसएमई हेल्पलाइन'चा प्रत्यक्ष परिणाम दर्शविणारे महत्त्वाचे पाऊल आहे. प्रत्येक 'एमएसएमई'ला तज्ज्ञांचा सल्ला सहज उपलब्ध करून देणे हा आमचा उद्देश आहे.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 47,
+      "cells": {
+        "A47": "2026-09-02",
+        "B47": "News Article",
+        "C47": "हजारो उद्योजकांना 'हेल्पलाइन'ची मदत",
+        "D47": "Maharashtra Times",
+        "E47": "5.0",
+        "F47": "Marathi",
+        "G47": "दहा हजार सल्लामसलती पूर्ण होणे हे 'एमएसएमई हेल्पलाइन'चा प्रत्यक्ष परिणाम दर्शविणारे महत्त्वाचे पाऊल आहे. प्रत्येक 'एमएसएमई'ला तज्ज्ञांचा सल्ला सहज उपलब्ध करून देणे हा आमचा उद्देश आहे."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 47"
+      }
+    ]
+  },
+  {
+    "id": "WORK-4ED52E1123",
+    "category": "News & press releases",
+    "title": "मराठा चेंबर'च्या हेल्पलाइनचा १० हजार लघु उद्योगांना लाभ",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Loksatta\nPage: 17.0\nLanguage: Marathi\nDG quote / source note: उद्योगाचा आकार किंवा भौगोलिक स्थान काहीही असले, तरी सुलभ रीतीने मार्गदर्शन करण्याचा प्रयत्न आहे.\n'एमएसएमई'च्या समस्या सोडवणे, त्यांना संधी मिळवून देणे, योग्य व्यावसायिक निर्णय घेणे यासाठी हेल्पलाइनद्वारे होणारी मदत देशाच्या उद्योग क्षेत्राला आणि'एमएसएमई'ला अधिक सक्षम करणारी आहे.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 48,
+      "cells": {
+        "A48": "2026-09-03",
+        "B48": "News Article",
+        "C48": "मराठा चेंबर'च्या हेल्पलाइनचा १० हजार लघु उद्योगांना लाभ",
+        "D48": "Loksatta",
+        "E48": "17.0",
+        "F48": "Marathi",
+        "G48": "उद्योगाचा आकार किंवा भौगोलिक स्थान काहीही असले, तरी सुलभ रीतीने मार्गदर्शन करण्याचा प्रयत्न आहे.\n'एमएसएमई'च्या समस्या सोडवणे, त्यांना संधी मिळवून देणे, योग्य व्यावसायिक निर्णय घेणे यासाठी हेल्पलाइनद्वारे होणारी मदत देशाच्या उद्योग क्षेत्राला आणि'एमएसएमई'ला अधिक सक्षम करणारी आहे."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 48"
+      }
+    ]
+  },
+  {
+    "id": "WORK-35550B8381",
+    "category": "News & press releases",
+    "title": "एमएसएमई 'मध्ये महिला उद्योजकांचा वाढता टक्का",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Maharashtra Times\nPage: Pune Plus,P.no.1\nLanguage: Marathi\nDG quote / source note: शून्य खर्च, वैयक्तिक उपाय, प्रत्यक्ष परिणाम आणि तज्ज्ञ मार्गदर्शन ही एमएसएमई हेल्पलाइनची चार प्रमुख वैशिष्ट्ये अहेत. त्यामुळे व्यावसायिक सल्लागारांची सेवा घेण्यासाठी मोठा खर्च करण्याची क्षमता नसलेल्या छोट्या महिला उद्योजकांनाही तज्ज्ञ मार्गदर्शन मिळण्याची संधी उपलब्ध आहे.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 49,
+      "cells": {
+        "A49": "2026-09-05",
+        "B49": "News Article",
+        "C49": "एमएसएमई 'मध्ये महिला उद्योजकांचा वाढता टक्का",
+        "D49": "Maharashtra Times",
+        "E49": "Pune Plus,P.no.1",
+        "F49": "Marathi",
+        "G49": "शून्य खर्च, वैयक्तिक उपाय, प्रत्यक्ष परिणाम आणि तज्ज्ञ मार्गदर्शन ही एमएसएमई हेल्पलाइनची चार प्रमुख वैशिष्ट्ये अहेत. त्यामुळे व्यावसायिक सल्लागारांची सेवा घेण्यासाठी मोठा खर्च करण्याची क्षमता नसलेल्या छोट्या महिला उद्योजकांनाही तज्ज्ञ मार्गदर्शन मिळण्याची संधी उपलब्ध आहे."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 49"
+      }
+    ]
+  },
+  {
+    "id": "WORK-1349C676B5",
+    "category": "News & press releases",
+    "title": "हेल्पलाइनचा दहा हजार उद्योजकांना लाभ",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Type: News Article\nPublisher: Sakal\nPage: 9.0\nLanguage: Marathi\nDG quote / source note: दहा हजार सल्लामसलती पूर्ण होणे हे 'एमएसएमई' हेल्पलाइनचा प्रत्यक्ष परिणाम दर्शविणारे महत्त्वाचे पाऊल आहे. या आकड्यामागे मार्गदर्शनासाठी पुढे आलेले दहा हजार उद्योजक आहेत. उद्योगाचा आकार किंवा भौगोलिक स्थान कोणतेही असो, प्रत्येक 'एमएसएमई'ला तज्ज्ञांचा सल्ला सहज उपलब्ध करून देणे हा आमचा उद्देश आहे.",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Publication date and source evidence need confirmation"
+    ],
+    "source": {
+      "sheet": "News",
+      "row": 50,
+      "cells": {
+        "A50": "2026-09-05",
+        "B50": "News Article",
+        "C50": "हेल्पलाइनचा दहा हजार उद्योजकांना लाभ",
+        "D50": "Sakal",
+        "E50": "9.0",
+        "F50": "Marathi",
+        "G50": "दहा हजार सल्लामसलती पूर्ण होणे हे 'एमएसएमई' हेल्पलाइनचा प्रत्यक्ष परिणाम दर्शविणारे महत्त्वाचे पाऊल आहे. या आकड्यामागे मार्गदर्शनासाठी पुढे आलेले दहा हजार उद्योजक आहेत. उद्योगाचा आकार किंवा भौगोलिक स्थान कोणतेही असो, प्रत्येक 'एमएसएमई'ला तज्ज्ञांचा सल्ला सहज उपलब्ध करून देणे हा आमचा उद्देश आहे."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · News, row 50"
+      }
+    ]
+  },
+  {
+    "id": "WORK-D715CBF080",
+    "category": "Sampada",
+    "title": "Sampada — April · Agri & Food Processing",
+    "stage": "Completed",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Done\nPosting: 29th April",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Done",
+    "websiteStatus": "Not required",
+    "distributionStatus": "Done",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 2,
+      "cells": {
+        "A2": "April",
+        "B2": "Agri & Food Processing",
+        "C2": "Done",
+        "D2": "29th April"
+      }
+    },
+    "revision": 2,
+    "updatedAt": "2026-09-18T05:51:50.016Z",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 2"
+      },
+      {
+        "at": "2026-09-18T05:51:50.016Z",
+        "actor": "Aarushi Gupta",
+        "comment": "",
+        "fromStage": "Needs confirmation",
+        "toStage": "Completed",
+        "summary": "Stage: Needs confirmation → Completed; Updated print status; Updated website status; Updated distribution status"
+      }
+    ],
+    "reviewer": "",
+    "priority": "Normal",
+    "publicationDate": "",
+    "issueMonth": "",
+    "theme": "",
+    "acknowledgementDate": "",
+    "followUpDate": "",
+    "quantity": "",
+    "deliveryMethod": "",
+    "receiptDate": "",
+    "resolutionNote": ""
+  },
+  {
+    "id": "WORK-4D91B701F7",
+    "category": "Sampada",
+    "title": "Sampada — May · Higher Education & Skilling",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Done\nPosting: 2nd June",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 3,
+      "cells": {
+        "A3": "May",
+        "B3": "Higher Education & Skilling",
+        "C3": "Done",
+        "D3": "2nd June"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-BDBB46223D",
+    "category": "Sampada",
+    "title": "Sampada — June · GCC",
+    "stage": "Needs confirmation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Done\nPosting: 4th July",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 4,
+      "cells": {
+        "A4": "June",
+        "B4": "GCC",
+        "C4": "Done",
+        "D4": "4th July"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-B7BB4043B9",
+    "category": "Sampada",
+    "title": "Sampada — July · HR",
+    "stage": "Design",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Design\nPosting: 31st July",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 5,
+      "cells": {
+        "A5": "July",
+        "B5": "HR",
+        "C5": "Design",
+        "D5": "31st July"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-D34DC7956E",
+    "category": "Sampada",
+    "title": "Sampada — August · Food Safety",
+    "stage": "Content preparation",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Content generation\nPosting: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 6,
+      "cells": {
+        "A6": "August",
+        "B6": "Food Safety",
+        "C6": "Content generation"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-E4DF4ED2A7",
+    "category": "Sampada",
+    "title": "Sampada — September · Chemical / Pharma",
+    "stage": "Planning",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: to be discussed\nPosting: \nUnlabelled theme note: Defense",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 7,
+      "cells": {
+        "A7": "September",
+        "B7": "Chemical / Pharma",
+        "C7": "to be discussed",
+        "F7": "Defense"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 7"
+      }
+    ]
+  },
+  {
+    "id": "WORK-FB7217B2B0",
+    "category": "Sampada",
+    "title": "Sampada — October · Diwali",
+    "stage": "Planning",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Planned\nPosting: \nUnlabelled theme note: MSME",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 8,
+      "cells": {
+        "A8": "October",
+        "B8": "Diwali",
+        "C8": "Planned",
+        "F8": "MSME"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 8"
+      }
+    ]
+  },
+  {
+    "id": "WORK-64247D6EE7",
+    "category": "Sampada",
+    "title": "Sampada — November",
+    "stage": "Planning",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: Planed\nPosting: \nUnlabelled theme note: AI",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 9,
+      "cells": {
+        "A9": "November",
+        "C9": "Planed",
+        "F9": "AI"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 9"
+      }
+    ]
+  },
+  {
+    "id": "WORK-E13D29CB7F",
+    "category": "Sampada",
+    "title": "Sampada — December · Skilling",
+    "stage": "Planning",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: \nPosting: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 10,
+      "cells": {
+        "A10": "December",
+        "B10": "Skilling"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 10"
+      }
+    ]
+  },
+  {
+    "id": "WORK-BC40338F29",
+    "category": "Sampada",
+    "title": "Sampada — January · Pune Expo / Manufacturing/ Technology",
+    "stage": "Planning",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: \nPosting: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 11,
+      "cells": {
+        "A11": "January",
+        "B11": "Pune Expo / Manufacturing/ Technology"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 11"
+      }
+    ]
+  },
+  {
+    "id": "WORK-CDB1A2008E",
+    "category": "Sampada",
+    "title": "Sampada — February · PIBS",
+    "stage": "Planning",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: \nPosting: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 12,
+      "cells": {
+        "A12": "February",
+        "B12": "PIBS"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 12"
+      }
+    ]
+  },
+  {
+    "id": "WORK-D4F85EE6FF",
+    "category": "Sampada",
+    "title": "Sampada — March",
+    "stage": "Planning",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Original status: \nPosting: ",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Issue year is not recorded"
+    ],
+    "source": {
+      "sheet": "Sampada",
+      "row": 13,
+      "cells": {
+        "A13": "March"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sampada, row 13"
+      }
+    ]
+  },
+  {
+    "id": "WORK-BE707D543B",
+    "category": "Annual reports",
+    "title": "Annual report — year to confirm",
+    "stage": "Design",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "Draft designed and ready: 15th July 2025\nCurrent status: Gunjan Proofreading",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Confirm report year and current proofreading owner"
+    ],
+    "source": {
+      "sheet": "Annual Report",
+      "row": 1,
+      "cells": {
+        "A1": "Draft designed and ready",
+        "C1": "15th July 2025",
+        "A2": "Current Status",
+        "C2": "Gunjan Proofreading"
+      }
+    },
+    "revision": 3,
+    "updatedAt": "2026-09-18T05:52:17.922Z",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Annual Report, row 1"
+      },
+      {
+        "at": "2026-09-18T05:52:12.889Z",
+        "actor": "Aarushi Gupta",
+        "comment": "",
+        "fromStage": "Proofreading",
+        "toStage": "Review",
+        "summary": "Send for review"
+      },
+      {
+        "at": "2026-09-18T05:52:17.922Z",
+        "actor": "Aarushi Gupta",
+        "comment": "",
+        "fromStage": "Review",
+        "toStage": "Design",
+        "summary": "Approve for design"
+      }
+    ],
+    "reviewer": "Gunjan",
+    "priority": "Normal",
+    "publicationDate": "",
+    "issueMonth": "",
+    "theme": "",
+    "acknowledgementDate": "",
+    "followUpDate": "",
+    "quantity": "",
+    "deliveryMethod": "",
+    "receiptDate": "",
+    "resolutionNote": ""
+  },
+  {
+    "id": "WORK-4C44178333",
+    "category": "Representations",
+    "title": "Request for Creation of a Centralised Document Receipt System at State GST Office, Pune",
+    "stage": "Sent",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "Confirm acknowledgement and next follow-up",
+    "notes": "Department: GST\nOriginal date: 2026-04-07",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Sanjali Dias · Jt. Commissioner - Appeals",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Representations",
+      "row": 2,
+      "cells": {
+        "A2": "2026-04-07",
+        "B2": "Request for Creation of a Centralised Document Receipt System at State GST Office, Pune",
+        "C2": "GST",
+        "D2": "Sanjali Dias",
+        "E2": "Jt. Commissioner - Appeals",
+        "F2": "Sent"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Representations, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-40A38CD3F2",
+    "category": "Representations",
+    "title": "MCCIA Request to Educate Prospective MSME Sellers about Fake Websites Relating to GeM",
+    "stage": "Sent",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "Confirm acknowledgement and next follow-up",
+    "notes": "Department: GeM\nOriginal date: 2026-04-08",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Mihir Kumar · CEO",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Representations",
+      "row": 3,
+      "cells": {
+        "A3": "2026-04-08",
+        "B3": "MCCIA Request to Educate Prospective MSME Sellers about Fake Websites Relating to GeM",
+        "C3": "GeM",
+        "D3": "Mihir Kumar",
+        "E3": "CEO",
+        "F3": "Sent"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Representations, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-8502C860AA",
+    "category": "Representations",
+    "title": "Submission about Grid Support Charges, use of renewable energy generated during Solar Hours and other measures introduced through MERC Order dated 25th March 2026 about Case no. 75/2025 for Multi Year Tariff Revision by MSEDCL",
+    "stage": "Sent",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "Confirm acknowledgement and next follow-up",
+    "notes": "Department: GoM\nOriginal date: 2026-04-30",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Devendra Fadnavis · Chief Minister",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Representations",
+      "row": 4,
+      "cells": {
+        "A4": "2026-04-30",
+        "B4": "Submission about Grid Support Charges, use of renewable energy generated during Solar Hours and other measures introduced through MERC Order dated 25th March 2026 about Case no. 75/2025 for Multi Year Tariff Revision by MSEDCL",
+        "C4": "GoM",
+        "D4": "Devendra Fadnavis",
+        "E4": "Chief Minister",
+        "F4": "Sent"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Representations, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-A19DC74D7C",
+    "category": "Representations",
+    "title": "Representation to the Government of Maharashtra on Establishment of MSME Commissionerate in Pune",
+    "stage": "Sent",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "Confirm acknowledgement and next follow-up",
+    "notes": "Department: GOM\nOriginal date: 2026-06-29",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Devendra Fadnavis · Chief Minister",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Representations",
+      "row": 5,
+      "cells": {
+        "A5": "2026-06-29",
+        "B5": "Representation to the Government of Maharashtra on Establishment of MSME Commissionerate in Pune",
+        "C5": "GOM",
+        "D5": "Devendra Fadnavis",
+        "E5": "Chief Minister",
+        "F5": "Sent"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Representations, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-85B7749AE4",
+    "category": "Representations",
+    "title": "Representation for inclusion of Pune Tooling Hub  Project in \nMaharashtra State’s Projects under \nBHAVYA Scheme of Government of India",
+    "stage": "Sent",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "Confirm acknowledgement and next follow-up",
+    "notes": "Department: MIDC\nOriginal date: 2026-06-18",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Shri Deependra Singh Kushwah(IAS) · CEO",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Representations",
+      "row": 6,
+      "cells": {
+        "A6": "2026-06-18",
+        "B6": "Representation for inclusion of Pune Tooling Hub  Project in \nMaharashtra State’s Projects under \nBHAVYA Scheme of Government of India",
+        "C6": "MIDC",
+        "D6": "Shri Deependra Singh Kushwah(IAS)",
+        "E6": "CEO",
+        "F6": "Sent"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Representations, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-346CEC1079",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "B1": "MSME Helpline Brochure_English",
+        "B2": "MIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-DC26702229",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Pune Government",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "cells": {
+        "B1": "MSME Helpline Brochure_English",
+        "B3": "Pune Government"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-1F2AB3E1B1",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Central Governemnt",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "cells": {
+        "B1": "MSME Helpline Brochure_English",
+        "B4": "Central Governemnt"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-8F1D68DAE3",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "BOD",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 5,
+      "cells": {
+        "B1": "MSME Helpline Brochure_English",
+        "B5": "BOD"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-E51607855D",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "COPP",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 6,
+      "cells": {
+        "B1": "MSME Helpline Brochure_English",
+        "B6": "COPP"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-1761B1646D",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "EC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 7,
+      "cells": {
+        "B1": "MSME Helpline Brochure_English",
+        "B7": "EC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 7"
+      }
+    ]
+  },
+  {
+    "id": "WORK-5282C48A6F",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "C1": "MSME Helpline Brochure_Marathi",
+        "C2": "MIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-28D0B99DBC",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Pune Government",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "cells": {
+        "C1": "MSME Helpline Brochure_Marathi",
+        "C3": "Pune Government"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-0CEA91828B",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "BOD",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "cells": {
+        "C1": "MSME Helpline Brochure_Marathi",
+        "C4": "BOD"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-78C73FED0A",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "COPP",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 5,
+      "cells": {
+        "C1": "MSME Helpline Brochure_Marathi",
+        "C5": "COPP"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-D6B9B126DC",
+    "category": "Distribution",
+    "title": "MSME Helpline Brochure_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "EC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 6,
+      "cells": {
+        "C1": "MSME Helpline Brochure_Marathi",
+        "C6": "EC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-6C077B064C",
+    "category": "Distribution",
+    "title": "CBP Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Dr. Chandrakant Sulochana Laxmanrao Pulkundwar, (IAS) , Divisional Commissioner, Pune Division, Pune.",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "D1": "CBP Report",
+        "D2": "Dr. Chandrakant Sulochana Laxmanrao Pulkundwar, (IAS) , Divisional Commissioner, Pune Division, Pune."
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-8B55DCBDA4",
+    "category": "Distribution",
+    "title": "CBP Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Sadashiv Survase, Jt. Director , Industries Department, GOM",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "cells": {
+        "D1": "CBP Report",
+        "D3": "Sadashiv Survase, Jt. Director , Industries Department, GOM"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-8E5F132855",
+    "category": "Distribution",
+    "title": "CBP Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Collector, Pune",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "cells": {
+        "D1": "CBP Report",
+        "D4": "Collector, Pune"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-609DE6F8AA",
+    "category": "Distribution",
+    "title": "CBP Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Municipal Corporation PMC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 5,
+      "cells": {
+        "D1": "CBP Report",
+        "D5": "Municipal Corporation PMC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-5F843ABDC9",
+    "category": "Distribution",
+    "title": "CBP Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Municipal Corporation PcMC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 6,
+      "cells": {
+        "D1": "CBP Report",
+        "D6": "Municipal Corporation PcMC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-542A0121A8",
+    "category": "Distribution",
+    "title": "Skill Training Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Jt. Director DIC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "E1": "Skill Training Report",
+        "E2": "Jt. Director DIC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-851D28F322",
+    "category": "Distribution",
+    "title": "Skill Training Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "GM, DIC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "cells": {
+        "E1": "Skill Training Report",
+        "E3": "GM, DIC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-DF82503158",
+    "category": "Distribution",
+    "title": "Skill Training Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Skill Training Centers",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "cells": {
+        "E1": "Skill Training Report",
+        "E4": "Skill Training Centers"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-B91377E134",
+    "category": "Distribution",
+    "title": "Skill Training Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Manisha Verma, Additional Chief Secretary at GOM",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 5,
+      "cells": {
+        "E1": "Skill Training Report",
+        "E5": "Manisha Verma, Additional Chief Secretary at GOM"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-F50B45DA81",
+    "category": "Distribution",
+    "title": "MCCIA_Pune GCC_Report (Incl. Coverage)",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Recipient not recorded"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "F1": "MCCIA_Pune GCC_Report (Incl. Coverage)",
+        "F2": ""
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-C69DF90AE1",
+    "category": "Distribution",
+    "title": "MCCIA Annual Awards 2025_Profile_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MD, MSSIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "G1": "MCCIA Annual Awards 2025_Profile_English",
+        "G2": "MD, MSSIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-FE6958DB89",
+    "category": "Distribution",
+    "title": "MCCIA Annual Awards 2025_Profile_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MD, MSSIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "H1": "MCCIA Annual Awards 2025_Profile_Marathi",
+        "H2": "MD, MSSIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-BF48565D9E",
+    "category": "Distribution",
+    "title": "AI FAQs",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MSSIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "I1": "AI FAQs",
+        "I2": "MSSIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-0FA2F0B13D",
+    "category": "Distribution",
+    "title": "SEC 2025 Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Recipient not recorded"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "J1": "SEC 2025 Report",
+        "J2": ""
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-32FF8895D9",
+    "category": "Distribution",
+    "title": "MSME FAQs_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "K1": "MSME FAQs_English",
+        "K2": "MIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-992E018BE7",
+    "category": "Distribution",
+    "title": "MSME FAQs_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MSSIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "cells": {
+        "K1": "MSME FAQs_English",
+        "K3": "MSSIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-19A26133C2",
+    "category": "Distribution",
+    "title": "MSME FAQs_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Pune Govt",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "cells": {
+        "K1": "MSME FAQs_English",
+        "K4": "Pune Govt"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-DA2BA89A75",
+    "category": "Distribution",
+    "title": "MSME FAQs_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Central Govt Officials",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 5,
+      "cells": {
+        "K1": "MSME FAQs_English",
+        "K5": "Central Govt Officials"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-41E6B07DB4",
+    "category": "Distribution",
+    "title": "MSME FAQs_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "CEO-PMRDA",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 6,
+      "cells": {
+        "K1": "MSME FAQs_English",
+        "K6": "CEO-PMRDA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-8A157C20D8",
+    "category": "Distribution",
+    "title": "MSME FAQs_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "COPP",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 7,
+      "cells": {
+        "K1": "MSME FAQs_English",
+        "K7": "COPP"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 7"
+      }
+    ]
+  },
+  {
+    "id": "WORK-D8323063AC",
+    "category": "Distribution",
+    "title": "MSME FAQs_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "BOD",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 8,
+      "cells": {
+        "K1": "MSME FAQs_English",
+        "K8": "BOD"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 8"
+      }
+    ]
+  },
+  {
+    "id": "WORK-8CD9D58EE1",
+    "category": "Distribution",
+    "title": "MSME FAQs_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "EC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 9,
+      "cells": {
+        "K1": "MSME FAQs_English",
+        "K9": "EC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 9"
+      }
+    ]
+  },
+  {
+    "id": "WORK-96DDC57A58",
+    "category": "Distribution",
+    "title": "MSME FAQs_English",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "DIC Officers, Out of Pune",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 10,
+      "cells": {
+        "K1": "MSME FAQs_English",
+        "K10": "DIC Officers, Out of Pune"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 10"
+      }
+    ]
+  },
+  {
+    "id": "WORK-7253FEB130",
+    "category": "Distribution",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "L1": "MSME FAQs_Marathi",
+        "L2": "MIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-7B659A8536",
+    "category": "Distribution",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MSSIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "cells": {
+        "L1": "MSME FAQs_Marathi",
+        "L3": "MSSIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-FF2D8AF02B",
+    "category": "Distribution",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Pune Govt",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "cells": {
+        "L1": "MSME FAQs_Marathi",
+        "L4": "Pune Govt"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-269B7CF399",
+    "category": "Distribution",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Central Govt Officials",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 5,
+      "cells": {
+        "L1": "MSME FAQs_Marathi",
+        "L5": "Central Govt Officials"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-6CF3ADD7A9",
+    "category": "Distribution",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "CEO-PMRDA",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 6,
+      "cells": {
+        "L1": "MSME FAQs_Marathi",
+        "L6": "CEO-PMRDA"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-470B9B5CF6",
+    "category": "Distribution",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "COPP",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 7,
+      "cells": {
+        "L1": "MSME FAQs_Marathi",
+        "L7": "COPP"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 7"
+      }
+    ]
+  },
+  {
+    "id": "WORK-3004F0774F",
+    "category": "Distribution",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "BOD",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 8,
+      "cells": {
+        "L1": "MSME FAQs_Marathi",
+        "L8": "BOD"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 8"
+      }
+    ]
+  },
+  {
+    "id": "WORK-0E7FCE5AFF",
+    "category": "Distribution",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "EC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 9,
+      "cells": {
+        "L1": "MSME FAQs_Marathi",
+        "L9": "EC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 9"
+      }
+    ]
+  },
+  {
+    "id": "WORK-6B59A9F98E",
+    "category": "Distribution",
+    "title": "MSME FAQs_Marathi",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "DIC Officers, Out of Pune",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 10,
+      "cells": {
+        "L1": "MSME FAQs_Marathi",
+        "L10": "DIC Officers, Out of Pune"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 10"
+      }
+    ]
+  },
+  {
+    "id": "WORK-C02E0B91B4",
+    "category": "Distribution",
+    "title": "Incubation Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "M1": "Incubation Report",
+        "M2": "MIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-0BC86771DE",
+    "category": "Distribution",
+    "title": "Incubation Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MSSIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "cells": {
+        "M1": "Incubation Report",
+        "M3": "MSSIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-E24F1718BE",
+    "category": "Distribution",
+    "title": "Incubation Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Pune Govt",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "cells": {
+        "M1": "Incubation Report",
+        "M4": "Pune Govt"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-A7D8B25891",
+    "category": "Distribution",
+    "title": "Incubation Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Shrikant Patil, CEO MSiNS",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 5,
+      "cells": {
+        "M1": "Incubation Report",
+        "M5": "Shrikant Patil, CEO MSiNS"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-FD463AFFC6",
+    "category": "Distribution",
+    "title": "Incubation Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Manisha Verma, Additional Chief Secretary, MSInS at GOM",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 6,
+      "cells": {
+        "M1": "Incubation Report",
+        "M6": "Manisha Verma, Additional Chief Secretary, MSInS at GOM"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-BE7B8A1E6D",
+    "category": "Distribution",
+    "title": "Incubation Report",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Incubation Centers",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 7,
+      "cells": {
+        "M1": "Incubation Report",
+        "M7": "Incubation Centers"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 7"
+      }
+    ]
+  },
+  {
+    "id": "WORK-C2AE21B1D6",
+    "category": "Distribution",
+    "title": "AI Inspiration Report (100 Champions)",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Recipient not recorded"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "N1": "AI Inspiration Report (100 Champions)",
+        "N2": ""
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-AD56C331BD",
+    "category": "Distribution",
+    "title": "Niryatgatha Coffee Table Book",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Recipient not recorded"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "O1": "Niryatgatha Coffee Table Book",
+        "O2": ""
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-C765E0BCD6",
+    "category": "Distribution",
+    "title": "MCCIA Annual Report 2024-25",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "MIDC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "P1": "MCCIA Annual Report 2024-25",
+        "P2": "MIDC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  },
+  {
+    "id": "WORK-C46B870B44",
+    "category": "Distribution",
+    "title": "MCCIA Annual Report 2024-25",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Pune Govt",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 3,
+      "cells": {
+        "P1": "MCCIA Annual Report 2024-25",
+        "P3": "Pune Govt"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 3"
+      }
+    ]
+  },
+  {
+    "id": "WORK-1C26A52BF5",
+    "category": "Distribution",
+    "title": "MCCIA Annual Report 2024-25",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "Central Govt",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 4,
+      "cells": {
+        "P1": "MCCIA Annual Report 2024-25",
+        "P4": "Central Govt"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 4"
+      }
+    ]
+  },
+  {
+    "id": "WORK-9914EE1073",
+    "category": "Distribution",
+    "title": "MCCIA Annual Report 2024-25",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "BOD",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 5,
+      "cells": {
+        "P1": "MCCIA Annual Report 2024-25",
+        "P5": "BOD"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 5"
+      }
+    ]
+  },
+  {
+    "id": "WORK-B395B7550A",
+    "category": "Distribution",
+    "title": "MCCIA Annual Report 2024-25",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "EC",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 6,
+      "cells": {
+        "P1": "MCCIA Annual Report 2024-25",
+        "P6": "EC"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 6"
+      }
+    ]
+  },
+  {
+    "id": "WORK-2F313226DF",
+    "category": "Distribution",
+    "title": "MCCIA Annual Report 2024-25",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "COPP",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 7,
+      "cells": {
+        "P1": "MCCIA Annual Report 2024-25",
+        "P7": "COPP"
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 7"
+      }
+    ]
+  },
+  {
+    "id": "WORK-81669AAA50",
+    "category": "Distribution",
+    "title": "CSR Impact Report 2026",
+    "stage": "Planned",
+    "owner": "",
+    "dueDate": "",
+    "nextAction": "",
+    "notes": "",
+    "workingUrl": "",
+    "publishedUrl": "",
+    "recipient": "",
+    "sentDate": "",
+    "response": "",
+    "printStatus": "Not planned",
+    "websiteStatus": "Not planned",
+    "distributionStatus": "Not planned",
+    "flags": [
+      "Imported status needs team confirmation",
+      "Recipient not recorded"
+    ],
+    "source": {
+      "sheet": "Sheet1",
+      "row": 2,
+      "cells": {
+        "Q1": "CSR Impact Report 2026",
+        "Q2": ""
+      }
+    },
+    "revision": 1,
+    "updatedAt": "",
+    "history": [
+      {
+        "at": "",
+        "summary": "Imported from Media.xlsx · Sheet1, row 2"
+      }
+    ]
+  }
+]

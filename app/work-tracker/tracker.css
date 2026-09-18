@@ -254,3 +254,5 @@
 .wt-online-access{padding:16px;margin:18px 0;background:#f6f6f6;border-radius:8px}
 .wt-online-access h3{margin:0}
 .wt-online-access a{display:inline-block;margin:6px 18px 6px 0;text-decoration:underline;text-underline-offset:3px}
+
+.wt-readonly .wt-edit-fields :is(input,select,textarea){pointer-events:none;background:#fafafa}.wt-readonly .wt-edit-fields input[type=radio]{pointer-events:none}

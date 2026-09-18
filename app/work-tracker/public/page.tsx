@@ -1,3 +1,2 @@
-import PublicTracker from '../PublicTracker';
-export const metadata={title:'MCCIA | Public work tracker'};
-export default function Page(){return <PublicTracker/>}
+import WorkTracker from '../WorkTracker';
+export default function Page(){return <WorkTracker readOnly/>}
