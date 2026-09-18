@@ -19,8 +19,9 @@ export async function changeAccess(request:Request,input:Record<string,unknown>)
  if(action==='setup'||action==='add'){
   if(action==='setup'&&data.users.length)throw Error('Team sign-in is already configured.');
   if(action==='add'&&current?.role!=='Administrator')throw Error('Administrator access required.');
-  const name=String(input.name||'').trim(),password=String(input.password||''),role=(action==='setup'?'Administrator':input.role) as Role;
-  if(!name||name.length>100||password.length<12||password.length>200)throw Error('Enter a name and a password of 12–200 characters.');
+  const name=String(input.name||'').trim().toLowerCase(),password=String(input.password||''),role=(action==='setup'?'Administrator':input.role) as Role;
+  if(name.length>100||! /^[a-z0-9]+(?:[._%+-][a-z0-9]+)*@mcciapune\.com$/.test(name))throw Error('Use a valid team email ending with @mcciapune.com.');
+  if(password.length<12||password.length>200)throw Error('Enter a password of 12–200 characters.');
   if(!['Administrator','Reviewer','Editor','Viewer'].includes(role))throw Error('Choose a valid role.');
   if(data.users.some(x=>x.name.toLowerCase()===name.toLowerCase()))throw Error('This team member already exists.');
   const salt=Buffer.from(randomBytes(16)).toString('hex');data.users.push({id:Buffer.from(randomBytes(16)).toString('hex'),name,role,salt,hash:Buffer.from(scryptSync(password,salt,64)).toString('hex')});await write(data);
@@ -28,7 +29,7 @@ export async function changeAccess(request:Request,input:Record<string,unknown>)
  }
  if(action==='login'){
   const user=data.users.find(x=>x.name.toLowerCase()===String(input.name||'').trim().toLowerCase());const password=String(input.password||'');
-  if(password.length>200||!user||Boolean(user.zohoSubject)||!timingSafeEqual(Buffer.from(user.hash,'hex'),scryptSync(password,user.salt,64)))throw Error('Name or password is incorrect.');
+  if(password.length>200||!user||Boolean(user.zohoSubject)||!timingSafeEqual(Buffer.from(user.hash,'hex'),scryptSync(password,user.salt,64)))throw Error('Email or password is incorrect.');
   const token=Buffer.from(randomBytes(32)).toString('hex');data.sessions=data.sessions.filter(x=>x.expires>Date.now());data.sessions.push({hash:digest(token),userId:user.id,expires:Date.now()+8*60*60*1000});await write(data);return {token,message:'Signed in'};
  }
  throw Error('Unknown account action.');

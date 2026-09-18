@@ -531,6 +531,9 @@ function doPost(event) {
       if(call.action==='fileInfo')result={size:file.getSize(),type:file.getMimeType(),name:file.getName()};
       else{const start=Number(data.start),end=Number(data.end);if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start<0||end<start||end>=file.getSize()||end-start>=512*1024)throw new Error('Invalid range');const response=UrlFetchApp.fetch('https://www.googleapis.com/drive/v3/files/'+encodeURIComponent(file.getId())+'?alt=media',{headers:{Authorization:'Bearer '+ScriptApp.getOAuthToken(),Range:'bytes='+start+'-'+end},muteHttpExceptions:true});if(response.getResponseCode()!==206&&!(response.getResponseCode()===200&&start===0&&end===file.getSize()-1))throw new Error('Evidence could not be read');result={base64:Utilities.base64Encode(response.getBlob().getBytes())};}
     }else if(call.action==='sources')result=miPage_(miObjects_(miSheet_(MI.sheets.sources)).filter(function(r){return miRelevantHeadline_(r.Title)}).map(function(r){const date=miDate_(r['Publication date']);return {id:r['Source ID'],title:r.Title,date:date,year:date?Number(date.slice(0,4)):null,publisher:r.Publisher,url:miPublicSource_(r['Source URL']),language:r.Language,presence:r['People / organisation'],topic:r.Topic,dgEngagementType:r['DG content classification'],type:'Article',format:'Article',status:'Unverified',description:'Discovered source; verification required.',discoveredAt:new Date(r['Discovered at']).toISOString()}}),data);
+    else if(call.action==='trackerAuth')result=miTrackerAuth_(data);
+    else if(call.action==='trackerTeam')result=miTrackerTeam_(data);
+    else if(call.action==='trackerTeamUpdate'){const cache=CacheService.getScriptCache();if(cache.get(call.nonce))throw Error('Request already used');cache.put(call.nonce,'1',300);result=miTrackerTeamUpdate_(data);}
     else if(call.action==='trackerPublished')result=miTrackerPublished_();
     else if(call.action==='trackerPublish'){const cache=CacheService.getScriptCache();if(cache.get(call.nonce))throw new Error('Request already used');cache.put(call.nonce,'1',300);result=miTrackerPublish_(data);}
     else if(call.action==='corrections')result=miPage_(miObjects_(miGatewaySheet_('Website Corrections',['ID','Patch','Updated at'])).map(function(r){return {id:r.ID,patch:JSON.parse(r.Patch),updatedAt:r['Updated at']}}),data);
@@ -575,5 +578,60 @@ function miTrackerPublish_(data){
   const values=[data.id,encoded,data.revision,new Date().toISOString()];
   if(index>=0)sheet.getRange(index+2,1,1,4).setValues(miSafeRows_([values]));else sheet.appendRow(miSafeRow_(values));
   return {id:data.id,published:Boolean(snapshot)};
+ }finally{lock.releaseLock()}
+}
+
+function miTrackerTeam_(data){
+ const lock=LockService.getScriptLock();lock.waitLock(10000);
+ try{const ss=miSpreadsheet_();let sheet=ss.getSheetByName('Tracker Team Access');
+ if(!sheet){if(!/^[a-z0-9]+(?:[._%+-][a-z0-9]+)*@mcciapune\.com$/.test(data.bootstrap||''))throw Error('Initial administrator is not configured');sheet=ss.insertSheet('Tracker Team Access');sheet.appendRow(['Email','Role']);sheet.appendRow([data.bootstrap,'Administrator']);}
+ const members={};miObjects_(sheet).forEach(function(r){if(['Administrator','Editor'].includes(r.Role))members[r.Email]=r.Role;});return {members:members};
+ }finally{lock.releaseLock()}
+}
+function miTrackerTeamUpdate_(data){
+ const lock=LockService.getScriptLock();lock.waitLock(10000);
+ try{const sheet=miSpreadsheet_().getSheetByName('Tracker Team Access');if(!sheet)throw Error('Team not configured');const rows=miObjects_(sheet);
+ if(!rows.some(function(r){return r.Email===data.actor&&r.Role==='Administrator'}))throw Error('Administrator required');
+ if(!/^[a-z0-9]+(?:[._%+-][a-z0-9]+)*@mcciapune\.com$/.test(data.email||'')||!['Administrator','Editor',null].includes(data.role))throw Error('Invalid team member');
+ const index=rows.findIndex(function(r){return r.Email===data.email});
+ if(index>=0&&rows[index].Role==='Administrator'&&data.role!=='Administrator'&&rows.filter(function(r){return r.Role==='Administrator'}).length===1)throw Error('Keep at least one administrator');
+ miGatewaySheet_('Tracker Access Audit',['Timestamp','Actor','Email','Previous role','New role']).appendRow(miSafeRow_([new Date().toISOString(),data.actor,data.email,index>=0?rows[index].Role:'',data.role||'Removed']));
+ if(index>=0)sheet.getRange(index+2,1,1,2).setValues([[data.email,data.role||'Removed']]);else if(data.role)sheet.appendRow([data.email,data.role]);return {ok:true};
+ }finally{lock.releaseLock()}
+}
+
+// Passwords are hashed with scrypt by the website. Only salted hashes arrive here.
+function miTrackerAuth_(d){
+ const lock=LockService.getScriptLock();lock.waitLock(10000);
+ try{
+ const sheet=miGatewaySheet_('Tracker Password Access',['Key','Value']),rows=miObjects_(sheet);
+ function get(k){const r=rows.find(function(x){return x.Key===k});return r?JSON.parse(r.Value):null;}
+ function put(k,v){const i=rows.findIndex(function(x){return x.Key===k}),text=JSON.stringify(v);if(i<0){sheet.appendRow([k,text]);rows.push({Key:k,Value:text})}else{sheet.getRange(i+2,1,1,2).setValues([[k,text]]);rows[i].Value=text;}}
+ function validHash(){return /^[a-f0-9]{32}$/.test(d.salt||'')&&/^[a-f0-9]{128}$/.test(d.hash||'');}
+ function account(email){return get('account:'+email);}
+ function user(){const session=get('session:'+d.tokenHash);if(!session||session.exp<=Date.now())return null;const a=account(session.email);if(!a||!a.role||a.hash!==session.version)return null;return {id:session.email,email:session.email,name:session.email,role:a.role};}
+ function members(){const result={};rows.filter(function(r){return r.Key.indexOf('account:')===0}).forEach(function(r){const a=JSON.parse(r.Value);if(a.role)result[r.Key.slice(8)]=a.role;});return result;}
+ const email=String(d.email||'');
+ if(d.op==='setup'){if(rows.some(function(r){return r.Key.indexOf('account:')===0}))throw Error('Already configured');if(email!=='aarushig@mcciapune.com'||!validHash())throw Error('Invalid administrator setup');put('account:'+email,{role:'Administrator',salt:d.salt,hash:d.hash});return {ok:true};}
+ if(d.op==='credentials'){
+ function limit(k,max){let rate=get(k);if(!rate||rate.until<=Date.now())rate={count:0,until:Date.now()+900000};rate.count++;put(k,rate);if(rate.count>max)throw Error('Try again later');}
+ limit('rate:global',200);let bucket=0;for(let i=0;i<email.length;i++)bucket=(bucket*31+email.charCodeAt(i))%128;limit('rate:'+bucket,10);
+ const a=account(email);return a&&a.role?{salt:a.salt,hash:a.hash}:{salt:'00000000000000000000000000000000',hash:'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'};
+ }
+ if(d.op==='login'){const a=account(email);if(!a||!a.role||a.hash!==d.version||! /^[a-f0-9]{64}$/.test(d.tokenHash||''))throw Error('Invalid login');put('session:'+d.tokenHash,{email:email,version:a.hash,exp:Date.now()+28800000});return {ok:true};}
+ if(d.op==='session')return {user:user()};
+ if(d.op==='logout'){if(/^[a-f0-9]{64}$/.test(d.tokenHash||''))put('session:'+d.tokenHash,{exp:0});return {ok:true};}
+ // Read is server-side only; public routes must authorise before exposing this list.
+ if(d.op==='team')return {members:members()};
+ if(d.op==='update'){
+ const actor=user();if(!actor||actor.role!=='Administrator')throw Error('Administrator required');
+ if(!/^[a-z0-9]+(?:[._%+-][a-z0-9]+)*@mcciapune\.com$/.test(email)||!['Administrator','Editor',null].includes(d.role))throw Error('Invalid member');
+ const old=account(email),all=members();if(old&&old.role==='Administrator'&&d.role!=='Administrator'&&Object.values(all).filter(function(r){return r==='Administrator'}).length===1)throw Error('Keep one administrator');
+ if(d.role&&(!old||!old.role)&&!validHash())throw Error('New accounts need a password');
+ if((d.hash||d.salt)&&!validHash())throw Error('Invalid password hash');
+ const value={role:d.role,salt:d.salt||(old?old.salt:''),hash:d.hash||(old?old.hash:'')};put('account:'+email,value);
+ miGatewaySheet_('Tracker Access Audit',['Timestamp','Actor','Email','Previous role','New role']).appendRow(miSafeRow_([new Date().toISOString(),actor.email,email,old?old.role:'',d.role||'Removed']));return {ok:true};
+ }
+ throw Error('Unknown authentication action');
  }finally{lock.releaseLock()}
 }
