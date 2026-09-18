@@ -159,3 +159,94 @@
 @media(max-width:800px){.wt-account-bar{align-items:flex-start;flex-direction:column;padding:18px}.wt-team-panel{grid-template-columns:minmax(0,1fr);padding:18px;gap:24px}.wt-team-members{border-left:0;border-top:1px solid #dedede;padding:20px 0 0}.wt-account-actions{width:100%}.wt-account-actions button{flex:1}.wt-account-meta{gap:6px}}
 
 .wt-zoho-login{display:inline-flex;align-items:center;background:#202020;color:white;padding:10px 18px;border-radius:999px;font:600 16px "Segoe UI",sans-serif;text-decoration:none}.wt-zoho-pending{align-self:center;font-size:14px;color:#626262}.wt-account-actions{align-items:center}@media(max-width:760px){.wt-zoho-pending{width:100%}.wt-zoho-login{justify-content:center;flex:1}}
+
+/* Item editor: clear hierarchy and progressive disclosure. */
+.wt-dialog{width:min(960px,calc(100vw - 24px))}
+.wt-dialog-head,.wt-dialog-footer{flex-shrink:0}
+.wt-dialog-body{min-height:0;overscroll-behavior:contain}
+.wt-dialog .wt-edit-fields>label:first-child input{font-size:21px;font-weight:600;line-height:1.5}
+.wt-dialog .wt-detail-section{border-top:1px solid #dedede;margin:24px 0 0;padding:0;min-width:0}
+.wt-dialog .wt-detail-section>summary,.wt-dialog .wt-original>summary{padding:18px 0;cursor:pointer;font-size:17px;font-weight:600;color:#242424;min-height:44px}
+.wt-dialog .wt-section-content{padding:4px 0 20px}
+.wt-dialog fieldset:not(.wt-edit-fields){border:0;border-top:1px solid #dedede;padding:20px 0 0;margin:26px 0}
+.wt-dialog legend{padding:0 12px 0 0}
+.wt-dialog label:has(input[type=checkbox]){display:flex;align-items:flex-start;gap:12px;line-height:1.5;margin:16px 0}
+.wt-dialog input[type=checkbox]{width:20px;height:20px;flex:0 0 20px;margin:3px 0 0;accent-color:#146ba3}
+.wt-dialog .wt-timeline{margin:28px 0}
+.wt-dialog .wt-timeline ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;gap:8px}
+.wt-dialog .wt-timeline li{min-width:0;border-radius:6px;padding:12px;overflow-wrap:anywhere}
+.wt-dialog .wt-timeline li.current{border-color:#146ba3;background:#edf5fa;color:#144c70}
+.wt-public-preview{background:#f7f8f9;padding:18px;border-radius:8px;margin:16px 0}
+.wt-public-preview dt{font-size:14px;color:#606973;margin-top:12px}
+.wt-public-preview dt:first-child{margin-top:0}
+.wt-public-preview dd{margin:4px 0 0;overflow-wrap:anywhere}
+.wt-dialog .wt-history{list-style:none;padding:0;margin:0}
+.wt-history li{padding:16px 0 16px 18px;border-left:2px solid #dce5ea;border-bottom:1px solid #eee}
+.wt-history li strong{font-size:14px;color:#5d6670}
+.wt-dialog .wt-history li p{margin:6px 0 0;color:#292d32;overflow-wrap:anywhere}
+.wt-dialog .wt-original{padding:0}
+.wt-dialog button{min-height:44px}
+.wt-dialog :is(button,input,select,textarea,summary,a):focus-visible{outline:3px solid #146ba3;outline-offset:3px}
+@media(max-width:600px){.wt-dialog-head,.wt-dialog-body{padding:18px}.wt-dialog .wt-timeline ol{grid-template-columns:repeat(2,minmax(0,1fr))}.wt-dialog-footer>button{flex:1}.wt-dialog .wt-edit-fields>label:first-child input{font-size:18px}.wt-dialog .wt-actions{display:grid;grid-template-columns:1fr}.wt-dialog .wt-detail-section button{width:100%;margin-bottom:8px}}
+
+/* Plain sections and visible choices in the item form. */
+.wt-dialog .wt-detail-section>h3,.wt-dialog .wt-original>h3{font-size:18px;margin:20px 0 16px;line-height:1.4}
+.wt-dialog fieldset.wt-choice{border:0;padding:0;margin:0;min-width:0}
+.wt-dialog .wt-choice legend{font-size:16px;font-weight:500;margin-bottom:8px}
+.wt-dialog .wt-choice>div{display:flex;flex-wrap:wrap;gap:8px}
+.wt-dialog .wt-choice label{display:flex;align-items:center;gap:8px;margin:0;padding:8px 10px;border:1px solid #ddd;border-radius:6px;cursor:pointer;font-size:15px;min-height:44px}
+.wt-dialog .wt-choice label:has(input:checked){background:#edf5fa;border-color:#146ba3;color:#144c70}
+.wt-dialog .wt-choice input[type=radio]{width:17px;height:17px;margin:0;flex:0 0 17px;accent-color:#146ba3}
+.wt-dialog .wt-visibility{padding:16px 18px;background:#f4f7f9;border-radius:8px;margin:22px 0}
+.wt-dialog .wt-visibility label{margin:0;font-weight:600}
+.wt-dialog .wt-visibility p{margin:8px 0 0;font-size:15px;color:#59616a}
+.wt-dialog .wt-form-grid:has(>.wt-choice:first-child)>.wt-choice:first-child{grid-column:1/-1}
+
+.wt-visibility-control{margin:18px 0}
+.wt-dialog .wt-visibility-toggle{min-width:110px;font-weight:600}
+.wt-dialog .wt-visibility-toggle[aria-pressed=true]{background:#146ba3;color:#fff;border-color:#146ba3}
+
+.wt-dialog-header-actions{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.wt-dialog-head{gap:16px}
+.wt-dialog-head>div:first-child{min-width:0}
+@media(max-width:480px){.wt-dialog-header-actions{gap:6px}.wt-dialog-header-actions .wt-visibility-toggle{min-width:80px;padding:8px 12px}.wt-dialog-head .wt-eyebrow{font-size:12px}}
+
+.wt-dialog .wt-original{margin-top:18px}
+.wt-dialog .wt-original>h3{font-size:16px;margin:14px 0 10px}
+.wt-dialog .wt-original dl{margin:0}
+.wt-dialog .wt-original dl>div{padding:6px 0;font-size:14px;line-height:1.5}
+.wt-dialog .wt-history li{padding:10px 0 10px 12px}
+.wt-dialog .wt-history li p{font-size:14px;margin:3px 0 0;line-height:1.5}
+.wt-dialog .wt-history li strong{font-size:13px}
+.wt-dialog .wt-more{background:transparent;border:0;padding:8px 0;color:#146ba3;font-size:14px;margin-top:4px}
+
+.wt-dialog .wt-basic-form{display:grid;gap:18px;margin-bottom:18px}
+.wt-dialog .wt-basic-form>label{display:grid;grid-template-columns:110px minmax(0,1fr);align-items:center;gap:16px;margin:0;font-weight:500}
+.wt-dialog .wt-basic-form :is(input,select){margin:0;font-size:17px;font-weight:400}
+@media(max-width:600px){.wt-dialog .wt-basic-form>label{grid-template-columns:1fr;gap:6px}}
+
+.wt-dialog .wt-basic-form>label{grid-template-columns:190px minmax(0,1fr)}
+@media(max-width:600px){.wt-dialog .wt-basic-form>label{grid-template-columns:1fr}}
+
+.wt-progress{margin:24px 0;padding:20px 0;border-top:1px solid #dedede}
+.wt-progress h3{font-size:18px;margin:0 0 14px}
+.wt-progress-line{display:flex;align-items:center;flex-wrap:wrap;gap:12px;list-style:none;padding:0;margin:0}
+.wt-progress-line li{display:flex;align-items:center;gap:8px;font-size:16px;color:#59616a}
+.wt-progress-line li+li:before{content:'';width:24px;height:1px;background:#ccd3d8;margin-right:4px}
+.wt-progress-line .is-current{color:#146ba3;font-weight:600}
+.wt-progress-caption{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:15px}
+.wt-dialog .wt-progress-caption button{border:0;background:transparent;color:#146ba3;padding:6px 0;border-radius:0}
+.wt-dialog .wt-progress-note{font-size:14px;color:#626970;margin:8px 0 0}
+.wt-progress-expanded{list-style:none;padding:0;margin:16px 0 0}
+.wt-progress-expanded li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #eee;font-size:15px}
+.wt-progress-expanded small{color:#626970}
+@media(max-width:600px){.wt-progress-line li.is-other:has(+.is-current){display:none}.wt-progress-line .is-current:before{display:none}.wt-progress-expanded li{flex-wrap:wrap}}
+
+/* Match the visibility control to the tracker theme. */
+.wt-dialog-head .wt-visibility-toggle{background:#fff;color:#242424;border:1px solid #ccc;border-radius:999px;padding:9px 18px;font-weight:600;transition:background-color .15s,border-color .15s}
+.wt-dialog-head .wt-visibility-toggle[aria-pressed=true]{background:#242424;color:#fff;border-color:#242424}
+.wt-dialog-head .wt-visibility-toggle:not(:disabled):hover{background:#f0f0f0;border-color:#888}
+.wt-dialog-head .wt-visibility-toggle[aria-pressed=true]:not(:disabled):hover{background:#404040;border-color:#404040}
+.wt-dialog-head .wt-visibility-toggle:focus-visible{outline:2px solid #242424;outline-offset:3px}
+.wt-dialog-head .wt-visibility-toggle:disabled{opacity:.5;cursor:not-allowed}
+@media(prefers-reduced-motion:reduce){.wt-dialog-head .wt-visibility-toggle{transition:none}}
