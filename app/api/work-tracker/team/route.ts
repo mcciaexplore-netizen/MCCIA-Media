@@ -1,5 +1,4 @@
-import {onlineIdentity,onlineTeam,passwordRecord,emailAddress,cookieValue,digest} from '../online-auth';
-import {driveRequest} from '../../drive-backend';
-export const runtime='nodejs';export const dynamic='force-dynamic';
-export async function GET(request:Request){try{const user=await onlineIdentity(request);if(user?.role!=='Administrator')return Response.json({error:'Administrator access required.'},{status:403});return Response.json(await onlineTeam(),{headers:{'Cache-Control':'private, no-store'}})}catch{return Response.json({error:'Team access is unavailable.'},{status:503})}}
-export async function POST(request:Request){if(request.headers.get('origin')!==new URL(request.url).origin)return new Response('Forbidden',{status:403});try{const user=await onlineIdentity(request);if(user?.role!=='Administrator')return Response.json({error:'Administrator access required.'},{status:403});const text=await request.text();if(text.length>2000)throw Error('Request too large.');const data=JSON.parse(text);const email=String(data.email||'').trim().toLowerCase();if(!/^[a-z0-9]+(?:[._%+-][a-z0-9]+)*@mcciapune\.com$/.test(email)||!['Administrator','Editor',null].includes(data.role))throw Error('Choose an MCCIA email and a valid role.');return Response.json(await driveRequest('trackerAuth',{op:'update',email,role:data.role,tokenHash:digest(cookieValue(request)),...(data.password?passwordRecord(data.password):{})}),{headers:{'Cache-Control':'no-store'}})}catch{return Response.json({error:'Could not change access. Keep at least one administrator and reload the team list.'},{status:400})}}
+export const dynamic='force-dynamic';
+const removed=()=>Response.json({error:'Online sign-in has been removed.'},{status:410,headers:{'Cache-Control':'no-store'}});
+export const GET=removed;
+export const POST=removed;
