@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T05:45:44+00:00",
+  "generatedAt": "2026-09-24T08:25:16+00:00",
   "methodology": "Automated URL reachability and page-title agreement audit. This does not replace editorial review of article contents.",
   "summary": {
     "totalRecords": 2929,
@@ -48,19 +48,6 @@
       "pageTitle": "#organicsummit2026 #organicfarming #naturalfarming #residuefreefarming #agrifood #farmtofork | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
       "titleMatchScore": 0.252
     },
-    "GN-852B2E35C5D6A1": {
-      "recordId": "GN-852B2E35C5D6A1",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY05CaTUwMERCcE5WdEExS0dLU0VxTTNBMEN5Zk9hRWVxSDQ4Z05hOEZmZDQ5akdyRHl2ajVxWW9QMHllaWxoeVRwUm95STlvVVRwZWNuTEtPQnZXN2xxbURMNllSb21hSUliSGFtTEdRd1hsTmFZaF93Q1k3ZTZsdjVOQTI1b1QwNlZUU1dPT3A3b2k3Ykh0bDZYNVVBdXFnV3hhcTFkZUNGNzVhMHVtVnFIZEYycld4ZHhtamRIVnFicG5HREF4VndYUEhyd3psd2hGdVBsZw?oc=5",
-      "category": "discovery-link",
-      "displayLabel": "Google News discovery",
-      "explanation": "Google News exposed this item; the publisher article still requires editorial verification.",
-      "checkedAt": "2026-09-11T05:45:44+00:00",
-      "httpStatus": 200,
-      "finalUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY05CaTUwMERCcE5WdEExS0dLU0VxTTNBMEN5Zk9hRWVxSDQ4Z05hOEZmZDQ5akdyRHl2ajVxWW9QMHllaWxoeVRwUm95STlvVVRwZWNuTEtPQnZXN2xxbURMNllSb21hSUliSGFtTEdRd1hsTmFZaF93Q1k3ZTZsdjVOQTI1b1QwNlZUU1dPT3A3b2k3Ykh0bDZYNVVBdXFnV3hhcTFkZUNGNzVhMHVtVnFIZEYycld4ZHhtamRIVnFicG5HREF4VndYUEhyd3psd2hGdVBsZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "contentType": "text/html",
-      "pageTitle": "Google News",
-      "titleMatchScore": 0.085
-    },
     "GN-A2FB2CEE280C74": {
       "recordId": "GN-A2FB2CEE280C74",
       "url": "https://www.linkedin.com/posts/mcciapune_mccia-annualgeneralmeeting-industryleadership-activity-7500055815651856384-M7sa",
@@ -86,6 +73,19 @@
       "contentType": "text/html",
       "pageTitle": "‘एमसीसीआयए हेल्पलाइन’चा देशव्यापी विस्तार; उद्योजकांना कोणत्या विषयांवर सर्वाधिक मार्गदर्शनाची गरज? - Marathi News | Mccia Msme Helpline Nationwide Expansion Pune Print News Rak 94 - Latest Pune News at Loksatta.com",
       "titleMatchScore": 1.0
+    },
+    "GN-B522E7DF61ABB5": {
+      "recordId": "GN-B522E7DF61ABB5",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS2FFZkRMODBZNnNzS3BSeTNVZEJydUFtbDhTZWlCYWkyOFNpSUpZMldJNWVNMHNEc3dISTExc3FIdVhxSzhRclZRRExwNC1qV1M4LVBubDBvNkRrTnFwaG9NVnlRdGh6bFhzUWo0Uk9mM0hqMHZWUlNMZWhGZjE4dlRXeFlETlQ5Y1p4ZHlUSnp1UmdNMVR1RzBFeGs2Y3E1Q19F0gGoAUFVX3lxTE55Y0lEQW55Q3BxSVBHMVhLNXB5dy1KYlVLYjNsNENMbjJhYkFVMVdHdXRxLWZUSnFzdG9xeFpPSm5PZTVMaDk4ZG1aQ2R3bmxxd0tLR0ZuRU1RSWl2cU9pRE1Bc3NGTXRLT0hRNEpqSHdkOGlBckY1T0xLV2FZYUt0dkpiNzFPOVlIWmdNMExNcW9QZ2Y1VDJCOF82NEdDd1Y1aVRuY0ZtVw?oc=5",
+      "category": "discovery-link",
+      "displayLabel": "Google News discovery",
+      "explanation": "Google News exposed this item; the publisher article still requires editorial verification.",
+      "checkedAt": "2026-09-24T08:25:16+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS2FFZkRMODBZNnNzS3BSeTNVZEJydUFtbDhTZWlCYWkyOFNpSUpZMldJNWVNMHNEc3dISTExc3FIdVhxSzhRclZRRExwNC1qV1M4LVBubDBvNkRrTnFwaG9NVnlRdGh6bFhzUWo0Uk9mM0hqMHZWUlNMZWhGZjE4dlRXeFlETlQ5Y1p4ZHlUSnp1UmdNMVR1RzBFeGs2Y3E1Q19F0gGoAUFVX3lxTE55Y0lEQW55Q3BxSVBHMVhLNXB5dy1KYlVLYjNsNENMbjJhYkFVMVdHdXRxLWZUSnFzdG9xeFpPSm5PZTVMaDk4ZG1aQ2R3bmxxd0tLR0ZuRU1RSWl2cU9pRE1Bc3NGTXRLT0hRNEpqSHdkOGlBckY1T0xLV2FZYUt0dkpiNzFPOVlIWmdNMExNcW9QZ2Y1VDJCOF82NEdDd1Y1aVRuY0ZtVw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "contentType": "text/html",
+      "pageTitle": "Google News",
+      "titleMatchScore": 0.154
     },
     "GN-FF8EE0D863D638": {
       "recordId": "GN-FF8EE0D863D638",

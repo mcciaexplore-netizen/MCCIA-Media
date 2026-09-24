@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T05:45:44+00:00",
+  "generatedAt": "2026-09-24T08:25:16+00:00",
   "methodology": "Automated URL reachability and page-title agreement audit. This does not replace editorial review of article contents.",
   "summary": {
     "totalRecords": 2929,
@@ -21991,12 +21991,12 @@
       "titleMatchScore": 0.252
     },
     {
-      "recordId": "GN-852B2E35C5D6A1",
+      "recordId": "GN-B522E7DF61ABB5",
       "category": "discovery-link",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY05CaTUwMERCcE5WdEExS0dLU0VxTTNBMEN5Zk9hRWVxSDQ4Z05hOEZmZDQ5akdyRHl2ajVxWW9QMHllaWxoeVRwUm95STlvVVRwZWNuTEtPQnZXN2xxbURMNllSb21hSUliSGFtTEdRd1hsTmFZaF93Q1k3ZTZsdjVOQTI1b1QwNlZUU1dPT3A3b2k3Ykh0bDZYNVVBdXFnV3hhcTFkZUNGNzVhMHVtVnFIZEYycld4ZHhtamRIVnFicG5HREF4VndYUEhyd3psd2hGdVBsZw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS2FFZkRMODBZNnNzS3BSeTNVZEJydUFtbDhTZWlCYWkyOFNpSUpZMldJNWVNMHNEc3dISTExc3FIdVhxSzhRclZRRExwNC1qV1M4LVBubDBvNkRrTnFwaG9NVnlRdGh6bFhzUWo0Uk9mM0hqMHZWUlNMZWhGZjE4dlRXeFlETlQ5Y1p4ZHlUSnp1UmdNMVR1RzBFeGs2Y3E1Q19F0gGoAUFVX3lxTE55Y0lEQW55Q3BxSVBHMVhLNXB5dy1KYlVLYjNsNENMbjJhYkFVMVdHdXRxLWZUSnFzdG9xeFpPSm5PZTVMaDk4ZG1aQ2R3bmxxd0tLR0ZuRU1RSWl2cU9pRE1Bc3NGTXRLT0hRNEpqSHdkOGlBckY1T0xLV2FZYUt0dkpiNzFPOVlIWmdNMExNcW9QZ2Y1VDJCOF82NEdDd1Y1aVRuY0ZtVw?oc=5",
       "httpStatus": 200,
       "pageTitle": "Google News",
-      "titleMatchScore": 0.085
+      "titleMatchScore": 0.154
     }
   ]
 }
