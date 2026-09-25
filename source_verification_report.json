@@ -1,109 +1,93 @@
 {
-  "generatedAt": "2026-09-24T08:25:16+00:00",
+  "generatedAt": "2026-09-25T08:47:58+00:00",
   "methodology": "Automated URL reachability and page-title agreement audit. This does not replace editorial review of article contents.",
   "summary": {
     "totalRecords": 2929,
     "sourceCheckedRecords": 2929,
     "withPublicUrl": 487,
     "withoutPublicUrl": 2442,
-    "reachablePublicUrls": 434,
-    "headlineConfirmed": 182,
-    "manualReviewRequired": 2747,
+    "reachablePublicUrls": 394,
+    "headlineConfirmed": 145,
+    "manualReviewRequired": 2784,
     "categories": {
       "discovery-link": 2,
-      "headline-confirmed": 182,
-      "homepage-only": 32,
+      "headline-confirmed": 145,
+      "homepage-only": 30,
       "no-public-url": 2442,
-      "possible-headline-match": 28,
-      "reachable-pdf": 40,
-      "reachable-title-review": 150,
-      "restricted": 10,
-      "unreachable": 43
+      "possible-headline-match": 26,
+      "reachable-pdf": 39,
+      "reachable-title-review": 152,
+      "restricted": 51,
+      "unreachable": 42
     }
   },
   "recordsRequiringManualReview": [
     {
-      "recordId": "PG0010",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/saurabh-manchanda-05651638a_msme-msmehelpline-businesssupport-activity-7494008175919054848-Omtc",
+      "recordId": "PG0132",
+      "category": "reachable-pdf",
+      "url": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
       "httpStatus": 200,
-      "pageTitle": "#msme #msmehelpline #businesssupport #governmentschemes #gst #finance #gem #exports #aiforbusiness #digitaltransformation #futurereadymsmes #ramp | Saurabh Manchanda",
-      "titleMatchScore": 0.338
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
-      "recordId": "PG0012",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/puneinternationalcentre_handloomday-handloomforlife-puneinternationalcentre-activity-7491345901052108801-vLtj",
+      "recordId": "PG0505",
+      "category": "reachable-pdf",
+      "url": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
       "httpStatus": 200,
-      "pageTitle": "#handloomday #handloomforlife #puneinternationalcentre | Pune International Centre",
-      "titleMatchScore": 0.375
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
-      "recordId": "PG0013",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/dinanathkholkar_mccia-legacy-activity-7491328976557228032-HgDd",
-      "httpStatus": 200,
-      "pageTitle": "Sign Up | LinkedIn",
-      "titleMatchScore": 0.258
+      "recordId": "PG2625",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
-      "recordId": "PG0015",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/dinanathkholkar_msme-sector-%E0%A4%AE-%E0%A4%AC%E0%A4%A1-%E0%A4%AC%E0%A4%A6%E0%A4%B2%E0%A4%B5-ai-automation-activity-7491008221806231553-ByE8",
+      "recordId": "GN-B522E7DF61ABB5",
+      "category": "discovery-link",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS2FFZkRMODBZNnNzS3BSeTNVZEJydUFtbDhTZWlCYWkyOFNpSUpZMldJNWVNMHNEc3dISTExc3FIdVhxSzhRclZRRExwNC1qV1M4LVBubDBvNkRrTnFwaG9NVnlRdGh6bFhzUWo0Uk9mM0hqMHZWUlNMZWhGZjE4dlRXeFlETlQ5Y1p4ZHlUSnp1UmdNMVR1RzBFeGs2Y3E1Q19F0gGoAUFVX3lxTE55Y0lEQW55Q3BxSVBHMVhLNXB5dy1KYlVLYjNsNENMbjJhYkFVMVdHdXRxLWZUSnFzdG9xeFpPSm5PZTVMaDk4ZG1aQ2R3bmxxd0tLR0ZuRU1RSWl2cU9pRE1Bc3NGTXRLT0hRNEpqSHdkOGlBckY1T0xLV2FZYUt0dkpiNzFPOVlIWmdNMExNcW9QZ2Y1VDJCOF82NEdDd1Y1aVRuY0ZtVw?oc=5",
       "httpStatus": 200,
-      "pageTitle": "Pune Industry Leaders on AI Adoption and MSME Growth | Dinanath Kholkar posted on the topic | LinkedIn",
+      "pageTitle": "Google News",
+      "titleMatchScore": 0.154
+    },
+    {
+      "recordId": "GN-FF8EE0D863D638",
+      "category": "discovery-link",
+      "url": "https://timesofindia.indiatimes.com/city/pune/over-5100-msmes-in-india-reach-out-to-mccia-via-helpline-since-2024-launch/articleshow/133690549.cms",
+      "httpStatus": 200,
+      "pageTitle": "Over 5,100 MSMEs in India reach out to MCCIA via helpline since 2024 launch | Pune News - The Times of India",
+      "titleMatchScore": 1.0
+    },
+    {
+      "recordId": "GN-08E931807AF73C",
+      "category": "reachable-title-review",
+      "url": "https://www.esakal.com/pune/mccia-helpline-crosses-10000-consultations-supporting-msme-across-29-states-and-union-territories-in-india-pjp78",
+      "httpStatus": 200,
+      "pageTitle": "Pune MSME हेल्पलाइन एमसीसीआयएच्या मोफत मार्गदर्शन सेवेने १० हजार सल्लामसलतींचा टप्पा पूर्ण देशभरातील उद्योजकांना मदत. Pune MSME Helpline: MCCIA completes 10,000 free consultations for entrepreneurs across 29 states",
       "titleMatchScore": 0.4
     },
     {
-      "recordId": "PG0016",
-      "category": "unreachable",
-      "url": "https://www.linkedin.com/posts/dinanathkholkar_msme-sector-ai-automation-activity-7491008221806231553-ByE8",
-      "httpStatus": 404,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0018",
+      "recordId": "GN-A2FB2CEE280C74",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/puneinternationalcentre_kargilvijaydiwas-puneinternationalcentre-activity-7487021069078474752-6Oxt",
+      "url": "https://www.linkedin.com/posts/mcciapune_mccia-annualgeneralmeeting-industryleadership-activity-7500055815651856384-M7sa",
       "httpStatus": 200,
-      "pageTitle": "#kargilvijaydiwas #puneinternationalcentre #indianarmy | Pune International Centre",
-      "titleMatchScore": 0.467
+      "pageTitle": "#mccia #annualgeneralmeeting #industryleadership #businessleadership #punebusiness | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.366
     },
     {
-      "recordId": "PG0019",
+      "recordId": "GN-4BE2DA20327075",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/usibc_usibcgreatstates-maharashtra-pune-activity-7485616997171482624-BGaY",
+      "url": "https://www.linkedin.com/posts/mcciapune_organicsummit2026-organicfarming-naturalfarming-activity-7493921533468442624-vlqI",
       "httpStatus": 200,
-      "pageTitle": "#usibcgreatstates #maharashtra #pune #gcc #innovation | USIBC - U.S.-India Business Council",
-      "titleMatchScore": 0.448
+      "pageTitle": "#organicsummit2026 #organicfarming #naturalfarming #residuefreefarming #agrifood #farmtofork | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.252
     },
     {
-      "recordId": "PG0020",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/puneinternationalcentre_pune-puneinternationalcentre-thinktank-activity-7484849504404267008-tDVR",
-      "httpStatus": 200,
-      "pageTitle": "Maharashtra innovation ecosystem strengthened through dialogue and collaboration | Pune International Centre posted on the topic | LinkedIn",
-      "titleMatchScore": 0.357
-    },
-    {
-      "recordId": "PG0021",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0022",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0023",
+      "recordId": "PG0025",
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
@@ -119,7 +103,7 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0025",
+      "recordId": "PG0023",
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
@@ -127,10 +111,10 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0026",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/printmedia2023/Tentative_Block__Program_MCCIAs_IR_Conclave_2026.pdf",
-      "httpStatus": 200,
+      "recordId": "PG0022",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -143,12 +127,44 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0029",
+      "recordId": "PG0021",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0016",
+      "category": "unreachable",
+      "url": "https://www.linkedin.com/posts/dinanathkholkar_msme-sector-ai-automation-activity-7491008221806231553-ByE8",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0012",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_ai-diffusion-innovation-activity-7479862204901539841-sZaG",
+      "url": "https://www.linkedin.com/posts/puneinternationalcentre_handloomday-handloomforlife-puneinternationalcentre-activity-7491345901052108801-vLtj",
       "httpStatus": 200,
-      "pageTitle": "AI Race Answer Isn&#39;t Bigger Models, It&#39;s Diffusion | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA) posted on the topic | LinkedIn",
-      "titleMatchScore": 0.269
+      "pageTitle": "#handloomday #handloomforlife #puneinternationalcentre | Pune International Centre",
+      "titleMatchScore": 0.375
+    },
+    {
+      "recordId": "PG0018",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/puneinternationalcentre_kargilvijaydiwas-puneinternationalcentre-activity-7487021069078474752-6Oxt",
+      "httpStatus": 200,
+      "pageTitle": "#kargilvijaydiwas #puneinternationalcentre #indianarmy | Pune International Centre",
+      "titleMatchScore": 0.467
+    },
+    {
+      "recordId": "PG0013",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/dinanathkholkar_mccia-legacy-activity-7491328976557228032-HgDd",
+      "httpStatus": 200,
+      "pageTitle": "Sign Up | LinkedIn",
+      "titleMatchScore": 0.258
     },
     {
       "recordId": "PG0033",
@@ -167,20 +183,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0035",
+      "recordId": "PG0019",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/puneinternationalcentre_puneinternationalcentre-bookdiscussion-activity-7469598311692533760-FIDJ",
+      "url": "https://www.linkedin.com/posts/usibc_usibcgreatstates-maharashtra-pune-activity-7485616997171482624-BGaY",
       "httpStatus": 200,
-      "pageTitle": "#puneinternationalcentre #bookdiscussion #tamingthedragon #youtube #indiachina #geopolitics | Pune International Centre",
-      "titleMatchScore": 0.36
+      "pageTitle": "#usibcgreatstates #maharashtra #pune #gcc #innovation | USIBC - U.S.-India Business Council",
+      "titleMatchScore": 0.448
     },
     {
-      "recordId": "PG0036",
+      "recordId": "PG0010",
       "category": "reachable-title-review",
-      "url": "https://lnkd.in/dvevVc-E",
+      "url": "https://www.linkedin.com/posts/saurabh-manchanda-05651638a_msme-msmehelpline-businesssupport-activity-7494008175919054848-Omtc",
       "httpStatus": 200,
-      "pageTitle": "LinkedIn",
-      "titleMatchScore": 0.333
+      "pageTitle": "#msme #msmehelpline #businesssupport #governmentschemes #gst #finance #gem #exports #aiforbusiness #digitaltransformation #futurereadymsmes #ramp | Saurabh Manchanda",
+      "titleMatchScore": 0.338
     },
     {
       "recordId": "PG0037",
@@ -191,20 +207,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0038",
+      "recordId": "PG0036",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/ritesh-ghude-175358289_msme-govtech-institutionalcredit-activity-7467797470220021760-i8Fp",
+      "url": "https://lnkd.in/dvevVc-E",
       "httpStatus": 200,
-      "pageTitle": "#msme #govtech #institutionalcredit #economicgrowth #mccia #capacitybuilding #businessstrategy #indiagrowthstory | Ritesh Ghude",
-      "titleMatchScore": 0.297
-    },
-    {
-      "recordId": "PG0039",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_irconclave2026-partnerwithus-newlabourcodes-activity-7459537585116241920-gYmS",
-      "httpStatus": 200,
-      "pageTitle": "#irconclave2026 #partnerwithus #newlabourcodes #mccia #hrleaders #compliance #industrialrelations #pune #hrcommunity #businessleaders | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.271
+      "pageTitle": "LinkedIn",
+      "titleMatchScore": 0.333
     },
     {
       "recordId": "PG0040",
@@ -215,20 +223,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0042",
+      "recordId": "PG0015",
       "category": "reachable-title-review",
-      "url": "https://lnkd.in/dumMuj3p",
+      "url": "https://www.linkedin.com/posts/dinanathkholkar_msme-sector-%E0%A4%AE-%E0%A4%AC%E0%A4%A1-%E0%A4%AC%E0%A4%A6%E0%A4%B2%E0%A4%B5-ai-automation-activity-7491008221806231553-ByE8",
       "httpStatus": 200,
-      "pageTitle": "LinkedIn",
-      "titleMatchScore": 0.125
+      "pageTitle": "Pune Industry Leaders on AI Adoption and MSME Growth | Dinanath Kholkar posted on the topic | LinkedIn",
+      "titleMatchScore": 0.4
     },
     {
-      "recordId": "PG0043",
-      "category": "homepage-only",
-      "url": "https://www.tedxpune.com",
+      "recordId": "PG0029",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_ai-diffusion-innovation-activity-7479862204901539841-sZaG",
       "httpStatus": 200,
-      "pageTitle": "TEDxPune 2026 — Invisible Bridges | 3rd October, Pune",
-      "titleMatchScore": 0.482
+      "pageTitle": "AI Race Answer Isn&#39;t Bigger Models, It&#39;s Diffusion | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA) posted on the topic | LinkedIn",
+      "titleMatchScore": 0.269
     },
     {
       "recordId": "PG0044",
@@ -261,14 +269,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0048",
-      "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/puneinternationalcentre_puneinternationalcentre-activity-7459604054109995008-W9f6",
-      "httpStatus": 200,
-      "pageTitle": "Lt Gen Mehta on India&#39;s Military Service and National Responsibility | Pune International Centre posted on the topic | LinkedIn",
-      "titleMatchScore": 0.625
     },
     {
       "recordId": "PG0049",
@@ -359,12 +359,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0061",
-      "category": "unreachable",
-      "url": "https://timesofindia.indiatimes.com/city/pune/ravi-pandit-kpit-tech-co-founder-passes-away-at-75/articleshow/130973886.cms",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "recordId": "PG0035",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/puneinternationalcentre_puneinternationalcentre-bookdiscussion-activity-7469598311692533760-FIDJ",
+      "httpStatus": 200,
+      "pageTitle": "#puneinternationalcentre #bookdiscussion #tamingthedragon #youtube #indiachina #geopolitics | Pune International Centre",
+      "titleMatchScore": 0.36
     },
     {
       "recordId": "PG0062",
@@ -375,12 +375,76 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0063",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MSME_Helpline_Compilation_of_100_Case_Studies_Proof_28-4-2026.pdf",
+      "recordId": "PG0042",
+      "category": "reachable-title-review",
+      "url": "https://lnkd.in/dumMuj3p",
       "httpStatus": 200,
+      "pageTitle": "LinkedIn",
+      "titleMatchScore": 0.125
+    },
+    {
+      "recordId": "PG0020",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/puneinternationalcentre_pune-puneinternationalcentre-thinktank-activity-7484849504404267008-tDVR",
+      "httpStatus": 200,
+      "pageTitle": "Maharashtra innovation ecosystem strengthened through dialogue and collaboration | Pune International Centre posted on the topic | LinkedIn",
+      "titleMatchScore": 0.357
+    },
+    {
+      "recordId": "PG0043",
+      "category": "homepage-only",
+      "url": "https://www.tedxpune.com",
+      "httpStatus": 200,
+      "pageTitle": "TEDxPune 2026 — Invisible Bridges | 3rd October, Pune",
+      "titleMatchScore": 0.482
+    },
+    {
+      "recordId": "PG0038",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/ritesh-ghude-175358289_msme-govtech-institutionalcredit-activity-7467797470220021760-i8Fp",
+      "httpStatus": 200,
+      "pageTitle": "#msme #govtech #institutionalcredit #economicgrowth #mccia #capacitybuilding #businessstrategy #indiagrowthstory | Ritesh Ghude",
+      "titleMatchScore": 0.297
+    },
+    {
+      "recordId": "PG0068",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0070",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0039",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_irconclave2026-partnerwithus-newlabourcodes-activity-7459537585116241920-gYmS",
+      "httpStatus": 200,
+      "pageTitle": "#irconclave2026 #partnerwithus #newlabourcodes #mccia #hrleaders #compliance #industrialrelations #pune #hrcommunity #businessleaders | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.271
+    },
+    {
+      "recordId": "PG0067",
+      "category": "reachable-title-review",
+      "url": "https://www.tedxpune.com/speakers",
+      "httpStatus": 200,
+      "pageTitle": "Meet Our 2026 Speakers — TEDxPune 2026 | Invisible Bridges | TEDxPune 2026",
+      "titleMatchScore": 0.242
+    },
+    {
+      "recordId": "PG0048",
+      "category": "possible-headline-match",
+      "url": "https://www.linkedin.com/posts/puneinternationalcentre_puneinternationalcentre-activity-7459604054109995008-W9f6",
+      "httpStatus": 200,
+      "pageTitle": "Lt Gen Mehta on India&#39;s Military Service and National Responsibility | Pune International Centre posted on the topic | LinkedIn",
+      "titleMatchScore": 0.625
     },
     {
       "recordId": "PG0064",
@@ -399,100 +463,12 @@
       "titleMatchScore": 0.235
     },
     {
-      "recordId": "PG0066",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/gadekaromkar_ias-midc-directorgeneral-activity-7455936301712855040-oiZf",
-      "httpStatus": 200,
-      "pageTitle": "#ias #midc #directorgeneral #claude #fellowship #ai #hackathon #mccia #winners #innovation #buildermindset | OMKAR GADEKAR | 16 comments",
-      "titleMatchScore": 0.4
-    },
-    {
-      "recordId": "PG0067",
-      "category": "reachable-title-review",
-      "url": "https://www.tedxpune.com/speakers",
-      "httpStatus": 200,
-      "pageTitle": "Speakers — TEDxPune 2026 | Invisible Bridges | TEDxPune 2026",
-      "titleMatchScore": 0.286
-    },
-    {
-      "recordId": "PG0068",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0069",
-      "category": "reachable-title-review",
-      "url": "https://mcciapune.com/events/events-detail-page/2771/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.357
-    },
-    {
-      "recordId": "PG0070",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
       "recordId": "PG0071",
       "category": "reachable-title-review",
       "url": "https://www.linkedin.com/posts/mcciapune_aihackathon-buildinpublic-artificialintelligence-activity-7453435124479647745-aO0N",
       "httpStatus": 200,
       "pageTitle": "#aihackathon #buildinpublic #artificialintelligence #innovation #techcommunity | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
       "titleMatchScore": 0.212
-    },
-    {
-      "recordId": "PG0072",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mcciahackathon-aihackathon-msme-activity-7452725409823129601-ZuPK",
-      "httpStatus": 200,
-      "pageTitle": "#mcciahackathon #aihackathon #msme #startupindia | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.178
-    },
-    {
-      "recordId": "PG0073",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_aihackathon-msmeinnovation-buildwithai-activity-7451925847340408832-NFJk",
-      "httpStatus": 200,
-      "pageTitle": "#aihackathon #msmeinnovation #buildwithai #realworldimpact #puneevents | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.257
-    },
-    {
-      "recordId": "PG0074",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mccia-hrir-humanresourcedevelopment-activity-7450796548776632321-gZzq",
-      "httpStatus": 200,
-      "pageTitle": "#mccia #hrir #humanresourcedevelopment #industrialrelations #certificationprogram #professionaldevelopment #leadership #hrprofessionals #learninganddevelopment #skillbuilding | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.007
-    },
-    {
-      "recordId": "PG0075",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mccia-aihackathon2026-aiinnovation-activity-7450131841971331072-RA5K",
-      "httpStatus": 200,
-      "pageTitle": "#mccia #aihackathon2026 #aiinnovation #msme #hackathonindia | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.357
-    },
-    {
-      "recordId": "PG0076",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_FAQ__2.0_Proof_15-04-2026.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0077",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/saurabh-manchanda-05651638a_rawmaterial-domesticmanufacturing-energytransition-activity-7449842155038150656-rnNU",
-      "httpStatus": 200,
-      "pageTitle": "#rawmaterial #domesticmanufacturing #energytransition | Saurabh Manchanda",
-      "titleMatchScore": 0.331
     },
     {
       "recordId": "PG0078",
@@ -511,6 +487,54 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0073",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_aihackathon-msmeinnovation-buildwithai-activity-7451925847340408832-NFJk",
+      "httpStatus": 200,
+      "pageTitle": "#aihackathon #msmeinnovation #buildwithai #realworldimpact #puneevents | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.257
+    },
+    {
+      "recordId": "PG0072",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_mcciahackathon-aihackathon-msme-activity-7452725409823129601-ZuPK",
+      "httpStatus": 200,
+      "pageTitle": "#mcciahackathon #aihackathon #msme #startupindia | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.178
+    },
+    {
+      "recordId": "PG0066",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/gadekaromkar_ias-midc-directorgeneral-activity-7455936301712855040-oiZf",
+      "httpStatus": 200,
+      "pageTitle": "#ias #midc #directorgeneral #claude #fellowship #ai #hackathon #mccia #winners #innovation #buildermindset | OMKAR GADEKAR | 16 comments",
+      "titleMatchScore": 0.4
+    },
+    {
+      "recordId": "PG0074",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_mccia-hrir-humanresourcedevelopment-activity-7450796548776632321-gZzq",
+      "httpStatus": 200,
+      "pageTitle": "#mccia #hrir #humanresourcedevelopment #industrialrelations #certificationprogram #professionaldevelopment #leadership #hrprofessionals #learninganddevelopment #skillbuilding | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.007
+    },
+    {
+      "recordId": "PG0077",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/saurabh-manchanda-05651638a_rawmaterial-domesticmanufacturing-energytransition-activity-7449842155038150656-rnNU",
+      "httpStatus": 200,
+      "pageTitle": "#rawmaterial #domesticmanufacturing #energytransition | Saurabh Manchanda",
+      "titleMatchScore": 0.331
+    },
+    {
+      "recordId": "PG0075",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_mccia-aihackathon2026-aiinnovation-activity-7450131841971331072-RA5K",
+      "httpStatus": 200,
+      "pageTitle": "Ready to solve real business problems with AI? 🚀 Join the M | LinkedIn",
+      "titleMatchScore": 0.25
+    },
+    {
       "recordId": "PG0081",
       "category": "reachable-title-review",
       "url": "https://www.linkedin.com/posts/mcciapune_mccia-defence-aerospace-activity-7448343082523185153-bDcb",
@@ -525,54 +549,6 @@
       "httpStatus": 200,
       "pageTitle": "#mcciafellowship #youthfellowship #careeropportunity #pune #graduateprogram #professionaldevelopment #internship #leadership #mccia | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
       "titleMatchScore": 0.22
-    },
-    {
-      "recordId": "PG0083",
-      "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/aniket-shinde-794496234_agritech-ai-drones-activity-7441529322391207936-I13J",
-      "httpStatus": 200,
-      "pageTitle": "#agritech #ai #drones #precisionfarming #agriinnovation #startupindia #deeptech #remotesensing #machinelearning #futureoffarming #entrepreneurship #pune #mccia #agritechindia #innovation | Aniket Shinde",
-      "titleMatchScore": 0.5
-    },
-    {
-      "recordId": "PG0084",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_Government_Schemes_Handbook_Revised_30-03-2026.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0085",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/leena-khandekar-14a95018_impactful-working-activity-7442053473686405120-8xxl",
-      "httpStatus": 200,
-      "pageTitle": "Impactful Working ! | Leena Khandekar",
-      "titleMatchScore": 0.219
-    },
-    {
-      "recordId": "PG0086",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mccia-familybusinessforum-technologyleadership-activity-7441702776314699778-eKpA",
-      "httpStatus": 200,
-      "pageTitle": "#mccia #familybusinessforum #technologyleadership #futureofbusiness #digitaltransformation #businessinnovation #leadershiptalk #worksmart #aiinbusiness | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.091
-    },
-    {
-      "recordId": "PG0087",
-      "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/mcciapune_mccia-msme-helpline-activity-7440303265478688768-phTf",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA MSME Helpline | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.667
-    },
-    {
-      "recordId": "PG0088",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_agritech-innovationinagriculture-futureoffarming-activity-7440034304178483201-Bm3i",
-      "httpStatus": 200,
-      "pageTitle": "#agritech #innovationinagriculture #futureoffarming #mccia #eventhighlights | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.415
     },
     {
       "recordId": "PG0089",
@@ -599,20 +575,92 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0093",
+      "recordId": "PG0083",
       "category": "possible-headline-match",
-      "url": "https://www.loksatta.com/pune/pune-industries-impact-israel-iran-war-mccia-survey-raw-material-prices-pune-print-news-zws-70-5749611/",
+      "url": "https://www.linkedin.com/posts/aniket-shinde-794496234_agritech-ai-drones-activity-7441529322391207936-I13J",
       "httpStatus": 200,
-      "pageTitle": "Israel Iran War Impact on Pune Industries: MCCIA Survey | इस्रायल-इराण युद्धाचा पुण्यातील उद्योगांना फटका",
-      "titleMatchScore": 0.667
+      "pageTitle": "#agritech #ai #drones #precisionfarming #agriinnovation #startupindia #deeptech #remotesensing #machinelearning #futureoffarming #entrepreneurship #pune #mccia #agritechindia #innovation | Aniket Shinde",
+      "titleMatchScore": 0.5
     },
     {
-      "recordId": "PG0097",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mccia-defencemanufacturing-atmanirbharbharat-activity-7431689811691978753-T6h_",
+      "recordId": "PG0092",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/west-asia-conflict-to-hit-nearly-half-of-pune-industries-mccia-survey-10569838/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0026",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/printmedia2023/Tentative_Block__Program_MCCIAs_IR_Conclave_2026.pdf",
       "httpStatus": 200,
-      "pageTitle": "#mccia #defencemanufacturing #atmanirbharbharat #makeinindia #indianarmy #drdo #msme #industryacademia #defenceinnovation #aerospaceanddefence #technologycollaboration #futureofdefence… | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.043
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0085",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/leena-khandekar-14a95018_impactful-working-activity-7442053473686405120-8xxl",
+      "httpStatus": 200,
+      "pageTitle": "Impactful Working ! | Leena Khandekar",
+      "titleMatchScore": 0.219
+    },
+    {
+      "recordId": "PG0094",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/rs-1000-2000-crore-daily-losses-if-pune-industrial-belt-shuts-maccia-10585268/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0086",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_mccia-familybusinessforum-technologyleadership-activity-7441702776314699778-eKpA",
+      "httpStatus": 200,
+      "pageTitle": "#mccia #familybusinessforum #technologyleadership #futureofbusiness #digitaltransformation #businessinnovation #leadershiptalk #worksmart #aiinbusiness | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.091
+    },
+    {
+      "recordId": "PG0099",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/mccia-drone-innovation-centre-pune-msmes-food-technology-cfc-10536121/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0093",
+      "category": "unreachable",
+      "url": "https://www.loksatta.com/pune/pune-industries-impact-israel-iran-war-mccia-survey-raw-material-prices-pune-print-news-zws-70-5749611/",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0069",
+      "category": "reachable-title-review",
+      "url": "https://mcciapune.com/events/events-detail-page/2771/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.357
+    },
+    {
+      "recordId": "PG0088",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_agritech-innovationinagriculture-futureoffarming-activity-7440034304178483201-Bm3i",
+      "httpStatus": 200,
+      "pageTitle": "#agritech #innovationinagriculture #futureoffarming #mccia #eventhighlights | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.415
+    },
+    {
+      "recordId": "PG0087",
+      "category": "possible-headline-match",
+      "url": "https://www.linkedin.com/posts/mcciapune_mccia-msme-helpline-activity-7440303265478688768-phTf",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA MSME Helpline | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.667
     },
     {
       "recordId": "PG0098",
@@ -621,6 +669,14 @@
       "httpStatus": 200,
       "pageTitle": "#palashfestival #flameoftheforest #pic #artandculture #musicdialoguesreflections #creativeindia #culturallegacy #artsplatform #indianarts #puneevents | Pune International Centre",
       "titleMatchScore": 0.333
+    },
+    {
+      "recordId": "PG0097",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_mccia-defencemanufacturing-atmanirbharbharat-activity-7431689811691978753-T6h_",
+      "httpStatus": 200,
+      "pageTitle": "#mccia #defencemanufacturing #atmanirbharbharat #makeinindia #indianarmy #drdo #msme #industryacademia #defenceinnovation #aerospaceanddefence #technologycollaboration #futureofdefence… | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.043
     },
     {
       "recordId": "PG0100",
@@ -647,17 +703,25 @@
       "titleMatchScore": 0.472
     },
     {
-      "recordId": "PG0103",
-      "category": "reachable-title-review",
-      "url": "https://mcciapune.com/events/events-detail-page/2534/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.071
+      "recordId": "PG0113",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/budget-2026-27-pune-industry-welcomes-msme-equity-fund-treds-mandate-seeks-ai-push-export-boost-10508054/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
-      "recordId": "PG0105",
-      "category": "unreachable",
-      "url": "https://www.indianembassyqatar.gov.in/whats_new?id=NDYx",
+      "recordId": "PG0114",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0115",
+      "category": "no-public-url",
+      "url": null,
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
@@ -677,54 +741,6 @@
       "httpStatus": 200,
       "pageTitle": "#unionbudget2026 #economicstability #fiscaldiscipline #capitalexpenditure #biopharma #artificialintelligence #datacentres #makeinindia #atmanirbharbharat #indianeconomy #industryperspective | AI Spectrum India",
       "titleMatchScore": 0.207
-    },
-    {
-      "recordId": "PG0111",
-      "category": "reachable-title-review",
-      "url": "https://pudhari.news/maharashtra/pune/pune-global-capability-centers-gcc-400-new-sk04",
-      "httpStatus": 200,
-      "pageTitle": "400 नवीन जीसीसी केंद्रांची घोषणा; आयटी आणि रोजगाराला चालना|pune global capability centers gcc 400 new",
-      "titleMatchScore": 0.4
-    },
-    {
-      "recordId": "PG0112",
-      "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/sanjeebit-choudhury_mcciapibs2026-activity-7426898350349860864-kXPa",
-      "httpStatus": 200,
-      "pageTitle": "#mcciapibs2026 | Sanjeebit Choudhury",
-      "titleMatchScore": 0.593
-    },
-    {
-      "recordId": "PG0114",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0115",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0116",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_puneinternationalbusinesssummit-mcciapibs2026-activity-7420125692593377281-zEuD",
-      "httpStatus": 200,
-      "pageTitle": "#puneinternationalbusinesssummit #mcciapibs2026 #pibs2026 #globalbusiness #leadership | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.181
-    },
-    {
-      "recordId": "PG0117",
-      "category": "unreachable",
-      "url": "https://bit.ly/ep1_YouTube",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
     },
     {
       "recordId": "PG0118",
@@ -759,12 +775,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0123",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/tatyasaheb-phadtare-4345a021_startupecosystem-innovation-msins-activity-7415735833418506240-Pqbb",
+      "recordId": "PG0112",
+      "category": "possible-headline-match",
+      "url": "https://www.linkedin.com/posts/sanjeebit-choudhury_mcciapibs2026-activity-7426898350349860864-kXPa",
       "httpStatus": 200,
-      "pageTitle": "#startupecosystem #innovation #msins #mccia #baif #entrepreneurship #mentorship #inclusivegrowth #atmanirbharbharat #startupindia | Tatyasaheb Phadtare",
-      "titleMatchScore": 0.257
+      "pageTitle": "#mcciapibs2026 | Sanjeebit Choudhury",
+      "titleMatchScore": 0.593
+    },
+    {
+      "recordId": "PG0116",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_puneinternationalbusinesssummit-mcciapibs2026-activity-7420125692593377281-zEuD",
+      "httpStatus": 200,
+      "pageTitle": "#puneinternationalbusinesssummit #mcciapibs2026 #pibs2026 #globalbusiness #leadership | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.181
     },
     {
       "recordId": "PG0125",
@@ -783,12 +807,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0127",
+      "recordId": "PG0111",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_pibs2026-puneinternationalbusinesssummit-activity-7413882181556584448-wzoV",
+      "url": "https://pudhari.news/maharashtra/pune/pune-global-capability-centers-gcc-400-new-sk04",
       "httpStatus": 200,
-      "pageTitle": "#pibs2026 #puneinternationalbusinesssummit #mccia #globalbusiness #internationaltrade #investmentsummit #pune #maharashtra #businessleadership | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.125
+      "pageTitle": "400 नवीन जीसीसी केंद्रांची घोषणा; आयटी आणि रोजगाराला चालना|pune global capability centers gcc 400 new",
+      "titleMatchScore": 0.4
     },
     {
       "recordId": "PG0128",
@@ -815,12 +839,52 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0132",
+      "recordId": "PG0123",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/tatyasaheb-phadtare-4345a021_startupecosystem-innovation-msins-activity-7415735833418506240-Pqbb",
+      "httpStatus": 200,
+      "pageTitle": "#startupecosystem #innovation #msins #mccia #baif #entrepreneurship #mentorship #inclusivegrowth #atmanirbharbharat #startupindia | Tatyasaheb Phadtare",
+      "titleMatchScore": 0.257
+    },
+    {
+      "recordId": "PG0133",
+      "category": "reachable-title-review",
+      "url": "https://www.scribd.com/document/620897412/Women-Entrepreneurs-Directory-2021-22",
+      "httpStatus": 200,
+      "pageTitle": "Client Challenge",
+      "titleMatchScore": 0.226
+    },
+    {
+      "recordId": "PG0063",
       "category": "reachable-pdf",
-      "url": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MSME_Helpline_Compilation_of_100_Case_Studies_Proof_28-4-2026.pdf",
       "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0138",
+      "category": "reachable-title-review",
+      "url": "https://www.scribd.com/document/788816100/MCCIA-Women-Entrepreneurs-Directory-2021-22-1-1",
+      "httpStatus": 200,
+      "pageTitle": "Client Challenge",
+      "titleMatchScore": 0.271
+    },
+    {
+      "recordId": "PG0127",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_pibs2026-puneinternationalbusinesssummit-activity-7413882181556584448-wzoV",
+      "httpStatus": 200,
+      "pageTitle": "#pibs2026 #puneinternationalbusinesssummit #mccia #globalbusiness #internationaltrade #investmentsummit #pune #maharashtra #businessleadership | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.125
+    },
+    {
+      "recordId": "PG0103",
+      "category": "reachable-title-review",
+      "url": "https://mcciapune.com/events/events-detail-page/2534/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.071
     },
     {
       "recordId": "PG0134",
@@ -831,52 +895,12 @@
       "titleMatchScore": 0.269
     },
     {
-      "recordId": "PG0135",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/printmedia2023/PIBS_Feb_2026.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0136",
+      "recordId": "PG0117",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mccia-meetthebuyer-vendordevelopment-activity-7416426288585990144-sfCr",
+      "url": "https://bit.ly/ep1_YouTube",
       "httpStatus": 200,
-      "pageTitle": "#mccia #meetthebuyer #vendordevelopment #defencemanufacturing #psus #oems #indigenisation #msmes #puneindustry | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.305
-    },
-    {
-      "recordId": "PG0137",
-      "category": "unreachable",
-      "url": "https://en.wikipedia.org/wiki/Mahratta_Chamber_of_Commerce_Industries_and_Agriculture",
-      "httpStatus": 404,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0139",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_AWARDS_MARATHI_RE_REVISED_PROOF_7-2-26.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0140",
-      "category": "unreachable",
-      "url": "https://www.mcciapune.com/committees/indirect-taxation/",
-      "httpStatus": 404,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0142",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_msme-activity-7408377995859492865-E2d2",
-      "httpStatus": 200,
-      "pageTitle": "#msme | Prashant Girbane",
-      "titleMatchScore": 0.282
+      "pageTitle": "- YouTube",
+      "titleMatchScore": 0.033
     },
     {
       "recordId": "PG0143",
@@ -887,12 +911,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0144",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_AEFC_Yashogatha_FINAL_All_Pages_12-12-2025.pdf",
+      "recordId": "PG0136",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_mccia-meetthebuyer-vendordevelopment-activity-7416426288585990144-sfCr",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "#mccia #meetthebuyer #vendordevelopment #defencemanufacturing #psus #oems #indigenisation #msmes #puneindustry | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.305
     },
     {
       "recordId": "PG0145",
@@ -927,12 +951,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0149",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/initiatives/gcc/",
+      "recordId": "PG0084",
+      "category": "reachable-pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_Government_Schemes_Handbook_Revised_30-03-2026.pdf",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.385
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0151",
@@ -943,12 +967,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0152",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-detail-page/2555/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.2
+      "recordId": "PG0137",
+      "category": "unreachable",
+      "url": "https://en.wikipedia.org/wiki/Mahratta_Chamber_of_Commerce_Industries_and_Agriculture",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0153",
@@ -967,26 +991,26 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0155",
-      "category": "unreachable",
-      "url": "https://www.linkedin.com/posts/mcciapune_pune-gcc-summit-driving-impact-from-india-activity-7295445045766184960-Azed",
-      "httpStatus": 404,
+      "recordId": "PG0076",
+      "category": "reachable-pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_FAQ__2.0_Proof_15-04-2026.pdf",
+      "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0156",
-      "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/msins_msins-mccia-startuphelpline-activity-7412021762294448128--kGb",
+      "recordId": "PG0142",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_msme-activity-7408377995859492865-E2d2",
       "httpStatus": 200,
-      "pageTitle": "#msins #mccia #startuphelpline #innovation #entrepreneurship #maharashtrastartups #ecosystemdevelopment | Maharashtra State Innovation Society",
-      "titleMatchScore": 0.5
+      "pageTitle": "#msme | Prashant Girbane",
+      "titleMatchScore": 0.282
     },
     {
-      "recordId": "PG0157",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_Pune_GCC_Report_FINAL_FOR_PRINT.pdf",
-      "httpStatus": 200,
+      "recordId": "PG0155",
+      "category": "unreachable",
+      "url": "https://www.linkedin.com/posts/mcciapune_pune-gcc-summit-driving-impact-from-india-activity-7295445045766184960-Azed",
+      "httpStatus": 404,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -999,12 +1023,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0159",
-      "category": "reachable-title-review",
-      "url": "https://www.loksatta.com/pune/are-there-any-problems-facing-your-industry-now-maratha-chamber-will-help-you-solve-them-pune-print-news-ssb-93-5541640/",
-      "httpStatus": 200,
-      "pageTitle": "तुमच्या उद्योगासमोर अडचणी आहेत? आता मराठा चेंबर त्या सोडविण्यासाठी करेल मदत - Marathi News | Are There Any Problems Facing Your Industry Now Maratha Chamber Will Help You Solve Them Pune Print News Ssb 93 - Latest Pune News at Loksatta.com",
-      "titleMatchScore": 0.015
+      "recordId": "PG0140",
+      "category": "unreachable",
+      "url": "https://www.mcciapune.com/committees/indirect-taxation/",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0160",
@@ -1023,6 +1047,38 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0159",
+      "category": "unreachable",
+      "url": "https://www.loksatta.com/pune/are-there-any-problems-facing-your-industry-now-maratha-chamber-will-help-you-solve-them-pune-print-news-ssb-93-5541640/",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0156",
+      "category": "possible-headline-match",
+      "url": "https://www.linkedin.com/posts/msins_msins-mccia-startuphelpline-activity-7412021762294448128--kGb",
+      "httpStatus": 200,
+      "pageTitle": "#msins #mccia #startuphelpline #innovation #entrepreneurship #maharashtrastartups #ecosystemdevelopment | Maharashtra State Innovation Society",
+      "titleMatchScore": 0.5
+    },
+    {
+      "recordId": "PG0164",
+      "category": "restricted",
+      "url": "https://punemirror.com/city/mccia-msme-helpline-ai-lab-maharashtra-growth/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0149",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/initiatives/gcc/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.385
+    },
+    {
       "recordId": "PG0167",
       "category": "possible-headline-match",
       "url": "https://www.linkedin.com/posts/prashant-girbane-245840_it-felt-great-to-be-back-on-campus-indian-activity-7399772826196545537-ygAb",
@@ -1031,10 +1087,34 @@
       "titleMatchScore": 0.714
     },
     {
-      "recordId": "PG0168",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_SEC_Report_2025_Proof_18-11-25.pdf",
+      "recordId": "PG0171",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0152",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/events/events-detail-page/2555/",
       "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.2
+    },
+    {
+      "recordId": "PG0173",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0176",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -1047,22 +1127,6 @@
       "titleMatchScore": 0.281
     },
     {
-      "recordId": "PG0171",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0173",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
       "recordId": "PG0174",
       "category": "reachable-title-review",
       "url": "https://www.linkedin.com/posts/bantikundu_nice-attending-activity-7377352480264843264-pA_z",
@@ -1071,18 +1135,10 @@
       "titleMatchScore": 0.339
     },
     {
-      "recordId": "PG0175",
-      "category": "possible-headline-match",
-      "url": "https://www.esakal.com/pune/todays-latest-marathi-news-pne25l43484-txt-pune-today-20250925051029",
-      "httpStatus": 200,
-      "pageTitle": "बौद्धिक भांडवल ही आपली खरी ताकद ‘पीआयसी’ वर्धापनदिनाच्या कार्यक्रमात डॉ. रघुनाथ माशेलकर यांचे प्रतिपादन",
-      "titleMatchScore": 0.667
-    },
-    {
-      "recordId": "PG0176",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
+      "recordId": "PG0179",
+      "category": "restricted",
+      "url": "https://thenewsmill.com/2025/09/also-impacting-american-companies-they-wouldve-huge-issues-mccia-dg-prashant-girbane-on-h1b-visa-fee-hike/",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -1119,6 +1175,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0178",
+      "category": "restricted",
+      "url": "https://www.usnews.net/news/278593274/also-impacting-american-companies-they-wouldve-huge-issues-mccia-dg-prashant-girbane-on-h1b-visa-fee-hike",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG0187",
       "category": "no-public-url",
       "url": null,
@@ -1127,20 +1191,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0188",
-      "category": "reachable-title-review",
-      "url": "https://www.esakal.com/pune/army-base-workshop-mccia-join-hands-for-defense-tech-boost-amp17",
+      "recordId": "PG0139",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_AWARDS_MARATHI_RE_REVISED_PROOF_7-2-26.pdf",
       "httpStatus": 200,
-      "pageTitle": "Army Base Workshop : संरक्षण क्षेत्रातील संशोधन, स्वदेशीकरणाला गती; लष्कर-‘एमसीसीआयए’ यांच्यात सामंजस्य करार",
-      "titleMatchScore": 0.306
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
-      "recordId": "PG0189",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/easebuzz_dea2026-buzzingforbharat-digitalexcellenceawards-activity-7495459608745013248-kZg2",
+      "recordId": "PG0175",
+      "category": "possible-headline-match",
+      "url": "https://www.esakal.com/pune/todays-latest-marathi-news-pne25l43484-txt-pune-today-20250925051029",
       "httpStatus": 200,
-      "pageTitle": "#dea2026 #buzzingforbharat #digitalexcellenceawards #easebuzz #keynotespeaker #mccia #innovation #msmes #startups #entrepreneurship #dea2026 | Easebuzz",
-      "titleMatchScore": 0.348
+      "pageTitle": "बौद्धिक भांडवल ही आपली खरी ताकद ‘पीआयसी’ वर्धापनदिनाच्या कार्यक्रमात डॉ. रघुनाथ माशेलकर यांचे प्रतिपादन",
+      "titleMatchScore": 0.667
     },
     {
       "recordId": "PG0190",
@@ -1175,20 +1239,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0195",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mofpi-mccia-foodprocessingindia-activity-7363092957450637313-YEBQ",
+      "recordId": "PG0135",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/printmedia2023/PIBS_Feb_2026.pdf",
       "httpStatus": 200,
-      "pageTitle": "#mofpi #mccia #foodprocessingindia #policytopractice #pmfme #worldfoodindia2025 #agribusiness #msmeindia #puneevents #makeinindia | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.264
-    },
-    {
-      "recordId": "PG0196",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/baljeetgujral_startupindia-innovation-entrepreneurship-activity-7366344963749564419-34uH",
-      "httpStatus": 200,
-      "pageTitle": "#startupindia #innovation #entrepreneurship #incubation #scii #mccia #maharashtra | Baljeet Gujral",
-      "titleMatchScore": 0.341
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0197",
@@ -1199,20 +1255,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0198",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/manya-nagar_tedxpune2025-tedx-tedxpune-activity-7356697946588954626-5drM",
+      "recordId": "PG0144",
+      "category": "reachable-pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_AEFC_Yashogatha_FINAL_All_Pages_12-12-2025.pdf",
       "httpStatus": 200,
-      "pageTitle": "#tedxpune2025 #tedx #tedxpune #ted | Manya Nagar",
-      "titleMatchScore": 0.394
-    },
-    {
-      "recordId": "PG0199",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/ravalnath-shende-19b39026_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-8-shree-refrigerations-activity-7354761194588585984-BSgQ",
-      "httpStatus": 200,
-      "pageTitle": "उद्योगधंदा कसा काय? | Episode 8 - Shree Refrigerations Pvt Ltd | Ravalnath Shende",
-      "titleMatchScore": 0.129
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0200",
@@ -1231,12 +1279,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0202",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/tedxpune_tedxpune-tedx-ted-activity-7351105826708668416-oxPO",
+      "recordId": "PG0157",
+      "category": "reachable-pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_Pune_GCC_Report_FINAL_FOR_PRINT.pdf",
       "httpStatus": 200,
-      "pageTitle": "#tedxpune #tedx #ted #tedtalks #impressions #ideaschangeeverything #pune #tedxindia | TEDxPune",
-      "titleMatchScore": 0.39
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0203",
@@ -1253,6 +1301,14 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0189",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/easebuzz_dea2026-buzzingforbharat-digitalexcellenceawards-activity-7495459608745013248-kZg2",
+      "httpStatus": 200,
+      "pageTitle": "#dea2026 #buzzingforbharat #digitalexcellenceawards #easebuzz #keynotespeaker #mccia #innovation #msmes #startups #entrepreneurship #dea2026 | Easebuzz",
+      "titleMatchScore": 0.348
     },
     {
       "recordId": "PG0206",
@@ -1279,12 +1335,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0209",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/AI_Inspiration_Report_2025_Inside_Pages_Final_for_Print_21-6-2025.pdf",
+      "recordId": "PG0188",
+      "category": "reachable-title-review",
+      "url": "https://www.esakal.com/pune/army-base-workshop-mccia-join-hands-for-defense-tech-boost-amp17",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "Army Base Workshop : संरक्षण क्षेत्रातील संशोधन, स्वदेशीकरणाला गती; लष्कर-‘एमसीसीआयए’ यांच्यात सामंजस्य करार",
+      "titleMatchScore": 0.306
     },
     {
       "recordId": "PG0210",
@@ -1303,12 +1359,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0213",
+      "recordId": "PG0198",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-foreigntrade-certificatecourse-activity-7335886382453641216-wf8j",
+      "url": "https://www.linkedin.com/posts/manya-nagar_tedxpune2025-tedx-tedxpune-activity-7356697946588954626-5drM",
       "httpStatus": 200,
-      "pageTitle": "#mccia #foreigntrade #certificatecourse #exportimport #internationalbusiness #tradetraining #ftapolicy #goglobal #professionaldevelopment #punebusiness | Nisha Jadhav",
-      "titleMatchScore": 0.296
+      "pageTitle": "#tedxpune2025 #tedx #tedxpune #ted | Manya Nagar",
+      "titleMatchScore": 0.394
     },
     {
       "recordId": "PG0214",
@@ -1335,6 +1391,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0196",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/baljeetgujral_startupindia-innovation-entrepreneurship-activity-7366344963749564419-34uH",
+      "httpStatus": 200,
+      "pageTitle": "#startupindia #innovation #entrepreneurship #incubation #scii #mccia #maharashtra | Baljeet Gujral",
+      "titleMatchScore": 0.341
+    },
+    {
       "recordId": "PG0218",
       "category": "no-public-url",
       "url": null,
@@ -1351,28 +1415,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0220",
-      "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/vivek-sinare-125a9112_thank-you-mahratta-chamber-of-commerce-activity-7333708571446013953-E0Zm",
-      "httpStatus": 200,
-      "pageTitle": "Thank You Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA) DG, Prashant Girbane . Proud to be Associate. Year 2024-25 was encouraging &amp; engaging with the launch of &#39;Resurgent… | Vivek Sinare",
-      "titleMatchScore": 0.571
-    },
-    {
-      "recordId": "PG0221",
+      "recordId": "PG0199",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/tedxpune_tedxpune-prashantgirbane-sketchnoting-activity-7463963345486848000-MMBt",
+      "url": "https://www.linkedin.com/posts/ravalnath-shende-19b39026_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-8-shree-refrigerations-activity-7354761194588585984-BSgQ",
       "httpStatus": 200,
-      "pageTitle": "#tedxpune #prashantgirbane #sketchnoting #mindsetshift | TEDxPune",
-      "titleMatchScore": 0.388
+      "pageTitle": "उद्योगधंदा कसा काय? | Episode 8 - Shree Refrigerations Pvt Ltd | Ravalnath Shende",
+      "titleMatchScore": 0.129
     },
     {
-      "recordId": "PG0223",
-      "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/aparanjape_congratulations-prashant-very-well-deserved-activity-7328666129936048128-rhxP",
+      "recordId": "PG0202",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/tedxpune_tedxpune-tedx-ted-activity-7351105826708668416-oxPO",
       "httpStatus": 200,
-      "pageTitle": "Congratulations Prashant! Very well deserved. Keep up the good work at Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA), Pune International Centre and many other institutions… | Amit Paranjape",
-      "titleMatchScore": 0.625
+      "pageTitle": "#tedxpune #tedx #ted #tedtalks #impressions #ideaschangeeverything #pune #tedxindia | TEDxPune",
+      "titleMatchScore": 0.39
     },
     {
       "recordId": "PG0224",
@@ -1431,12 +1487,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0232",
+      "recordId": "PG0195",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_edufest2025-mccia-industrymeetsacademia-activity-7319238472324595712-QuuJ",
+      "url": "https://www.linkedin.com/posts/mcciapune_mofpi-mccia-foodprocessingindia-activity-7363092957450637313-YEBQ",
       "httpStatus": 200,
-      "pageTitle": "#edufest2025 #mccia #industrymeetsacademia #futureofeducation #lifelonglearning #educationinnovation #puneevents #thankyou | Nisha Jadhav",
-      "titleMatchScore": 0.318
+      "pageTitle": "#mofpi #mccia #foodprocessingindia #policytopractice #pmfme #worldfoodindia2025 #agribusiness #msmeindia #puneevents #makeinindia | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.264
     },
     {
       "recordId": "PG0233",
@@ -1445,6 +1501,14 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0221",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/tedxpune_tedxpune-prashantgirbane-sketchnoting-activity-7463963345486848000-MMBt",
+      "httpStatus": 200,
+      "pageTitle": "#tedxpune #prashantgirbane #sketchnoting #mindsetshift | TEDxPune",
+      "titleMatchScore": 0.388
     },
     {
       "recordId": "PG0235",
@@ -1591,12 +1655,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0254",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-detail-page/2262/",
+      "recordId": "PG0220",
+      "category": "possible-headline-match",
+      "url": "https://www.linkedin.com/posts/vivek-sinare-125a9112_thank-you-mahratta-chamber-of-commerce-activity-7333708571446013953-E0Zm",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.227
+      "pageTitle": "Thank You Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA) DG, Prashant Girbane . Proud to be Associate. Year 2024-25 was encouraging &amp; engaging with the launch of &#39;Resurgent… | Vivek Sinare",
+      "titleMatchScore": 0.571
     },
     {
       "recordId": "PG0256",
@@ -1607,9 +1671,33 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0258",
+      "recordId": "PG0213",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-foreigntrade-certificatecourse-activity-7335886382453641216-wf8j",
+      "httpStatus": 200,
+      "pageTitle": "🚀 Exciting Announcement from Mahratta Chamber of Commerce, | LinkedIn",
+      "titleMatchScore": 0.343
+    },
+    {
+      "recordId": "PG0223",
+      "category": "possible-headline-match",
+      "url": "https://www.linkedin.com/posts/aparanjape_congratulations-prashant-very-well-deserved-activity-7328666129936048128-rhxP",
+      "httpStatus": 200,
+      "pageTitle": "Congratulations Prashant! Very well deserved. Keep up the good work at Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA), Pune International Centre and many other institutions… | Amit Paranjape",
+      "titleMatchScore": 0.625
+    },
+    {
+      "recordId": "PG0232",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_edufest2025-mccia-industrymeetsacademia-activity-7319238472324595712-QuuJ",
+      "httpStatus": 200,
+      "pageTitle": "#edufest2025 #mccia #industrymeetsacademia #futureofeducation #lifelonglearning #educationinnovation #puneevents #thankyou | Nisha Jadhav",
+      "titleMatchScore": 0.318
+    },
+    {
+      "recordId": "PG0168",
       "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/PIBS_Report_2025.pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_SEC_Report_2025_Proof_18-11-25.pdf",
       "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
@@ -1631,28 +1719,12 @@
       "titleMatchScore": 0.262
     },
     {
-      "recordId": "PG0262",
-      "category": "reachable-title-review",
-      "url": "https://mcciapune.com/events/events-detail-page/2079/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.091
-    },
-    {
       "recordId": "PG0264",
       "category": "reachable-title-review",
       "url": "https://www.linkedin.com/posts/mcciapune_puneinternationalbusinesssummit-foreigntrade-activity-7299003213872009216-y5LD",
       "httpStatus": 200,
       "pageTitle": "#puneinternationalbusinesssummit #foreigntrade #internationalbusiness | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
       "titleMatchScore": 0.382
-    },
-    {
-      "recordId": "PG0266",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/dinanathkholkar_gcc-mcciacybersecurityinitiative-activity-7295683565411868673-z9CP",
-      "httpStatus": 200,
-      "pageTitle": "#gcc #mcciacybersecurityinitiative | Dinanath Kholkar",
-      "titleMatchScore": 0.27
     },
     {
       "recordId": "PG0268",
@@ -1663,20 +1735,20 @@
       "titleMatchScore": 0.338
     },
     {
-      "recordId": "PG0269",
+      "recordId": "PG0254",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/anand-chordia-7baab913_womenempowerment-entrepreneurship-mccia-activity-7161429015797387264-GZf1",
+      "url": "https://www.mcciapune.com/events/events-detail-page/2262/",
       "httpStatus": 200,
-      "pageTitle": "#womenempowerment #entrepreneurship #mccia #anandchordia | Anand Chordia",
-      "titleMatchScore": 0.41
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.227
     },
     {
-      "recordId": "PG0270",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Digitisation_Report_17-2-2025_Proof.pdf",
+      "recordId": "PG0266",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/dinanathkholkar_gcc-mcciacybersecurityinitiative-activity-7295683565411868673-z9CP",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "#gcc #mcciacybersecurityinitiative | Dinanath Kholkar",
+      "titleMatchScore": 0.27
     },
     {
       "recordId": "PG0271",
@@ -1685,30 +1757,6 @@
       "httpStatus": 200,
       "pageTitle": "Episode 1 | Exploring US-India Relations Under Trump 2.0 | PIC&#39;s Global Compass | Pune International Centre",
       "titleMatchScore": 0.667
-    },
-    {
-      "recordId": "PG0272",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/aparanjape_marathi-activity-7287341409878089728-z4O-",
-      "httpStatus": 200,
-      "pageTitle": "#marathi | Amit Paranjape",
-      "titleMatchScore": 0.2
-    },
-    {
-      "recordId": "PG0274",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_hear-from-the-director-general-of-mccia-prashant-activity-7417513390270500864-sQiK",
-      "httpStatus": 200,
-      "pageTitle": "Prashant Girbane on Unlocking Investments in Pune | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA) posted on the topic | LinkedIn",
-      "titleMatchScore": 0.341
-    },
-    {
-      "recordId": "PG0275",
-      "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_moderating-a-panel-discussion-is-an-opportunity-activity-7284770113793257472-E1t7",
-      "httpStatus": 200,
-      "pageTitle": "Moderating a panel discussion is an opportunity to contribute as well as learn. Panelists of this insightful panel discussion-the Former Chief Secretary of the Government of Maharashtra- Dr Niteen… | Prashant Girbane",
-      "titleMatchScore": 0.5
     },
     {
       "recordId": "PG0276",
@@ -1751,12 +1799,44 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0281",
+      "recordId": "PG0269",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/tejaskumar-narute-b3287267_mccia-msme-helpline-activity-7281953142529814528-I05g",
+      "url": "https://www.linkedin.com/posts/anand-chordia-7baab913_womenempowerment-entrepreneurship-mccia-activity-7161429015797387264-GZf1",
       "httpStatus": 200,
-      "pageTitle": "MCCIA MSME Helpline | Tejaskumar Narute",
-      "titleMatchScore": 0.444
+      "pageTitle": "#womenempowerment #entrepreneurship #mccia #anandchordia | Anand Chordia",
+      "titleMatchScore": 0.41
+    },
+    {
+      "recordId": "PG0283",
+      "category": "restricted",
+      "url": "https://punemirror.com/pune-mirror-explore/pune-news-mccia-launches-monthly-survey-to-track-industry-growth/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0273",
+      "category": "unreachable",
+      "url": "https://www.loksatta.com/pune/sudhir-mehta-expressed-his-opinion-regarding-pune-airport-pune-print-news-vvp-08-amy-95-4827860/",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0262",
+      "category": "reachable-title-review",
+      "url": "https://mcciapune.com/events/events-detail-page/2079/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.091
+    },
+    {
+      "recordId": "PG0286",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/growth-msme-defence-manufacturing-hub-pune-inc-9751812/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0282",
@@ -1767,28 +1847,12 @@
       "titleMatchScore": 0.565
     },
     {
-      "recordId": "PG0283",
-      "category": "unreachable",
-      "url": "https://punemirror.com/pune-mirror-explore/pune-news-mccia-launches-monthly-survey-to-track-industry-growth/",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0284",
+      "recordId": "PG0272",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/deshpandevarad_above-and-beyond-welcome-sir-activity-7273370499215224832-jP_B",
+      "url": "https://www.linkedin.com/posts/aparanjape_marathi-activity-7287341409878089728-z4O-",
       "httpStatus": 200,
-      "pageTitle": "Above and beyond! Welcome sir! | Varad Deshpande",
-      "titleMatchScore": 0.43
-    },
-    {
-      "recordId": "PG0288",
-      "category": "unreachable",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_i-am-deeply-grateful-to-chancellor-prof-activity-7275842815174037504-CvyP",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "#marathi | Amit Paranjape",
+      "titleMatchScore": 0.2
     },
     {
       "recordId": "PG0289",
@@ -1799,12 +1863,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0291",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-detail-page/2171/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.256
+      "recordId": "PG0287",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/growth-msme-defence-manufacturing-hub-pune-inc-9751812/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0290",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/punes-msme-sector-sees-hope-for-2025-more-jobs-likely-9720217/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0292",
@@ -1823,12 +1895,36 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0209",
+      "category": "reachable-pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/AI_Inspiration_Report_2025_Inside_Pages_Final_for_Print_21-6-2025.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG0296",
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0284",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/deshpandevarad_above-and-beyond-welcome-sir-activity-7273370499215224832-jP_B",
+      "httpStatus": 200,
+      "pageTitle": "Above and beyond! Welcome sir! | Varad Deshpande",
+      "titleMatchScore": 0.43
+    },
+    {
+      "recordId": "PG0275",
+      "category": "possible-headline-match",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_moderating-a-panel-discussion-is-an-opportunity-activity-7284770113793257472-E1t7",
+      "httpStatus": 200,
+      "pageTitle": "Moderating a panel discussion is an opportunity to contribute as well as learn. Panelists of this insightful panel discussion-the Former Chief Secretary of the Government of Maharashtra- Dr Niteen… | Prashant Girbane",
+      "titleMatchScore": 0.5
     },
     {
       "recordId": "PG0299",
@@ -1847,28 +1943,28 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0301",
-      "category": "unreachable",
-      "url": "https://hcimalta.gov.in/news_detail/?newsid=206",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0302",
-      "category": "unreachable",
-      "url": "https://www.esakal.com/pune/81-percent-of-entrepreneurs-in-pune-district-expect-business-growth-mccia-launches-monthly-survey-pjp78",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0305",
-      "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/dinanathkholkar_mcciacybersecurityinitiative-mccia-activity-7267865297137651712-mFAY",
+      "recordId": "PG0274",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_hear-from-the-director-general-of-mccia-prashant-activity-7417513390270500864-sQiK",
       "httpStatus": 200,
-      "pageTitle": "#mcciacybersecurityinitiative #mccia | Dinanath Kholkar",
-      "titleMatchScore": 0.667
+      "pageTitle": "Prashant Girbane on Unlocking Investments in Pune | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA) posted on the topic | LinkedIn",
+      "titleMatchScore": 0.341
+    },
+    {
+      "recordId": "PG0303",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/punes-msme-sector-sees-hope-for-2025-more-jobs-likely-9720217/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0281",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/tejaskumar-narute-b3287267_mccia-msme-helpline-activity-7281953142529814528-I05g",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA MSME Helpline | Tejaskumar Narute",
+      "titleMatchScore": 0.444
     },
     {
       "recordId": "PG0306",
@@ -1895,12 +1991,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0310",
+      "recordId": "PG0288",
       "category": "possible-headline-match",
-      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-sicci-tradedelegation-activity-7252897302766362624-nJMN",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_i-am-deeply-grateful-to-chancellor-prof-activity-7275842815174037504-CvyP",
       "httpStatus": 200,
-      "pageTitle": "#mccia #sicci #tradedelegation #businesscollaboration #pibs #indiasingaporebusiness #networking #globalbusiness | Nisha Jadhav",
-      "titleMatchScore": 0.482
+      "pageTitle": "I am deeply grateful to Chancellor Prof. S. B. Mujumdar Sir, and Symbiosis International University for the privilege of serving as a member of the Board of Management (BoM) https://lnkd.in/dAzxQ3gn… | Prashant Girbane | 15 comments",
+      "titleMatchScore": 0.714
     },
     {
       "recordId": "PG0311",
@@ -1925,14 +2021,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0314",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-singaporedelegation-businessexcellence-activity-7251543907904217088-K8AL",
-      "httpStatus": 200,
-      "pageTitle": "#mccia #singaporedelegation #businessexcellence #globalcollaboration #innovation #tradedelegation #punetosingapore #businessgrowth | Nisha Jadhav",
-      "titleMatchScore": 0.395
     },
     {
       "recordId": "PG0315",
@@ -2007,28 +2095,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0324",
+      "recordId": "PG0258",
       "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MSME_RAMP_Proof_05-10-2024.pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/PIBS_Report_2025.pdf",
       "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0325",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-tradedelegation-highcommissionofindia-activity-7251830743494991872-s3Q7",
-      "httpStatus": 200,
-      "pageTitle": "#mccia #tradedelegation #highcommissionofindia #singapore #businessopportunities #globalpartnerships #innovation #sustainablegrowth #connectingbusinesses #economicdevelopment | Nisha Jadhav",
-      "titleMatchScore": 0.333
-    },
-    {
-      "recordId": "PG0326",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mccia-sampada-maharashtraagriculture-activity-7255516418442465280-tuKy",
-      "httpStatus": 200,
-      "pageTitle": "#mccia #sampada #maharashtraagriculture #sustainablegrowth #inclusivedevelopment #agricultureleadership #indianagriculture #infrastructuredevelopment #maharashtrafarmers #agriinnovation… | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.4
     },
     {
       "recordId": "PG0327",
@@ -2071,12 +2143,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0333",
+      "recordId": "PG0314",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/ganeshmate_leadershiptransition-mccia-msmegrowth-activity-7245837768054984706-iEG4",
+      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-singaporedelegation-businessexcellence-activity-7251543907904217088-K8AL",
       "httpStatus": 200,
-      "pageTitle": "#leadershiptransition #mccia #msmegrowth #newbeginnings | Ganesh Mate",
-      "titleMatchScore": 0.459
+      "pageTitle": "#mccia #singaporedelegation #businessexcellence #globalcollaboration #innovation #tradedelegation #punetosingapore #businessgrowth | Nisha Jadhav",
+      "titleMatchScore": 0.395
     },
     {
       "recordId": "PG0334",
@@ -2103,12 +2175,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0337",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-businessdelegation-singapore-activity-7236245766934003713-D28Z",
+      "recordId": "PG0305",
+      "category": "possible-headline-match",
+      "url": "https://www.linkedin.com/posts/dinanathkholkar_mcciacybersecurityinitiative-mccia-activity-7267865297137651712-mFAY",
       "httpStatus": 200,
-      "pageTitle": "#mccia #businessdelegation #singapore #thailand #globaltrade #engineering #automobile #technology #agribusiness #logistics #industrialautomation #internationalbusiness | Nisha Jadhav",
-      "titleMatchScore": 0.4
+      "pageTitle": "#mcciacybersecurityinitiative #mccia | Dinanath Kholkar",
+      "titleMatchScore": 0.667
     },
     {
       "recordId": "PG0338",
@@ -2135,20 +2207,36 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0342",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/MSME_Facilitation_Report_Final_28-8-2024.pdf",
+      "recordId": "PG0310",
+      "category": "possible-headline-match",
+      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-sicci-tradedelegation-activity-7252897302766362624-nJMN",
       "httpStatus": 200,
+      "pageTitle": "#mccia #sicci #tradedelegation #businesscollaboration #pibs #indiasingaporebusiness #networking #globalbusiness | Nisha Jadhav",
+      "titleMatchScore": 0.482
+    },
+    {
+      "recordId": "PG0326",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_mccia-sampada-maharashtraagriculture-activity-7255516418442465280-tuKy",
+      "httpStatus": 200,
+      "pageTitle": "#mccia #sampada #maharashtraagriculture #sustainablegrowth #inclusivedevelopment #agricultureleadership #indianagriculture #infrastructuredevelopment #maharashtrafarmers #agriinnovation… | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.4
+    },
+    {
+      "recordId": "PG0301",
+      "category": "unreachable",
+      "url": "https://hcimalta.gov.in/news_detail/?newsid=206",
+      "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0343",
-      "category": "possible-headline-match",
-      "url": "https://timesofindia.indiatimes.com/city/pune/influencers-brands-stress-on-proper-content-balance/articleshow/112956345.cms",
+      "recordId": "PG0325",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-tradedelegation-highcommissionofindia-activity-7251830743494991872-s3Q7",
       "httpStatus": 200,
-      "pageTitle": "Influencers, brands stress on proper content balance | Pune News - The Times of India",
-      "titleMatchScore": 0.667
+      "pageTitle": "#mccia #tradedelegation #highcommissionofindia #singapore #businessopportunities #globalpartnerships #innovation #sustainablegrowth #connectingbusinesses #economicdevelopment | Nisha Jadhav",
+      "titleMatchScore": 0.333
     },
     {
       "recordId": "PG0345",
@@ -2231,6 +2319,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0291",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/events/events-detail-page/2171/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.256
+    },
+    {
       "recordId": "PG0356",
       "category": "no-public-url",
       "url": null,
@@ -2271,6 +2367,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0361",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/pune-msmes-budget-2024-letdown-western-maharashtra-neglected-infrastructure-investment-9470960/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG0362",
       "category": "no-public-url",
       "url": null,
@@ -2283,6 +2387,22 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0343",
+      "category": "possible-headline-match",
+      "url": "https://timesofindia.indiatimes.com/city/pune/influencers-brands-stress-on-proper-content-balance/articleshow/112956345.cms",
+      "httpStatus": 200,
+      "pageTitle": "Influencers, brands stress on proper content balance | Pune News - The Times of India",
+      "titleMatchScore": 0.667
+    },
+    {
+      "recordId": "PG0365",
+      "category": "restricted",
+      "url": "https://punemirror.com/business/iesa-drives-growth-of-semiconductors-in-city/",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -2311,12 +2431,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0369",
-      "category": "restricted",
-      "url": "https://www.businessworld.in/article/indias-semiconductor-industry-to-receive-additional-support-under-pli-scheme-526546",
-      "httpStatus": 403,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "recordId": "PG0337",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/nisha-jadhav-15801723b_mccia-businessdelegation-singapore-activity-7236245766934003713-D28Z",
+      "httpStatus": 200,
+      "pageTitle": "#mccia #businessdelegation #singapore #thailand #globaltrade #engineering #automobile #technology #agribusiness #logistics #industrialautomation #internationalbusiness | Nisha Jadhav",
+      "titleMatchScore": 0.4
     },
     {
       "recordId": "PG0370",
@@ -2335,20 +2455,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0372",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_pune-maharashtra-sec2024-activity-7218848729787748352-JIcS",
-      "httpStatus": 200,
-      "pageTitle": "#pune #maharashtra #sec2024 #semiconductor #innovation #collaboration #mccia #stpi #makeinindia | Prashant Girbane",
-      "titleMatchScore": 0.331
+      "recordId": "PG0364",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/expectations-budget-small-scale-industries-tax-relief-investment-in-infra-9469233/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
-      "recordId": "PG0375",
+      "recordId": "PG0333",
       "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-detail-page/2011/",
+      "url": "https://www.linkedin.com/posts/ganeshmate_leadershiptransition-mccia-msmegrowth-activity-7245837768054984706-iEG4",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.075
+      "pageTitle": "#leadershiptransition #mccia #msmegrowth #newbeginnings | Ganesh Mate",
+      "titleMatchScore": 0.459
     },
     {
       "recordId": "PG0377",
@@ -2359,20 +2479,36 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0380",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_SEC_Report_2024_FINAL_PDF_22-11-2024.pdf",
-      "httpStatus": 200,
+      "recordId": "PG0378",
+      "category": "restricted",
+      "url": "https://www.financialexpress.com/business/industry-govt-may-chip-in-further-to-aid-semiconductor-sector-3554631/",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0381",
+      "recordId": "PG0379",
+      "category": "restricted",
+      "url": "https://themachinemaker.com/news/shaping-the-semiconductor-future-mccia-to-host-ecosystem-conference-2024/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0372",
       "category": "reachable-title-review",
-      "url": "https://economist.credential.getsmarter.com/3c4235fe-c39e-49a5-9792-decbd8f0eebd",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_pune-maharashtra-sec2024-activity-7218848729787748352-JIcS",
       "httpStatus": 200,
-      "pageTitle": "Accredible • Certificates, Badges and Blockchain",
-      "titleMatchScore": 0.354
+      "pageTitle": "#pune #maharashtra #sec2024 #semiconductor #innovation #collaboration #mccia #stpi #makeinindia | Prashant Girbane",
+      "titleMatchScore": 0.331
+    },
+    {
+      "recordId": "PG0270",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Digitisation_Report_17-2-2025_Proof.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0382",
@@ -2391,12 +2527,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0384",
+      "recordId": "PG0381",
       "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-detail-page/2408/",
+      "url": "https://economist.credential.getsmarter.com/3c4235fe-c39e-49a5-9792-decbd8f0eebd",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.136
+      "pageTitle": "Accredible • Certificates, Badges and Blockchain",
+      "titleMatchScore": 0.354
     },
     {
       "recordId": "PG0386",
@@ -2471,6 +2607,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0369",
+      "category": "restricted",
+      "url": "https://www.businessworld.in/article/indias-semiconductor-industry-to-receive-additional-support-under-pli-scheme-526546",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG0396",
       "category": "no-public-url",
       "url": null,
@@ -2535,20 +2679,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0405",
-      "category": "reachable-title-review",
-      "url": "https://thekarbhari.com/mccia-voting-awareness-initiative-of-mccia-for-voter-awareness/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA | Voting Awareness | मतदार जागृतीसाठी ‘एमसीसीआयए’चा पुढाकार ‘वोट कर पुणेकर’ मोहिमेद्वारे नागरिकांना मतदानाचे आवाहन - TheKarbhari",
-      "titleMatchScore": 0.326
-    },
-    {
       "recordId": "PG0406",
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0375",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/events/events-detail-page/2011/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.075
     },
     {
       "recordId": "PG0407",
@@ -2559,12 +2703,12 @@
       "titleMatchScore": 0.308
     },
     {
-      "recordId": "PG0409",
-      "category": "homepage-only",
-      "url": "https://www.youtube.com",
+      "recordId": "PG0384",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/events/events-detail-page/2408/",
       "httpStatus": 200,
-      "pageTitle": "YouTube",
-      "titleMatchScore": 0.082
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.136
     },
     {
       "recordId": "PG0410",
@@ -2663,12 +2807,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0422",
-      "category": "possible-headline-match",
-      "url": "https://timesofindia.indiatimes.com/city/pune/maharashtra-to-sign-72-mous-for-16000-crore-investment-in-pune-region-in-next-two-years/articleshow/108313566.cms",
+      "recordId": "PG0324",
+      "category": "reachable-pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MSME_RAMP_Proof_05-10-2024.pdf",
       "httpStatus": 200,
-      "pageTitle": "Maha: Maharashtra to sign 72 MoUs for ₹16,000 crore investment in Pune region in next two years | Pune News - The Times of India",
-      "titleMatchScore": 0.694
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0423",
@@ -2687,14 +2831,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0425",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_PBIS_MARCH_2024_Proof1_14-3-24_2.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
       "recordId": "PG0426",
       "category": "no-public-url",
       "url": null,
@@ -2703,28 +2839,36 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0429",
-      "category": "reachable-title-review",
-      "url": "https://mcciapune.com/events/events-detail-page/1791/",
+      "recordId": "PG0409",
+      "category": "homepage-only",
+      "url": "https://www.youtube.com",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.091
+      "pageTitle": "YouTube",
+      "titleMatchScore": 0.082
     },
     {
-      "recordId": "PG0430",
+      "recordId": "PG0422",
+      "category": "possible-headline-match",
+      "url": "https://timesofindia.indiatimes.com/city/pune/maharashtra-to-sign-72-mous-for-16000-crore-investment-in-pune-region-in-next-two-years/articleshow/108313566.cms",
+      "httpStatus": 200,
+      "pageTitle": "Maha: Maharashtra to sign 72 MoUs for ₹16,000 crore investment in Pune region in next two years | Pune News - The Times of India",
+      "titleMatchScore": 0.694
+    },
+    {
+      "recordId": "PG0342",
       "category": "reachable-pdf",
-      "url": "https://eoibelgrade.gov.in/public_files/assets/pdf/MCCIA_PIBS_28_Aug_2024.pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/MSME_Facilitation_Report_Final_28-8-2024.pdf",
       "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0431",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-detail-page/2287/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.263
+      "recordId": "PG0344",
+      "category": "unreachable",
+      "url": "https://gipe.ac.in/activities-events/post-budget-discussion-2024/",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0433",
@@ -2735,18 +2879,10 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0434",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/ajaydeshkar_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-44-3d-engineering-activity-7159806444874145792-GwbC",
-      "httpStatus": 200,
-      "pageTitle": "उद्योगधंदा कसा काय? | Episode 44 - 3D Engineering | Ajay Deshkar",
-      "titleMatchScore": 0.333
-    },
-    {
-      "recordId": "PG0435",
-      "category": "reachable-pdf",
-      "url": "https://www.infobusiness.bcci.bg/content/file/MCCIA_PIBS_2024_compressed.pdf",
-      "httpStatus": 200,
+      "recordId": "PG0432",
+      "category": "unreachable",
+      "url": "https://www.loksatta.com/pune/pune-international-business-summit-going-to-held-on-26-and-27-february-pune-print-news-stj-05-psg-98-4220490/",
+      "httpStatus": 404,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -2765,6 +2901,22 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0405",
+      "category": "reachable-title-review",
+      "url": "https://thekarbhari.com/mccia-voting-awareness-initiative-of-mccia-for-voter-awareness/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA | Voting Awareness | मतदार जागृतीसाठी ‘एमसीसीआयए’चा पुढाकार ‘वोट कर पुणेकर’ मोहिमेद्वारे नागरिकांना मतदानाचे आवाहन - TheKarbhari",
+      "titleMatchScore": 0.326
+    },
+    {
+      "recordId": "PG0434",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/ajaydeshkar_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-44-3d-engineering-activity-7159806444874145792-GwbC",
+      "httpStatus": 200,
+      "pageTitle": "उद्योगधंदा कसा काय? | Episode 44 - 3D Engineering | Ajay Deshkar",
+      "titleMatchScore": 0.333
     },
     {
       "recordId": "PG0440",
@@ -2903,12 +3055,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0461",
+      "recordId": "PG0380",
       "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/printmedia2023/mccia_handbook_on_cybersecurity_initiatives.pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA_SEC_Report_2024_FINAL_PDF_22-11-2024.pdf",
       "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0429",
+      "category": "reachable-title-review",
+      "url": "https://mcciapune.com/events/events-detail-page/1791/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.091
     },
     {
       "recordId": "PG0462",
@@ -2999,14 +3159,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0473",
-      "category": "unreachable",
-      "url": "https://www.linkedin.com/posts/mcciapune_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-31-torai-activity-7129329579474714626-fgc0",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
       "recordId": "PG0475",
       "category": "no-public-url",
       "url": null,
@@ -3037,6 +3189,14 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0431",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/events/events-detail-page/2287/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.263
     },
     {
       "recordId": "PG0480",
@@ -3071,6 +3231,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0473",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_%E0%A4%89%E0%A4%A6%E0%A4%AF%E0%A4%97%E0%A4%A7%E0%A4%A6-%E0%A4%95%E0%A4%B8-%E0%A4%95%E0%A4%AF-episode-31-torai-activity-7129329579474714626-fgc0",
+      "httpStatus": 200,
+      "pageTitle": "उद्योगधंदा कसा काय? | Episode 31 - Tor.ai | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.368
+    },
+    {
       "recordId": "PG0485",
       "category": "no-public-url",
       "url": null,
@@ -3085,14 +3253,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0487",
-      "category": "reachable-title-review",
-      "url": "https://www.hindustantimes.com/cities/pune-news/bits-and-bytes-know-about-startup-business-news-in-pune-101698429087091.html",
-      "httpStatus": 200,
-      "pageTitle": "Bits and Bytes: Know about startup, business news in Pune | Hindustan Times",
-      "titleMatchScore": 0.318
     },
     {
       "recordId": "PG0488",
@@ -3231,14 +3391,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0505",
-      "category": "reachable-pdf",
-      "url": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
       "recordId": "PG0506",
       "category": "no-public-url",
       "url": null,
@@ -3341,14 +3493,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0520",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_unlocking-opportunities-for-smes-with-ondc-activity-7072475488039968768-iq5n",
-      "httpStatus": 200,
-      "pageTitle": "Unlocking Opportunities for SMEs with ONDC: Exploring the Possibilities | Prashant Girbane",
-      "titleMatchScore": 0.331
     },
     {
       "recordId": "PG0521",
@@ -3461,14 +3605,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0535",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-detail-page/1913/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.162
     },
     {
       "recordId": "PG0536",
@@ -3631,6 +3767,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0557",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/equity-buzzword-at-mccia-womens-day-event-8490043/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG0558",
       "category": "no-public-url",
       "url": null,
@@ -3639,20 +3783,36 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0561",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_iima-activity-7035263688974446592-XkFv",
+      "recordId": "PG0425",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_PBIS_MARCH_2024_Proof1_14-3-24_2.pdf",
       "httpStatus": 200,
-      "pageTitle": "#iima | Prashant Girbane | 14 comments",
-      "titleMatchScore": 0.092
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
-      "recordId": "PG0562",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_we-know-that-requirement-gathering-is-of-activity-7032917415092961280-vNla",
+      "recordId": "PG0435",
+      "category": "reachable-pdf",
+      "url": "https://www.infobusiness.bcci.bg/content/file/MCCIA_PIBS_2024_compressed.pdf",
       "httpStatus": 200,
-      "pageTitle": "We know that requirement gathering is of utmost importance to ensure that what&#39;s being built will be used and paid for. The Southern Command of the Indian Army (which was raised on 01 April 1895 at… | Prashant Girbane",
-      "titleMatchScore": 0.333
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0520",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_unlocking-opportunities-for-smes-with-ondc-activity-7072475488039968768-iq5n",
+      "httpStatus": 200,
+      "pageTitle": "Unlocking Opportunities for SMEs with ONDC: Exploring the Possibilities | Prashant Girbane",
+      "titleMatchScore": 0.331
+    },
+    {
+      "recordId": "PG0563",
+      "category": "restricted",
+      "url": "https://punemirror.com/business/arming-msmes-startups-for-defence-sector-right-step/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0565",
@@ -3871,14 +4031,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0592",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_photos-of-mccia-annual-award-ceremony-2022-activity-7016815645631668225-DNAD",
-      "httpStatus": 200,
-      "pageTitle": "#innovation #entrepreneurship #csr | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA) | 10 comments",
-      "titleMatchScore": 0.284
-    },
-    {
       "recordId": "PG0593",
       "category": "no-public-url",
       "url": null,
@@ -3903,20 +4055,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0596",
+      "recordId": "PG0562",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_msmes-activity-7015714612528492544-TCRZ",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_we-know-that-requirement-gathering-is-of-activity-7032917415092961280-vNla",
       "httpStatus": 200,
-      "pageTitle": "#msmes | Prashant Girbane",
-      "titleMatchScore": 0.182
-    },
-    {
-      "recordId": "PG0597",
-      "category": "reachable-title-review",
-      "url": "https://www.esakal.com/pune/speed-up-electronic-inspection-of-various-products-pjp78",
-      "httpStatus": 200,
-      "pageTitle": "Pune : विविध उत्पादनांच्या इलेक्ट्रॉनिक तपासणीला येणार वेग",
-      "titleMatchScore": 0.069
+      "pageTitle": "We know that requirement gathering is of utmost importance to ensure that what&#39;s being built will be used and paid for. The Southern Command of the Indian Army (which was raised on 01 April 1895 at… | Prashant Girbane",
+      "titleMatchScore": 0.333
     },
     {
       "recordId": "PG0598",
@@ -4007,12 +4151,28 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0592",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_photos-of-mccia-annual-award-ceremony-2022-activity-7016815645631668225-DNAD",
+      "httpStatus": 200,
+      "pageTitle": "#innovation #entrepreneurship #csr | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA) | 10 comments",
+      "titleMatchScore": 0.284
+    },
+    {
       "recordId": "PG0610",
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0561",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_iima-activity-7035263688974446592-XkFv",
+      "httpStatus": 200,
+      "pageTitle": "#iima | Prashant Girbane | 14 comments",
+      "titleMatchScore": 0.092
     },
     {
       "recordId": "PG0612",
@@ -4077,6 +4237,14 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0596",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_msmes-activity-7015714612528492544-TCRZ",
+      "httpStatus": 200,
+      "pageTitle": "#msmes | Prashant Girbane",
+      "titleMatchScore": 0.182
     },
     {
       "recordId": "PG0621",
@@ -4263,12 +4431,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0644",
-      "category": "homepage-only",
-      "url": "https://agrospectrumindia.com/2022/11/08/mahratta-chamber-launches-an-initiative-to-support-agri-tech-start-ups.html",
+      "recordId": "PG0597",
+      "category": "reachable-title-review",
+      "url": "https://www.esakal.com/pune/speed-up-electronic-inspection-of-various-products-pjp78",
       "httpStatus": 200,
-      "pageTitle": "AgroSpectrum India - Your Trusted Partner in Agricultural Business",
-      "titleMatchScore": 0.317
+      "pageTitle": "Pune : विविध उत्पादनांच्या इलेक्ट्रॉनिक तपासणीला येणार वेग",
+      "titleMatchScore": 0.069
+    },
+    {
+      "recordId": "PG0487",
+      "category": "reachable-title-review",
+      "url": "https://www.hindustantimes.com/cities/pune-news/bits-and-bytes-know-about-startup-business-news-in-pune-101698429087091.html",
+      "httpStatus": 200,
+      "pageTitle": "Bits and Bytes: Know about startup, business news in Pune | Hindustan Times",
+      "titleMatchScore": 0.318
     },
     {
       "recordId": "PG0646",
@@ -4279,12 +4455,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0647",
+      "recordId": "PG0535",
       "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_agritech-startups-agritech-activity-6995627855967629312-_jQK",
+      "url": "https://www.mcciapune.com/events/events-detail-page/1913/",
       "httpStatus": 200,
-      "pageTitle": "#agritech #startups #agritech #maharashtra | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.364
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.162
     },
     {
       "recordId": "PG0648",
@@ -4344,11 +4520,11 @@
     },
     {
       "recordId": "PG0655",
-      "category": "possible-headline-match",
+      "category": "restricted",
       "url": "https://punemirror.com/pune-mirror-explore/rahane-mccia-batting-together-on-agri-field/",
-      "httpStatus": 200,
-      "pageTitle": "Rahane, MCCIA batting together on agri field - Pune Times Mirror",
-      "titleMatchScore": 0.706
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0656",
@@ -4453,6 +4629,14 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0647",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_agritech-startups-agritech-activity-6995627855967629312-_jQK",
+      "httpStatus": 200,
+      "pageTitle": "#agritech #startups #agritech #maharashtra | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.364
     },
     {
       "recordId": "PG0674",
@@ -4675,6 +4859,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0461",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/printmedia2023/mccia_handbook_on_cybersecurity_initiatives.pdf",
+      "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -5095,10 +5287,26 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0670",
+      "category": "unreachable",
+      "url": "https://www.loksatta.com/pune/training-on-use-of-artificial-intelligence-by-mccia-on-1st-november-pune-print-news-amy-95-3222579/",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG0757",
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0758",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/maharashtra-govt-to-set-up-electronic-park-in-ranjangaon-industrial-area-7965254/",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -5221,14 +5429,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0774",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_trade-investments-internationaltrade-activity-6922920255652605952-twgi",
-      "httpStatus": 200,
-      "pageTitle": "Prashant Girbane posted on LinkedIn",
-      "titleMatchScore": 0.353
     },
     {
       "recordId": "PG0775",
@@ -6327,12 +6527,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0915",
-      "category": "reachable-pdf",
-      "url": "https://www.eqmagpro.com/wp-content/uploads/2022/04/Digital_EQ-March-2022_compressed.pdf",
+      "recordId": "PG0774",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_trade-investments-internationaltrade-activity-6922920255652605952-twgi",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "Prashant Girbane posted on LinkedIn",
+      "titleMatchScore": 0.353
     },
     {
       "recordId": "PG0916",
@@ -6527,14 +6727,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0940",
-      "category": "reachable-title-review",
-      "url": "https://mcciapune.com/events/events-detail-page/1080/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.091
-    },
-    {
       "recordId": "PG0941",
       "category": "no-public-url",
       "url": null,
@@ -6619,6 +6811,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0952",
+      "category": "restricted",
+      "url": "https://themachinemaker.com/news/mccia-defence-manufacturing-1102/",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -6759,6 +6959,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG0970",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/pune-for-msmes-a-mixed-bag-with-some-relief-7752255/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG0971",
       "category": "no-public-url",
       "url": null,
@@ -6832,11 +7040,11 @@
     },
     {
       "recordId": "PG0980",
-      "category": "reachable-title-review",
+      "category": "restricted",
       "url": "https://indianexpress.com/article/cities/pune/pune-union-budget-covid-third-wave-7747034/",
-      "httpStatus": 200,
-      "pageTitle": "‘Special attention for MSMEs, cut in customs duty needed as firms attempt to recover after third wave’ | Pune News - The Indian Express",
-      "titleMatchScore": 0.253
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG0981",
@@ -6935,14 +7143,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG0993",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_msme-activity-6889474392645017600-DFtz",
-      "httpStatus": 200,
-      "pageTitle": "#msme | Prashant Girbane",
-      "titleMatchScore": 0.247
-    },
-    {
       "recordId": "PG0994",
       "category": "no-public-url",
       "url": null,
@@ -6987,6 +7187,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1001",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/lockdowns-to-result-in-economic-hardships-mccia-president-7719785/",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -7239,12 +7447,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1034",
-      "category": "possible-headline-match",
-      "url": "https://www.investindia.gov.in/team-india-blogs/startup-showcase",
+      "recordId": "PG1033",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/pune-covid-19-omicron-lockdown-mahratta-chamber-of-commerce-7700988/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0993",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/prashant-girbane-245840_msme-activity-6889474392645017600-DFtz",
       "httpStatus": 200,
-      "pageTitle": "Startup Showcase",
-      "titleMatchScore": 0.5
+      "pageTitle": "#msme | Prashant Girbane",
+      "titleMatchScore": 0.247
     },
     {
       "recordId": "PG1035",
@@ -7655,12 +7871,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1086",
-      "category": "possible-headline-match",
-      "url": "https://marathi.indiatimes.com/maharashtra/pune-news/pune-is-a-leader-in-exports/articleshow/87862680.cms",
+      "recordId": "PG0430",
+      "category": "reachable-pdf",
+      "url": "https://eoibelgrade.gov.in/public_files/assets/pdf/MCCIA_PIBS_28_Aug_2024.pdf",
       "httpStatus": 200,
-      "pageTitle": "Certificate Of Origin,निर्यातीत पुणे अग्रेसर - pune is a leader in exports - Maharashtra Times",
-      "titleMatchScore": 0.667
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG1087",
@@ -8295,6 +8511,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG1086",
+      "category": "possible-headline-match",
+      "url": "https://marathi.indiatimes.com/maharashtra/pune-news/pune-is-a-leader-in-exports/articleshow/87862680.cms",
+      "httpStatus": 200,
+      "pageTitle": "Certificate Of Origin,निर्यातीत पुणे अग्रेसर - pune is a leader in exports - Maharashtra Times",
+      "titleMatchScore": 0.667
+    },
+    {
       "recordId": "PG1168",
       "category": "no-public-url",
       "url": null,
@@ -8439,12 +8663,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1188",
+      "recordId": "PG1107",
       "category": "unreachable",
-      "url": "https://www.moneycontrol.com/news/opinion/india-needs-to-empower-its-women-entrepreneurs-XXXX.html",
+      "url": "https://www.loksatta.com/pune/companies-in-pune-reached-90-percent-of-production-in-october-2021-zws-70-2661887/",
       "httpStatus": 404,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0940",
+      "category": "reachable-title-review",
+      "url": "https://mcciapune.com/events/events-detail-page/1080/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.091
     },
     {
       "recordId": "PG1189",
@@ -8563,6 +8795,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1034",
+      "category": "restricted",
+      "url": "https://www.investindia.gov.in/team-india-blogs/startup-showcase",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -8703,14 +8943,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1227",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_missionvayu-activity-6813068613310922752-ubz0",
-      "httpStatus": 200,
-      "pageTitle": "#missionvayu | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.389
-    },
-    {
       "recordId": "PG1228",
       "category": "no-public-url",
       "url": null,
@@ -8845,6 +9077,14 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1227",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_missionvayu-activity-6813068613310922752-ubz0",
+      "httpStatus": 200,
+      "pageTitle": "#missionvayu | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.389
     },
     {
       "recordId": "PG1247",
@@ -9231,6 +9471,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG1296",
+      "category": "restricted",
+      "url": "https://www.financialexpress.com/life/pune-model-of-collaboration-among-all-covid-stakeholders-is-going-pan-india-2247462/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG1297",
       "category": "no-public-url",
       "url": null,
@@ -9415,14 +9663,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1321",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/printmedia/Pune_Platform_for__COVID-19_Response_28.4.21.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
       "recordId": "PG1322",
       "category": "no-public-url",
       "url": null,
@@ -9531,6 +9771,22 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1188",
+      "category": "unreachable",
+      "url": "https://www.moneycontrol.com/news/opinion/india-needs-to-empower-its-women-entrepreneurs-XXXX.html",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1337",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/pune-to-fly-in-bipap-machines-and-oxygen-concentrators-from-singapore-7287421/",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -10303,14 +10559,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1440",
-      "category": "possible-headline-match",
-      "url": "https://timesofindia.indiatimes.com/city/pune/industry-leaders-urge-pm-cm-to-avoid-drastic-steps/articleshow/81767171.cms",
-      "httpStatus": 200,
-      "pageTitle": "Industry leaders urge PM, CM to avoid drastic steps | Pune News - The Times of India",
-      "titleMatchScore": 0.667
-    },
-    {
       "recordId": "PG1441",
       "category": "no-public-url",
       "url": null,
@@ -10527,6 +10775,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG1468",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/amid-industrial-recovery-micro-units-lag-behind-due-to-credit-woes-7211500/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG1469",
       "category": "no-public-url",
       "url": null,
@@ -10559,12 +10815,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1473",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-detail-page/1166/",
+      "recordId": "PG1440",
+      "category": "possible-headline-match",
+      "url": "https://timesofindia.indiatimes.com/city/pune/industry-leaders-urge-pm-cm-to-avoid-drastic-steps/articleshow/81767171.cms",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.071
+      "pageTitle": "Industry leaders urge PM, CM to avoid drastic steps | Pune News - The Times of India",
+      "titleMatchScore": 0.667
     },
     {
       "recordId": "PG1474",
@@ -10923,14 +11179,6 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG1520",
-      "category": "restricted",
-      "url": "https://mccia.medium.com/planned-centres-of-economic-activity-570791b19e22",
-      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -11375,10 +11623,10 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1576",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/January_2021_-_Web.pdf",
-      "httpStatus": 200,
+      "recordId": "PG1520",
+      "category": "restricted",
+      "url": "https://mccia.medium.com/planned-centres-of-economic-activity-570791b19e22",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -11389,14 +11637,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG1578",
-      "category": "possible-headline-match",
-      "url": "https://www.thebridgechronicle.com/pune/in-need-of-credit-heres-how-entrepreneurs-can-avail-finance-government-schemes",
-      "httpStatus": 200,
-      "pageTitle": "In need of credit? Here's how entrepreneurs can avail finance, government schemes",
-      "titleMatchScore": 0.5
     },
     {
       "recordId": "PG1579",
@@ -11647,6 +11887,30 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG1611",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/business/companies/75-of-companies-will-get-to-pre-covid-levels-by-june-2021-7075848/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1578",
+      "category": "possible-headline-match",
+      "url": "https://www.thebridgechronicle.com/pune/in-need-of-credit-heres-how-entrepreneurs-can-avail-finance-government-schemes",
+      "httpStatus": 200,
+      "pageTitle": "In need of credit? Here's how entrepreneurs can avail finance, government schemes",
+      "titleMatchScore": 0.5
+    },
+    {
+      "recordId": "PG0304",
+      "category": "unreachable",
+      "url": "https://knnindia.co.in/news/newsdetails/msme/mccia-survey-reveals-37-companies-in-pune-report-20-revenue-growth",
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG1614",
       "category": "no-public-url",
       "url": null,
@@ -11871,14 +12135,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1643",
-      "category": "restricted",
-      "url": "https://mccia.medium.com/atmanirbhar-bharat-self-reliance-in-the-backdrop-of-covid-19-c2f3c3a2544d",
-      "httpStatus": 403,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
       "recordId": "PG1644",
       "category": "no-public-url",
       "url": null,
@@ -11933,6 +12189,14 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1473",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/events/events-detail-page/1166/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.071
     },
     {
       "recordId": "PG1652",
@@ -12139,6 +12403,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1643",
+      "category": "restricted",
+      "url": "https://mccia.medium.com/atmanirbhar-bharat-self-reliance-in-the-backdrop-of-covid-19-c2f3c3a2544d",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -12443,6 +12715,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1651",
+      "category": "restricted",
+      "url": "https://preprod.indianexpress.com/article/india/covid-pandemic-has-proven-one-cant-work-in-silos-need-better-coordination-sudhir-mehta-6731159/",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -13047,6 +13327,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG1321",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/printmedia/Pune_Platform_for__COVID-19_Response_28.4.21.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG1795",
       "category": "no-public-url",
       "url": null,
@@ -13207,6 +13495,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG1817",
+      "category": "restricted",
+      "url": "https://indianexpress.com/article/cities/pune/pune-coronavirus-impact-fiscal-stimulus-6325796/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG1818",
       "category": "no-public-url",
       "url": null,
@@ -13235,14 +13531,6 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG1822",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/March_2020.pdf",
-      "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -13375,18 +13663,10 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1840",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-detail-page/1078/",
+      "recordId": "PG1576",
+      "category": "reachable-pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/January_2021_-_Web.pdf",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.071
-    },
-    {
-      "recordId": "PG1841",
-      "category": "unreachable",
-      "url": "https://www.icci.it/first-international-business-summit-of-mccia/",
-      "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -13511,14 +13791,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1857",
-      "category": "reachable-title-review",
-      "url": "https://maharashtratimes.com/maharashtra/pune-news/organizing-a-demonstration-by-the-maratha-chamber/articleshow/74066770.cms",
-      "httpStatus": 200,
-      "pageTitle": "मराठा चेंबरतर्फेप्रदर्शनाचे आयोजन - organizing a demonstration by the maratha chamber - Maharashtra Times",
-      "titleMatchScore": 0.291
-    },
-    {
       "recordId": "PG1858",
       "category": "no-public-url",
       "url": null,
@@ -13581,14 +13853,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG1866",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_min-of-msme-mccia-organizing-the-national-activity-6632517927516114944-sPXc",
-      "httpStatus": 200,
-      "pageTitle": "#manufacturing #sme #msme #pune #evehicles #emobility #innovation #startups | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.172
     },
     {
       "recordId": "PG1867",
@@ -13861,14 +14125,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG1901",
-      "category": "possible-headline-match",
-      "url": "https://www.loksatta.com/videos/vishesh-vartankan/2074647/budget-2020-prashant-girbane-pune/",
-      "httpStatus": 200,
-      "pageTitle": "डिजिटल इकॉनॉमीवरील भर भविष्याच्या दृष्टीनेही उत्तम : प्रशांत गिरबने | Budget 2020 Prashant Girbane Pune Trending & Viral Videos News at Loksatta",
-      "titleMatchScore": 0.5
     },
     {
       "recordId": "PG1902",
@@ -14215,18 +14471,18 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1946",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/printmedia/MCCIA_Annual_Awards_2020.pdf",
+      "recordId": "PG1866",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_min-of-msme-mccia-organizing-the-national-activity-6632517927516114944-sPXc",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "#manufacturing #sme #msme #pune #evehicles #emobility #innovation #startups | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.172
     },
     {
-      "recordId": "PG1947",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/ER-BOOK-WEB-VERSION_N5kXHDK.pdf",
-      "httpStatus": 200,
+      "recordId": "PG1901",
+      "category": "unreachable",
+      "url": "https://www.loksatta.com/videos/vishesh-vartankan/2074647/budget-2020-prashant-girbane-pune/",
+      "httpStatus": 404,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -14511,6 +14767,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG1857",
+      "category": "reachable-title-review",
+      "url": "https://maharashtratimes.com/maharashtra/pune-news/organizing-a-demonstration-by-the-maratha-chamber/articleshow/74066770.cms",
+      "httpStatus": 200,
+      "pageTitle": "मराठा चेंबरतर्फेप्रदर्शनाचे आयोजन - organizing a demonstration by the maratha chamber - Maharashtra Times",
+      "titleMatchScore": 0.291
+    },
+    {
       "recordId": "PG1985",
       "category": "no-public-url",
       "url": null,
@@ -14599,12 +14863,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG1996",
-      "category": "restricted",
-      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1591766",
-      "httpStatus": 403,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "recordId": "PG1840",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/events/events-detail-page/1078/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.071
     },
     {
       "recordId": "PG1997",
@@ -14775,6 +15039,14 @@
       "titleMatchScore": 0.552
     },
     {
+      "recordId": "PG1996",
+      "category": "restricted",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1591766",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG2019",
       "category": "no-public-url",
       "url": null,
@@ -14811,6 +15083,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1822",
+      "category": "reachable-pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/March_2020.pdf",
+      "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -14933,14 +15213,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2040",
-      "category": "possible-headline-match",
-      "url": "https://marathi.indiatimes.com/maharashtra/pune-news/pune-the-future-startup-city-of-india/articleshow/70960878.cms",
-      "httpStatus": 200,
-      "pageTitle": "पुणे स्टार्टअप हब होईल - pune the future startup city of india - Maharashtra Times",
-      "titleMatchScore": 0.5
     },
     {
       "recordId": "PG2041",
@@ -15583,9 +15855,9 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2121",
+      "recordId": "PG1946",
       "category": "reachable-pdf",
-      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@asia/@ro-bangkok/@sro-new_delhi/documents/meetingdocument/wcms_711020.pdf",
+      "url": "https://www.mcciapune.com/media/printmedia/MCCIA_Annual_Awards_2020.pdf",
       "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
@@ -16271,6 +16543,22 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG2121",
+      "category": "reachable-pdf",
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@asia/@ro-bangkok/@sro-new_delhi/documents/meetingdocument/wcms_711020.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2040",
+      "category": "possible-headline-match",
+      "url": "https://marathi.indiatimes.com/maharashtra/pune-news/pune-the-future-startup-city-of-india/articleshow/70960878.cms",
+      "httpStatus": 200,
+      "pageTitle": "पुणे स्टार्टअप हब होईल - pune the future startup city of india - Maharashtra Times",
+      "titleMatchScore": 0.5
+    },
+    {
       "recordId": "PG2211",
       "category": "no-public-url",
       "url": null,
@@ -16383,12 +16671,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2225",
-      "category": "unreachable",
-      "url": "https://knnindia.co.in/news/newsdetails/msme/mccia-and-giz-sign-mou-to-strengthen-innovation-ecosystem-in-pune",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "recordId": "PG1841",
+      "category": "possible-headline-match",
+      "url": "https://www.icci.it/first-international-business-summit-of-mccia/",
+      "httpStatus": 200,
+      "pageTitle": "First International Business Summit of MCCIA – Camera di Commercio Indiana per l'Italia",
+      "titleMatchScore": 0.719
     },
     {
       "recordId": "PG2226",
@@ -16621,14 +16909,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2255",
-      "category": "reachable-title-review",
-      "url": "https://www.hindustantimes.com/pune-news/increased-interaction-genuine-outreach-helping-solve-problems/story-zd8k1svl0Ecy2Wx5QgJhLO.html",
-      "httpStatus": 200,
-      "pageTitle": "‘Increased interaction, genuine outreach, helping solve problems’ | Hindustan Times",
-      "titleMatchScore": 0.295
     },
     {
       "recordId": "PG2256",
@@ -17027,6 +17307,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1947",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/ER-BOOK-WEB-VERSION_N5kXHDK.pdf",
+      "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -18015,14 +18303,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2432",
-      "category": "possible-headline-match",
-      "url": "https://www.hindustantimes.com/pune-news/pune-industry-terms-budget-2018-as-moderate/story-jMsfoyaAHoXC0ZMNOkTDFI.html",
-      "httpStatus": 200,
-      "pageTitle": "Pune industry terms Budget 2018 as ‘moderate’ | Hindustan Times",
-      "titleMatchScore": 0.6
-    },
-    {
       "recordId": "PG2433",
       "category": "no-public-url",
       "url": null,
@@ -18189,14 +18469,6 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2454",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/mcciaadmin/advisory/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.0
     },
     {
       "recordId": "PG2455",
@@ -18599,34 +18871,50 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2505",
-      "category": "reachable-title-review",
-      "url": "https://www.youtube.com/watch?v=UCwBcXsyfi8",
-      "httpStatus": 200,
-      "pageTitle": "Addressing MCCIA's 2nd Pune International Business Summit - YouTube",
-      "titleMatchScore": 0.057
+      "recordId": "PG0644",
+      "category": "unreachable",
+      "url": "https://agrospectrumindia.com/2022/11/08/mahratta-chamber-launches-an-initiative-to-support-agri-tech-start-ups.html",
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG2506",
       "category": "homepage-only",
       "url": "https://timesofindia.indiatimes.com",
       "httpStatus": 200,
-      "pageTitle": "TOI - Breaking News, Latest News, India News, World News, Bollywood, Sports, Business and Political News | The Times of India",
-      "titleMatchScore": 0.31
+      "pageTitle": "US News: US News, Top News in India, US election news, Business news, Sports & International News | Times of India",
+      "titleMatchScore": 0.288
     },
     {
-      "recordId": "PG2507",
-      "category": "homepage-only",
-      "url": "https://www.thehindubusinessline.com",
+      "recordId": "PG2255",
+      "category": "reachable-title-review",
+      "url": "https://www.hindustantimes.com/pune-news/increased-interaction-genuine-outreach-helping-solve-problems/story-zd8k1svl0Ecy2Wx5QgJhLO.html",
       "httpStatus": 200,
-      "pageTitle": "Business News Today: Latest Business News, Finance News | The HinduBusinessLine",
-      "titleMatchScore": 0.404
+      "pageTitle": "‘Increased interaction, genuine outreach, helping solve problems’ | Hindustan Times",
+      "titleMatchScore": 0.295
     },
     {
       "recordId": "PG2508",
-      "category": "unreachable",
+      "category": "homepage-only",
       "url": "https://www.thebridgechronicle.com",
+      "httpStatus": 200,
+      "pageTitle": "The Bridge Chronicle - Breaking News | Politics, Sports, Business, Lifestyle News from India & World",
+      "titleMatchScore": 0.389
+    },
+    {
+      "recordId": "PG2511",
+      "category": "unreachable",
+      "url": "https://www.punemirror",
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2512",
+      "category": "restricted",
+      "url": "https://punekarnews.in",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -18639,44 +18927,28 @@
       "titleMatchScore": 0.5
     },
     {
-      "recordId": "PG2510",
-      "category": "unreachable",
-      "url": "https://sudhirmehta.in/",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2511",
-      "category": "unreachable",
-      "url": "https://www.punemirror",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2512",
-      "category": "homepage-only",
-      "url": "https://punekarnews.in",
+      "recordId": "PG2432",
+      "category": "possible-headline-match",
+      "url": "https://www.hindustantimes.com/pune-news/pune-industry-terms-budget-2018-as-moderate/story-jMsfoyaAHoXC0ZMNOkTDFI.html",
       "httpStatus": 200,
-      "pageTitle": "Punekar News – Pune News, Pimpri-Chinchwad News",
-      "titleMatchScore": 0.483
+      "pageTitle": "Pune industry terms Budget 2018 as ‘moderate’ | Hindustan Times",
+      "titleMatchScore": 0.6
     },
     {
-      "recordId": "PG2513",
+      "recordId": "PG2507",
       "category": "homepage-only",
-      "url": "https://puneinternationalcentre.org",
+      "url": "https://www.thehindubusinessline.com",
       "httpStatus": 200,
-      "pageTitle": "Home - Pune International Centre",
-      "titleMatchScore": 0.807
+      "pageTitle": "Business News Today: Latest Business News, Finance News | The HinduBusinessLine",
+      "titleMatchScore": 0.404
     },
     {
-      "recordId": "PG2514",
+      "recordId": "PG2505",
       "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/publications/publication-annual-report/",
+      "url": "https://www.youtube.com/watch?v=UCwBcXsyfi8",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.133
+      "pageTitle": "- YouTube",
+      "titleMatchScore": 0.167
     },
     {
       "recordId": "PG2515",
@@ -18687,28 +18959,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2516",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/initiatives/ppcr/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.222
-    },
-    {
       "recordId": "PG2517",
       "category": "unreachable",
       "url": "https://www.youtube.com/playlist?list=",
       "httpStatus": 404,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2518",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/initiatives/pibs/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.222
     },
     {
       "recordId": "PG2519",
@@ -18719,12 +18975,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2520",
+      "recordId": "PG2454",
       "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/mcciaadmin/past_presidents_tab/",
+      "url": "https://www.mcciapune.com/mcciaadmin/advisory/",
       "httpStatus": 200,
       "pageTitle": "MCCIA",
-      "titleMatchScore": 0.083
+      "titleMatchScore": 0.0
     },
     {
       "recordId": "PG2521",
@@ -18743,20 +18999,12 @@
       "titleMatchScore": 0.219
     },
     {
-      "recordId": "PG2523",
-      "category": "homepage-only",
-      "url": "https://www.mypunepulse.com",
-      "httpStatus": 200,
-      "pageTitle": "PUNE PULSE - Trusted-Connected-Targeted",
-      "titleMatchScore": 0.462
-    },
-    {
-      "recordId": "PG2524",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/initiatives/msme/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.222
+      "recordId": "PG0915",
+      "category": "unreachable",
+      "url": "https://www.eqmagpro.com/wp-content/uploads/2022/04/Digital_EQ-March-2022_compressed.pdf",
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG2525",
@@ -18767,20 +19015,20 @@
       "titleMatchScore": 0.667
     },
     {
-      "recordId": "PG2526",
-      "category": "homepage-only",
-      "url": "https://www.mcciapune.com",
+      "recordId": "PG2516",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/initiatives/ppcr/",
       "httpStatus": 200,
       "pageTitle": "MCCIA",
-      "titleMatchScore": 0.556
+      "titleMatchScore": 0.222
     },
     {
-      "recordId": "PG2527",
-      "category": "unreachable",
-      "url": "https://www.linkedin.com/company/mcciapune",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "recordId": "PG2514",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/publications/publication-annual-report/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.133
     },
     {
       "recordId": "PG2528",
@@ -18789,6 +19037,38 @@
       "httpStatus": 404,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2520",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/mcciaadmin/past_presidents_tab/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.083
+    },
+    {
+      "recordId": "PG2518",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/initiatives/pibs/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.222
+    },
+    {
+      "recordId": "PG2513",
+      "category": "homepage-only",
+      "url": "https://puneinternationalcentre.org",
+      "httpStatus": 200,
+      "pageTitle": "Home - Pune International Centre",
+      "titleMatchScore": 0.807
+    },
+    {
+      "recordId": "PG2524",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/initiatives/msme/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.222
     },
     {
       "recordId": "PG2529",
@@ -18807,12 +19087,44 @@
       "titleMatchScore": 0.154
     },
     {
-      "recordId": "PG2532",
+      "recordId": "PG2536",
+      "category": "restricted",
+      "url": "https://indianexpress.com",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2523",
       "category": "homepage-only",
-      "url": "https://www.loksatta.com",
+      "url": "https://www.mypunepulse.com",
       "httpStatus": 200,
-      "pageTitle": "Marathi News| Marathi News Paper| Latest Marathi News, News Marathi| Latest News In Marathi| News In Marathi| Maharashtra Breaking News in Marathi| Marathi Newspaper| मराठी लेटेस्ट न्यूज| मराठी ब्रेकिंग न्यूज| ताज्या मराठी बातम्या| मराठी बातम्या| आजच्या मराठी बातम्या| महाराष्ट्र मुंबई न्यूज लाईव्ह at Loksatta",
-      "titleMatchScore": 0.5
+      "pageTitle": "PUNE PULSE - Trusted-Connected-Targeted",
+      "titleMatchScore": 0.462
+    },
+    {
+      "recordId": "PG2537",
+      "category": "unreachable",
+      "url": "https://www.indianembassyqatar",
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2535",
+      "category": "homepage-only",
+      "url": "https://www.kpit.com",
+      "httpStatus": 200,
+      "pageTitle": "Redesign Home",
+      "titleMatchScore": 0.381
+    },
+    {
+      "recordId": "PG2532",
+      "category": "unreachable",
+      "url": "https://www.loksatta.com",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG2533",
@@ -18823,6 +19135,54 @@
       "titleMatchScore": 1.0
     },
     {
+      "recordId": "PG2527",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/company/mcciapune",
+      "httpStatus": 200,
+      "pageTitle": "Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA) | LinkedIn",
+      "titleMatchScore": 0.167
+    },
+    {
+      "recordId": "PG2541",
+      "category": "homepage-only",
+      "url": "https://thewire.in",
+      "httpStatus": 200,
+      "pageTitle": "The Wire: The Wire News India, Latest News,News from India, Politics, External Affairs, Science, Economics, Gender and Culture",
+      "titleMatchScore": 0.148
+    },
+    {
+      "recordId": "PG2543",
+      "category": "restricted",
+      "url": "https://punemirror.com",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2544",
+      "category": "restricted",
+      "url": "https://mccia.medium.com",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2540",
+      "category": "restricted",
+      "url": "https://twitter.com/Girbane",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2526",
+      "category": "homepage-only",
+      "url": "https://www.mcciapune.com",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.556
+    },
+    {
       "recordId": "PG2534",
       "category": "homepage-only",
       "url": "https://www.livemint.com",
@@ -18831,26 +19191,10 @@
       "titleMatchScore": 0.143
     },
     {
-      "recordId": "PG2535",
-      "category": "unreachable",
-      "url": "https://www.kpit.com",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2536",
+      "recordId": "PG2546",
       "category": "homepage-only",
-      "url": "https://indianexpress.com",
+      "url": "https://knnindia.co.in",
       "httpStatus": 200,
-      "pageTitle": "Latest News Today, Breaking News, India News, Top Headlines | The Indian Express",
-      "titleMatchScore": 0.283
-    },
-    {
-      "recordId": "PG2537",
-      "category": "unreachable",
-      "url": "https://www.indianembassyqatar",
-      "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -18863,108 +19207,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2539",
-      "category": "unreachable",
-      "url": "https://www.icci.it",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2540",
-      "category": "reachable-title-review",
-      "url": "https://twitter.com/Girbane",
-      "httpStatus": 200,
-      "pageTitle": "Prashant Girbane (@Girbane) on X",
-      "titleMatchScore": 0.37
-    },
-    {
-      "recordId": "PG2541",
-      "category": "homepage-only",
-      "url": "https://thewire.in",
-      "httpStatus": 200,
-      "pageTitle": "The Wire: The Wire News India, Latest News,News from India, Politics, External Affairs, Science, Economics, Gender and Culture",
-      "titleMatchScore": 0.148
-    },
-    {
-      "recordId": "PG2542",
-      "category": "homepage-only",
-      "url": "https://thekarbhari.com",
-      "httpStatus": 200,
-      "pageTitle": "Home - Default - TheKarbhari",
-      "titleMatchScore": 0.622
-    },
-    {
-      "recordId": "PG2543",
-      "category": "homepage-only",
-      "url": "https://punemirror.com",
-      "httpStatus": 200,
-      "pageTitle": "Latest Pune News & Updates | Pimpri Chinchwad Local News",
-      "titleMatchScore": 0.333
-    },
-    {
-      "recordId": "PG2544",
-      "category": "restricted",
-      "url": "https://mccia.medium.com",
-      "httpStatus": 403,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2545",
-      "category": "reachable-title-review",
-      "url": "https://linkedin.com/showcase/mcciacewe",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA&#39;s Centre of Excellence for Women Entrepreneurs | LinkedIn",
-      "titleMatchScore": 0.265
-    },
-    {
-      "recordId": "PG2546",
-      "category": "homepage-only",
-      "url": "https://knnindia.co.in",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2547",
-      "category": "homepage-only",
-      "url": "https://ipfonline.com",
-      "httpStatus": 200,
-      "pageTitle": "IPF Online - Industrial Products Finder",
-      "titleMatchScore": 0.393
-    },
-    {
       "recordId": "PG2548",
       "category": "unreachable",
       "url": "https://hcimalta.gov.in",
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2549",
-      "category": "homepage-only",
-      "url": "https://eoibogota.gov.in",
-      "httpStatus": 200,
-      "pageTitle": "Embassy of India, Bogota, Colombia",
-      "titleMatchScore": 0.481
-    },
-    {
-      "recordId": "PG2550",
-      "category": "unreachable",
-      "url": "https://ddnews.gov.in",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2551",
-      "category": "homepage-only",
-      "url": "https://www.hindustantimes.com",
-      "httpStatus": 200,
-      "pageTitle": "Hindustan Times: Breaking News, Latest News, India News, World News & Cricket Today's Headlines | Hindustan Times",
-      "titleMatchScore": 0.293
     },
     {
       "recordId": "PG2552",
@@ -18983,20 +19231,28 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2554",
+      "recordId": "PG2551",
       "category": "homepage-only",
-      "url": "https://www.financialexpress.com",
+      "url": "https://www.hindustantimes.com",
       "httpStatus": 200,
-      "pageTitle": "Business News Today: Latest Stock Market Updates, Sensex, Nifty, BSE/NSE Live, IPO, Mutual Funds, Finance & Economy News, International News | The Financial Express",
-      "titleMatchScore": 0.186
+      "pageTitle": "Hindustan Times: Breaking News, Latest News, India News, World News & Cricket Today's Headlines | Hindustan Times",
+      "titleMatchScore": 0.293
     },
     {
-      "recordId": "PG2555",
+      "recordId": "PG2545",
       "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/events/events-landing-page/",
+      "url": "https://linkedin.com/showcase/mcciacewe",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.083
+      "pageTitle": "MCCIA&#39;s Centre of Excellence for Women Entrepreneurs | LinkedIn",
+      "titleMatchScore": 0.265
+    },
+    {
+      "recordId": "PG2554",
+      "category": "restricted",
+      "url": "https://www.financialexpress.com",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG2556",
@@ -19007,20 +19263,20 @@
       "titleMatchScore": 0.5
     },
     {
-      "recordId": "PG2557",
-      "category": "homepage-only",
-      "url": "https://eoibelgrade.gov.in",
-      "httpStatus": 200,
-      "pageTitle": "Embassy of India, Belgrade, Serbia",
-      "titleMatchScore": 0.52
+      "recordId": "PG2550",
+      "category": "unreachable",
+      "url": "https://ddnews.gov.in",
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
-      "recordId": "PG2558",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/initiatives/electronic-cluster/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.174
+      "recordId": "PG2560",
+      "category": "unreachable",
+      "url": "https://www.linkedin.com/posts/easebuzz",
+      "httpStatus": 404,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG2559",
@@ -19031,10 +19287,18 @@
       "titleMatchScore": 0.2
     },
     {
-      "recordId": "PG2560",
+      "recordId": "PG2539",
+      "category": "homepage-only",
+      "url": "https://www.icci.it",
+      "httpStatus": 200,
+      "pageTitle": "Camera di Commercio Indiana per l'Italia",
+      "titleMatchScore": 0.246
+    },
+    {
+      "recordId": "PG1434",
       "category": "unreachable",
-      "url": "https://www.linkedin.com/posts/easebuzz",
-      "httpStatus": 404,
+      "url": "https://www.punekarnews.in/pune-mccia-opposes-7-day-ban-on-pmpml-bus-service-appeals-central-govt-to-allow-vaccination-for-all-above-18-years/",
+      "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -19055,20 +19319,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2564",
+      "recordId": "PG2542",
       "category": "homepage-only",
-      "url": "https://www.cnbctv18.com",
+      "url": "https://thekarbhari.com",
       "httpStatus": 200,
-      "pageTitle": "Business News Today Live: Latest Business & Stock Market News | Share Market Updates | CNBC TV18",
-      "titleMatchScore": 0.158
-    },
-    {
-      "recordId": "PG2565",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/initiatives/cewe/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.222
+      "pageTitle": "Home - Default - TheKarbhari",
+      "titleMatchScore": 0.622
     },
     {
       "recordId": "PG2566",
@@ -19077,14 +19333,6 @@
       "httpStatus": 404,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2567",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/awards/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.182
     },
     {
       "recordId": "PG2568",
@@ -19111,20 +19359,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2571",
+      "recordId": "PG2558",
       "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/initiatives/ai-studio/",
+      "url": "https://www.mcciapune.com/initiatives/electronic-cluster/",
       "httpStatus": 200,
       "pageTitle": "MCCIA",
-      "titleMatchScore": 0.143
-    },
-    {
-      "recordId": "PG2572",
-      "category": "homepage-only",
-      "url": "https://agrospectrumindia.com",
-      "httpStatus": 200,
-      "pageTitle": "AgroSpectrum India - Your Trusted Partner in Agricultural Business",
-      "titleMatchScore": 0.447
+      "titleMatchScore": 0.174
     },
     {
       "recordId": "PG2573",
@@ -19311,6 +19551,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG2564",
+      "category": "homepage-only",
+      "url": "https://www.cnbctv18.com",
+      "httpStatus": 200,
+      "pageTitle": "Business News Today Live: Latest Business & Stock Market News | Share Market Updates | CNBC TV18",
+      "titleMatchScore": 0.158
+    },
+    {
       "recordId": "PG2597",
       "category": "no-public-url",
       "url": null,
@@ -19407,12 +19655,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2609",
+      "recordId": "PG2565",
       "category": "reachable-title-review",
-      "url": "https://www.facebook.com/PuneMCCIA/",
+      "url": "https://www.mcciapune.com/initiatives/cewe/",
       "httpStatus": 200,
-      "pageTitle": "Mahratta Chamber of Commerce, Industries and Agriculture - MCCIA, Pune",
-      "titleMatchScore": 0.213
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.222
     },
     {
       "recordId": "PG2610",
@@ -19439,12 +19687,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2613",
-      "category": "reachable-pdf",
-      "url": "https://www.indembassy-tokyo.gov.in/public_files/assets/pdf/International_Business_Summit_202_invitation.pdf",
+      "recordId": "PG2557",
+      "category": "homepage-only",
+      "url": "https://eoibelgrade.gov.in",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "Embassy of India, Belgrade, Serbia",
+      "titleMatchScore": 0.52
     },
     {
       "recordId": "PG2614",
@@ -19503,6 +19751,22 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG2567",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/awards/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.182
+    },
+    {
+      "recordId": "PG2555",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/events/events-landing-page/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.083
+    },
+    {
       "recordId": "PG2621",
       "category": "restricted",
       "url": "https://zamantika.com/profile/Girbane",
@@ -19511,26 +19775,18 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2623",
+      "recordId": "PG2609",
       "category": "restricted",
-      "url": "https://linkedin.com/in/prashant-girbane-245840",
-      "httpStatus": 999,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2624",
-      "category": "homepage-only",
-      "url": "https://www.adapt.io/contact/prashant-girbane/227487200",
+      "url": "https://www.facebook.com/PuneMCCIA/",
       "httpStatus": 200,
-      "pageTitle": "B2B Lead Intelligence Platform | Adapt.io",
-      "titleMatchScore": 0.32
+      "pageTitle": "Log into Facebook | Facebook",
+      "titleMatchScore": 0.171
     },
     {
-      "recordId": "PG2625",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
+      "recordId": "PG2626",
+      "category": "restricted",
+      "url": "https://www.thecompanycheck.com/people-profile/prashant-dagdu-girbane/05271979",
+      "httpStatus": 403,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -19583,36 +19839,20 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2633",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/printmedia/Presentation_on_PPCR.pdf",
+      "recordId": "PG2624",
+      "category": "homepage-only",
+      "url": "https://www.adapt.io/contact/prashant-girbane/227487200",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "B2B Lead Intelligence Platform | Adapt.io",
+      "titleMatchScore": 0.32
     },
     {
-      "recordId": "PG2634",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/printmedia2023/PIBS_Feb_2026_01.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2635",
-      "category": "reachable-pdf",
-      "url": "https://www.cgisaopaulo.gov.in/pdf/Pune%20International%20Business%20Summit%202026.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2636",
+      "recordId": "PG2571",
       "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/mcciaadmin/team_tab/",
+      "url": "https://www.mcciapune.com/initiatives/ai-studio/",
       "httpStatus": 200,
       "pageTitle": "MCCIA",
-      "titleMatchScore": 0.231
+      "titleMatchScore": 0.143
     },
     {
       "recordId": "PG2637",
@@ -19639,44 +19879,52 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2640",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/committees/energy-committee/",
+      "recordId": "PG2547",
+      "category": "homepage-only",
+      "url": "https://ipfonline.com",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.211
+      "pageTitle": "IPF Online - Industrial Products Finder",
+      "titleMatchScore": 0.393
     },
     {
-      "recordId": "PG2642",
-      "category": "possible-headline-match",
-      "url": "https://yellow-seal-502661.hostingersite.com/about-us/team/",
+      "recordId": "PG2572",
+      "category": "homepage-only",
+      "url": "https://agrospectrumindia.com",
       "httpStatus": 200,
-      "pageTitle": "Team - Social Innovation Hub",
-      "titleMatchScore": 0.582
+      "pageTitle": "AgroSpectrum India | Agribusiness News, Agritech & Agri Policy",
+      "titleMatchScore": 0.513
     },
     {
-      "recordId": "PG2643",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/committees/higher-education-skill-development-committee/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.182
-    },
-    {
-      "recordId": "PG2644",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/printmedia/Mission_Vayu_by_Pune_Platform_for_COVID-19_Responses.pdf",
-      "httpStatus": 200,
+      "recordId": "PG2623",
+      "category": "restricted",
+      "url": "https://linkedin.com/in/prashant-girbane-245840",
+      "httpStatus": 999,
       "pageTitle": null,
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2645",
+      "recordId": "PG2510",
+      "category": "homepage-only",
+      "url": "https://sudhirmehta.in/",
+      "httpStatus": 200,
+      "pageTitle": "Sudhir Mehta – Official Website",
+      "titleMatchScore": 0.605
+    },
+    {
+      "recordId": "PG2636",
       "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/initiatives/ppcr-dist/",
+      "url": "https://www.mcciapune.com/mcciaadmin/team_tab/",
       "httpStatus": 200,
       "pageTitle": "MCCIA",
-      "titleMatchScore": 0.167
+      "titleMatchScore": 0.231
+    },
+    {
+      "recordId": "PG2635",
+      "category": "reachable-pdf",
+      "url": "https://www.cgisaopaulo.gov.in/pdf/Pune%20International%20Business%20Summit%202026.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG2646",
@@ -19709,6 +19957,14 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2640",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/committees/energy-committee/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.211
     },
     {
       "recordId": "PG2651",
@@ -19807,14 +20063,6 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2663",
-      "category": "reachable-pdf",
-      "url": "https://mitsde.com/assets/images/media/common-images-new/RecognitionApproval-pdf/MCCIA-2021-2022.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
       "recordId": "PG2664",
       "category": "no-public-url",
       "url": null,
@@ -19847,6 +20095,70 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "PG2643",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/committees/higher-education-skill-development-committee/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.182
+    },
+    {
+      "recordId": "PG2549",
+      "category": "homepage-only",
+      "url": "https://eoibogota.gov.in",
+      "httpStatus": 200,
+      "pageTitle": "Embassy of India, Bogota, Colombia",
+      "titleMatchScore": 0.481
+    },
+    {
+      "recordId": "PG2633",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/printmedia/Presentation_on_PPCR.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2644",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/printmedia/Mission_Vayu_by_Pune_Platform_for_COVID-19_Responses.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2634",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/printmedia2023/PIBS_Feb_2026_01.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2613",
+      "category": "reachable-pdf",
+      "url": "https://www.indembassy-tokyo.gov.in/public_files/assets/pdf/International_Business_Summit_202_invitation.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG1984",
+      "category": "unreachable",
+      "url": "https://www.punekarnews.in/pune-innovators-across-india-felicitated-at-national-conference-on-social-innovation/",
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2645",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/initiatives/ppcr-dist/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.167
+    },
+    {
       "recordId": "PG2668",
       "category": "reachable-title-review",
       "url": "https://www.mcciapune.com/committees/women-entrepreneurs-committee/",
@@ -19871,12 +20183,28 @@
       "titleMatchScore": 0.333
     },
     {
-      "recordId": "PG2672",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/mcciaadmin/milestones_tab/",
+      "recordId": "PG2642",
+      "category": "possible-headline-match",
+      "url": "https://yellow-seal-502661.hostingersite.com/about-us/team/",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.476
+      "pageTitle": "Team - Social Innovation Hub",
+      "titleMatchScore": 0.582
+    },
+    {
+      "recordId": "PG2682",
+      "category": "unreachable",
+      "url": "https://mecfpune.com/",
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2683",
+      "category": "restricted",
+      "url": "https://pdfcoffee.com/directory-final-july-2020-pdf-free.html",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG2673",
@@ -19885,6 +20213,38 @@
       "httpStatus": 200,
       "pageTitle": "MCCIA",
       "titleMatchScore": 0.4
+    },
+    {
+      "recordId": "PG2672",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/mcciaadmin/milestones_tab/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.476
+    },
+    {
+      "recordId": "PG2686",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2687",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2688",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG2674",
@@ -19935,14 +20295,6 @@
       "titleMatchScore": 0.294
     },
     {
-      "recordId": "PG2680",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/mcciaadmin/executive-board/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.385
-    },
-    {
       "recordId": "PG2681",
       "category": "reachable-title-review",
       "url": "https://www.mcciapune.com/committees/electronics-committee/",
@@ -19951,20 +20303,20 @@
       "titleMatchScore": 0.312
     },
     {
-      "recordId": "PG2682",
-      "category": "unreachable",
-      "url": "https://mecfpune.com/",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "recordId": "PG2695",
+      "category": "reachable-title-review",
+      "url": "https://www.scribd.com/document/429428671/Mccia-Ar-Final-Compressed",
+      "httpStatus": 200,
+      "pageTitle": "Client Challenge",
+      "titleMatchScore": 0.25
     },
     {
-      "recordId": "PG2683",
-      "category": "unreachable",
-      "url": "https://pdfcoffee.com/directory-final-july-2020-pdf-free.html",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "recordId": "PG2680",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/mcciaadmin/executive-board/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.385
     },
     {
       "recordId": "PG2684",
@@ -19973,110 +20325,6 @@
       "httpStatus": 200,
       "pageTitle": "MCCIA",
       "titleMatchScore": 0.357
-    },
-    {
-      "recordId": "PG2685",
-      "category": "possible-headline-match",
-      "url": "https://www.mcciapune.com/publications/mccia-blog/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.667
-    },
-    {
-      "recordId": "PG2686",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2687",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2688",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2689",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Awards_Profile_2025_English_Final_for_Print.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2690",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/committees/agriculture/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.312
-    },
-    {
-      "recordId": "PG2691",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/services/advisory/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.357
-    },
-    {
-      "recordId": "PG2692",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_90Annual_Report_23-24.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2693",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Annual_Report_FY_2022_FKDOl76.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2694",
-      "category": "reachable-pdf",
-      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA-ANNUAL-REPORT-2019-20-WEB-VERSION_Zp6lFtm.pdf",
-      "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG2696",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/awards/ramabai-joshi-award/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.069
-    },
-    {
-      "recordId": "PG2697",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/awards/late-kiran-natu-udyojakta-puraskar-award/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.051
-    },
-    {
-      "recordId": "PG2698",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/awards/gs-parkhe-award/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.077
     },
     {
       "recordId": "PG2699",
@@ -20127,12 +20375,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2705",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/mcciaadmin/snippets_tab/",
+      "recordId": "PG2663",
+      "category": "reachable-pdf",
+      "url": "https://mitsde.com/assets/images/media/common-images-new/RecognitionApproval-pdf/MCCIA-2021-2022.pdf",
       "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.182
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "PG2706",
@@ -20157,6 +20405,14 @@
       "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2685",
+      "category": "possible-headline-match",
+      "url": "https://www.mcciapune.com/publications/mccia-blog/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.667
     },
     {
       "recordId": "PG2710",
@@ -20295,12 +20551,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2727",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Avantis_Report__BuD2wxf.pdf",
+      "recordId": "PG2690",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/committees/agriculture/",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.312
     },
     {
       "recordId": "PG2728",
@@ -20375,12 +20631,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2737",
-      "category": "unreachable",
-      "url": "https://rgstc.maharashtra.gov.in/index.php/commission",
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "recordId": "PG2691",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/services/advisory/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.357
     },
     {
       "recordId": "PG2738",
@@ -20471,18 +20727,10 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2749",
-      "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/awards/bg_deshmukh_award/",
-      "httpStatus": 200,
-      "pageTitle": "MCCIA",
-      "titleMatchScore": 0.222
-    },
-    {
-      "recordId": "PG2750",
-      "category": "reachable-pdf",
-      "url": "https://mcciapune.com/media/printmedia2023/Award_Winners_and_Jury_members_2024.pdf",
-      "httpStatus": 200,
+      "recordId": "PG2737",
+      "category": "unreachable",
+      "url": "https://rgstc.maharashtra.gov.in/index.php/commission",
+      "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -20583,12 +20831,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2763",
+      "recordId": "PG2698",
       "category": "reachable-title-review",
-      "url": "https://www.mcciapune.com/mcciaadmin/about_us/",
+      "url": "https://www.mcciapune.com/awards/gs-parkhe-award/",
       "httpStatus": 200,
       "pageTitle": "MCCIA",
-      "titleMatchScore": 0.256
+      "titleMatchScore": 0.077
     },
     {
       "recordId": "PG2764",
@@ -20615,12 +20863,12 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "PG2767",
+      "recordId": "PG2697",
       "category": "reachable-title-review",
-      "url": "https://www.hciaccra.gov.in/listview/MTAyMw,,",
+      "url": "https://www.mcciapune.com/awards/late-kiran-natu-udyojakta-puraskar-award/",
       "httpStatus": 200,
-      "pageTitle": "High Commission of India, Accra, Ghana",
-      "titleMatchScore": 0.4
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.051
     },
     {
       "recordId": "PG2768",
@@ -21959,44 +22207,92 @@
       "titleMatchScore": null
     },
     {
-      "recordId": "GN-FF8EE0D863D638",
-      "category": "discovery-link",
-      "url": "https://timesofindia.indiatimes.com/city/pune/over-5100-msmes-in-india-reach-out-to-mccia-via-helpline-since-2024-launch/articleshow/133690549.cms",
+      "recordId": "PG2696",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/awards/ramabai-joshi-award/",
       "httpStatus": 200,
-      "pageTitle": "Over 5,100 MSMEs in India reach out to MCCIA via helpline since 2024 launch | Pune News - The Times of India",
-      "titleMatchScore": 1.0
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.069
     },
     {
-      "recordId": "GN-08E931807AF73C",
+      "recordId": "PG2705",
       "category": "reachable-title-review",
-      "url": "https://www.esakal.com/pune/mccia-helpline-crosses-10000-consultations-supporting-msme-across-29-states-and-union-territories-in-india-pjp78",
+      "url": "https://www.mcciapune.com/mcciaadmin/snippets_tab/",
       "httpStatus": 200,
-      "pageTitle": "Pune MSME हेल्पलाइन एमसीसीआयएच्या मोफत मार्गदर्शन सेवेने १० हजार सल्लामसलतींचा टप्पा पूर्ण देशभरातील उद्योजकांना मदत. Pune MSME Helpline: MCCIA completes 10,000 free consultations for entrepreneurs across 29 states",
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.182
+    },
+    {
+      "recordId": "PG2689",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Awards_Profile_2025_English_Final_for_Print.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2749",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/awards/bg_deshmukh_award/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.222
+    },
+    {
+      "recordId": "PG2692",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_90Annual_Report_23-24.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2694",
+      "category": "reachable-pdf",
+      "url": "https://www.mcciapune.com/media/Publication/Publication_File/MCCIA-ANNUAL-REPORT-2019-20-WEB-VERSION_Zp6lFtm.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2763",
+      "category": "reachable-title-review",
+      "url": "https://www.mcciapune.com/mcciaadmin/about_us/",
+      "httpStatus": 200,
+      "pageTitle": "MCCIA",
+      "titleMatchScore": 0.256
+    },
+    {
+      "recordId": "PG2693",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Annual_Report_FY_2022_FKDOl76.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2750",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/printmedia2023/Award_Winners_and_Jury_members_2024.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2727",
+      "category": "reachable-pdf",
+      "url": "https://mcciapune.com/media/Publication/Publication_File/MCCIA_Avantis_Report__BuD2wxf.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG2767",
+      "category": "reachable-title-review",
+      "url": "https://www.hciaccra.gov.in/listview/MTAyMw,,",
+      "httpStatus": 200,
+      "pageTitle": "High Commission of India, Accra, Ghana",
       "titleMatchScore": 0.4
-    },
-    {
-      "recordId": "GN-A2FB2CEE280C74",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mccia-annualgeneralmeeting-industryleadership-activity-7500055815651856384-M7sa",
-      "httpStatus": 200,
-      "pageTitle": "#mccia #annualgeneralmeeting #industryleadership #businessleadership #punebusiness | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.366
-    },
-    {
-      "recordId": "GN-4BE2DA20327075",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_organicsummit2026-organicfarming-naturalfarming-activity-7493921533468442624-vlqI",
-      "httpStatus": 200,
-      "pageTitle": "#organicsummit2026 #organicfarming #naturalfarming #residuefreefarming #agrifood #farmtofork | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.252
-    },
-    {
-      "recordId": "GN-B522E7DF61ABB5",
-      "category": "discovery-link",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS2FFZkRMODBZNnNzS3BSeTNVZEJydUFtbDhTZWlCYWkyOFNpSUpZMldJNWVNMHNEc3dISTExc3FIdVhxSzhRclZRRExwNC1qV1M4LVBubDBvNkRrTnFwaG9NVnlRdGh6bFhzUWo0Uk9mM0hqMHZWUlNMZWhGZjE4dlRXeFlETlQ5Y1p4ZHlUSnp1UmdNMVR1RzBFeGs2Y3E1Q19F0gGoAUFVX3lxTE55Y0lEQW55Q3BxSVBHMVhLNXB5dy1KYlVLYjNsNENMbjJhYkFVMVdHdXRxLWZUSnFzdG9xeFpPSm5PZTVMaDk4ZG1aQ2R3bmxxd0tLR0ZuRU1RSWl2cU9pRE1Bc3NGTXRLT0hRNEpqSHdkOGlBckY1T0xLV2FZYUt0dkpiNzFPOVlIWmdNMExNcW9QZ2Y1VDJCOF82NEdDd1Y1aVRuY0ZtVw?oc=5",
-      "httpStatus": 200,
-      "pageTitle": "Google News",
-      "titleMatchScore": 0.154
     }
   ]
 }
