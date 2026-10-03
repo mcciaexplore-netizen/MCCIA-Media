@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-25T08:47:58+00:00",
+  "generatedAt": "2026-10-03T09:06:54+00:00",
   "methodology": "Automated URL reachability and page-title agreement audit. This does not replace editorial review of article contents.",
   "summary": {
-    "totalRecords": 2929,
-    "sourceCheckedRecords": 2929,
-    "withPublicUrl": 487,
+    "totalRecords": 2930,
+    "sourceCheckedRecords": 2930,
+    "withPublicUrl": 488,
     "withoutPublicUrl": 2442,
-    "reachablePublicUrls": 394,
+    "reachablePublicUrls": 395,
     "headlineConfirmed": 145,
-    "manualReviewRequired": 2784,
+    "manualReviewRequired": 2785,
     "categories": {
-      "discovery-link": 2,
+      "discovery-link": 3,
       "headline-confirmed": 145,
       "homepage-only": 30,
       "no-public-url": 2442,
@@ -22,6 +22,19 @@
     }
   },
   "records": {
+    "GN-04E2BD7A2FA6B8": {
+      "recordId": "GN-04E2BD7A2FA6B8",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEllVU1LMnNCOEFndGdfR3ptUmZiRVRwZGZXOUxXOXV5UF9MRUdXSncxN2ZoTDJ4LXZwUGNSMHdoRnhfWFlUWmNjUWEwZGlKbVVSdFhjSVMyUkNUcExhTUpGeTVfQ25YQmluQW9la2g5RnYxblYxWmJxM1ZmWExaS3NQM2pzWVpOa3NrTlg1Wld0RWl0dUlnci1TSVdUTnVycV8taNIBpAFBVV95cUxQNEllVU1LMnNCOEFndGdfR3ptUmZiRVRwZGZXOUxXOXV5UF9MRUdXSncxN2ZoTDJ4LXZwUGNSMHdoRnhfWFlUWmNjUWEwZGlKbVVSdFhjSVMyUkNUcExhTUpGeTVfQ25YQmluQW9la2g5RnYxblYxWmJxM1ZmWExaS3NQM2pzWVpOa3NrTlg1Wld0RWl0dUlnci1TSVdUTnVycV8taA?oc=5",
+      "category": "discovery-link",
+      "displayLabel": "Google News discovery",
+      "explanation": "Google News exposed this item; the publisher article still requires editorial verification.",
+      "checkedAt": "2026-10-03T09:06:54+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEllVU1LMnNCOEFndGdfR3ptUmZiRVRwZGZXOUxXOXV5UF9MRUdXSncxN2ZoTDJ4LXZwUGNSMHdoRnhfWFlUWmNjUWEwZGlKbVVSdFhjSVMyUkNUcExhTUpGeTVfQ25YQmluQW9la2g5RnYxblYxWmJxM1ZmWExaS3NQM2pzWVpOa3NrTlg1Wld0RWl0dUlnci1TSVdUTnVycV8taNIBpAFBVV95cUxQNEllVU1LMnNCOEFndGdfR3ptUmZiRVRwZGZXOUxXOXV5UF9MRUdXSncxN2ZoTDJ4LXZwUGNSMHdoRnhfWFlUWmNjUWEwZGlKbVVSdFhjSVMyUkNUcExhTUpGeTVfQ25YQmluQW9la2g5RnYxblYxWmJxM1ZmWExaS3NQM2pzWVpOa3NrTlg1Wld0RWl0dUlnci1TSVdUTnVycV8taA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "contentType": "text/html",
+      "pageTitle": "Google News",
+      "titleMatchScore": 0.137
+    },
     "GN-08E931807AF73C": {
       "recordId": "GN-08E931807AF73C",
       "url": "https://www.esakal.com/pune/mccia-helpline-crosses-10000-consultations-supporting-msme-across-29-states-and-union-territories-in-india-pjp78",
