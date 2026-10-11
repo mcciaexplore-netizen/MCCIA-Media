@@ -5,7 +5,9 @@ import {validateItem,fields,applyAction,publicSnapshot,type WorkItem,type Docume
 import type {Identity} from './access';
 const directory=join(process.cwd(),'.local-work-tracker');
 const file=join(directory,'records.json');
-export async function readItems():Promise<WorkItem[]>{try{const data=JSON.parse(await readFile(file,'utf8'));if(!Array.isArray(data))throw Error('Invalid tracker file');return data;}catch(error){if((error as NodeJS.ErrnoException).code==='ENOENT')return [];throw error;}}
+async function readSeed():Promise<WorkItem[]>{try{const data=JSON.parse(await readFile(join(process.cwd(),'app','work-tracker','public-records.json'),'utf8'));return Array.isArray(data)?data:[];}catch{return [];}}
+// First run (no local file yet): start from the bundled records; the file is created on first save.
+export async function readItems():Promise<WorkItem[]>{try{const data=JSON.parse(await readFile(file,'utf8'));if(!Array.isArray(data))throw Error('Invalid tracker file');return data;}catch(error){if((error as NodeJS.ErrnoException).code==='ENOENT')return readSeed();throw error;}}
 // A process-local queue plus revision checks prevents overlapping writes in the local server.
 let queue:Promise<unknown>=Promise.resolve();
 export function saveItem(input:Record<string,unknown>,actor:Identity={id:'local-owner',name:process.env.USERNAME||'Local owner',role:'Administrator'},publish?: (item:WorkItem)=>Promise<void>):Promise<WorkItem>{
@@ -41,6 +43,20 @@ export function saveItem(input:Record<string,unknown>,actor:Identity={id:'local-
   await mkdir(directory,{recursive:true});const temp=join(directory,`${randomUUID()}.tmp`);
   await writeFile(temp,JSON.stringify(next,null,2)+'\n','utf8');
   if(publication&&publish)await publish(item);
+  await rename(temp,file);return item;
+ });
+ queue=operation.catch(()=>{});return operation;
+}
+export function deleteItem(id:string,revision:unknown,actor:Identity={id:'local-owner',name:process.env.USERNAME||'Local owner',role:'Administrator'},unpublish?:(item:WorkItem)=>Promise<void>):Promise<WorkItem>{
+ const operation=queue.then(async()=>{
+  if(!['Editor','Administrator'].includes(actor.role))throw Error('An editor or administrator must delete items.');
+  const items=await readItems();
+  const item=items.find(x=>x.id===id);
+  if(!item)throw Error('Item not found.');
+  if(revision!==item.revision)throw Error('This item changed in another window. Reload the tracker before deleting.');
+  await mkdir(directory,{recursive:true});const temp=join(directory,`${randomUUID()}.tmp`);
+  await writeFile(temp,JSON.stringify(items.filter(x=>x.id!==id),null,2)+'\n','utf8');
+  if(item.publicSnapshot&&unpublish)await unpublish(item);
   await rename(temp,file);return item;
  });
  queue=operation.catch(()=>{});return operation;

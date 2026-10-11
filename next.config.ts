@@ -1,8 +1,11 @@
 import type { NextConfig } from 'next';
 
-// Native Next/Vercel builds do not expose Cloudflare bindings. Sites/vinext
-// must keep the real built-in module so D1 and R2 remain available at runtime.
-const nextConfig: NextConfig = process.env.VERCEL
+// Native `next dev` / Vercel builds do not expose Cloudflare bindings, so
+// `cloudflare:workers` is aliased to a shim that reads process.env. Sites/vinext
+// must keep the real built-in module so D1 and R2 remain available there.
+const underVinext = process.argv.some((arg) => /vinext/i.test(arg));
+
+const nextConfig: NextConfig = !underVinext
   ? {
       turbopack: {
         resolveAlias: {

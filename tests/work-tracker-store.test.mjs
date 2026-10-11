@@ -38,3 +38,18 @@ test('local tracker saves across reads, preserves source and rejects stale edits
 
  }finally{process.chdir(original);await rm(directory,{recursive:true,force:true})}
 });
+
+test('deleting an item removes only that item, rejects stale revisions and viewers',async()=>{
+ const original=process.cwd(),directory=await mkdtemp(join(tmpdir(),'mccia-tracker-delete-'));
+ try{
+  process.chdir(directory);
+  const {saveItem,readItems,deleteItem}=await import('../app/api/work-tracker/store.ts');
+  const keep=await saveItem({...blankItem('Publications'),title:'Keep me'});
+  const drop=await saveItem({...blankItem('Publications'),title:'Delete me'});
+  await assert.rejects(()=>deleteItem(drop.id,drop.revision+1),/changed in another window/);
+  await assert.rejects(()=>deleteItem(drop.id,drop.revision,{id:'v',name:'Viewer',role:'Viewer'}),/editor or administrator/);
+  await deleteItem(drop.id,drop.revision);
+  assert.deepEqual((await readItems()).map(x=>x.id),[keep.id]);
+  await assert.rejects(()=>deleteItem(drop.id,drop.revision),/not found/i);
+ }finally{process.chdir(original);await rm(directory,{recursive:true,force:true})}
+});

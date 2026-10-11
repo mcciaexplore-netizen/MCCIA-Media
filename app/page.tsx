@@ -73,13 +73,13 @@ export default function Home(){
   useArchiveRefresh();
   const [auditUpdatedAt]=useState(bundledSourceVerification.generatedAt);
   const [corrections,setCorrections]=useState<{id:string;patch:Partial<RecordItem>;updatedAt:string}[]>([]);
-  const [correctionsAvailable,setCorrectionsAvailable]=useState<boolean|null>(null);
+  const [,setCorrectionsAvailable]=useState<boolean|null>(null);
   useEffect(()=>{let cancelled=false;const refresh=()=>{void loadPages<{id:string;patch:Partial<RecordItem>;updatedAt:string}>('/api/corrections').then(rows=>{if(!cancelled){setCorrections(rows);setCorrectionsAvailable(true)}}).catch(()=>{if(!cancelled)setCorrectionsAvailable(false)})};refresh();window.addEventListener('mccia-corrections-updated',refresh);const timer=setInterval(refresh,60000);return()=>{cancelled=true;clearInterval(timer);window.removeEventListener('mccia-corrections-updated',refresh)}},[]);
   const correctionById=useMemo(()=>new Map(corrections.map(c=>[c.id,c])),[corrections]);
 
   const [weeklyAlerts]=useState<RecordItem[]>(bundledGoogleNewsAlerts);
-  const [monitoringAvailable,setMonitoringAvailable]=useState<boolean|null>(null);
-  const [liveUploadsAvailable,setLiveUploadsAvailable]=useState<boolean|null>(null);
+  const [,setMonitoringAvailable]=useState<boolean|null>(null);
+  const [,setLiveUploadsAvailable]=useState<boolean|null>(null);
   const [monitoredSources,setMonitoredSources]=useState<RecordItem[]>([]);
   const [sourceChecks]=useState<Record<string,SourceVerification>>(bundledSourceVerification.records);
   const [uploadedClippings,setUploadedClippings]=useState<ClippingItem[]>([]);
@@ -142,9 +142,6 @@ export default function Home(){
     <SiteHeader active={section} onNavigate={navigate} formUrl={formUrl}/>
 
     <section className="masthead"><div className="archive-hero"><div><p className="kicker">MCCIA MEDIA ARCHIVE</p><h1>MCCIA in the news</h1><p className="intro">Explore news, leadership mentions, newspaper clippings and e-paper coverage.</p></div><div className="archive-hero-context"><form className="hero-search" role="search" onSubmit={event=>{event.preventDefault();navigate('archive')}}><label htmlFor="hero-search-input">Search {dataset==='clippings'?'clipping evidence':dataset==='epapers'?'e-paper sources':'media records'}</label><div className="hero-search-row"><input id="hero-search-input" type="search" value={search} onChange={event=>setSearch(event.target.value)} placeholder="Search a headline, person or topic…"/><button type="submit">Search</button></div></form><button type="button" className="hero-browse" onClick={()=>openCollection('records')}>Browse all coverage <span aria-hidden="true">→</span></button></div></div><div className="metrics summary-metrics" aria-label="Archive summary"><div><button className="metric-link" onClick={()=>openCollection('records')}><strong>{uniqueCoverage(records,clippings).length.toLocaleString('en-IN')}</strong><span>News &amp; coverage items</span></button></div><div><button className="metric-link" onClick={()=>openCollection('clippings')}><strong>{clippings.length.toLocaleString('en-IN')}</strong><span>Newspaper clippings</span></button></div><div><button className="metric-link" onClick={()=>openCollection('epapers')}><strong>{epaperRecords.length.toLocaleString('en-IN')}</strong><span>E-paper entries</span></button></div></div></section>
-    <AnalyticsPanel records={records} clippings={clippings} sourceChecks={sourceChecks} auditUpdatedAt={auditUpdatedAt}/>
-    <p className="count-explanation">Linked clippings support existing media records; they are not additional articles. Select a total to explore its collection.</p>
-    <p className="archive-updated">News last checked {discoveryStatus.checkedAt?new Date(discoveryStatus.checkedAt).toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric',timeZone:'Asia/Kolkata'}):'Not recorded'}</p>
     {section==='reports'&&<ReportBuilder records={deskCoverage}/>}
     <div id="archive-overview"/>
     <section className="dataset-switch" aria-label="Dataset"><button className={dataset==='records'?'active':''} onClick={()=>switchDataset('records')}><strong>Media records</strong><span>Articles, video, PDFs, social and image records</span></button><button className={dataset==='clippings'?'active':''} onClick={()=>switchDataset('clippings')}><strong>Clipping evidence</strong><span>{clippings.length.toLocaleString('en-IN')} preserved clipping previews · review status shown per item</span></button><button className={dataset==='epapers'?'active':''} onClick={()=>switchDataset('epapers')}><strong>E-paper sources</strong><span>{epaperRecords.length.toLocaleString('en-IN')} issues and exact public PDFs, plus {epaperPortals.length} archive portals</span></button></section>
@@ -177,6 +174,9 @@ export default function Home(){
         {resultCount>0&&<nav className="pagination" aria-label="Results pages"><p>Showing <strong>{(pageStart+1).toLocaleString('en-IN')}–{Math.min(pageStart+PAGE_SIZE,resultCount).toLocaleString('en-IN')}</strong> of {resultCount.toLocaleString('en-IN')}</p><div><button onClick={()=>goToPage(currentPage-1)} disabled={currentPage===1}>Previous</button>{visiblePages.map((item,index)=>typeof item==='number'?<button key={item} className={item===currentPage?'active':''} aria-current={item===currentPage?'page':undefined} aria-label={`Page ${item}`} onClick={()=>goToPage(item)}>{item}</button>:<span key={`${item}-${index}`} aria-hidden="true">…</span>)}<button onClick={()=>goToPage(currentPage+1)} disabled={currentPage===totalPages}>Next</button></div><small>Page {currentPage.toLocaleString('en-IN')} of {totalPages.toLocaleString('en-IN')}</small></nav>}
       </div>
     </section>
+    <AnalyticsPanel records={records} clippings={clippings} auditUpdatedAt={auditUpdatedAt}/>
+    <p className="count-explanation">Linked clippings support existing media records; they are not additional articles. Select a total to explore its collection.</p>
+    <p className="archive-updated">News last checked {discoveryStatus.checkedAt?new Date(discoveryStatus.checkedAt).toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric',timeZone:'Asia/Kolkata'}):'Not recorded'}</p>
     <footer id="method"><p><strong>MCCIA Media Intelligence</strong><br/>A research dashboard that keeps public URLs, supplied evidence images, OCR results and unresolved leads in one auditable archive.</p><p>Verification labels describe the available evidence. Missing metadata is automatically suggested from available text. Language, topic and person suggestions may need correction; DG classification requires attribution. OCR text can contain errors; ambiguous matches remain visibly unresolved.</p><a href="https://www.mcciapune.com/mcciaadmin/team_tab/" target="_blank" rel="noreferrer">Official MCCIA profile</a></footer>
   </main>;
 }

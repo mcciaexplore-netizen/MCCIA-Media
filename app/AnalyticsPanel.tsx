@@ -40,7 +40,6 @@ type ClippingLike = {
 type Props = {
   records: RecordLike[];
   clippings: ClippingLike[];
-  sourceChecks: Record<string,{category:string;checkedAt:string}>;
   auditUpdatedAt: string;
 };
 
@@ -59,7 +58,7 @@ function Bars({ rows }: { rows: [string, number][] }) {
   </div>)}</div>;
 }
 
-export default function AnalyticsPanel({ records, clippings, sourceChecks, auditUpdatedAt }: Props) {
+export default function AnalyticsPanel({ records, clippings, auditUpdatedAt }: Props) {
   const allCoverage = uniqueCoverage(records, clippings);
   const years = yearCounts(allCoverage);
   const publishers = topCounts(allCoverage.map((item) => item.publisher), 7);
