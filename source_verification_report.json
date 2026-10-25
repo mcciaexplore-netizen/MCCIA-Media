@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T09:57:57+00:00",
+  "generatedAt": "2026-10-25T08:22:26+00:00",
   "methodology": "Automated URL reachability and page-title agreement audit. This does not replace editorial review of article contents.",
   "summary": {
     "totalRecords": 2930,
@@ -827,6 +827,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0132",
+      "category": "reachable-pdf",
+      "url": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
+      "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -3371,6 +3379,14 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0505",
+      "category": "reachable-pdf",
+      "url": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
+      "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -19791,6 +19807,14 @@
       "titleMatchScore": 0.32
     },
     {
+      "recordId": "PG2625",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
       "recordId": "PG2626",
       "category": "restricted",
       "url": "https://www.thecompanycheck.com/people-profile/prashant-dagdu-girbane/05271979",
@@ -22239,44 +22263,12 @@
       "titleMatchScore": 0.137
     },
     {
-      "recordId": "GN-B522E7DF61ABB5",
-      "category": "discovery-link",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS2FFZkRMODBZNnNzS3BSeTNVZEJydUFtbDhTZWlCYWkyOFNpSUpZMldJNWVNMHNEc3dISTExc3FIdVhxSzhRclZRRExwNC1qV1M4LVBubDBvNkRrTnFwaG9NVnlRdGh6bFhzUWo0Uk9mM0hqMHZWUlNMZWhGZjE4dlRXeFlETlQ5Y1p4ZHlUSnp1UmdNMVR1RzBFeGs2Y3E1Q19F0gGoAUFVX3lxTE55Y0lEQW55Q3BxSVBHMVhLNXB5dy1KYlVLYjNsNENMbjJhYkFVMVdHdXRxLWZUSnFzdG9xeFpPSm5PZTVMaDk4ZG1aQ2R3bmxxd0tLR0ZuRU1RSWl2cU9pRE1Bc3NGTXRLT0hRNEpqSHdkOGlBckY1T0xLV2FZYUt0dkpiNzFPOVlIWmdNMExNcW9QZ2Y1VDJCOF82NEdDd1Y1aVRuY0ZtVw?oc=5",
-      "httpStatus": 200,
-      "pageTitle": "Google News",
-      "titleMatchScore": 0.154
-    },
-    {
-      "recordId": "PG2625",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "GN-A2FB2CEE280C74",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_mccia-annualgeneralmeeting-industryleadership-activity-7500055815651856384-M7sa",
-      "httpStatus": 200,
-      "pageTitle": "#mccia #annualgeneralmeeting #industryleadership #businessleadership #punebusiness | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.366
-    },
-    {
       "recordId": "GN-AAFC509162617C",
       "category": "unreachable",
       "url": "https://www.loksatta.com/pune/mccia-msme-helpline-nationwide-expansion-pune-print-news-rak-94-6112667/",
       "httpStatus": 404,
       "pageTitle": null,
       "titleMatchScore": null
-    },
-    {
-      "recordId": "GN-4BE2DA20327075",
-      "category": "reachable-title-review",
-      "url": "https://www.linkedin.com/posts/mcciapune_organicsummit2026-organicfarming-naturalfarming-activity-7493921533468442624-vlqI",
-      "httpStatus": 200,
-      "pageTitle": "#organicsummit2026 #organicfarming #naturalfarming #residuefreefarming #agrifood #farmtofork | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
-      "titleMatchScore": 0.252
     },
     {
       "recordId": "GN-FF8EE0D863D638",
@@ -22295,20 +22287,28 @@
       "titleMatchScore": 0.4
     },
     {
-      "recordId": "PG0132",
-      "category": "reachable-pdf",
-      "url": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
+      "recordId": "GN-A2FB2CEE280C74",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_mccia-annualgeneralmeeting-industryleadership-activity-7500055815651856384-M7sa",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "#mccia #annualgeneralmeeting #industryleadership #businessleadership #punebusiness | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.366
     },
     {
-      "recordId": "PG0505",
-      "category": "reachable-pdf",
-      "url": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
+      "recordId": "GN-4BE2DA20327075",
+      "category": "reachable-title-review",
+      "url": "https://www.linkedin.com/posts/mcciapune_organicsummit2026-organicfarming-naturalfarming-activity-7493921533468442624-vlqI",
       "httpStatus": 200,
-      "pageTitle": null,
-      "titleMatchScore": null
+      "pageTitle": "#organicsummit2026 #organicfarming #naturalfarming #residuefreefarming #agrifood #farmtofork | Mahratta Chamber of Commerce, Industries and Agriculture, Pune (MCCIA)",
+      "titleMatchScore": 0.252
+    },
+    {
+      "recordId": "GN-B522E7DF61ABB5",
+      "category": "discovery-link",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS2FFZkRMODBZNnNzS3BSeTNVZEJydUFtbDhTZWlCYWkyOFNpSUpZMldJNWVNMHNEc3dISTExc3FIdVhxSzhRclZRRExwNC1qV1M4LVBubDBvNkRrTnFwaG9NVnlRdGh6bFhzUWo0Uk9mM0hqMHZWUlNMZWhGZjE4dlRXeFlETlQ5Y1p4ZHlUSnp1UmdNMVR1RzBFeGs2Y3E1Q19F0gGoAUFVX3lxTE55Y0lEQW55Q3BxSVBHMVhLNXB5dy1KYlVLYjNsNENMbjJhYkFVMVdHdXRxLWZUSnFzdG9xeFpPSm5PZTVMaDk4ZG1aQ2R3bmxxd0tLR0ZuRU1RSWl2cU9pRE1Bc3NGTXRLT0hRNEpqSHdkOGlBckY1T0xLV2FZYUt0dkpiNzFPOVlIWmdNMExNcW9QZ2Y1VDJCOF82NEdDd1Y1aVRuY0ZtVw?oc=5",
+      "httpStatus": 200,
+      "pageTitle": "Google News",
+      "titleMatchScore": 0.154
     }
   ]
 }
