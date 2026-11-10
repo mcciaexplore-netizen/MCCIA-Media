@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T10:58:55+00:00",
+  "generatedAt": "2026-11-10T11:07:27+00:00",
   "methodology": "Automated URL reachability and page-title agreement audit. This does not replace editorial review of article contents.",
   "summary": {
     "totalRecords": 2930,
@@ -17,8 +17,8 @@
       "possible-headline-match": 26,
       "reachable-pdf": 40,
       "reachable-title-review": 156,
-      "restricted": 48,
-      "unreachable": 38
+      "restricted": 49,
+      "unreachable": 37
     }
   },
   "recordsRequiringManualReview": [
@@ -827,14 +827,6 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0132",
-      "category": "reachable-pdf",
-      "url": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
-      "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -3371,14 +3363,6 @@
       "category": "no-public-url",
       "url": null,
       "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
-      "recordId": "PG0505",
-      "category": "reachable-pdf",
-      "url": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
-      "httpStatus": 200,
       "pageTitle": null,
       "titleMatchScore": null
     },
@@ -19791,14 +19775,6 @@
       "titleMatchScore": 0.32
     },
     {
-      "recordId": "PG2625",
-      "category": "no-public-url",
-      "url": null,
-      "httpStatus": null,
-      "pageTitle": null,
-      "titleMatchScore": null
-    },
-    {
       "recordId": "PG2626",
       "category": "restricted",
       "url": "https://www.thecompanycheck.com/people-profile/prashant-dagdu-girbane/05271979",
@@ -22239,6 +22215,14 @@
       "titleMatchScore": null
     },
     {
+      "recordId": "GN-04E2BD7A2FA6B8",
+      "category": "discovery-link",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEllVU1LMnNCOEFndGdfR3ptUmZiRVRwZGZXOUxXOXV5UF9MRUdXSncxN2ZoTDJ4LXZwUGNSMHdoRnhfWFlUWmNjUWEwZGlKbVVSdFhjSVMyUkNUcExhTUpGeTVfQ25YQmluQW9la2g5RnYxblYxWmJxM1ZmWExaS3NQM2pzWVpOa3NrTlg1Wld0RWl0dUlnci1TSVdUTnVycV8taNIBpAFBVV95cUxQNEllVU1LMnNCOEFndGdfR3ptUmZiRVRwZGZXOUxXOXV5UF9MRUdXSncxN2ZoTDJ4LXZwUGNSMHdoRnhfWFlUWmNjUWEwZGlKbVVSdFhjSVMyUkNUcExhTUpGeTVfQ25YQmluQW9la2g5RnYxblYxWmJxM1ZmWExaS3NQM2pzWVpOa3NrTlg1Wld0RWl0dUlnci1TSVdUTnVycV8taA?oc=5",
+      "httpStatus": 200,
+      "pageTitle": "Google News",
+      "titleMatchScore": 0.137
+    },
+    {
       "recordId": "GN-B522E7DF61ABB5",
       "category": "discovery-link",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS2FFZkRMODBZNnNzS3BSeTNVZEJydUFtbDhTZWlCYWkyOFNpSUpZMldJNWVNMHNEc3dISTExc3FIdVhxSzhRclZRRExwNC1qV1M4LVBubDBvNkRrTnFwaG9NVnlRdGh6bFhzUWo0Uk9mM0hqMHZWUlNMZWhGZjE4dlRXeFlETlQ5Y1p4ZHlUSnp1UmdNMVR1RzBFeGs2Y3E1Q19F0gGoAUFVX3lxTE55Y0lEQW55Q3BxSVBHMVhLNXB5dy1KYlVLYjNsNENMbjJhYkFVMVdHdXRxLWZUSnFzdG9xeFpPSm5PZTVMaDk4ZG1aQ2R3bmxxd0tLR0ZuRU1RSWl2cU9pRE1Bc3NGTXRLT0hRNEpqSHdkOGlBckY1T0xLV2FZYUt0dkpiNzFPOVlIWmdNMExNcW9QZ2Y1VDJCOF82NEdDd1Y1aVRuY0ZtVw?oc=5",
@@ -22247,28 +22231,20 @@
       "titleMatchScore": 0.154
     },
     {
-      "recordId": "GN-AAFC509162617C",
-      "category": "unreachable",
-      "url": "https://www.loksatta.com/pune/mccia-msme-helpline-nationwide-expansion-pune-print-news-rak-94-6112667/",
-      "httpStatus": 404,
+      "recordId": "PG2625",
+      "category": "no-public-url",
+      "url": null,
+      "httpStatus": null,
       "pageTitle": null,
       "titleMatchScore": null
     },
     {
-      "recordId": "GN-FF8EE0D863D638",
-      "category": "discovery-link",
-      "url": "https://timesofindia.indiatimes.com/city/pune/over-5100-msmes-in-india-reach-out-to-mccia-via-helpline-since-2024-launch/articleshow/133690549.cms",
-      "httpStatus": 200,
-      "pageTitle": "Over 5,100 MSMEs in India reach out to MCCIA via helpline since 2024 launch | Pune News - The Times of India",
-      "titleMatchScore": 1.0
-    },
-    {
-      "recordId": "GN-08E931807AF73C",
-      "category": "reachable-title-review",
-      "url": "https://www.esakal.com/pune/mccia-helpline-crosses-10000-consultations-supporting-msme-across-29-states-and-union-territories-in-india-pjp78",
-      "httpStatus": 200,
-      "pageTitle": "Pune MSME हेल्पलाइन एमसीसीआयएच्या मोफत मार्गदर्शन सेवेने १० हजार सल्लामसलतींचा टप्पा पूर्ण देशभरातील उद्योजकांना मदत. Pune MSME Helpline: MCCIA completes 10,000 free consultations for entrepreneurs across 29 states",
-      "titleMatchScore": 0.4
+      "recordId": "GN-AAFC509162617C",
+      "category": "restricted",
+      "url": "https://www.loksatta.com/pune/mccia-msme-helpline-nationwide-expansion-pune-print-news-rak-94-6112667/",
+      "httpStatus": 403,
+      "pageTitle": null,
+      "titleMatchScore": null
     },
     {
       "recordId": "GN-A2FB2CEE280C74",
@@ -22279,6 +22255,14 @@
       "titleMatchScore": 0.366
     },
     {
+      "recordId": "GN-FF8EE0D863D638",
+      "category": "discovery-link",
+      "url": "https://timesofindia.indiatimes.com/city/pune/over-5100-msmes-in-india-reach-out-to-mccia-via-helpline-since-2024-launch/articleshow/133690549.cms",
+      "httpStatus": 200,
+      "pageTitle": "Over 5,100 MSMEs in India reach out to MCCIA via helpline since 2024 launch | Pune News - The Times of India",
+      "titleMatchScore": 1.0
+    },
+    {
       "recordId": "GN-4BE2DA20327075",
       "category": "reachable-title-review",
       "url": "https://www.linkedin.com/posts/mcciapune_organicsummit2026-organicfarming-naturalfarming-activity-7493921533468442624-vlqI",
@@ -22287,12 +22271,28 @@
       "titleMatchScore": 0.252
     },
     {
-      "recordId": "GN-04E2BD7A2FA6B8",
-      "category": "discovery-link",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEllVU1LMnNCOEFndGdfR3ptUmZiRVRwZGZXOUxXOXV5UF9MRUdXSncxN2ZoTDJ4LXZwUGNSMHdoRnhfWFlUWmNjUWEwZGlKbVVSdFhjSVMyUkNUcExhTUpGeTVfQ25YQmluQW9la2g5RnYxblYxWmJxM1ZmWExaS3NQM2pzWVpOa3NrTlg1Wld0RWl0dUlnci1TSVdUTnVycV8taNIBpAFBVV95cUxQNEllVU1LMnNCOEFndGdfR3ptUmZiRVRwZGZXOUxXOXV5UF9MRUdXSncxN2ZoTDJ4LXZwUGNSMHdoRnhfWFlUWmNjUWEwZGlKbVVSdFhjSVMyUkNUcExhTUpGeTVfQ25YQmluQW9la2g5RnYxblYxWmJxM1ZmWExaS3NQM2pzWVpOa3NrTlg1Wld0RWl0dUlnci1TSVdUTnVycV8taA?oc=5",
+      "recordId": "GN-08E931807AF73C",
+      "category": "reachable-title-review",
+      "url": "https://www.esakal.com/pune/mccia-helpline-crosses-10000-consultations-supporting-msme-across-29-states-and-union-territories-in-india-pjp78",
       "httpStatus": 200,
-      "pageTitle": "Google News",
-      "titleMatchScore": 0.137
+      "pageTitle": "Pune MSME हेल्पलाइन एमसीसीआयएच्या मोफत मार्गदर्शन सेवेने १० हजार सल्लामसलतींचा टप्पा पूर्ण देशभरातील उद्योजकांना मदत. Pune MSME Helpline: MCCIA completes 10,000 free consultations for entrepreneurs across 29 states",
+      "titleMatchScore": 0.4
+    },
+    {
+      "recordId": "PG0505",
+      "category": "reachable-pdf",
+      "url": "https://puneinternationalcentre.org/wp-content/uploads/2023/08/Annual-Report-2022-23_08_Aug-28-_-Ver-4-_-7.10-PM.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
+    },
+    {
+      "recordId": "PG0132",
+      "category": "reachable-pdf",
+      "url": "https://puneinternationalcentre.org/wp-content/uploads/2025/11/Annual-report-2024-25-Final-Version-29th-0.pdf",
+      "httpStatus": 200,
+      "pageTitle": null,
+      "titleMatchScore": null
     }
   ]
 }
