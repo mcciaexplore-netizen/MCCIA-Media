@@ -1,5 +1,12 @@
 [
   {
+    "checkedAt": "2026-11-18T11:36:42.643551+00:00",
+    "state": "success",
+    "newItems": 0,
+    "totalItems": 7,
+    "failedSources": []
+  },
+  {
     "checkedAt": "2026-11-17T11:47:41.495841+00:00",
     "state": "success",
     "newItems": 0,
