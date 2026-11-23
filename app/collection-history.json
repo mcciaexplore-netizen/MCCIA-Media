@@ -1,5 +1,14 @@
 [
   {
+    "checkedAt": "2026-11-23T12:30:37.944056+00:00",
+    "state": "partial",
+    "newItems": 0,
+    "totalItems": 7,
+    "failedSources": [
+      "Director General / Prashant Girbane (mr)"
+    ]
+  },
+  {
     "checkedAt": "2026-11-22T11:17:33.897118+00:00",
     "state": "success",
     "newItems": 0,
