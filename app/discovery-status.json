@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-26T12:26:16.092577+00:00",
-  "state": "success",
+  "checkedAt": "2026-11-27T12:12:10.916474+00:00",
+  "state": "partial",
   "newItems": 0,
-  "failedWatches": 0,
+  "failedWatches": 1,
   "totalWatches": 10
 }

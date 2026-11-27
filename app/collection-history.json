@@ -1,5 +1,14 @@
 [
   {
+    "checkedAt": "2026-11-27T12:12:10.916731+00:00",
+    "state": "partial",
+    "newItems": 0,
+    "totalItems": 7,
+    "failedSources": [
+      "Marathi MCCIA news (mr)"
+    ]
+  },
+  {
     "checkedAt": "2026-11-26T12:26:16.092852+00:00",
     "state": "success",
     "newItems": 0,
